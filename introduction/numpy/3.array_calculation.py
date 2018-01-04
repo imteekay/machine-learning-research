@@ -1,5 +1,6 @@
 # height and weight are available as a regular lists
 height = [43, 53, 65, 54, 62, 99]
+height = [70, 73, 85, 64, 92, 109]
 
 # Import numpy
 import numpy as np
