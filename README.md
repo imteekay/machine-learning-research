@@ -10,7 +10,7 @@ in construction
 
 Mathematics
 
-- Linear Algebra
+- [Linear Algebra](#linear-algebra)
 - Matrix Algebra
 - Probability & Statistics
 - Calculus
