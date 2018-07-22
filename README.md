@@ -4,7 +4,7 @@ in construction
 
 ## What is it?
 
-
+This is a Learning Path about Machine Learning.
 
 ## Table of Contents
 
