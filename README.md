@@ -43,6 +43,8 @@ Resources
 
 - [Bishop Keynotes on ML](https://www.microsoft.com/en-us/research/people/cmbishop/#!videos)
 
+- [Machine Learning Guides by Google](https://developers.google.com/machine-learning/guides/)
+
 ## Deep Learning
 - [Deep Learning Book](http://www.deeplearningbook.org/)
 
