@@ -45,6 +45,8 @@ Resources
 
 - [Machine Learning Guides by Google](https://developers.google.com/machine-learning/guides/)
 
+- [Machine Learning Crash Course by Google](https://developers.google.com/machine-learning/crash-course/ml-intro)
+
 ## Deep Learning
 - [Deep Learning Book](http://www.deeplearningbook.org/)
 
