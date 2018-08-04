@@ -25,6 +25,7 @@ Resources
 
 - [Linear Algebra at MIT](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/)
 - [Khan Academy Probability](https://www.khanacademy.org/math/linear-algebra)
+- [Linear algebra cheat sheet for deep learning](https://towardsdatascience.com/linear-algebra-cheat-sheet-for-deep-learning-cd67aba4526c)
 
 ## Matrix Algebra
 
