@@ -47,6 +47,7 @@ Resources
 
 ## Deep Learning
 - [Deep Learning Book](http://www.deeplearningbook.org/)
+- [fast.ai vs. deeplearning.ai](https://medium.com/@markryan_69718/learning-deep-learning-fast-ai-vs-deeplearning-ai-34f9c42cf701)
 
 ## Books
 
