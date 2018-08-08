@@ -50,6 +50,7 @@ Resources
 - [Bishop Keynotes on ML](https://www.microsoft.com/en-us/research/people/cmbishop/#!videos)
 - [Machine Learning Guides by Google](https://developers.google.com/machine-learning/guides/)
 - [Machine Learning Crash Course by Google](https://developers.google.com/machine-learning/crash-course/ml-intro)
+- [Facebook Field Guide to Machine Learning](https://research.fb.com/the-facebook-field-guide-to-machine-learning-video-series/)
 
 ## Deep Learning
 - [Deep Learning Book](http://www.deeplearningbook.org/)
