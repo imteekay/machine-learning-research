@@ -16,6 +16,7 @@ Mathematics
 - [Optimization](#optimization)
 
 Resources
+- [Data Science Fundamentals](#data-science-fundamentals)
 - [Machine Learning](#machine-learning)
 - [Deep Learning](#deep-learning)
 - [Books](#books)
@@ -37,6 +38,11 @@ Resources
 
 ## Optimization
 - [Convex Optimization](https://web.stanford.edu/class/ee364a/videos.html)
+
+## Data Science Fundamentals
+- [Fundamental Python Data Science Libraries: Numpy](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-1-4-58884e95c2bd)
+- [Fundamental Python Data Science Libraries: Pandas](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-2-4-fcf5fab9cdf1)
+- [Fundamental Python Data Science Libraries: Matplotlib](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-3-4-6c2aecc697a4)
 
 ## Machine Learning
 - [Learning Math for Machine Learning](https://blog.ycombinator.com/learning-math-for-machine-learning/)
