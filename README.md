@@ -20,6 +20,7 @@ Resources
 - [Machine Learning](#machine-learning)
 - [Deep Learning](#deep-learning)
 - [Books](#books)
+- [Communities](#communites)
 - [Q&A: how to start learning Machine Learning](#questions-and-answers)
 
 ## Linear Algebra
@@ -61,6 +62,16 @@ Resources
 - [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 - [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
 - [Python Machine Learning](https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1787125939)
+
+## Communities
+
+- [Machine Learning Reddit](https://www.reddit.com/r/MachineLearning/)
+- [NLP Reddit](https://www.reddit.com/r/LanguageTechnology/)
+- [Statistics Reddit](https://www.reddit.com/r/statistics/)
+- [Data Science Reddit](https://www.reddit.com/r/datascience/)
+- [Machine Learning Quora Topic](https://www.quora.com/topic/Machine-Learning)
+- [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
+- [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
 
 ## Questions and Answers
 
