@@ -22,6 +22,7 @@ Resources
 - [Books](#books)
 - [Communities](#communites)
 - [Q&A: how to start learning Machine Learning](#questions-and-answers)
+- [Data Science Journey](#data-science-journey)
 
 ## Linear Algebra
 
@@ -78,3 +79,7 @@ Resources
 - [Andrew Ng's answer on "How should you start a career in Machine Learning?"](https://www.quora.com/How-should-you-start-a-career-in-Machine-Learning)
 - [How do I learn mathematics for machine learning?](https://www.quora.com/How-do-I-learn-mathematics-for-machine-learning)
 - [How do I learn machine learning?](https://www.quora.com/How-do-I-learn-machine-learning-1)
+
+## Data Science Journey
+
+- [How to land a Data Scientist job at your dream company — My journey to Airbnb](https://towardsdatascience.com/how-to-land-a-data-scientist-job-at-your-dream-company-my-journey-to-airbnb-f6a1e99892e8)
