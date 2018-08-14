@@ -63,6 +63,8 @@ Resources
 - [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 - [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
 - [Python Machine Learning](https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1787125939)
+- [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/)
+- [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
 
 ## Communities
 
