@@ -11,7 +11,7 @@ This is a Learning Path about Machine Learning.
 Mathematics
 - [Linear Algebra](#linear-algebra)
 - [Matrix Algebra](#matrix-algebra)
-- [Probability & Statistics](#probability-&-statistics)
+- [Statistics](#statistics)
 - [Calculus](#calculus)
 - [Optimization](#optimization)
 
@@ -32,8 +32,9 @@ Resources
 
 ## Matrix Algebra
 
-## Probability & Statistics
+## Statistics
 - [Khan Academy Probability](https://www.khanacademy.org/math/probability)
+- [Inferential Statistics](https://br.udacity.com/course/intro-to-inferential-statistics--ud201)
 
 ## Calculus
 - [Khan Academy Calculus](https://www.khanacademy.org/math/multivariable-calculus)
