@@ -20,6 +20,7 @@ Resources
 - [Machine Learning](#machine-learning)
 - [Deep Learning](#deep-learning)
 - [Books](#books)
+- [Podcasts](#podcasts)
 - [Communities](#communites)
 - [Q&A: how to start learning Machine Learning](#questions-and-answers)
 - [Data Science Journey](#data-science-journey)
@@ -66,6 +67,10 @@ Resources
 - [Python Machine Learning](https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1787125939)
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/)
 - [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
+
+## Podcasts
+
+- [Data Science, Past, Present and Future with Hilary Mason](https://www.datacamp.com/community/podcast/data-science-past-present-and-future)
 
 ## Communities
 
