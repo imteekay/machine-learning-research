@@ -22,6 +22,7 @@ Resources
 - [Books](#books)
 - [Podcasts](#podcasts)
 - [Communities](#communites)
+- [Online Courses](#online-courses)
 - [Q&A: how to start learning Machine Learning](#questions-and-answers)
 - [Data Science Journey](#data-science-journey)
 
@@ -81,6 +82,10 @@ Resources
 - [Machine Learning Quora Topic](https://www.quora.com/topic/Machine-Learning)
 - [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
 - [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
+
+## Online Courses
+
+- [Preprocessing for Machine Learning in Python](https://www.datacamp.com/courses/preprocessing-for-machine-learning-in-python)
 
 ## Questions and Answers
 
