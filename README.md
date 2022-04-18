@@ -97,6 +97,7 @@ Resources
 ## Online Courses
 
 - [Preprocessing for Machine Learning in Python](https://www.datacamp.com/courses/preprocessing-for-machine-learning-in-python)
+- [Computer Science for Artificial Intelligence](https://www.edx.org/professional-certificate/harvardx-computer-science-for-artifical-intelligence)
 
 ## Questions and Answers
 
