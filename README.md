@@ -1,6 +1,4 @@
-# My Machine Learning Degree
-
-in construction
+# Research in Machine Learning
 
 ## What is it?
 
