@@ -111,3 +111,7 @@ Resources
 
 - [How to land a Data Scientist job at your dream company — My journey to Airbnb](https://towardsdatascience.com/how-to-land-a-data-scientist-job-at-your-dream-company-my-journey-to-airbnb-f6a1e99892e8)
 - [How to build a data science project from scratch](https://medium.freecodecamp.org/how-to-build-a-data-science-project-from-scratch-dc4f096a62a1)
+
+## License
+
+[MIT](/LICENSE) © [TK](https://iamtk.co)
