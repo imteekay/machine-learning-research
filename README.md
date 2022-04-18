@@ -9,6 +9,7 @@ This is a Learning Path about Machine Learning.
 ## Table of Contents
 
 Mathematics
+
 - [Linear Algebra](#linear-algebra)
 - [Matrix Algebra](#matrix-algebra)
 - [Statistics](#statistics)
@@ -16,6 +17,7 @@ Mathematics
 - [Optimization](#optimization)
 
 Resources
+
 - [Data Science Fundamentals](#data-science-fundamentals)
 - [Machine Learning](#machine-learning)
 - [Deep Learning](#deep-learning)
@@ -35,16 +37,20 @@ Resources
 ## Matrix Algebra
 
 ## Statistics
+
 - [Khan Academy Probability](https://www.khanacademy.org/math/probability)
 - [Inferential Statistics](https://br.udacity.com/course/intro-to-inferential-statistics--ud201)
 
 ## Calculus
+
 - [Khan Academy Calculus](https://www.khanacademy.org/math/multivariable-calculus)
 
 ## Optimization
+
 - [Convex Optimization](https://web.stanford.edu/class/ee364a/videos.html)
 
 ## Data Science Fundamentals
+
 - [Fundamental Python Data Science Libraries: Numpy](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-1-4-58884e95c2bd)
 - [Fundamental Python Data Science Libraries: Pandas](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-2-4-fcf5fab9cdf1)
 - [Fundamental Python Data Science Libraries: Matplotlib](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-3-4-6c2aecc697a4)
@@ -52,6 +58,7 @@ Resources
 - [Data Engineering Roadmap](https://github.com/hasbrain/data-engineer-roadmap)
 
 ## Machine Learning
+
 - [Learning Math for Machine Learning](https://blog.ycombinator.com/learning-math-for-machine-learning/)
 - [Machine Learning at CMU](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
 - [Bishop Keynotes on ML](https://www.microsoft.com/en-us/research/people/cmbishop/#!videos)
@@ -61,6 +68,7 @@ Resources
 - [Um pequeno guia para Data Science / Machine Learning](http://lgmoneda.github.io/2017/06/12/data-science-guide.html)
 
 ## Deep Learning
+
 - [Deep Learning Book](http://www.deeplearningbook.org/)
 - [fast.ai vs. deeplearning.ai](https://medium.com/@markryan_69718/learning-deep-learning-fast-ai-vs-deeplearning-ai-34f9c42cf701)
 
