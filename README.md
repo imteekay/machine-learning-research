@@ -64,6 +64,7 @@ Resources
 - [Machine Learning Crash Course by Google](https://developers.google.com/machine-learning/crash-course/ml-intro)
 - [Facebook Field Guide to Machine Learning](https://research.fb.com/the-facebook-field-guide-to-machine-learning-video-series/)
 - [Um pequeno guia para Data Science / Machine Learning](http://lgmoneda.github.io/2017/06/12/data-science-guide.html)
+- [Machine Learning for All](https://www.coursera.org/learn/uol-machine-learning-for-all)
 
 ## Deep Learning
 
