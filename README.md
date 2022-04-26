@@ -66,6 +66,10 @@ Resources
 - [Um pequeno guia para Data Science / Machine Learning](http://lgmoneda.github.io/2017/06/12/data-science-guide.html)
 - [Machine Learning for All](https://www.coursera.org/learn/uol-machine-learning-for-all)
 
+## Advanced Machine Learning
+
+- [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
+
 ## Deep Learning
 
 - [Deep Learning Book](http://www.deeplearningbook.org/)
