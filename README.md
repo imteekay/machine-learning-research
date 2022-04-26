@@ -26,6 +26,10 @@ Resources
 - [Q&A: how to start learning Machine Learning](#questions-and-answers)
 - [Data Science Journey](#data-science-journey)
 
+## General Math
+
+- [Data Science Math Skills](https://www.coursera.org/learn/datasciencemathskills)
+
 ## Linear Algebra
 
 - [Linear Algebra at MIT](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/)
