@@ -71,3 +71,15 @@ If the `Zi` is in the rightmost part of the graph (positive), the probability is
 - `Zi` = large and negative: `Yi` is likely close to 0
 
 ![logistic regression](./images/logistic-regression.png)
+
+### Limitations of Logistic Regression
+
+![Linear classifier](./images/linear-classifier.png)
+
+Logistic regression is linear classifier or linear model. These models solve a binary problem because they can only represent limited relationships.
+
+Sometimes there are situations in which the data is not well separated by a linear classifier.
+
+![Non-Linear classifier](./images/non-linear-classifier.png)
+
+Logistic regression is only effective when a linear classifier can easily distinguish between class 1 and 0. If the decision boundary is much more complicated, the logistic regression will have limitations and it won't be effective.
