@@ -1,8 +1,8 @@
-# Multilayer Perceptron Concepts
+# Multilayer Perceptron
 
 In logistic regression, the predictive model does a multiplication of each feature with parameters, sum all together with a constant value (bias) and use this result as the input for the sigmoid function to have the probability outcome.
 
-In an extended logistic regression, the predictive model does this same process K times.
+In the multilayer perceptron, the predictive model does this same process K times.
 
 ![Extented regression model](./images/extented-regression-model.png)
 
@@ -26,3 +26,10 @@ We can consider a model to have three (or multiple) intermediate filters.
 ![multiple filters](./images/multiple-filters.png)
 
 In this case, the data is the pixels of the image of each handwritten number 4, it applies K filters, in this case K = 3, and then it generates the probability outcome based on the 3 filters (is it the number 4 or not?).
+
+```
+(b11 * Xi1) + (b12 * Xi2) + ... + (b1m * Xim) + b01 = Zi1
+(b21 * Xi1) + (b22 * Xi2) + ... + (b2m * Xim) + b02 = Zi2
+                            ...
+(bK1 * Xi1) + (bK2 * Xi2) + ... + (bKm * Xim) + b0K = ZiK
+```
