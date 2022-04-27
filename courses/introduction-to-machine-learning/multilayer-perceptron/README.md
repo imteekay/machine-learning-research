@@ -11,7 +11,7 @@ This model gets the data and generates a vector of Zi from 1 to K, pass each Zi 
 ![complete extented regre
 ssion model](./images/complete-extented-regression-model.png)
 
-And then each latent feature is used as the input for a logistic regression model to generate a binary probability of a particular outcome.
+And then each latent feature (also called `filters`) is used as the input for a logistic regression model to generate a binary probability of a particular outcome.
 
 ### Example: Handwritten numbers
 
