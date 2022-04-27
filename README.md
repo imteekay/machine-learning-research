@@ -30,6 +30,7 @@ Resources
 ## General Math
 
 - [Data Science Math Skills](https://www.coursera.org/learn/datasciencemathskills)
+- [Mathematics of Big Data and Machine Learning](https://ocw.mit.edu/courses/res-ll-005-mathematics-of-big-data-and-machine-learning-january-iap-2020)
 
 ## Linear Algebra
 
