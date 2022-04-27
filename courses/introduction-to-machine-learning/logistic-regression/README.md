@@ -51,10 +51,10 @@ What are parameters? the values the learning algorithm can change independently 
 To get the output, a simple idea is to multiply each feature with a parameter, sum all, and add a constant called bias.
 
 ```jsx
-(b1 * Xi1) + (b2 * Xi2) + ... + (bm * Xim) + b0   =   Zi
-                                              ^        ^
-                                              |         |
-                                            (bias)   (outcome)
+(b1 * Xi1) + (b2 * Xi2) + ... + (bm * Xim) + b0    =    Zi
+                                              ^          ^
+                                              |          |
+                                            (bias)    (outcome)
 ```
 
 `b1`, `b2`, and so on stand for each parameter and `b0` is the bias (the constant).
