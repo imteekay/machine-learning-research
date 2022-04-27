@@ -27,6 +27,10 @@ Resources
 - [Data Science Journey](#data-science-journey)
 - [ML/AI & Healthcare](#healthcare)
 
+## General Math
+
+- [Data Science Math Skills](https://www.coursera.org/learn/datasciencemathskills)
+
 ## Linear Algebra
 
 - [Linear Algebra at MIT](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/)
@@ -67,10 +71,16 @@ Resources
 - [Um pequeno guia para Data Science / Machine Learning](http://lgmoneda.github.io/2017/06/12/data-science-guide.html)
 - [Machine Learning for All](https://www.coursera.org/learn/uol-machine-learning-for-all)
 
+## Advanced Machine Learning
+
+- [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
+
 ## Deep Learning
 
 - [Deep Learning Book](http://www.deeplearningbook.org/)
 - [fast.ai vs. deeplearning.ai](https://medium.com/@markryan_69718/learning-deep-learning-fast-ai-vs-deeplearning-ai-34f9c42cf701)
+- [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python)
+- [Dive into Deep Learning](https://d2l.ai/index.html)
 
 ## Books
 
