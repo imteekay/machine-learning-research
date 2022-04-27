@@ -33,3 +33,5 @@ In this case, the data is the pixels of the image of each handwritten number 4, 
                             ...
 (bK1 * Xi1) + (bK2 * Xi2) + ... + (bKm * Xim) + b0K = ZiK
 ```
+
+This intermediate model adds more sofistication and flexibility to the predictive model. It allows us consider non-linear decision boundaries in feature space and in most cases more effective than a simple logistic regression.
