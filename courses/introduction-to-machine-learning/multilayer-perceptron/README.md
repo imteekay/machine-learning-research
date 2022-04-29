@@ -35,3 +35,9 @@ In this case, the data is the pixels of the image of each handwritten number 4, 
 ```
 
 This intermediate model adds more sofistication and flexibility to the predictive model. It allows us consider non-linear decision boundaries in feature space and in most cases more effective than a simple logistic regression.
+
+### Example: Document Analysis
+
+In this example, documents are the data or the input for the predictive model. The result we want is the probability of a person likes the document or not.
+
+The features are counts of each word in the document. And the outcome is the probability of a given person like or not the document.
