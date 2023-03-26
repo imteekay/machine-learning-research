@@ -1,3 +1,5 @@
+<samp>
+
 # Research in Machine Learning
 
 ## Table of Contents
@@ -130,3 +132,5 @@ Resources
 ## License
 
 [MIT](/LICENSE) © [TK](https://iamtk.co)
+
+</samp>
