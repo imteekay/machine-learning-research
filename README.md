@@ -1,9 +1,5 @@
 # Research in Machine Learning
 
-## What is it?
-
-This is a Learning Path about Machine Learning.
-
 ## Table of Contents
 
 Mathematics
