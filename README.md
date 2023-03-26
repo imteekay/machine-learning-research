@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-Mathematics
+### Mathematics
 
 - [Linear Algebra](#linear-algebra)
 - [Matrix Algebra](#matrix-algebra)
@@ -12,7 +12,7 @@ Mathematics
 - [Calculus](#calculus)
 - [Optimization](#optimization)
 
-Resources
+### Resources
 
 - [Data Science Fundamentals](#data-science-fundamentals)
 - [Machine Learning](#machine-learning)
