@@ -32,7 +32,7 @@
 
 ## Linear Algebra
 
-- [Linear Algebra at MIT](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/)
+- [Linear Algebra at MIT](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures)
 - [Khan Academy Probability](https://www.khanacademy.org/math/linear-algebra)
 - [Linear algebra cheat sheet for deep learning](https://towardsdatascience.com/linear-algebra-cheat-sheet-for-deep-learning-cd67aba4526c)
 
@@ -62,12 +62,12 @@
 
 ## Machine Learning
 
-- [Learning Math for Machine Learning](https://blog.ycombinator.com/learning-math-for-machine-learning/)
+- [Learning Math for Machine Learning](https://blog.ycombinator.com/learning-math-for-machine-learning)
 - [Machine Learning at CMU](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
 - [Bishop Keynotes on ML](https://www.microsoft.com/en-us/research/people/cmbishop/#!videos)
-- [Machine Learning Guides by Google](https://developers.google.com/machine-learning/guides/)
+- [Machine Learning Guides by Google](https://developers.google.com/machine-learning/guides)
 - [Machine Learning Crash Course by Google](https://developers.google.com/machine-learning/crash-course/ml-intro)
-- [Facebook Field Guide to Machine Learning](https://research.fb.com/the-facebook-field-guide-to-machine-learning-video-series/)
+- [Facebook Field Guide to Machine Learning](https://research.fb.com/the-facebook-field-guide-to-machine-learning-video-series)
 - [Um pequeno guia para Data Science / Machine Learning](http://lgmoneda.github.io/2017/06/12/data-science-guide.html)
 - [Machine Learning for All](https://www.coursera.org/learn/uol-machine-learning-for-all)
 
@@ -77,7 +77,7 @@
 
 ## Deep Learning
 
-- [Deep Learning Book](http://www.deeplearningbook.org/)
+- [Deep Learning Book](http://www.deeplearningbook.org)
 - [fast.ai vs. deeplearning.ai](https://medium.com/@markryan_69718/learning-deep-learning-fast-ai-vs-deeplearning-ai-34f9c42cf701)
 - [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python)
 - [Dive into Deep Learning](https://d2l.ai/index.html)
@@ -88,7 +88,7 @@
 - [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 - [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
 - [Python Machine Learning](https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1787125939)
-- [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/)
+- [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
 - [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
 
 ## Podcasts
@@ -97,10 +97,10 @@
 
 ## Communities
 
-- [Machine Learning Reddit](https://www.reddit.com/r/MachineLearning/)
-- [NLP Reddit](https://www.reddit.com/r/LanguageTechnology/)
-- [Statistics Reddit](https://www.reddit.com/r/statistics/)
-- [Data Science Reddit](https://www.reddit.com/r/datascience/)
+- [Machine Learning Reddit](https://www.reddit.com/r/MachineLearning)
+- [NLP Reddit](https://www.reddit.com/r/LanguageTechnology)
+- [Statistics Reddit](https://www.reddit.com/r/statistics)
+- [Data Science Reddit](https://www.reddit.com/r/datascience)
 - [Machine Learning Quora Topic](https://www.quora.com/topic/Machine-Learning)
 - [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
 - [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
