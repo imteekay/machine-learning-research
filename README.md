@@ -136,6 +136,7 @@
 ## Healthcare
 
 - [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
+- [AI in Healthcare @ Google Brain](https://www.youtube.com/watch?v=cvXVK8oqU4Q&ab_channel=AlexanderAmini)
 
 ## License
 
