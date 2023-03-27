@@ -84,6 +84,7 @@
 - [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python)
 - [Dive into Deep Learning](https://d2l.ai/index.html)
 - [Intro to Deep Learning](http://introtodeeplearning.com/2020/index.html)
+- [Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
 
 ## Books
 
