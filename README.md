@@ -86,6 +86,10 @@
 - [Intro to Deep Learning](http://introtodeeplearning.com/2020/index.html)
 - [Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
 
+## Artificial Intelligence
+
+- [Artificial Intelligence](https://www.udacity.com/course/artificial-intelligence--ud954)
+
 ## Books
 
 - [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
