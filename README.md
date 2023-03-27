@@ -88,6 +88,7 @@
 
 ## Artificial Intelligence
 
+- [AI Fundamentals](https://www.udacity.com/course/ai-fundamentals--ud099)
 - [Artificial Intelligence](https://www.udacity.com/course/artificial-intelligence--ud954)
 
 ## Books
