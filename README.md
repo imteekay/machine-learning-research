@@ -6,6 +6,7 @@
 
 ### Mathematics
 
+- [General Math](#general-math)
 - [Linear Algebra](#linear-algebra)
 - [Matrix Algebra](#matrix-algebra)
 - [Statistics](#statistics)
