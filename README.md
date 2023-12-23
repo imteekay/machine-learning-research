@@ -32,6 +32,7 @@
 - [Cancer](#cancer)
 - [Genetics](#genetics)
 - [Computational Biology](#computational-biology)
+- [Meta](#meta)
 - [Central Resources](#central-resources)
 - [Science: Q&A](#science-qa)
 
@@ -180,6 +181,8 @@
 - [Cancer: Winning the War](https://www.youtube.com/playlist?list=PL504E935D23E00B4B)
 - [The Emperor of All Maladies: A Biography of Cancer](https://www.youtube.com/watch?v=D4BGYf2Nkks&ab_channel=GBHForumNetwork)
 - [Regina Barzilay: Deep Learning for Cancer Diagnosis and Treatment](https://www.youtube.com/watch?v=x0-zGdlpTeg&ab_channel=LexFridman)
+- [Tumour heterogeneity and resistance to cancer therapies](https://www.nature.com/articles/nrclinonc.2017.166)
+- [Porque mesmo com a ciência avançando tanto, ainda não temos uma cura para o câncer?](https://threadreaderapp.com/thread/1512474043290632194.html)
 
 ### Genetics
 
@@ -190,6 +193,10 @@
 
 - [Foundations of Computational and Systems Biology](https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014)
 - [Bioinformatics](https://seen-politician-a47.notion.site/ccd895cfaee94849bc9c405a4143b4f5?v=8ca8b89a8be54d7c800a1dfe9780abfc)
+
+### Meta
+
+- [Fei-Fei Li & Demis Hassabis: Using AI to Accelerate Scientific Discovery](https://www.youtube.com/watch?v=KHFmIknP_Hc&ab_channel=StanfordHAI)
 
 ### Central Resources
 
