@@ -12,7 +12,7 @@
 - [Calculus](#calculus)
 - [Optimization](#optimization)
 
-### Resources
+### Machine Learning
 
 - [Data Science Fundamentals](#data-science-fundamentals)
 - [Machine Learning](#machine-learning)
