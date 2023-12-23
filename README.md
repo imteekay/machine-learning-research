@@ -29,6 +29,7 @@
 ### Science
 
 - [Fundamentals](#fundamentals)
+- [Cancer](#cancer)
 
 ## Mathematics
 
@@ -149,6 +150,7 @@
 - [Healthcare’s AI Future: A Conversation with Fei-Fei Li & Andrew Ng](https://www.youtube.com/watch?v=Gbnep6RJinQ&ab_channel=StanfordHAI)
 - [AI and the Future of Health](https://www.microsoft.com/en-us/research/blog/ai-and-the-future-of-health)
 - [Aplicações de Deep Learning a Genética](https://www.youtube.com/watch?v=GiL6RnXLjvI)
+- [Daphne Koller: Biomedicine and Machine Learning](https://www.youtube.com/watch?v=xlMTWfkQqbY&ab_channel=LexFridman)
 
 ## Science
 
@@ -160,6 +162,19 @@
 - [Intro to Chemistry](https://www.khanacademy.org/science/chemistry)
 - [Organic Chemistry](https://www.khanacademy.org/science/organic-chemistry)
 - [Introductory Biology](https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018)
+
+### Cancer
+
+- [Introduction to the Biology of Cancer](https://www.coursera.org/learn/cancer)
+- [Understanding Prostate Cancer](https://www.coursera.org/learn/prostate-cancer)
+- [Understanding Cancer Metastasis](https://www.coursera.org/learn/cancer-metastasis)
+- [Ask a Researcher: Working in a Cancer Research Lab](https://www.youtube.com/watch?v=YJ8Fk6iLxdg&list=TLPQMjUwNDIwMjIX07N_vVhBIQ&index=5&ab_channel=NationalCancerInstitute)
+- [What Causes Cancer?](https://www.youtube.com/watch?v=UlHK3Y_c5Wo&ab_channel=UniversityofCaliforniaTelevision%28UCTV%29)
+- [What is Cancer?](https://www.youtube.com/watch?v=2X5kw3mVk08&ab_channel=UniversityofCaliforniaTelevision%28UCTV%29)
+- [How is Cancer Diagnosed?](https://www.youtube.com/watch?v=oSOJbu5uqJE&ab_channel=UniversityofCaliforniaTelevision%28UCTV%29)
+- [Cancer: Winning the War](https://www.youtube.com/playlist?list=PL504E935D23E00B4B)
+- [The Emperor of All Maladies: A Biography of Cancer](https://www.youtube.com/watch?v=D4BGYf2Nkks&ab_channel=GBHForumNetwork)
+- [Regina Barzilay: Deep Learning for Cancer Diagnosis and Treatment](https://www.youtube.com/watch?v=x0-zGdlpTeg&ab_channel=LexFridman)
 
 ## License
 
