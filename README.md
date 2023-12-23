@@ -26,30 +26,32 @@
 - [Data Science Journey](#data-science-journey)
 - [ML/AI & Healthcare](#healthcare)
 
-## General Math
+## Mathematics
+
+### General Math
 
 - [Data Science Math Skills](https://www.coursera.org/learn/datasciencemathskills)
 - [Mathematics of Big Data and Machine Learning](https://ocw.mit.edu/courses/res-ll-005-mathematics-of-big-data-and-machine-learning-january-iap-2020)
 
-## Linear Algebra
+### Linear Algebra
 
 - [Linear Algebra at MIT](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures)
 - [Khan Academy Probability](https://www.khanacademy.org/math/linear-algebra)
 - [Linear algebra cheat sheet for deep learning](https://towardsdatascience.com/linear-algebra-cheat-sheet-for-deep-learning-cd67aba4526c)
 
-## Matrix Algebra
+### Matrix Algebra
 
-## Statistics
+### Statistics
 
 - [Khan Academy Probability](https://www.khanacademy.org/math/probability)
 - [Inferential Statistics](https://br.udacity.com/course/intro-to-inferential-statistics--ud201)
 - [Introduction to Statistics](https://www.coursera.org/learn/stanford-statistics)
 
-## Calculus
+### Calculus
 
 - [Khan Academy Calculus](https://www.khanacademy.org/math/multivariable-calculus)
 
-## Optimization
+### Optimization
 
 - [Convex Optimization](https://web.stanford.edu/class/ee364a/videos.html)
 
