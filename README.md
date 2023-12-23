@@ -55,7 +55,9 @@
 
 - [Convex Optimization](https://web.stanford.edu/class/ee364a/videos.html)
 
-## Data Science Fundamentals
+## Machine Learning
+
+### Data Science Fundamentals
 
 - [Fundamental Python Data Science Libraries: Numpy](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-1-4-58884e95c2bd)
 - [Fundamental Python Data Science Libraries: Pandas](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-2-4-fcf5fab9cdf1)
@@ -63,7 +65,7 @@
 - [Fundamental Python Data Science Libraries: Scikit-Learn](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-4-4-fd8895ef85d5)
 - [Data Engineering Roadmap](https://github.com/hasbrain/data-engineer-roadmap)
 
-## Machine Learning
+### Machine Learning
 
 - [Introduction to Machine Learning Course](https://www.udacity.com/course/intro-to-machine-learning--ud120)
 - [Learning Math for Machine Learning](https://blog.ycombinator.com/learning-math-for-machine-learning)
@@ -76,11 +78,11 @@
 - [Machine Learning for All](https://www.coursera.org/learn/uol-machine-learning-for-all)
 - [Reinforcement Learning](https://www.udacity.com/course/reinforcement-learning--ud600)
 
-## Advanced Machine Learning
+### Advanced Machine Learning
 
 - [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
 
-## Deep Learning
+### Deep Learning
 
 - [Deep Learning Book](http://www.deeplearningbook.org)
 - [fast.ai vs. deeplearning.ai](https://medium.com/@markryan_69718/learning-deep-learning-fast-ai-vs-deeplearning-ai-34f9c42cf701)
@@ -89,12 +91,12 @@
 - [Intro to Deep Learning](http://introtodeeplearning.com/2020/index.html)
 - [Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
 
-## Artificial Intelligence
+### Artificial Intelligence
 
 - [AI Fundamentals](https://www.udacity.com/course/ai-fundamentals--ud099)
 - [Artificial Intelligence](https://www.udacity.com/course/artificial-intelligence--ud954)
 
-## Books
+### Books
 
 - [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 - [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
@@ -102,11 +104,11 @@
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
 - [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
 
-## Podcasts
+### Podcasts
 
 - [Data Science, Past, Present and Future with Hilary Mason](https://www.datacamp.com/community/podcast/data-science-past-present-and-future)
 
-## Communities
+### Communities
 
 - [Machine Learning Reddit](https://www.reddit.com/r/MachineLearning)
 - [NLP Reddit](https://www.reddit.com/r/LanguageTechnology)
@@ -116,7 +118,7 @@
 - [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
 - [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
 
-## Online Courses
+### Online Courses
 
 - [Preprocessing for Machine Learning in Python](https://www.datacamp.com/courses/preprocessing-for-machine-learning-in-python)
 - [Computer Science for Artificial Intelligence](https://www.edx.org/professional-certificate/harvardx-computer-science-for-artifical-intelligence)
@@ -125,18 +127,18 @@
 - [Machine Learning Stanford Course](https://www.coursera.org/learn/machine-learning)
 - [Machine Learning with Python](https://www.coursera.org/learn/machine-learning-with-python)
 
-## Questions and Answers
+### Questions and Answers
 
 - [Andrew Ng's answer on "How should you start a career in Machine Learning?"](https://www.quora.com/How-should-you-start-a-career-in-Machine-Learning)
 - [How do I learn mathematics for machine learning?](https://www.quora.com/How-do-I-learn-mathematics-for-machine-learning)
 - [How do I learn machine learning?](https://www.quora.com/How-do-I-learn-machine-learning-1)
 
-## Data Science Journey
+### Data Science Journey
 
 - [How to land a Data Scientist job at your dream company — My journey to Airbnb](https://towardsdatascience.com/how-to-land-a-data-scientist-job-at-your-dream-company-my-journey-to-airbnb-f6a1e99892e8)
 - [How to build a data science project from scratch](https://medium.freecodecamp.org/how-to-build-a-data-science-project-from-scratch-dc4f096a62a1)
 
-## Healthcare
+### Healthcare
 
 - [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
 - [AI in Healthcare @ Google Brain](https://www.youtube.com/watch?v=cvXVK8oqU4Q&ab_channel=AlexanderAmini)
