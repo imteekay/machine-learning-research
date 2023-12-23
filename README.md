@@ -30,6 +30,7 @@
 
 - [Fundamentals](#fundamentals)
 - [Cancer](#cancer)
+- [Genetics](#genetics)
 
 ## Mathematics
 
@@ -176,6 +177,11 @@
 - [Cancer: Winning the War](https://www.youtube.com/playlist?list=PL504E935D23E00B4B)
 - [The Emperor of All Maladies: A Biography of Cancer](https://www.youtube.com/watch?v=D4BGYf2Nkks&ab_channel=GBHForumNetwork)
 - [Regina Barzilay: Deep Learning for Cancer Diagnosis and Treatment](https://www.youtube.com/watch?v=x0-zGdlpTeg&ab_channel=LexFridman)
+
+### Genetics
+
+- [Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics)
+- [Classical papers in molecular genetics](https://www.coursera.org/learn/papers-molecular-genetics)
 
 ## License
 
