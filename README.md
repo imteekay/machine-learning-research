@@ -31,6 +31,7 @@
 - [Fundamentals](#fundamentals)
 - [Cancer](#cancer)
 - [Genetics](#genetics)
+- [Computational Biology](#computational-biology)
 
 ## Mathematics
 
@@ -182,6 +183,11 @@
 
 - [Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics)
 - [Classical papers in molecular genetics](https://www.coursera.org/learn/papers-molecular-genetics)
+
+### Computational Biology
+
+- [Foundations of Computational and Systems Biology](https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014)
+- [Bioinformatics](https://seen-politician-a47.notion.site/ccd895cfaee94849bc9c405a4143b4f5?v=8ca8b89a8be54d7c800a1dfe9780abfc)
 
 ## License
 
