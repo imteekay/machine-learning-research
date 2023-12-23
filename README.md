@@ -19,7 +19,7 @@
 - [Deep Learning](#deep-learning)
 - [Books](#books)
 - [Podcasts](#podcasts)
-- [Communities](#communites)
+- [Communities](#communities)
 - [Online Courses](#online-courses)
 - [Q&A: how to start learning Machine Learning](#questions-and-answers)
 - [Data Science Journey](#data-science-journey)
