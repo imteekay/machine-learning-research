@@ -26,6 +26,10 @@
 - [Data Science Journey](#data-science-journey)
 - [ML/AI & Healthcare](#healthcare)
 
+### Science
+
+- [Fundamentals](#fundamentals)
+
 ## Mathematics
 
 ### General Math
@@ -145,6 +149,17 @@
 - [Healthcare’s AI Future: A Conversation with Fei-Fei Li & Andrew Ng](https://www.youtube.com/watch?v=Gbnep6RJinQ&ab_channel=StanfordHAI)
 - [AI and the Future of Health](https://www.microsoft.com/en-us/research/blog/ai-and-the-future-of-health)
 - [Aplicações de Deep Learning a Genética](https://www.youtube.com/watch?v=GiL6RnXLjvI)
+
+## Science
+
+### Fundamentals
+
+- [AP Biology](https://www.khanacademy.org/science/ap-biology)
+- [AP Chemistry](https://www.khanacademy.org/science/ap-chemistry-beta)
+- [Intro to Biology](https://www.khanacademy.org/science/biology)
+- [Intro to Chemistry](https://www.khanacademy.org/science/chemistry)
+- [Organic Chemistry](https://www.khanacademy.org/science/organic-chemistry)
+- [Introductory Biology](https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018)
 
 ## License
 
