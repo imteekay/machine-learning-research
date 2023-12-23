@@ -32,6 +32,7 @@
 - [Cancer](#cancer)
 - [Genetics](#genetics)
 - [Computational Biology](#computational-biology)
+- [Central Resources](#central-resources)
 
 ## Mathematics
 
@@ -188,6 +189,18 @@
 
 - [Foundations of Computational and Systems Biology](https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014)
 - [Bioinformatics](https://seen-politician-a47.notion.site/ccd895cfaee94849bc9c405a4143b4f5?v=8ca8b89a8be54d7c800a1dfe9780abfc)
+
+### Central Resources
+
+- [Armando Hasudungan](https://www.youtube.com/user/armandohasudungan)
+- [John Gilmore M.D.](https://www.youtube.com/channel/UCqBho4rDGlST_PY5I2Bh9yQ)
+- [Dr. Najeeb Lectures](https://www.youtube.com/channel/UCPHpx55tgrbm8FrYYCflAHw)
+- [MedCram - Medical Lectures Explained CLEARLY](https://www.youtube.com/channel/UCG-iSMVtWbbwDDXgXXypARQ)
+- [nabil ebraheim](https://www.youtube.com/user/nabilebraheim)
+- [Strong Medicine](https://www.youtube.com/channel/UCFq5vPnNRNNNysLrktz4aSw)
+- [Cancer Research Demystified](https://www.youtube.com/c/CancerResearchDemystified/featured)
+- [Cancer.Net](https://www.cancer.net)
+- [Books on Computational Molecular Biology](https://mitpress.mit.edu/books/series/computational-molecular-biology)
 
 ## License
 
