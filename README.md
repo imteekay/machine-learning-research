@@ -7,6 +7,7 @@
 ### Mathematics
 
 - [General Math](#general-math)
+- [How to learn mathematics](#how-to-learn-mathematics)
 - [Linear Algebra](#linear-algebra)
 - [Matrix Algebra](#matrix-algebra)
 - [Statistics](#statistics)
@@ -42,6 +43,17 @@
 
 - [Data Science Math Skills](https://www.coursera.org/learn/datasciencemathskills)
 - [Mathematics of Big Data and Machine Learning](https://ocw.mit.edu/courses/res-ll-005-mathematics-of-big-data-and-machine-learning-january-iap-2020)
+
+### How to learn mathematics
+
+- [How to study math — Jo Boaler](https://www.youtube.com/watch?v=pRsutB2NhLk&list=TLPQMjkwNzIwMjND3tvET8TH0g&index=2&ab_channel=LexClips)
+- [How To Self-Study Math](https://www.youtube.com/watch?v=fb_v5Bc8PSk&list=TLPQMjkwNzIwMjND3tvET8TH0g&index=3&ab_channel=TheMathSorcerer)
+- [How to learn physics & math](https://www.youtube.com/watch?v=klEFaIZuiYk&list=TLPQMjkwNzIwMjND3tvET8TH0g&index=4&ab_channel=Tibees)
+- [Best Way to Learn Math](https://www.youtube.com/watch?v=zvrleanEYOw&list=TLPQMjkwNzIwMjND3tvET8TH0g&index=5&ab_channel=LexClips)
+- [How to learn math — Jordan Ellenberg](https://www.youtube.com/watch?v=UcpmwBOVp44&list=TLPQMjkwNzIwMjND3tvET8TH0g&index=6&ab_channel=LexClips)
+- [Learn Mathematics from START to FINISH](https://www.youtube.com/watch?v=pTnEG_WGd2Q&t=17s&ab_channel=TheMathSorcerer)
+- [How to Learn Math](https://math.ucr.edu/home/baez/books.html#math)
+- [Why Learn Discrete Math?](https://www.youtube.com/watch?v=oJhAPsy9hBU&ab_channel=Intermation)
 
 ### Linear Algebra
 
