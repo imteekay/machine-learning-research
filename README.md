@@ -140,6 +140,7 @@
 - [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
 - [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
 - [Lee Lab of AI for bioMedical Sciences](https://suinlee.cs.washington.edu)
+- [Lab of big data and predictive analysis in healthcare](https://www.fsp.usp.br/labdaps)
 
 ### Online Courses
 
