@@ -83,6 +83,7 @@
 ### Learning Roadmap
 
 - [Machine Learning Roadmap 2022](https://www.youtube.com/watch?v=y4o9hrSCDPI&list=TLPQMzAxMjIwMjMIRqKttLLFsg&index=3&ab_channel=SmithaKolan-MachineLearningEngineer)
+- [How to learn AI and ML](https://www.youtube.com/watch?v=KEB-w9DUdCw&ab_channel=PythonProgrammer)
 
 ### Data Science Fundamentals
 
