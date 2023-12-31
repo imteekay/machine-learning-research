@@ -118,6 +118,7 @@
 - [Dive into Deep Learning](https://d2l.ai/index.html)
 - [Intro to Deep Learning](http://introtodeeplearning.com/2020/index.html)
 - [Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
+- [Deep Learning Research and the Future of AI](https://www.youtube.com/watch?v=5BrNt38OraE&ab_channel=MicrosoftResearch)
 
 ### Artificial Intelligence
 
