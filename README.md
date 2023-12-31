@@ -222,6 +222,7 @@
 
 - [Fei-Fei Li & Demis Hassabis: Using AI to Accelerate Scientific Discovery](https://www.youtube.com/watch?v=KHFmIknP_Hc&ab_channel=StanfordHAI)
 - [Science is the great giver](https://www.gatesnotes.com/European-Innovation)
+- [The Age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun)
 
 ### Central Resources
 
