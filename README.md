@@ -16,6 +16,7 @@
 
 ### Machine Learning
 
+- [Learning Roadmap](#learning-roadmap)
 - [Data Science Fundamentals](#data-science-fundamentals)
 - [Machine Learning](#machine-learning)
 - [Deep Learning](#deep-learning)
@@ -78,6 +79,10 @@
 - [Convex Optimization](https://web.stanford.edu/class/ee364a/videos.html)
 
 ## Machine Learning
+
+### Learning Roadmap
+
+- [Machine Learning Roadmap 2022](https://www.youtube.com/watch?v=y4o9hrSCDPI&list=TLPQMzAxMjIwMjMIRqKttLLFsg&index=3&ab_channel=SmithaKolan-MachineLearningEngineer)
 
 ### Data Science Fundamentals
 
