@@ -4,39 +4,34 @@
 
 ## Table of Contents
 
-### Mathematics
-
-- [General Math](#general-math)
-- [How to learn mathematics](#how-to-learn-mathematics)
-- [Linear Algebra](#linear-algebra)
-- [Matrix Algebra](#matrix-algebra)
-- [Statistics](#statistics)
-- [Calculus](#calculus)
-- [Optimization](#optimization)
-
-### Machine Learning
-
-- [Learning Roadmap](#learning-roadmap)
-- [Data Science Fundamentals](#data-science-fundamentals)
+- [Mathematics](#mathematics)
+  - [General Math](#general-math)
+  - [How to learn mathematics](#how-to-learn-mathematics)
+  - [Linear Algebra](#linear-algebra)
+  - [Matrix Algebra](#matrix-algebra)
+  - [Statistics](#statistics)
+  - [Calculus](#calculus)
+  - [Optimization](#optimization)
 - [Machine Learning](#machine-learning)
-- [Deep Learning](#deep-learning)
-- [Books](#books)
-- [Podcasts](#podcasts)
-- [Communities](#communities)
-- [Online Courses](#online-courses)
-- [Q&A: how to start learning Machine Learning](#questions-and-answers)
-- [Data Science Journey](#data-science-journey)
-- [ML/AI & Healthcare](#healthcare)
-
-### Science
-
-- [Fundamentals](#fundamentals)
-- [Cancer](#cancer)
-- [Genetics](#genetics)
-- [Computational Biology](#computational-biology)
-- [Meta](#meta)
-- [Central Resources](#central-resources)
-- [Science: Q&A](#science-qa)
+  - [Learning Roadmap](#learning-roadmap)
+  - [Data Science Fundamentals](#data-science-fundamentals)
+  - [Machine Learning](#machine-learning)
+  - [Deep Learning](#deep-learning)
+  - [Books](#books)
+  - [Podcasts](#podcasts)
+  - [Communities](#communities)
+  - [Online Courses](#online-courses)
+  - [Q&A: how to start learning Machine Learning](#questions-and-answers)
+  - [Data Science Journey](#data-science-journey)
+  - [ML/AI & Healthcare](#healthcare)
+- [Science](#science)
+  - [Fundamentals](#fundamentals)
+  - [Cancer](#cancer)
+  - [Genetics](#genetics)
+  - [Computational Biology](#computational-biology)
+  - [Meta](#meta)
+  - [Central Resources](#central-resources)
+  - [Science: Q&A](#science-qa)
 
 ## Mathematics
 
