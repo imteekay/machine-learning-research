@@ -207,6 +207,7 @@
 
 - [Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics)
 - [Classical papers in molecular genetics](https://www.coursera.org/learn/papers-molecular-genetics)
+- [Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
 
 ### Computational Biology
 
