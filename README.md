@@ -232,6 +232,7 @@
 - [Cancer Research Demystified](https://www.youtube.com/c/CancerResearchDemystified/featured)
 - [Cancer.Net](https://www.cancer.net)
 - [Books on Computational Molecular Biology](https://mitpress.mit.edu/books/series/computational-molecular-biology)
+- [Obenauf Lab](https://www.obenauflab.com)
 
 ### Science: Q&A
 
