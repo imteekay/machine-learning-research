@@ -1,6 +1,6 @@
 <samp>
 
-# Research in Machine Learning
+# Science & ML Research
 
 ## Table of Contents
 
@@ -176,7 +176,6 @@
 - [Aplicações de Deep Learning a Genética](https://www.youtube.com/watch?v=GiL6RnXLjvI)
 - [Daphne Koller: Biomedicine and Machine Learning](https://www.youtube.com/watch?v=xlMTWfkQqbY&ab_channel=LexFridman)
 - [Data and resource needs for machine learning in genomics](https://www.youtube.com/watch?v=kjQ-8LFkeaA&ab_channel=NationalHumanGenomeResearchInstitute)
-- [Panel Discussion: Transforming the Natural Sciences with AI](https://www.youtube.com/watch?v=HxtIEyTzyX0&ab_channel=MicrosoftResearch)
 
 ## Science
 
