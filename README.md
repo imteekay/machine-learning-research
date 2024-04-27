@@ -180,6 +180,7 @@
 - [Daphne Koller: Biomedicine and Machine Learning](https://www.youtube.com/watch?v=xlMTWfkQqbY&ab_channel=LexFridman)
 - [Data and resource needs for machine learning in genomics](https://www.youtube.com/watch?v=kjQ-8LFkeaA&ab_channel=NationalHumanGenomeResearchInstitute)
 - [Machine Learning para Predições em Saúde](https://www.youtube.com/playlist?list=PLpvV74h3lihLdYrlnhlx_phy4pFZeZsKx)
+- [Inteligência Artificial em Saúde](https://www.youtube.com/playlist?list=PLAudUnJeNg4tvUFZ8tXQDoAkFAASQzOHm)
 
 ## Science
 
