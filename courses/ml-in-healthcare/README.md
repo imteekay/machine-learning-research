@@ -74,3 +74,22 @@ Como o IMC e Dieta influenciam em gerar problemas de Glicemia
     - colinearidade
     - valores missing
     - one-hot encoding
+
+## Sobreajuste
+
+- É o principal problema de ML
+- Não é generalizável: funciona muito bem para a amostra atual mas não para dados futuros - influenciado por fatores aleatórios e erros de medidas
+- tradeoff entre viés e variância
+  - Variação alta (overfit): modela perfeitamente todos os dados, muito complexo, mas não entendeu o padrão dos dados
+  - Viés alto (underfit): não tem um bom fit com os dados, bem simplista, não entendeu o padrão dos dados
+- Como avaliar se o modelo está com sobreajuste?
+  - Testando com novos dados
+  - Com dados que o algoritmo nunca viu e a performance do modelo cair, então o modelo tem sobreajuste
+  - e.g. modelo treinado com dados de 2023 e testado com dados de 2024
+  - e.g. separar dados aleatoriamente
+    - Dados para treino: 70-80% para definir o modelo
+    - Dados para teste: 20-30% para analisar a performance preditiva
+    - Garantir que tanto os dados de teste quanto os dados de treino tenham distribuição parecidas
+      - e.g. 30% dos dados tem pessoas com hipertensão tanto para treino quanto para teste
+- Utilizar parâmetros e hiperparametros para segurar ou impedir que o modelo fique muito complexo
+  - Errar mais no treino e acertar mais no teste (sempre focado nos dados do futuro)
