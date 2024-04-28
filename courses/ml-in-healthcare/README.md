@@ -26,3 +26,8 @@ Glicemia           IMC       Dieta
 ```
 
 Como o IMC e Dieta influenciam em gerar problemas de Glicemia
+
+## Basic Resources
+
+- [Applied Predictive Modeling](https://www.goodreads.com/en/book/show/17299542)
+- [An Introduction to Statistical Learning: with Applications in Python](https://www.goodreads.com/book/show/178815107-an-introduction-to-statistical-learning)
