@@ -93,3 +93,31 @@ Como o IMC e Dieta influenciam em gerar problemas de Glicemia
       - e.g. 30% dos dados tem pessoas com hipertensão tanto para treino quanto para teste
 - Utilizar parâmetros e hiperparametros para segurar ou impedir que o modelo fique muito complexo
   - Errar mais no treino e acertar mais no teste (sempre focado nos dados do futuro)
+
+## Algoritmos de Machine Learning
+
+- Como cada algoritmo procura padrões nos dados
+- Tomadas de decisão para utilização de algoritmos
+  - Inferência ou predição? procurar relações nos dados/variáveis ou predizer o que pode acontecer no futuro?
+  - Qual o tipo de problema? supervisionado, não-supervisionado, semi-supervisionado, por reforço?
+  - Problema de classificação ou de regressão?
+    - Classificação: desfecho a ser predito são categorias
+    - Regressão: desfecho é contínuo
+  - Selecionar variáveis plausíveis
+  - Evitar vazamento de dados
+  - Padronização de variáveis contínuas
+  - Excluir variáveis correlacionais - para deixar o modelo mais estável
+  - Utilização de técnica de redução de dimensão (e.g. PCA)
+  - O que fazer com valores missing?
+  - Utilização de one-hot encoding para preditores categoricos?
+  - Divisão da amostra entre treino e teste (terceira divisão para testar os hiperparâmetros)
+  - Quais hiperparâmetros olhar?
+  - Utilização de validação cruzadas? 10-folds?
+  - Quais algoritmos testar?
+- Regressões
+  - Comuns em estudo de inferência: relação entre variáveis
+  - Mas também pode ser usado em predição
+  - Regressão Linear (desfecho contínuo - resultado pode assumir qualquer valor infinito):
+    - Usado para predizer valores numéricos: preços de casas, preços de stock option, temperatura
+  - Regressão Logística (desfecho categórico - resultado "binário" assume um valor dentro de um conjunto de classes/categories):
+    - Usado para classificar e resultar em valores binários: spam, risco de crédito, diagnóstico médico
