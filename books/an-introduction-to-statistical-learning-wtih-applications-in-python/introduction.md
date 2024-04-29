@@ -6,4 +6,4 @@
 - Regression: predicting a continuous or quantitative output value
   - e.g. Wage data: having wage, age, education level, and wage in years, we can predict a continuous output value, the wage for a specific example
 - Classification: predict a non-numerical value, a categorical or qualitative output
-  - e.g. Stock Market data: in a given day, the stock market performance will fall into the Up bucket or the Down bucket
+  - e.g. Stock Market data: in a given day, the stock market performance will fall into the `Up` bucket or the `Down` bucket
