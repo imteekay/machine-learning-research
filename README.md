@@ -181,6 +181,7 @@
 - [Data and resource needs for machine learning in genomics](https://www.youtube.com/watch?v=kjQ-8LFkeaA&ab_channel=NationalHumanGenomeResearchInstitute)
 - [Machine Learning para Predições em Saúde](https://www.youtube.com/playlist?list=PLpvV74h3lihLdYrlnhlx_phy4pFZeZsKx)
 - [Inteligência Artificial em Saúde](https://www.youtube.com/playlist?list=PLAudUnJeNg4tvUFZ8tXQDoAkFAASQzOHm)
+- [[Course] Collaborative Data Science for Healthcare](https://www.edx.org/learn/data-science/massachusetts-institute-of-technology-collaborative-data-science-for-healthcare)
 
 ## Science
 
