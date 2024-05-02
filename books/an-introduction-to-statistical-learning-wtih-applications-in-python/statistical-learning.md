@@ -13,9 +13,24 @@
 - e.g. predicting the risk of a drug reaction based on blood characteristics
   - `X1`, `X2`, `X3`, ... `Xp` are characteristics of a patient’s blood sample
   - `Y` is a variable encoding the patient’s risk for a severe adverse reaction to a particular drug
+- e.g. Marketing campaign: identify individuals who are likely to respond positively to a mailing
+  - predictors: demographic variables
+  - outcome: response to the campaign
 - Errors in predictions
   - Reducible error: whenever we're estimating `f`, it won't be perfect and the inaccuracy will introduce some error. Because we can potentially improve the accuracy using the most appropriate statistical learning technique, this error is called reducible error
   - Irreducible error: some factors are not counted in the model producing errors in the prediction that cannot be eliminated
     - e.g. 1 - human error when collecting data
     - e.g. 2 - randomness events, for example, factors like market sentiment can make stock prices fluctuate
     - e.g. 3 - missing variables, important variables that are not included in the model due to limitations in data availability or lack of understanding
+
+## Inference
+
+- We want to understand the exact form of `f`, the association between `Y` and `X1`, ..., `Xp`.
+- A set of questions to help understand `f`
+  - Which predictors are associated with the response? Only a small fraction of the available predictors are substantially associated with Y
+  - What is the relationship between the response and each predictor? Positive or negative relationship and dependent on the values of the other predictors
+  - Can the relationship between Y and each predictor be adequately summarized using a linear equation, or is the relationship more complicated? If it's too complex, a linear model may not provide an accurate representation of the relationship between the input and output variables
+- e.g. Advertising through different media
+  - Which media are associated with sales?
+  - Which media generate the biggest boost in sales? or
+  - How large of an increase in sales is associated with a given increase in TV advertising?
