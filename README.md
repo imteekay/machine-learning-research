@@ -158,6 +158,7 @@
 - [Machine Learning Crash Course with TensorFlow APIs](https://developers.google.com/machine-learning/crash-course)
 - [Machine Learning Stanford Course](https://www.coursera.org/learn/machine-learning)
 - [Machine Learning with Python](https://www.coursera.org/learn/machine-learning-with-python)
+- [Math for Machine Learning with Python](https://www.edx.org/learn/math/edx-math-for-machine-learning-with-python)
 
 ### Questions and Answers
 
