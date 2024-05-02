@@ -49,3 +49,9 @@
     - `f(x) = Ave(Y|X ∈ N(x))`, where `N(x)` is some neighborhood of `X`
     - Form a window for `X` to find `Y` in the "neighborhood"
     - The concept is called "Nearest neighbor" or "local average"
+
+## Dimensionality and Structured Models
+
+- The bigger the dimensions, more complex the model
+- Curse of dimensionality: More dimensions means commonly more sparse data (neasrest neighbors tend to be far away in high dimensions)
+  - e.g. to 10% neighborhood in 1 dimension can be straighforward. But in high dimensions, it may lose the spirit of estimating because it may no longer be local
