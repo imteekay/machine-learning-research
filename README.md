@@ -158,6 +158,8 @@
 - [Machine Learning Crash Course with TensorFlow APIs](https://developers.google.com/machine-learning/crash-course)
 - [Machine Learning Stanford Course](https://www.coursera.org/learn/machine-learning)
 - [Machine Learning with Python](https://www.coursera.org/learn/machine-learning-with-python)
+- [Math for Machine Learning with Python](https://www.edx.org/learn/math/edx-math-for-machine-learning-with-python)
+- [Machine Learning with Python: from Linear Models to Deep Learning](https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-with-python-from-linear-models-to-deep-learning)
 
 ### Questions and Answers
 
@@ -181,6 +183,10 @@
 - [Data and resource needs for machine learning in genomics](https://www.youtube.com/watch?v=kjQ-8LFkeaA&ab_channel=NationalHumanGenomeResearchInstitute)
 - [Machine Learning para Predições em Saúde](https://www.youtube.com/playlist?list=PLpvV74h3lihLdYrlnhlx_phy4pFZeZsKx)
 - [Inteligência Artificial em Saúde](https://www.youtube.com/playlist?list=PLAudUnJeNg4tvUFZ8tXQDoAkFAASQzOHm)
+- [[Course] Collaborative Data Science for Healthcare](https://www.edx.org/learn/data-science/massachusetts-institute-of-technology-collaborative-data-science-for-healthcare)
+- [[Course] Data Analytics and Visualization in Health Care](https://www.edx.org/learn/data-analysis/rochester-institute-of-technology-data-analytics-and-visualization-in-health-care)
+- [[Course] Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
+- [[Course] Introduction to Genomic Data Science](https://www.edx.org/learn/bioinformatics/the-university-of-california-san-diego-introduction-to-genomic-data-science)
 
 ## Science
 
@@ -214,6 +220,8 @@
 - [Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics)
 - [Classical papers in molecular genetics](https://www.coursera.org/learn/papers-molecular-genetics)
 - [Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
+- [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
+- [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
 
 ### Computational Biology
 
