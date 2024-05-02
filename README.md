@@ -221,6 +221,7 @@
 - [Classical papers in molecular genetics](https://www.coursera.org/learn/papers-molecular-genetics)
 - [Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
 - [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
+- [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
 
 ### Computational Biology
 
