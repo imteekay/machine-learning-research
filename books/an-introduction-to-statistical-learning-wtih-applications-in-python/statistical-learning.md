@@ -55,3 +55,7 @@
 - The bigger the dimensions, more complex the model
 - Curse of dimensionality: More dimensions means commonly more sparse data (neasrest neighbors tend to be far away in high dimensions)
   - e.g. to 10% neighborhood in 1 dimension can be straighforward. But in high dimensions, it may lose the spirit of estimating because it may no longer be local
+- Provide structure to models
+  - Linear model as a parametric model: `f(X) = B0 + B1*X1 + B2*X2 + B3*X3 + ... + Bp*Xp`
+  - `p + 1` parameters: `B0`, `B1`, ..., `Bp`
+  - A linear model draws a straight line through the data that best fits the patterns they see
