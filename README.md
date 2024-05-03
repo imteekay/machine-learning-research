@@ -187,6 +187,7 @@
 - [[Course] Data Analytics and Visualization in Health Care](https://www.edx.org/learn/data-analysis/rochester-institute-of-technology-data-analytics-and-visualization-in-health-care)
 - [[Course] Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
 - [[Course] Introduction to Genomic Data Science](https://www.edx.org/learn/bioinformatics/the-university-of-california-san-diego-introduction-to-genomic-data-science)
+- [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/pdf/2404.18416)
 
 ## Science
 
