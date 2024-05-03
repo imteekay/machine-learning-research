@@ -71,3 +71,8 @@
   - Overfitting: A model with high variance tends to be too complex and may capture noise or random fluctuations in the training data
   - Error introduced by the model's sensitivity to the training data
 - The bias-variance tradeoff arises because reducing bias often increases variance and vice versa. The goal is to find the right balance between bias and variance to minimize the overall prediction error of the model on unseen data.
+
+## Classification
+
+- For classification problems, the response variable Y is qualitative
+  - e.g. email is one of C = (spam,ham), where ham is "good email"
