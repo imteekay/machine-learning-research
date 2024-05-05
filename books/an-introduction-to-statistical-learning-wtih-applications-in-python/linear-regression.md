@@ -35,3 +35,10 @@
 - Correlated predictors
   - The variance of all coefficients tends to increase, meaning there are larger standard error, indicating "uncertainty" and worse coefficient estimation precision.
   - Interpretations become hard — when Xⱼ changes, everything else changes
+
+## Important questions
+
+1. Is at least one of the predictors useful in predicting the response?
+2. Do the predictors on the whole have anything to say about the outcome?
+3. How well does the model fit the data?
+4. Given a set of predictor values, what response value should we predict, and how accurate is our prediction?
