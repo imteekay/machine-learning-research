@@ -26,6 +26,7 @@
   - [ML/AI & Healthcare](#healthcare)
 - [Science](#science)
   - [Fundamentals](#fundamentals)
+  - [Science](#science-1)
   - [Cancer](#cancer)
   - [Genetics](#genetics)
   - [Computational Biology](#computational-biology)
@@ -199,6 +200,11 @@
 - [Intro to Chemistry](https://www.khanacademy.org/science/chemistry)
 - [Organic Chemistry](https://www.khanacademy.org/science/organic-chemistry)
 - [Introductory Biology](https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018)
+
+### Science
+
+- [AI Case Studies for Natural Science Research](https://www.youtube.com/watch?v=rfPQ2y857eM&ab_channel=MicrosoftResearch)
+- [How AI Is Unlocking the Secrets of Nature and the Universe](https://www.youtube.com/watch?v=0_M_syPuFos&ab_channel=TED)
 
 ### Cancer
 
