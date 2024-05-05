@@ -229,6 +229,7 @@
 - [Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
 - [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
 - [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
+- [[Course] Genomic Medicine Gets Personal](https://www.edx.org/learn/bioinformatics/georgetown-university-genomic-medicine-gets-personal)
 
 ### Computational Biology
 
