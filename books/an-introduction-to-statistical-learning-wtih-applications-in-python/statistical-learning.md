@@ -76,3 +76,9 @@
 
 - For classification problems, the response variable Y is qualitative
   - e.g. email is one of C = (spam,ham), where ham is "good email"
+
+## Assessing Model Accuracy
+
+- In the regression setting, the most commonly-used measure is the mean squared error (MSE)
+- When estimating `f(x)`, if we have an increase of test MSE when increasing the model's flexibility, we have an overfitting problem, meaning that the model is finding random patterns and not having a good accuracy in estimating `f(x)`.
+  - Overfitting refers specifically to the case in which a less flexible model would have yielded a smaller test MSE.
