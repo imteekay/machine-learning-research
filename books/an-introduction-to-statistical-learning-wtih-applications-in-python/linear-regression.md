@@ -16,7 +16,7 @@
   - e.g. of multiple linear regression:
     - `Y = β₀ + β₁ x X₁ + β₂ x X₂ + β₃ x X₃ + ϵ`
     - `sales = β₀ + β₁ x TV + β₂ x radio + β₃ x newspaper + ϵ`
-- For a given dataset, you have the output variable `Y` and the predictors `X₁`, `X₂`, ..., `Xᵢ`. So then you can use techniques to find the coeffients or the parameters `β₁`, `β₂`, ..., `βᵢ`.
+- For a given dataset, you have the output variable `Y` and the predictors `X₁`, `X₂`, ..., `Xᵢ`. So then you can use techniques to find the coefficients or the parameters `β₁`, `β₂`, ..., `βᵢ`.
 
 ## Variance
 
