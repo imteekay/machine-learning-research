@@ -2,3 +2,4 @@
 
 - [Intro](introduction.md)
 - [Statistical Learning](statistical-learning.md)
+- [Linear Regression](linear-regression.md)
