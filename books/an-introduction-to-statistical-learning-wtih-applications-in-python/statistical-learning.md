@@ -61,7 +61,13 @@
   - A linear model draws a straight line through the data that best fits the patterns they see
   - we need to estimate the parameters `β0`, `β1`, ..., `βp` such that `Y ≈ β0 + β1X1 + β2X2 + ··· + βpXp`
 
-## Model Selection and Bias-Variance Tradeoff
+## Assessing Model Accuracy
+
+- In the regression setting, the most commonly-used measure is the mean squared error (MSE)
+- When estimating `f(x)`, if we have an increase of test MSE when increasing the model's flexibility, we have an overfitting problem, meaning that the model is finding random patterns and not having a good accuracy in estimating `f(x)`.
+  - Overfitting refers specifically to the case in which a less flexible model would have yielded a smaller test MSE.
+
+### Model Selection and Bias-Variance Tradeoff
 
 - Bias and variance are two sources of error in machine learning models
 - **Bias** refers to the error introduced by approximating a real-life problem with a simplified model. It represents the difference between the average prediction of our model and the true value we're trying to predict.
@@ -76,9 +82,3 @@
 
 - For classification problems, the response variable Y is qualitative
   - e.g. email is one of C = (spam,ham), where ham is "good email"
-
-## Assessing Model Accuracy
-
-- In the regression setting, the most commonly-used measure is the mean squared error (MSE)
-- When estimating `f(x)`, if we have an increase of test MSE when increasing the model's flexibility, we have an overfitting problem, meaning that the model is finding random patterns and not having a good accuracy in estimating `f(x)`.
-  - Overfitting refers specifically to the case in which a less flexible model would have yielded a smaller test MSE.
