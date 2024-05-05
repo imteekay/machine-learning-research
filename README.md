@@ -175,7 +175,7 @@
 
 ### Healthcare
 
-- [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
+- [Machine Learning for Healthcare](https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-for-healthcare)
 - [AI in Healthcare @ Google Brain](https://www.youtube.com/watch?v=cvXVK8oqU4Q&ab_channel=AlexanderAmini)
 - [Healthcare’s AI Future: A Conversation with Fei-Fei Li & Andrew Ng](https://www.youtube.com/watch?v=Gbnep6RJinQ&ab_channel=StanfordHAI)
 - [AI and the Future of Health](https://www.microsoft.com/en-us/research/blog/ai-and-the-future-of-health)
