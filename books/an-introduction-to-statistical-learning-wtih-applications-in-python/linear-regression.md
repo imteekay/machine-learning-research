@@ -16,3 +16,19 @@
   - e.g. of multiple linear regression:
     - `Y = β₀ + β₁ x X₁ + β₂ x X₂ + β₃ x X₃ + ϵ`
     - `sales = β₀ + β₁ x TV + β₂ x radio + β₃ x newspaper + ϵ`
+
+## Variance
+
+- Variance measures how much the predicted values from the regression model vary around the true values of the dependent variable.
+- A smaller variance indicates that the predicted values are closer to the true values, suggesting a better fit of the model to the data.
+- A larger variance indicates greater variability in the predictions, suggesting that the model may not be capturing all the relevant information in the data.
+
+## Interpreting regression coefficients
+
+- Uncorrelated predictors
+  - Each coefficient can be estimated and tested separately
+  - Interpretation: "a unit change in Xⱼ is associated with βⱼ change in Y, while all the other variables stay fixed"
+  - The variables are independent
+- Correlated predictors
+  - The variance of all coefficients tends to increase, meaning there are larger standard error, indicating "uncertainty" and worse coefficient estimation precision.
+  - Interpretations become hard — when Xⱼ changes, everything else changes
