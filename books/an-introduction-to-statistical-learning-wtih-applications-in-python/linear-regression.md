@@ -12,3 +12,7 @@
   - Residual i = Yi - Y^i, where:
     - `Yi` is the observed value of the dependent variable.
     - `Y^i` is the predicted value of the dependent variable from the regression model.
+- Linear regression has one predictor while a multiple linear regression can have multiple predictors
+  - e.g. of multiple linear regression:
+    - `Y = β₀ + β₁ x X₁ + β₂ x X₂ + β₃ x X₃ + ϵ`
+    - `sales = β₀ + β₁ x TV + β₂ x radio + β₃ x newspaper + ϵ`
