@@ -3,6 +3,9 @@
 - Variables
   - Dependent variables: the response variable that we want to predict based on the values of one or more independent variables. e.g. `Y`
   - Independent variables: the predictor or features. e.g. `X1`, `X2`, ..., `Xn`
+- For a given dataset, you have the output variable `Y` and the predictors `X₁`, `X₂`, ..., `Xᵢ`.
+  - The goal of linear regression is to find the relationship between the dependent variable `Y` and the variables `Xᵢ` by estimating the coefficients or parameters `β₁`, `β₂`, ..., `βᵢ`.
+  - So then you can use techniques to find the coefficients or the parameters `β₁`, `β₂`, ..., `βᵢ`.
 - `Y^` refers to the predicting `Y`
 - `intercept` and `slope` are parameters that define the relationship between the independent variable (X) and the dependent variable (Y) in a linear equation
   - The intercept (often denoted as `β₀` or beta zero) is the value of the dependent variable (Y) when the independent variable (X) is zero. It represents the starting point of the regression line.
@@ -16,7 +19,6 @@
   - e.g. of multiple linear regression:
     - `Y = β₀ + β₁ x X₁ + β₂ x X₂ + β₃ x X₃ + ϵ`
     - `sales = β₀ + β₁ x TV + β₂ x radio + β₃ x newspaper + ϵ`
-- For a given dataset, you have the output variable `Y` and the predictors `X₁`, `X₂`, ..., `Xᵢ`. So then you can use techniques to find the coefficients or the parameters `β₁`, `β₂`, ..., `βᵢ`.
 
 ## Variance
 
