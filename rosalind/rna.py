@@ -1,5 +1,5 @@
 """
-Problem
+Problem: https://rosalind.info/problems/rna
 An RNA string is a string formed from the alphabet containing 'A', 'C', 'G', and 'U'.
 
 Given a DNA string t corresponding to a coding strand,
