@@ -119,6 +119,7 @@
 - [Intro to Deep Learning](http://introtodeeplearning.com/2020/index.html)
 - [Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
 - [Deep Learning Research and the Future of AI](https://www.youtube.com/watch?v=5BrNt38OraE&ab_channel=MicrosoftResearch)
+- [[Paper] Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215)
 
 ### Artificial Intelligence
 
@@ -190,6 +191,8 @@
 - [[Course] Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
 - [[Course] Introduction to Genomic Data Science](https://www.edx.org/learn/bioinformatics/the-university-of-california-san-diego-introduction-to-genomic-data-science)
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/pdf/2404.18416)
+- [[Paper] Deep learning methods for drug response prediction in cancer: Predominant and emerging trends](https://www.frontiersin.org/articles/10.3389/fmed.2023.1086097/full)
+- [[Paper] Machine Learning Prediction of Cancer Cell Sensitivity to Drugs Based on Genomic and Chemical Properties](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0061318&type=printable)
 
 ## Science
 
