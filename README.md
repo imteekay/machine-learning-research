@@ -243,6 +243,7 @@
 - [Science is the great giver](https://www.gatesnotes.com/European-Innovation)
 - [The Age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun)
 - [Writing in the Sciences](https://www.coursera.org/learn/sciwrite)
+- [How to read and understand a scientific paper: a guide for non-scientists](https://blogs.lse.ac.uk/impactofsocialsciences/2016/05/09/how-to-read-and-understand-a-scientific-paper-a-guide-for-non-scientists)
 
 ### Central Resources
 
