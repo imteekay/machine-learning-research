@@ -120,6 +120,7 @@
 - [Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
 - [Deep Learning Research and the Future of AI](https://www.youtube.com/watch?v=5BrNt38OraE&ab_channel=MicrosoftResearch)
 - [[Paper] Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215)
+- [Demystifying deep reinforcement learning](https://nail.cs.ut.ee/index.php/2015/12/19/globular-star-cluster-radio-scope-great-turbulent-clouds)
 
 ### Artificial Intelligence
 
@@ -195,6 +196,7 @@
 - [[Paper] Machine Learning Prediction of Cancer Cell Sensitivity to Drugs Based on Genomic and Chemical Properties](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0061318&type=printable)
 - [[Paper] Artificial intelligence in healthcare: past, present and future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
 - [[Paper] Deep Learning for Drug Discovery and Cancer Research: Automated Analysis of Vascularization Images](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904235)
+- [[Paper] Deep learning in drug discovery: an integrative review and future challenges](file:///Users/tk/Downloads/s10462-022-10306-1.pdf)
 
 ## Science
 
