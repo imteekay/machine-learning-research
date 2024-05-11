@@ -193,6 +193,8 @@
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/pdf/2404.18416)
 - [[Paper] Deep learning methods for drug response prediction in cancer: Predominant and emerging trends](https://www.frontiersin.org/articles/10.3389/fmed.2023.1086097/full)
 - [[Paper] Machine Learning Prediction of Cancer Cell Sensitivity to Drugs Based on Genomic and Chemical Properties](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0061318&type=printable)
+- [[Paper] Artificial intelligence in healthcare: past, present and future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
+- [[Paper] Deep Learning for Drug Discovery and Cancer Research: Automated Analysis of Vascularization Images](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904235)
 
 ## Science
 
