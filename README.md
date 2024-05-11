@@ -122,7 +122,8 @@
 - [[Paper] Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215)
 - [Demystifying deep reinforcement learning](https://nail.cs.ut.ee/index.php/2015/12/19/globular-star-cluster-radio-scope-great-turbulent-clouds)
 - [A Review of: Human-Level Control through deep Reinforcement Learning](https://hci.iwr.uni-heidelberg.de/system/files/private/downloads/213797145/report_carsten_lueth_human_level_control.pdf)
-- [Mastering the game of Go without human knowledge](https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ)
+- [[Paper] Mastering the game of Go without human knowledge](https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ)
+- [AlphaGo Zero: Starting from scratch](https://deepmind.google/discover/blog/alphago-zero-starting-from-scratch)
 
 ### Artificial Intelligence
 
