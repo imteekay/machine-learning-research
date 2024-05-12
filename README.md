@@ -200,6 +200,7 @@
 - [[Paper] Artificial intelligence in healthcare: past, present and future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
 - [[Paper] Deep Learning for Drug Discovery and Cancer Research: Automated Analysis of Vascularization Images](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904235)
 - [[Paper] Deep learning in drug discovery: an integrative review and future challenges](file:///Users/tk/Downloads/s10462-022-10306-1.pdf)
+- [DeepMind AlphaFold 3](https://www.youtube.com/watch?v=Mz7Qp73lj9o&ab_channel=TwoMinutePapers)
 
 ## Science
 
