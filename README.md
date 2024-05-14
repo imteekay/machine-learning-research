@@ -256,6 +256,7 @@
 - [Writing in the Sciences](https://www.coursera.org/learn/sciwrite)
 - [How to read and understand a scientific paper: a guide for non-scientists](https://blogs.lse.ac.uk/impactofsocialsciences/2016/05/09/how-to-read-and-understand-a-scientific-paper-a-guide-for-non-scientists)
 - [Demis Hassabis, AI to Accelerate Scientific Discovery](https://www.youtube.com/watch?v=u1dl_keFK4w&ab_channel=Axial)
+- [Demis Hassabis, AI for Science](https://www.youtube.com/watch?v=Q2JmdyqLqiw&ab_channel=Axial)
 
 ### Central Resources
 
