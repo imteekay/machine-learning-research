@@ -17,6 +17,7 @@
   - [Data Science Fundamentals](#data-science-fundamentals)
   - [Machine Learning](#machine-learning)
   - [Deep Learning](#deep-learning)
+  - [Generative AI](#generative-ai)
   - [Books](#books)
   - [Podcasts](#podcasts)
   - [Communities](#communities)
@@ -125,6 +126,10 @@
 - [A Review of: Human-Level Control through deep Reinforcement Learning](https://hci.iwr.uni-heidelberg.de/system/files/private/downloads/213797145/report_carsten_lueth_human_level_control.pdf)
 - [[Paper] Mastering the game of Go without human knowledge](https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ)
 - [AlphaGo Zero: Starting from scratch](https://deepmind.google/discover/blog/alphago-zero-starting-from-scratch)
+
+### Generative AI
+
+- [Intuitions on Language Models & Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=3gb-ZkVRemQ&ab_channel=StanfordOnline)
 
 ### Artificial Intelligence
 
