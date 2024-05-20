@@ -253,6 +253,7 @@
 
 - [Foundations of Computational and Systems Biology](https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014)
 - [Bioinformatics](https://seen-politician-a47.notion.site/ccd895cfaee94849bc9c405a4143b4f5?v=8ca8b89a8be54d7c800a1dfe9780abfc)
+- [Understanding life via computational bioinformatics](https://www.youtube.com/watch?v=KH_ZxNu9vj4&ab_channel=OrangeCountyACMChapter)
 
 ### Meta
 
