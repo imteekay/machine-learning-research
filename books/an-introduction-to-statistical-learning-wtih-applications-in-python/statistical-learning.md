@@ -64,8 +64,13 @@
 ## Assessing Model Accuracy
 
 - In the regression setting, the most commonly-used measure is the mean squared error (MSE)
+  - The MSE will be small if the predicted responses are very close to the true responses, and will be large if for some of the observations
+- MSE for training data is referred to training MSE but in general, we do not really care how well the method works on the training data.
+  - We are interested in the accuracy of the predictions that we obtain when we apply our method to previously unseen test data.
+  - We want to choose the method that gives the lowest test MSE, as opposed to the lowest training MSE
 - When estimating `f(x)`, if we have an increase of test MSE when increasing the model's flexibility, we have an overfitting problem, meaning that the model is finding random patterns and not having a good accuracy in estimating `f(x)`.
   - Overfitting refers specifically to the case in which a less flexible model would have yielded a smaller test MSE.
+  - When increasing the flexibility of the model, we have a better fit for the training data but less accuracy (larger MSE) for test data.
 
 ### Model Selection and Bias-Variance Tradeoff
 
