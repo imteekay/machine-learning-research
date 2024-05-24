@@ -67,6 +67,7 @@
 ### Statistics
 
 - [Khan Academy Probability](https://www.khanacademy.org/math/probability)
+- [Khan Academy Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
 - [Inferential Statistics](https://br.udacity.com/course/intro-to-inferential-statistics--ud201)
 - [Introduction to Statistics](https://www.coursera.org/learn/stanford-statistics)
 
