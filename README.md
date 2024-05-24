@@ -72,7 +72,8 @@
 
 ### Calculus
 
-- [Khan Academy Calculus](https://www.khanacademy.org/math/multivariable-calculus)
+- [Khan Academy Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus)
+- [Khan Academy Differential Calculus](https://www.khanacademy.org/math/differential-calculus)
 
 ### Optimization
 
