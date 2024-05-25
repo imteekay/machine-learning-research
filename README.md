@@ -258,6 +258,10 @@
 - [Bioinformatics](https://seen-politician-a47.notion.site/ccd895cfaee94849bc9c405a4143b4f5?v=8ca8b89a8be54d7c800a1dfe9780abfc)
 - [Understanding life via computational bioinformatics](https://www.youtube.com/watch?v=KH_ZxNu9vj4&ab_channel=OrangeCountyACMChapter)
 
+### Precision Health
+
+- [Defining precision health: a scoping review protocol](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7888329/pdf/bmjopen-2020-044663.pdf)
+
 ### Meta
 
 - [Fei-Fei Li & Demis Hassabis: Using AI to Accelerate Scientific Discovery](https://www.youtube.com/watch?v=KHFmIknP_Hc&ab_channel=StanfordHAI)
