@@ -87,3 +87,4 @@
 
 - For classification problems, the response variable Y is qualitative
   - e.g. email is one of C = (spam,ham), where ham is "good email"
+- Bayes classifier uses a conditional probability to predict: class one if Pr(Y = 1|X = x0) > 0.5, and class two otherwise.
