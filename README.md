@@ -212,6 +212,7 @@
 - [[Paper] Deep learning in drug discovery: an integrative review and future challenges](file:///Users/tk/Downloads/s10462-022-10306-1.pdf)
 - [DeepMind AlphaFold 3](https://www.youtube.com/watch?v=Mz7Qp73lj9o&ab_channel=TwoMinutePapers)
 - [Multimodal Generative AI: the Next Frontier in Precision Health](https://www.microsoft.com/en-us/research/quarterly-brief/mar-2024-brief/articles/multimodal-generative-ai-the-next-frontier-in-precision-health)
+- [Artificial Intelligence in Healthcare: Past, Present and Future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
 
 ## Science
 
