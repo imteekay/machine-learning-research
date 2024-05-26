@@ -91,3 +91,8 @@
 - K-nearest neighbors (KNN) classifier: Given a positive integer K and a test observation x0, the KNN classifier first identifies the K points in the training data that are closest to x0, represented by N0.
   - When K = 1, the decision boundary is overly flexible and finds patterns in the data that don’t correspond to the Bayes decision boundary. This corresponds to a classifier that has low bias but very high variance.
   - As K grows, the method becomes less flexible and produces a decision boundary that is close to linear.
+
+## Conclusion
+
+- In both the regression and classification settings, choosing the correct level of flexibility is critical to the success of any statistical learning method.
+- The bias-variance tradeoff, and the resulting U-shape in the test error, can make this a difficult task.
