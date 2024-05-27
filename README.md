@@ -61,6 +61,7 @@
 - [Linear algebra cheat sheet for deep learning](https://towardsdatascience.com/linear-algebra-cheat-sheet-for-deep-learning-cd67aba4526c)
 - [[Course] Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 - [[Course] Linear Algebra Crash Course](https://www.youtube.com/watch?v=n9jZmymHX6o&ab_channel=LunarTech)
+- [Linear Algebra Tutorial](https://www.youtube.com/watch?v=3Bf9oh7nkus&ab_channel=metacodeM)
 
 ### Matrix Algebra
 
