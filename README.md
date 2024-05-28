@@ -216,6 +216,10 @@
 - [Multimodal Generative AI: the Next Frontier in Precision Health](https://www.microsoft.com/en-us/research/quarterly-brief/mar-2024-brief/articles/multimodal-generative-ai-the-next-frontier-in-precision-health)
 - [Artificial Intelligence in Healthcare: Past, Present and Future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
 
+### Papers & Dissertations
+
+- [Causal Inference for Computational Biology](https://summit.sfu.ca/_flysystem/fedora/2023-05/etd22427.pdf)
+
 ## Science
 
 ### Fundamentals
