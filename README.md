@@ -25,6 +25,7 @@
   - [Q&A: how to start learning Machine Learning](#questions-and-answers)
   - [Data Science Journey](#data-science-journey)
   - [ML/AI & Healthcare](#healthcare)
+  - [Papers & Dissertations](#papers--dissertations)
 - [Science](#science)
   - [Fundamentals](#fundamentals)
   - [Science](#science-1)
