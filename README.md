@@ -1,6 +1,6 @@
 <samp>
 
-# Science & ML Research
+# ML Research
 
 ## Table of Contents
 
