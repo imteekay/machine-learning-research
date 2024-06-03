@@ -1,5 +1,7 @@
 # Classification
 
+## Questions
+
 - [ ] TODO: chat-gpt case-control sampling
 - [ ] TODO: chat-gpt bayes theorem? foundation math behind? why is it used?
 - [ ] TODO: chat-gpt gauss distribution
