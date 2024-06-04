@@ -208,6 +208,7 @@
 - [[Course] Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
 - [[Course] Introduction to Genomic Data Science](https://www.edx.org/learn/bioinformatics/the-university-of-california-san-diego-introduction-to-genomic-data-science)
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/pdf/2404.18416)
+  - [Journal Club Debate: Capacidades dos modelos Gemini na medicina](https://www.youtube.com/watch?v=qj-4_dP6BQw)
 - [[Paper] Deep learning methods for drug response prediction in cancer: Predominant and emerging trends](https://www.frontiersin.org/articles/10.3389/fmed.2023.1086097/full)
 - [[Paper] Machine Learning Prediction of Cancer Cell Sensitivity to Drugs Based on Genomic and Chemical Properties](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0061318&type=printable)
 - [[Paper] Artificial intelligence in healthcare: past, present and future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
