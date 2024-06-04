@@ -39,5 +39,5 @@ def total_protein_weight(monoisotopic_mass_table, sample_dataset):
   return "{:.3f}".format(result)
 
 table = parse_table(monoisotopic_mass_table_string)
-print(total_protein_weight(table, sample_dataset))
-print(total_protein_weight(table, another_sample))
+print(total_protein_weight(table, sample_dataset)) # 821.392
+print(total_protein_weight(table, another_sample)) # 118189.186
