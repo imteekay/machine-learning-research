@@ -3,7 +3,7 @@
 ## Cross-validation and bootstrap
 
 - Refit a model to samples formed from the training set, in order to obtain additional information about the fitted model
-  - These methods provide eestimates of test-set prediction error, and the standard deviation and bias of our parameter estimates
+  - These methods provide estimates of test-set prediction error, and the standard deviation and bias of our parameter estimates
 - Errors
   - Training error: the error we get from the application of a statistical learning method to the observations used in its training
   - Test error: the average error that results from using a statistical learning method to predict the response on a new observation
