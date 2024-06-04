@@ -1,0 +1,13 @@
+# Resampling Methods
+
+## Cross-validation and bootstrap
+
+- Refit a model to samples formed from the training set, in order to obtain additional information about the fitted model
+  - These methods provide eestimates of test-set prediction error, and the standard deviation and bias of our parameter estimates
+- Errors
+  - Training error: the error we get from the application of a statistical learning method to the observations used in its training
+  - Test error: the average error that results from using a statistical learning method to predict the response on a new observation
+  - Traning versus Test set performance: The more complex the model, the small the training error, but it overfits with the increase of complexity so it increase the test error (overfitting problem)
+- Validation-set approach
+  - Randomly divide the available set of samples into two parts: a training set and a validation or hold-out set
+  - The model is fit on the training set, and the fitted model is uses to predict the responses for the observations in the validation set
