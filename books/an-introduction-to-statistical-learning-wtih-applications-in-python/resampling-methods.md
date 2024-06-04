@@ -14,3 +14,8 @@
   - The resulting validation-set error provides an estimate of the test error
     - Quantitative response: MSE
     - Qualitative response: misclassification rate
+- K-fold cross-validation
+  - Estimate test error
+  - Randomly divide the data into K equal-sized parts
+    - Leave out part K and fit the model to the other K - 1 parts (combined) and then obtain predictions for the left-out kth part
+    - This is done in turn for each part k = 1,2,3,...,K, and then the results are combined (the cross-validation error)
