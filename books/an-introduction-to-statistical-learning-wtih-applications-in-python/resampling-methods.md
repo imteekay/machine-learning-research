@@ -11,3 +11,6 @@
 - Validation-set approach
   - Randomly divide the available set of samples into two parts: a training set and a validation or hold-out set
   - The model is fit on the training set, and the fitted model is uses to predict the responses for the observations in the validation set
+  - The resulting validation-set error provides an estimate of the test error
+    - Quantitative response: MSE
+    - Qualitative response: misclassification rate
