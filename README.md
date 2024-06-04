@@ -217,6 +217,7 @@
 - [DeepMind AlphaFold 3](https://www.youtube.com/watch?v=Mz7Qp73lj9o&ab_channel=TwoMinutePapers)
 - [Multimodal Generative AI: the Next Frontier in Precision Health](https://www.microsoft.com/en-us/research/quarterly-brief/mar-2024-brief/articles/multimodal-generative-ai-the-next-frontier-in-precision-health)
 - [Artificial Intelligence in Healthcare: Past, Present and Future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
+- [[Paper] The myth of generalisability in clinical research and machine learning in health care](https://www.thelancet.com/action/showPdf?pii=S2589-7500%2820%2930186-2)
 
 ### Papers & Dissertations
 
