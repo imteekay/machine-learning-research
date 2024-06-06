@@ -9,6 +9,8 @@
   - A person arrives at the emergency room with a set of symptoms that could possibly be attributed to one of three medical conditions. Which of the three conditions does the individual have?
   - An online banking service must be able to determine whether or not a transaction being performed on the site is fraudulent, on the basis of the user’s IP address, past transaction history, and so forth.
   - On the basis of DNA sequence data for a number of patients with and without a given disease, a biologist would like to figure out which DNA mutations are deleterious (disease-causing) and which are not.
+- Why Not Linear Regression?
+  - there are at least two reasons not to perform classifica- tion using a regression method: (a) a regression method cannot accommodate a qualitative response with more than two classes; (b) a regression method will not provide meaningful estimates of `Pr(Y |X)`, even with just two classes. Thus, it is preferable to use a classification method that is truly suited for qualitative response values.
 
 ## Questions
 
