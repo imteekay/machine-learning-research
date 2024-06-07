@@ -219,6 +219,7 @@
 - [Artificial Intelligence in Healthcare: Past, Present and Future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
 - [[Paper] The myth of generalisability in clinical research and machine learning in health care](https://www.thelancet.com/action/showPdf?pii=S2589-7500%2820%2930186-2)
 - [[Paper] Sybil: A Validated Deep Learning Model to Predict Future Lung Cancer Risk From a Single Low-Dose Chest Computed Tomography](https://ascopubs.org/doi/10.1200/JCO.22.01345)
+- [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/abs/2404.18416)
 
 ### Papers & Dissertations
 
