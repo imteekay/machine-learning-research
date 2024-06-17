@@ -221,6 +221,7 @@
 - [[Paper] Sybil: A Validated Deep Learning Model to Predict Future Lung Cancer Risk From a Single Low-Dose Chest Computed Tomography](https://ascopubs.org/doi/10.1200/JCO.22.01345)
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/abs/2404.18416)
 - [AlphaFold3: A foundation model for biology](https://harrisbio.substack.com/p/alphafold3-a-foundation-model-for)
+- [[Paper] Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/pdf/2311.16452)
 
 ### Papers & Dissertations
 
