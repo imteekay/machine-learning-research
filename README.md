@@ -24,7 +24,8 @@
   - [Online Courses](#online-courses)
   - [Q&A: how to start learning Machine Learning](#questions-and-answers)
   - [Data Science Journey](#data-science-journey)
-  - [ML/AI & Healthcare](#healthcare)
+  - [ML/AI & Healthcare](#mlai--healthcare)
+  - [ML/AI & Biology](#mlai--biology)
   - [Papers & Dissertations](#papers--dissertations)
 - [Science](#science)
   - [Fundamentals](#fundamentals)
@@ -193,7 +194,7 @@
 - [How to land a Data Scientist job at your dream company — My journey to Airbnb](https://towardsdatascience.com/how-to-land-a-data-scientist-job-at-your-dream-company-my-journey-to-airbnb-f6a1e99892e8)
 - [How to build a data science project from scratch](https://medium.freecodecamp.org/how-to-build-a-data-science-project-from-scratch-dc4f096a62a1)
 
-### Healthcare
+### ML/AI & Healthcare
 
 - [[Course] Machine Learning for Healthcare](https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-for-healthcaregit)
 - [AI in Healthcare @ Google Brain](https://www.youtube.com/watch?v=cvXVK8oqU4Q&ab_channel=AlexanderAmini)
@@ -223,6 +224,10 @@
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/abs/2404.18416)
 - [AlphaFold3: A foundation model for biology](https://harrisbio.substack.com/p/alphafold3-a-foundation-model-for)
 - [[Paper] Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/pdf/2311.16452)
+
+### ML/AI & Biology
+
+- [[Paper] Machine learning-aided generative molecular design](https://www.nature.com/articles/s42256-024-00843-5)
 
 ### Papers & Dissertations
 
