@@ -26,7 +26,7 @@
   - [Data Science Journey](#data-science-journey)
   - [ML/AI & Healthcare](#mlai--healthcare)
   - [ML/AI & Biology](#mlai--biology)
-  - [Papers & Dissertations](#papers--dissertations)
+  - [Databases](#databases)
 - [Science](#science)
   - [Fundamentals](#fundamentals)
   - [Science](#science-1)
@@ -228,9 +228,6 @@
 ### ML/AI & Biology
 
 - [[Paper] Machine learning-aided generative molecular design](https://www.nature.com/articles/s42256-024-00843-5)
-
-### Papers & Dissertations
-
 - [Causal Inference for Computational Biology](https://summit.sfu.ca/_flysystem/fedora/2023-05/etd22427.pdf)
 
 ### Databases
