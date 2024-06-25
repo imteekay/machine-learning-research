@@ -229,6 +229,7 @@
 
 - [[Paper] Machine learning-aided generative molecular design](https://www.nature.com/articles/s42256-024-00843-5)
 - [Causal Inference for Computational Biology](https://summit.sfu.ca/_flysystem/fedora/2023-05/etd22427.pdf)
+- [Simulating 500 million years of evolution with a language model](https://evolutionaryscale-public.s3.us-east-2.amazonaws.com/research/esm3.pdf)
 
 ### Databases
 
