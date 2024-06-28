@@ -245,6 +245,8 @@
 - [Intro to Chemistry](https://www.khanacademy.org/science/chemistry)
 - [Organic Chemistry](https://www.khanacademy.org/science/organic-chemistry)
 - [Introductory Biology](https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018)
+- [Molecular Biology - Part 1: DNA Replication and Repair](https://www.edx.org/learn/molecular-biology/massachusetts-institute-of-technology-molecular-biology-part-1-dna-replication-and-repair)
+- [Introduction to Biology - The Secret of Life](https://www.edx.org/learn/biology/massachusetts-institute-of-technology-introduction-to-biology-the-secret-of-life)
 
 ### Science
 
