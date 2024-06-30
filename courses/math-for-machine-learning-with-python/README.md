@@ -82,3 +82,18 @@ yInt = -2
 mx = [0, 1]
 my = [yInt, yInt + m]
 ```
+
+In equations with two variables `x` and `y`, we can use elimination to find the values when the intersect with each other
+
+```
+x + y = 16
+10x + 25y = 250
+```
+
+With elimination, you'll find out that `x = 10` and `y = 6` when the lines intersect.
+
+```python
+x = 10
+y = 6
+print((x + y == 16) & ((10 * x) + (25 * y) == 250))
+```
