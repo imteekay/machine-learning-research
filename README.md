@@ -15,7 +15,7 @@
 - [Machine Learning](#machine-learning)
   - [Learning Roadmap](#learning-roadmap)
   - [Data Science Fundamentals](#data-science-fundamentals)
-  - [Machine Learning](#machine-learning)
+  - [Machine Learning](#machine-learning-1)
   - [Deep Learning](#deep-learning)
   - [Generative AI](#generative-ai)
   - [Books](#books)
@@ -115,6 +115,7 @@
 - [Machine Learning for All](https://www.coursera.org/learn/uol-machine-learning-for-all)
 - [Reinforcement Learning](https://www.udacity.com/course/reinforcement-learning--ud600)
 - [Machine Learning Crash Course with TensorFlow APIs](https://developers.google.com/machine-learning/crash-course)
+- [Backpropagation from the ground up](https://www.youtube.com/watch?v=SmZmBKc7Lrs)
 
 ### Advanced Machine Learning
 
