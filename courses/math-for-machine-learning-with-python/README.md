@@ -140,3 +140,18 @@ In Python we can use `math.sqrt` to get the square root of a number and a trick 
 math.sqrt(25) # 5
 round(64 ** (1. / 3)) # 64 ^ 1/3 = ∛64 = 4
 ```
+
+To find the exponent for a given number and base, we use the logarithm
+
+```
+4 ^ ? = 16
+log₄(16) = 2
+```
+
+The `math` module has a `log` function that receive the number and the base
+
+```python
+math.log(16, 4) # 2.0
+math.log(29) # 3.367295829986474
+math.log10(100) # 2.0
+```
