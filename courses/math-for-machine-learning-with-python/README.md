@@ -155,3 +155,34 @@ math.log(16, 4) # 2.0
 math.log(29) # 3.367295829986474
 math.log10(100) # 2.0
 ```
+
+Solving equations with exponentials:
+
+```
+2y = 2(x^4)((x^2 + 2x^2) / x^3)
+2y = 2(x^4)(3x^2 / x^3)
+2y = 2(x^4)(3x^-1)
+2y = 6(x^3)
+y = 3(x^3)
+```
+
+We can exemplify this with Python
+
+```python
+df = pd.DataFrame ({'x': range(-10, 11)})
+
+# add a y column by applying the slope-intercept equation to x
+df['y'] = 3 * df['x'] ** 3 # this is the equation we simplified above
+
+plt.plot(df.x, df.y, color="magenta")
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid()
+plt.axhline()
+plt.axvline()
+plt.show()
+```
+
+It generates this graph:
+
+![](exponential.png)
