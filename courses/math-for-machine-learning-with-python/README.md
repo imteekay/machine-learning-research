@@ -43,12 +43,17 @@ plt.grid()
 plt.show()
 ```
 
+![simple graph](graph.png)
+
 Annotate the points when x = 0 and y = 0
 
 ```python
 plt.annotate('x-intercept', (1.333, 0))
 plt.annotate('y-intercept', (0, -2))
+plt.show()
 ```
+
+![graph with intercept](graph-with-intercept.png)
 
 Finding the slope through the equation:
 
