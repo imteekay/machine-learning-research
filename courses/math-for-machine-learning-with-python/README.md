@@ -97,3 +97,25 @@ x = 10
 y = 6
 print((x + y == 16) & ((10 * x) + (25 * y) == 250))
 ```
+
+When plotting the lines of those equations, we get this graph
+
+![](graph-system-of-equations.png)
+
+Here's how we generate the code
+
+```python
+chipsAll10s = [16, 0]
+chipsAll25s = [0, 16]
+
+valueAll10s = [25, 0]
+valueAll25s = [0, 10]
+
+plt.plot(chipsAll10s, chipsAll25s, color='blue')
+plt.plot(valueAll10s, valueAll25s, color="orange")
+plt.xlabel('x (£10 chips)')
+plt.ylabel('y (£25 chips)')
+plt.grid()
+
+plt.show()
+```
