@@ -21,7 +21,7 @@ plt.grid()
 plt.axhline()
 plt.axvline()
 
-# annote points when x = 0 and y = 0
+# annotate points when x = 0 and y = 0
 plt.annotate('x-intercept', (1.333, 0))
 plt.annotate('y-intercept', (0, -2))
 
