@@ -119,3 +119,24 @@ plt.grid()
 
 plt.show()
 ```
+
+Exponatials have a simple case that's squaring a number: `2² = 2 x 2 = 4`.
+
+```python
+2 ** 2 # 4
+```
+
+Radicals (roots) is useful to calculate a solution for exponential
+
+```
+?² = 9
+√9 = 3
+∛64 = 4
+```
+
+In Python we can use `math.sqrt` to get the square root of a number and a trick to get the cube root.
+
+```python
+math.sqrt(25) # 5
+round(64 ** (1. / 3)) # 64 ^ 1/3 = ∛64 = 4
+```
