@@ -1,5 +1,13 @@
 # Math for Machine Learning with Python
 
+- [Algebra Fundamentals](#algebra-fundamentals-equations-graphs-and-functions)
+  - [Intro to equations](#intro-to-equations)
+  - [Linear Equations](#linear-equations)
+  - [Exponentials & Logarithms](#exponentials--logarithms)
+  - [Polynomials](#polynomials)
+  - [Factorization](#factorization)
+  - [Quadratic Equations](#quadratic-equations)
+
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
 ### Intro to equations
