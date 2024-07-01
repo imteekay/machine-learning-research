@@ -213,3 +213,65 @@ x = randint(1,100)
 (x**3 + 2 * x**3 - 3 * x - x + 8 - 3) == (3 * x**3 - 4 * x + 5)
 # True
 ```
+
+`Factorization` is the process of restating an expression as the _product_ of two expressions.
+
+-6x<sup>2</sup>y<sup>3</sup>
+
+You can get this value by performing the following multiplication:
+
+(2xy<sup>2</sup>)(-3xy)
+
+So, we can say that **2xy<sup>2</sup>** and **-3xy** are both factors of **-6x<sup>2</sup>y<sup>3</sup>**.
+
+```python
+from random import randint
+x = randint(1,100)
+y = randint(1,100)
+
+(2 * x * y**2) * (-3 * x * y) == -6 * x**2 * y**3
+```
+
+The `Greatest Common Factor` (GCF) is the highest value that is a multiple of both number `n1` and number `n2`.
+
+We can apply this idea to polynomials too.
+
+15x<sup>2</sup>y
+9xy<sup>3</sup>
+
+The GCF of these polynomial is `2xy`
+
+Factorization is useful for expressions like the differences of squares:
+
+x<sup>2</sup> - 9
+x<sup>2</sup> - 3<sup>2</sup>
+(x - 3)(x + 3)
+
+We generalize this idea to this expression: a<sup>2</sup> - b<sup>2</sup> = (a - b)(a + b)
+
+Ensure this is true:
+
+```python
+from random import randint
+x = randint(1,100)
+
+(x**2 - 9) == (x - 3) * (x + 3)
+```
+
+This is also true for perfect squares
+
+x<sup>2</sup> 10x + 25
+(x - 5)(x + 5)
+(x + 5)<sup>2</sup>
+
+And we can generalize to this expression: (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>
+
+Ensure this with Python
+
+```python
+from random import randint
+a = randint(1,100)
+b = randint(1,100)
+
+a**2 + b**2 + (2 * a * b) == (a + b)**2
+```
