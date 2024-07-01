@@ -3,6 +3,7 @@
 - [Algebra Fundamentals](#algebra-fundamentals-equations-graphs-and-functions)
   - [Intro to equations](#intro-to-equations)
   - [Linear Equations](#linear-equations)
+  - [Systems of Equations](#systems-of-equations)
   - [Exponentials & Logarithms](#exponentials--logarithms)
   - [Polynomials](#polynomials)
   - [Factorization](#factorization)
