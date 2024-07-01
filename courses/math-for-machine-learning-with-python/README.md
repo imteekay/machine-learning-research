@@ -7,6 +7,7 @@
   - [Polynomials](#polynomials)
   - [Factorization](#factorization)
   - [Quadratic Equations](#quadratic-equations)
+  - [Functions](#functions)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -335,3 +336,54 @@ x + 3 = √16
 So, x + 3 is **-4** or **4**. We isolate **_x_** by subtracting 3 from both sides, so **_x_** is **-7** or **1**:
 
 x = -7, 1
+
+### Functions
+
+Functions are usually the same how it's in programming. Data in, data out.
+
+f(x) = x<sup>2</sup> + 2
+f(3) = 11
+
+```python
+def f(x):
+  return x**2 + 2
+
+f(3) # 11
+```
+
+Bounds of function: domain
+
+Imagine a function `g(x)` = (12 / 2x)<sup>2</sup>, where `{x ∈ ℝ | x ≠ 0}`
+
+In Python:
+
+```python
+def g(x):
+  if x != 0:
+    return (12 / 2 * x)**2
+
+x = range(-100, 101)
+y = [g(a) for a in x]
+```
+
+Conditional: for `k(x)`
+
+```
+{
+  0, if x = 0,
+  1, if x = 100
+}
+```
+
+In Python:
+
+```python
+def k(x):
+  if x == 0:
+    return 0
+  elif x == 100:
+    return 1
+
+x = range(-100, 101)
+y = [k(a) for a in x]
+```
