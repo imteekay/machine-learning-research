@@ -2,6 +2,8 @@
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
+### Intro to equations
+
 Starting with an equation: `2x + 3 = 9` to find the the `x`. `x = 3`
 
 ```python
@@ -22,6 +24,8 @@ Variables in both sides
 x = 1.5
 3 * x + 2 == 5 * x -1 # True
 ```
+
+### Linear Equations
 
 Creating a dataframe with the `x` and `y` columns and their values
 
@@ -83,6 +87,8 @@ mx = [0, 1]
 my = [yInt, yInt + m]
 ```
 
+### Systems of Equations
+
 In equations with two variables `x` and `y`, we can use elimination to find the values when the intersect with each other
 
 ```
@@ -120,7 +126,9 @@ plt.grid()
 plt.show()
 ```
 
-Exponatials have a simple case that's squaring a number: `2² = 2 x 2 = 4`.
+### Exponentials & Logarithms
+
+Exponentials have a simple case that's squaring a number: `2² = 2 x 2 = 4`.
 
 ```python
 2 ** 2 # 4
@@ -187,6 +195,8 @@ It generates this graph:
 
 ![](exponential.png)
 
+### Polynomials
+
 A polynomial is an algebraic expression containing one or more _terms_.
 
 ```
@@ -213,6 +223,8 @@ x = randint(1,100)
 (x**3 + 2 * x**3 - 3 * x - x + 8 - 3) == (3 * x**3 - 4 * x + 5)
 # True
 ```
+
+### Factorization
 
 `Factorization` is the process of restating an expression as the _product_ of two expressions.
 
@@ -275,3 +287,43 @@ b = randint(1,100)
 
 a**2 + b**2 + (2 * a * b) == (a + b)**2
 ```
+
+### Quadratic Equations
+
+Use the complete the square method to solve quadratic equations. Take this following equation as an example:
+
+x<sup>2</sup> + 24x + 12<sup>2</sup>
+
+Can be factored to this:
+
+(x + 12)<sup>2</sup>
+
+OK, so how does this help us solve a quadratic equation? Well, let's look at an example:
+
+y = x<sup>2</sup> + 6x - 7
+
+Let's start as we've always done so far by restating the equation to solve **_x_** for a **_y_** value of 0:
+
+x<sup>2</sup> + 6x - 7 = 0
+
+Now we can move the constant term to the right by adding 7 to both sides:
+
+x<sup>2</sup> + 6x = 7
+
+OK, now let's look at the expression on the left: _x<sup>2</sup> + 6x_. We can't take the square root of this, but we can turn it into a trinomial that will factor into a perfect square by adding a squared constant. The question is, what should that constant be? Well, we know that we're looking for an expression like _x<sup>2</sup> + 2**c**x + **c**<sup>2</sup>_, so our constant **c** is half of the coefficient we currently have for **_x_**. This is **6**, making our constant **3**, which when squared is **9** So we can create a trinomial expression that will easily factor to a perfect square by adding 9; giving us the expression _x<sup>2</sup> + 6x + 9_.
+
+However, we can't just add something to one side without also adding it to the other, so our equation becomes:
+
+x<sup>2</sup> + 6x + 9 = 16
+
+So, how does that help? Well, we can now factor the trinomial expression as a perfect square binomial expression:
+
+(x + 3)<sup>2</sup> = 16
+
+And now, we can use the square root method to find x + 3:
+
+x + 3 = √16
+
+So, x + 3 is **-4** or **4**. We isolate **_x_** by subtracting 3 from both sides, so **_x_** is **-7** or **1**:
+
+x = -7, 1
