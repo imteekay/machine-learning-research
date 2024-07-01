@@ -186,3 +186,30 @@ plt.show()
 It generates this graph:
 
 ![](exponential.png)
+
+A polynomial is an algebraic expression containing one or more _terms_.
+
+```
+12x³ + 2x - 16
+```
+
+The terms themselves include:
+
+- Two coefficients(12 and 2) and a constant (-16)
+- A variable (x)
+- An exponent (<sup>3</sup>)
+
+Simplifying the polynomial:
+
+x<sup>3</sup> + 2x<sup>3</sup> - 3x - x + 8 - 3
+3x<sup>3</sup> - 4x + 5
+
+And we can compare both equations in Python
+
+```python
+from random import randint
+x = randint(1,100)
+
+(x**3 + 2 * x**3 - 3 * x - x + 8 - 3) == (3 * x**3 - 4 * x + 5)
+# True
+```
