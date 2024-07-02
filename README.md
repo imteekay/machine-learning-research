@@ -137,6 +137,7 @@
 - [AlphaGo Zero: Starting from scratch](https://deepmind.google/discover/blog/alphago-zero-starting-from-scratch)
 - [Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 - [The Principles of Deep Learning Theory](https://arxiv.org/pdf/2106.10165)
+- [Why do tree-based models still outperform deep learning on tabular data?](https://arxiv.org/pdf/2207.08815)
 
 ### Generative AI
 
