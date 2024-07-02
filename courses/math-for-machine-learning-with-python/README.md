@@ -449,3 +449,36 @@ plt.show()
 This plots the behavior of the function and average velocity:
 
 ![](average-rate-of-change.png)
+
+### Limits
+
+In a quadratic equation we have a bunch of points in the curve and we can plot like this:
+
+```python
+def f(x):
+  return x**2 + x
+
+x = list(range(0,5))
+x.append(4.25)
+x.append(4.5)
+x.append(4.75)
+x.append(5)
+x.append(5.25)
+x.append(5.5)
+x.append(5.75)
+x = x + list(range(6,11))
+
+y = [f(i) for i in x]
+
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.grid()
+plt.plot(x,y, color='lightgrey', marker='o', markeredgecolor='green', markerfacecolor='green')
+plt.show()
+```
+
+Generating this graph:
+
+![](quadratic-equation-points.png)
+
+But we can still see gaps between points. And now we need to understand the concept of limits.
