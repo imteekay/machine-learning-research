@@ -388,3 +388,64 @@ def k(x):
 x = range(-100, 101)
 y = [k(a) for a in x]
 ```
+
+## Derivatives and Optimization
+
+### Rate of Change
+
+`q(x) = 2x + 1`
+
+In a period of 10s, we can plot this into a graph with Python
+
+```python
+def q(x):
+  return 2 * x + 1
+
+x = np.array(range(0, 11))
+plt.xlabel('Seconds')
+plt.ylabel('Meters')
+plt.xticks(range(0, 11, 1))
+plt.yticks(range(0, 22, 1))
+plt.grid()
+plt.plot(x, q(x), color='green')
+plt.show()
+```
+
+Plotting this graph:
+
+![](rate-of-change-graph.png)
+
+For this equation `q(x) = 2x + 1`, we can say the rate of change is `2`. Generalizing, we having `f(x) = mx + C`, `m` is the rate of change.
+
+We calculate the rate of change the same as the slope:
+
+```
+m = Δy/Δx
+```
+
+We can calculate the average rate of change between two points for a quadratic function like `r(x) = x² + x`.
+
+It's possible to do it between the first and the last point of the function or in a period of time.
+
+```python
+x = np.array(range(0, 11))
+s = np.array([2,7])
+
+x1 = s[0]
+x2 = s[-1]
+y1 = r(x1)
+y2 = r(x2)
+a = (y2 - y1)/(x2 - x1)
+
+plt.xlabel('Seconds')
+plt.ylabel('Meters')
+plt.grid()
+plt.plot(x,r(x), color='green')
+plt.plot(s,r(s), color='magenta')
+plt.annotate('Average Velocity =' + str(a) + ' m/s',((x2+x1)/2, (y2+y1)/2))
+plt.show()
+```
+
+This plots the behavior of the function and average velocity:
+
+![](average-rate-of-change.png)
