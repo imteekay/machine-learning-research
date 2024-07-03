@@ -635,3 +635,35 @@ Generating this graph:
 ![](limit-and-factorization.png)
 
 We can use pretty much the same idea using the rationalization.
+
+Limits also have rules of operations: addition, substraction, multiplication, division, etc.
+
+Addition:
+
+```
+lim x->a (j(x) + l(x)) = lim x->a j(x) + lim x->a l(x)
+```
+
+Subtraction:
+
+```
+lim x->a (j(x) - l(x)) = lim x->a j(x) - lim x->a l(x)
+```
+
+Multiplication:
+
+```
+lim x->a (j(x) • l(x)) = lim x->a j(x) • lim x->a l(x)
+```
+
+Division:
+
+```
+lim x->a (j(x) / l(x)) = lim x->a j(x) / lim x->a l(x)
+```
+
+Exponentials and roots:
+
+```
+lim x->a (j(x))ⁿ = (lim x->a j(x))ⁿ
+```
