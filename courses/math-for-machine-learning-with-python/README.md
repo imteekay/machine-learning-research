@@ -579,3 +579,59 @@ Approaching from negative and positive sides result in infinite.
 
 - -♾️ when approaching from the negative side: lim x->25 d(x) = -♾️
 - +♾️ when approaching from the positive side: lim x->25 d(x) = +♾️
+
+We can use factorization when direct substitution doesn't work. Take this function as example:
+
+```
+g(x) = (x² - 1) / (x - 1)
+```
+
+If we calculate the limit of `x` approaching `1`, it won't work. The denominator can't be `0`.
+
+But if we use factorization, we can get an answer for this limit. Remember this generalization?
+
+```
+a² - b² = (a - b)(a + b)
+```
+
+We can use this rule for our `g(x)` function.
+
+```
+x² - 1 = (x - 1)(x + 1)
+g(x) = (x - 1)(x + 1) / (x - 1)
+g(x) = x + 1
+```
+
+Now we can calculate the limit of `x` approaching `1`:
+
+```
+lim x->1 g(x) = x + 1
+lim x->1 g(x) = 2
+```
+
+Let's plot the graph:
+
+```python
+def g(x):
+  if x != 1:
+    return (x**2 - 1) / (x - 1)
+
+x= range(-20, 21)
+y =[g(i) for i in x]
+zx = 1
+zy = zx + 1
+
+plt.xlabel('x')
+plt.ylabel('g(x)')
+plt.grid()
+plt.plot(x, y, color='purple')
+plt.plot(zx, zy, color='red', marker='o', markersize=10)
+plt.annotate(str(zy), (zx, zy), xytext=(zx - 2, zy + 1))
+plt.show()
+```
+
+Generating this graph:
+
+![](limit-and-factorization.png)
+
+We can use pretty much the same idea using the rationalization.
