@@ -9,6 +9,9 @@
   - [Factorization](#factorization)
   - [Quadratic Equations](#quadratic-equations)
   - [Functions](#functions)
+- [Derivatives and Optimization](#derivatives-and-optimization)
+  - [Rate of Change](#rate-of-change)
+  - [Limits](#limits)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
