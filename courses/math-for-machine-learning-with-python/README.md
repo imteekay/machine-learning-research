@@ -482,3 +482,100 @@ Generating this graph:
 ![](quadratic-equation-points.png)
 
 But we can still see gaps between points. And now we need to understand the concept of limits.
+
+Not all functions are continuous. Take this function as example:
+
+```
+g(x) = -(12/2x)², where x ≠ 0
+```
+
+`x` can't be `0` because any number divided by `0` is `undefined`.
+
+```python
+def g(x):
+  if x != 0:
+    return -(12/(2 * x))**2
+
+x = range(-20, 21)
+y = [g(a) for a in x]
+
+plt.xlabel('x')
+plt.ylabel('g(x)')
+plt.grid()
+plt.plot(x,y, color='green')
+plt.show()
+```
+
+Plotting `g(x)`, we get this graph:
+
+![](non-continuous-function.png)
+
+The function `g(x)` is non-continuous at `x = 0`
+
+Limits can be applied to continous functions like `a(x) = x² + 1`
+
+When `x` is approaching `0`, `a(x) = 1`.
+
+That's because when `x` is slightly greater than `0` and slightly smaller than `0` (e.g. 0.000001 and -0.000001), the result will be slightly greater than `1` and slightly smaller than `1`, respectively.
+
+This is how we write it: when `x` approaching `0`, the limit of `a(x)` is `1`.
+
+`lim x->0 a(x) = 1`
+
+We can also apply this concept to non-continuous points. Take this function as example: `b(x) = -2x²/x`, where `x ≠ 0`.
+
+Let's plot it with Python
+
+```python
+def b(x):
+  if x != 0:
+    return (-2*x**2) * 1/x
+
+x = range(-10, 11)
+y = [b(i) for i in x]
+
+plt.xlabel('x')
+plt.ylabel('b(x)')
+plt.grid()
+plt.plot(x,y, color='purple')
+plt.show()
+```
+
+Here's how it looks like in a graph:
+
+![](non-continuous-function-ii.png)
+
+`x` approaching `0` from positive and negative sides equals `0`
+
+- `lim x -> 0⁺ b(x) = 0`
+- `lim x -> 0⁻ b(x) = 0`
+
+We can also approach infinite. Take this function: `d(x) = 4 / (x - 25)`, where `x ≠ 25`
+
+```python
+def d(x):
+  if x != 25:
+    return 4 / (x - 25)
+
+x = list(range(-100, 24))
+x.append(24.9)
+x.append(25)
+x.append(25.1)
+x = x + list(range(26, 101))
+y = [d(i) for i in x]
+
+plt.xlabel('x')
+plt.ylabel('d(x)')
+plt.grid()
+plt.plot(x,y, color='purple')
+plt.show()
+```
+
+We plot this graph:
+
+![](limit-infinite.png)
+
+Approaching from negative and positive sides result in infinite.
+
+- -♾️ when approaching from the negative side: lim x->25 d(x) = -♾️
+- +♾️ when approaching from the positive side: lim x->25 d(x) = +♾️
