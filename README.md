@@ -116,6 +116,7 @@
 - [Reinforcement Learning](https://www.udacity.com/course/reinforcement-learning--ud600)
 - [Machine Learning Crash Course with TensorFlow APIs](https://developers.google.com/machine-learning/crash-course)
 - [Backpropagation from the ground up](https://www.youtube.com/watch?v=SmZmBKc7Lrs)
+- [Understanding Machine Learning: From Theory to Algorithms](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf)
 
 ### Advanced Machine Learning
 
