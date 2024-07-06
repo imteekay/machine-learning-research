@@ -118,6 +118,7 @@
 - [Backpropagation from the ground up](https://www.youtube.com/watch?v=SmZmBKc7Lrs)
 - [Understanding Machine Learning: From Theory to Algorithms](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf)
 - [CS229 Lecture Notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf)
+- [A theory-heavy intro to machine learning](https://0xpemulis.net/learningtheory.html)
 
 ### Advanced Machine Learning
 

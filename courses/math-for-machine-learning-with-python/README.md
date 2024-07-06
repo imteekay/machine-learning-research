@@ -12,6 +12,7 @@
 - [Derivatives and Optimization](#derivatives-and-optimization)
   - [Rate of Change](#rate-of-change)
   - [Limits](#limits)
+  - [Differentiation and Derivatives](#differentiation-and-derivatives)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -670,3 +671,5 @@ Exponentials and roots:
 ```
 lim x->a (j(x))ⁿ = (lim x->a j(x))ⁿ
 ```
+
+### Differentiation and Derivatives
