@@ -15,7 +15,7 @@
 - [Machine Learning](#machine-learning)
   - [Learning Roadmap](#learning-roadmap)
   - [Data Science Fundamentals](#data-science-fundamentals)
-  - [Machine Learning](#machine-learning)
+  - [Machine Learning](#machine-learning-1)
   - [Deep Learning](#deep-learning)
   - [Generative AI](#generative-ai)
   - [Books](#books)
@@ -24,8 +24,9 @@
   - [Online Courses](#online-courses)
   - [Q&A: how to start learning Machine Learning](#questions-and-answers)
   - [Data Science Journey](#data-science-journey)
-  - [ML/AI & Healthcare](#healthcare)
-  - [Papers & Dissertations](#papers--dissertations)
+  - [ML/AI & Healthcare](#mlai--healthcare)
+  - [ML/AI & Biology](#mlai--biology)
+  - [Databases](#databases)
 - [Science](#science)
   - [Fundamentals](#fundamentals)
   - [Science](#science-1)
@@ -79,6 +80,7 @@
 - [[Course] Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 - [Khan Academy Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus)
 - [Khan Academy Differential Calculus](https://www.khanacademy.org/math/differential-calculus)
+- [Calculus Applied](https://www.edx.org/learn/calculus/harvard-university-calculus-applied)
 
 ### Optimization
 
@@ -113,6 +115,10 @@
 - [Machine Learning for All](https://www.coursera.org/learn/uol-machine-learning-for-all)
 - [Reinforcement Learning](https://www.udacity.com/course/reinforcement-learning--ud600)
 - [Machine Learning Crash Course with TensorFlow APIs](https://developers.google.com/machine-learning/crash-course)
+- [Backpropagation from the ground up](https://www.youtube.com/watch?v=SmZmBKc7Lrs)
+- [Understanding Machine Learning: From Theory to Algorithms](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf)
+- [CS229 Lecture Notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf)
+- [A theory-heavy intro to machine learning](https://0xpemulis.net/learningtheory.html)
 
 ### Advanced Machine Learning
 
@@ -133,6 +139,8 @@
 - [[Paper] Mastering the game of Go without human knowledge](https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ)
 - [AlphaGo Zero: Starting from scratch](https://deepmind.google/discover/blog/alphago-zero-starting-from-scratch)
 - [Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+- [The Principles of Deep Learning Theory](https://arxiv.org/pdf/2106.10165)
+- [Why do tree-based models still outperform deep learning on tabular data?](https://arxiv.org/pdf/2207.08815)
 
 ### Generative AI
 
@@ -192,7 +200,7 @@
 - [How to land a Data Scientist job at your dream company — My journey to Airbnb](https://towardsdatascience.com/how-to-land-a-data-scientist-job-at-your-dream-company-my-journey-to-airbnb-f6a1e99892e8)
 - [How to build a data science project from scratch](https://medium.freecodecamp.org/how-to-build-a-data-science-project-from-scratch-dc4f096a62a1)
 
-### Healthcare
+### ML/AI & Healthcare
 
 - [[Course] Machine Learning for Healthcare](https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-for-healthcaregit)
 - [AI in Healthcare @ Google Brain](https://www.youtube.com/watch?v=cvXVK8oqU4Q&ab_channel=AlexanderAmini)
@@ -213,15 +221,26 @@
 - [[Paper] Machine Learning Prediction of Cancer Cell Sensitivity to Drugs Based on Genomic and Chemical Properties](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0061318&type=printable)
 - [[Paper] Artificial intelligence in healthcare: past, present and future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
 - [[Paper] Deep Learning for Drug Discovery and Cancer Research: Automated Analysis of Vascularization Images](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904235)
-- [[Paper] Deep learning in drug discovery: an integrative review and future challenges](file:///Users/tk/Downloads/s10462-022-10306-1.pdf)
+- [[Paper] Deep learning in drug discovery: an integrative review and future challenges](https://github.com/imteekay/machine-learning-research/blob/master/papers/deep-learning-in-drug-discovery-an-integrative-review-and-future-challenges/paper.pdf)
 - [DeepMind AlphaFold 3](https://www.youtube.com/watch?v=Mz7Qp73lj9o&ab_channel=TwoMinutePapers)
 - [Multimodal Generative AI: the Next Frontier in Precision Health](https://www.microsoft.com/en-us/research/quarterly-brief/mar-2024-brief/articles/multimodal-generative-ai-the-next-frontier-in-precision-health)
 - [Artificial Intelligence in Healthcare: Past, Present and Future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
 - [[Paper] The myth of generalisability in clinical research and machine learning in health care](https://www.thelancet.com/action/showPdf?pii=S2589-7500%2820%2930186-2)
+- [[Paper] Sybil: A Validated Deep Learning Model to Predict Future Lung Cancer Risk From a Single Low-Dose Chest Computed Tomography](https://ascopubs.org/doi/10.1200/JCO.22.01345)
+- [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/abs/2404.18416)
+- [AlphaFold3: A foundation model for biology](https://harrisbio.substack.com/p/alphafold3-a-foundation-model-for)
+- [[Paper] Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/pdf/2311.16452)
 
-### Papers & Dissertations
+### ML/AI & Biology
 
+- [[Paper] Machine learning-aided generative molecular design](https://www.nature.com/articles/s42256-024-00843-5)
 - [Causal Inference for Computational Biology](https://summit.sfu.ca/_flysystem/fedora/2023-05/etd22427.pdf)
+- [Simulating 500 million years of evolution with a language model](https://evolutionaryscale-public.s3.us-east-2.amazonaws.com/research/esm3.pdf)
+- [Learning to Plan Chemical Syntheses](https://www.semanticscholar.org/reader/ef8ab2a0be51a0cd04c2c0f01adfae956a2a84af)
+
+### Databases
+
+- [Penn Machine Learning Benchmarks](https://epistasislab.github.io/pmlb)
 
 ## Science
 
@@ -233,6 +252,8 @@
 - [Intro to Chemistry](https://www.khanacademy.org/science/chemistry)
 - [Organic Chemistry](https://www.khanacademy.org/science/organic-chemistry)
 - [Introductory Biology](https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018)
+- [Molecular Biology - Part 1: DNA Replication and Repair](https://www.edx.org/learn/molecular-biology/massachusetts-institute-of-technology-molecular-biology-part-1-dna-replication-and-repair)
+- [Introduction to Biology - The Secret of Life](https://www.edx.org/learn/biology/massachusetts-institute-of-technology-introduction-to-biology-the-secret-of-life)
 
 ### Science
 
@@ -263,6 +284,7 @@
 - [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
 - [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
 - [[Course] Genomic Medicine Gets Personal](https://www.edx.org/learn/bioinformatics/georgetown-university-genomic-medicine-gets-personal)
+- [[Course] Essentials of Genomics and Biomedical Informatics](https://www.edx.org/learn/biomedical-sciences/israelx-essentials-of-genomics-and-biomedical-informatics)
 
 ### Computational Biology
 

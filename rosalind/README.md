@@ -1,0 +1,14 @@
+# Rosalind
+
+- cons: [problem](https://rosalind.info/problems/cons) — [solution](cons.py)
+- dna: [problem](https://rosalind.info/problems/dna) — [solution](dna.py)
+- fib: [problem](https://rosalind.info/problems/fib) — [solution](fib.py)
+- gc: [problem](https://rosalind.info/problems/gc) — [solution](gc.py)
+- hamm: [problem](https://rosalind.info/problems/hamm) — [solution](hamm.py)
+- iev: [problem](https://rosalind.info/problems/iev) — [solution](iev.py)
+- iprb: [problem](https://rosalind.info/problems/iprb) — [solution](iprb.py)
+- prot: [problem](https://rosalind.info/problems/prot) — [solution](prot.py)
+- prtm: [problem](https://rosalind.info/problems/prtm) — [solution](prtm.py)
+- revc: [problem](https://rosalind.info/problems/revc) — [solution](revc.py)
+- rna: [problem](https://rosalind.info/problems/rna) — [solution](rna.py)
+- subs: [problem](https://rosalind.info/problems/subs) — [solution](subs.py)
