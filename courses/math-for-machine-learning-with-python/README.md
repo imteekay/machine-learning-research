@@ -673,3 +673,110 @@ lim x->a (j(x))ⁿ = (lim x->a j(x))ⁿ
 ```
 
 ### Differentiation and Derivatives
+
+Calculating the slope `m`:
+
+```
+m = Δf(x) / Δx
+```
+
+or
+
+```
+m = (f(x₁) - f(x₀)) / (x₁ - x₀)
+```
+
+Making an adjustment with an increment for `x`, let's call it `h`, we have:
+
+```
+m = (f(x + h) - f(x)) / h
+```
+
+The shortest distance between `x` and `x + h` is when `h` is the smallest possible value, in other words, when `h` approaches `0`.
+
+```
+f'(x) = lim h->0 (f(x + h) - f(x)) / h
+```
+
+We call it the derivative of the original function.
+
+It's important because it provides valuable information about the behavior of a function at that specific point.
+
+- Rate of change: how the function is changing at that specific point (crucial for understanding the dynamics of the system being modeled)
+- Slope of the Tangent Line: useful for approximating the function locally by a linear function (simplify analysis and computation)
+- Understanding Function Behavior: the sign of the derivative indicates whether the function is increasing or decreasing at that point
+  - Find critical points: local maxima, minima, or saddle points
+  - Important for optimization
+
+**Differentiability**: be _differentiable_ at every point; that is, you are able to calculate the derivative for every point on the function line
+
+To be differentiable at a given point:
+
+- The function must be _continuous_ at that point.
+- The tangent line at that point cannot be vertical
+- The line must be _smooth_ at that point (that is, it cannot take on a sudden change of direction at the point)
+
+Take this function as an example:
+
+```
+q(x) = {
+  40,000 / x², if x < -4,
+  (x² - 2)·(x - 1), if x ≠ 0 and x ≥ -4 and x < 8,
+  (x² - 2), if x ≠ 0 and x ≥ 8
+}
+```
+
+Let's plot it with Python
+
+```python
+def q(x):
+  if x != 0:
+    if x < -4:
+      return 40000 / (x**2)
+    elif x < 8:
+      return (x**2 - 2) * x - 1
+    else:
+      return (x**2 - 2)
+
+x = list(range(-10, -5))
+x.append(-4.01)
+x2 = list(range(-4,8))
+x2.append(7.9999)
+x2 = x2 + list(range(8,11))
+
+y = [q(i) for i in x]
+y2 = [q(i) for i in x2]
+
+plt.xlabel('x')
+plt.ylabel('q(x)')
+plt.grid()
+plt.plot(x,y, color='purple')
+plt.plot(x2,y2, color='purple')
+plt.scatter(-4,q(-4), c='red')
+plt.annotate('A (x= -4)',(-5,q(-3.9)), xytext=(-7, q(-3.9)))
+plt.scatter(0,0, c='red')
+plt.annotate('B (x= 0)',(0,0), xytext=(-1, 40))
+plt.scatter(8,q(8), c='red')
+plt.annotate('C (x= 8)',(8,q(8)), xytext=(8, 100))
+plt.show()
+```
+
+Here's the graph:
+
+The points marked on this graph are non-differentiable:
+
+- Point **A** is non-continuous - the limit from the negative side is infinity, but the limit from the positive side &approx; -57
+- Point **B** is also non-continuous - the function is not defined at x = 0.
+- Point **C** is defined and continuous, but the sharp change in direction makes it non-differentiable.
+
+![](not-differentiable-function.png)
+
+**Derivative Rules**
+
+- `f(x) = C`, where `C` is a constant, then `f'(x) = 0` (it's a horizontal lie)
+- If `f(x) = Cg(x)`, then `f'(x) = Cg'(x)`
+- If `f(x) = g(x) + h(x)`, then `f'(x) = g'(x) + h'(x)` (this also applies to subtraction)
+- The power rule: `f(x) = xⁿ` ∴ `f'(x) = nxⁿ⁻¹`
+- The product rule: `d/dx[f(x)·g(x)]` = `f'(x)·g(x) + f(x)·g'(x)`
+- The quotient rule: `r(x) = s(x) / t(x)` ∴ `r'(x) = (s'(x)·t(x) - s(x)·t'(x)) / [t(x)]²`
+- The chain rule: `d/dx[O(i(x))] = o'(i(x))·i'(x)`
