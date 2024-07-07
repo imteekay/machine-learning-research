@@ -13,6 +13,7 @@
   - [Rate of Change](#rate-of-change)
   - [Limits](#limits)
   - [Differentiation and Derivatives](#differentiation-and-derivatives)
+  - [Critical Points](#critical-points)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -780,3 +781,135 @@ The points marked on this graph are non-differentiable:
 - The product rule: `d/dx[f(x)·g(x)]` = `f'(x)·g(x) + f(x)·g'(x)`
 - The quotient rule: `r(x) = s(x) / t(x)` ∴ `r'(x) = (s'(x)·t(x) - s(x)·t'(x)) / [t(x)]²`
 - The chain rule: `d/dx[O(i(x))] = o'(i(x))·i'(x)`
+
+### Critical Points
+
+Take this function:
+
+```
+k(x) = -10x² + 100x + 3
+```
+
+To determine the derivative function of the original function:
+
+```
+k'(x) = -20x + 100
+```
+
+And plotting with Python:
+
+```python
+def k(x):
+  return -10 * (x**2) + (100 * x)  + 3
+
+def kd(x):
+  return -20 * x + 100
+
+x = list(range(0, 11))
+y = [k(i) for i in x]
+yd = [kd(i) for i in x]
+
+plt.xlabel('x (time in seconds)')
+plt.ylabel('k(x) (height in feet)')
+plt.xticks(range(0,15, 1))
+plt.yticks(range(-200, 500, 20))
+plt.grid()
+plt.plot(x,y, color='green')
+plt.plot(x,yd, color='purple')
+plt.show()
+```
+
+It generates these two functions in the graph:
+
+![](critical-points.png)
+
+Some interpretation of this graph:
+
+- The point where the derivative line crosses 0 on the y-axis is also the point where the function value stops increasing and starts decreasing. When the slope has a positive value, the function is increasing; and when the slope has a negative value, the function is decreasing.
+- The tangent line (the slope in each point) is rotating clockwise throughout the graph.
+- At the highest point, the tangent line would be perfectly horizontal, representing a slope of 0.
+
+To illustrate the interpretation, we have three tangent lines: one when the function is increasing, one when the function is decreasing, and the another one when it's horizontal, in other words, when the slope is 0.
+
+![](critical-points-tangent-lines.png)
+
+Critical points are represented when the derivative function crosses `0`. It indicates that the function is changing direction.
+
+**Finding minima and maxima**
+
+```
+k(x) = -10x² + 100x + 3
+k'(x) = -20x + 100
+-20x + 100 = 0
+20x = 100
+x = 100 / 20
+x = 5
+```
+
+The derivative will be 0 when `x` is 5.
+
+**Second Order Derivatives**
+
+We can use second order derivatives to determine if the critical point is minima or maxima.
+
+```
+k(x) = -10x² + 100x + 3
+k'(x) = -20x + 100
+k''(x) = -20
+```
+
+The second derivative has a constant value, so we know that the slope of the prime derivative is linear, and because it's a negative value, we know that it is decreasing.
+
+When the derivative crosses 0, it we know that the slope of the function is decreasing linearly, so the point at `x = 0` must be a maximum point.
+
+The same happens when finding a minimum point.
+
+```
+w(x) = x²+ 2x + 7
+w'(x) = 2x + 2
+w''(x) = 2
+```
+
+It's a positive constant, so it's increasing when crossing `0`, therefore, it means this a minimum point.
+
+Optimization is one of the application of finding critical points.
+
+Imagine a formula representing the expected number of subscriptions to Netflix:
+
+```
+s(x) = -5x + 100
+```
+
+In this case, `s(x)` being the number of subscriptions and `x` the monthly fee.
+
+The monthly revenue can be calculated as the subscription volume times the monthly fee:
+
+```
+r(x) = s(x)·x
+r(x) = -5x² + 100x
+```
+
+First find the prime derivative:
+
+```
+r'(x) = -10x + 100
+```
+
+Then find the critical points (when `r'(x)` equals `0`):
+
+```
+r'(x) = -10x + 100
+0 = -10x + 100
+10x = 100
+x = 10
+```
+
+And finally checking if the critical point is a maximum or minimum point using the second order derivative:
+
+```
+r'(x) = -10x + 100
+r''(x) = -10
+r''(10) = -10
+```
+
+A negative constant value in the second order derivative tells it's a maximum point. In other words, the maximum monthly fee for Netflix is `10`.
