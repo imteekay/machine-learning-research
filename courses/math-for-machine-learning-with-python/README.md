@@ -9,7 +9,7 @@
   - [Factorization](#factorization)
   - [Quadratic Equations](#quadratic-equations)
   - [Functions](#functions)
-- [Derivatives and Optimization](#derivatives-and-optimization)
+- [Calculus: Derivatives and Optimization](#calculus-derivatives-and-optimization)
   - [Rate of Change](#rate-of-change)
   - [Limits](#limits)
   - [Differentiation and Derivatives](#differentiation-and-derivatives)
@@ -395,7 +395,7 @@ x = range(-100, 101)
 y = [k(a) for a in x]
 ```
 
-## Derivatives and Optimization
+## Calculus: Derivatives and Optimization
 
 ### Rate of Change
 
