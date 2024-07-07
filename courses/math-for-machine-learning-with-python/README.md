@@ -14,6 +14,7 @@
   - [Limits](#limits)
   - [Differentiation and Derivatives](#differentiation-and-derivatives)
   - [Critical Points](#critical-points)
+  - [Partial Derivatives](#partial-derivatives)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -913,3 +914,66 @@ r''(10) = -10
 ```
 
 A negative constant value in the second order derivative tells it's a maximum point. In other words, the maximum monthly fee for Netflix is `10`.
+
+### Partial Derivatives
+
+How do we calculate the derivate of multi variables functions?
+
+```
+f(x, y) = x² + y²
+```
+
+We use partial derivatives:
+
+- The derivative of `f(x, y)` with respect to `x`
+- The derivative of `f(x, y)` with respect to `y`
+
+Starting with the partial derivative with respect to `x`:
+
+```
+∂f(x, y) / ∂x
+∂(x² + y²) / ∂x
+∂x² / ∂x
+2x
+```
+
+Because `y` doesn't depend on `x`, `∂y² / ∂x = 0`
+
+We get the same idea when calculating the partial derivative with respect to `y`:
+
+```
+∂f(x, y) / ∂y
+∂(x² + y²) / ∂y
+∂y² / ∂y
+2y
+```
+
+We use partial derivatives to compute a gradient. A gradient is a way to find the analog of the slope for multi-dimensonal surfaces.
+
+You can find minimum and maximum of curves using derivatives. In the same way, you can find the minimum and maximum of surfaces by following the gradiennt and finding the points were the gradient is zero in all directions.
+
+For this function:
+
+```
+f(x, y) = x² + y²
+```
+
+We have
+
+```
+∂f(x, y) / ∂x = 2x
+∂f(x, y) / ∂y = 2y
+```
+
+The gradient is a 2-dimensional vector:
+
+```
+grad(f(x, y)) = [2x, 2y]
+```
+
+We can use the concept of gradient in a minimization algorithm called gradient decent method, where you take a guess, compute the gradient, take a small step in the direction of the gradient, and determine if it's close to `0` (the gradient will be `0` at the minimum).
+
+The cost function provides a way to evaluate the performance of a model. Gradient descent is an optimization algorithm used to minimize the cost function. One type of cost functions is the Mean Squared Error (MSE). Minimizing the cost function means
+
+- Finding the model parameters that result in the smallest possible cost, indicating the best fit to the data.
+- Lower values of the cost function indicate a model that better predicts the actual outcomes.
