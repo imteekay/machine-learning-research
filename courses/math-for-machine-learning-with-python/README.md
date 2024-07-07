@@ -971,7 +971,7 @@ The gradient is a 2-dimensional vector:
 grad(f(x, y)) = [2x, 2y]
 ```
 
-We can use the concept of gradient in a minimization algorithm called gradient decent method, where you take a guess, compute the gradient, take a small step in the direction of the gradient, and determine if it's close to `0` (the gradient will be `0` at the minimum).
+We can use the concept of gradient in a minimization algorithm called gradient descent method, where you take a guess, compute the gradient, take a small step in the direction of the gradient, and determine if it's close to `0` (the gradient will be `0` at the minimum).
 
 The cost function provides a way to evaluate the performance of a model. Gradient descent is an optimization algorithm used to minimize the cost function. One type of cost functions is the Mean Squared Error (MSE). Minimizing the cost function means
 
