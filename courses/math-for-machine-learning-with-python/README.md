@@ -15,7 +15,7 @@
   - [Differentiation and Derivatives](#differentiation-and-derivatives)
   - [Critical Points](#critical-points)
   - [Partial Derivatives](#partial-derivatives)
-- [Vectors]
+- [Vectors](#vectors)
   - [What's a vector](#whats-a-vector)
   - [Calculating Magnitude](#calculating-magnitude)
   - [Calculating Direction](#calculating-direction)
