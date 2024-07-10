@@ -15,6 +15,11 @@
   - [Differentiation and Derivatives](#differentiation-and-derivatives)
   - [Critical Points](#critical-points)
   - [Partial Derivatives](#partial-derivatives)
+- [Vectors]
+  - [What's a vector](#whats-a-vector)
+  - [Calculating Magnitude](#calculating-magnitude)
+  - [Calculating Direction](#calculating-direction)
+  - [Vector Addition](#vector-addition)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -977,3 +982,140 @@ The cost function provides a way to evaluate the performance of a model. Gradien
 
 - Finding the model parameters that result in the smallest possible cost, indicating the best fit to the data.
 - Lower values of the cost function indicate a model that better predicts the actual outcomes.
+
+## Vectors
+
+### What's a vector
+
+A numeric element that has magnitude and direction.
+
+- magnitude: distance
+- direction: which way is headed
+
+Let's see an example:
+
+```bash
+v = (2, 1)
+```
+
+For this vector, we need to move 2 units in the `x` dimension and 1 unit in the `y` dimension. It's a way of saying the directions you need to follow to get to there from here.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+vector = np.array([2, 1])
+origin = [0], [0]
+plt.axis('equal')
+plt.grid()
+plt.quiver(*origin, *vector, scale=10, color='r')
+plt.show()
+```
+
+This will plot the vector in the graph:
+
+![](vector.png)
+
+### Calculating Magnitude
+
+We can use the Pythagorean theorum and calculate the square root of the sum of the squares.
+
+```bash
+v = √v₁² + v₂²
+```
+
+For our vector example: `v = (2, 1)`, here's how I calculate it:
+
+```bash
+v = √2² + 1²
+v = √4 + 1
+v = √5 ≈ 2.24
+```
+
+In Python, we can use the `math` module:
+
+```python
+import numpy as np
+import math
+
+vector = np.array([2, 1])
+math.sqrt(vector[0]**2 + vector[1]**2) # 2.23606797749979
+```
+
+### Calculating Direction
+
+To calculate the direction (amplitude), we use trigonometry and get the angle of the vector by calculating the inverse tangent `tan⁻¹`.
+
+```bash
+tan(𝛉) = 1 / 2
+𝛉 = tan⁻¹(0.5) ≈ 26.57°
+```
+
+We can confirm it calculating it in Python
+
+```python
+import math
+import numpy as np
+
+v = np.array([2,1])
+vTan = v[1] / v[0] # 0.5
+vAtan = math.atan(vTan)
+math.degrees(vAtan) # 𝛉 = 26.56505117707799
+```
+
+### Vector Addition
+
+Let's add two vectors:
+
+- `v = (2, 1)`
+- `s = (-3, 2)`
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+v = np.array([2, 1])
+s = np.array([-3, 2])
+
+vecs = np.array([v, s])
+origin = [0], [0]
+plt.axis('equal')
+plt.grid()
+plt.ticklabel_format(style='sci', axis='both', scilimits=(0,0))
+plt.quiver(*origin, vecs[0, 0], vecs[0, 1], color=['r', 'b'], scale=10)
+plt.quiver(*origin, vecs[1, 0], vecs[1, 1], color=['r', 'b'], scale=10)
+plt.show()
+```
+
+Let's calcula the sum of `v` and `s`, resulting in `z`:
+
+```bash
+z = v + s
+z = (2, 1) + (-3, 2)
+z = (-1, 3)
+```
+
+Generate the new vector `z` with Python:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+v = np.array([2, 1])
+s = np.array([-3, 2])
+z = v + s
+
+vecs = np.array([v, s, z])
+origin = [0], [0]
+plt.axis('equal')
+plt.grid()
+plt.ticklabel_format(style='sci', axis='both', scilimits=(0,0))
+plt.quiver(*origin, vecs[0, 0], vecs[0, 1], color=['r', 'b'], scale=10)
+plt.quiver(*origin, vecs[1, 0], vecs[1, 1], color=['r', 'b'], scale=10)
+plt.quiver(*origin, vecs[2, 0], vecs[2, 1], color=['r', 'b'], scale=10)
+plt.show()
+```
+
+Here's the plot:
+
+![](vector-addition.png)
