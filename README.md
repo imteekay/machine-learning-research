@@ -289,6 +289,7 @@
 - [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
 - [[Course] Genomic Medicine Gets Personal](https://www.edx.org/learn/bioinformatics/georgetown-university-genomic-medicine-gets-personal)
 - [[Course] Essentials of Genomics and Biomedical Informatics](https://www.edx.org/learn/biomedical-sciences/israelx-essentials-of-genomics-and-biomedical-informatics)
+- [Genomics Papers](https://github.com/jtleek/genomicspapers)
 
 ### Computational Biology
 
