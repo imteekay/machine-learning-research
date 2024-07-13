@@ -20,6 +20,7 @@
   - [Calculating Magnitude](#calculating-magnitude)
   - [Calculating Direction](#calculating-direction)
   - [Vector Addition](#vector-addition)
+  - [Vector Multiplication](#vector-multiplication)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -1119,3 +1120,102 @@ plt.show()
 Here's the plot:
 
 ![](vector-addition.png)
+
+### Vector Multiplication
+
+We have 3 ways of performing vector multiplication:
+
+- Scalar multiplication
+- Dot product multiplication
+- Cross product multiplication
+
+Scalar multiplication is multiplying a vector by a single numeric value.
+
+Let's multiply vector `v` by `2`, resulting in a vector `w`.
+
+```bash
+v = (2, 1)
+w = 2v
+```
+
+Here's how the multiplication is calculated:
+
+```bash
+w = (2·2, 2·1)
+w = (4, 2)
+```
+
+In Python, we can use `numpy` to perform the vector multiplication
+
+```python
+import numpy as np
+
+v = np.array([2, 1])
+w = 2 * v # [4 2]
+```
+
+Scalar division is the same idea:
+
+```python
+import numpy as np
+
+v = np.array([2, 1])
+b = v / 2 # [1. 0.5]
+```
+
+In the dot production multiplication, we get the result of of two vectors multiplication, in other words, the scalar product (a numeric value).
+
+```bash
+v·s = (v₁·s₁) + (v₂·s₂) ... + (vₙ·sₙ)
+```
+
+If `v = (2, 1)` and `s = (-3, 2)`, here's how we calculate the scalar product:
+
+```bash
+v·s = (2·-3) + (1·2) = -6 + 2 = -4
+```
+
+In Python, we can use the `dot` method or `@` to calculate the scalar product of two vectors.
+
+```python
+# using .dot
+v = np.array([2, 1])
+s = np.array([-3, 2])
+np.dot(v, s) # -4
+
+# using @
+v = np.array([2, 1])
+s = np.array([-3, 2])
+v @ s # -4
+```
+
+To get the vector product of multiplying two vectors, we need to calculate the cross product.
+
+```bash
+v = (2, 3, 1)
+s = (1, 2, -2)
+r = v·s = ? # vector product
+```
+
+We need to calculate the three components for the final vector:
+
+```bash
+r₁ = v₂s₃ - v₃s₂
+r₂ = v₃s₁ - v₁s₃
+r₃ = v₁s₂ - v₂s₁
+```
+
+Here's how we do the calculation in our example:
+
+```bash
+r = v·s = ((3·-2) - (1·-2), (1·1) - (2·-2), (2·2) - (3·1))
+r = v·s = (-8, 5, 1)
+```
+
+In Python, we use the `cross` method:
+
+```python
+p = np.array([2, 3, 1])
+q = np.array([1, 2, -2])
+r = np.cross(p, q) # [-8  5  1]
+```
