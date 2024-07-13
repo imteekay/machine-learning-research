@@ -24,6 +24,7 @@
 - [Matrices](#matrices)
   - [What's a matrix](#whats-a-matrix)
   - [Matrix Multiplication](#matrix-multiplication)
+  - [Matrix Division](#matrix-division)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -1462,3 +1463,5 @@ Multiplying a matrix by an identity matrix results in the same matrix. It's like
   7 8 9         0 0 1         7 8 9
 ]             ]             ]
 ```
+
+### Matrix Division
