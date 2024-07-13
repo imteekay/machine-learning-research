@@ -21,6 +21,8 @@
   - [Calculating Direction](#calculating-direction)
   - [Vector Addition](#vector-addition)
   - [Vector Multiplication](#vector-multiplication)
+- [Matrices](#matrices)
+  - [What's a matrix](#whats-a-matrix)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -1218,4 +1220,127 @@ In Python, we use the `cross` method:
 p = np.array([2, 3, 1])
 q = np.array([1, 2, -2])
 r = np.cross(p, q) # [-8  5  1]
+```
+
+## Matrices
+
+### What's a matrix
+
+A matrix is an array of numbers that are arranged into rows and columns.
+
+```bash
+A = [
+  1 2 3
+  4 5 6
+]
+```
+
+This is how you indicate each element in the matrix:
+
+```bash
+A = [
+  a₁,₁  a₁,₂  a₁,₃
+  a₂,₁  a₂,₂  a₂,₃
+]
+```
+
+In Python, we can define the matrix as a 2-dimensional array:
+
+```python
+import numpy as np
+
+A = np.array([[1,2,3],
+              [4,5,6]])
+# [[1 2 3]
+#  [4 5 6]]
+```
+
+To add two matrices of the same size together, just add the corresponding elements in each matrix:
+
+```bash
+[               [             [
+  1 2 3     +     6 5 4   =     7 7 7
+  4 5 6           3 2 1         7 7 7
+]               ]             ]
+```
+
+Here's how we calculate it:
+
+```bash
+[
+  a₁,₁ + b₁,₁, a₁,₂ + b₁,₂, a₁,₃ + b₁,₃
+  a₂,₁ + b₂,₁, a₂,₂ + b₂,₂, a₂,₃ + b₂,₃
+]
+```
+
+In Python, we can just sum the two matrices:
+
+```python
+A = np.array([[1, 2, 3],
+              [4, 5, 6]])
+
+B = np.array([[6, 5, 4],
+              [3, 2, 1]])
+
+A + B
+# [[7 7 7]
+# [7 7 7]]
+```
+
+Subtraction of two matrices works the same way:
+
+```bash
+[               [             [
+  1 2 3     -     6 5 4   =     -5 -3 -1
+  4 5 6           3 2 1         1   3  5
+]               ]             ]
+```
+
+The nagative of a matrix, is just a matrix with the sign of each element reversed.
+
+```bash
+C = [
+  -5  -3  -1
+  1   3   5
+]
+
+-C = [
+  5   3    1
+  -1  -3   -5
+]
+```
+
+In Python, we can use the minus sign:
+
+```python
+C = np.array([[-5, -3, -1],
+              [1, 3, 5]])
+C
+# [[-5 -3 -1]
+#  [ 1  3  5]]
+
+-C
+# [[ 5  3  1]
+#  [-1 -3 -5]]
+```
+
+Matrix Transposition is when we switch the orientation of its rows and columns:
+
+```bash
+[               [
+  1 2 3    =      1 4
+  4 5 6           2 5
+] ͭ                3 6
+                ]
+```
+
+In Python, we have the `T` method:
+
+```python
+A = np.array([[1, 2, 3],
+              [4, 5, 6]])
+A.T
+# [[1 4]
+#  [2 5]
+#  [3 6]]
 ```
