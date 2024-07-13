@@ -23,6 +23,7 @@
   - [Vector Multiplication](#vector-multiplication)
 - [Matrices](#matrices)
   - [What's a matrix](#whats-a-matrix)
+  - [Matrix Multiplication](#matrix-multiplication)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -1343,4 +1344,121 @@ A.T
 # [[1 4]
 #  [2 5]
 #  [3 6]]
+```
+
+### Matrix Multiplication
+
+Scalar multiplication in matrices looks similar to scalar multiplication in vectors. To multiply a matrix by a scalar value, you just multiply each element by the scalar to produce a new matrix:
+
+```bash
+     [                 [
+2 ·     1 2 3     =       2  4   6
+        4 5 6             8  10  12
+     ]                 ]
+```
+
+In Python, we simply perform the multiplication of two values:
+
+```python
+A = np.array([[1,2,3],
+              [4,5,6]])
+
+2 * A
+# [[ 2  4  6]
+#  [ 8 10 12]]
+```
+
+To mulitply two matrices, we need to calculate the dot product of rows and columns.
+
+```bash
+A · B
+
+[               [
+  1 2 3     ·     9 8
+  4 5 6           7 6
+]                 5 4
+                ]
+```
+
+How to calculate this multiplication:
+
+- First row from A times first column from B = First row, first column
+- First row from A times second column from B = First row, second column
+- Second row from A times first column from B = Second row, first column
+- Second row from A times second column from B = Second row, second column
+
+Resulting in these calculations:
+
+```bash
+(1·9) + (2·7) + (3·5) = 38
+(1·8) + (2·6) + (3·4) = 32
+(4·9) + (5·7) + (6·5) = 101
+(4·8) + (5·6) + (6·4) = 86
+```
+
+Resulting in this matrix:
+
+```bash
+[
+  38   32
+  101  86
+]
+```
+
+In Python, we can use the `dot` method or `@`:
+
+```python
+import numpy as np
+
+A = np.array([[1, 2, 3],
+              [4, 5, 6]])
+
+B = np.array([[9, 8],
+              [7, 6],
+              [5, 4]])
+
+np.dot(A,B)
+A @ B
+# [[ 38  32]
+#  [101  86]]
+```
+
+For matrix multiplication, we commutative law doesn't apply:
+
+```python
+A = np.array([[2, 4],
+              [6, 8]])
+
+B = np.array([[1, 3],
+              [5, 7]])
+
+A @ B
+# [[22 34]
+#  [46 74]]
+
+B @ A
+# [[20 28]
+#  [52 76]]
+```
+
+Identity matrices are matrices that have the value 1 in the diagonal positions and 0 in the rest of the other positions.
+
+An example:
+
+```bash
+[
+  1 0 0
+  0 1 0
+  0 0 1
+]
+```
+
+Multiplying a matrix by an identity matrix results in the same matrix. It's like multiplying by 1.
+
+```bash
+[             [             [
+  1 2 3         1 0 0         1 2 3
+  4 5 6   ·     0 1 0   =     4 5 6
+  7 8 9         0 0 1         7 8 9
+]             ]             ]
 ```
