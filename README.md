@@ -239,6 +239,7 @@
 - [Causal Inference for Computational Biology](https://summit.sfu.ca/_flysystem/fedora/2023-05/etd22427.pdf)
 - [Simulating 500 million years of evolution with a language model](https://evolutionaryscale-public.s3.us-east-2.amazonaws.com/research/esm3.pdf)
 - [Learning to Plan Chemical Syntheses](https://www.semanticscholar.org/reader/ef8ab2a0be51a0cd04c2c0f01adfae956a2a84af)
+- [Machine Learning for Genomics](https://www.youtube.com/playlist?list=PLypiXJdtIca6dEYlNoZJwBaz__CdsaoKJ)
 - [MIT Deep Learning in Life Sciences](https://www.youtube.com/playlist?list=PLypiXJdtIca5sxV7aE3-PS9fYX3vUdIOX)
 
 ### Databases
