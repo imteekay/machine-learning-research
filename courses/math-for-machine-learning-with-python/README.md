@@ -25,6 +25,7 @@
   - [What's a matrix](#whats-a-matrix)
   - [Matrix Multiplication](#matrix-multiplication)
   - [Matrix Division](#matrix-division)
+  - [Systems of Equations](#systems-of-equations-1)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -1540,4 +1541,62 @@ B = np.array([[6,2],
 A @ np.linalg.inv(B)
 # [[0.  1. ]
 #  [0.2 1.8]]
+```
+
+### Systems of Equations
+
+We can write system of equations in matrix form. Take a look a this equations:
+
+$$
+\begin{equation}2x + 4y = 18\end{equation}
+$$
+
+$$
+\begin{equation}6x + 2y = 34\end{equation}
+$$
+
+We can write this in matrix form:
+
+$$
+\begin{equation}\begin{bmatrix}2 & 4\\6 & 2\end{bmatrix} \cdot \begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}18\\34\end{bmatrix}\end{equation}
+$$
+
+And we can write this in another way:
+
+$$
+\begin{equation}A=\begin{bmatrix}2 & 4\\6 & 2\end{bmatrix}\;\;\;\;X=\begin{bmatrix}x\\y\end{bmatrix}\;\;\;\;B=\begin{bmatrix}18\\34\end{bmatrix}\end{equation}
+$$
+
+We know that `A · X = B`, which is the same as `B ÷ A = X`, which is the same as `B · A⁻¹ = X`.
+
+The inverse of `A` is:
+
+$$
+\begin{equation}A^{-1} = \begin{bmatrix}-0.1 & 0.2\\0.3 & -0.1\end{bmatrix}\end{equation}
+$$
+
+So:
+
+$$
+\begin{equation}X = \begin{bmatrix}-0.1 & 0.2\\0.3 & -0.1\end{bmatrix} \cdot \begin{bmatrix}18\\34\end{bmatrix}\end{equation}
+$$
+
+The result of the matrix `X` is
+
+$$
+\begin{equation}X = \begin{bmatrix}5\\2\end{bmatrix}\end{equation}
+$$
+
+In Python, we can confirm that:
+
+```python
+A = np.array([[2, 4],
+              [6, 2]])
+
+B = np.array([[18],
+              [34]])
+
+X = np.linalg.inv(A) @ B
+# [[5.]
+#  [2.]]
 ```
