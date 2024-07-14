@@ -26,6 +26,8 @@
   - [Matrix Multiplication](#matrix-multiplication)
   - [Matrix Division](#matrix-division)
   - [Systems of Equations](#systems-of-equations-1)
+- [Statistics](#statistics)
+  - [Data Introduction](#data-introduction)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -1600,3 +1602,29 @@ X = np.linalg.inv(A) @ B
 # [[5.]
 #  [2.]]
 ```
+
+## Statistics
+
+### Data Introduction
+
+For types of data, we can represent them as qualitative or quantitative data.
+
+- **Qualitative**: it's a type of categorical data. It's used to categorize or identify the observed data
+  - **Nominal**: data that can be labelled or classified into mutually exclusive categories within a variable
+  - **Ordinal**:data that have natural, ordered categories
+- **Quantitative**: it indicates some kind of quantitative or measurement
+  - **Discrete**: a type of quantitative data that includes nondivisible figures and statistics you can count
+  - **Continuous**: measurements that if placed on a number scale, can be placed in an infinite number of spaces between two whole numbers
+
+Population vs Samples
+
+- Population is the whole
+- Sample is a subset of the population
+
+Different types of data visualization
+
+- **Bar charts**: a _bar chart_ is a good way to compare numeric quantities or counts across categories
+- **Histograms**: an _histogram chart_ is good for continous data, so the chart doesn't show a bar for each individual value, but rather a bar for each range of binned values
+- **Pie charts**: make it easy to compare relative quantities by categories
+- **Scatter plots**: it's helpful for identifying apparent relationships between numeric features
+- **Line charts**: a _line chart_ is a great way to see changes in values along a series based on a time period
