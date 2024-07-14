@@ -1465,3 +1465,79 @@ Multiplying a matrix by an identity matrix results in the same matrix. It's like
 ```
 
 ### Matrix Division
+
+Matrix division is basically multiplying it by the inverse of the matrix
+
+$$
+\begin{equation}A \div B = A \cdot B^{-1}\end{equation}
+$$
+
+How the inverse of a matrix is calculated? Using this equation:
+
+$$
+\begin{equation}\begin{bmatrix}a & b\\c & d\end{bmatrix}^{-1} = \frac{1}{ad-bc}  \begin{bmatrix}d & -b\\-c & a\end{bmatrix}\end{equation}
+$$
+
+Let's see it in action:
+
+$$
+\begin{equation}\begin{bmatrix}6 & 2\\1 & 2\end{bmatrix}^{-1} = \begin{bmatrix}0.2 & -0.2\\-0.1 & 0.6\end{bmatrix}\end{equation}
+$$
+
+In Python, we can use the `linalg.inv` method:
+
+```python
+import numpy as np
+
+B = np.array([[6, 2],
+              [1, 2]])
+
+np.linalg.inv(B)
+# [[ 0.2 -0.2]
+#  [-0.1  0.6]]
+```
+
+Larger matrices than 2x2 are more complex to calculate the inverse, but it is calculated in the same way in Python:
+
+```python
+B = np.array([[4, 2, 2],
+              [6, 2, 4],
+              [2, 2, 8]])
+
+np.linalg.inv(B)
+# [[-0.25   0.375 -0.125]
+#  [ 1.25  -0.875  0.125]
+#  [-0.25   0.125  0.125]]
+```
+
+With the calculation of the inverse, we can now calculate the multiplication of a matrix with a inverse of another matrix.
+
+$$
+\begin{equation}\begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} \cdot \begin{bmatrix}6 & 2\\1 & 2\end{bmatrix}^{-1} \end{equation}
+$$
+
+$$
+\begin{equation}=\begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} \cdot \begin{bmatrix}0.2 & -0.2\\-0.1 & 0.6\end{bmatrix}  \end{equation}
+$$
+
+$$
+\begin{equation}=\begin{bmatrix}(1\times0.2)+(2\times-0.1) & (1\times-0.2)+(2\times0.6)\\(3\times0.2)+(4\times-0.1) & (3\times-0.2)+(4\times0.6)\end{bmatrix}\end{equation}
+$$
+
+$$
+\begin{equation}=\begin{bmatrix}0 & 1\\0.2 & 1.8\end{bmatrix}\end{equation}
+$$
+
+In Python, we can just invert the matrix and multiply by the inverse:
+
+```python
+A = np.array([[1,2],
+              [3,4]])
+
+B = np.array([[6,2],
+              [1,2]])
+
+A @ np.linalg.inv(B)
+# [[0.  1. ]
+#  [0.2 1.8]]
+```
