@@ -28,6 +28,7 @@
   - [Systems of Equations](#systems-of-equations-1)
 - [Statistics](#statistics)
   - [Data Introduction](#data-introduction)
+  - [Statistics Fundamentals](#statistics-fundamentals)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -1628,3 +1629,352 @@ Different types of data visualization
 - **Pie charts**: make it easy to compare relative quantities by categories
 - **Scatter plots**: it's helpful for identifying apparent relationships between numeric features
 - **Line charts**: a _line chart_ is a great way to see changes in values along a series based on a time period
+
+### Statistics Fundamentals
+
+One of the important topics in statistics is understanding the distribution of data in a sample. To be able to have this understanding, we need to learn the "Measures of Central Tendency", which's basically where the middle value in the data is. There are different ways of approaching this.
+
+Let's start with this example of comparative salaries of people:
+
+| Name     | Salary  |
+| -------- | ------- |
+| Dan      | 50,000  |
+| Joann    | 54,000  |
+| Pedro    | 50,000  |
+| Rosie    | 189,000 |
+| Ethan    | 55,000  |
+| Vicky    | 40,000  |
+| Frederic | 59,000  |
+
+#### Mean
+
+Mean is also called "average". This is calculated as the sum of the values in the dataset, divided by the number of observations in the dataset.
+
+$$
+\begin{equation}\mu = \frac{\displaystyle\sum_{i=1}^{N}X_{i}}{N}\end{equation}
+$$
+
+For the list of salaries, we can calculate it as:
+
+$$
+\begin{equation}\bar{x} = \frac{50000+54000+50000+189000+55000+40000+59000}{7} = 71000\end{equation}
+$$
+
+We can use the `mean` method from Pandas in Python:
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000]})
+
+df['Salary'].mean() # 71000.0
+```
+
+#### Median
+
+To calculate the median, we:
+
+- sort the values in ascending order
+- find the middle value
+- if there are an odd number of observations, you find the middle value using this formula
+
+$$
+\begin{equation}\frac{n+1}{2}\end{equation}
+$$
+
+- if the number of observation is even, we calculate the median as the average of the two middle-most values:
+
+$$
+\begin{equation}\frac{n}{2} \;\;\;\;and \;\;\;\; \frac{n}{2} + 1\end{equation}
+$$
+
+For the list of salaries, we have an odd number of observations (7), so to get the position of the median value, we just need to calculate like this: `(7 + 1) / 2 = 4`, which's the salary `54,000`.
+
+| Salary        |
+| ------------- |
+| 40,000        |
+| 50,000        |
+| 50,000        |
+| **_>54,000_** |
+| 55,000        |
+| 59,000        |
+| 189,000       |
+
+In Python, we have the method `median`:
+
+```python
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000]})
+
+df['Salary'].median() # 54000.0
+```
+
+#### Mode
+
+Mode indicates the most frequently occurring value. Looking at the salaries list, we notice that the salary `50,000` is most frequant one, and so, it's the mode.
+
+| Salary        |
+| ------------- |
+| 40,000        |
+| **_>50,000_** |
+| **_>50,000_** |
+| 54,000        |
+| 55,000        |
+| 59,000        |
+| 189,000       |
+
+In Python, we also have a method called `mode`:
+
+```python
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000]})
+
+df['Salary'].mode() # 50000
+```
+
+We can also have multimodal data, where the list has more than 1 mode. The `mode` method returns a list of all modes in the data.
+
+#### Distribution & Density
+
+It's important not only to find the center but also how the data is distrbuted. First starting with the minimum and maximum values.
+
+```python
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000]})
+
+print('Min: ' + str(df['Salary'].min())) # Min: 40000
+print('Mode: ' + str(df['Salary'].mode()[0])) # Mode: 50000
+print('Median: ' + str(df['Salary'].median())) # Median: 54000.0
+print('Mean: ' + str(df['Salary'].mean())) # Mean: 71000.0
+print('Max: ' + str(df['Salary'].max())) # Max: 189000
+```
+
+Looking at this information, we can have a sense of how the data is distrbuted. But we can also use graphs to have a visually understanding of it.
+
+```python
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000]})
+
+salary = df['Salary']
+salary.plot.hist(title='Salary Distribution', color='lightblue', bins=25)
+plt.axvline(salary.mean(), color='magenta', linestyle='dashed', linewidth=2)
+plt.axvline(salary.median(), color='green', linestyle='dashed', linewidth=2)
+plt.show()
+```
+
+It plots this graph:
+
+![](salary-distribution.png)
+
+Here's an interpretation of this graph:
+
+- The `mean` is the magenta dashed line
+- The `median` is the green dashed line
+- _Salary_ is a continuous data value - graduates could potentially earn any value along the scale, even down to a fraction of cent.
+- The number of bins in the histogram determines the size of each salary band for which we're counting frequencies. Fewer bins means merging more individual salaries together to be counted as a group.
+- The majority of the data is on the left side of the histogram, reflecting the fact that most graduates earn between 40,000 and 55,000
+- The mean is a higher value than the median and mode.
+- There are gaps in the histogram for salary bands that nobody earns.
+
+Let's see a new example to understand the density and the distribution.
+
+| Name     | Grade |
+| -------- | ----- |
+| Dan      | 50    |
+| Joann    | 50    |
+| Pedro    | 46    |
+| Rosie    | 95    |
+| Ethan    | 50    |
+| Vicky    | 5     |
+| Frederic | 57    |
+
+Let's plot this data with Python and check the shape of the distribution:
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import scipy.stats as stats
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Grade':[50,50,46,95,50,5,57]})
+
+grade = df['Grade']
+density = stats.gaussian_kde(grade)
+n, x, _ = plt.hist(grade, histtype='step', bins=25)
+plt.plot(x, density(x)*7.5)
+plt.axvline(grade.mean(), color='magenta', linestyle='dashed', linewidth=2)
+plt.axvline(grade.median(), color='green', linestyle='dashed', linewidth=2)
+plt.show()
+```
+
+It plots this graph:
+
+![](normal-distribution.png)
+
+It forms this bell-shaped curve. It's usually called a "normal distribution", or Gaussian distribution.
+
+#### Variance
+
+We have different ways of quantifying the variance in a dataset:
+
+- **range**: the difference between the highest and lowest values
+- **percentile**: the ranking of a value in the overall distribution. e.g. 25% of the data in a distribution has a value lower than the 25th percentile
+- **quartiles**: divide the percentiles in 4 slots (quartiles) - 0 > 25% > 50% > 75%
+
+#### Standard Deviation
+
+Variance is measured as the average of the squared difference from the mean.
+
+For full population, we calculate with this formula:
+
+$$
+\begin{equation}\sigma^{2} = \frac{\displaystyle\sum_{i=1}^{N} (X_{i} -\mu)^{2}}{N}\end{equation}
+$$
+
+For a sample:
+
+$$
+\begin{equation}s^{2} = \frac{\displaystyle\sum_{i=1}^{n} (x_{i} -\bar{x})^{2}}{n-1}\end{equation}
+$$
+
+As an example, let's calculate the variance for the grades data.
+
+First we need to calculate the mean
+
+$$
+\begin{equation}\bar{x} = \frac{50+50+46+95+50+5+57}{7}\approx 50.43\end{equation}
+$$
+
+Then apply it to the variance formula:
+
+$$
+\begin{equation}s^{2} = \frac{(50-50.43)^{2}+(50-50.43)^{2}+(46-50.43)^{2}+(95-50.43)^{2}+(50-50.43)^{2}+(5-50.43)^{2}+(57-50.43)^{2}}{7-1}\end{equation}
+$$
+
+Resulting in:
+
+$$
+\begin{equation}s^{2} \approx 685.619\end{equation}
+$$
+
+In Python, we can use the method `var`:
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000],
+                   'Hours':[41,40,36,17,35,39,40],
+                   'Grade':[50,50,46,95,50,5,57]})
+
+df['Grade'].var() # 685.6190476190476
+```
+
+The higher the variance, the more spread your data is around the mean.
+
+In the variance calculation, we square the difference from the mean. That way, we are in a different unit of measurement as the original data.
+
+To get the measure of variance back into the same unit of measurement, we need to find its square root:
+
+$$
+\begin{equation}s = \sqrt{685.619} \approx 26.184\end{equation}
+$$
+
+This represents the standard deviation.
+
+$$
+\begin{equation}s = \sqrt{\frac{\displaystyle\sum_{i=1}^{n} (x_{i} -\bar{x})^{2}}{n-1}}\end{equation}
+$$
+
+In Python, we have the `std` method to calculate the standard deviation:
+
+```python
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000],
+                   'Hours':[41,40,36,17,35,39,40],
+                   'Grade':[50,50,46,95,50,5,57]})
+
+print(df['Grade'].std()) # 26.184328282754315
+```
+
+Let's plot a histogram of a standard normal distribution in Python:
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import scipy.stats as stats
+
+# Create a random standard normal distribution
+df = pd.DataFrame(np.random.randn(100000, 1), columns=['Grade'])
+
+# Plot the distribution as a histogram with a density curve
+grade = df['Grade']
+density = stats.gaussian_kde(grade)
+n, x, _ = plt.hist(grade, color='lightgrey', bins=100)
+plt.plot(x, density(x))
+
+# Get the mean and standard deviation
+std = df['Grade'].std()
+mean = df['Grade'].mean()
+
+# Annotate 1 stdev
+x1 = [mean-std, mean+std]
+y1 = [0.25, 0.25]
+plt.plot(x1,y1, color='magenta')
+plt.annotate('1s (68.26%)', (x1[1],y1[1]))
+
+# Annotate 2 stdevs
+x2 = [mean-(std*2), mean+(std*2)]
+y2 = [0.05, 0.05]
+plt.plot(x2,y2, color='green')
+plt.annotate('2s (95.45%)', (x2[1],y2[1]))
+
+# Annotate 3 stdevs
+x3 = [mean-(std*3), mean+(std*3)]
+y3 = [0.005, 0.005]
+plt.plot(x3,y3, color='orange')
+plt.annotate('3s (99.73%)', (x3[1],y3[1]))
+
+# Show the location of the mean
+plt.axvline(grade.mean(), color='grey', linestyle='dashed', linewidth=1)
+plt.show()
+```
+
+Here's the graph:
+
+![](standard-normal-distribution.png)
+
+In any normal distribution:
+
+- Approximately 68.26% of values fall within one standard deviation from the mean.
+- Approximately 95.45% of values fall within two standard deviations from the mean.
+- Approximately 99.73% of values fall within three standard deviations from the mean.
+
+With all this knowledge, we have a simple way of getting all this information in Python. We use the `describe` method from pandas.
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000],
+                   'Hours':[41,40,36,17,35,39,40],
+                   'Grade':[50,50,46,95,50,5,57]})
+
+df.describe()
+#               Salary      Hours      Grade
+# count       7.000000   7.000000   7.000000
+# mean    71000.000000  35.428571  50.428571
+# std     52370.475143   8.423324  26.184328
+# min     40000.000000  17.000000   5.000000
+# 25%     50000.000000  35.500000  48.000000
+# 50%     54000.000000  39.000000  50.000000
+# 75%     57000.000000  40.000000  53.500000
+# max    189000.000000  41.000000  95.000000
+```
