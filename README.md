@@ -120,6 +120,7 @@
 - [CS229 Lecture Notes](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf)
 - [A theory-heavy intro to machine learning](https://0xpemulis.net/learningtheory.html)
 - [ML Code Challenges](https://www.deep-ml.com)
+- [Machine learning in Python with scikit-learn](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session03/6c7bd3e1d86545c4b723b844ae2702f9)
 
 ### Advanced Machine Learning
 
