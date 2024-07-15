@@ -104,6 +104,7 @@
 
 ### Machine Learning
 
+- [Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning)
 - [Introduction to Machine Learning Course](https://www.udacity.com/course/intro-to-machine-learning--ud120)
 - [Learning Math for Machine Learning](https://blog.ycombinator.com/learning-math-for-machine-learning)
 - [Machine Learning at CMU](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
