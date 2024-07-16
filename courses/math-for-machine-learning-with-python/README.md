@@ -29,6 +29,7 @@
 - [Statistics](#statistics)
   - [Data Introduction](#data-introduction)
   - [Statistics Fundamentals](#statistics-fundamentals)
+  - [Comparing Data](#comparing-data)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -1978,3 +1979,31 @@ df.describe()
 # 75%     57000.000000  40.000000  53.500000
 # max    189000.000000  41.000000  95.000000
 ```
+
+### Comparing Data
+
+- Finding trends and relationships when comparing data
+- In Univariate data, we only have one variable
+- In Bivariate or Multivariate data, we have more variables in the dataset to compare
+  - The problem with multivariate data comparison is the fact that different variables may be in different scales
+  - Show python code and the graph (different units of measurement, not useful)
+  - We normalize the data to compare different units of measurement
+    - show python code using min max scaler from scikit learn
+    - show graph with the variables with the same scale
+- Use scatter plot to compare variables to check aparent relationship
+  - Python code
+  - graph
+  - show a line of best fit with python code and graph
+  - The line of best fit makes it clearer that there is some apparent _colinearity_ between these variables (the relationship is _colinear_ if one variable's value increases or decreases in line with the other).
+- Correlation
+  - We can quantify the relationship between two variables using the idea of correlation
+  - correlation value (between -1 and 1), and interpretation
+  - show formula
+  - calculate with python
+- Least squares regression
+  - concept of linear equations
+    - show formula
+    - list what each variable is
+  - how to calculate the slope
+  - how to calculate the intercept
+  - substitute the new values in the linear equation and calculate the f(x) for the line of best fit and the error (difference between the original and the best of fit line)
