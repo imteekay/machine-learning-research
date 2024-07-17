@@ -42,3 +42,9 @@
 2. Do the predictors on the whole have anything to say about the outcome?
 3. How well does the model fit the data?
 4. Given a set of predictor values, what response value should we predict, and how accurate is our prediction?
+
+## Model Matrix, Coefficients β, and making predictions
+
+- **Transformation**: The process of creating the model matrix 𝑋 involves transforming the original data 𝑋 into a format suitable for the specific modeling technique. This may involve standardization, normalization, encoding categorical variables, adding polynomial features, or other preprocessing steps.
+- **Model Fitting**: During model training, the model matrix 𝑋 is used along with the target variable 𝑦 to estimate the coefficients 𝛽 (or weights) that best fit the data. For example, in linear regression, 𝑦^ = 𝑋𝛽.
+- **Prediction**: Once the model is trained and validated, the same transformations applied to the training data 𝑋 (to create X) are applied to new, unseen data to generate predictions.
