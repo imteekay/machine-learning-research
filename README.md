@@ -246,6 +246,7 @@
 - [Learning to Plan Chemical Syntheses](https://www.semanticscholar.org/reader/ef8ab2a0be51a0cd04c2c0f01adfae956a2a84af)
 - [Machine Learning for Genomics](https://www.youtube.com/playlist?list=PLypiXJdtIca6dEYlNoZJwBaz__CdsaoKJ)
 - [MIT Deep Learning in Life Sciences](https://www.youtube.com/playlist?list=PLypiXJdtIca5sxV7aE3-PS9fYX3vUdIOX)
+- [AI Text2Protein Breakthrough Tackles the Molecule Programming Challenge](https://medium.com/310-ai/mpm4-ai-text2protein-breakthrough-tackles-the-molecule-programming-challenge-870045a8c1ad)
 
 ### Databases
 
