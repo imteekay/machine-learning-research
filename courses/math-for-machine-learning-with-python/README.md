@@ -1982,28 +1982,249 @@ df.describe()
 
 ### Comparing Data
 
-- Finding trends and relationships when comparing data
-- In Univariate data, we only have one variable
-- In Bivariate or Multivariate data, we have more variables in the dataset to compare
-  - The problem with multivariate data comparison is the fact that different variables may be in different scales
-  - Show python code and the graph (different units of measurement, not useful)
-  - We normalize the data to compare different units of measurement
-    - show python code using min max scaler from scikit learn
-    - show graph with the variables with the same scale
-- Use scatter plot to compare variables to check aparent relationship
-  - Python code
-  - graph
-  - show a line of best fit with python code and graph
-  - The line of best fit makes it clearer that there is some apparent _colinearity_ between these variables (the relationship is _colinear_ if one variable's value increases or decreases in line with the other).
-- Correlation
-  - We can quantify the relationship between two variables using the idea of correlation
-  - correlation value (between -1 and 1), and interpretation
-  - show formula
-  - calculate with python
-- Least squares regression
-  - concept of linear equations
-    - show formula
-    - list what each variable is
-  - how to calculate the slope
-  - how to calculate the intercept
-  - substitute the new values in the linear equation and calculate the f(x) for the line of best fit and the error (difference between the original and the best of fit line)
+Comparing data is important so we can find trends and relationships among them.
+
+When we talk about comparing data, we have two different types of data
+
+- **Univariate data**: when we have only one variable
+- **Bivariate or Multivariate data**: when we have more than 1 variable in the dataset
+
+#### Bivariate or Multivariate data
+
+When comparing multiple variables, the difficult is to have them in different scales.
+
+Let's see this in practice with Python:
+
+```python
+import pandas as pd
+from matplotlib import pyplot as plt
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic', 'Jimmie', 'Rhonda', 'Giovanni', 'Francesca', 'Rajab', 'Naiyana', 'Kian', 'Jenny'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000,42000,47000,78000,119000,95000,49000,29000,130000],
+                   'Hours':[41,40,36,17,35,39,40,45,41,35,30,33,38,47,24],
+                   'Grade':[50,50,46,95,50,5,57,42,26,72,78,60,40,17,85]})
+
+
+df.plot(kind='box', title='Distribution', figsize = (10,8))
+plt.show()
+```
+
+Here we plot the data of salary, hours, and grades in the same graph, but the 3 are in different scales.
+
+It's clear in the following graph that the salary data is so much bigger than the hours and grades data making it difficult to draw any conclusion from the graph.
+
+![](multivariate-data-different-scales.png)
+
+To make the data and the graph more understandable, we normalize the data to compare different units of measurement.
+
+In Python, we can use the `MinMaxScaler` from `sklearn` to normalize the data:
+
+```python
+import pandas as pd
+from matplotlib import pyplot as plt
+from sklearn.preprocessing import MinMaxScaler
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic', 'Jimmie', 'Rhonda', 'Giovanni', 'Francesca', 'Rajab', 'Naiyana', 'Kian', 'Jenny'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000,42000,47000,78000,119000,95000,49000,29000,130000],
+                   'Hours':[41,40,36,17,35,39,40,45,41,35,30,33,38,47,24],
+                   'Grade':[50,50,46,95,50,5,57,42,26,72,78,60,40,17,85]})
+
+# Normalize the data
+scaler = MinMaxScaler()
+df[['Salary', 'Hours', 'Grade']] = scaler.fit_transform(df[['Salary', 'Hours', 'Grade']])
+
+# Plot the normalized data
+df.plot(kind='box', title='Distribution', figsize = (10,8))
+plt.show()
+```
+
+Here's the new graph with the data normalized making it easier to interpret it:
+
+![](multivariate-data-normalized.png)
+
+#### Scatter plot
+
+To compare numeric values, scatter plots can be very useful to check apparent relationship between them.
+
+Let's code this scatter plot graph:
+
+```python
+import pandas as pd
+from matplotlib import pyplot as plt
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic', 'Jimmie', 'Rhonda', 'Giovanni', 'Francesca', 'Rajab', 'Naiyana', 'Kian', 'Jenny'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000,42000,47000,78000,119000,95000,49000,29000,130000],
+                   'Hours':[41,40,36,17,35,39,40,45,41,35,30,33,38,47,24],
+                   'Grade':[50,50,46,95,50,5,57,42,26,72,78,60,40,17,85]})
+
+# Create a scatter plot of Salary vs Grade
+df.plot(kind='scatter', title='Grade vs Hours', x='Grade', y='Salary')
+plt.show()
+```
+
+If we look close, we can see a pattern in the graph, a diagonal rising to the right. In other words, the higher the grade, the higher the salary is.
+
+![](scatter-plot.png)
+
+If it's not clear for you, we can draw the _line of best fit_ (trendline) in the graph to make it easier.
+
+```python
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic', 'Jimmie', 'Rhonda', 'Giovanni', 'Francesca', 'Rajab', 'Naiyana', 'Kian', 'Jenny'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000,42000,47000,78000,119000,95000,49000,29000,130000],
+                   'Hours':[41,40,36,17,35,39,40,45,41,35,30,33,38,47,24],
+                   'Grade':[50,50,46,95,50,5,57,42,26,72,78,60,40,17,85]})
+
+# Create a scatter plot of Salary vs Grade
+df.plot(kind='scatter', title='Grade vs Salary', x='Grade', y='Salary')
+
+# Add a line of best fit
+plt.plot(np.unique(df['Grade']), np.poly1d(np.polyfit(df['Grade'], df['Salary'], 1))(np.unique(df['Grade'])))
+plt.show()
+```
+
+This Python code generates this graph with the trendline:
+
+![](scatter-plot-trendline.png)
+
+The line of best fit makes it clearer that there is some apparent _colinearity_ between these variables (the relationship is _colinear_ if one variable's value increases or decreases in line with the other).
+
+#### Correlation
+
+We can spot the relationship of variables in a graph but if we want to quantify the relationship between two variables, we can use the idea of _correlation_.
+
+The _correlation_ value is always a number between -1 and 1. This is how we interpret it:
+
+- A positive value indicates a positive correlation (as the value of variable _x_ increases, so does the value of variable _y_).
+- A negative value indicates a negative correlation (as the value of variable _x_ increases, the value of variable _y_ decreases).
+- The closer to zero the correlation value is, the weaker the correlation between _x_ and _y_.
+- A correlation of exactly zero means there is no apparent relationship between the variables.
+
+The formula to calculate correlation is:
+
+$$
+\begin{equation}r_{x,y} = \frac{\displaystyle\sum_{i=1}^{n} (x_{i} -\bar{x})(y_{i} -\bar{y})}{\sqrt{\displaystyle\sum_{i=1}^{n} (x_{i} -\bar{x})^{2}(y_{i} -\bar{y})^{2}}}\end{equation}
+$$
+
+The r𝓍,𝔂 is the notion for the correlation between variables x and y.
+
+In Python, we can calculate the correlation using the `corr` method from Pandas.
+
+```python
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Salary':[50000,54000,50000,189000,55000,40000,59000],
+                   'Hours':[41,40,36,17,35,39,40],
+                   'Grade':[50,50,46,95,50,5,57]})
+
+df['Grade'].corr(df['Salary']) # 0.8149286388911882
+```
+
+#### Least squares regression
+
+Linear equations look like this:
+
+$$
+\begin{equation}y = mx + b\end{equation}
+$$
+
+_y_ and _x_ are the coordinate variables, _m_ is the slope of the line, and _b_ is the y-intercept of the line.
+
+The difference between the original _y_ (_Hours_) value and the _f(x)_ value is the _error_ between our regression line of best fit and the actual _Hours_.
+
+The first part is to calculate the slope and intercept for a line with the lowest overall error.
+
+And then we define the overall error by taking the error for each point, squaring it, and adding all the squared errors together. The line of best fit is the line that gives us the lowest value for the sum of the squared errors - _least squares regression_.
+
+Here's how we calculate the slope (_m_), which we do using this formula (in which _n_ is the number of observations in our data sample):
+
+$$
+\begin{equation}m = \frac{n(\sum{xy}) - (\sum{x})(\sum{y})}{n(\sum{x^{2}})-(\sum{x})^{2}}\end{equation}
+$$
+
+After we've calculated the slope (_m_), we can use is to calculate the intercept (_b_) like this:
+
+$$
+\begin{equation}b = \frac{\sum{y} - m(\sum{x})}{n}\end{equation}
+$$
+
+If we take this dataset as an example:
+
+| Name     | Study | Grade |
+| -------- | ----- | ----- |
+| Dan      | 1     | 50    |
+| Joann    | 0.75  | 50    |
+| Pedro    | 0.6   | 46    |
+| Rosie    | 2     | 95    |
+| Ethan    | 1     | 50    |
+| Vicky    | 0.2   | 5     |
+| Frederic | 1.2   | 57    |
+
+First, let's take each _x_ (Study) and _y_ (Grade) pair and calculate _x<sup>2</sup>_ and _xy_, and the sum, because we're going to need these to work out the slope:
+
+| Name        | Study    | Grade   | x<sup>2</sup> | xy        |
+| ----------- | -------- | ------- | ------------- | --------- |
+| Dan         | 1        | 50      | 1             | 50        |
+| Joann       | 0.75     | 50      | 0.55          | 37.5      |
+| Pedro       | 0.6      | 46      | 0.36          | 27.6      |
+| Rosie       | 2        | 95      | 4             | 190       |
+| Ethan       | 1        | 50      | 1             | 50        |
+| Vicky       | 0.2      | 5       | 0.04          | 1         |
+| Frederic    | 1.2      | 57      | 1.44          | 68.4      |
+| **&Sigma;** | **6.75** | **353** | **8.4025**    | **424.5** |
+
+Here's how we calculate the slope
+
+$$
+\begin{equation}m = \frac{588.75}{13.255} \approx 44.4172\end{equation}
+$$
+
+And here's how we calculate the intercept
+
+$$
+\begin{equation}b = \frac{53.18389}{7} = 7.597699\end{equation}
+$$
+
+Now we have our linear function:
+
+$$
+\begin{equation}f(x) = mx + b = 44.4172x + 7.597699\end{equation}
+$$
+
+We can use this for each _x_ (Study) value to calculate the _y_ values for the regression line (_f(x)_), and we can subtract the original _y_ (Grade) from these to calculate the error for each point:
+
+| Name     | Study | Grade | _f(x)_  | Error   |
+| -------- | ----- | ----- | ------- | ------- |
+| Dan      | 1     | 50    | 52.0149 | 2.0149  |
+| Joann    | 0.75  | 50    | 40.9106 | -9.0894 |
+| Pedro    | 0.6   | 46    | 34.2480 | -11.752 |
+| Rosie    | 2     | 95    | 96.4321 | 1.4321  |
+| Ethan    | 1     | 50    | 52.0149 | 2.0149  |
+| Vicky    | 0.2   | 5     | 16.4811 | 11.4811 |
+| Frederic | 1.2   | 57    | 60.8983 | 3.8983  |
+
+Now let's plot the regression line in the graph
+
+```python
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+
+df = pd.DataFrame({'Name': ['Dan', 'Joann', 'Pedro', 'Rosie', 'Ethan', 'Vicky', 'Frederic'],
+                   'Study':[1,0.75,0.6,2,1,0.2,1.2],
+                   'Grade':[50,50,46,95,50,5,57],
+                   'fx':[52.0159,40.9106,34.2480,96.4321,52.0149,16.4811,60.8983]})
+
+# Create a scatter plot of Study vs Grade
+df.plot(kind='scatter', title='Study Time vs Grade Regression', x='Study', y='Grade', color='red')
+
+# Plot the regression line
+plt.plot(df['Study'],df['fx'])
+plt.show()
+```
+
+Now we have this graph:
+
+![](regression.png)
