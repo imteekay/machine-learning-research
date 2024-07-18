@@ -30,6 +30,7 @@
   - [Data Introduction](#data-introduction)
   - [Statistics Fundamentals](#statistics-fundamentals)
   - [Comparing Data](#comparing-data)
+  - [Probability](#probability)
 
 ## Algebra Fundamentals: Equations, Graphs, and Functions
 
@@ -2228,3 +2229,81 @@ plt.show()
 Now we have this graph:
 
 ![](regression.png)
+
+### Probability
+
+#### Probability Basics
+
+Some basic definitions and principles:
+
+- An **_experiment_** or **_trial_** is an action with an uncertain outcome, such as tossing a coin.
+- A **_sample space_** is the set of all possible outcomes of an experiment. In a coin toss, there's a set of two possible oucomes (_heads_ and _tails_).
+- A **_sample point_** is a single possible outcome - for example, _heads_)
+- An **_event_** is a specific outome of single instance of an experiment - for example, tossing a coin and getting _tails_.
+- **_Probability_** is a value between 0 and 1 that indicates the likelihood of a particular event, with 0 meaning that the event is impossible, and 1 meaning that the event is inevitable.
+
+$$
+\begin{equation}\text{probability of an event} = \frac{\text{Number of sample points that produce the event}}{\text{Total number of sample points in the sample space}} \end{equation}
+$$
+
+- Talk about the probability notation
+- Talk about the probability of complement
+- Bias
+  - e.g. weather forecast. sunny vs rainy vs cloudy days: different probabilities in all of them
+
+#### Conditional Probability and Dependence
+
+Events can be:
+
+- _Independent_ (events that are not affected by other events)
+- _Dependent_ (events that are conditional on other events)
+- _Mutually Exclusive_ (events that can't occur together)
+
+In independent events, the probability of different events doesn't dependent on previous events.
+
+- Show: example of coin toss
+  - the probaility of getting heads is 1/2. for sequential events, the probability will keep the same, 50%, independent from the previous events.
+  - show: python code of coin toss probability
+  - image plot
+
+In independent events combination, we have a different problem. For example, what is the probability of getting three heads in a row?
+
+- To combine these independent events, we need to multiply the probability of each event
+- 1/2 · 1/2 · 1/2 = 0.125, or 12.5%
+- show: python code - probability of getting 3 heads in a row
+
+Intersection and Unions
+
+- Show: the notation for the combined event probability
+- The intersection, the symbol represents "and"
+  - show: equation of the intersection of events A and B
+- The union, the symbol represents "or"
+  - subtract the probability of A ⋂ B to avoid double-counting
+  - show: equation of the union of events A and B
+
+<div style='text-align:center'>Event A<span style='font-size:120px'>&#9901;</span>Event B</div>
+
+Dependent events
+
+- deck of cards has 52 cards
+  - 13 spades (black cards)
+  - 13 clubs (black cards)
+  - 13 hearts (red cards)
+  - 13 diamonds (red cards)
+- the probability of getting a black card is (13 + 13) / 52
+- the probability of getting a red card is (13 + 13) / 52
+- after getting one card and not replacing it back to the deck of cards, the probability of getting a new cards changes
+  - for black cards: (13 + 13) / 51 (now with 51 cards in the deck)
+  - for red cards: (13 + 12) / 51 (now with 51 cards in the deck and only 12 of one of the red cards)
+- One event is affecting another, this is called dependent events
+- the notation for dependent events
+  - the probability of B given A
+    - given that the event A happended, what's the probability of the event B
+  - show: formula
+
+Mutually exclusive events
+
+- when events don't occur at the same time
+- e.g. coin toss getting heads and tails
+- the intersection of a mutually exclusive event is always 0
+- the union is the sum of the two events, there's no need for the subtractation of the intersection because the intersection of mutually exclusive events are always 0
