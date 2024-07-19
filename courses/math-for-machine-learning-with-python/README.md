@@ -2283,27 +2283,85 @@ Events can be:
 
 In independent events, the probability of different events doesn't dependent on previous events.
 
-- Show: example of coin toss
-  - the probaility of getting heads is 1/2. for sequential events, the probability will keep the same, 50%, independent from the previous events.
-  - show: python code of coin toss probability
-  - image plot
+One example is the coin toss. If we toss the coin two times, the first time we toss the coin doesn't affect the second time. They are indendent.
+
+The probability of getting heads is 1/2. For sequential events, the probability will keep the same, 50%, independent from the previous events.
+
+We can use Python to illustrate this idea, showing 10,000 trials and seeing the probability of coin toss.
+
+```python
+import random
+from matplotlib import pyplot as plt
+
+heads_tails = [0, 0]
+trials = 10000
+trial = 0
+
+while trial < trials:
+    trial = trial + 1
+    toss = random.randint(0, 1)
+    heads_tails[toss] = heads_tails[toss] + 1
+
+plt.figure(figsize=(5,5))
+plt.pie(heads_tails, labels=['heads', 'tails'])
+plt.legend()
+plt.show()
+```
+
+This will plot this graph:
+
+![](coin-toss-probability.png)
 
 In independent events combination, we have a different problem. For example, what is the probability of getting three heads in a row?
 
-- To combine these independent events, we need to multiply the probability of each event
-- 1/2 · 1/2 · 1/2 = 0.125, or 12.5%
-- show: python code - probability of getting 3 heads in a row
+To combine these independent events, we need to multiply the probability of each event. In this case, it's `1/2 · 1/2 · 1/2 = 0.125`, or 12.5%
 
-Intersection and Unions
+Let's try it with Python: running random trials and see how it approximates to the probability of 12.5%.
 
-- Show: the notation for the combined event probability
-- The intersection, the symbol represents "and"
-  - show: equation of the intersection of events A and B
-- The union, the symbol represents "or"
-  - subtract the probability of A ⋂ B to avoid double-counting
-  - show: equation of the union of events A and B
+```python
+import random
+
+h3 = 0
+results = []
+trials = 10000
+trial = 0
+
+while trial < trials:
+    trial = trial + 1
+    result = ['H' if random.randint(0,1) == 1 else 'T',
+              'H' if random.randint(0,1) == 1 else 'T',
+              'H' if random.randint(0,1) == 1 else 'T']
+    results.append(result)
+    h3 = h3 + int(result == ['H', 'H', 'H'])
+
+"%.2f%%" % ((h3 / trials) * 100) # 12.56%
+```
+
+#### Intersection
+
+In intersections, we can think of Event A **and** Event B occurring.
 
 <div style='text-align:center'>Event A<span style='font-size:120px'>&#9901;</span>Event B</div>
+
+- We have the Event A
+- We have the Event B
+- We have the sample points when A and B intersect
+
+Here's the notation for the combined event probability:
+
+$$
+\begin{equation}P(A \cap B \cap C) = P(A) \times P(B) \times P(C) \end{equation}
+$$
+
+The probability of events A, B, and C occurring. This symbol represents "and".
+
+#### Union
+
+The union's symbol represents "or". Looking at the venn diagram, we can see the sample points in the event A and B but we need to subtract the intersection of A and B (A ⋂ B) to avoid double-counting.
+
+$$
+\begin{equation}P(A \cup B) = P(A) + P(B) - P(A \cap B)\end{equation}
+$$
 
 Dependent events
 
