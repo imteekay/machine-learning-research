@@ -2307,3 +2307,8 @@ Mutually exclusive events
 - e.g. coin toss getting heads and tails
 - the intersection of a mutually exclusive event is always 0
 - the union is the sum of the two events, there's no need for the subtractation of the intersection because the intersection of mutually exclusive events are always 0
+
+Binomial variables
+
+- what's binomial variables
+- formula and show an example of using the formula
