@@ -2363,32 +2363,92 @@ $$
 \begin{equation}P(A \cup B) = P(A) + P(B) - P(A \cap B)\end{equation}
 $$
 
-Dependent events
+#### Dependent Events
 
-- deck of cards has 52 cards
-  - 13 spades (black cards)
-  - 13 clubs (black cards)
-  - 13 hearts (red cards)
-  - 13 diamonds (red cards)
-- the probability of getting a black card is (13 + 13) / 52
-- the probability of getting a red card is (13 + 13) / 52
-- after getting one card and not replacing it back to the deck of cards, the probability of getting a new cards changes
-  - for black cards: (13 + 13) / 51 (now with 51 cards in the deck)
-  - for red cards: (13 + 12) / 51 (now with 51 cards in the deck and only 12 of one of the red cards)
-- One event is affecting another, this is called dependent events
-- the notation for dependent events
-  - the probability of B given A
-    - given that the event A happended, what's the probability of the event B
-  - show: formula
+To illustrate the concept of dependent events, let's take a deck of card as an example.
 
-Mutually exclusive events
+A deck of cards has 52 cards:
 
-- when events don't occur at the same time
-- e.g. coin toss getting heads and tails
-- the intersection of a mutually exclusive event is always 0
-- the union is the sum of the two events, there's no need for the subtractation of the intersection because the intersection of mutually exclusive events are always 0
+- 13 spades (black cards)
+- 13 clubs (black cards)
+- 13 hearts (red cards)
+- 13 diamonds (red cards)
 
-Binomial variables
+The probability of getting a black card is 13 (spades) + 13 (clubs) divided by 52 (the total number of cards).
 
-- what's binomial variables
-- formula and show an example of using the formula
+We use the same process to calculate the probability of getting a red card. Rather them counting spades and clubs (black cards), we count hearts and diamonds (red cards).
+
+After getting one card and not replacing it back to the deck of cards, the probability of getting a new cards changes.
+
+Imagine we get one card and that one is a red card (diamond). This is what happens.
+
+For the first card, the probability is:
+
+- For black cards, we have (13 + 13) / 52
+- For red cards, we have (13 + 13) / 52
+
+After getting the red card and not replacing back, now we have 51 cards in the deck and only 12 rather 13 of diamonds. So it looks like this now:
+
+- For black cards: (13 + 13) / 51 (now with 51 cards in the deck)
+- For red cards: (13 + 12) / 51 (now with 51 cards in the deck and only 12 of the diamond cards)
+
+One event is affecting another. This is called dependent events.
+
+The notation for dependent events:
+
+$$
+\begin{equation}P(B|A)\end{equation}
+$$
+
+We can interpret this as _the probability of B, given A_. Given that the event A happended, what's the probability of the event B.
+
+$$
+\begin{equation}P(B|A) = \frac{P(A \cap B)}{P(A)}\end{equation}
+$$
+
+Suppose the first card drawn is a _spade_, which is black. What is the probability of the next card being red?
+
+$$
+\begin{equation}P(B|A) = \frac{\frac{26}{52} \times \frac{26}{51}}{\frac{26}{52}}\end{equation}
+$$
+
+$$
+\begin{equation}P(B|A) = \frac{0.5 \times 0.51}{0.5}\end{equation}
+$$
+
+$$
+\begin{equation}P(B|A) = \frac{0.255}{0.5} = 0.51\end{equation}
+$$
+
+#### Mutually Exclusive Events
+
+Mutually exclusive events are when events don't occur at the same time.
+
+An example of this is coin toss getting heads and tails.
+
+- The intersection of a mutually exclusive event is always 0
+- The union is the sum of the two events, there's no need for the subtractation of the intersection because the intersection of mutually exclusive events are always 0
+
+#### Binomial Variables
+
+A binomial variable is used to count how frequently an event occurs in a fixed number of repeated independent experiments.
+
+The event in question must have the same probability of occurring in each experiment, and indicates the success or failure of the experiment; with a probability **_p_** of success, which has a complement of **_1 - p_** as the probability of failure.
+
+In `n` experiments, we want to choose `k` successful results. This is known as _n choose k_. This is the notation:
+
+$$
+\begin{equation}\begin{pmatrix} n \\ k\end{pmatrix}\end{equation}
+$$
+
+And here's the formula
+
+$$
+\begin{equation}\begin{pmatrix} n \\ k\end{pmatrix} = \frac{n!}{k!(n-k)!}\end{equation}
+$$
+
+In the case of <sub>3</sub>C<sub>1</sub> calculation, this means:
+
+$$
+\begin{equation}\begin{pmatrix} 3 \\ 1\end{pmatrix} = \frac{3!}{1!(3 - 1)!} = \frac{3!}{1!\times2!} =\frac{3 \times 2 \times 1}{1 \times(2 \times 1)} = \frac{6}{2} = 3 \end{equation}
+$$
