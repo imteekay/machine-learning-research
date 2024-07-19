@@ -2246,10 +2246,32 @@ $$
 \begin{equation}\text{probability of an event} = \frac{\text{Number of sample points that produce the event}}{\text{Total number of sample points in the sample space}} \end{equation}
 $$
 
-- Talk about the probability notation
-- Talk about the probability of complement
-- Bias
-  - e.g. weather forecast. sunny vs rainy vs cloudy days: different probabilities in all of them
+We use the `P(A)` notation to express the probability of an event occur. `P` is the probability and `A` is the event. Here's the probability of event `A` occurring (in this case, 1/6 or 0.167):
+
+$$
+\begin{equation}P(A) = 0.167 \end{equation}
+$$
+
+The _complement_ of an event is the set of _sample points_ that do **_not_** result in the event.
+
+Here's how we indicate this:
+
+$$
+\begin{equation}P(A) = 1 - P(A') \end{equation}
+$$
+
+- `P(A)` is the probability of `A` occurring
+- `P(A')` is the complement
+
+There's also the concept of bias, when the sample points in the sample space don't have the same probability.
+
+The weather forecast is an example of that. Sunny vs Rainy vs Cloudy days. All of them have different probabilities of occurring.
+
+If we assign the letter **A** to a sunny day event, **B** to a cloudy day event, and **C** to a rainy day event then we can write these probabilities like this:
+
+$$
+\begin{equation}P(A)=0.6\;\;\;\; P(B)=0.3\;\;\;\; P(C)=0.1 \end{equation}
+$$
 
 #### Conditional Probability and Dependence
 
