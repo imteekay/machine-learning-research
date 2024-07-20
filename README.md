@@ -75,6 +75,7 @@
 - [Khan Academy Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
 - [Inferential Statistics](https://br.udacity.com/course/intro-to-inferential-statistics--ud201)
 - [Introduction to Statistics](https://www.coursera.org/learn/stanford-statistics)
+- [The better way to do statistics](https://www.youtube.com/watch?v=3jP4H0kjtng)
 
 ### Calculus
 
