@@ -27,6 +27,13 @@
 - There are dangers and subtleties associated with performing regressions involving only a single predictor when other predictors may also be relevant.
   - The results obtained using one predictor may be quite different from those ob- tained using multiple predictors, especially when there is correlation among the predictors.
 
+## Multinomial Logistic Regression
+
+- Classify a response variable that has more than two classes
+- We choose one variable as the baseline and make the model estimates the coefficients for the comparisons
+  - e.g. you have three outcome categories: A, B, and C. You choose A as the baseline. The model estimates coefficients for the comparisons B vs. A and C vs. A.
+  - In the end, you have the probability of A, B, and C
+
 ## Questions
 
 - [ ] TODO: logistic regression
