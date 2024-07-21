@@ -23,6 +23,7 @@
 ## Multiple Logistic Regression
 
 - In multiple logistic regression, we now consider the problem of predicting a binary response using multiple predictors.
+- We use the maximum likelihood method to estimate the βs: β₀,β₁,...,βp.
 - There are dangers and subtleties associated with performing regressions involving only a single predictor when other predictors may also be relevant.
   - The results obtained using one predictor may be quite different from those ob- tained using multiple predictors, especially when there is correlation among the predictors.
 
