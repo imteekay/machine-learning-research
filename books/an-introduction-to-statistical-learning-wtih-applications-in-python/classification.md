@@ -17,7 +17,8 @@
 - Considering a linear regression model: `p(X) = β₀ + β₁X`. The problem with this approach is that for balances close to zero we predict a negative probability of default — it can produce any real number
 - In logistic regression, we use the logistic function (aka sigmoid function): `p(X) = (1 + e^(β₀+β₁X)) / e^(β₀+β₁X)`.
   - The logistic function maps any real-valued number into the range (0, 1). Negative responses and values greater than 1 are inherently removed because the logistic function constrains the output to a probability-like range (Probabilities, by definition, cannot be negative or exceed 1)
-  - The logistic function will always produce an S-shaped curve of this form: For large positive inputs, the function approaches 1, and for large negative inputs, it approaches 0. This helps in creating a clear decision boundary between different classes.
+  - The logistic function will always produce an **S-shaped curve** of this form: For large positive inputs, the function approaches 1, and for large negative inputs, it approaches 0. This helps in creating a clear decision boundary between different classes.
+- We use the maximum likelihood method to estimate the βs: β₀,β₁,...,βp.
 
 ## Questions
 
