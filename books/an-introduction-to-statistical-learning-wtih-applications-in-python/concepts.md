@@ -1,8 +1,14 @@
 # Concepts
 
 - [ ] Standard Error (SE)
+  - How to interpret this concept
+  - What's the range of SE?
 - [ ] z-statistic
+  - How to interpret this concept
+  - What's the range of z-statistic?
 - [ ] p-value
+  - How to interpret this concept
+  - What's the range of p-value?
 - [ ] How a linear regression behaves
   - Illustration of a graph
   - Equation

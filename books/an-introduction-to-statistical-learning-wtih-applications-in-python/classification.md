@@ -20,6 +20,10 @@
   - The logistic function will always produce an **S-shaped curve** of this form: For large positive inputs, the function approaches 1, and for large negative inputs, it approaches 0. This helps in creating a clear decision boundary between different classes.
 - We use the maximum likelihood method to estimate the βs: β₀,β₁,...,βp.
 
+## Multiple Logistic Regression
+
+- In multiple logistic regression, we now consider the problem of predicting a binary response using multiple predictors.
+
 ## Questions
 
 - [ ] TODO: logistic regression
