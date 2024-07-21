@@ -250,6 +250,7 @@
 - [Machine Learning for Genomics](https://www.youtube.com/playlist?list=PLypiXJdtIca6dEYlNoZJwBaz__CdsaoKJ)
 - [MIT Deep Learning in Life Sciences](https://www.youtube.com/playlist?list=PLypiXJdtIca5sxV7aE3-PS9fYX3vUdIOX)
 - [AI Text2Protein Breakthrough Tackles the Molecule Programming Challenge](https://medium.com/310-ai/mpm4-ai-text2protein-breakthrough-tackles-the-molecule-programming-challenge-870045a8c1ad)
+- [Genomic Language Models: Opportunities and Challenges](https://arxiv.org/pdf/2407.11435)
 
 ### Databases
 
