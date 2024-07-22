@@ -240,6 +240,7 @@
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/abs/2404.18416)
 - [AlphaFold3: A foundation model for biology](https://harrisbio.substack.com/p/alphafold3-a-foundation-model-for)
 - [[Paper] Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/pdf/2311.16452)
+- [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
 
 ### ML/AI & Biology
 
