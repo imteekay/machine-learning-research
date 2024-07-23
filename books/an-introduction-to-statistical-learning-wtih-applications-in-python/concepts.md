@@ -13,7 +13,9 @@
   - What's the range of p-value?
 - [ ] collinearity
   - How to interpret this concept
-  - What's the range of collinearity?
+- [ ] probability density
+  - How to interpret this concept
+    - it describes how the probability of a random variable is distributed over a range of values
 
 ## Linear Regression
 
