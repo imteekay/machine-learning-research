@@ -11,6 +11,13 @@
   - On the basis of DNA sequence data for a number of patients with and without a given disease, a biologist would like to figure out which DNA mutations are deleterious (disease-causing) and which are not.
 - Why Not Linear Regression?
   - There are at least two reasons not to perform classification using a regression method: (a) a regression method cannot accommodate a qualitative response with more than two classes; (b) a regression method will not provide meaningful estimates of `Pr(Y|X)`, even with just two classes. Thus, it is preferable to use a classification method that is truly suited for qualitative response values.
+- Some classifiers:
+  - logistic regression
+  - multiple logistic regression
+  - multinomial logistic regression
+  - LDA
+  - QDA
+  - Naive Bayes
 
 ## Logistic Regression
 
