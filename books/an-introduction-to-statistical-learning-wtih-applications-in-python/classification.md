@@ -44,7 +44,6 @@
 
 - [ ] TODO: logistic regression
 - [ ] TODO: case-control sampling
-- [ ] TODO: bayes theorem? foundation math behind? why is it used?
 - [ ] TODO: gauss distribution
 - [ ] TODO: poisson regression
 - [ ] TODO: poisson regression vs gauss vs logistic regression
