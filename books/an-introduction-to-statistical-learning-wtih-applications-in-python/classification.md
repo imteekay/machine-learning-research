@@ -41,11 +41,17 @@
   - e.g. you have three outcome categories: A, B, and C. You choose A as the baseline. The model estimates coefficients for the comparisons B vs. A and C vs. A.
   - In the end, you have the probability of A, B, and C
 
-## Linear Discriminant Analysis
+## Linear Discriminant Analysis (LDA)
 
 - [ ] TODO: bayes theorem
 - [ ] TODO: LDA for p = 1
 - [ ] TODO: LDA for p > 1
+- [ ] TODO: Assumptions in LDA
+
+## Quadratic Discriminant Analysis (QDA)
+
+- [ ] TODO: bayes theorem
+- [ ] TODO: Assumptions in QDA
 
 ## Questions
 
