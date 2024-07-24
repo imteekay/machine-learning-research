@@ -55,11 +55,8 @@
 
 ## Questions
 
-- [ ] TODO: logistic regression
 - [ ] TODO: case-control sampling
-- [ ] TODO: gauss distribution
 - [ ] TODO: poisson regression
 - [ ] TODO: poisson regression vs gauss vs logistic regression
 - [ ] TODO: the math behind poisson regression, gauss, logistic regression
-- [ ] TODO: what's density? is it a statistics concept?
 - [ ] TODO: what does mean a model being stable?
