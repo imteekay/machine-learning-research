@@ -38,6 +38,7 @@
   - [Central Resources](#central-resources)
   - [Science: Q&A](#science-qa)
 - [Careers](#careers)
+- [People](#people)
 
 ## Mathematics
 
@@ -344,6 +345,10 @@
 ## Careers
 
 - [ML Researcher at Borealis AI](careers/ml-researcher-borealis-ai.pdf)
+
+## People
+
+- [Rinaldo Montalvão](https://www.linkedin.com/in/rwmontalvao)
 
 ## License
 
