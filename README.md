@@ -27,6 +27,7 @@
   - [ML/AI & Healthcare](#mlai--healthcare)
   - [ML/AI & Biology](#mlai--biology)
   - [Databases](#databases)
+  - [Lists](#lists)
 - [Science](#science)
   - [Fundamentals](#fundamentals)
   - [Science](#science-1)
@@ -260,6 +261,10 @@
 ### Databases
 
 - [Penn Machine Learning Benchmarks](https://epistasislab.github.io/pmlb)
+
+### Lists
+
+- [Papers on machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
 
 ## Science
 
