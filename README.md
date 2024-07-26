@@ -265,6 +265,7 @@
 ### Lists
 
 - [Papers on machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
+- [Papers on Protein Design using Deep Learning](https://github.com/Peldom/papers_for_protein_design_using_DL)
 
 ## Science
 
