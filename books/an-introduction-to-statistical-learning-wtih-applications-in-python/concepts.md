@@ -9,7 +9,7 @@
   - How to interpret this concept
   - What's the range of z-statistic?
 - [ ] p-value
-  - How to interpret this concept
+  - How to interpret this concept: what's the meaning of a low/high p-value
   - What's the range of p-value?
 - [ ] collinearity
   - How to interpret this concept
