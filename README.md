@@ -8,7 +8,6 @@
   - [General Math](#general-math)
   - [How to learn mathematics](#how-to-learn-mathematics)
   - [Linear Algebra](#linear-algebra)
-  - [Matrix Algebra](#matrix-algebra)
   - [Statistics](#statistics)
   - [Calculus](#calculus)
   - [Optimization](#optimization)
