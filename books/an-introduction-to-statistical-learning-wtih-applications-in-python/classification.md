@@ -53,6 +53,11 @@
 - [ ] TODO: bayes theorem
 - [ ] TODO: Assumptions in QDA
 
+## Labs
+
+- Train the model using the training data set
+- Predict the results with the test data set
+
 ## Questions
 
 - [ ] TODO: case-control sampling
