@@ -156,6 +156,7 @@
 - [Building Neural Networks from Scratch](https://www.youtube.com/playlist?list=PLPTV0NXA_ZSj6tNyn_UadmUeU3Q3oR-hu)
 - [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus)
   - [Paper](https://arxiv.org/pdf/1802.01528)
+- [Convolution is Matrix Multiplication](https://penny-xu.github.io/blog/convolution-is-matrixmultiplication)
 
 ### Generative AI
 
