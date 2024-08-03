@@ -260,6 +260,7 @@
 - [Biomolecular Modeling and Design Resources](https://abeebyekeen.com/categories/resources)
 - [Understanding AlphaFold – Dame Janet Thornton](https://www.youtube.com/watch?v=lxgaILSZEbU)
 - [Leveraging Molecular ML + Property Prediction in Drug Design](https://www.youtube.com/watch?v=wisrT2_EYrA)
+- [Geometric Deep Learning for Protein Understanding](https://www.youtube.com/watch?v=h7Rifw0Nuv4)
 
 ### Databases
 
