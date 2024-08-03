@@ -263,6 +263,7 @@
 - [Geometric Deep Learning for Protein Understanding](https://www.youtube.com/watch?v=h7Rifw0Nuv4)
 - [Polaris: Industry-Led Initiative to Critically Assess ML for Real-World Drug Discovery](https://www.youtube.com/watch?v=Tsz_T1WyufI)
 - [Efficiently Exploring Combinatorial Perturbations From High Dimensional Observation](https://www.youtube.com/watch?v=8ZjqsgsPV_0)
+- [Towards Rational Drug Design with AlphaFold 3](https://www.youtube.com/watch?v=AE35XCN5NuU)
 
 ### Databases
 
