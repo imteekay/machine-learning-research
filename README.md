@@ -267,6 +267,7 @@
 - [How AI and accelerated computing are transforming drug discovery](https://www.ft.com/partnercontent/nvidia/how-ai-and-accelerated-computing-are-transforming-drug-discovery.html)
 - [Review and discussion of AlphaFold3](https://www.youtube.com/watch?v=qjFgthkKxcA)
 - [Understanding & discovering fold-switching proteins by combining AlphaFold2](https://www.youtube.com/watch?v=rgGceDDnIEo)
+- [Accelerating drug discovery with AI](https://www.youtube.com/watch?v=-hl0jpwWbV4)
 
 ### Databases
 
