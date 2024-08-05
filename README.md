@@ -266,6 +266,7 @@
 - [Towards Rational Drug Design with AlphaFold 3](https://www.youtube.com/watch?v=AE35XCN5NuU)
 - [How AI and accelerated computing are transforming drug discovery](https://www.ft.com/partnercontent/nvidia/how-ai-and-accelerated-computing-are-transforming-drug-discovery.html)
 - [Review and discussion of AlphaFold3](https://www.youtube.com/watch?v=qjFgthkKxcA)
+- [Understanding & discovering fold-switching proteins by combining AlphaFold2](https://www.youtube.com/watch?v=rgGceDDnIEo)
 
 ### Databases
 
