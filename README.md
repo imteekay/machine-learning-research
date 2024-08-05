@@ -265,6 +265,7 @@
 - [Efficiently Exploring Combinatorial Perturbations From High Dimensional Observation](https://www.youtube.com/watch?v=8ZjqsgsPV_0)
 - [Towards Rational Drug Design with AlphaFold 3](https://www.youtube.com/watch?v=AE35XCN5NuU)
 - [How AI and accelerated computing are transforming drug discovery](https://www.ft.com/partnercontent/nvidia/how-ai-and-accelerated-computing-are-transforming-drug-discovery.html)
+- [Review and discussion of AlphaFold3](https://www.youtube.com/watch?v=qjFgthkKxcA)
 
 ### Databases
 
