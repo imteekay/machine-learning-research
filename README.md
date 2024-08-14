@@ -234,9 +234,6 @@
 - [[Paper] Deep learning methods for drug response prediction in cancer: Predominant and emerging trends](https://www.frontiersin.org/articles/10.3389/fmed.2023.1086097/full)
 - [[Paper] Machine Learning Prediction of Cancer Cell Sensitivity to Drugs Based on Genomic and Chemical Properties](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0061318&type=printable)
 - [[Paper] Artificial intelligence in healthcare: past, present and future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
-- [[Paper] Deep Learning for Drug Discovery and Cancer Research: Automated Analysis of Vascularization Images](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904235)
-- [[Paper] Deep learning in drug discovery: an integrative review and future challenges](https://github.com/imteekay/machine-learning-research/blob/master/papers/deep-learning-in-drug-discovery-an-integrative-review-and-future-challenges/paper.pdf)
-- [DeepMind AlphaFold 3](https://www.youtube.com/watch?v=Mz7Qp73lj9o&ab_channel=TwoMinutePapers)
 - [Multimodal Generative AI: the Next Frontier in Precision Health](https://www.microsoft.com/en-us/research/quarterly-brief/mar-2024-brief/articles/multimodal-generative-ai-the-next-frontier-in-precision-health)
 - [Artificial Intelligence in Healthcare: Past, Present and Future](https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf)
 - [[Paper] The myth of generalisability in clinical research and machine learning in health care](https://www.thelancet.com/action/showPdf?pii=S2589-7500%2820%2930186-2)
@@ -270,6 +267,9 @@
 - [Intro to ML in Drug Discovery: Principles & Applications](https://www.youtube.com/watch?v=j-oLfEm7xD8)
 - [Introduction to AI in Drug Discovery](https://www.youtube.com/watch?v=7NgPGh0E0XE)
 - [AlphaFold3: A foundation model for biology](https://harrisbio.substack.com/p/alphafold3-a-foundation-model-for)
+- [[Paper] Deep Learning for Drug Discovery and Cancer Research: Automated Analysis of Vascularization Images](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904235)
+- [[Paper] Deep learning in drug discovery: an integrative review and future challenges](https://github.com/imteekay/machine-learning-research/blob/master/papers/deep-learning-in-drug-discovery-an-integrative-review-and-future-challenges/paper.pdf)
+- [DeepMind AlphaFold 3](https://www.youtube.com/watch?v=Mz7Qp73lj9o&ab_channel=TwoMinutePapers)
 
 ### Databases
 
