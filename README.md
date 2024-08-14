@@ -228,7 +228,6 @@
 - [[Course] Collaborative Data Science for Healthcare](https://www.edx.org/learn/data-science/massachusetts-institute-of-technology-collaborative-data-science-for-healthcare)
 - [[Course] Data Analytics and Visualization in Health Care](https://www.edx.org/learn/data-analysis/rochester-institute-of-technology-data-analytics-and-visualization-in-health-care)
 - [[Course] Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
-- [[Course] Introduction to Genomic Data Science](https://www.edx.org/learn/bioinformatics/the-university-of-california-san-diego-introduction-to-genomic-data-science)
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/pdf/2404.18416)
   - [Journal Club Debate: Capacidades dos modelos Gemini na medicina](https://www.youtube.com/watch?v=qj-4_dP6BQw)
 - [[Paper] Deep learning methods for drug response prediction in cancer: Predominant and emerging trends](https://www.frontiersin.org/articles/10.3389/fmed.2023.1086097/full)
@@ -270,6 +269,7 @@
 - [[Paper] Deep Learning for Drug Discovery and Cancer Research: Automated Analysis of Vascularization Images](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7904235)
 - [[Paper] Deep learning in drug discovery: an integrative review and future challenges](https://github.com/imteekay/machine-learning-research/blob/master/papers/deep-learning-in-drug-discovery-an-integrative-review-and-future-challenges/paper.pdf)
 - [DeepMind AlphaFold 3](https://www.youtube.com/watch?v=Mz7Qp73lj9o&ab_channel=TwoMinutePapers)
+- [[Course] Introduction to Genomic Data Science](https://www.edx.org/learn/bioinformatics/the-university-of-california-san-diego-introduction-to-genomic-data-science)
 
 ### Databases
 
