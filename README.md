@@ -269,6 +269,7 @@
 - [Understanding & discovering fold-switching proteins by combining AlphaFold2](https://www.youtube.com/watch?v=rgGceDDnIEo)
 - [Accelerating drug discovery with AI](https://www.youtube.com/watch?v=-hl0jpwWbV4)
 - [Intro to ML in Drug Discovery: Principles & Applications](https://www.youtube.com/watch?v=j-oLfEm7xD8)
+- [Introduction to AI in Drug Discovery](https://www.youtube.com/watch?v=7NgPGh0E0XE)
 
 ### Databases
 
