@@ -242,7 +242,6 @@
 - [[Paper] The myth of generalisability in clinical research and machine learning in health care](https://www.thelancet.com/action/showPdf?pii=S2589-7500%2820%2930186-2)
 - [[Paper] Sybil: A Validated Deep Learning Model to Predict Future Lung Cancer Risk From a Single Low-Dose Chest Computed Tomography](https://ascopubs.org/doi/10.1200/JCO.22.01345)
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/abs/2404.18416)
-- [AlphaFold3: A foundation model for biology](https://harrisbio.substack.com/p/alphafold3-a-foundation-model-for)
 - [[Paper] Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/pdf/2311.16452)
 - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
 
@@ -270,6 +269,7 @@
 - [Accelerating drug discovery with AI](https://www.youtube.com/watch?v=-hl0jpwWbV4)
 - [Intro to ML in Drug Discovery: Principles & Applications](https://www.youtube.com/watch?v=j-oLfEm7xD8)
 - [Introduction to AI in Drug Discovery](https://www.youtube.com/watch?v=7NgPGh0E0XE)
+- [AlphaFold3: A foundation model for biology](https://harrisbio.substack.com/p/alphafold3-a-foundation-model-for)
 
 ### Databases
 
