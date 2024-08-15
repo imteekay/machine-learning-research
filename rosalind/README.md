@@ -12,3 +12,4 @@
 - revc: [problem](https://rosalind.info/problems/revc) — [solution](revc.py)
 - rna: [problem](https://rosalind.info/problems/rna) — [solution](rna.py)
 - subs: [problem](https://rosalind.info/problems/subs) — [solution](subs.py)
+- prob: [problem](https://rosalind.info/problems/prob) — [solution](prob.py)
