@@ -126,6 +126,7 @@
 - [ML Code Challenges](https://www.deep-ml.com)
 - [Machine learning in Python with scikit-learn](https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session03/6c7bd3e1d86545c4b723b844ae2702f9)
 - [Introduction to Algorithms and Machine Learning](https://www.justinmath.com/files/introduction-to-algorithms-and-machine-learning.pdf)
+- [How to actually learn AI/ML: Reading Research Papers](https://www.youtube.com/watch?v=x6slke5niqw)
 
 ### Advanced Machine Learning
 
