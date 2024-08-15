@@ -325,6 +325,7 @@
 - [[Course] Genomic Medicine Gets Personal](https://www.edx.org/learn/bioinformatics/georgetown-university-genomic-medicine-gets-personal)
 - [[Course] Essentials of Genomics and Biomedical Informatics](https://www.edx.org/learn/biomedical-sciences/israelx-essentials-of-genomics-and-biomedical-informatics)
 - [Genomics Papers](https://github.com/jtleek/genomicspapers)
+- [Jennifer Doudna: The Exciting Future of Genome Editing](https://www.youtube.com/watch?v=D4FOtJoqoKM)
 
 ### Computational Biology
 
