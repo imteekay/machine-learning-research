@@ -76,6 +76,7 @@
 - [Inferential Statistics](https://br.udacity.com/course/intro-to-inferential-statistics--ud201)
 - [Introduction to Statistics](https://www.coursera.org/learn/stanford-statistics)
 - [The better way to do statistics](https://www.youtube.com/watch?v=3jP4H0kjtng)
+- [Machine Learning Fundamentals: Bias and Variance](https://www.youtube.com/watch?v=EuBBz3bI-aA)
 
 ### Calculus
 
