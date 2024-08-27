@@ -15,6 +15,7 @@
   - [Learning Roadmap](#learning-roadmap)
   - [Data Science Fundamentals](#data-science-fundamentals)
   - [Machine Learning](#machine-learning-1)
+  - [Support Vector Machines](#support-vector-machines)
   - [Deep Learning](#deep-learning)
   - [Generative AI](#generative-ai)
   - [Books](#books)
