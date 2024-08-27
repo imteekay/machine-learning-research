@@ -136,6 +136,7 @@
 - [Support Vector Machines Part 2: The Polynomial Kernel](https://www.youtube.com/watch?v=Toet3EiSFcM)
 - [Support Vector Machines Part 3: The Radial (RBF) Kernel](https://www.youtube.com/watch?v=Qc5IyLW_hns)
 - [MIT — Learning: Support Vector Machines](https://www.youtube.com/watch?v=_PwhiWxHK8o)
+- [Support Vector Machines | Stanford CS229](https://www.youtube.com/watch?v=lDwow4aOrtg)
 
 ### Advanced Machine Learning
 
