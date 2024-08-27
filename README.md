@@ -284,6 +284,7 @@
 - [[Course] Introduction to Genomic Data Science](https://www.edx.org/learn/bioinformatics/the-university-of-california-san-diego-introduction-to-genomic-data-science)
 - [Generative models for molecular discovery: Recent advances and challenges](https://wires.onlinelibrary.wiley.com/doi/epdf/10.1002/wcms.1608)
 - [Generative Models of Molecular Structures](https://www.youtube.com/watch?v=15bHUOjp6IU&list=PLoVkjhDgBOt3NyXcTGg_fi-H8qBzNnKgk&index=15)
+- [Opportunities and obstacles for deep learning in biology and medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574/pdf/rsif20170387.pdf)
 
 ### Databases
 
