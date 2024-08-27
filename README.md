@@ -286,6 +286,7 @@
 - [Generative Models of Molecular Structures](https://www.youtube.com/watch?v=15bHUOjp6IU&list=PLoVkjhDgBOt3NyXcTGg_fi-H8qBzNnKgk&index=15)
 - [Opportunities and obstacles for deep learning in biology and medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574/pdf/rsif20170387.pdf)
 - [Ten quick tips for machine learning in computational biology](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0155-3)
+- [Machine learning and complex biological data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1689-0)
 
 ### Databases
 
