@@ -128,6 +128,10 @@
 - [Introduction to Algorithms and Machine Learning](https://www.justinmath.com/files/introduction-to-algorithms-and-machine-learning.pdf)
 - [How to actually learn AI/ML: Reading Research Papers](https://www.youtube.com/watch?v=x6slke5niqw)
 
+### Support Vector Machines
+
+- [Support Vector Machines Part 1 (of 3): Main Ideas](https://www.youtube.com/watch?v=efR1C6CvhmE)
+
 ### Advanced Machine Learning
 
 - [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
