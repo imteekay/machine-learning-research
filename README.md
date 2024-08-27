@@ -287,6 +287,7 @@
 - [Opportunities and obstacles for deep learning in biology and medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574/pdf/rsif20170387.pdf)
 - [Ten quick tips for machine learning in computational biology](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0155-3)
 - [Machine learning and complex biological data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1689-0)
+- [A guide to machine learning for biologists](https://hfenglab.org/NRev21.pdf)
 
 ### Databases
 
