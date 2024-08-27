@@ -288,6 +288,7 @@
 - [Ten quick tips for machine learning in computational biology](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0155-3)
 - [Machine learning and complex biological data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1689-0)
 - [A guide to machine learning for biologists](https://hfenglab.org/NRev21.pdf)
+- [Next-Generation Machine Learning for Biological Networks](https://www.cell.com/action/showPdf?pii=S0092-8674%2818%2930592-0)
 
 ### Databases
 
