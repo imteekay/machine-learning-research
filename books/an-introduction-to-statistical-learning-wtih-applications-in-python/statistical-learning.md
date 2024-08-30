@@ -76,7 +76,7 @@
 
 - Bias and variance are two sources of error in machine learning models
 - **Bias** refers to the error introduced by approximating a real-life problem with a simplified model. It represents the difference between the average prediction of our model and the true value we're trying to predict.
-  - Underfitting: A model with high bias tends to be too simple and may fail to capture the underlying patterns and relationships in the data
+  - Underfitting: A model with high bias tends to be too simple and may fail to capture the underlying patterns and relationships in the data. A model with high bias makes strong assumptions, often simplifying the data too much, leading to underfitting.
   - Error introduced by simplifying the model
 - **Variance** refers to the variability in model predictions when trained on different datasets. It represents the sensitivity of the model to the specific training data used.
   - Overfitting: A model with high variance tends to be too complex and may capture noise or random fluctuations in the training data
