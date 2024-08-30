@@ -81,6 +81,7 @@
 - **Variance** refers to the variability in model predictions when trained on different datasets. It represents the sensitivity of the model to the specific training data used.
   - Overfitting: A model with high variance tends to be too complex and may capture noise or random fluctuations in the training data
   - Error introduced by the model's sensitivity to the training data
+  - High variance means that the model’s predictions are inconsistent, making the model unreliable
 - The bias-variance tradeoff arises because reducing bias often increases variance and vice versa. The goal is to find the right balance between bias and variance to minimize the overall prediction error of the model on unseen data.
 
 ## Classification
