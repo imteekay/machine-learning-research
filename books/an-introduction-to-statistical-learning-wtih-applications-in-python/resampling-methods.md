@@ -22,6 +22,9 @@
   - Randomly divide the data into K equal-sized parts
     - Leave out part K and fit the model to the other K - 1 parts (combined) and then obtain predictions for the left-out kth part
     - This is done in turn for each part k = 1,2,3,...,K, and then the results are combined (the cross-validation error)
+  - The most obvious advantage is computational. LOOCV requires fitting the statistical learning method n times. This has the potential to be computationally expensive
+  - It often gives more accurate estimates of the test error rate than does LOOCV (Leave One Out Cross Validation) because of the bias-variance trade-off
+    - Performing k-fold CV for, say, k = 5 or k = 10 will lead to an intermediate level of bias compared to LOOCV
 - Bootstrap
   - Quantify the uncertainty associated with a given estimator
   - Estimate of the standard error of a coefficient
