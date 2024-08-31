@@ -168,6 +168,7 @@
 - [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus)
   - [Paper](https://arxiv.org/pdf/1802.01528)
 - [Convolution is Matrix Multiplication](https://penny-xu.github.io/blog/convolution-is-matrixmultiplication)
+- [Neural Networks and Deep Learning — Course 1](https://www.youtube.com/watch?v=CS4cs9xVecg&list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0)
 
 ### Generative AI
 
