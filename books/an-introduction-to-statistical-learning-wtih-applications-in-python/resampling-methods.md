@@ -14,6 +14,9 @@
   - The resulting validation-set error provides an estimate of the test error
     - Quantitative response: MSE
     - Qualitative response: misclassification rate
+  - Two problems in the validation set approach
+    - the validation estimate of the test error rate can be highly variable, depending on precisely which observations are included in the training set and which observations are included in the validation set.
+    - In the validation approach, only a subset of the observations — those that are included in the training set rather than in the validation set — are used to fit the model. Since statistical methods tend to per- form worse when trained on fewer observations, this suggests that the validation set error rate may tend to overestimate the test error rate for the model fit on the entire data set.
 - K-fold cross-validation
   - Estimate test error
   - Randomly divide the data into K equal-sized parts
