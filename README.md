@@ -69,6 +69,7 @@
 - [[Course] Linear Algebra Crash Course](https://www.youtube.com/watch?v=n9jZmymHX6o&ab_channel=LunarTech)
 - [Linear Algebra Tutorial](https://www.youtube.com/watch?v=3Bf9oh7nkus&ab_channel=metacodeM)
 - [Tiled Matrix Multiplication](https://penny-xu.github.io/blog/tiled-matrix-multiplication)
+- [The Big Picture of Linear Algebra](https://www.youtube.com/watch?v=ggWYkes-n6E)
 
 ### Statistics
 
