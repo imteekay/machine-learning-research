@@ -170,6 +170,7 @@
 - [Convolution is Matrix Multiplication](https://penny-xu.github.io/blog/convolution-is-matrixmultiplication)
 - [Neural Networks and Deep Learning — Course 1](https://www.youtube.com/watch?v=CS4cs9xVecg&list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0)
 - [Improving Deep Neural Networks — Course 2](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc)
+- [Structuring Machine Learning Projects — Course 3](https://www.youtube.com/playlist?list=PLkDaE6sCZn6E7jZ9sN_xHwSHOdjUxUW_b)
 
 ### Generative AI
 
