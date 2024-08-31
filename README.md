@@ -172,6 +172,7 @@
 - [Improving Deep Neural Networks — Course 2](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc)
 - [Structuring Machine Learning Projects — Course 3](https://www.youtube.com/playlist?list=PLkDaE6sCZn6E7jZ9sN_xHwSHOdjUxUW_b)
 - [Convolutional Neural Networks — Course 4](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF)
+- [Sequence Models — Course 5](https://www.youtube.com/playlist?list=PLkDaE6sCZn6F6wUI9tvS_Gw1vaFAx6rd6)
 
 ### Generative AI
 
