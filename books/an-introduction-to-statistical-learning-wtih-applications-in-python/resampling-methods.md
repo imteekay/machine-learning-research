@@ -26,6 +26,9 @@
   - It often gives more accurate estimates of the test error rate than does LOOCV (Leave One Out Cross Validation) because of the bias-variance trade-off
     - Performing k-fold CV for, say, k = 5 or k = 10 will lead to an intermediate level of bias compared to LOOCV
     - LOOCV has higher variance because if the data point left out is influential or an outlier, the model's performance on that point can vary significantly. The larger validation set of k-fold cross validation (compared to LOOCV) and more varied training set help smooth out the impact of outliers and reduce the overall variance of the model’s performance estimates
+  - Comparison with the validation set approach
+    - The model’s performance is averaged over 𝑘 different training-validation splits, providing a more robust and reliable estimate of the model’s true performance.
+    - Advantage: This reduces the likelihood of overfitting to a particular validation set and provides a better estimate of how the model will generalize to new data.
 - Bootstrap
   - Quantify the uncertainty associated with a given estimator
   - Estimate of the standard error of a coefficient
