@@ -1074,6 +1074,64 @@ vAtan = math.atan(vTan)
 math.degrees(vAtan) # 𝛉 = 26.56505117707799
 ```
 
+### Real Coordinate Spaces
+
+A real coordinate space is all possible real-valued tuples and it's represented with this mathematical symbol
+
+$$
+\mathbb{R}
+$$
+
+In linear algebra, we usually see this symbol showing also a number like this:
+
+$$
+\mathbb{R}^2
+$$
+
+In this example, it's called the 2-dimensional real coordinate space, and it represents all possible real-valued 2-tuple. One example is this vector $\textbf{A}$:
+
+$$
+\begin{align*}
+  \textbf{A} &= \begin{bmatrix} 3 \\ 4 \end{bmatrix}
+\end{align*}
+$$
+
+3 is the value for the horizontal axis and 4 for the vertical axis.
+
+We can also have different dimensions, like this:
+
+$$
+\mathbb{R}^3
+$$
+
+Following the 2D, this is the 3D real coordinates space:
+
+$$
+\begin{align*}
+  \textbf{X} &= \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+  \quad
+  \textbf{Y} &= \begin{bmatrix} 3 \\ 4 \\ 5 \end{bmatrix}
+\end{align*}
+$$
+
+Both are members of the 3-tuple:
+
+$$
+X \in \mathbb{R}
+\quad
+and
+\quad
+Y \in \mathbb{R}
+$$
+
+This could increase to an even bigger number. If this number is `n`, it would call it:
+
+$$
+\mathbb{R}^n
+$$
+
+The n-dimensional real coordinate space.
+
 ### Vector Addition
 
 Let's add two vectors:
