@@ -260,6 +260,7 @@
 - [[Paper] Capabilities of Gemini Models in Medicine](https://arxiv.org/abs/2404.18416)
 - [[Paper] Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine](https://arxiv.org/pdf/2311.16452)
 - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
+- [AI Aspirations Healthcare Futures](https://www.youtube.com/watch?v=Bn5M6hT3W1E&t=150s)
 
 ### ML/AI & Biology
 
