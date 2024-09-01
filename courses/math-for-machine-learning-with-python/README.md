@@ -1222,6 +1222,8 @@ v = np.array([2, 1])
 w = 2 * v # [4 2]
 ```
 
+The magnitude is 2 times longer. One way of thinking about this is that we scale it up by 3.
+
 Scalar division is the same idea:
 
 ```python
