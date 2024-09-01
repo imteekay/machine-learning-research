@@ -1224,6 +1224,8 @@ w = 2 * v # [4 2]
 
 The magnitude is 2 times longer. One way of thinking about this is that we scale it up by 3.
 
+If we multiply the vector by -1, it won't change its magnitude, but it will change its direction.
+
 Scalar division is the same idea:
 
 ```python
