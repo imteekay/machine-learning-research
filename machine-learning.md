@@ -1,5 +1,11 @@
 # Machine Learning
 
+## Model Training
+
+- Use PCA to reduce dimensionality
+  - Always scale the predictors before applying PCA
+  - PCA relies on the variance of the data to identify the principal components. If your predictors are on different scales, PCA may disproportionately weigh the features with larger scales
+
 ## Model Performance
 
 - Prefer choosing models that have good cross-validation and test accuracy
