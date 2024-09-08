@@ -6,6 +6,10 @@
   - Always scale the predictors before applying PCA
   - PCA relies on the variance of the data to identify the principal components. If your predictors are on different scales, PCA may disproportionately weigh the features with larger scales
 
+## Model Selection
+
+Which model is better? It depends on the problem at hand. If the relationship between the features and the response is well approximated by a linear model as in, then an approach such as linear regression will likely work well, and will outperform a method such as a regression tree that does not exploit this linear structure. If instead there is a highly non-linear and complex relationship between the features and the response as indicated by model, then decision trees may outperform classical approaches.
+
 ## Model Performance
 
 - Prefer choosing models that have good cross-validation and test accuracy
