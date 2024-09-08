@@ -137,6 +137,7 @@
 - [Machine Learning Specialization by Andrew Ng](https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI)
 - [AI Fundamentals](https://www.udacity.com/course/ai-fundamentals--ud099)
 - [Artificial Intelligence](https://www.udacity.com/course/artificial-intelligence--ud954)
+- [📃 Hyper-Parameter Optimization: A Review of Algorithms and Applications](https://arxiv.org/pdf/2108.02497)
 
 ### Support Vector Machines
 
