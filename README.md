@@ -11,10 +11,10 @@
   - [Statistics](#statistics)
   - [Calculus](#calculus)
   - [Optimization](#optimization)
-- [Machine Learning](#machine-learning)
+- [Artificial Intelligence](#artificial-intelligence)
   - [Learning Roadmap](#learning-roadmap)
   - [Data Science Fundamentals](#data-science-fundamentals)
-  - [Machine Learning](#machine-learning-1)
+  - [Machine Learning](#machine-learning)
   - [Support Vector Machines](#support-vector-machines)
   - [Deep Learning](#deep-learning)
   - [Generative AI](#generative-ai)
@@ -93,7 +93,7 @@
 
 - [Convex Optimization](https://web.stanford.edu/class/ee364a/videos.html)
 
-## Machine Learning
+## Artificial Intelligence
 
 ### Learning Roadmap
 
@@ -136,6 +136,8 @@
 - [Machine Learning Fundamentals: Cross Validation](https://www.youtube.com/watch?v=fSytzGwwBVw)
 - [Machine Learning Specialization by Andrew Ng](https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI)
 - [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
+- [AI Fundamentals](https://www.udacity.com/course/ai-fundamentals--ud099)
+- [Artificial Intelligence](https://www.udacity.com/course/artificial-intelligence--ud954)
 
 ### Support Vector Machines
 
@@ -182,11 +184,6 @@
 ### Generative AI
 
 - [Intuitions on Language Models & Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=3gb-ZkVRemQ&ab_channel=StanfordOnline)
-
-### Artificial Intelligence
-
-- [AI Fundamentals](https://www.udacity.com/course/ai-fundamentals--ud099)
-- [Artificial Intelligence](https://www.udacity.com/course/artificial-intelligence--ud954)
 
 ### Books
 
