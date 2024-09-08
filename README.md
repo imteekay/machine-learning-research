@@ -139,6 +139,7 @@
 - [Artificial Intelligence](https://www.udacity.com/course/artificial-intelligence--ud954)
 - [📃 Hyper-Parameter Optimization: A Review of Algorithms and Applications](https://arxiv.org/pdf/2108.02497)
 - [📃 How to avoid machine learning pitfalls: a guide for academic researchers](https://arxiv.org/pdf/2108.02497)
+- [📃 Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning](https://arxiv.org/pdf/1811.12808)
 
 ### Support Vector Machines
 
