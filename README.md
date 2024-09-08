@@ -135,7 +135,6 @@
 - [Machine Learning Fundamentals: Bias and Variance](https://www.youtube.com/watch?v=EuBBz3bI-aA)
 - [Machine Learning Fundamentals: Cross Validation](https://www.youtube.com/watch?v=fSytzGwwBVw)
 - [Machine Learning Specialization by Andrew Ng](https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI)
-- [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
 - [AI Fundamentals](https://www.udacity.com/course/ai-fundamentals--ud099)
 - [Artificial Intelligence](https://www.udacity.com/course/artificial-intelligence--ud954)
 
@@ -192,6 +191,7 @@
 - [Python Machine Learning](https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1787125939)
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
 - [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
+- [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
 
 ### Podcasts
 
