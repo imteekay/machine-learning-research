@@ -93,6 +93,7 @@
 - [Khan Academy Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus)
 - [Khan Academy Differential Calculus](https://www.khanacademy.org/math/differential-calculus)
 - [Calculus Applied](https://www.edx.org/learn/calculus/harvard-university-calculus-applied)
+- [Mathematics for Machine Learning - Multivariate Calculus](https://www.youtube.com/playlist?list=PLiiljHvN6z193BBzS0Ln8NnqQmzimTW23)
 
 ### Optimization
 
