@@ -76,6 +76,7 @@
 - [Tiled Matrix Multiplication](https://penny-xu.github.io/blog/tiled-matrix-multiplication)
 - [The Big Picture of Linear Algebra](https://www.youtube.com/watch?v=ggWYkes-n6E)
 - [[Interview] Gilbert Strang: Linear Algebra](https://www.youtube.com/watch?v=lEZPfmGCEk0)
+- [Mathematics for Machine Learning - Linear Algebra](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3)
 
 ### Statistics
 
