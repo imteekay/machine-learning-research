@@ -190,6 +190,7 @@
 - [Convolutional Neural Networks — Course 4](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF)
 - [Sequence Models — Course 5](https://www.youtube.com/playlist?list=PLkDaE6sCZn6F6wUI9tvS_Gw1vaFAx6rd6)
 - [Understanding Deep Learning Book Club](https://www.youtube.com/playlist?list=PLmp4AHm0u1g0AdLp-LPo5lCCf-3ZW_rNq)
+- [Dive into Deep Learning](https://d2l.ai)
 
 ### Generative AI
 
