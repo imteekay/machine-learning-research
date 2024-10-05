@@ -416,6 +416,7 @@
 ## Careers
 
 - [ML Researcher at Borealis AI](careers/ml-researcher-borealis-ai.pdf)
+- [Crushing your interviews for Data Science and Machine Learning Engineering roles](https://building.nubank.com.br/crushing-your-interviews-for-data-science-and-machine-learning-engineering-roles-8-practical-tips)
 
 ## People
 
