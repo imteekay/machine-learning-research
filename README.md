@@ -277,6 +277,7 @@
 - [AI Aspirations Healthcare Futures](https://www.youtube.com/watch?v=Bn5M6hT3W1E)
 - [Breast Cancer Prediction: project](https://github.com/imteekay/breast-cancer-prediction)
 - [Training ML Models for Cancer Tumor Classification](https://www.iamtk.co/training-ml-models-for-cancer-tumor-classification)
+- [AI for Business Transformation: Lessons from Healthcare](https://www.youtube.com/watch?v=8C-XiXB67_Q)
 
 ### ML/AI & Biology
 
