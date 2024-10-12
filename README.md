@@ -279,6 +279,7 @@
 - [Training ML Models for Cancer Tumor Classification](https://www.iamtk.co/training-ml-models-for-cancer-tumor-classification)
 - [AI for Business Transformation: Lessons from Healthcare](https://www.youtube.com/watch?v=8C-XiXB67_Q)
 - [The revolution in high-throughput proteomics and AI](https://www.science.org/doi/10.1126/science.ads5749)
+- [[Course] AI for Medicine Specialization](https://www.deeplearning.ai/courses/ai-for-medicine-specialization)
 
 ### ML/AI & Biology
 
