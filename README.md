@@ -44,6 +44,7 @@
   - [Projects](#projects)
   - [Careers](#careers)
   - [People](#people)
+  - [Research \& Laboratories](#research--laboratories)
   - [License](#license)
 
 ## Mathematics
@@ -470,6 +471,10 @@
 - [Quanhan (Johnny) Xi](https://xijohnny.github.io)
 - [Eric Horvitz](https://erichorvitz.com)
 - [Rinaldo Montalvão](https://www.linkedin.com/in/rwmontalvao)
+
+## Research & Laboratories
+
+- [Microsoft Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures)
 
 ## License
 
