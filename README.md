@@ -194,6 +194,7 @@
 - [Understanding Deep Learning Book Club](https://www.youtube.com/playlist?list=PLmp4AHm0u1g0AdLp-LPo5lCCf-3ZW_rNq)
 - [Dive into Deep Learning](https://d2l.ai)
 - [TABPFN: A transformer that solves small tabular classification problems in a second](https://arxiv.org/pdf/2207.01848)
+- [A Matemática das Redes Neurais](https://www.youtube.com/watch?v=qZ9xuPcoWSA)
 
 ### Generative AI
 
