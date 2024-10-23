@@ -17,6 +17,7 @@
   - How to interpret this concept
     - it describes how the probability of a random variable is distributed over a range of values
 - [ ] Degrees of Freedom
+- [ ] Bayesian Inference
 
 ## Linear Regression
 
@@ -48,3 +49,7 @@
 - [ ] Theory on Decision Tree (Intro to Stats Learning)
 - [ ] Theory on Random Forest (Intro to Stats Learning)
 - [x] Theory on Cross Validation (Intro to Stats Learning)
+
+## Deep Learning
+
+- [] How bayesian inference can improve test performance
