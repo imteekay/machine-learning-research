@@ -477,6 +477,12 @@
 - [Quanhan (Johnny) Xi](https://xijohnny.github.io)
 - [Eric Horvitz](https://erichorvitz.com)
 - [Rinaldo Montalvão](https://www.linkedin.com/in/rwmontalvao)
+- [Joanne Peng](https://www.joannepeng.com)
+- [Sarah Alamdari](https://www.sarahalamdari.com)
+- [Lorin Crawford](https://www.lorincrawford.com)
+- [Ava Amini](https://avaamini.com)
+- [Alex Lu](https://www.alexluresearch.com)
+- [Kevin Kaichuang Yang](https://yangkky.github.io)
 
 ## Research & Laboratories
 
