@@ -199,6 +199,7 @@
 - [TABPFN: A transformer that solves small tabular classification problems in a second](https://arxiv.org/pdf/2207.01848)
 - [A Matemática das Redes Neurais](https://www.youtube.com/watch?v=qZ9xuPcoWSA)
 - [Introdução a Redes Neurais e Deep Learning](https://www.youtube.com/watch?v=Z2SGE3_2Grg)
+- [How do neural networks learn features from data?](https://www.youtube.com/watch?v=y0KxsLJvG14)
 
 ### Generative AI
 
