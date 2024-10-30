@@ -288,6 +288,7 @@
 - [The revolution in high-throughput proteomics and AI](https://www.science.org/doi/10.1126/science.ads5749)
 - [[Course] AI for Medicine Specialization](https://www.deeplearning.ai/courses/ai-for-medicine-specialization)
 - [Towards Democratization of Subspeciality Medical Expertise](https://arxiv.org/pdf/2410.03741)
+- [Uncovering early predictors of cerebral palsy through the application of machine learning: a case-control study](https://bmjpaedsopen.bmj.com/content/bmjpo/8/1/e002800.full.pdf)
 
 ### ML/AI & Biology
 
