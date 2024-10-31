@@ -12,3 +12,8 @@
   - The circle in between is a "neuron" and it implements a function that takes the input (size), compute its linear function, takes a max of zero, and output the estimated price
 
 ![house-price-prediction.png](house-price-prediction.png)
+
+## Supervised Learning
+
+- structure data: e.g. table
+- unstructure data: e.g. audio, image, text
