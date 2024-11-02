@@ -33,3 +33,12 @@
 ## Binary Classification
 
 - e.g. input as an image -> whether it's cat (1) or non cat (0)
+
+## Logistic Regression
+
+- Given x, we want the y^ (prediction, estimate of y): the P(y=1|x)
+  - Given a picture, what's the probability of this picture to be a cat
+- Instead of a linear regression, logistic regressions use a sigmoid function to predict a binary classification
+  - z = w⋅x+b
+  - if 𝜎(𝑧) > 0.5, the model may predict class 1
+  - if 𝜎(𝑧) < 0.5, it may predict class 0
