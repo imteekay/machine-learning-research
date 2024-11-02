@@ -54,4 +54,4 @@
   - w = w - α (dJ(w) / dw)
     - α = learning rate
     - J(w) = cost function
-    - dJ(w) / dw = how much the cost function changes in respect to w
+    - dJ(w) / dw = how much the cost function changes in respect to w -> the slope of the function
