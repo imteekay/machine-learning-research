@@ -29,3 +29,7 @@
   - Scale of computation
   - Better algorithms. e.g. going from sigmoid to relu makes gradient descent runs much faster
   - With all this, the iteration of the idea -> experiment -> code cycle is much faster which also contributes to the deep learning progress
+
+## Binary Classification
+
+- e.g. input as an image -> whether it's cat (1) or non cat (0)
