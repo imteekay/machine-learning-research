@@ -333,6 +333,7 @@
 - [Discovering New Molecules Using Graph Neural Networks](https://www.youtube.com/watch?v=fzSL7MWfXtQ)
 - [AI-Driven Drug Discovery Using Digital Biology](https://www.youtube.com/watch?v=27JMkAleyNw)
 - [Digital Biology with insitro's Daphne Koller](https://www.youtube.com/watch?v=79qJLY-30ao)
+- [AI-First: Daphne Koller’s plan to revolutionize drug discovery](https://www.youtube.com/watch?v=ukEaOOn9ZaE)
 
 ### Databases
 
