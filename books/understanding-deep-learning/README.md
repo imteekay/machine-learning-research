@@ -47,3 +47,11 @@
 
 - The loss function computes the error for a single training example
 - The cost function is the average of the loss functions of the entire training set.
+
+## Gradient Descent
+
+- Repeat
+  - w = w - α (dJ(w) / dw)
+    - α = learning rate
+    - J(w) = cost function
+    - dJ(w) / dw = how much the cost function changes in respect to w
