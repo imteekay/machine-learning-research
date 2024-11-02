@@ -17,3 +17,15 @@
 
 - structure data: e.g. table
 - unstructure data: e.g. audio, image, text
+
+## Why is Deep Learning taking off?
+
+- For traditional machine learning algorithms, the performance improves with the increase of the amount of data but it plateaus with huge amounts of data.
+- We went from a small amount of data to a huge amount of data (IoT, smartphones)
+- From small neural net to a medium to a large neural net, with the increase of data, the performance is getting better and better
+- Scale drives the deep learning progress
+  - The size of the neural network (a lot of hidden units, parameters, connections)
+  - The size of data
+  - Scale of computation
+  - Better algorithms. e.g. going from sigmoid to relu makes gradient descent runs much faster
+  - With all this, the iteration of the idea -> experiment -> code cycle is much faster which also contributes to the deep learning progress
