@@ -339,6 +339,7 @@
 - [AI-First: Daphne Koller’s plan to revolutionize drug discovery](https://www.youtube.com/watch?v=ukEaOOn9ZaE)
 - [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
 - [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
+- [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
 
 ### Databases
 
