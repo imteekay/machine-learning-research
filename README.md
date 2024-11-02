@@ -202,6 +202,7 @@
 - [Introdução a Redes Neurais e Deep Learning](https://www.youtube.com/watch?v=Z2SGE3_2Grg)
 - [How do neural networks learn features from data?](https://www.youtube.com/watch?v=y0KxsLJvG14)
 - [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
+- [Building a neural network from scratch]
 
 ### Generative AI
 
@@ -336,6 +337,7 @@
 - [AI-Driven Drug Discovery Using Digital Biology](https://www.youtube.com/watch?v=27JMkAleyNw)
 - [Digital Biology with insitro's Daphne Koller](https://www.youtube.com/watch?v=79qJLY-30ao)
 - [AI-First: Daphne Koller’s plan to revolutionize drug discovery](https://www.youtube.com/watch?v=ukEaOOn9ZaE)
+- [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
 
 ### Databases
 
