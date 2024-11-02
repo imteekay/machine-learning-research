@@ -55,3 +55,10 @@
     - α = learning rate
     - J(w) = cost function
     - dJ(w) / dw = how much the cost function changes in respect to w -> the slope of the function
+
+### Intuition about Derivatives
+
+- Derivatives are the slope of a function, in other words, it's how much the function changes if we change its variable
+  - How much `f(x)` changes, if we change the `x`
+  - The slope is a segment of y (height) divided by the segment of x (width): df(x)/dx
+  - For a linear function, the slope is always the same
