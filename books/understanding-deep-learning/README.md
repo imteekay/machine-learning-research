@@ -42,3 +42,8 @@
   - z = w⋅x+b
   - if 𝜎(𝑧) > 0.5, the model may predict class 1
   - if 𝜎(𝑧) < 0.5, it may predict class 0
+
+## Logistic Regression Cost Function
+
+- The loss function computes the error for a single training example
+- The cost function is the average of the loss functions of the entire training set.
