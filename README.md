@@ -55,6 +55,7 @@
 - [Mathematics of Big Data and Machine Learning](https://ocw.mit.edu/courses/res-ll-005-mathematics-of-big-data-and-machine-learning-january-iap-2020)
 - [Mathematics for Machine Learning](https://github.com/imteekay/mathematics-for-machine-learning)
 - [How to get from high school math to cutting-edge ML/AI](https://www.justinmath.com/how-to-get-from-high-school-math-to-cutting-edge-ml-ai)
+- [The Complete Mathematics of Neural Networks and Deep Learning](https://www.youtube.com/watch?v=Ixl3nykKG9M)
 
 ### How to learn mathematics
 
