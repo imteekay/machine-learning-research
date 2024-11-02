@@ -330,6 +330,7 @@
 - [Next-Generation Machine Learning for Biological Networks](https://www.cell.com/action/showPdf?pii=S0092-8674%2818%2930592-0)
 - [AlphaFold3 — What’s next in computational drug discovery? — Part 1](https://medium.com/@leowossnig/alphafold3-whats-next-in-computational-drug-discovery-2da534c0845e)
 - [Deep generative models for biomolecular engineering](https://www.youtube.com/watch?v=4A51MwTuctk)
+- [Discovering New Molecules Using Graph Neural Networks](https://www.youtube.com/watch?v=fzSL7MWfXtQ)
 
 ### Databases
 
