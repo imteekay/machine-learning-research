@@ -331,6 +331,7 @@
 - [AlphaFold3 — What’s next in computational drug discovery? — Part 1](https://medium.com/@leowossnig/alphafold3-whats-next-in-computational-drug-discovery-2da534c0845e)
 - [Deep generative models for biomolecular engineering](https://www.youtube.com/watch?v=4A51MwTuctk)
 - [Discovering New Molecules Using Graph Neural Networks](https://www.youtube.com/watch?v=fzSL7MWfXtQ)
+- [AI-Driven Drug Discovery Using Digital Biology](https://www.youtube.com/watch?v=27JMkAleyNw)
 
 ### Databases
 
