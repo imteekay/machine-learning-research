@@ -62,4 +62,4 @@
   - How much `f(x)` changes, if we change the `x`
   - The slope is a segment of y (height) divided by the segment of x (width): df(x)/dx
   - For a linear function, the slope is always the same
-  - For a exponential, the slope keeps changing. e.g. f(x) = x², the rate of change (derivative) is `2x`, which means that if we shift 1 to the right, we shift 2 upwards.
+  - For a exponential, the slope keeps changing. e.g. f(x) = x², the rate of change (derivative) is `2x`, which means that if we shift 1 to the right, we shift 2 upwards. The slope is different for different values of x
