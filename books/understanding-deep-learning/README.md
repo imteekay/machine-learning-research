@@ -77,4 +77,10 @@
   - u = bc
   - v = a + u
   - J = 3v
-
+- Computing derivatives
+  - Using chain rule to calculate how much one variable changes the output
+  - e.g. how much `J` changes if we change `a`
+  - dJ/da = dJ/dv * dv/da
+    - dJ/dv: how much `J` changes if we change `v`
+    - dv/da: how much `v` changes if we change `a`
+    - we need to propagate backwards to calculate the derivatives of each
