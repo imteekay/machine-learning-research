@@ -58,6 +58,8 @@
 
 ### Intuition about Derivatives
 
+![](derivatives-intuition.png)
+
 - Derivatives are the slope of a function, in other words, it's how much the function changes if we change its variable
   - How much `f(x)` changes, if we change the `x`
   - The slope is a segment of y (height) divided by the segment of x (width): df(x)/dx
