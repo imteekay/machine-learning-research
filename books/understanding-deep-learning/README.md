@@ -84,3 +84,26 @@
     - dJ/dv: how much `J` changes if we change `v`
     - dv/da: how much `v` changes if we change `a`
     - we need to propagate backwards to calculate the derivatives of each
+
+## Gradient Descent
+
+![](logistic-regression.png)
+
+- `z` is the linear transformation: `wt * x + b`
+- `a` is the prediction, the activation function applied to `z` (sigmoid in this case)
+- The loss function is computed this way in respect to `a`
+- We go backwards using the derivative of the loss function in respect to `a`, `z`, `w1`, and `w2`
+
+![](gradient-descent-m-training-examples.png)
+
+- Cost function `J` is the mean of the sum of all loss functions
+- Gradient descent is the derivative of the cost function in respect to the weight
+  - Compute the linear combination `z`
+  - Compute the applied activation function `a` 
+  - Compute the loss function
+    - And then the cost function (mean of the sum of all loss functions)
+  - Compute the derivative of `z`
+  - Compute the derivative of `w1`
+  - Compute the derivative of `w2`
+  - Compute the derivative of `b`
+  - Update the `w1`, `w2`, and `b`
