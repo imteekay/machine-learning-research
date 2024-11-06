@@ -91,6 +91,7 @@
 - [The better way to do statistics](https://www.youtube.com/watch?v=3jP4H0kjtng)
 - [A complete guide to box plots](https://www.atlassian.com/data/charts/box-plot-complete-guide)
 - [Probability and Statistics](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V)
+- [Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en)
 
 ### Calculus
 
