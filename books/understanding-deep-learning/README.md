@@ -107,3 +107,7 @@
   - Compute the derivative of `w2`
   - Compute the derivative of `b`
   - Update the `w1`, `w2`, and `b`
+
+## Vectorization
+
+- Vectorization is getting rid of explicit for loops in code
