@@ -505,6 +505,7 @@
 - [Rocío Mercado Oropeza](https://rociomer.github.io)
 - [Pranav Rajpurkar](https://pranavrajpurkar.com)
 - [Martin Steinegger](https://steineggerlab.com)
+- [Jue Wang](https://juewang.mystrikingly.com)
 
 ## Research & Laboratories
 
