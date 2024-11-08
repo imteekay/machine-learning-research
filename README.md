@@ -504,6 +504,7 @@
 - [Kevin Kaichuang Yang](https://yangkky.github.io)
 - [Rocío Mercado Oropeza](https://rociomer.github.io)
 - [Pranav Rajpurkar](https://pranavrajpurkar.com)
+- [Martin Steinegger](https://steineggerlab.com)
 
 ## Research & Laboratories
 
