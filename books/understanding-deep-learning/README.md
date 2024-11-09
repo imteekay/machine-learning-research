@@ -126,3 +126,10 @@
 - A superscript is the layer and the subscript is the node in the layer
 
 ![](linear-combination-in-neural-net.png)
+
+- For X,
+  - the horizontal is all the training examples
+  - the vertical is each feature
+- When computing Z and A, 
+  - the horizontal is all the training examples
+  - the vertical is the hidden units (nodes) in the hidden layer
