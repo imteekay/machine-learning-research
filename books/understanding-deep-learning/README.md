@@ -114,6 +114,8 @@
 
 - Vectorization is getting rid of explicit for loops in code
 
+![](vectorizing-across-multiple-examples.png)
+
 ## Neural Network
 
 ![](neural-network.png)
