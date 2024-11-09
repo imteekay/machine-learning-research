@@ -110,6 +110,8 @@
 
 ## Vectorization
 
+![](vectorizing.png)
+
 - Vectorization is getting rid of explicit for loops in code
 
 ## Neural Network
