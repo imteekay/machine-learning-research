@@ -111,3 +111,14 @@
 ## Vectorization
 
 - Vectorization is getting rid of explicit for loops in code
+
+## Neural Network
+
+![](neural-network.png)
+
+- Each node does two things
+  - Compute the linear combination
+  - Compute the activation function
+- A superscript is the layer and the subscript is the node in the layer
+
+![](linear-combination-in-neural-net.png)
