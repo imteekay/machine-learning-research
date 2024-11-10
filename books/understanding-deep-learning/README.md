@@ -133,3 +133,8 @@
 - When computing Z and A, 
   - the horizontal is all the training examples
   - the vertical is the hidden units (nodes) in the hidden layer
+
+![](activation-functions.png)
+
+- An activation function is a non-linear function: sigmoid, tanh, relu
+- The activation function can be different for different layers
