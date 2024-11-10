@@ -136,5 +136,12 @@
 
 ![](activation-functions.png)
 
-- An activation function is a non-linear function: sigmoid, tanh, relu
+- An activation function is a non-linear function: sigmoid, tanh (superior than sigmoid), relu (most common)
+  - tanh: from -1 to 1 -> the mean of the activation function for a given hidden layer is 0 and it makes the learning for the next layer a little bit easier
+  - It helps the network maintain a balance of positive and negative values, reducing bias shifts in the network as it learns
+  - When the mean of the activation is closer to zero (as with tanh), each neuron in the subsequent layer receives a more balanced input, making gradient-based optimization more stable and effective
 - The activation function can be different for different layers
+- Importance of activation functions in neural networks
+  - Ability to Model Complex Patterns: Activation functions allow the network to learn and represent complex patterns by introducing non-linearities, enabling it to approximate complex functions.
+  - Enabling Deep Networks to Generalize: Non-linear activation functions enable deep neural networks to capture intricate dependencies in data. Each hidden layer with non-linear activations can learn progressively abstract features, moving from low-level patterns (like edges in an image) to higher-level concepts (like objects).
+  - Ensuring Backpropagation Works: Backpropagation relies on gradients to update weights. Activation functions with non-linear derivatives allow these gradients to be meaningful. Functions like ReLU provide gradients that can be propagated through multiple layers, enabling efficient learning.
