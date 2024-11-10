@@ -123,6 +123,10 @@
   - dB1 = 1/m * SUM(dZ1)
 - Repeat the gradient descent
   - update the weights and biases based on dW2, dW1, dB2, and dB1
+- Random initialization
+  - If initializing with weights all zeros, we compute similar functions in backpropagation, in other words, it computes only one hidden unit (all the hidden units are symmetric)
+  - W1 = np.random.randn((2, 2)) * 0.01
+  - B1 = np.zero((2, 1))
 
 ## Vectorization
 
