@@ -54,7 +54,7 @@
   - w = w - α (dJ(w) / dw)
     - α = learning rate
     - J(w) = cost function
-    - dJ(w) / dw = how much the cost function changes in respect to w -> the slope of the function
+    - dJ(w) / dw = how much the cost function changes with respect to w -> the slope of the function
 
 ### Intuition about Derivatives
 
@@ -91,13 +91,13 @@
 
 - `z` is the linear transformation: `wt * x + b`
 - `a` is the prediction, the activation function applied to `z` (sigmoid in this case)
-- The loss function is computed this way in respect to `a`
-- We go backwards using the derivative of the loss function in respect to `a`, `z`, `w1`, and `w2`
+- The loss function is computed this way with respect to `a`
+- We go backwards using the derivative of the loss function with respect to `a`, `z`, `w1`, and `w2`
 
 ![](gradient-descent-m-training-examples.png)
 
 - Cost function `J` is the mean of the sum of all loss functions
-- Gradient descent is the derivative of the cost function in respect to the weight
+- Gradient descent is the derivative of the cost function with respect to the weight
   - Compute the linear combination `z`
   - Compute the applied activation function `a` 
   - Compute the loss function
