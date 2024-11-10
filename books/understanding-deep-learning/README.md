@@ -107,6 +107,22 @@
   - Compute the derivative of `w2`
   - Compute the derivative of `b`
   - Update the `w1`, `w2`, and `b`
+- Forward propagation
+  - First layer
+    - Z1 = W1.X + B1
+    - A1 = g1(Z1)
+  - Second layer
+    - Z2 = W2.A1 + B2
+    - A2 = g2(Z2)
+- Backwards propagation
+  - dZ2 = A2 - Y
+  - dW2 = 1/m * dZ2 A1.T
+  - dB2 = 1/m * SUM(dZ2)
+  - dZ1 = W2.T * dZ2 * dg(Z1)
+  - dW1 = 1/m * dZ1 X.T
+  - dB1 = 1/m * SUM(dZ1)
+- Repeat the gradient descent
+  - update the weights and biases based on dW2, dW1, dB2, and dB1
 
 ## Vectorization
 
