@@ -127,6 +127,8 @@
   - If initializing with weights all zeros, we compute similar functions in backpropagation, in other words, it computes only one hidden unit (all the hidden units are symmetric)
   - W1 = np.random.randn((2, 2)) * 0.01
   - B1 = np.zero((2, 1))
+  - small values for weight initialization (common to use "times 0.01" for example)
+    - Activation Saturation: If the weight values are too large, the activations of the neurons in deeper layers may saturate. Saturation happens when the input to these activation functions is too large or too small, causing the output to be very close to either 0 or 1 (in the case of sigmoid), or -1 or 1 (in the case of tanh). This saturation can make the gradients very small (the gradients vanish), which slows down or even stops learning during backpropagation, a problem known as the vanishing gradient problem.
 
 ## Vectorization
 
