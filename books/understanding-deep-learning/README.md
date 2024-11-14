@@ -172,3 +172,9 @@
     - 0 if z < 0
     - 1 if z >= 1
     - `Z >= 1` (vectorizing approach)
+
+## Intuition about deep representation
+
+- Different layers can represent parts of the input
+  - e.g. face image: first layer represents nose, second layer represents edges, etc
+  - e.g. audio: phonemes -> words -> sentence/phrase
