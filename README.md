@@ -203,7 +203,7 @@
 - [Introdução a Redes Neurais e Deep Learning](https://www.youtube.com/watch?v=Z2SGE3_2Grg)
 - [How do neural networks learn features from data?](https://www.youtube.com/watch?v=y0KxsLJvG14)
 - [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
-- [Building a neural network from scratch]
+- [Building A Neural Network from Scratch with Mathematics and Python](https://www.iamtk.co/building-a-neural-network-from-scratch-with-mathematics-and-python)
 
 ### Generative AI
 
