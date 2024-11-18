@@ -178,3 +178,11 @@
 - Different layers can represent parts of the input
   - e.g. face image: first layer represents nose, second layer represents edges, etc
   - e.g. audio: phonemes -> words -> sentence/phrase
+
+## Train, Dev, Test sets
+
+- Train and dev to do cross validation
+- Test to test the performance of the trained model
+- Mismatched train/dev distribution
+  - Make sure the dev and test sets come from the same distribution
+  - e.g. a training set with high quality cat images and the dev set with low quality cat images
