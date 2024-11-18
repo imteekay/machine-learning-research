@@ -186,3 +186,31 @@
 - Mismatched train/dev distribution
   - Make sure the dev and test sets come from the same distribution
   - e.g. a training set with high quality cat images and the dev set with low quality cat images
+
+## Bias/Variance
+
+![](bias-and-variance.png)
+
+- Bias/Variance tradeoff
+  - High bias: underfitting
+  - Just right
+  - High variance: overfitting
+- Cat classification example
+  - Example 1
+    - training set error: 1%
+    - dev set error: 11%
+    - high variance (overfitting)
+  - Example 2
+    - training set error: 15%
+    - dev set error 16%
+    - high bias because the error percentage is high and it's not fitting the data well
+  - Example 3
+    - training set error: 15%
+    - dev set error 30%
+    - high bias and high variance
+  - Example 4
+    - training set error: 0.5%
+    - dev set error 1%
+    - low bias and low variance
+- With the training set, we can check the bias influence
+- Together with the dev set, we can check the influence of variance
