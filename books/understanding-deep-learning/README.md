@@ -246,3 +246,8 @@
 - Z = W a + b
 - With a smaller W, we have a smaller Z
 - A smaller Z will be in the region of the function that will be roughly linear
+
+![](dropout-regularization.png)
+
+- Drop some of the hidden units
+- Make the neural network model smaller and simpler
