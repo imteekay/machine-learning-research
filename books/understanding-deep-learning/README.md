@@ -226,3 +226,23 @@
   - Try regularization
   - Different neural network architecture
 - It's not much more about tradeoff, we can improve bias with a bigger neural network without influencing variance and improve variance having more data without influencing bias
+
+## Regularization
+
+- Regularization penalizes big weights in a model
+- Large weights can make a model overly sensitive to small changes in input features, leading to poor generalization on unseen data
+
+![](regularization-neural-network.png)
+
+- Almost always help the overfitting problem
+- ƛ: the regularization (hyper)parameter
+- The intuition for why regularization helps prevent overfitting
+  - With a big lambda, we set W to be near zero
+  - With most of the hidden units as zero, the neural network becomes simpler and smaller
+
+![](regularization-tanh.png)
+
+- With a big lambda, we have a smaller W
+- Z = W a + b
+- With a smaller W, we have a smaller Z
+- A smaller Z will be in the region of the function that will be roughly linear
