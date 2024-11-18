@@ -214,3 +214,15 @@
     - low bias and low variance
 - With the training set, we can check the bias influence
 - Together with the dev set, we can check the influence of variance
+
+## Basic Recipe for ML
+
+- High bias: look at the trainint data because it's not really fitting the data well
+  - Bigger network (hidden layers and hidden units)
+  - Training longer (more iterations)
+  - Different neural network architecture
+- High variance: look at the dev set performance because it's overfitting
+  - More data
+  - Try regularization
+  - Different neural network architecture
+- It's not much more about tradeoff, we can improve bias with a bigger neural network without influencing variance and improve variance having more data without influencing bias
