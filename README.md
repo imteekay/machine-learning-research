@@ -203,7 +203,11 @@
 - [Introdução a Redes Neurais e Deep Learning](https://www.youtube.com/watch?v=Z2SGE3_2Grg)
 - [How do neural networks learn features from data?](https://www.youtube.com/watch?v=y0KxsLJvG14)
 - [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
-- [Building a neural network from scratch]
+- [Building A Neural Network from Scratch with Mathematics and Python](https://www.iamtk.co/building-a-neural-network-from-scratch-with-mathematics-and-python)
+- [Neural Network from Scratch](https://github.com/imteekay/neural-network-from-scratch)
+- [Feedforward Neural Networks in Depth, Part 1: Forward and Backward Propagations](https://jonaslalin.com/2021/12/10/feedforward-neural-networks-part-1)
+- [Feedforward Neural Networks in Depth, Part 2: Activation Functions](https://jonaslalin.com/2021/12/21/feedforward-neural-networks-part-2)
+- [Feedforward Neural Networks in Depth, Part 3: Cost Functions](https://jonaslalin.com/2021/12/22/feedforward-neural-networks-part-3)
 
 ### Generative AI
 
