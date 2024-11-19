@@ -307,6 +307,7 @@
 - [[Paper] Medical deep learning—A systematic meta-review](https://www.sciencedirect.com/science/article/pii/S0169260722002565?via%3Dihub)
 - [[Paper] Scalable and accurate deep learning with electronic health records](papers/scalable-and-accurate-deep-learning-with-electronic-health-records/paper.pdf)
 - [[Paper] Dermatologist–level classification of skin cancer with deep neural networks](https://pmc.ncbi.nlm.nih.gov/articles/PMC8382232/pdf/nihms-1724608.pdf)
+- [[Paper] Deep Learning in Medicine](papers/deep-learning-in-medicine/paper.pdf)
 
 ### ML/AI & Biology
 
