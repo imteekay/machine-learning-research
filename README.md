@@ -304,6 +304,7 @@
 - [[Paper] Opportunities and obstacles for deep learning in biology and medicine](https://royalsocietypublishing.org/doi/10.1098/rsif.2017.0387)
 - [[Paper] Deep Learning in Medical Image Analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC7442218/pdf/nihms-1617552.pdf)
 - [[Paper] CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning](https://arxiv.org/pdf/1711.05225)
+- [[Paper] Medical deep learning—A systematic meta-review](https://www.sciencedirect.com/science/article/pii/S0169260722002565?via%3Dihub)
 
 ### ML/AI & Biology
 
