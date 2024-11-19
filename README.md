@@ -305,6 +305,7 @@
 - [[Paper] Deep Learning in Medical Image Analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC7442218/pdf/nihms-1617552.pdf)
 - [[Paper] CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning](https://arxiv.org/pdf/1711.05225)
 - [[Paper] Medical deep learning—A systematic meta-review](https://www.sciencedirect.com/science/article/pii/S0169260722002565?via%3Dihub)
+- [[Paper] Scalable and accurate deep learning with electronic health records](papers/scalable-and-accurate-deep-learning-with-electronic-health-records/paper.pdf)
 
 ### ML/AI & Biology
 
