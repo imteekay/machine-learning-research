@@ -308,6 +308,7 @@
 - [[Paper] Scalable and accurate deep learning with electronic health records](papers/scalable-and-accurate-deep-learning-with-electronic-health-records/paper.pdf)
 - [[Paper] Dermatologist–level classification of skin cancer with deep neural networks](https://pmc.ncbi.nlm.nih.gov/articles/PMC8382232/pdf/nihms-1724608.pdf)
 - [[Paper] Deep Learning in Medicine](papers/deep-learning-in-medicine/paper.pdf)
+- [[Paper] Multimodal Healthcare AI: Identifying and Designing Clinically Relevant Vision-Language Applications for Radiology](https://arxiv.org/pdf/2402.14252)
 
 ### ML/AI & Biology
 
