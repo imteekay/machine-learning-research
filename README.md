@@ -104,6 +104,7 @@
 ### Optimization
 
 - [Convex Optimization](https://web.stanford.edu/class/ee364a/videos.html)
+- [Understanding Gradient Descent](https://degatchi.com/articles/gradient-descent)
 
 ## Artificial Intelligence
 
