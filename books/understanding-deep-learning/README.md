@@ -251,3 +251,9 @@
 
 - Drop some of the hidden units
 - Make the neural network model smaller and simpler
+
+## Exponentially Weighted Averages
+
+- Exponentially Weighted Averages are effective for capturing trends and smoothing noisy data in various optimization and training processes.
+- EWA prioritizes recent gradient directions while retaining a memory of past gradients.
+- Bias correction is used to account the initialization phase
