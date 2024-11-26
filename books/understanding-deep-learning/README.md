@@ -257,3 +257,13 @@
 - Exponentially Weighted Averages are effective for capturing trends and smoothing noisy data in various optimization and training processes.
 - EWA prioritizes recent gradient directions while retaining a memory of past gradients.
 - Bias correction is used to account the initialization phase
+
+## Gradient Descent with Momentum 
+
+- Gradient descent oscilates and because of that it can have slow learning. What we want is faster learning
+- Momentum:
+  - On iteration T
+  - Compute dW, dB on current mini-batch
+  - Compute the Exponentially Weighted Averages
+  - Update the parameters
+- Because it averages the oscilations, they become more smoother and then faster to learn
