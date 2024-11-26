@@ -276,3 +276,8 @@
 ![](adam.png)
 
 - Adam (Adaptive Moment Estimation) optimization is a combination of Momentum and RMSProp techniques
+- Great to overcome the problem of local optima and plateau
+
+## Learning rate decay
+
+- Slowling the learning rate over time so it can oscilate less when converging to the global maxima
