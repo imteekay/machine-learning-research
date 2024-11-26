@@ -270,3 +270,9 @@
 - RMSprop
   - With oscilations, what we want is to have slower learning in the vertical direction and faster learning in the horizontal direction. This is what RMSprop does.
   - It is an algorithm to adjust the learning rate for each parameter
+
+## Adam optimization algorithm
+
+![](adam.png)
+
+- Adam (Adaptive Moment Estimation) optimization is a combination of Momentum and RMSProp techniques
