@@ -258,7 +258,7 @@
 - EWA prioritizes recent gradient directions while retaining a memory of past gradients.
 - Bias correction is used to account the initialization phase
 
-## Gradient Descent with Momentum 
+## Gradient Descent with Momentum and RMSprop
 
 - Gradient descent oscilates and because of that it can have slow learning. What we want is faster learning
 - Momentum:
@@ -267,3 +267,6 @@
   - Compute the Exponentially Weighted Averages
   - Update the parameters
 - Because it averages the oscilations, they become more smoother and then faster to learn
+- RMSprop
+  - With oscilations, what we want is to have slower learning in the vertical direction and faster learning in the horizontal direction. This is what RMSprop does.
+  - It is an algorithm to adjust the learning rate for each parameter
