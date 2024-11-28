@@ -293,3 +293,4 @@
   - We have the `X` input, compute `Z1`, then normalize it and output `Z_TILDA1`, that will be used on the activation function. We do the same process for the following hidden layers
   - Beta and gamma are also model's parameters together with `W` and `B`
   - Because of that, we also need to have `dBeta` and `dGamma` gradients in each iteration of backprop to update beta and gamma.
+- It has regularization effect: it adds noise to each hidden layer's activations, helping with the problem of overfitting
