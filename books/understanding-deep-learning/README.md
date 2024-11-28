@@ -281,3 +281,9 @@
 ## Learning rate decay
 
 - Slowling the learning rate over time so it can oscilate less when converging to the global maxima
+
+## Batch Normalization
+
+- Normalizing input features can speed up learning
+- For deep neural nets, we have not only the input layer but also the activations
+- Question: For each hidden layer, can we normalize the values of A1, so as to train W3 and B3 faster?
