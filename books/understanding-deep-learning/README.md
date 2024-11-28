@@ -291,3 +291,4 @@
 - Question: For each hidden layer, can we normalize the values of A1, so as to train W3 and B3 faster?
 - To fit the batch normalization into the neural network we follow this idea:
   - We have the `X` input, compute `Z1`, then normalize it and output `Z_TILDA1`, that will be used on the activation function. We do the same process for the following hidden layers
+  - Beta and gamma are also model's parameters together with `W` and `B`
