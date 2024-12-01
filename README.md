@@ -524,6 +524,11 @@
 - [Martin Steinegger](https://steineggerlab.com)
 - [Jue Wang](https://juewang.mystrikingly.com)
 - [Wenhu Chen](https://wenhuchen.github.io)
+- [Melanie Mitchell](https://melaniemitchell.me)
+- [Jenny Zhang](https://www.jennyzhangzt.com)
+- [Abhinav Gupta](https://www.guabhinav.com)
+- [Beidi Chen](https://www.andrew.cmu.edu/user/beidic)
+- [Avantika Lal](https://avantikalal.github.io)
 
 ## Research & Laboratories
 
