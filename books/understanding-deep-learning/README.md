@@ -315,3 +315,8 @@
 - The output matrix produced by the convolution operation will be a way for the neural net to figure out that there's an edge
 - We can have different values for the filter matrix so we put more weight to specific parts of the image. e.g. add bigger values in the center to put more weight in the center
 - We can also treat the filter matrix values as parameters and make a neural net learn that for us
+
+## Padding
+
+- When applying the convolution filter, usually the first pixel will be used way less than a pixel in the center of the image so we throwing away a lot of the information of the edges of the images
+- We use paddings for the image so instead of a N x N image, we have a N+2p x N+2p image with the padding if padding = 1
