@@ -294,3 +294,11 @@
   - Beta and gamma are also model's parameters together with `W` and `B`
   - Because of that, we also need to have `dBeta` and `dGamma` gradients in each iteration of backprop to update beta and gamma.
 - It has regularization effect: it adds noise to each hidden layer's activations, helping with the problem of overfitting
+
+## Computer Vision
+
+- Computer vision problems
+  - Image classification: 0 / 1
+  - Object detection: object is in the image, draw rectangle around the object
+  - Neural style transfer: merge two images and produce a new one with the style of one into the other
+- Fully connected networks can overfit with a lot of parameters (e.g. cat images with 3M input data (pixels) so the `W` will be huge too)
