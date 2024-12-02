@@ -302,3 +302,14 @@
   - Object detection: object is in the image, draw rectangle around the object
   - Neural style transfer: merge two images and produce a new one with the style of one into the other
 - Fully connected networks can overfit with a lot of parameters (e.g. cat images with 3M input data (pixels) so the `W` will be huge too)
+
+## Edge Detection
+
+- In image recognition:
+  - Detect vertical edges
+  - Detect horizontal edges
+
+![](filter-and-convolution.png)
+
+- Build a filter (matrix N x N, e.g. 3x3) and apply a convolution operation in the input data that will output a 4x4 matrix
+- The output matrix produced by the convolution operation will be a way for the neural net to figure out that there's an edge
