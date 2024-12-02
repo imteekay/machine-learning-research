@@ -313,3 +313,5 @@
 
 - Build a filter (matrix N x N, e.g. 3x3) and apply a convolution operation in the input data that will output a 4x4 matrix
 - The output matrix produced by the convolution operation will be a way for the neural net to figure out that there's an edge
+- We can have different values for the filter matrix so we put more weight to specific parts of the image. e.g. add bigger values in the center to put more weight in the center
+- We can also treat the filter matrix values as parameters and make a neural net learn that for us
