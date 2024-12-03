@@ -325,3 +325,11 @@
 
 - For stride = 2, instead of shifting one square to right, we shift two
 - If padding is `p` and stride is `s`, if we have an N x N image and an f x f filter, the output will have `(N + 2p - f) / 2 + 1 x (N + 2p - f) / 2 + 1`
+
+## Convolutions in 3D images
+
+![](3d-convolution.png)
+
+- For a 3D image, we need a 3D filter
+  - 6 x 6 x 3: height, width, channels (red, green, blue)
+- It has the convolution operation shifting one pixel at a time but now it has the channel factor
