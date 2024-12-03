@@ -320,3 +320,8 @@
 
 - When applying the convolution filter, usually the first pixel will be used way less than a pixel in the center of the image so we throwing away a lot of the information of the edges of the images
 - We use paddings for the image so instead of a N x N image, we have a N+2p x N+2p image with the padding if padding = 1
+
+## Stride convolution
+
+- For stride = 2, instead of shifting one square to right, we shift two
+- If padding is `p` and stride is `s`, if we have an N x N image and an f x f filter, the output will have `(N + 2p - f) / 2 + 1 x (N + 2p - f) / 2 + 1`
