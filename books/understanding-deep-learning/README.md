@@ -333,3 +333,18 @@
 - For a 3D image, we need a 3D filter
   - 6 x 6 x 3: height, width, channels (red, green, blue)
 - It has the convolution operation shifting one pixel at a time but now it has the channel factor
+
+## One Layer of a Convolutional Network
+
+- Apply the filters to the input
+- Apply an activation function to the output and add a bias
+- Summary of notation
+  - f[l] = filter size
+  - p[l] = padding
+  - s[l] = stride
+  - n[l] = number of filters
+  - input: Nh x Nw x Nc (height x width x channel)
+  - output: Nh x Nw x Nc
+  - volume: 
+    - Nh[l] = ((Nh[l-1] + 2p[l] - f[l]) / s[l]) + 1
+    - Nw[l] = ((Nw[l-1] + 2p[l] - f[l]) / s[l]) + 1
