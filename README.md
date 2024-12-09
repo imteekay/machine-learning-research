@@ -56,6 +56,7 @@
 - [Mathematics for Machine Learning](https://github.com/imteekay/mathematics-for-machine-learning)
 - [How to get from high school math to cutting-edge ML/AI](https://www.justinmath.com/how-to-get-from-high-school-math-to-cutting-edge-ml-ai)
 - [The Complete Mathematics of Neural Networks and Deep Learning](https://www.youtube.com/watch?v=Ixl3nykKG9M)
+- [Math Academy](https://www.mathacademy.com)
 
 ### How to learn mathematics
 
