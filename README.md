@@ -210,6 +210,7 @@
 - [Feedforward Neural Networks in Depth, Part 1: Forward and Backward Propagations](https://jonaslalin.com/2021/12/10/feedforward-neural-networks-part-1)
 - [Feedforward Neural Networks in Depth, Part 2: Activation Functions](https://jonaslalin.com/2021/12/21/feedforward-neural-networks-part-2)
 - [Feedforward Neural Networks in Depth, Part 3: Cost Functions](https://jonaslalin.com/2021/12/22/feedforward-neural-networks-part-3)
+- [[Paper] Three Decades of Activations: A comprehensive survey of 400 activation functions for neural networks](https://arxiv.org/pdf/2402.09092)
 
 ### Generative AI
 
