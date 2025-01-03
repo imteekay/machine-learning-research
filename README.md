@@ -212,6 +212,7 @@
 - [Feedforward Neural Networks in Depth, Part 3: Cost Functions](https://jonaslalin.com/2021/12/22/feedforward-neural-networks-part-3)
 - [[Paper] Three Decades of Activations: A comprehensive survey of 400 activation functions for neural networks](https://arxiv.org/pdf/2402.09092)
 - [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro)
+- [Famous Deep Learning Papers](https://papers.baulab.info)
 
 ### Generative AI
 
