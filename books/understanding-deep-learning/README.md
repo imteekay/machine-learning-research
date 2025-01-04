@@ -269,6 +269,9 @@
   - Divide the training set into mini batches (e.g. 5000 batchs of 1000 training points)
   - Do the forward prop and backward prop
   - Update the weights and biases
+
+![](mini-batch-size.png)
+
 - The size of each mini batch
   - if mini batch size = m: batch gradient descent (too long, too much time)
   - if mini batch size = 1 (on every example): stochastic gradient descent (lose speedup from vectorization)
