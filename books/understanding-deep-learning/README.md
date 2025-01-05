@@ -270,11 +270,14 @@
   - Do the forward prop and backward prop
   - Update the weights and biases
 
+![](batch-vs-mini-batch.png)
+
+- if mini batch size = m: batch gradient descent (too long, too much time)
+- if mini batch size = 1 (on every example): stochastic gradient descent (lose speedup from vectorization)
+
 ![](mini-batch-size.png)
 
 - The size of each mini batch
-  - if mini batch size = m: batch gradient descent (too long, too much time)
-  - if mini batch size = 1 (on every example): stochastic gradient descent (lose speedup from vectorization)
   - size in between 1 and m (not too big or too small): fastest learning
     - still use vectorization
   - if the training set is small, use batch gradient descent (there's no need for mini batch) (m <= 2500)
