@@ -260,6 +260,16 @@
 - Drop some of the hidden units
 - Make the neural network model smaller and simpler
 
+## Mini Batch Gradient Descent
+
+![](mini-batch.png)
+
+- The idea of the mini batch is to apply gradient descent in mini batches so we can update the parameters and iterate faster
+- Mini batch process
+  - Divide the training set into mini batches (e.g. 5000 batchs of 1000 training points)
+  - Do the forward prop and backward prop
+  - Update the weights and biases
+
 ## Exponentially Weighted Averages
 
 - Exponentially Weighted Averages are effective for capturing trends and smoothing noisy data in various optimization and training processes.
