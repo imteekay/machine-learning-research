@@ -315,6 +315,7 @@
 - [[Paper] Deep Learning in Medicine](papers/deep-learning-in-medicine/paper.pdf)
 - [[Paper] Multimodal Healthcare AI: Identifying and Designing Clinically Relevant Vision-Language Applications for Radiology](https://arxiv.org/pdf/2402.14252)
 - [[Paper] Collaboration between clinicians and vision–language models in radiology report generation](papers/collaboration-between-clinicians-and-vision–language-models-in-radiology-report-generation/paper.pdf)
+- [[Paper] ReXplain: Translating Radiology into Patient-Friendly Video Reports](https://arxiv.org/pdf/2410.00441)
 
 ### ML/AI & Biology
 
