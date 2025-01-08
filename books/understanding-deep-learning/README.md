@@ -227,6 +227,14 @@
   - Different neural network architecture
 - It's not much more about tradeoff, we can improve bias with a bigger neural network without influencing variance and improve variance having more data without influencing bias
 
+## Input Normalization
+
+![](input-normalization.png)
+
+- two steps
+  - subtract the mean: `x = x - μ` (μ is the mean and x is each training example)
+  - normalize the variance (the variance of one feature — x1 — is much larger than the variance of other — x2): divide each training data by the standard deviation: `x = x / σ` (where x is each training data and σ is the standard deviation)
+
 ## Regularization
 
 - Regularization penalizes big weights in a model
