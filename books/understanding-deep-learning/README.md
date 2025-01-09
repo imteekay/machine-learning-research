@@ -269,6 +269,13 @@
   - Divide the training set into mini batches (e.g. 5000 batchs of 1000 training points)
   - Do the forward prop and backward prop
   - Update the weights and biases
+- The size of each mini batch
+  - if mini batch size = m: batch gradient descent (too long, too much time)
+  - if mini batch size = 1 (on every example): stochastic gradient descent (lose speedup from vectorization)
+  - size in between 1 and m (not too big or too small): fastest learning
+    - still use vectorization
+  - if the training set is small, use batch gradient descent (there's no need for mini batch) (m <= 2500)
+  - typical mini batch sizes (power of 2): 64, 128, 256, 512
 
 ## Exponentially Weighted Averages
 
