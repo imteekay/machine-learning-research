@@ -168,6 +168,7 @@
 ### Advanced Machine Learning
 
 - [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
+- [A Reinforcement Learning Guide](https://naklecha.notion.site/a-reinforcement-learning-guide)
 
 ### Deep Learning
 
