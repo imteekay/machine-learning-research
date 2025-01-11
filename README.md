@@ -214,6 +214,7 @@
 - [[Paper] Three Decades of Activations: A comprehensive survey of 400 activation functions for neural networks](https://arxiv.org/pdf/2402.09092)
 - [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro)
 - [Famous Deep Learning Papers](https://papers.baulab.info)
+- [[Paper] Decentralized Diffusion Models](https://arxiv.org/pdf/2501.05450)
 
 ### Generative AI
 
