@@ -542,6 +542,7 @@
 - [Apoorva Srinivasan](https://www.apoorva-srinivasan.com)
 - [Patrick Hsu](https://patrickhsu.com)
 - [Brian Hie](https://brianhie.com)
+- [Andrew Y. K. Foong](https://andrewfoongyk.github.io)
 
 ## Research & Laboratories
 
