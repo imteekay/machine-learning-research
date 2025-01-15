@@ -13,6 +13,8 @@
     - [Statistics](#statistics)
     - [Calculus](#calculus)
     - [Optimization](#optimization)
+  - [Programming](#programming)
+    - [Python](#python)
   - [Artificial Intelligence](#artificial-intelligence)
     - [Learning Roadmap](#learning-roadmap)
     - [Data Science Fundamentals](#data-science-fundamentals)
@@ -107,6 +109,12 @@
 
 - [Convex Optimization](https://web.stanford.edu/class/ee364a/videos.html)
 - [Understanding Gradient Descent](https://degatchi.com/articles/gradient-descent)
+
+## Programming
+
+### Python
+
+- [Practical Python Programming](https://dabeaz-course.github.io/practical-python/Notes/Contents.html)
 
 ## Artificial Intelligence
 
