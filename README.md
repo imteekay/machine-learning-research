@@ -156,6 +156,7 @@
 - [📃 Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning](https://arxiv.org/pdf/1811.12808)
 - [Árvore de decisão](https://www.youtube.com/watch?v=W7MfsE5av0c)
 - [📃 How to avoid machine learning pitfalls: a guide for academic researchers](https://arxiv.org/pdf/2108.02497)
+- [Deep-ML](https://www.deep-ml.com)
 
 ### Support Vector Machines
 
