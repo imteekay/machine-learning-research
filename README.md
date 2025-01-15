@@ -157,6 +157,7 @@
 - [Árvore de decisão](https://www.youtube.com/watch?v=W7MfsE5av0c)
 - [📃 How to avoid machine learning pitfalls: a guide for academic researchers](https://arxiv.org/pdf/2108.02497)
 - [Deep-ML](https://www.deep-ml.com)
+- [The ML Roadmap](https://github.com/loganthorneloe/ml-road-map)
 
 ### Support Vector Machines
 
