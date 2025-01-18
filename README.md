@@ -555,6 +555,7 @@
 - [Brian Hie](https://brianhie.com)
 - [Andrew Y. K. Foong](https://andrewfoongyk.github.io)
 - [Karina Nguyen](https://karinanguyen.com)
+- [Myle Ott](https://myleott.com)
 
 ## Research & Laboratories
 
