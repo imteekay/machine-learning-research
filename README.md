@@ -554,6 +554,7 @@
 - [Patrick Hsu](https://patrickhsu.com)
 - [Brian Hie](https://brianhie.com)
 - [Andrew Y. K. Foong](https://andrewfoongyk.github.io)
+- [Karina Nguyen](https://karinanguyen.com)
 
 ## Research & Laboratories
 
