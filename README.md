@@ -556,6 +556,7 @@
 - [Andrew Y. K. Foong](https://andrewfoongyk.github.io)
 - [Karina Nguyen](https://karinanguyen.com)
 - [Myle Ott](https://myleott.com)
+- [Reza Rezvan](https://rezarezvan.com)
 
 ## Research & Laboratories
 
