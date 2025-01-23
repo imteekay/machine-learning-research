@@ -557,6 +557,7 @@
 - [Karina Nguyen](https://karinanguyen.com)
 - [Myle Ott](https://myleott.com)
 - [Reza Rezvan](https://rezarezvan.com)
+- [Artem Moskalev](https://amoskalev.github.io)
 
 ## Research & Laboratories
 
