@@ -37,6 +37,8 @@
 
 - Use separate scalers for X and Y
   - X and Y have different distributions (different scales and meanings)
+  - You can scale Y if it's a regression problem. Don't scale if it's a classification problem, since it's categorical
+  - Tree-based models like XGBoost, Decision Trees, or Random Forests usually don't need scaling because these models are not sensitive to feature scaling
 
 ### Data Leakage
 
