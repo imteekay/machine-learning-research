@@ -44,6 +44,9 @@
 - Use PCA to reduce dimensionality
   - Always scale the predictors before applying PCA
   - PCA relies on the variance of the data to identify the principal components. If your predictors are on different scales, PCA may disproportionately weigh the features with larger scales
+- [ ] What's covariance matrix?
+  - A covariance matrix is a square matrix that contains the covariances between pairs of variables in a dataset.
+  - Covariance measures the degree to which two variables change together
 
 ## Model Training
 
