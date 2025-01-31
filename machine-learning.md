@@ -13,6 +13,7 @@
     - [Model Performance](#model-performance)
     - [MSE](#mse)
   - [Machine Learning Models](#machine-learning-models)
+    - [Linear Regression](#linear-regression)
     - [Tree-Based Models](#tree-based-models)
   - [Mathematics](#mathematics)
     - [Linear Algebra](#linear-algebra)
@@ -76,6 +77,13 @@ def mean_squared_error(y_true, y_pred):
 ```
 
 ## Machine Learning Models
+
+### Linear Regression
+
+- [ ] How a linear regression behaves
+  - Illustration of a graph
+  - Equation
+  - What do we use to estimates the βs?
 
 ### Tree-Based Models
 
