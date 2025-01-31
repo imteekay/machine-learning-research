@@ -4,26 +4,53 @@
 
 - [Machine Learning](#machine-learning)
   - [Table of Contents](#table-of-contents)
-  - [Model Training](#model-training)
-  - [Model Selection](#model-selection)
-  - [Model Performance](#model-performance)
-  - [Tree-Based Models](#tree-based-models)
-  - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
-  - [MSE](#mse)
   - [Pre-processing](#pre-processing)
     - [Data Leakage](#data-leakage)
+  - [Feature Engineering](#feature-engineering)
+    - [PCA](#pca)
+  - [Model Training](#model-training)
+    - [Model Selection](#model-selection)
+    - [Model Performance](#model-performance)
+    - [MSE](#mse)
+  - [Machine Learning Models](#machine-learning-models)
+    - [Tree-Based Models](#tree-based-models)
+  - [Mathematics](#mathematics)
+    - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
 
-## Model Training
+## Pre-processing
+
+- **Handling Missing Data**: Filling missing values (e.g., using mean, median, mode, or interpolation).
+- **Data Cleaning**: Removing duplicates, fixing incorrect labels, correcting inconsistencies.
+- **Scaling/Normalization**: Standardizing or normalizing numerical features to ensure consistency.
+- **Encoding Categorical Variables**: Converting categorical data into numerical form (e.g., one-hot encoding, label encoding).
+- **Handling Outliers**: Removing or transforming extreme values that may distort the model.
+- **Splitting Data**: Dividing data into training, validation, and test sets.
+
+### Data Leakage
+
+- Divide training and test into separate datasets before performing scaling the features
+  - The mean and standard deviation used for scaling will be computed from the entire dataset.
+  - This means that information from the test set is indirectly influencing the training data.
+  - Your model will learn from statistics that it would not have access to in a real-world scenario.
+  - This can lead to overfitting and poor generalization.
+
+## Feature Engineering
+
+### PCA
 
 - Use PCA to reduce dimensionality
   - Always scale the predictors before applying PCA
   - PCA relies on the variance of the data to identify the principal components. If your predictors are on different scales, PCA may disproportionately weigh the features with larger scales
 
-## Model Selection
+## Model Training
+
+
+
+### Model Selection
 
 Which model is better? It depends on the problem at hand. If the relationship between the features and the response is well approximated by a linear model as in, then an approach such as linear regression will likely work well, and will outperform a method such as a regression tree that does not exploit this linear structure. If instead there is a highly non-linear and complex relationship between the features and the response as indicated by model, then decision trees may outperform classical approaches.
 
-## Model Performance
+### Model Performance
 
 - Prefer choosing models that have good cross-validation and test accuracy
   - Good Cross-Validation Accuracy: a good cross-validation accuracy indicates good stability and generalization across different subsets of data
@@ -39,14 +66,25 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - F1 Score = 2 x (Precision x Recall / (Precision + Recall))
   - Importance in applications: In medical diagnosis, the diseases where a false positive can cause unnecessary stress or treatment, high precision is essential.
 
-## Tree-Based Models
+### MSE
+
+```python
+def mean_squared_error(y_true, y_pred):
+    return np.mean((Y_test - prediction) ** 2)
+```
+
+## Machine Learning Models
+
+### Tree-Based Models
 
 - In bagging, the trees are grown independently on random samples of the observations. Consequently, the trees tend to be quite similar to each other. Thus, bagging can get caught in local optima and can fail to thoroughly explore the model space.
 - In random forests, the trees are once again grown independently on random samples of the observations. However, each split on each tree is performed using a random subset of the features, thereby decorre- lating the trees, and leading to a more thorough exploration of model space relative to bagging.
 - In boosting, we only use the original data, and do not draw any ran- dom samples. The trees are grown successively, using a “slow” learn- ing approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
 - In BART, we once again only make use of the original data, and we grow the trees successively. However, each tree is perturbed in order to avoid local minima and achieve a more thorough exploration of the model space.
 
-## Importance of linear dependence and independence: Linear Algebra
+## Mathematics
+
+### Importance of linear dependence and independence: Linear Algebra
 
 1. Understanding Vector Spaces:
    - Linear Independence: A set of vectors is linearly independent if no vector in the set can be written as a linear combination of the others. This means that each vector adds a new dimension to the vector space, and the set spans a space of dimension equal to the number of vectors.
@@ -66,26 +104,3 @@ Which model is better? It depends on the problem at hand. If the relationship be
 8. Rank of a Matrix:
    - The rank of a matrix is the maximum number of linearly independent column (or row) vectors in the matrix. This concept is crucial in determining the solutions to linear systems, understanding the properties of transformations, and more.
 
-## MSE
-
-```python
-def mean_squared_error(y_true, y_pred):
-    return np.mean((Y_test - prediction) ** 2)
-```
-
-## Pre-processing
-
-- **Handling Missing Data**: Filling missing values (e.g., using mean, median, mode, or interpolation).
-- **Data Cleaning**: Removing duplicates, fixing incorrect labels, correcting inconsistencies.
-- **Scaling/Normalization**: Standardizing or normalizing numerical features to ensure consistency.
-- **Encoding Categorical Variables**: Converting categorical data into numerical form (e.g., one-hot encoding, label encoding).
-- **Handling Outliers**: Removing or transforming extreme values that may distort the model.
-- **Splitting Data**: Dividing data into training, validation, and test sets.
-
-### Data Leakage
-
-- Divide training and test into separate datasets before performing scaling the features
-  - The mean and standard deviation used for scaling will be computed from the entire dataset.
-  - This means that information from the test set is indirectly influencing the training data.
-  - Your model will learn from statistics that it would not have access to in a real-world scenario.
-  - This can lead to overfitting and poor generalization.
