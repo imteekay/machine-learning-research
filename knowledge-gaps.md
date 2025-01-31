@@ -1,24 +1,5 @@
 # Knowledge Gaps
 
-## Statistics
-
-- [ ] Standard Error (SE)
-  - How to interpret this concept
-  - What's the range of SE?
-- [ ] z-statistic
-  - How to interpret this concept
-  - What's the range of z-statistic?
-- [ ] p-value
-  - How to interpret this concept: what's the meaning of a low/high p-value
-  - What's the range of p-value?
-- [ ] collinearity
-  - How to interpret this concept
-- [ ] probability density
-  - How to interpret this concept
-    - it describes how the probability of a random variable is distributed over a range of values
-- [ ] Degrees of Freedom
-- [ ] Bayesian Inference
-
 ## Linear Regression
 
 - [ ] How a linear regression behaves
