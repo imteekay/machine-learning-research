@@ -1,5 +1,15 @@
 # Machine Learning
 
+## Table of Contents
+
+- [Machine Learning](#machine-learning)
+  - [Table of Contents](#table-of-contents)
+  - [Model Training](#model-training)
+  - [Model Selection](#model-selection)
+  - [Model Performance](#model-performance)
+  - [Tree-Based Models](#tree-based-models)
+  - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
+
 ## Model Training
 
 - Use PCA to reduce dimensionality
