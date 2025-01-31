@@ -5,6 +5,7 @@
 - [Machine Learning](#machine-learning)
   - [Table of Contents](#table-of-contents)
   - [Pre-processing](#pre-processing)
+    - [Scaling](#scaling)
     - [Data Leakage](#data-leakage)
   - [Feature Engineering](#feature-engineering)
     - [PCA](#pca)
@@ -31,6 +32,11 @@
 - **Encoding Categorical Variables**: Converting categorical data into numerical form (e.g., one-hot encoding, label encoding).
 - **Handling Outliers**: Removing or transforming extreme values that may distort the model.
 - **Splitting Data**: Dividing data into training, validation, and test sets.
+
+### Scaling
+
+- Use separate scalers for X and Y
+  - X and Y have different distributions (different scales and meanings)
 
 ### Data Leakage
 
