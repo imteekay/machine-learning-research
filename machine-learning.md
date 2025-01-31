@@ -9,6 +9,7 @@
   - [Model Performance](#model-performance)
   - [Tree-Based Models](#tree-based-models)
   - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
+  - [MSE](#mse)
 
 ## Model Training
 
@@ -62,3 +63,10 @@ Which model is better? It depends on the problem at hand. If the relationship be
    - In numerical methods, computations are often more efficient when working with linearly independent vectors. For example, when inverting matrices, working with a basis (a set of linearly independent vectors) avoids redundant calculations.
 8. Rank of a Matrix:
    - The rank of a matrix is the maximum number of linearly independent column (or row) vectors in the matrix. This concept is crucial in determining the solutions to linear systems, understanding the properties of transformations, and more.
+
+## MSE
+
+```python
+def mean_squared_error(y_true, y_pred):
+    return np.mean((Y_test - prediction) ** 2)
+```
