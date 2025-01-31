@@ -17,6 +17,7 @@
   - [Mathematics](#mathematics)
     - [Linear Algebra](#linear-algebra)
       - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
+    - [Statistics](#statistics)
 
 ## Pre-processing
 
@@ -107,3 +108,21 @@ def mean_squared_error(y_true, y_pred):
 8. Rank of a Matrix:
    - The rank of a matrix is the maximum number of linearly independent column (or row) vectors in the matrix. This concept is crucial in determining the solutions to linear systems, understanding the properties of transformations, and more.
 
+### Statistics
+
+- [ ] Standard Error (SE)
+  - How to interpret this concept
+  - What's the range of SE?
+- [ ] z-statistic
+  - How to interpret this concept
+  - What's the range of z-statistic?
+- [ ] p-value
+  - How to interpret this concept: what's the meaning of a low/high p-value
+  - What's the range of p-value?
+- [ ] collinearity
+  - How to interpret this concept
+- [ ] probability density
+  - How to interpret this concept
+    - it describes how the probability of a random variable is distributed over a range of values
+- [ ] Degrees of Freedom
+- [ ] Bayesian Inference
