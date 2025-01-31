@@ -15,7 +15,8 @@
   - [Machine Learning Models](#machine-learning-models)
     - [Tree-Based Models](#tree-based-models)
   - [Mathematics](#mathematics)
-    - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
+    - [Linear Algebra](#linear-algebra)
+      - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
 
 ## Pre-processing
 
@@ -84,7 +85,9 @@ def mean_squared_error(y_true, y_pred):
 
 ## Mathematics
 
-### Importance of linear dependence and independence: Linear Algebra
+### Linear Algebra
+
+#### Importance of linear dependence and independence: Linear Algebra
 
 1. Understanding Vector Spaces:
    - Linear Independence: A set of vectors is linearly independent if no vector in the set can be written as a linear combination of the others. This means that each vector adds a new dimension to the vector space, and the set spans a space of dimension equal to the number of vectors.
