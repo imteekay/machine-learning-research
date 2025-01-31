@@ -14,6 +14,8 @@
     - [MSE](#mse)
   - [Machine Learning Models](#machine-learning-models)
     - [Linear Regression](#linear-regression)
+    - [Logistic Regression](#logistic-regression)
+    - [Multiple Logistic Regression](#multiple-logistic-regression)
     - [Tree-Based Models](#tree-based-models)
   - [Mathematics](#mathematics)
     - [Linear Algebra](#linear-algebra)
@@ -84,6 +86,20 @@ def mean_squared_error(y_true, y_pred):
 ### Linear Regression
 
 - [ ] How a linear regression behaves
+  - Illustration of a graph
+  - Equation
+  - What do we use to estimates the βs?
+
+### Logistic Regression
+
+- [ ] How a logistic regression behaves
+  - Illustration of a graph
+  - Equation
+  - What do we use to estimates the βs?
+
+### Multiple Logistic Regression
+
+- [ ] How a multiple logistic regression behaves
   - Illustration of a graph
   - Equation
   - What do we use to estimates the βs?
