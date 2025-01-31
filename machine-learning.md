@@ -10,6 +10,8 @@
   - [Tree-Based Models](#tree-based-models)
   - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
   - [MSE](#mse)
+  - [Pre-processing](#pre-processing)
+    - [Data Leakage](#data-leakage)
 
 ## Model Training
 
@@ -70,3 +72,20 @@ Which model is better? It depends on the problem at hand. If the relationship be
 def mean_squared_error(y_true, y_pred):
     return np.mean((Y_test - prediction) ** 2)
 ```
+
+## Pre-processing
+
+- **Handling Missing Data**: Filling missing values (e.g., using mean, median, mode, or interpolation).
+- **Data Cleaning**: Removing duplicates, fixing incorrect labels, correcting inconsistencies.
+- **Scaling/Normalization**: Standardizing or normalizing numerical features to ensure consistency.
+- **Encoding Categorical Variables**: Converting categorical data into numerical form (e.g., one-hot encoding, label encoding).
+- **Handling Outliers**: Removing or transforming extreme values that may distort the model.
+- **Splitting Data**: Dividing data into training, validation, and test sets.
+
+### Data Leakage
+
+- Divide training and test into separate datasets before performing scaling the features
+  - The mean and standard deviation used for scaling will be computed from the entire dataset.
+  - This means that information from the test set is indirectly influencing the training data.
+  - Your model will learn from statistics that it would not have access to in a real-world scenario.
+  - This can lead to overfitting and poor generalization.
