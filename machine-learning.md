@@ -16,6 +16,7 @@
     - [Linear Regression](#linear-regression)
     - [Logistic Regression](#logistic-regression)
     - [Multiple Logistic Regression](#multiple-logistic-regression)
+    - [Support Vector Machines](#support-vector-machines)
     - [Tree-Based Models](#tree-based-models)
   - [Mathematics](#mathematics)
     - [Linear Algebra](#linear-algebra)
@@ -104,8 +105,13 @@ def mean_squared_error(y_true, y_pred):
   - Equation
   - What do we use to estimates the βs?
 
+### Support Vector Machines
+
+- [ ] Theory on Support Vector Machines
+
 ### Tree-Based Models
 
+- Decision Trees
 - In bagging, the trees are grown independently on random samples of the observations. Consequently, the trees tend to be quite similar to each other. Thus, bagging can get caught in local optima and can fail to thoroughly explore the model space.
 - In random forests, the trees are once again grown independently on random samples of the observations. However, each split on each tree is performed using a random subset of the features, thereby decorre- lating the trees, and leading to a more thorough exploration of model space relative to bagging.
 - In boosting, we only use the original data, and do not draw any ran- dom samples. The trees are grown successively, using a “slow” learn- ing approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
