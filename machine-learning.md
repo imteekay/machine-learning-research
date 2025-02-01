@@ -13,6 +13,7 @@
     - [Model Selection](#model-selection)
     - [Model Performance](#model-performance)
     - [MSE](#mse)
+    - [R²](#r)
   - [Machine Learning Models](#machine-learning-models)
     - [Linear Regression](#linear-regression)
     - [Logistic Regression](#logistic-regression)
@@ -88,6 +89,17 @@ Which model is better? It depends on the problem at hand. If the relationship be
 ```python
 def mean_squared_error(y_true, y_pred):
     return np.mean((Y_test - prediction) ** 2)
+```
+
+### R²
+
+R² (coefficient of determination): measures how well your model explains the variance in the target variable
+
+```python
+def r2_score(Y_true, Y_pred):
+   residual_sum_of_squares = np.sum((Y_true - Y_pred) ** 2)
+   total_sum_of_squares = np.sum((Y_true - np.mean(Y_true)) ** 2)
+   return 1 - (residual_sum_of_squares / total_sum_of_squares)
 ```
 
 ## Machine Learning Models
