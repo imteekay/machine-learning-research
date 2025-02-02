@@ -29,7 +29,9 @@
 - The data is not associated with any output Y. There's no "correct answer" or label
 - The data is not being supervised. The model finds something interesting in unlabeled data
 - Clustering is a type of unsupervised learning, where it divide the data into different groups/clusters
-- e.g. clustering DNA microarray
-  - type of people based on their genes
-  - each column is a person
-  - each row is a gene (eye color, hair color)
+  - e.g. clustering DNA microarray
+    - type of people based on their genes
+    - each column is a person
+    - each row is a gene (eye color, hair color)
+- Anomaly detection: find unusual data points
+- Dimensionality reduction: compress the dataset into a smaller one (compress data using fewer numbers)
