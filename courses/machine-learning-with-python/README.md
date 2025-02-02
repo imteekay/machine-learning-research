@@ -35,3 +35,15 @@
     - each row is a gene (eye color, hair color)
 - Anomaly detection: find unusual data points
 - Dimensionality reduction: compress the dataset into a smaller one (compress data using fewer numbers)
+
+## ML Models Terminology
+
+- Training set: data used to train the model
+- Input variable: feature, predictor
+- Output variable: target
+- m: number of training examples
+- (x, y): single training example
+
+## Linear Regression
+
+- Draw a line describing the data points (dataset behavior)
