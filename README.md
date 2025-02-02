@@ -167,6 +167,7 @@
 - [📃 How to avoid machine learning pitfalls: a guide for academic researchers](https://arxiv.org/pdf/2108.02497)
 - [Deep-ML](https://www.deep-ml.com)
 - [The ML Roadmap](https://github.com/loganthorneloe/ml-road-map)
+- [Why is machine learning 'hard'?](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html)
 
 ### Support Vector Machines
 
