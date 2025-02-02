@@ -43,9 +43,17 @@
 - Output variable: target
 - m: number of training examples
 - (x, y): single training example
+- w (weight) and b (bias) are parameters/coefficients of the model
 
 ## Linear Regression
 
 - Draw a line describing the data points (dataset behavior)
 - The line is a function built by the learning algorithm (model)
   - The function receives an input (features) and output a prediction (y-hat), the estimated value of y
+- The idea of the model is to ask what's the math formula for `f`
+- Cost function: it measures how well the model is performing
+  - The model fits the data and we measure with the cost function if it's performing well
+  - Model fitting is the process of choosing weights and biases so y-hat is close to the target value y
+  - The cost function is the difference between the y-hat and the target value y
+  - One way to computing the cost function is to use MSE or mean squared error
+    - sum of the squared differences of y-hat and y
