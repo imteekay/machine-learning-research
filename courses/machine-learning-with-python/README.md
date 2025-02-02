@@ -47,3 +47,5 @@
 ## Linear Regression
 
 - Draw a line describing the data points (dataset behavior)
+- The line is a function built by the learning algorithm (model)
+  - The function receives an input (features) and output a prediction (y-hat), the estimated value of y
