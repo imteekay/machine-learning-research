@@ -59,3 +59,7 @@
   - One way to computing the cost function is to use MSE or mean squared error
     - sum of the squared differences of y-hat and y
   - The goal of the model is to minimize the cost function `J(w, b)`
+- Gradient Descent
+  - Update the weight parameter relative to the cost function `J`
+  - If `J` is a concave up parabola and the initial weight draws the point on the left side of the parabola, gradient descent will increase the weight because it has a negative slope because `w = w - alpha * (negative number)`
+  - If the initial weight is on the right side, gradient descent will decrease the weight because the the slope is a positive number
