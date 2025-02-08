@@ -63,3 +63,8 @@
   - Update the weight parameter relative to the cost function `J`
   - If `J` is a concave up parabola and the initial weight draws the point on the left side of the parabola, gradient descent will increase the weight because it has a negative slope because `w = w - alpha * (negative number)`
   - If the initial weight is on the right side, gradient descent will decrease the weight because the the slope is a positive number
+  - Near the local minimum, the derivative becomes smaller because the update steps become smaller
+  - Gradient descent stops at the local minimum
+- Learning rate
+  - Small alpha: small baby steps in the gradient descent when updating the weight
+  - Big alpha: large steps and the cost function can not reach the most optimized weight
