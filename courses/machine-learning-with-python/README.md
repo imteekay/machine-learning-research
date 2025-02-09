@@ -47,11 +47,12 @@
 
 ## Linear Regression
 
-- Draw a line describing the data points (dataset behavior)
-- The line is a function built by the learning algorithm (model)
+- `Linear function`: with random Ws and Bs, the model produces a function. For linear regression, the function is a line
+  - Draw a line describing the data points (dataset behavior)
+  - The line is a function built by the learning algorithm (model)
   - The function receives an input (features) and output a prediction (y-hat), the estimated value of y
-- The idea of the model is to ask what's the math formula for `f`
-- Cost function: it measures how well the model is performing
+  - The idea of the model is to ask what's the math formula for `f`
+- `Cost function`: it measures how well the model is performing
   - The model fits the data and we measure with the cost function if it's performing well
   - Model fitting is the process of choosing weights and biases so y-hat is close to the target value y
     - It will find best weights and biases
@@ -59,12 +60,13 @@
   - One way to computing the cost function is to use MSE or mean squared error
     - sum of the squared differences of y-hat and y
   - The goal of the model is to minimize the cost function `J(w, b)`
-- Gradient Descent
+- `Gradient Descent`
   - Update the weight parameter relative to the cost function `J`
   - If `J` is a concave up parabola and the initial weight draws the point on the left side of the parabola, gradient descent will increase the weight because it has a negative slope because `w = w - alpha * (negative number)`
   - If the initial weight is on the right side, gradient descent will decrease the weight because the the slope is a positive number
   - Near the local minimum, the derivative becomes smaller because the update steps become smaller
   - Gradient descent stops at the local minimum
-- Learning rate
+    - For a convex function (parabola), the local minimum is the global minimum
+- `Learning rate`
   - Small alpha: small baby steps in the gradient descent when updating the weight
   - Big alpha: large steps and the cost function can not reach the most optimized weight
