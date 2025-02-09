@@ -70,3 +70,10 @@
 - `Learning rate`
   - Small alpha: small baby steps in the gradient descent when updating the weight
   - Big alpha: large steps and the cost function can not reach the most optimized weight
+- `Multiple linear regression`: multiple features
+  - e.g. size in feet², number of bedrooms, number of floors, age of home in years, price
+  - f(x) = w1x1 + w2x2 + w3x3 + w4x4 + ... b
+    - w will be a vector of all the weights for each feature
+    - b is a single number
+  - f(x) = w.x + b (w and x being vectors)
+    - w.x is a dot product between vectors
