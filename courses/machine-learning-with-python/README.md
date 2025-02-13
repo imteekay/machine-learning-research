@@ -77,3 +77,11 @@
     - b is a single number
   - f(x) = w.x + b (w and x being vectors)
     - w.x is a dot product between vectors
+
+## Feature Scaling
+
+![](feature-scaling.png)
+
+- Features with different scales would lead to a tall/skinny contour
+  - Any change in w1 (smaller features) has large impact on the cost J
+  - With feature scaling, the contour looks like a circle and gradient descent can find a more direct path to the global minimum
