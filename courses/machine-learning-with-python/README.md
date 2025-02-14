@@ -70,7 +70,7 @@
   - Checking gradient descent for convergence
     - Make sure gradient descent is working by seeing the cost getting minimized with more iterations (learning curve)
     - When the curve gets flattened, gradient descent converged and stopped learning
-    - If the cost J increases with more iterations, it usually means the learning rate alpha was chosen poorly and it can be too large
+    - If the cost J increases with more iterations, it usually means the learning rate alpha was chosen poorly, it can be too large, or a bug in the code
 - `Learning rate`
   - Small alpha: small baby steps in the gradient descent when updating the weight
   - Big alpha: large steps and the cost function can not reach the most optimized weight
