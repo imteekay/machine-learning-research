@@ -94,3 +94,9 @@
   - Dividing by the maximum data point
   - Dividing by the mean of training examples
   - Dividing by z-score
+
+## Feature Engineering
+
+- Creating a new feature
+  - e.g. frontage = x1, depth = x2, then f(x) = w1x1 + w2x2 + b
+    - area: x3 = x1.x2 (new feature), then f(x) = w1x1 + w2x2 + w3x3 + b
