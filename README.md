@@ -44,6 +44,7 @@
     - [Central Resources](#central-resources)
     - [Science: Q\&A](#science-qa)
   - [Projects](#projects)
+  - [Interview Prep](#interview-prep)
   - [Careers](#careers)
   - [People](#people)
   - [Research \& Laboratories](#research--laboratories)
@@ -477,6 +478,10 @@
 ## Projects
 
 - [Breast Cancer Prediction: Predicting whether breast cancer tumors are malignant or benign](https://github.com/imteekay/breast-cancer-prediction)
+
+## Interview Prep
+
+- [How I Prepared for DeepMind and Google AI Research Internship Interviews in 2019](https://davidstutz.de/how-i-prepared-for-deepmind-and-google-ai-research-internship-interviews-in-2019)
 
 ## Careers
 
