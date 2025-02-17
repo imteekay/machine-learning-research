@@ -565,6 +565,7 @@
 - [Reza Rezvan](https://rezarezvan.com)
 - [Artem Moskalev](https://amoskalev.github.io)
 - [Hamel](https://hamel.dev)
+- [Dr. Yejin Kim](https://yejinjkim.github.io)
 
 ## Research & Laboratories
 
