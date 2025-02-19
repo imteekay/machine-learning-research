@@ -566,6 +566,7 @@
 - [Artem Moskalev](https://amoskalev.github.io)
 - [Hamel](https://hamel.dev)
 - [Dr. Yejin Kim](https://yejinjkim.github.io)
+- [Jay Alammar](https://jalammar.github.io)
 
 ## Research & Laboratories
 
