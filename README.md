@@ -567,6 +567,7 @@
 - [Hamel](https://hamel.dev)
 - [Dr. Yejin Kim](https://yejinjkim.github.io)
 - [Jay Alammar](https://jalammar.github.io)
+- [Luis Serrano](https://serrano.academy)
 
 ## Research & Laboratories
 
