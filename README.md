@@ -228,6 +228,7 @@
 - [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro)
 - [Famous Deep Learning Papers](https://papers.baulab.info)
 - [[Paper] Decentralized Diffusion Models](https://arxiv.org/pdf/2501.05450)
+- [Deep Learning for Data Science (DL4DS)](https://dl4ds.github.io/sp2025/lectures)
 
 ### Generative AI
 
