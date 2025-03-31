@@ -2,7 +2,7 @@
 
 - Foundational Concepts in Machine Learning
   - [ ] Introduction to Machine Learning with Python (book)
-  - [ ] Machine Learning Specialization (course)
+  - [ ] [[Course] Machine Learning Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization)
     - [X] Supervised Machine Learning: Regression and Classification
 - Bioinformatics and Genomic Data Analysis
   - [ ] Bioinformatics Algorithms: An Active Learning Approach (book)
