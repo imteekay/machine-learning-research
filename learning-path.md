@@ -11,6 +11,7 @@
   - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
   - [ ] [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
   - [ ] [[Course] Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
+  - [ ] [Book] Molecular Biology of the Cell
 - [ ] Machine Learning in Healthcare
   - [ ] [AI in Healthcare Specialization](https://www.coursera.org/specializations/ai-healthcare)
 - [ ] Machine Learning in Genomic Medicine
