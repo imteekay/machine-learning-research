@@ -119,6 +119,7 @@ def r2_score(Y_true, Y_pred):
   - Illustration of a graph
   - Equation
   - What do we use to estimates the βs?
+- [WIP] add infos here: https://github.com/imteekay/logistic-regression
 
 ### Multiple Logistic Regression
 
