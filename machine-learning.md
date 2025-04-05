@@ -20,6 +20,7 @@
     - [Multiple Logistic Regression](#multiple-logistic-regression)
     - [Support Vector Machines](#support-vector-machines)
     - [Tree-Based Models](#tree-based-models)
+    - [Neural Networks](#neural-networks)
   - [Mathematics](#mathematics)
     - [Linear Algebra](#linear-algebra)
       - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
@@ -136,6 +137,13 @@ def r2_score(Y_true, Y_pred):
 - In random forests, the trees are once again grown independently on random samples of the observations. However, each split on each tree is performed using a random subset of the features, thereby decorre- lating the trees, and leading to a more thorough exploration of model space relative to bagging.
 - In boosting, we only use the original data, and do not draw any ran- dom samples. The trees are grown successively, using a “slow” learn- ing approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
 - In BART, we once again only make use of the original data, and we grow the trees successively. However, each tree is perturbed in order to avoid local minima and achieve a more thorough exploration of the model space.
+
+### Neural Networks
+
+- Activation functions
+  - Why do we need activation functions?
+    - Using a linear activation function or no activation, the model is just a linear regression
+    - If using a linear activation function, the forward prop will be a linear combination leading to an output similar to a linear regression
 
 ## Mathematics
 
