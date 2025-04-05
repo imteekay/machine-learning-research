@@ -145,7 +145,7 @@ def r2_score(Y_true, Y_pred):
 - Activation functions
   - Why do we need activation functions?
     - Using a linear activation function or no activation, the model is just a linear regression
-    - If using a linear activation function, the forward prop will be a linear combination leading to an output similar to a linear regression
+    - If using a linear activation function, the forward prop will be a linear combination leading to an output equivalent to a linear regression
 
 ## Mathematics
 
