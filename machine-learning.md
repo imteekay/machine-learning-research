@@ -146,6 +146,11 @@ def r2_score(Y_true, Y_pred):
   - Why do we need activation functions?
     - Using a linear activation function or no activation, the model is just a linear regression
     - If using a linear activation function, the forward prop will be a linear combination leading to an output equivalent to a linear regression
+  - Softmax uses exponentiation to compute the probability of each class in a multiclass classification problem. The intuition behind the exponentiation
+    - Transforms arbitrary real-valued scores into positive values.   
+    - Amplifies the differences between scores, emphasizing the most likely class.   
+    - Allows for the subsequent normalization step to create a valid probability distribution.
+    - Provides mathematical convenience for optimization algorithms like gradient descent.
 
 ## Mathematics
 
