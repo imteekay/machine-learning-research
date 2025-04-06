@@ -147,6 +147,7 @@ def r2_score(Y_true, Y_pred):
     - Using a linear activation function or no activation, the model is just a linear regression
     - If using a linear activation function, the forward prop will be a linear combination leading to an output equivalent to a linear regression
   - Softmax
+    - Output the probability for the N classes, so we can compute the loss for each class and example
     - The intuition behind the exponentiation: uses exponentiation to compute the probability of each class in a multiclass classification problem
       - Transforms arbitrary real-valued scores into positive values.   
       - Amplifies the differences between scores, emphasizing the most likely class.   
