@@ -63,7 +63,13 @@
 
 ## Model Training
 
+Analysis
 
+- Model fits the training data well but fail to generalize to new examples
+  - The cost is low for the training set because it fits well, but the cost for the test set will be high because it doesn't generalize well
+  - Split the dataset into two parts
+    - 70%: training set - fit the data
+    - 30%: test set - test the model to this data
 
 ### Model Selection
 
