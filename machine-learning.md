@@ -97,6 +97,10 @@ Which model is better? It depends on the problem at hand. If the relationship be
   - Model complexity vs Cost 
     - Training cost: when the degrees of the polynomial (or the model complexity) increases, the cost decreases
     - Cross validation cost: with the increase of model, the cost will decrease until one point where the model is overfitting and the cost will start increase again
+  - Regularization influence in bias/variance
+    - Regularization adds a penalty to the cost function that discourages the model from learning overly complex patterns and prevent overfitting
+    - As the lambda increases, the bias gets higher
+    - As the lambda decreases, the variance gets higher
 - In classification models, the way to measure performance is based on accuracy, precision, recall (sensitivity), specificity, and f1 score
   - **Precision**: Out of all the instances that the model predicted as positive, how many were actually positive?
     - Precision = TP / (TP + FP)
