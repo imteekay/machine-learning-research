@@ -75,6 +75,8 @@ Analysis
 
 Which model is better? It depends on the problem at hand. If the relationship between the features and the response is well approximated by a linear model as in, then an approach such as linear regression will likely work well, and will outperform a method such as a regression tree that does not exploit this linear structure. If instead there is a highly non-linear and complex relationship between the features and the response as indicated by model, then decision trees may outperform classical approaches.
 
+- The test cost estimates how well the model generalizes to new data (compared to the training cost)
+
 ### Model Performance
 
 - Prefer choosing models that have good cross-validation and test accuracy
