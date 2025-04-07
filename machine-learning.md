@@ -75,11 +75,16 @@ Analysis
 
 Which model is better? It depends on the problem at hand. If the relationship between the features and the response is well approximated by a linear model as in, then an approach such as linear regression will likely work well, and will outperform a method such as a regression tree that does not exploit this linear structure. If instead there is a highly non-linear and complex relationship between the features and the response as indicated by model, then decision trees may outperform classical approaches.
 
-- The test cost estimates how well the model generalizes to new data (compared to the training cost)
 
 ### Model Performance
 
 - Prefer choosing models that have good cross-validation and test accuracy
+  - The test cost estimates how well the model generalizes to new data (compared to the training cost)
+  - training/cross-validation/test
+    - cross-validation is also called dev or validation set
+    - It improves the robustness and reliability of your model evaluation and hyperparameter tuning process
+    - Cross-validation involves splitting your training data into multiple subsets (folds). The model is trained on a subset of these folds and then evaluated on the remaining fold. This process is repeated multiple times, with each fold serving as the validation set once. This gives you multiple performance estimates on different "held-out" portions of your training data.
+    - By averaging the performance across all the validation folds, you get a more stable and less biased estimate of how well your model is likely to generalize to unseen data compared to relying on a single test set evaluation during development.
   - Good Cross-Validation Accuracy: a good cross-validation accuracy indicates good stability and generalization across different subsets of data
   - Good Test Accuracy: the model generalizes well on unseen data
 - In classification models, the way to measure performance is based on accuracy, precision, recall (sensitivity), specificity, and f1 score
