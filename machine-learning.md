@@ -90,6 +90,7 @@ Which model is better? It depends on the problem at hand. If the relationship be
 - Bias/Variance tradeoff
   - High bias: underfit
     - If the cost of the training set is high, the costs of cross validation and test sets will also be high
+    - It doesn't matter if we collect more data, the model is too simple and won't learn more
   - High variance: overfit
     - The training cost will be low and the cross validation and test costs will be high
   - Balanced bias/variance: optimal
@@ -101,6 +102,16 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - Regularization adds a penalty to the cost function that discourages the model from learning overly complex patterns and prevent overfitting
     - As the lambda increases, the bias gets higher
     - As the lambda decreases, the variance gets higher
+- Establishing a baseline level of performance
+  - Human error (or competing algorithm or guess based on prior experience) as the baseline vs Training Error vs Cross validation error: analyse gaps between these errors
+  - High variance: 0.2% gap between baseline and training / 4% gap between training and cross-validation (overfitting to the training data)
+    - baseline: 10.6%
+    - training: 10.8%
+    - cross-validation: 14.8%
+  - High bias: 4.4% gap between baseline and training (not performing well) / 0.5% gap between training and cross-validation (performing similarly in training and cross validation)
+    - baseline: 10.6%
+    - training: 15%
+    - cross-validation: 15.5%
 - In classification models, the way to measure performance is based on accuracy, precision, recall (sensitivity), specificity, and f1 score
   - **Precision**: Out of all the instances that the model predicted as positive, how many were actually positive?
     - Precision = TP / (TP + FP)
