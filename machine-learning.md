@@ -93,6 +93,7 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - It doesn't matter if we collect more data, the model is too simple and won't learn more
   - High variance: overfit
     - The training cost will be low and the cross validation and test costs will be high
+    - Increasing the training size can help training and cross validation error
   - Balanced bias/variance: optimal
     - The costs of training, cross validation, and test will be low: it performs well
   - Model complexity vs Cost 
