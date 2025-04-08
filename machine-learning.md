@@ -113,6 +113,13 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - baseline: 10.6%
     - training: 15%
     - cross-validation: 15.5%
+- Debugging a learning algorithm
+  - Get more training examples
+  - Try smaller set of features
+  - Try getting additional features
+  - Try adding polynomial features
+  - Try decreasing the learning rate lambda
+  - Try increasing the learning rate lambda
 - In classification models, the way to measure performance is based on accuracy, precision, recall (sensitivity), specificity, and f1 score
   - **Precision**: Out of all the instances that the model predicted as positive, how many were actually positive?
     - Precision = TP / (TP + FP)
