@@ -14,6 +14,7 @@
     - [Model Performance](#model-performance)
     - [MSE](#mse)
     - [R²](#r)
+    - [Transfer Learning](#transfer-learning)
   - [Machine Learning Models](#machine-learning-models)
     - [Linear Regression](#linear-regression)
     - [Logistic Regression](#logistic-regression)
@@ -150,6 +151,13 @@ def r2_score(Y_true, Y_pred):
    total_sum_of_squares = np.sum((Y_true - np.mean(Y_true)) ** 2)
    return 1 - (residual_sum_of_squares / total_sum_of_squares)
 ```
+
+### Transfer Learning
+
+- Learn parameters with a ML model for a given dataset
+- Download the pre-trained parameters
+- Train/fine-tune the model on the new data
+  - If you first trained in a big dataset, the fine tuning can be done with a smaller dataset
 
 ## Machine Learning Models
 
