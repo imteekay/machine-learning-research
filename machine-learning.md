@@ -135,6 +135,8 @@ Which model is better? It depends on the problem at hand. If the relationship be
       - Low precision: the model predicting that a person has malignant cancer is probably incorrect, leading to false alarms, and in this particular case, anxiety
   - **Recall (Sensitivity)**: Measures the proportion of actual positives that were correctly identified.
     - Recall = TP / (TP + FN)
+    - True positive: correctly identified as positive
+    - False negative: incorrectly identified as negative (it's actually positive)
   - **F1 Score**: The harmonic mean of precision and recall, providing a balance between the two.
     - F1 Score = 2 x (Precision x Recall / (Precision + Recall))
   - Importance in applications: In medical diagnosis, the diseases where a false positive can cause unnecessary stress or treatment, high precision is essential.
