@@ -89,9 +89,11 @@ Which model is better? It depends on the problem at hand. If the relationship be
   - Good Test Accuracy: the model generalizes well on unseen data
 - Bias/Variance tradeoff
   - High bias: underfit
+    - Simple model
     - If the cost of the training set is high, the costs of cross validation and test sets will also be high
     - It doesn't matter if we collect more data, the model is too simple and won't learn more
   - High variance: overfit
+    - Complex model
     - The training cost will be low and the cross validation and test costs will be high
     - Increasing the training size can help training and cross validation error
   - Balanced bias/variance: optimal
