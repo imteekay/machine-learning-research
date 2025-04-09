@@ -126,8 +126,13 @@ Which model is better? It depends on the problem at hand. If the relationship be
 - In classification models, the way to measure performance is based on accuracy, precision, recall (sensitivity), specificity, and f1 score
   - **Precision**: Out of all the instances that the model predicted as positive, how many were actually positive?
     - Precision = TP / (TP + FP)
+      - TP = True positive
+      - FP = False positive
     - **High Precision**: Indicates that when the model predicts a positive class, it is often correct. This is crucial in applications where the cost of a false positive is high.
     - **Low Precision**: Suggests that the model frequently predicts positive incorrectly, leading to many false alarms.
+    - e.g. Cancer tumor is malignant
+      - High precision: when the model predicts that cancer tumor is malignant, it's often correct. It's a high change a person has malignant cancer
+      - Low precision: the model predicting that a person has malignant cancer is probably incorrect, leading to false alarms, and in this particular case, anxiety
   - **Recall (Sensitivity)**: Measures the proportion of actual positives that were correctly identified.
     - Recall = TP / (TP + FN)
   - **F1 Score**: The harmonic mean of precision and recall, providing a balance between the two.
