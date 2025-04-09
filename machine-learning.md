@@ -158,6 +158,9 @@ def r2_score(Y_true, Y_pred):
 - Download the pre-trained parameters
 - Train/fine-tune the model on the new data
   - If you first trained in a big dataset, the fine tuning can be done with a smaller dataset
+- Training the model
+  - Train all model parameters
+  - Train only the output parameters, leaving the other parameters of the model fixed
 
 ## Machine Learning Models
 
