@@ -143,7 +143,7 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - The smaller the threshold, the bigger the recall and smaller the precision
       - Avoiding too many cases of rare disease
     - We need to specify the threshold point
-  - **F1 Score**: The harmonic mean of precision and recall, providing a balance between the two.
+  - **F1 Score**: The "harmonic mean" of precision and recall, providing a balance between the two.
     - F1 Score = 2 x (Precision x Recall / (Precision + Recall))
   - Importance in applications: In medical diagnosis, the diseases where a false positive can cause unnecessary stress or treatment, high precision is essential.
 
