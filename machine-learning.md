@@ -213,6 +213,12 @@ def r2_score(Y_true, Y_pred):
     - when splitting a node will result in the tree exceeding a maximum depth
     - when improvements in purity score are below a threshold
     - when a number of examples in a node is below a threshold
+  - Measuring purity
+    - Purity: Purity in a decision tree refers to the homogeneity of the labels within a node. A node is considered "pure" if all the data points it contains belong to the same class
+    - Entropy is a measure of impurity
+      - The smaller the fraction of examples, the more pure it is because it has more examples with the same class
+      - The bigger the fraction of examples, the more pure it is because it has more examples with the same class
+      - If the fraction is around 0.5, the impurity is high because it doesn't have homoeneity
 - In bagging, the trees are grown independently on random samples of the observations. Consequently, the trees tend to be quite similar to each other. Thus, bagging can get caught in local optima and can fail to thoroughly explore the model space.
 - In random forests, the trees are once again grown independently on random samples of the observations. However, each split on each tree is performed using a random subset of the features, thereby decorre- lating the trees, and leading to a more thorough exploration of model space relative to bagging.
 - In boosting, we only use the original data, and do not draw any ran- dom samples. The trees are grown successively, using a “slow” learn- ing approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
