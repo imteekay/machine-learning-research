@@ -5,7 +5,7 @@
   - [ ] [[Course] Machine Learning Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization)
     - [X] [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning)
     - [X] [Advanced Learning Algorithms](https://www.coursera.org/learn/advanced-learning-algorithms)
-    - [] [Unsupervised Learning, Recommenders, Reinforcement Learning](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
+    - [ ] [Unsupervised Learning, Recommenders, Reinforcement Learning](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
 - Bioinformatics and Genomic Data Analysis
   - [ ] Bioinformatics Algorithms: An Active Learning Approach (book)
 - Genomic Medicine and Clinical Applications
