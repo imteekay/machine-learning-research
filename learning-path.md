@@ -1,6 +1,6 @@
 # Learning Path
 
-- Foundational Concepts in Machine Learning
+- Foundation in Machine Learning
   - [ ] Introduction to Machine Learning with Python (book)
   - [ ] [Machine Learning Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization)
     - [X] [[Course] Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning)
