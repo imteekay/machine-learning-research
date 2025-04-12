@@ -244,11 +244,11 @@ def r2_score(Y_true, Y_pred):
     - Sample again and keep doing this process: repeat the selection process multiple times, and each time, the original dataset remains unchanged due to the replacement
   - In bagging, the trees are grown independently on random samples of the observations. Consequently, the trees tend to be quite similar to each other. Thus, bagging can get caught in local optima and can fail to thoroughly explore the model space.
   - In random forests, the trees are once again grown independently on random samples of the observations. However, each split on each tree is performed using a random subset of the features, thereby decorrelating the trees, and leading to a more thorough exploration of model space relative to bagging.
-  - In boosting, we only use the original data, and do not draw any random samples. The trees are grown successively, using a “slow” learn- ing approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
     - For B (B = number of trees to be generated), use sampling with replacement to create a new subset, and train a decision tree on the new dataset
     - For big Bs, it won't hurt but will have diminishing returns
     - In the sampling with replacement, it chooses k features out of n (total number of features)
       - k = √n is a very common and often effective default value for k
+  - In boosting, we only use the original data, and do not draw any random samples. The trees are grown successively, using a “slow” learn- ing approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
   - In Bayesian Additive Regression Trees (BART), we once again only make use of the original data, and we grow the trees successively. However, each tree is perturbed in order to avoid local minima and achieve a more thorough exploration of the model space.
 
 ### Neural Networks
