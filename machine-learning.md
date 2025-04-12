@@ -222,6 +222,12 @@ def r2_score(Y_true, Y_pred):
   - To choose a split or to choose which feature to use first, we need to calculate the information gain (the highest information gain, which will increase the purity of the subsets)
   - The whole process
     - Measure the information gain for the root node to choose the feature
+      - Split the dataset into two "nodes" (subtrees) based on the feature
+      - Calculate the weight for each subtree for the weighted entropy
+        - THe proportion of the number of examples in that child subset relative to the total number of examples in the parent node
+      - Calculate the weighted entropy
+      - Calculate the information gain
+      - Do for each feature to choose the feature with the larger information gain
     - Ask for the left subtree if it can stop the split
       - If so, stop
       - If not, measure the information gain for the this subtree node to choose the feature
