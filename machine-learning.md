@@ -249,6 +249,8 @@ def r2_score(Y_true, Y_pred):
     - In the sampling with replacement, it chooses k features out of n (total number of features)
       - k = √n is a very common and often effective default value for k
   - In boosting, we only use the original data, and do not draw any random samples. The trees are grown successively, using a “slow” learning approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
+    - Similar to random forest, but instead of picking from all m examples, make it increase the weight for misclassified examples from previously trained trees and decrease the weight for correctly classified examples
+    - The misclassified examples means that the tree algorithm is not doing quite well for these examples and the model should be training more to correctly classify them
   - In Bayesian Additive Regression Trees (BART), we once again only make use of the original data, and we grow the trees successively. However, each tree is perturbed in order to avoid local minima and achieve a more thorough exploration of the model space.
 
 ### Neural Networks
