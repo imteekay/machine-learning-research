@@ -248,7 +248,7 @@ def r2_score(Y_true, Y_pred):
     - For big Bs, it won't hurt but will have diminishing returns
     - In the sampling with replacement, it chooses k features out of n (total number of features)
       - k = √n is a very common and often effective default value for k
-  - In boosting, we only use the original data, and do not draw any random samples. The trees are grown successively, using a “slow” learn- ing approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
+  - In boosting, we only use the original data, and do not draw any random samples. The trees are grown successively, using a “slow” learning approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
   - In Bayesian Additive Regression Trees (BART), we once again only make use of the original data, and we grow the trees successively. However, each tree is perturbed in order to avoid local minima and achieve a more thorough exploration of the model space.
 
 ### Neural Networks
