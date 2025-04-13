@@ -24,6 +24,7 @@
   - [ ] [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
   - [ ] [Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
     - [ ] [[Course] Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics?specialization=genomic-data-science)
+    - [ ] [[Course] Python for Genomic Data Science](https://www.coursera.org/learn/python-genomics?specialization=genomic-data-science)
   - [ ] [Collaborative Data Science for Healthcare](https://www.edx.org/learn/data-science/massachusetts-institute-of-technology-collaborative-data-science-for-healthcare)
   - [ ] [Data Analytics and Visualization in Health Care](https://www.edx.org/learn/data-analysis/rochester-institute-of-technology-data-analytics-and-visualization-in-health-care)
   - [ ] [Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
