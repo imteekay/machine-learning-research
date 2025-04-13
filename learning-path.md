@@ -9,6 +9,7 @@
 - Foundation in Deep Learning
   - [ ] [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
     - [ ] [[Course] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
+    - [ ] [[Course] Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization](https://www.coursera.org/learn/deep-neural-network)
   - [ ] Neural Network Architectures
   - [ ] PyTorch
 - Bioinformatics and Genomic Data Analysis
