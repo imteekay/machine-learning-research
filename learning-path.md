@@ -8,9 +8,9 @@
     - [ ] [[Course] Unsupervised Learning, Recommenders, Reinforcement Learning](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
 - Foundation in Deep Learning
   - [ ] [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
-    - [ ] [[Course] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
-    - [ ] [[Course] Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization](https://www.coursera.org/learn/deep-neural-network)
-    - [ ] [[Course] Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects)
+    - [X] [[Course] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
+    - [X] [[Course] Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization](https://www.coursera.org/learn/deep-neural-network)
+    - [X] [[Course] Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects)
     - [ ] [[Course] Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks)
     - [ ] [[Course] Sequence Models](https://www.coursera.org/learn/nlp-sequence-models)
   - [ ] Neural Network Architectures
