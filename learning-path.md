@@ -24,6 +24,7 @@
   - [ ] [AI in Healthcare Specialization](https://www.coursera.org/specializations/ai-healthcare)
 - [ ] Machine Learning in Genomic Medicine
   - [ ] [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
+  - [ ] [Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
   - [ ] [Collaborative Data Science for Healthcare](https://www.edx.org/learn/data-science/massachusetts-institute-of-technology-collaborative-data-science-for-healthcare)
   - [ ] [Data Analytics and Visualization in Health Care](https://www.edx.org/learn/data-analysis/rochester-institute-of-technology-data-analytics-and-visualization-in-health-care)
   - [ ] [Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
