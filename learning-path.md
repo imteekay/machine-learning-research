@@ -15,8 +15,6 @@
     - [ ] [[Course] Sequence Models](https://www.coursera.org/learn/nlp-sequence-models)
   - [ ] Neural Network Architectures
   - [ ] PyTorch
-- Bioinformatics and Genomic Data Analysis
-  - [ ] Bioinformatics Algorithms: An Active Learning Approach (book)
 - Genomic Medicine and Clinical Applications
   - [ ] [Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
   - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
@@ -35,6 +33,7 @@
     - [ ] [[Course] Command Line Tools for Genomic Data Science](https://www.coursera.org/learn/genomic-tools)
     - [ ] [[Course] Bioconductor for Genomic Data Science](https://www.coursera.org/learn/bioconductor)
     - [ ] [[Course] Statistics for Genomic Data Science](https://www.coursera.org/learn/statistical-genomics)
+    - [ ] [Book] Bioinformatics Algorithms: An Active Learning Approach
   - [ ] [Collaborative Data Science for Healthcare](https://www.edx.org/learn/data-science/massachusetts-institute-of-technology-collaborative-data-science-for-healthcare)
   - [ ] [Data Analytics and Visualization in Health Care](https://www.edx.org/learn/data-analysis/rochester-institute-of-technology-data-analytics-and-visualization-in-health-care)
   - [ ] [Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
