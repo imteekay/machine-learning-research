@@ -19,7 +19,6 @@
   - [ ] [Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
   - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
   - [ ] [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
-  - [ ] [[Course] Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
   - [ ] [Book] Molecular Biology of the Cell
   - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p?sku=8988&cidade=sp)
 - [ ] Machine Learning in Healthcare
