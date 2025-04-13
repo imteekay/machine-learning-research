@@ -12,6 +12,7 @@
     - [ ] [[Course] Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization](https://www.coursera.org/learn/deep-neural-network)
     - [ ] [[Course] Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects)
     - [ ] [[Course] Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks)
+    - [ ] [[Course] Sequence Models](https://www.coursera.org/learn/nlp-sequence-models)
   - [ ] Neural Network Architectures
   - [ ] PyTorch
 - Bioinformatics and Genomic Data Analysis
