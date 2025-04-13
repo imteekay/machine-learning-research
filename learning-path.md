@@ -7,6 +7,8 @@
     - [X] [[Course] Advanced Learning Algorithms](https://www.coursera.org/learn/advanced-learning-algorithms)
     - [ ] [[Course] Unsupervised Learning, Recommenders, Reinforcement Learning](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
 - Foundation in Deep Learning
+  - [ ] [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+    - [ ] [[Couse] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
   - [ ] Neural Network Architectures
   - [ ] PyTorch
 - Bioinformatics and Genomic Data Analysis
