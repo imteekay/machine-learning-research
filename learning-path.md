@@ -14,6 +14,13 @@
     - [ ] [[Course] Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks)
     - [ ] [[Course] Sequence Models](https://www.coursera.org/learn/nlp-sequence-models)
   - [ ] Neural Network Architectures
+    - [ ] Neural Networks
+    - [ ] Deep Neural Networks
+    - [ ] Convolutional Neural Networks (CNNs)
+    - [ ] Recurrent Neural Networks (RNNs)
+    - [ ] Transformers
+    - [ ] Graph Neural Networks (GNNs)
+    - [ ] Autoencoders
   - [ ] PyTorch
 - Genomic Medicine and Clinical Applications
   - [ ] [Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
