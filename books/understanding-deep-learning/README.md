@@ -331,7 +331,7 @@
 - Computer vision problems
   - Image classification: 0 / 1
   - Object detection: object is in the image, draw rectangle around the object
-  - Neural style transfer: merge two images and produce a new one with the style of one into the other
+  - Neural style transfer: merge two images and produce a new one with the style of one into the other. e.g. picasso painting style into a real photo
 - Fully connected networks can overfit with a lot of parameters (e.g. cat images with 3M input data (pixels) so the `W` will be huge too)
 
 ## Edge Detection
