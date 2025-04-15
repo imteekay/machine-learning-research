@@ -1,5 +1,7 @@
 # Introduction to Genomics
 
+- Genomics is the study of genomes
+
 ![](./images/001.png)
 
 - DNA -> RNA -> Protein
