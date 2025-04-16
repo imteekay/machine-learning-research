@@ -371,6 +371,11 @@
   - 6 x 6 x 3: height, width, channels (red, green, blue)
 - It has the convolution operation shifting one pixel at a time but now it has the channel factor
 
+## Multiple filters
+
+- Apply multiple filters (convolutions) in a convolutional neural network (CNN), an output stack is created. This stack is called "feature map"
+- Each convolutional filter is designed to detect specific patterns or features
+
 ## One Layer of a Convolutional Network
 
 - Apply the filters to the input
