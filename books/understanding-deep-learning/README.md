@@ -373,6 +373,8 @@
 
 ## Multiple filters
 
+![](multiple-filters.png)
+
 - Apply multiple filters (convolutions) in a convolutional neural network (CNN), an output stack is created. This stack is called "feature map"
 - Each convolutional filter is designed to detect specific patterns or features
 
