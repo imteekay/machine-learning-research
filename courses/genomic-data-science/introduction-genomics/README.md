@@ -22,3 +22,12 @@ The branch of molecular biology concerned with the structure, function, evolutio
 - Evolution: how the sequences change over evolutionary time
 
 And the application of this knowledge in medicine, pharmacy, agriculture, etc
+
+## What Is Genomic Data Science?
+
+- Process
+  - Collect samples
+  - Generate sequences: genome
+  - Align to the reference genome (how they differ): how much of that gene was present
+  - Preprocessing and normalization of the data: the sequencing machines make mistakes, the process of collecting data can introduce bias - apply computational and statistical methods to correct these kinds of systematic errors
+  - Statistical and ML Models
