@@ -367,7 +367,7 @@
 
 ![](3d-convolution.png)
 
-- For a 3D image, we need a 3D filter
+- For a 3D image (e.g. RGB image), we need a 3D filter
   - 6 x 6 x 3: height, width, channels (red, green, blue)
 - It has the convolution operation shifting one pixel at a time but now it has the channel factor
 
