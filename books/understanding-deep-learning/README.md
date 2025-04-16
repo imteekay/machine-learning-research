@@ -378,12 +378,16 @@
 - Apply multiple filters (convolutions) in a convolutional neural network (CNN), an output stack is created. This stack is called "feature map"
 - Each convolutional filter is designed to detect specific patterns or features
 
-## One Layer of a Convolutional Network
+## Convolutional Networks
 
 - Apply filters to the input
   - Stack the outputs (feature map)
 - Apply an activation function to the output of each filter and add a bias
   - The filters play a role of the weights in CNN: they are learnable parameters
+- Types of layers in a convolutional network
+  - Convolution
+  - Pooling
+  - Fully connected
 - Summary of notation
   - f[l] = filter size
   - p[l] = padding
