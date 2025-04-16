@@ -380,8 +380,10 @@
 
 ## One Layer of a Convolutional Network
 
-- Apply the filters to the input
-- Apply an activation function to the output and add a bias
+- Apply filters to the input
+- Apply an activation function to the output of each filter and add a bias
+  - The filters play a role of the weights in CNN: they are learnable parameters
+- Stack the outpus (feature map)
 - Summary of notation
   - f[l] = filter size
   - p[l] = padding
