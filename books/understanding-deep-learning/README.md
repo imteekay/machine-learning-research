@@ -388,6 +388,13 @@
   - Convolution
   - Pooling
   - Fully connected
+- A common pattern:
+  - Layer 1: Convolutional layer + Pooling layer
+  - Layer 2: Convolutional layer + Pooling layer
+  - Layer 3: Fully connected layer
+  - Layer 4: Fully connected layer
+  - Layer 5: Fully connected layer
+  - Output layer: softmax
 - Summary of notation
   - f[l] = filter size
   - p[l] = padding
