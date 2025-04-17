@@ -31,3 +31,8 @@ And the application of this knowledge in medicine, pharmacy, agriculture, etc
   - Align to the reference genome (how they differ): how much of that gene was present
   - Preprocessing and normalization of the data: the sequencing machines make mistakes, the process of collecting data can introduce bias - apply computational and statistical methods to correct these kinds of systematic errors
   - Statistical and ML Models
+
+## Molecular Biology
+
+- Cell -> Nucleus -> Chromosome -> DNA
+- Mitosis: DNA replication and cell division and multiplication
