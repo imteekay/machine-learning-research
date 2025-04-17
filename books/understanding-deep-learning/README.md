@@ -398,3 +398,9 @@
   - volume: 
     - Nh[l] = ((Nh[l-1] + 2p[l] - f[l]) / s[l]) + 1
     - Nw[l] = ((Nw[l-1] + 2p[l] - f[l]) / s[l]) + 1
+
+## Pooling layers
+
+- Define regions (or substs) of the input based on f (fxf) and s (stride).
+- The max pooling gets the highest number in each region and output a matrix (or cube if the number of channels is greater than 1)
+- Average pooling: instead of getting the highest number, we average the numbers in each region.
