@@ -36,3 +36,11 @@ And the application of this knowledge in medicine, pharmacy, agriculture, etc
 
 - Cell -> Nucleus -> Chromosome -> DNA
 - Mitosis: DNA replication and cell division and multiplication
+- DNA: four different nucleotides (molecules): AGCT
+  - Adenine
+  - Guanine
+  - Cystosine
+  - Thymine
+  - A and G are similar and bigger
+  - C and T are similar and smaller
+- In RNA, T is replaced by U (uracil)
