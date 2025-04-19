@@ -433,3 +433,19 @@ Benefits
 In the parallel approach of Inception, the network can simultaneously extract features at different scales from the exact same spatial location in the input. These different perspectives are then directly combined in the output of the module. This allows the subsequent layers to have access to a much richer and more immediately multi-scale representation.
 
 In the sequential approach, the network has to learn to infer relationships across scales through the transformations applied by successive layers. While it can achieve multi-scale understanding, it's a more indirect process and might not capture the same level of nuanced interaction between features at different scales as the parallel approach.
+
+## Sequence Models
+
+- For a problem that 'request' a sequence model, a standard neural network doesn't work well
+  - Standard networks required a fixed input size: inputs, outputs can be different lengths in different examples
+  - The model doesn't share features learned across different positions (of text, for example)
+- Example (motivation): based on a text (e.g. sentence), output where are the people's names in the sentence
+  - There's a dictionary with all the texts
+  - For each word in the sentence input, compute the one-hot-encoding, so we know which word is that based on the dictionary
+  - In layer represents the 'one-hot-encoded' word 
+    - one hot encode the sentence word X[1]
+    - outputs the probability of the input being a person's name
+    - apply the activation function
+    - use the output as the input for the following layer
+      - use the learned parameters to the following layer
+      - it uses parameters from earlier in the sequence but later in the sequence
