@@ -449,3 +449,11 @@ In the sequential approach, the network has to learn to infer relationships acro
     - use the output as the input for the following layer
       - use the learned parameters to the following layer
       - it uses parameters from earlier in the sequence but later in the sequence
+
+## Recurrent Neural Network
+
+- Each layer outputs a probability (classification) or value (regression)
+- It's also applied an activation function and passed to the following layer
+- The following layers will always receive the learned parameters from previous layers
+- The cost function is calculated based on all loss functions output from each layer
+- Backpropagation through time: backpropagation can update the parameters W and B based on the cost function
