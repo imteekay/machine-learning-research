@@ -457,3 +457,9 @@ In the sequential approach, the network has to learn to infer relationships acro
 - The following layers will always receive the learned parameters from previous layers
 - The cost function is calculated based on all loss functions output from each layer
 - Backpropagation through time: backpropagation can update the parameters W and B based on the cost function
+
+## Gated Recurrent Unit (GRU)
+
+- c = memory cell
+- c<t> = a<t>
+- use the memory cell later in the sentence
