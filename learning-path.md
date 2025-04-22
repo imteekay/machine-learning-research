@@ -8,6 +8,8 @@
     - [ ] [[Course] Unsupervised Learning, Recommenders, Reinforcement Learning](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
   - [ ] Machine Learning Models
     - [ ] [Linear Regression](https://www.iamtk.co/building-a-linear-regression-from-scratch-with-python-and-mathematics)
+    - [ ] Logistic Regression
+    - [ ] Decision Trees
 - Foundation in Deep Learning
   - [ ] [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
     - [X] [[Course] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
