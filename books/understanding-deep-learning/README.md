@@ -468,3 +468,13 @@ In the sequential approach, the network has to learn to infer relationships acro
   - Reset Gate (r): it decides how much of the past hidden state to forget. It allows the GRU to discard irrelevant information. The reset gate doesn't delete memory directly. Instead, it controls how much of the previous memory (represented by the hidden state) is considered when forming a new potential memory (the candidate hidden state)
     - When the reset gate is close to 0, it effectively makes the GRU "forget" the past hidden state. The computation of the candidate hidden state will primarily depend on the current input x
     - When the reset gate is close to 1, the previous hidden state has a strong influence on the calculation of the candidate hidden state. This allows the GRU to incorporate information from the past.   
+
+## Long short-term memory (LSTM)
+
+- It's a more general case of GRU
+- The "memory cell" is passed through the units/layers and used in each forget and update gate
+- It has three gates
+  - update
+  - forget
+  - output
+- The gates will alter the value of the c (memory cell) and it will be passed to the next layers
