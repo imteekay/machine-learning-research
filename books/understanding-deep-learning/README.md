@@ -484,3 +484,9 @@ In the sequential approach, the network has to learn to infer relationships acro
 - It builds an acyclic graph
 - Backwards computation: last layer used the input, applies the activation function, produces a probability output and pass the information to the previous layer. This flows backward all the way to the first layer
 - It computes the probability outputs forward and backward, that way, a layer can get information from the past (forward) and the future (backward)
+
+## Deep RNN
+
+- In a standard RNN, we have one layer for each input
+- In a deep RNN, we have a stack of layers
+- It can also be combined with bidirection RNN, GRU, and LSTM
