@@ -6,6 +6,8 @@
     - [X] [[Course] Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning)
     - [X] [[Course] Advanced Learning Algorithms](https://www.coursera.org/learn/advanced-learning-algorithms)
     - [ ] [[Course] Unsupervised Learning, Recommenders, Reinforcement Learning](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
+  - [ ] Machine Learning Models
+    - [ ] [Linear Regression](https://www.iamtk.co/building-a-linear-regression-from-scratch-with-python-and-mathematics)
 - Foundation in Deep Learning
   - [ ] [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
     - [X] [[Course] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
