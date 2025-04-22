@@ -569,6 +569,7 @@
 - [Dr. Yejin Kim](https://yejinjkim.github.io)
 - [Jay Alammar](https://jalammar.github.io)
 - [Luis Serrano](https://serrano.academy)
+- [Jiayuan Mao](https://jiayuanm.com)
 
 ## Research & Laboratories
 
