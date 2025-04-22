@@ -44,3 +44,15 @@ And the application of this knowledge in medicine, pharmacy, agriculture, etc
   - A and G are similar and bigger
   - C and T are similar and smaller
 - In RNA, T is replaced by U (uracil)
+
+## From genotype to phenotype
+
+- Genotype: all the sequences of genes in the cells
+- Phenotype: all the traits that can be observed (personality, physical traits)
+- Genotype -> Phenotype
+  - AA -> 85% chance of brown eyes; 14% chance of green eyes; 1% chance of blue eyes
+  - AG -> 56% chance of brown eyes; 37% chance of green eyes; 7% chance of blue eyes
+  - GG -> 72% chance of brown eyes; 27% chance of green eyes; 1% chance of blue eyes
+- e.g. a particular genetic variation can be associated with a disease
+  - It's a significant association but it doesn't mean if you have that gene in that position, you have a disease
+  - It's more likely you have the disease
