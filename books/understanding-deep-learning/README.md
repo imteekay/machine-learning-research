@@ -478,3 +478,9 @@ In the sequential approach, the network has to learn to infer relationships acro
   - forget
   - output
 - The gates will alter the value of the c (memory cell) and it will be passed to the next layers
+
+## Bidirectional RNN
+
+- It builds an acyclic graph
+- Backwards computation: last layer used the input, applies the activation function, produces a probability output and pass the information to the previous layer. This flows backward all the way to the first layer
+- It computes the probability outputs forward and backward, that way, a layer can get information from the past (forward) and the future (backward)
