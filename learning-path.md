@@ -14,7 +14,7 @@
     - [ ] [[Course] Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks)
     - [ ] [[Course] Sequence Models](https://www.coursera.org/learn/nlp-sequence-models)
   - [ ] Neural Network Architectures
-    - [ ] Neural Networks
+    - [ ] [Neural Networks](https://www.iamtk.co/building-a-neural-network-from-scratch-with-mathematics-and-python)
     - [ ] Deep Neural Networks
     - [ ] Convolutional Neural Networks (CNNs)
     - [ ] Recurrent Neural Networks (RNNs)
