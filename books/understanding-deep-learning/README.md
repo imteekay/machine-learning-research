@@ -470,6 +470,13 @@ In the sequential approach, the network has to learn to infer relationships acro
 
 - Input `X` has a 3D Tensor Shape (n, m, T)
   - `n` is the number of units. e.g. for sentence as input, `n` is the size of the word embedding
+    - A word embedding is a vectorial representation of a word
+    - A word embedding is made up of trainable similarity values
+    - The length of a word embedding is the number of words in our vocabulary
+    - A word embedding can have any of the following interpretations:
+      - It uncovers a semantic meaning of the words in our vocabulary
+      - It approximates the similarity of certain words in our vocabulary
+      - It represents a hidden semantic relationship
   - `T` is the size of time steps
   - `m` is the batch size (training examples for each mini batch)
 
