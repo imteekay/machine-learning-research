@@ -479,6 +479,7 @@ In the sequential approach, the network has to learn to infer relationships acro
       - It represents a hidden semantic relationship
   - `T` is the size of time steps
   - `m` is the batch size (training examples for each mini batch)
+- Hidden state `a` has a 3D Tensor Shape (n, m, T)
 
 ## Gated Recurrent Unit (GRU)
 
