@@ -469,9 +469,9 @@ In the sequential approach, the network has to learn to infer relationships acro
 ## RNN Notation & Dimensions
 
 - Input `X` has a 3D Tensor Shape
-  - `N` is the number of units. e.g. for sentence as input, `N` is the size of the word embedding
+  - `n` is the number of units. e.g. for sentence as input, `n` is the size of the word embedding
   - `T` is the size of time steps
-  - `M` is the batch size (training examples for each mini batch)
+  - `m` is the batch size (training examples for each mini batch)
 
 ## Gated Recurrent Unit (GRU)
 
