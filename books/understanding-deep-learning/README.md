@@ -452,11 +452,18 @@ In the sequential approach, the network has to learn to infer relationships acro
 
 ## Recurrent Neural Network
 
-- Each layer outputs a probability (classification) or value (regression)
-- It's also applied an activation function and passed to the following layer
-- The following layers will always receive the learned parameters from previous layers
-- The cost function is calculated based on all loss functions output from each layer
-- Backpropagation through time: backpropagation can update the parameters W and B based on the cost function
+- Cell forward
+  - Input x<t>: linear combination Wax * x<t>
+  - Previous hidden state a<t-1>: linear combination Waa * a<t-1>
+  - Activation function g1: g1(Wax * x<t> + Waa * a<t-1> + Ba)
+    - It produces a<t> and passed to the following time step
+  - Hidden state a<t>: linear combination a<t> * Wya + By and apply activation g2
+    - It outputs a probability (classification) or numerical value (regression)
+- Important concepts
+  - Each time step outputs a probability (classification) or numerical value (regression)
+  - The following time step will always receive the learned parameters from previous time steps
+  - The cost function is calculated based on all loss functions output from each layer
+  - Backpropagation through time: backpropagation can update the parameters W and B based on the cost function
 
 ## Gated Recurrent Unit (GRU)
 
