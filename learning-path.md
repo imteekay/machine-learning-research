@@ -41,6 +41,7 @@
 - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p)
 - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
 - [ ] [[Course] DNA Decoded](https://www.coursera.org/learn/dna-decoded)
+- [ ] [Genomics Papers](https://github.com/jtleek/genomicspapers)
 
 ### Machine Learning in Healthcare
 
