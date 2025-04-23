@@ -462,6 +462,7 @@ In the sequential approach, the network has to learn to infer relationships acro
 - Important concepts
   - Each time step outputs a probability (classification) or numerical value (regression)
   - The following time step will always receive the learned parameters from previous time steps
+    - Weights are shared across time: Waa, Wax, and Way are shared
   - The cost function is calculated based on all loss functions output from each layer
   - Backpropagation through time: backpropagation can update the parameters W and B based on the cost function
 
