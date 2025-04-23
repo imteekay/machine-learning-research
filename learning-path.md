@@ -25,6 +25,8 @@
   - [ ] [Deep Neural Networks](https://www.iamtk.co/building-a-deep-neural-network-from-scratch)
   - [ ] Convolutional Neural Networks (CNNs)
   - [ ] Recurrent Neural Networks (RNNs)
+    - [ ] TODO: implement it from scratch
+    - [ ] TODO: write an article about the implementation
   - [ ] Transformers
   - [ ] Graph Neural Networks (GNNs)
   - [ ] Autoencoders
