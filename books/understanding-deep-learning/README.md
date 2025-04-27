@@ -513,3 +513,35 @@ In the sequential approach, the network has to learn to infer relationships acro
 - In a standard RNN, we have one layer for each input
 - In a deep RNN, we have a stack of layers
 - It can also be combined with bidirection RNN, GRU, and LSTM
+
+## RNN Implementation
+
+- RNN Cell: RNN time step
+  - Receives the input `X`
+  - Receives the previous hidden state `aᵗ⁻¹`
+  - Computes the linear combination for `X`
+  - Computes the linear combination for the previous hidden state
+  - Applies the tahn activation function to produce the new hidden state `aᵗ`
+  - Computes the output of the cell applying the softmax function to the new hidden state `aᵗ`
+- RNN Forward Pass: Loop over T time steps for all inputs
+
+```python
+import numpy as np
+
+def softmax(x):
+    e_x = np.exp(x - np.max(x))
+    return e_x / e_x.sum(axis=0)
+
+def rnn_cell_forward(xt, a_prev, parameters):
+    Wax = parameters["Wax"]
+    Waa = parameters["Waa"]
+    Wya = parameters["Wya"]
+    ba = parameters["ba"]
+    by = parameters["by"]
+    
+    a_next = np.tanh(np.dot(Waa, a_prev) + np.dot(Wax, xt) + ba)
+    yt_pred = softmax(np.dot(Wya, a_next) + by)
+    cache = (a_next, a_prev, xt, parameters)
+    
+    return a_next, yt_pred, cache
+```
