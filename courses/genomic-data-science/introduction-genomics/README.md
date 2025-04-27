@@ -56,3 +56,10 @@ And the application of this knowledge in medicine, pharmacy, agriculture, etc
 - e.g. a particular genetic variation can be associated with a disease
   - It's a significant association but it doesn't mean if you have that gene in that position, you have a disease
   - It's more likely you have the disease
+
+## Polymerase Chain Reaction (PCR)
+
+- Primers: a sequence of DNA bases that's complementary to the DNA we want to copy
+- DNA polymerase: catalyzes the creation of DNA molecules
+- PCR: amplify specific DNA sequences, or make many, many copies of a particular segment of DNA
+  - Cycles of heating and cooling to repeatedly denature the DNA
