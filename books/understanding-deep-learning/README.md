@@ -517,13 +517,19 @@ In the sequential approach, the network has to learn to infer relationships acro
 ## RNN Implementation
 
 - RNN Cell: RNN time step
-  - Receives the input `X`
+  - Receives the input `Xᵗ`
   - Receives the previous hidden state `aᵗ⁻¹`
-  - Computes the linear combination for `X`
+  - Computes the linear combination for `Xᵗ`
   - Computes the linear combination for the previous hidden state
   - Applies the tahn activation function to produce the new hidden state `aᵗ`
-  - Computes the output of the cell applying the softmax function to the new hidden state `aᵗ`
+  - Computes the output of the cell `Yᵗ` applying the softmax function to the new hidden state `aᵗ`
 - RNN Forward Pass: Loop over T time steps for all inputs
+  - If the input sequence is 10 time steps long, we use the RNN cell 10 times
+  - Calls `rnn_cell_forward` to produce `aᵗ` (`a_next`), `Yᵗ` (`yt_pred`), and `cache`
+  - Reuses the weight and bias parameters `Waa`, `ba`, `Wax`, `bx` in each time step
+  - Stores all hidden states computed by the RNN
+  - Stores all predictions
+  - Stores the cache of each time step (used for backprop)
 
 ```python
 import numpy as np
@@ -544,4 +550,20 @@ def rnn_cell_forward(xt, a_prev, parameters):
     cache = (a_next, a_prev, xt, parameters)
     
     return a_next, yt_pred, cache
+
+def rnn_forward(x, a0, parameters):
+    caches = []
+    n_x, m, T_x = x.shape
+    n_y, n_a = parameters["Wya"].shape
+    a = np.zeros((n_a, m, T_x))
+    y_pred = np.zeros((n_y, m, T_x))
+    a_next = a0
+    
+    for t in range(T_x):
+        a_next, yt_pred, cache = rnn_cell_forward(x[:, :, t], a_next, parameters)
+        a[:, :, t] = a_next
+        y_pred[:, :, t] = yt_pred
+        caches.append(cache)
+    
+    return a, y_pred, (caches, x)
 ```
