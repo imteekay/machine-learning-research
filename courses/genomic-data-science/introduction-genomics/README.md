@@ -63,3 +63,11 @@ And the application of this knowledge in medicine, pharmacy, agriculture, etc
 - DNA polymerase: catalyzes the creation of DNA molecules
 - PCR: amplify specific DNA sequences, or make many, many copies of a particular segment of DNA
   - Cycles of heating and cooling to repeatedly denature the DNA
+
+## Next Generation Sequencing  (NGS)
+
+- Sequencing
+  - Take a DNA template and copy through DNA polymerase
+  - The template DNA is fragmented and attached to a slide. Millions of copies of these fragments are then created in clusters using PCR.
+  - To read the sequence, labeled nucleotides with fluorescent colors and a reversible terminator are added. 
+  - The polymerase adds one labeled base at a time, a picture is taken to identify the color, the terminator is removed, and the process repeats. This allows millions of sequences to be read in parallel.
