@@ -529,7 +529,7 @@ In the sequential approach, the network has to learn to infer relationships acro
   - Reuses the weight and bias parameters `Waa`, `ba`, `Wax`, `bx` in each time step
   - Stores all hidden states computed by the RNN
   - Stores all predictions
-  - Stores the cache of each time step (used for backprop)
+  - Stores the cache of each time step (used for backprop, where it will learn — update the parameters)
 
 ```python
 import numpy as np
