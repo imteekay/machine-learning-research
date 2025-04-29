@@ -51,7 +51,8 @@
 
 - [ ] [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
 - [ ] [Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
-  - [ ] [[Course] Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics)
+  - [x] [[Course] Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics)
+    - [Introduction to Genomic Technologies Notes](courses/genomic-data-science/introduction-genomics)
   - [ ] [[Course] Python for Genomic Data Science](https://www.coursera.org/learn/python-genomics)
   - [ ] [[Course] Algorithms for DNA Sequencing](https://www.coursera.org/learn/dna-sequencing)
   - [ ] [[Course] Command Line Tools for Genomic Data Science](https://www.coursera.org/learn/genomic-tools)
