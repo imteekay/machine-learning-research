@@ -465,6 +465,12 @@ In the sequential approach, the network has to learn to infer relationships acro
     - Weights are shared across time: Waa, Wax, and Way are shared
   - The cost function is calculated based on all loss functions output from each layer
   - Backpropagation through time: backpropagation can update the parameters W and B based on the cost function
+- RNNs suffer from vanishing gradient problems (decrease exponentially)
+  - If it's a very deep neural network, the gradient for the output Y will have a very hard time propagating back to affect the weights of earlier layers
+    - Partial derivatives (chain rule): the gradients at earlier time steps are computed by multiplying the gradients from later time steps
+    - If the values in the weight matrices or the derivatives of the activation functions are consistently less than 1, then with each multiplication through the time steps, the gradient becomes progressively smaller over time
+    - Activation functions can contribute to the shrinking gradient problem because they have derivatives that are always less than or equal to 1
+  - For exploding gradients, we may see "NaN" (numerical overflow) values and it will be easier to spot the problem
 
 ## RNN Notation & Dimensions
 
