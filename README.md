@@ -22,6 +22,7 @@
     - [Support Vector Machines](#support-vector-machines)
     - [Advanced Machine Learning](#advanced-machine-learning)
     - [Deep Learning](#deep-learning)
+    - [PyTorch](#pytorch)
     - [Generative AI](#generative-ai)
     - [Books](#books)
     - [Podcasts](#podcasts)
@@ -230,6 +231,10 @@
 - [[Paper] Decentralized Diffusion Models](https://arxiv.org/pdf/2501.05450)
 - [Deep Learning for Data Science (DL4DS)](https://dl4ds.github.io/sp2025/lectures)
 - [Recurrent Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
+
+### PyTorch
+
+- [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals)
 
 ### Generative AI
 
