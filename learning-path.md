@@ -12,6 +12,8 @@
   - [ ] [Logistic Regression](https://www.iamtk.co/building-a-logistic-regression-from-scratch-with-python-and-mathematics)
   - [ ] Decision Trees
     - [ ] [Decision Tree from Scratch](https://www.kaggle.com/code/fareselmenshawii/decision-tree-from-scratch)
+    - [ ] TODO: implement it from scratch
+    - [ ] TODO: write an article about the implementation
 
 ### Foundation in Deep Learning
 
