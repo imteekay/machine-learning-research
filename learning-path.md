@@ -9,7 +9,7 @@
   - [ ] [[Course] Unsupervised Learning, Recommenders, Reinforcement Learning](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
 - [ ] Machine Learning Models
   - [ ] [Linear Regression](https://www.iamtk.co/building-a-linear-regression-from-scratch-with-python-and-mathematics)
-  - [ ] Logistic Regression
+  - [ ] [Logistic Regression](https://www.iamtk.co/building-a-logistic-regression-from-scratch-with-python-and-mathematics)
   - [ ] Decision Trees
     - [ ] [Decision Tree from Scratch](https://www.kaggle.com/code/fareselmenshawii/decision-tree-from-scratch)
 
