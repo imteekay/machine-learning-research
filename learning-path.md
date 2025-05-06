@@ -11,6 +11,7 @@
   - [ ] [Linear Regression](https://www.iamtk.co/building-a-linear-regression-from-scratch-with-python-and-mathematics)
   - [ ] Logistic Regression
   - [ ] Decision Trees
+    - [ ] [Decision Tree from Scratch](https://www.kaggle.com/code/fareselmenshawii/decision-tree-from-scratch)
 
 ### Foundation in Deep Learning
 
