@@ -63,8 +63,11 @@
 ### Encoding Categorical Variables
 
 - Drop Categorical Variables: This approach will only work well if the columns did not contain useful information.
+  - Get all the data without the categorical values: `X.select_dtypes(exclude=['object'])`
 - Ordinal Encoding: assigns each unique value to a different integer
+  - e.g. `OrdinalEncoder`
 - One-Hot Encoding: creates one column for each categorical variable and assigns the value 1 to the column that the example holds (one-hot) and 0 to the other columns
+  - e.g. `OneHotEncoder`
 
 ## Feature Engineering
 
