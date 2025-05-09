@@ -8,6 +8,7 @@
     - [Handling Missing Data](#handling-missing-data)
     - [Scaling](#scaling)
     - [Data Leakage](#data-leakage)
+    - [Encoding Categorical Variables](#encoding-categorical-variables)
   - [Feature Engineering](#feature-engineering)
     - [PCA](#pca)
   - [Model Training](#model-training)
@@ -33,6 +34,7 @@
 - **Handling Missing Data**: Filling missing values (e.g., using mean, median, mode, or interpolation).
 - **Data Cleaning**: Removing duplicates, fixing incorrect labels, correcting inconsistencies.
 - **Scaling/Normalization**: Standardizing or normalizing numerical features to ensure consistency.
+- **Data Leakage**: Separate training, validation, and test sets before processing data
 - **Encoding Categorical Variables**: Converting categorical data into numerical form (e.g., one-hot encoding, label encoding).
 - **Handling Outliers**: Removing or transforming extreme values that may distort the model.
 - **Splitting Data**: Dividing data into training, validation, and test sets.
@@ -57,6 +59,12 @@
   - This means that information from the test set is indirectly influencing the training data.
   - Your model will learn from statistics that it would not have access to in a real-world scenario.
   - This can lead to overfitting and poor generalization.
+
+### Encoding Categorical Variables
+
+- Drop Categorical Variables: This approach will only work well if the columns did not contain useful information.
+- Ordinal Encoding: assigns each unique value to a different integer
+- One-Hot Encoding: creates one column for each categorical variable and assigns the value 1 to the column that the example holds (one-hot) and 0 to the other columns
 
 ## Feature Engineering
 
