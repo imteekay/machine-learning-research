@@ -5,6 +5,7 @@
 - [Machine Learning](#machine-learning)
   - [Table of Contents](#table-of-contents)
   - [Pre-processing](#pre-processing)
+    - [Handling Missing Data](#handling-missing-data)
     - [Scaling](#scaling)
     - [Data Leakage](#data-leakage)
   - [Feature Engineering](#feature-engineering)
@@ -35,6 +36,12 @@
 - **Encoding Categorical Variables**: Converting categorical data into numerical form (e.g., one-hot encoding, label encoding).
 - **Handling Outliers**: Removing or transforming extreme values that may distort the model.
 - **Splitting Data**: Dividing data into training, validation, and test sets.
+
+### Handling Missing Data
+
+- Dropping columns with missing values
+- Use `SimpleImputer` to fill missing values with the mean
+- **Insight**: understand the data so you can reason what's the best decision — using the mean value, 0 or dropping the column
 
 ### Scaling
 
