@@ -9,6 +9,7 @@
     - [Scaling](#scaling)
     - [Data Leakage](#data-leakage)
     - [Encoding Categorical Variables](#encoding-categorical-variables)
+    - [Splitting Data \& Cross Validation](#splitting-data--cross-validation)
   - [Feature Engineering](#feature-engineering)
     - [PCA](#pca)
   - [Model Training](#model-training)
@@ -37,7 +38,7 @@
 - **Data Leakage**: Separate training, validation, and test sets before processing data
 - **Encoding Categorical Variables**: Converting categorical data into numerical form (e.g., one-hot encoding, label encoding).
 - **Handling Outliers**: Removing or transforming extreme values that may distort the model.
-- **Splitting Data**: Dividing data into training, validation, and test sets.
+- **Splitting Data & Cross Validation**: Dividing data into training, validation, and test sets.
 
 ### Handling Missing Data
 
@@ -68,6 +69,21 @@
   - e.g. `OrdinalEncoder`
 - One-Hot Encoding: creates one column for each categorical variable and assigns the value 1 to the column that the example holds (one-hot) and 0 to the other columns
   - e.g. `OneHotEncoder`
+
+### Splitting Data & Cross Validation
+
+- When splitting the data into training and validation, the model can perform well on the 20% validation data and bad in the 80% (or vice-versa)
+  - In larger validation sets, there is less randomness ("noise")
+- Cross validation makes you do experiments in different folds
+  - e.g. Divide training and validation into 80-20
+    - Experiment 1: first 20% fold will be the validation set and the other 80% will be the training set
+    - Experiment 2: second 20% fold will be the validation set and the other 80% will be the training set
+    - The same for the experiments 3, 4, and 5, until it gets to all folds
+  - When should you use each approach?
+    - For small datasets, where extra computational burden isn't a big deal, you should run cross-validation.
+    - For larger datasets, a single validation set is sufficient. Your code will run faster, and you may have enough data that there's little need to re-use some of it for holdout.
+
+![](images/cross-validation.png)
 
 ## Feature Engineering
 
