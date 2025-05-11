@@ -4,3 +4,4 @@
 - [Missing Values](missing-values.ipynb)
 - [Categorical Variables](categorical-variables.ipynb)
 - [Pipeline](pipeline.ipynb)
+- [Cross Validation](cross-validation.ipynb)
