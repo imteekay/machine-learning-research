@@ -85,6 +85,12 @@
 
 ![](images/cross-validation.png)
 
+- Use `cross_val_score` from `model_selection`:
+  - estimator: model or pipeline that implements the `fit` method
+  - input `X` and `y`
+  - cv: number of folds in cross validation
+  - [scoring](https://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter): model evaluation rules, e.g. mae, accuracy, recall, mse, etc
+
 ## Feature Engineering
 
 ### PCA
