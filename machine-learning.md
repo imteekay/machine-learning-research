@@ -55,6 +55,17 @@
 
 ### Data Leakage
 
+- Data leakage (or leakage) happens when your training data contains information about the target, but similar data will not be available when the model is used for prediction
+  - This leads to high performance on the training set (and possibly even the validation data), but the model will perform poorly in production
+  - There are two main types of leakage: target leakage and train-test contamination.
+- **Target leakage**: occurs when your predictors include data that will not be available at the time you make predictions.
+  - e.g. after having pneumonia, a patient usually takes antibiotic medicines, so a "took_antibiotic_medicine" information has a strongl relationship with "got_pneumonia". The value of "took_antibiotic_medicine" is usually changed after the value for got_pneumonia is determined
+  - In this case, this feature (or any "variable updated (or created) after the target value") should be excluded from the training and validation set
+- **Train-Test Contamination**: when you don't distinguish training data from validation data
+  - Validation is meant to be a measure of how the model does on data that it hasn't considered before
+  - Running preprocessing before splitting data into train and validation would lead to the model getting good validation scores, giving you great confidence in it, but perform poorly when you deploy it to make decisions
+  - The idea is to exclude the validation data from any type of fitting, including the fitting of preprocessing steps
+  - A Pipeline helps handling this kind of leakages
 - Divide training and test into separate datasets before performing scaling the features
   - The mean and standard deviation used for scaling will be computed from the entire dataset.
   - This means that information from the test set is indirectly influencing the training data.
