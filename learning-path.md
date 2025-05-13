@@ -8,8 +8,8 @@
   - [X] [[Course] Advanced Learning Algorithms](https://www.coursera.org/learn/advanced-learning-algorithms)
   - [ ] [[Course] Unsupervised Learning, Recommenders, Reinforcement Learning](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
 - [ ] Machine Learning Models
-  - [ ] [Linear Regression](https://www.iamtk.co/building-a-linear-regression-from-scratch-with-python-and-mathematics)
-  - [ ] [Logistic Regression](https://www.iamtk.co/building-a-logistic-regression-from-scratch-with-python-and-mathematics)
+  - [x] [Linear Regression](https://www.iamtk.co/building-a-linear-regression-from-scratch-with-python-and-mathematics)
+  - [x] [Logistic Regression](https://www.iamtk.co/building-a-logistic-regression-from-scratch-with-python-and-mathematics)
   - [ ] Decision Trees
     - [ ] [Decision Tree from Scratch](https://www.kaggle.com/code/fareselmenshawii/decision-tree-from-scratch)
     - [ ] TODO: implement it from scratch
