@@ -49,6 +49,7 @@
 - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
 - [ ] [[Course] DNA Decoded](https://www.coursera.org/learn/dna-decoded)
 - [ ] [Genomics Papers](https://github.com/jtleek/genomicspapers)
+- [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
 
 ### Machine Learning in Healthcare
 
