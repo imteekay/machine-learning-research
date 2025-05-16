@@ -446,9 +446,9 @@ In the sequential approach, the network has to learn to infer relationships acro
     - one hot encode the sentence word X[1]
     - outputs the probability of the input being a person's name
     - apply the activation function
-    - use the output as the input for the following layer
-      - use the learned parameters to the following layer
-      - it uses parameters from earlier in the sequence but later in the sequence
+    - use the output of this unit as the input for the following unit
+      - use the learned parameters to the following unit
+      - use parameters from earlier in the sequence but later in the sequence
 
 ## Recurrent Neural Network
 
