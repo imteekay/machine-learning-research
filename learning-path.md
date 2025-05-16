@@ -27,6 +27,8 @@
   - [ ] [Neural Networks](https://www.iamtk.co/building-a-neural-network-from-scratch-with-mathematics-and-python)
   - [ ] [Deep Neural Networks](https://www.iamtk.co/building-a-deep-neural-network-from-scratch)
   - [ ] Convolutional Neural Networks (CNNs)
+    - [ ] TODO: implement it from scratch
+    - [ ] TODO: write an article about the implementation
   - [ ] Recurrent Neural Networks (RNNs)
     - [ ] TODO: implement it from scratch
     - [ ] TODO: write an article about the implementation
