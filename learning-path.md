@@ -58,6 +58,10 @@
 ### Machine Learning in Genomic Medicine
 
 - [ ] [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
+- [ ] [AI for Medicine Specialization](https://www.coursera.org/specializations/ai-for-medicine)
+  - [ ] [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
+  - [ ] [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
+  - [ ] [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
 - [ ] [Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
   - [x] [[Course] Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics)
     - [Introduction to Genomic Technologies Notes](courses/genomic-data-science/introduction-genomics)
