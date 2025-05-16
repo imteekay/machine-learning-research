@@ -444,8 +444,8 @@ In the sequential approach, the network has to learn to infer relationships acro
   - Input: for each word in the sentence input, compute the one-hot-encoding, so we know which word is that based on the dictionary
   - In layer represents the 'one-hot-encoded' word 
     - one hot encode the sentence word X[1]
-    - outputs the probability of the input being a person's name
     - apply the activation function
+    - outputs the probability of the input being a person's name
     - use the output of this unit as the input for the following unit
       - use the learned parameters to the following unit
       - use parameters from earlier in the sequence but later in the sequence
