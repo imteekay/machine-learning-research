@@ -34,6 +34,8 @@
   - [ ] Graph Neural Networks (GNNs)
   - [ ] Autoencoders
 - [ ] PyTorch
+- [ ] Deep Reinforcement Learning
+  - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
 
 ### Genomic Medicine and Clinical Applications
 
