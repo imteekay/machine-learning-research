@@ -437,7 +437,7 @@ In the sequential approach, the network has to learn to infer relationships acro
 ## Sequence Models
 
 - For a problem that 'request' a sequence model, a standard neural network doesn't work well
-  - Standard networks required a fixed input size: inputs, outputs can be different lengths in different examples
+  - Standard networks requires a fixed input size: inputs, outputs can be different lengths in different examples
   - The model doesn't share features learned across different positions (of text, for example)
 - Example (motivation): based on a text (e.g. sentence), output where are the people's names in the sentence
   - There's a dictionary with all the texts
