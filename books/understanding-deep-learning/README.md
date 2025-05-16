@@ -441,7 +441,7 @@ In the sequential approach, the network has to learn to infer relationships acro
   - The model doesn't share features learned across different positions (of text, for example)
 - Example (motivation): based on a text (e.g. sentence), output where are the people's names in the sentence
   - There's a dictionary with all the texts
-  - For each word in the sentence input, compute the one-hot-encoding, so we know which word is that based on the dictionary
+  - Input: for each word in the sentence input, compute the one-hot-encoding, so we know which word is that based on the dictionary
   - In layer represents the 'one-hot-encoded' word 
     - one hot encode the sentence word X[1]
     - outputs the probability of the input being a person's name
