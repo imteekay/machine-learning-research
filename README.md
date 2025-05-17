@@ -584,6 +584,7 @@
 - [Jiayuan Mao](https://jiayuanm.com)
 - [Edward Z. Yang](https://ezyang.com)
 - [Edward Z. Yang's blog](https://blog.ezyang.com)
+- [Kejun Ying](https://kejunying.com)
 
 ## Research & Laboratories
 
