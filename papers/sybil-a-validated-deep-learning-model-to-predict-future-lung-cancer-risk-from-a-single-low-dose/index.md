@@ -1,5 +1,7 @@
 # Sybil: A Validated Deep Learning Model to Predict Future Lung Cancer Risk From a Single Low-Dose Chest Computed Tomography
 
+[Paper](paper.pdf)
+
 - Trained on LDCTs from the National Lung Screening Trial (NLST): training, dev, and test
 - Tested on Massachusetts General Hospital (MGH) and Chang Gung Memorial Hospital (CGMH)
   - For testing, Sybil requires only one LDCT and does not require clinical data or radiologist annotations. 
