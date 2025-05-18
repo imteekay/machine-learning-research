@@ -76,3 +76,7 @@
 - [ ] [Introduction to Applied Biostatistics: Statistics for Medical Research](https://www.edx.org/learn/biostatistics/osaka-university-introduction-to-applied-biostatistics-statistics-for-medical-research)
 - [ ] [Introduction to Genomic Data Science](https://www.edx.org/learn/bioinformatics/the-university-of-california-san-diego-introduction-to-genomic-data-science)
 - [ ] [[Graduation] Medicina de Precisão e Análise de Dados na Saúde](https://ensino.einstein.br/pos_medicina_precisao_analise_dados_saude_p14796/p)
+- [ ] [[Course] HarvardX Biomedical Data Science](https://rafalab.dfci.harvard.edu/pages/harvardx.html)
+  - [ ] [Data Analysis for Life Sciences](https://www.edx.org/certificates/professional-certificate/harvardx-data-analysis-for-life-sciences)
+  - [ ] [Data Analysis for Genomics](https://www.edx.org/certificates/professional-certificate/harvardx-data-analysis-for-genomics)
+  - [ ] [Using Python for Research](https://www.edx.org/learn/python/harvard-university-using-python-for-research)
