@@ -463,8 +463,9 @@ In the sequential approach, the network has to learn to infer relationships acro
   - Each time step outputs a probability (classification) or numerical value (regression)
   - The following time step will always receive the learned parameters from previous time steps
     - Weights are shared across time: Waa, Wax, and Way are shared
-  - The cost function is calculated based on all loss functions output from each layer
-  - Backpropagation through time: backpropagation can update the parameters W and B based on the cost function
+  - Backpropagation through time: 
+    - The cost function is calculated based on all loss functions output from each layer
+    - backpropagation can update the parameters W and B based on the cost function
 - RNNs suffer from vanishing gradient problems (decrease exponentially)
   - If it's a very deep neural network, the gradient for the output Y will have a very hard time propagating back to affect the weights of earlier layers
     - Partial derivatives (chain rule): the gradients at earlier time steps are computed by multiplying the gradients from later time steps
