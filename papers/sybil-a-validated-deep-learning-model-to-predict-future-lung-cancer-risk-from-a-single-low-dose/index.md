@@ -39,3 +39,49 @@
 - Reduced False Positives: This could lead to fewer unnecessary follow-up procedures (like biopsies) and reduce patient anxiety.
 - It can learn complex patterns and subtle features in the LDCT images that might not be visible to the human eye
 - Sybil is designed to analyze LDCT scans as they become available without requiring additional input from radiologists or manual annotations
+
+## Model Architecture
+
+A deep learning model designed for medical imaging analysis, specifically for 3D volumes. Here's a breakdown of its architecture:
+
+Base Encoder:
+
+- Uses a pre-trained ResNet3D-18 (torchvision.models.video.r3d_18) as the backbone
+- This is a 3D convolutional neural network that processes volumetric medical imaging data
+
+Multi-level Attention Pooling:
+
+The model uses a complex pooling mechanism called MultiAttentionPool that combines several pooling strategies:
+
+- Image-level Attention (Simple_AttentionPool_MultiImg):
+  - Learns attention weights for each slice in the 3D volume
+  - Processes spatial information within each slice
+- Volume-level Attention (Simple_AttentionPool):
+  - Learns attention weights across the entire volume
+  - Combines information from different slices
+- Convolutional Pooling (Conv1d_AttnPool):
+  - Uses 1D convolutions to process temporal/spatial relationships
+  - Kernel size of 11 with stride 1
+- Global Max Pooling:
+  - Captures the most significant features across the entire volume
+- Feature Integration:
+  - The model combines features from multiple pooling strategies:
+    - Concatenates features from two image-level attention pools
+    - Concatenates features from two volume-level attention pools
+    - Adds global max pooling features
+  - Uses fully connected layers to reduce dimensionality to 512 features
+- Cumulative Probability Layer:
+  - Final layer that predicts survival probabilities
+  - Uses a hazard-based approach with:
+    - A hazard prediction layer
+    - A base hazard layer
+    - Implements cumulative probability calculation using a triangular mask
+  - Outputs probabilities for multiple time points (max_followup)
+- Additional Features:
+  - Uses dropout for regularization
+  - Implements ReLU activation functions
+  - Has a calibration mechanism to ensure probability estimates are well-calibrated
+
+The model is designed to handle 3D medical imaging data (like CT scans) and predict survival probabilities over multiple time points. It uses attention mechanisms at multiple levels to focus on relevant parts of the imaging data, both within individual slices and across the entire volume.
+
+The architecture is particularly sophisticated in how it handles the 3D nature of the input data, using multiple pooling strategies to capture both local and global features, and attention mechanisms to focus on the most relevant parts of the imaging data for the prediction task.
