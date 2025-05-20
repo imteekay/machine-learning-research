@@ -239,6 +239,7 @@
 - [Deep Reinforcement Learning course](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX)
 - [Spinning Up in Deep RL](https://spinningup.openai.com/en/latest)
 - [Reinforcement Learning: An Overview](https://arxiv.org/pdf/2412.05265)
+- [A vision researcher’s guide to some RL stuff: PPO & GRPO](https://yugeten.github.io/posts/2025/01/ppogrpo)
 
 ### PyTorch
 
