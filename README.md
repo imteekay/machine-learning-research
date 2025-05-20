@@ -171,6 +171,7 @@
 - [Deep-ML](https://www.deep-ml.com)
 - [The ML Roadmap](https://github.com/loganthorneloe/ml-road-map)
 - [Why is machine learning 'hard'?](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html)
+- [A Gentle Introduction to Machine Learning Theory](https://data-processing.club/theory)
 
 ### Support Vector Machines
 
