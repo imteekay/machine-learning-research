@@ -2,3 +2,4 @@
 
 - [1D Tensor](week1/1D-tensor.ipynb)
 - [2D Tensor](week1/2D-tensor.ipynb)
+- [Differentiation: derivatives](week1/derivatives.ipynb)
