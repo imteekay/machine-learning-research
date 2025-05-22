@@ -30,3 +30,11 @@ def reverse_complement(s):
   complement = { 'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A' }
   return ''.join(complement[char] for char in reversed(s))
 ```
+
+## How DNA gets copied
+
+Second-generation sequencing, also known as sequencing by synthesis, mimics the natural process of DNA replication. During cell division, the double-stranded DNA unwinds and separates into two single strands, each carrying the genetic sequence.
+
+These single strands act as templates for creating new complementary strands. An enzyme called DNA polymerase facilitates this process by adding the appropriate complementary base to the template strand. For instance, if the template has a G, the polymerase will add a C, and if it has an A, it will add a T. This step-by-step addition of bases by DNA polymerase results in two identical double-stranded copies of the original DNA molecule.
+
+Second-generation sequencing leverages this natural DNA copying mechanism. By observing the activity of the DNA polymerase as it builds the new complementary strand, scientists can deduce the sequence of the template DNA molecule. Importantly, this process is performed simultaneously on millions or even billions of template molecules, allowing for high-throughput sequencing.
