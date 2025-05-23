@@ -5,3 +5,4 @@
 - [Differentiation: derivatives](week1/derivatives.ipynb)
 - [Transforms](week1/transform.ipynb)
 - [Vision Transforms](week1/vision_transform.ipynb)
+- [Mnist Vision Transform](week1/mnist_vision_transform.ipynb)
