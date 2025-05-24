@@ -1,9 +1,9 @@
 # Introduction to Neural Networks and PyTorch
 
-- [1D Tensor](week1/1D-tensor.ipynb)
-- [2D Tensor](week1/2D-tensor.ipynb)
-- [Differentiation: derivatives](week1/derivatives.ipynb)
-- [Transforms](week1/transform.ipynb)
-- [Vision Transforms](week1/vision_transform.ipynb)
-- [Mnist Vision Transform](week1/mnist_vision_transform.ipynb)
-- [Linear Regression Model](week1/linear_regression_model.ipynb)
+- [1D Tensor](1D-tensor.ipynb)
+- [2D Tensor](2D-tensor.ipynb)
+- [Differentiation: derivatives](derivatives.ipynb)
+- [Transforms](transform.ipynb)
+- [Vision Transforms](vision_transform.ipynb)
+- [Mnist Vision Transform](mnist_vision_transform.ipynb)
+- [Linear Regression Model](linear_regression_model.ipynb)
