@@ -45,7 +45,8 @@ High-throughput DNA sequencing method
 
 - DNA sample is fragmented and made single-stranded, resulting in many short single-stranded templates that are then attached to a flat surface (a slide) at random locations. Next, 
 - DNA polymerase and modified bases with terminators (and fluorescent labels) are added. The polymerase adds only one complementary base to each template because the terminator prevents further extension. 
-- A photo is taken, capturing the fluorescent signal that identifies the incorporated base for each template. 
+- A photo is taken, capturing the fluorescent signal that identifies the incorporated base for each template.
+  - Template strands are amplified to create clusters of identical copies. This amplification is necessary to generate enough light for detection when fluorescently labeled terminator bases are incorporated. However, errors can occur when a non-terminated base is accidentally added during a sequencing cycle. This causes some strands within a cluster to become out of sync with others, leading to mixed signals (multiple colors of light) during imaging.
 - The terminators are then removed, and the process is repeated. 
 - By taking a series of photos over multiple cycles, the sequence of each individual template can be determined by tracking the color changes at its specific location on the slide. This method allows for the simultaneous sequencing of billions of templates, making it a massively parallel process. 
 - Key aspects include attaching billions of templates to a single slide, photographing them simultaneously, and using terminators to control the polymerization and enable base identification through fluorescence.
