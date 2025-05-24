@@ -7,3 +7,4 @@
 - [Vision Transforms](vision_transform.ipynb)
 - [Mnist Vision Transform](mnist_vision_transform.ipynb)
 - [Linear Regression Model](linear_regression_model.ipynb)
+- [Best Practices for Training Linear Regression Models](best-practices-for-model-training.md)

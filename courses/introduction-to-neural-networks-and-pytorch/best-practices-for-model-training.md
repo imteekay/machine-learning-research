@@ -1,4 +1,4 @@
-# Best Practices for Training Linear Regression Models in PyTorch
+# Best Practices for Training Linear Regression Models
 
 - **Learning Rate**: Setting a moderate initial learning rate (e.g., 0.01) and utilizing learning rate schedulers for dynamic adjustments during training.
 - **Data Standardization**: Scaling input features to have zero mean and unit variance to improve training speed and accuracy. Normalizing the output may also be beneficial.
