@@ -6,3 +6,4 @@
 - [Transforms](week1/transform.ipynb)
 - [Vision Transforms](week1/vision_transform.ipynb)
 - [Mnist Vision Transform](week1/mnist_vision_transform.ipynb)
+- [Linear Regression Model](week1/linear_regression_model.ipynb)
