@@ -53,3 +53,22 @@ High-throughput DNA sequencing method
   - Software called a "base caller" analyzes these images to determine the sequence. To account for the uncertainty arising from mixed signals, the base caller assigns a "base quality" score (Q) to each base call.
   - The base quality information is crucial for downstream analysis, allowing researchers to identify and account for potentially unreliable base calls
 - Key aspects include attaching billions of templates to a single slide, photographing them simultaneously, and using terminators to control the polymerization and enable base identification through fluorescence.
+
+## Sequencing reads in FASTQ format
+
+- A FASTQ file has many reads and each read has a format of `name`, `sequence`, `placeholder`, and `base quality`
+  - Read Name: Contains information about the experiment but is generally ignored for downstream analysis.
+  - Sequence: The actual DNA sequence reported by the base caller. This is the crucial information.
+  - Placeholder Line: This line is typically ignored.
+  - Base Quality Line: A string of characters that encodes the quality score for each corresponding base in the sequence line.
+- The base quality is represented by a value Q, which is related to the probability P of an incorrect base call (higher Q means higher confidence). These Q values are ASCII-encoded into characters. The specific encoding used in the class is Phred 33.
+
+```python
+def QtoPhred33(Q):
+  """ Turn Q into Phred+33 ASCII-encoded quality """
+  return chr(Q + 33)
+
+def phred33toQ(qual):
+  """ Turn Phred+33 ASCII-encoded quality into Q """
+  return ord(qual) - 33
+```
