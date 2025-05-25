@@ -7,6 +7,12 @@
 - [ ] Pandas
 - [ ] Scikit-learn
 
+### Math & Statistics Foundations
+
+- [ ] Linear Algebra
+- [ ] Calculus
+- [ ] Probability and Statistics
+
 ### Foundation in Machine Learning
 
 - [ ] Introduction to Machine Learning with Python (book)
