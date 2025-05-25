@@ -1,5 +1,7 @@
 # Learning Path
 
+[Structured Learning Path: ML/DL in Biomedicine](https://chatgpt.com/c/6831e921-0168-800b-b284-0eafaff9c8f6)
+
 ### Programming & Data Tools
 
 - [ ] Python
@@ -27,6 +29,10 @@
     - [ ] [Decision Tree from Scratch](https://www.kaggle.com/code/fareselmenshawii/decision-tree-from-scratch)
     - [ ] TODO: implement it from scratch
     - [ ] TODO: write an article about the implementation
+- [ ] Model Evaluation
+  - [ ] Accuracy, Loss, ROC AUC, cross-validation, precision/recall
+- [ ] Causal Inference
+  - [ ] [[Book] Causal Inference: What If](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/677676888e31cc50c2c33877/1735816881944/hernanrobins_WhatIf_2jan25.pdf)
 
 ### Foundation in Deep Learning
 
@@ -42,27 +48,37 @@
   - [ ] Convolutional Neural Networks (CNNs)
     - [ ] TODO: implement it from scratch
     - [ ] TODO: write an article about the implementation
+    - [ ] VGG
+    - [ ] ResNet
+    - [ ] UNet
   - [ ] Recurrent Neural Networks (RNNs)
     - [ ] TODO: implement it from scratch
     - [ ] TODO: write an article about the implementation
+    - [ ] RNNs
+    - [ ] LSTMs
+    - [ ] GRUs
   - [ ] Transformers
+  - [ ] Autoencoders/Variational Autoencoders (VAEs)
+  - [ ] Generative Adversarial Networks (GANs)
   - [ ] Graph Neural Networks (GNNs)
-  - [ ] Autoencoders
-- [ ] PyTorch
+- [ ] Deep Learning Frameworks
+  - [ ] [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)
 - [ ] Deep Reinforcement Learning
   - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
 
 ### Genomic Medicine and Clinical Applications
 
-- [ ] [Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
-- [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
-- [ ] [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
-- [ ] [Book] Molecular Biology of the Cell
-- [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p)
-- [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
-- [ ] [[Course] DNA Decoded](https://www.coursera.org/learn/dna-decoded)
-- [ ] [Genomics Papers](https://github.com/jtleek/genomicspapers)
-- [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
+- [ ] Genetics Fundamentals
+  - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
+  - [ ] [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
+  - [ ] [[Course] DNA Decoded](https://www.coursera.org/learn/dna-decoded)
+  - [ ] [Genomics Papers](https://github.com/jtleek/genomicspapers)
+- [ ] Molecular Biology
+  - [ ] [Book] Molecular Biology of the Cell
+  - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p)
+  - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
+- [ ] Cancer
+  - [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
 
 ### Machine Learning in Healthcare
 
@@ -70,6 +86,11 @@
 
 ### Machine Learning in Genomic Medicine
 
+- [ ] Bioinformatics Data Preprocessing
+  - [ ] NGS data formats (FASTA/FASTQ/VCF)
+  - [ ] Quality control (FastQC)
+  - [ ] Pipelines (alignment, normalization)
+  - [ ] Biopython
 - [ ] [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
 - [ ] [AI for Medicine Specialization](https://www.coursera.org/specializations/ai-for-medicine)
   - [ ] [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
