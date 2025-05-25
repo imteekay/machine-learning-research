@@ -347,6 +347,9 @@
 - [[Paper] Multimodal Healthcare AI: Identifying and Designing Clinically Relevant Vision-Language Applications for Radiology](https://arxiv.org/pdf/2402.14252)
 - [[Paper] Collaboration between clinicians and vision–language models in radiology report generation](papers/collaboration-between-clinicians-and-vision–language-models-in-radiology-report-generation/paper.pdf)
 - [[Paper] ReXplain: Translating Radiology into Patient-Friendly Video Reports](https://arxiv.org/pdf/2410.00441)
+- [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
+- [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
+- [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
 
 ### ML/AI & Biology
 
@@ -390,9 +393,6 @@
 - [AI-Driven Drug Discovery Using Digital Biology](https://www.youtube.com/watch?v=27JMkAleyNw)
 - [Digital Biology with insitro's Daphne Koller](https://www.youtube.com/watch?v=79qJLY-30ao)
 - [AI-First: Daphne Koller’s plan to revolutionize drug discovery](https://www.youtube.com/watch?v=ukEaOOn9ZaE)
-- [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
-- [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
-- [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
 - [[Paper] Generative models for molecular discovery: Recentadvances and challenges](https://wires.onlinelibrary.wiley.com/doi/epdf/10.1002/wcms.1608)
 - [How AI is saving billions of years of human research time](https://www.ted.com/talks/max_jaderberg_how_ai_is_saving_billions_of_years_of_human_research_time)
 - [Bioinformatics Toolkit](https://github.com/evanpeikon/Bioinformatics_Toolkit)
