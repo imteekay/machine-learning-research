@@ -396,6 +396,7 @@
 - [[Paper] Generative models for molecular discovery: Recentadvances and challenges](https://wires.onlinelibrary.wiley.com/doi/epdf/10.1002/wcms.1608)
 - [How AI is saving billions of years of human research time](https://www.ted.com/talks/max_jaderberg_how_ai_is_saving_billions_of_years_of_human_research_time)
 - [Bioinformatics Toolkit](https://github.com/evanpeikon/Bioinformatics_Toolkit)
+- [An Overview of Deep Generative Models in Functional and Evolutionary Genomics](https://www.annualreviews.org/content/journals/10.1146/annurev-biodatasci-020722-115651)
 
 ### Databases
 
