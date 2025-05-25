@@ -398,6 +398,7 @@
 - [Bioinformatics Toolkit](https://github.com/evanpeikon/Bioinformatics_Toolkit)
 - [An Overview of Deep Generative Models in Functional and Evolutionary Genomics](https://www.annualreviews.org/content/journals/10.1146/annurev-biodatasci-020722-115651)
 - [Transformer Architecture and Attention Mechanisms in Genome Data Analysis: A Comprehensive Review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10376273)
+- [Deep Learning for Genomics: From Early Neural Nets to Modern Large Language Models](https://www.mdpi.com/1422-0067/24/21/15858)
 
 ### Databases
 
