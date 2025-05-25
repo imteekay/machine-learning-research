@@ -10,3 +10,4 @@
 - [Best Practices for Training Linear Regression Models](best-practices-for-model-training.md)
 - [Linear Regression Training One Parameter](linear-regression-training-one-parameter.ipynb)
 - [Linear Regression Training](linear-regression-training.ipynb)
+- [Stochastic Gradient Descent](stochastic_gradient_descent.ipynb)
