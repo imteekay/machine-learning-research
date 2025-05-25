@@ -397,6 +397,7 @@
 - [How AI is saving billions of years of human research time](https://www.ted.com/talks/max_jaderberg_how_ai_is_saving_billions_of_years_of_human_research_time)
 - [Bioinformatics Toolkit](https://github.com/evanpeikon/Bioinformatics_Toolkit)
 - [An Overview of Deep Generative Models in Functional and Evolutionary Genomics](https://www.annualreviews.org/content/journals/10.1146/annurev-biodatasci-020722-115651)
+- [Transformer Architecture and Attention Mechanisms in Genome Data Analysis: A Comprehensive Review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10376273)
 
 ### Databases
 
