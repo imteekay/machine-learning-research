@@ -1,5 +1,12 @@
 # Learning Path
 
+### Programming & Data Tools
+
+- [ ] Python
+- [ ] Numpy
+- [ ] Pandas
+- [ ] Scikit-learn
+
 ### Foundation in Machine Learning
 
 - [ ] Introduction to Machine Learning with Python (book)
