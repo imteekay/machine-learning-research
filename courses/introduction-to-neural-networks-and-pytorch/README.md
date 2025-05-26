@@ -14,3 +14,4 @@
 - [Mini-Batch Gradient Descent](mini_batch_gradient_descent.ipynb)
 - [Mini-Batch Gradient Descent PyTorch](mini_batch_gradient_descent_pytorch.ipynb)
 - [Training and Validation Data](training_and_validation_data.ipynb)
+- [Multiple Linear Regression](multiple_linear_regression.ipynb)
