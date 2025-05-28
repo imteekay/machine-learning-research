@@ -72,3 +72,13 @@ def phred33toQ(qual):
   """ Turn Phred+33 ASCII-encoded quality into Q """
   return ord(qual) - 33
 ```
+
+## Sequencers give pieces to genomic puzzles
+
+Sequencing produces short reads of DNA, which are insufficient to answer questions about genome differences or disease predispositions because genes are much longer. Therefore, the initial challenge in analyzing sequencing data is to reconstruct the original DNA sequence by assembling these short reads.
+
+This process is analogous to putting together a puzzle. In many cases, we have a "picture" of the completed puzzle in the form of a reference genome – a previously assembled genome from the same or a closely related species. Human genomes, for instance, are highly similar (99.8-99.9%), allowing us to use a reference human genome as a guide.
+
+The process of aligning sequencing reads to a reference genome involves taking each short read and finding the best matching location on the reference sequence. This "read alignment problem" is a key topic in the first part of the discussed course, focusing on algorithms and data structures to solve it. Reference genomes are available for numerous species.
+
+However, in cases where a reference genome is unavailable, such as when studying a novel species, a different approach is needed. This is like assembling a puzzle without the picture. In this scenario, we must look for overlaps between the sequencing reads themselves and try to piece them together based on these overlaps.
