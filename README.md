@@ -351,6 +351,7 @@
 - [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
 - [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
 - [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
+- [Multimodal, Generative, and Agentic AI for Pathology](https://www.youtube.com/watch?v=tbJwdK48hJw&list=PLlMMtlgw6qNjROoMNTBQjAcdx53kV50cS&index=2)
 
 ### ML/AI & Biology
 
