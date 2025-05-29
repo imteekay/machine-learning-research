@@ -18,3 +18,4 @@
 - [Multiple Linear Regression Training](multiple_linear_regression_training.ipynb)
 - [Linear Regression with Multiple Outputs](linear_regression_with_multiple_outputs.ipynb)
 - [Training Multiple Output Linear Regression](training_multiple_output_linear_regression.ipynb)
+- [Logistic Regression](logistic_regression.ipynb)
