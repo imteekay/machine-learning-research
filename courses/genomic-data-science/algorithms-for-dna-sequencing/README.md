@@ -82,3 +82,11 @@ This process is analogous to putting together a puzzle. In many cases, we have a
 The process of aligning sequencing reads to a reference genome involves taking each short read and finding the best matching location on the reference sequence. This "read alignment problem" is a key topic in the first part of the discussed course, focusing on algorithms and data structures to solve it. Reference genomes are available for numerous species.
 
 However, in cases where a reference genome is unavailable, such as when studying a novel species, a different approach is needed. This is like assembling a puzzle without the picture. In this scenario, we must look for overlaps between the sequencing reads themselves and try to piece them together based on these overlaps.
+
+## Read alignment and why it's hard
+
+Sequencing reads, which are short DNA fragments, are like puzzle pieces that need to be placed back together using a reference genome, which acts as the completed puzzle's picture. This process leverages the high similarity between the genomes of different individuals within the same species.
+
+The core task involves taking each sequencing read and searching for the most closely matching location within a potentially enormous reference genome (e.g., the 3 billion bases of the human genome). This search is repeated for billions of reads generated in a single sequencing run, making it a computationally intensive task, akin to finding billions of needles in a very large haystack.
+
+Both sequencing reads and the reference genome can be treated as strings and computer science has developed numerous efficient algorithms and data structures for string manipulation, such as searching, indexing, and compression.
