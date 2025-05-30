@@ -596,6 +596,7 @@
 - [Edward Z. Yang's blog](https://blog.ezyang.com)
 - [Kejun Ying](https://kejunying.com)
 - [Xiang Lisa Li](https://xiangli1999.github.io)
+- [Rachel Wu](https://people.csail.mit.edu/rmwu)
 
 ## Research & Laboratories
 
