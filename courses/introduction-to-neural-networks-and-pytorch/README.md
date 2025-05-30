@@ -20,3 +20,4 @@
 - [Training Multiple Output Linear Regression](training_multiple_output_linear_regression.ipynb)
 - [Logistic Regression](logistic_regression.ipynb)
 - [Logistic Regression and Bad Initialization Value](logistic-regression-and-bad-initialization-value.ipynb)
+- [Logistic Regression Cross Entropy](logistic-regression-cross-entropy.ipynb)
