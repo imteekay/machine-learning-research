@@ -90,3 +90,20 @@ Sequencing reads, which are short DNA fragments, are like puzzle pieces that nee
 The core task involves taking each sequencing read and searching for the most closely matching location within a potentially enormous reference genome (e.g., the 3 billion bases of the human genome). This search is repeated for billions of reads generated in a single sequencing run, making it a computationally intensive task, akin to finding billions of needles in a very large haystack.
 
 Both sequencing reads and the reference genome can be treated as strings and computer science has developed numerous efficient algorithms and data structures for string manipulation, such as searching, indexing, and compression.
+
+## Boyer-Moore basics
+
+The key insights of Boyer-Moore are:
+
+- Learning from Comparisons: The algorithm uses information gained during character comparisons to determine how far to shift the pattern.
+- Right-to-Left Comparison: Unlike the naive method, Boyer-Moore compares characters within a given alignment from right to left.
+
+Two main rules used by the Boyer-Moore algorithm to achieve these skips
+
+- Bad Character Rule: Upon encountering a mismatch between a character in the pattern and a character in the text, this rule suggests shifting the pattern to the right until either:
+  - The mismatched text character aligns with an occurrence of the same character in the pattern.
+  - The pattern moves completely past the mismatched text character (if the mismatched character doesn't exist in the pattern).
+- Good Suffix Rule: After a successful match of a suffix of the pattern with a substring of the text, and then a mismatch, this rule suggests shifting the pattern to the right until either:
+  - Another occurrence of the matched suffix appears in the pattern, aligned with the previously matched text substring.
+  - A prefix of the pattern matches a suffix of the previously matched text substring.
+  - The pattern moves completely past the matched text substring.
