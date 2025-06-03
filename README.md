@@ -599,6 +599,7 @@
 - [Kejun Ying](https://kejunying.com)
 - [Xiang Lisa Li](https://xiangli1999.github.io)
 - [Rachel Wu](https://people.csail.mit.edu/rmwu)
+- [Simon Kohl](https://www.simonkohl.com)
 
 ## Research & Laboratories
 
