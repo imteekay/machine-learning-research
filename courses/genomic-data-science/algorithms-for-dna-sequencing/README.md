@@ -100,10 +100,10 @@ The key insights of Boyer-Moore are:
 
 Two main rules used by the Boyer-Moore algorithm to achieve these skips
 
-- Bad Character Rule: Upon encountering a mismatch between a character in the pattern and a character in the text, this rule suggests shifting the pattern to the right until either:
+- **Bad Character Rule**: Upon encountering a mismatch between a character in the pattern and a character in the text, this rule suggests shifting the pattern to the right until either:
   - The mismatched text character aligns with an occurrence of the same character in the pattern.
   - The pattern moves completely past the mismatched text character (if the mismatched character doesn't exist in the pattern).
-- Good Suffix Rule: After a successful match of a suffix of the pattern with a substring of the text, and then a mismatch, this rule suggests shifting the pattern to the right until either:
+- **Good Suffix Rule**: After a successful match of a suffix of the pattern with a substring of the text, and then a mismatch, this rule suggests shifting the pattern to the right until either:
   - Another occurrence of the matched suffix appears in the pattern, aligned with the previously matched text substring.
   - A prefix of the pattern matches a suffix of the previously matched text substring.
   - The pattern moves completely past the matched text substring.
