@@ -600,6 +600,7 @@
 - [Xiang Lisa Li](https://xiangli1999.github.io)
 - [Rachel Wu](https://people.csail.mit.edu/rmwu)
 - [Simon Kohl](https://www.simonkohl.com)
+- [Karina Nguyen](https://karinanguyen.com)
 
 ## Research & Laboratories
 
