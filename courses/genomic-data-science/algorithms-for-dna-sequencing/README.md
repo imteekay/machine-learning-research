@@ -100,6 +100,8 @@ The key insights of Boyer-Moore are:
 
 Two main rules used by the Boyer-Moore algorithm to achieve these skips
 
+![](images/003.png)
+
 - **Bad Character Rule**: Upon encountering a mismatch between a character in the pattern and a character in the text, this rule suggests shifting the pattern to the right until either:
   - The mismatched text character aligns with an occurrence of the same character in the pattern.
   - The pattern moves completely past the mismatched text character (if the mismatched character doesn't exist in the pattern).
