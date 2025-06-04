@@ -109,3 +109,4 @@ Two main rules used by the Boyer-Moore algorithm to achieve these skips
   - Another occurrence of the matched suffix appears in the pattern, aligned with the previously matched text substring.
   - A prefix of the pattern matches a suffix of the previously matched text substring.
   - The pattern moves completely past the matched text substring.
+- In Boyer-Moore, it builds lookup tables to pre-calculate the number of skips for the bad character rule
