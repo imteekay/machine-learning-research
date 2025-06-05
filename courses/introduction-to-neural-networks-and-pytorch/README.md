@@ -22,3 +22,4 @@
 - [Logistic Regression and Bad Initialization Value](logistic-regression-and-bad-initialization-value.ipynb)
 - [Logistic Regression Cross Entropy](logistic-regression-cross-entropy.ipynb)
 - [Deep Neural Network for Cancer Classification](deep-neural-network-for-breast-cancer-classification.ipynb)
+- [Softmax Classifier 1D](softmax-classifier-1d.ipynb)
