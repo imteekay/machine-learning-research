@@ -110,3 +110,9 @@ Two main rules used by the Boyer-Moore algorithm to achieve these skips
   - A prefix of the pattern matches a suffix of the previously matched text substring.
   - The pattern moves completely past the matched text substring.
 - In Boyer-Moore, it builds lookup tables to pre-calculate the number of skips for the bad character rule
+
+## Diversion: Repetitive Elements
+
+The human genome is highly repetitive, a result of complex evolutionary processes, rather than random generation. A major contributor to this repetitiveness are transposable elements, small DNA sequences capable of copying and pasting themselves throughout the genome. Approximately 45% of the human genome consists of these elements, with a particularly prominent example being the Alu element, which accounts for about 11% of the genome and appears over a million times.
+
+These repetitive elements pose a significant challenge for read alignment and genome assembly algorithms. When a sequencing read comes from a repetitive region, such as an Alu element, it becomes difficult or impossible to determine its exact original location due to the presence of numerous identical copies.
