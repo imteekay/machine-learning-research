@@ -601,6 +601,7 @@
 - [Rachel Wu](https://people.csail.mit.edu/rmwu)
 - [Simon Kohl](https://www.simonkohl.com)
 - [Karina Nguyen](https://karinanguyen.com)
+- [Yehlin Cho](https://sites.google.com/view/yehlincho/home)
 
 ## Research & Laboratories
 
