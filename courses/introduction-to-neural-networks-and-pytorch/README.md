@@ -24,3 +24,4 @@
 - [Deep Neural Network for Cancer Classification](deep-neural-network-for-breast-cancer-classification.ipynb)
 - [Softmax Classifier 1D](softmax-classifier-1d.ipynb)
 - [MNIST Softmax](mnist-softmax.ipynb)
+- [Small Neural Network](small-neural-network.ipynb)
