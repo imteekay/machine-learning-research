@@ -25,3 +25,4 @@
 - [Softmax Classifier 1D](softmax-classifier-1d.ipynb)
 - [MNIST Softmax](mnist-softmax.ipynb)
 - [Small Neural Network](small-neural-network.ipynb)
+- [Neural Network with Multiple Neurons](neural-network-with-multiple-neurons.ipynb)
