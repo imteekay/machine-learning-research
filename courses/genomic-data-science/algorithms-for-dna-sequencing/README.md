@@ -116,3 +116,17 @@ Two main rules used by the Boyer-Moore algorithm to achieve these skips
 The human genome is highly repetitive, a result of complex evolutionary processes, rather than random generation. A major contributor to this repetitiveness are transposable elements, small DNA sequences capable of copying and pasting themselves throughout the genome. Approximately 45% of the human genome consists of these elements, with a particularly prominent example being the Alu element, which accounts for about 11% of the genome and appears over a million times.
 
 These repetitive elements pose a significant challenge for read alignment and genome assembly algorithms. When a sequencing read comes from a repetitive region, such as an Alu element, it becomes difficult or impossible to determine its exact original location due to the presence of numerous identical copies.
+
+## Indexing and the k-mer index
+
+Online algorithms, like the Naive exact matching and Boyer-Moore algorithms, process text directly without preprocessing. In contrast, offline algorithms preprocess the text beforehand, which is suitable for scenarios where the text (like a reference genome in read alignment) remains constant while queries (sequencing reads) change.
+
+The read alignment problem is highlighted as a key application for offline algorithms. An index allows for efficient querying by pre-organizing data.
+
+For DNA strings, there's the k-mer index. This involves:
+
+- Breaking the long DNA string (text T) into overlapping substrings of a fixed length, called k-mers (e.g., 5-mers for length 5).
+- Storing these k-mers in an index, typically in alphabetical order, along with the offsets (starting positions) where they appear in the text. If a k-mer appears multiple times, all its offsets are listed.
+- To query this k-mer index with a pattern string (P), a k-mer from P is used to look up potential matches in the index. The index returns index hits, which are the offsets where that k-mer appears in T.
+
+However, an index hit doesn't guarantee a full match of the entire pattern P. Therefore, a crucial step called verification is needed. This involves comparing the full pattern P with the text T starting from the reported index hit offset to confirm if the entire pattern matches. If the initial k-mer from P is not found in the index, it means P cannot possibly match in T, allowing for early termination.
