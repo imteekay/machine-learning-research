@@ -43,7 +43,7 @@ Second-generation sequencing leverages this natural DNA copying mechanism. By ob
 
 High-throughput DNA sequencing method
 
-- DNA sample is fragmented and made single-stranded, resulting in many short single-stranded templates that are then attached to a flat surface (a slide) at random locations. Next, 
+- DNA sample is fragmented and made single-stranded, resulting in many short single-stranded templates that are then attached to a flat surface (a slide) at random locations.
 - DNA polymerase and modified bases with terminators (and fluorescent labels) are added. The polymerase adds only one complementary base to each template because the terminator prevents further extension. 
 - A photo is taken, capturing the fluorescent signal that identifies the incorporated base for each template.
   - Template strands are amplified to create clusters of identical copies. This amplification is necessary to generate enough light for detection when fluorescently labeled terminator bases are incorporated. However, errors can occur when a non-terminated base is accidentally added during a sequencing cycle. This causes some strands within a cluster to become out of sync with others, leading to mixed signals (multiple colors of light) during imaging.
