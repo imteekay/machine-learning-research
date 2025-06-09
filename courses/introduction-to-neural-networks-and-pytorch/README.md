@@ -26,3 +26,4 @@
 - [MNIST Softmax](mnist-softmax.ipynb)
 - [Small Neural Network](small-neural-network.ipynb)
 - [Neural Network with Multiple Neurons](neural-network-with-multiple-neurons.ipynb)
+- [Neural Networks with Multiple Hidden Layers](neural-networks-with-multiple-hidden-layers.ipynb)
