@@ -30,3 +30,4 @@
 - [Multi-Class Neural Networks with MNIST](multi-class-neural-networks-with-mnist.ipynb)
 - [Activation Functions](activation-functions.ipynb)
 - [Activation Functions on MNIST](activation-functions-on-mnist.ipynb)
+- [Deep Neural Networks](deep-neural-networks.ipynb)
