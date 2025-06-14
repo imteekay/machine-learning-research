@@ -31,3 +31,4 @@
 - [Activation Functions](activation-functions.ipynb)
 - [Activation Functions on MNIST](activation-functions-on-mnist.ipynb)
 - [Deep Neural Networks](deep-neural-networks.ipynb)
+- [Deeper Neural Networks with nn.ModuleList()](deeper-neural-networks-with-nn-modulelist.ipynb)
