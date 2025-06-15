@@ -33,3 +33,4 @@
 - [Deep Neural Networks](deep-neural-networks.ipynb)
 - [Deeper Neural Networks with nn.ModuleList()](deeper-neural-networks-with-nn-modulelist.ipynb)
 - [Dropout Neural Net](dropout-neural-net.ipynb)
+- [Dropout Regression](dropout-regression.ipynb)
