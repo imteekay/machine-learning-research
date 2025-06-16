@@ -37,3 +37,4 @@
 - [Initialization with same weights](initialization-with-same-weights.ipynb)
 - [Different Parameter Initialization](different-parameter-initialization.ipynb)
 - [He Parameter Initialization](he-parameter-initialization.ipynb)
+- [Momentum with Different Polynomials](momentum-with-polynomial-functions.ipynb)
