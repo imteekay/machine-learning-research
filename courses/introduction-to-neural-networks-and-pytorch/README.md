@@ -36,3 +36,4 @@
 - [Dropout Regression](dropout-regression.ipynb)
 - [Initialization with same weights](initialization-with-same-weights.ipynb)
 - [Different Parameter Initialization](different-parameter-initialization.ipynb)
+- [He Parameter Initialization](he-parameter-initialization.ipynb)
