@@ -38,3 +38,4 @@
 - [Different Parameter Initialization](different-parameter-initialization.ipynb)
 - [He Parameter Initialization](he-parameter-initialization.ipynb)
 - [Momentum with Different Polynomials](momentum-with-polynomial-functions.ipynb)
+- [Neural Network with Momentum](neural-network-with-momentum.ipynb)
