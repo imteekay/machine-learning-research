@@ -39,3 +39,4 @@
 - [He Parameter Initialization](he-parameter-initialization.ipynb)
 - [Momentum with Different Polynomials](momentum-with-polynomial-functions.ipynb)
 - [Neural Network with Momentum](neural-network-with-momentum.ipynb)
+- [Batch Normalization](batch-normalization.ipynb)
