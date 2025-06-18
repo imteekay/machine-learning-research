@@ -41,3 +41,4 @@
 - [Neural Network with Momentum](neural-network-with-momentum.ipynb)
 - [Batch Normalization](batch-normalization.ipynb)
 - [Convolution Neural Network](convolution-neural-network.ipynb)
+- [Activation Functions and Max Pooling in CNN](activation-functions-and-max-pooling-in-cnn.ipynb)
