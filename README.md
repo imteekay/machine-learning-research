@@ -513,6 +513,8 @@
 - [ML Researcher at Borealis AI](careers/ml-researcher-borealis-ai.pdf)
 - [Crushing your interviews for Data Science and Machine Learning Engineering roles](https://building.nubank.com.br/crushing-your-interviews-for-data-science-and-machine-learning-engineering-roles-8-practical-tips)
 - [Research Scientist, Health AI — OpenAI](careers/research-scientist-health-ai-openaI.pdf)
+- [Senior ML Engineer — Apple](https://jobs.apple.com/en-us/details/200609128/aiml-ml-engineer)
+- [ML Engineer — Apple](https://jobs.apple.com/en-us/details/200597769/aiml-ml-engineer)
 
 ## People
 
