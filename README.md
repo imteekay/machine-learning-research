@@ -515,6 +515,7 @@
 - [Research Scientist, Health AI — OpenAI](careers/research-scientist-health-ai-openaI.pdf)
 - [Senior ML Engineer — Apple](https://jobs.apple.com/en-us/details/200609128/aiml-ml-engineer)
 - [ML Engineer — Apple](https://jobs.apple.com/en-us/details/200597769/aiml-ml-engineer)
+- [ML Protein Design](careers/machine-learning-researcher-in-protein-design.pdf)
 
 ## People
 
