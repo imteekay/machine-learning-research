@@ -236,6 +236,7 @@
 - [Deep Learning for Data Science (DL4DS)](https://dl4ds.github.io/sp2025/lectures)
 - [Recurrent Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
 - [Deep Learning with PyTorch](https://www.coursera.org/learn/advanced-deep-learning-with-pytorch)
+- [Geometric Deep Learning](https://geometricdeeplearning.com)
 
 ### Deep Reinforcement Learning
 
