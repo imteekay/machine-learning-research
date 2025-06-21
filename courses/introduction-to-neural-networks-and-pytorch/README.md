@@ -43,3 +43,4 @@
 - [Convolution Neural Network](convolution-neural-network.ipynb)
 - [Activation Functions and Max Pooling in CNN](activation-functions-and-max-pooling-in-cnn.ipynb)
 - [Multiple Channel Convolution](multiple-channel-convolution.ipynb)
+- [Simple Convolutional Neural Network](simple-convolutional-neural-network.ipynb)
