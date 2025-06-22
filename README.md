@@ -237,6 +237,7 @@
 - [Recurrent Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
 - [Deep Learning with PyTorch](https://www.coursera.org/learn/advanced-deep-learning-with-pytorch)
 - [Geometric Deep Learning](https://geometricdeeplearning.com)
+- [A Generalization of Transformer Networks to Graphs](https://arxiv.org/pdf/2012.09699)
 
 ### Deep Reinforcement Learning
 
