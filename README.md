@@ -407,6 +407,7 @@
 - [A review of multimodal deep learning methods for genomic-enabled prediction in plant breeding](https://academic.oup.com/genetics/article/228/4/iyae161/7876340)
 - [Deep Generative Models for Drug Design and Response](https://arxiv.org/pdf/2109.06469)
 - [So where are we with deep learning for biochem?](https://www.ladanuzhna.xyz/writing/deep-learning-for-biochem)
+- [A review of transformers in drug discovery and beyond](https://www.sciencedirect.com/science/article/pii/S2095177924001783)
 
 ### Databases
 
