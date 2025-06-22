@@ -608,6 +608,7 @@
 - [Simon Kohl](https://www.simonkohl.com)
 - [Karina Nguyen](https://karinanguyen.com)
 - [Yehlin Cho](https://sites.google.com/view/yehlincho/home)
+- [Lada Nuzhna](https://www.ladanuzhna.xyz)
 
 ## Research & Laboratories
 
