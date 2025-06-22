@@ -405,6 +405,7 @@
 - [Transformer Architecture and Attention Mechanisms in Genome Data Analysis: A Comprehensive Review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10376273)
 - [Deep Learning for Genomics: From Early Neural Nets to Modern Large Language Models](https://www.mdpi.com/1422-0067/24/21/15858)
 - [A review of multimodal deep learning methods for genomic-enabled prediction in plant breeding](https://academic.oup.com/genetics/article/228/4/iyae161/7876340)
+- [Deep Generative Models for Drug Design and Response](https://arxiv.org/pdf/2109.06469)
 
 ### Databases
 
