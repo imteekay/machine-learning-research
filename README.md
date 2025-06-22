@@ -238,6 +238,7 @@
 - [Deep Learning with PyTorch](https://www.coursera.org/learn/advanced-deep-learning-with-pytorch)
 - [Geometric Deep Learning](https://geometricdeeplearning.com)
 - [A Generalization of Transformer Networks to Graphs](https://arxiv.org/pdf/2012.09699)
+  - [Video Lecture](https://www.youtube.com/watch?v=h-_HNeBmaaU&t=237s)
 
 ### Deep Reinforcement Learning
 
