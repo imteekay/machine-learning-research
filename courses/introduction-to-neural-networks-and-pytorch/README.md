@@ -46,3 +46,4 @@
 - [Simple Convolutional Neural Network](simple-convolutional-neural-network.ipynb)
 - [CNN for small image](cnn-for-small-image.ipynb)
 - [Convolutional Neural Network with Batch-Normalization](convolutional-neural-network-with-batch-normalization.ipynb)
+- [Convolutional Neural Network for Anime Image Class](convolutional-neural-network-for-anime-image-class.ipynb)
