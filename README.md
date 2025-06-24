@@ -191,6 +191,7 @@
 ### Deep Learning
 
 - [Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning)
+- [MIT Introduction to Deep Learning](https://introtodeeplearning.com)
 - [Language Modeling from Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
 - [Deep Learning Book](http://www.deeplearningbook.org)
 - [fast.ai vs. deeplearning.ai](https://medium.com/@markryan_69718/learning-deep-learning-fast-ai-vs-deeplearning-ai-34f9c42cf701)
