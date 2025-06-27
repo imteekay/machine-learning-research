@@ -581,3 +581,6 @@ def rnn_forward(x, a0, parameters):
 - Featurized word embeddings: make associations, relationships to build similarity among all words.
   - e.g. apple and oragen can have a high correlation when it comes to the fruits "feature"
   - Use the t-sne to group data points into positions and build clusters. Each cluster has many similarities. We can plot this into a graph to see the groups in the featurized word embeddings
+- In word embedding, it uses feature representations to measure similarity to reason and compare
+  - e.g. for man -> woman, what's the missing word for king -> ?. Based on the feature similarities, the missing word is queen
+  - It uses the cosine similarity to measure the similarity of these vectors
