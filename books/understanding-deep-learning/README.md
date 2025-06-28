@@ -584,3 +584,15 @@ def rnn_forward(x, a0, parameters):
 - In word embedding, it uses feature representations to measure similarity to reason and compare
   - e.g. for man -> woman, what's the missing word for king -> ?. Based on the feature similarities, the missing word is queen
   - It uses the cosine similarity to measure the similarity of these vectors
+- The primary purpose of an embedding matrix is to transform sparse, high-dimensional representations of words (like one-hot encodings) into dense, lower-dimensional, and more meaningful continuous vector representations
+  - Capturing Relationships
+  - Reducing Dimensionality
+  - Improved Generalization
+
+![](embedding-matrix.png)
+
+The embedding matrix is a lookup table that stores vector representations for words. In this case, 300 features for 10,000 words
+
+- E (300, 10,000): embedding matrix
+- O₆₂₅₇ (10,000, 1): one hot encoding for the word orange on the index 6257
+- The product of this multiplication is e₆₂₅₇ (300, 1)
