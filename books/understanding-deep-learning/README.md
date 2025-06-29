@@ -595,4 +595,4 @@ The embedding matrix is a lookup table that stores vector representations for wo
 
 - E (300, 10,000): embedding matrix
 - O₆₂₅₇ (10,000, 1): one hot encoding for the word orange on the index 6257
-- The product of this multiplication is e₆₂₅₇ (300, 1)
+- The product of this multiplication is e₆₂₅₇ (300, 1), also called word embedding
