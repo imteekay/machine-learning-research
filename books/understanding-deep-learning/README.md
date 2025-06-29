@@ -596,3 +596,11 @@ The embedding matrix is a lookup table that stores vector representations for wo
 - E (300, 10,000): embedding matrix
 - O₆₂₅₇ (10,000, 1): one hot encoding for the word orange on the index 6257
 - The product of this multiplication is e₆₂₅₇ (300, 1), also called word embedding
+
+An example of word embedding usage is to be build a language model that predicts the next token for a given sentence
+
+- Each word is transformed into a word embedding `e` through the process of the product of the one hot encoding `O` and the embedding matrix `E`
+- The input of the network is all the word embedding in the sentence
+- The model uses a softmax activation function to compute the probability of all possible tokens and output the best prediction
+
+![](neural-language-model.png)
