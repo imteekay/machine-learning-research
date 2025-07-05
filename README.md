@@ -45,10 +45,10 @@
     - [Meta](#meta)
     - [Central Resources](#central-resources)
     - [Science: Q\&A](#science-qa)
-  - [Projects](#projects)
   - [Careers](#careers)
     - [Interview Prep](#interview-prep)
     - [Jobs](#jobs)
+  - [Projects](#projects)
   - [People](#people)
   - [Research \& Laboratories](#research--laboratories)
   - [License](#license)
@@ -511,11 +511,6 @@
 - [How can I contribute to cancer research as a computer engineering student if I have basic knowledge in artificial Intelligence?](https://www.quora.com/How-can-I-contribute-to-cancer-research-as-a-computer-engineering-student-if-I-have-basic-knowledge-in-artificial-Intelligence)
 - [What kind of knowledge gaps in molecular biology make cancer a big problem for researchers?](https://www.quora.com/What-kind-of-knowledge-gaps-in-molecular-biology-make-cancer-a-big-problem-for-researchers)
 
-## Projects
-
-- [Breast Cancer Prediction: Predicting whether breast cancer tumors are malignant or benign](https://github.com/imteekay/breast-cancer-prediction)
-
-
 ## Careers
 
 ### Interview Prep
@@ -533,6 +528,10 @@
 - [Senior ML Engineer — Apple](https://jobs.apple.com/en-us/details/200609128/aiml-ml-engineer)
 - [ML Engineer — Apple](https://jobs.apple.com/en-us/details/200597769/aiml-ml-engineer)
 - [ML Protein Design](careers/machine-learning-researcher-in-protein-design.pdf)
+
+## Projects
+
+- [Breast Cancer Prediction: Predicting whether breast cancer tumors are malignant or benign](https://github.com/imteekay/breast-cancer-prediction)
 
 ## People
 
