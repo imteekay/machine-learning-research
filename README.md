@@ -518,6 +518,7 @@
 
 - [How I Prepared for DeepMind and Google AI Research Internship Interviews in 2019](https://davidstutz.de/how-i-prepared-for-deepmind-and-google-ai-research-internship-interviews-in-2019)
 - [65 Machine Learning Interview Questions](https://github.com/andrewekhalel/MLQuestions)
+- [Data Science Interview Questions Answers](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers)
 
 ## Careers
 
