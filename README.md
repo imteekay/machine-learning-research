@@ -46,8 +46,9 @@
     - [Central Resources](#central-resources)
     - [Science: Q\&A](#science-qa)
   - [Projects](#projects)
-  - [Interview Prep](#interview-prep)
   - [Careers](#careers)
+    - [Interview Prep](#interview-prep)
+    - [Jobs](#jobs)
   - [People](#people)
   - [Research \& Laboratories](#research--laboratories)
   - [License](#license)
@@ -514,14 +515,17 @@
 
 - [Breast Cancer Prediction: Predicting whether breast cancer tumors are malignant or benign](https://github.com/imteekay/breast-cancer-prediction)
 
-## Interview Prep
+
+## Careers
+
+### Interview Prep
 
 - [How I Prepared for DeepMind and Google AI Research Internship Interviews in 2019](https://davidstutz.de/how-i-prepared-for-deepmind-and-google-ai-research-internship-interviews-in-2019)
 - [65 Machine Learning Interview Questions](https://github.com/andrewekhalel/MLQuestions)
 - [Data Science Interview Questions Answers](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers)
 - [Machine Learning Interviews](https://github.com/khangich/machine-learning-interview)
 
-## Careers
+### Jobs
 
 - [ML Researcher at Borealis AI](careers/ml-researcher-borealis-ai.pdf)
 - [Crushing your interviews for Data Science and Machine Learning Engineering roles](https://building.nubank.com.br/crushing-your-interviews-for-data-science-and-machine-learning-engineering-roles-8-practical-tips)
