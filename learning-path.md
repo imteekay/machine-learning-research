@@ -114,3 +114,7 @@
   - [ ] [Data Analysis for Life Sciences](https://www.edx.org/certificates/professional-certificate/harvardx-data-analysis-for-life-sciences)
   - [ ] [Data Analysis for Genomics](https://www.edx.org/certificates/professional-certificate/harvardx-data-analysis-for-genomics)
   - [ ] [Using Python for Research](https://www.edx.org/learn/python/harvard-university-using-python-for-research)
+- [ ] [[Course] Deep Learning for Healthcare Specialization](https://www.coursera.org/specializations/deep-learning-healthcare): [labs](https://github.com/siripragadashashank/UIUC_Deep_Learning_Healthcare_Specialization)
+  - [ ] [Health Data Science Foundation](https://www.coursera.org/learn/health-data-science-foundation)
+  - [ ] [Deep Learning Methods for Healthcare](https://www.coursera.org/learn/deep-learning-methods-healthcare)
+  - [ ] [Advanced Deep Learning Methods for Healthcare](https://www.coursera.org/learn/advanced-deep-learning-methods-healthcare)
