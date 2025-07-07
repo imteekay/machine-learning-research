@@ -604,3 +604,21 @@ An example of word embedding usage is to be build a language model that predicts
 - The model uses a softmax activation function to compute the probability of all possible tokens and output the best prediction
 
 ![](neural-language-model.png)
+
+## Transformers
+
+**Encoder**: Feedforward after the multi-head attention in the encoder
+
+- Non-linearity and Feature Transformation: While the multi-head attention mechanism effectively captures relationships between words (contextual information), it's primarily a weighted sum. The feedforward network introduces non-linearity, allowing the model to learn more complex patterns and transformations of the attention outputs. It acts as a sub-layer that processes each position independently and identically.
+- Enriching Representation: After the self-attention layer has aggregated information from all other words based on their relevance, the feedforward network can further refine and enrich this contextual representation for each word. It essentially applies a more traditional neural network processing step to the features extracted by the attention mechanism. This allows the model to learn higher-level abstract features from the attention-weighted inputs.
+
+**Positional Encoding**: The purpose of positional encoding is:
+
+- Injecting Order Information: The core self-attention mechanism in the Transformer is inherently agnostic to the order of words in a sequence. If you shuffle the input words, the attention outputs (without positional encoding) would remain the same, because attention simply calculates relationships based on content. However, word order is critical for understanding language (e.g., "dog bites man" vs. "man bites dog").
+- Unique Positional Signature: Positional encodings provide a unique "signature" for each position in the sequence. These encodings are added directly to the word embeddings at the input. By doing so, the model's input for each word now contains information about both its semantic meaning and its position within the sentence.
+- Enabling Positional Awareness: This positional information allows the attention mechanism to implicitly learn to distinguish between words based on their position relative to others, even though the attention calculation itself doesn't explicitly use position. For example, the model can learn that words at the beginning of a sentence might play a different role than words at the end.
+
+**Decoder**: two layers of multi-head attention
+
+- The first attention layer in the decoder provides "what has been translated so far" context, and t
+- The second attention layer provides "what was in the original source sentence" context, allowing the decoder to effectively combine both to generate an accurate translation
