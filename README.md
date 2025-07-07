@@ -622,6 +622,7 @@
 - [Karina Nguyen](https://karinanguyen.com)
 - [Yehlin Cho](https://sites.google.com/view/yehlincho/home)
 - [Lada Nuzhna](https://www.ladanuzhna.xyz)
+- [Valerie Chen](https://valeriechen.github.io)
 
 ## Research & Laboratories
 
