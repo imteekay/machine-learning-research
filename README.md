@@ -243,6 +243,7 @@
 - [A Generalization of Transformer Networks to Graphs](https://arxiv.org/pdf/2012.09699)
   - [Video Lecture](https://www.youtube.com/watch?v=h-_HNeBmaaU&t=237s)
 - [Transformers are Graph Neural Networks](https://arxiv.org/pdf/2506.22084)
+- [Stanford CS25 - Transformers United](https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM)
 
 ### Deep Reinforcement Learning
 
