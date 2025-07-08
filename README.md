@@ -244,6 +244,7 @@
   - [Video Lecture](https://www.youtube.com/watch?v=h-_HNeBmaaU&t=237s)
 - [Transformers are Graph Neural Networks](https://arxiv.org/pdf/2506.22084)
 - [Stanford CS25 - Transformers United](https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM)
+- [Introduction to Transformers w/ Andrej Karpathy](https://www.youtube.com/watch?v=XfpMkf4rD6E)
 
 ### Deep Reinforcement Learning
 
