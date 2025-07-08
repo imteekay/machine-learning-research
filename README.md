@@ -247,7 +247,6 @@
 - [Introduction to Transformers w/ Andrej Karpathy](https://www.youtube.com/watch?v=XfpMkf4rD6E)
 - [Stanford CS25: V4 I Overview of Transformers](https://www.youtube.com/watch?v=fKMB5UlVY1E&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=27)
 - [How I Learned to Stop Worrying and Love the Transformer](https://www.youtube.com/watch?v=1GbDTTK3aR4&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=22)
-- [Biomedical Transformers](https://www.youtube.com/watch?v=nz7_wg5iOlA&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=18)
 - [Visualizing transformers and attention](https://www.youtube.com/watch?v=KJtZARuO3JY)
 
 ### Deep Reinforcement Learning
@@ -421,6 +420,7 @@
 - [So where are we with deep learning for biochem?](https://www.ladanuzhna.xyz/writing/deep-learning-for-biochem)
 - [A review of transformers in drug discovery and beyond](https://www.sciencedirect.com/science/article/pii/S2095177924001783)
 - [Transformer Architecture and Attention Mechanisms in Genome Data Analysis: A Comprehensive Review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10376273)
+- [Biomedical Transformers](https://www.youtube.com/watch?v=nz7_wg5iOlA&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=18)
 
 ### Databases
 
