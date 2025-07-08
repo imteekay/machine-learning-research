@@ -525,15 +525,18 @@
 - [65 Machine Learning Interview Questions](https://github.com/andrewekhalel/MLQuestions)
 - [Data Science Interview Questions Answers](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers)
 - [Machine Learning Interviews](https://github.com/khangich/machine-learning-interview)
+- [Crushing your interviews for Data Science and Machine Learning Engineering roles](https://building.nubank.com.br/crushing-your-interviews-for-data-science-and-machine-learning-engineering-roles-8-practical-tips)
 
 ### Jobs
 
 - [ML Researcher at Borealis AI](careers/ml-researcher-borealis-ai.pdf)
-- [Crushing your interviews for Data Science and Machine Learning Engineering roles](https://building.nubank.com.br/crushing-your-interviews-for-data-science-and-machine-learning-engineering-roles-8-practical-tips)
 - [Research Scientist, Health AI — OpenAI](careers/research-scientist-health-ai-openaI.pdf)
-- [Senior ML Engineer — Apple](https://jobs.apple.com/en-us/details/200609128/aiml-ml-engineer)
-- [ML Engineer — Apple](https://jobs.apple.com/en-us/details/200597769/aiml-ml-engineer)
+- [ML Engineer — Apple](careers/ml-engineer-apple.pdf)
 - [ML Protein Design](careers/machine-learning-researcher-in-protein-design.pdf)
+- [Machine Learning Scientist - Computational Biology - Deep Genomics](careers/machine-learning-scientist-deep-genomics.pdf)
+- [(Senior) Machine Learning Scientist, AI Foundation Model Specialist - Deep Genomics](careers/machine-learning-scientist-ai-foundation-model-deep-genomics.pdf)
+- [(Senior) Principal Scientist, Computational / Systems Biology - Deep Genomics](careers/computational-systems-biology-deep-genomics.pdf)
+- [(Senior) Research Scientist - Statistical Genetics - Deep Genomics](careers/research-scientist-deep-genomics.pdf)
 
 ## Projects
 
