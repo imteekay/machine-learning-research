@@ -248,6 +248,7 @@
 - [Stanford CS25: V4 I Overview of Transformers](https://www.youtube.com/watch?v=fKMB5UlVY1E&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=27)
 - [How I Learned to Stop Worrying and Love the Transformer](https://www.youtube.com/watch?v=1GbDTTK3aR4&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=22)
 - [Biomedical Transformers](https://www.youtube.com/watch?v=nz7_wg5iOlA&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=18)
+- [Visualizing transformers and attention](https://www.youtube.com/watch?v=KJtZARuO3JY)
 
 ### Deep Reinforcement Learning
 
