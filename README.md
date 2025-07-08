@@ -246,6 +246,7 @@
 - [Stanford CS25 - Transformers United](https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM)
 - [Introduction to Transformers w/ Andrej Karpathy](https://www.youtube.com/watch?v=XfpMkf4rD6E)
 - [Stanford CS25: V4 I Overview of Transformers](https://www.youtube.com/watch?v=fKMB5UlVY1E&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=27)
+- [How I Learned to Stop Worrying and Love the Transformer](https://www.youtube.com/watch?v=1GbDTTK3aR4&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=22)
 
 ### Deep Reinforcement Learning
 
