@@ -7,4 +7,7 @@
 
 ## Type of questions
 
+### Model Training
+
 - Tell me about the bias-variance trade-off
+- What is L1 versus L2 regularization?
