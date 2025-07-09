@@ -160,6 +160,7 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - As the lambda decreases, the variance gets higher
     - L1 (Lasso): shrinks the model parameters toward zero
     - L2 (Ridge Regression): add a penalty term to the objective function (loss function) with the intention of keeping the mode parameters smaller and prevent overfitting
+    - Elastic net: a combination of L1 and L2 techniques
 - Establishing a baseline level of performance
   - Human error (or competing algorithm or guess based on prior experience) as the baseline vs Training Error vs Cross validation error: analyse gaps between these errors
   - High variance: 0.2% gap between baseline and training / 4% gap between training and cross-validation (overfitting to the training data)
