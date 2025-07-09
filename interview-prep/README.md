@@ -7,6 +7,10 @@
 
 ## Type of questions
 
+### Pre-processing
+
+- How do you deal with the challenges that come with an imbalanced dataset?
+
 ### Model Training
 
 - Tell me about the bias-variance trade-off
