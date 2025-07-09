@@ -309,12 +309,14 @@ def r2_score(Y_true, Y_pred):
   - Decision trees work well in tabular (structured) data but recommended for unstructured data (images, audio, text)
   - Fast and good interpretability
   - In bagging, the trees are grown independently on random samples of the observations. Consequently, the trees tend to be quite similar to each other. Thus, bagging can get caught in local optima and can fail to thoroughly explore the model space.
+    - Bagging trains multiple models on different subsets of the training data and combines their predictions to make a final prediction.
   - In random forests, the trees are once again grown independently on random samples of the observations. However, each split on each tree is performed using a random subset of the features, thereby decorrelating the trees, and leading to a more thorough exploration of model space relative to bagging.
     - For B (B = number of trees to be generated), use sampling with replacement to create a new subset, and train a decision tree on the new dataset
     - For big Bs, it won't hurt but will have diminishing returns
     - In the sampling with replacement, it chooses k features out of n (total number of features)
       - k = √n is a very common and often effective default value for k
   - In boosting, we only use the original data, and do not draw any random samples. The trees are grown successively, using a “slow” learning approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
+    - Boosting trains a series of models where each model tries to correct the mistakes made by the previous model. The final prediction is made by all the models.
     - Similar to random forest, but instead of picking from all m examples, make it increase the weight for misclassified examples from previously trained trees and decrease the weight for correctly classified examples
     - The misclassified examples means that the tree algorithm is not doing quite well for these examples and the model should be training more to correctly classify them
   - In Bayesian Additive Regression Trees (BART), we once again only make use of the original data, and we grow the trees successively. However, each tree is perturbed in order to avoid local minima and achieve a more thorough exploration of the model space.
