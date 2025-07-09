@@ -537,6 +537,7 @@
 - [(Senior) Machine Learning Scientist, AI Foundation Model Specialist - Deep Genomics](careers/machine-learning-scientist-ai-foundation-model-deep-genomics.pdf)
 - [(Senior) Principal Scientist, Computational / Systems Biology - Deep Genomics](careers/computational-systems-biology-deep-genomics.pdf)
 - [(Senior) Research Scientist - Statistical Genetics - Deep Genomics](careers/research-scientist-deep-genomics.pdf)
+- [Research Scientist (Computational Biology, Cells and Tissues) — Isomorphic Labs](careers/research-scientist-computational-biolog-isomorphic-labs.pdf)
 
 ## Projects
 
