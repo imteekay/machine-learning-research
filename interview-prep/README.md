@@ -16,3 +16,7 @@
 - Tell me about the bias-variance trade-off
 - What is L1 versus L2 regularization?
   - Follow up question: What other types of regularization could work?
+
+### Models
+
+- Explain boosting and bagging and what they can help with
