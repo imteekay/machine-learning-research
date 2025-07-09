@@ -10,6 +10,7 @@
     - [Data Leakage](#data-leakage)
     - [Encoding Categorical Variables](#encoding-categorical-variables)
     - [Splitting Data \& Cross Validation](#splitting-data--cross-validation)
+    - [Handling imbalanced datasets](#handling-imbalanced-datasets)
   - [Feature Engineering](#feature-engineering)
     - [PCA](#pca)
   - [Model Training](#model-training)
@@ -39,6 +40,7 @@
 - **Encoding Categorical Variables**: Converting categorical data into numerical form (e.g., one-hot encoding, label encoding).
 - **Handling Outliers**: Removing or transforming extreme values that may distort the model.
 - **Splitting Data & Cross Validation**: Dividing data into training, validation, and test sets.
+- **Handling imbalanced datasets**: Using transformations and other techniques.
 
 ### Handling Missing Data
 
@@ -101,6 +103,13 @@
   - input `X` and `y`
   - cv: number of folds in cross validation
   - [scoring](https://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter): model evaluation rules, e.g. mae, accuracy, recall, mse, etc
+
+### Handling imbalanced datasets
+
+- data augmentation: generating more examples for the ML model to train on (e.g. rotating images)
+- oversampling: increase the number of data points of a minority class via synthetic generation
+- undersampling: reduces examples from the majority class to balance the number of data points
+- ensemble methods: combine multiple individual models to produce a single, more robust, and often more accurate predictive model
 
 ## Feature Engineering
 
