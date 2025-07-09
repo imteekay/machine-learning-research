@@ -146,6 +146,7 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - It doesn't matter if we collect more data, the model is too simple and won't learn more
   - High variance: overfit
     - Complex model
+    - High variability of the model
     - The training cost will be low and the cross validation and test costs will be high
     - Increasing the training size can help training and cross validation error
   - Balanced bias/variance: optimal
