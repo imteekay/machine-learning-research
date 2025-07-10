@@ -20,3 +20,4 @@
 ### Models
 
 - Explain boosting and bagging and what they can help with
+- What are common algorithms in supervised learning?
