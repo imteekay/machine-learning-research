@@ -241,6 +241,12 @@ def r2_score(Y_true, Y_pred):
 
 ## Machine Learning Models
 
+- Linear Regression
+- Logistic Regression
+- Support Vector Machines
+- Decision Trees: XGBoost, LightGBM, CatBoost
+- Neural Networks
+
 ### Linear Regression
 
 - [ ] How a linear regression behaves
