@@ -241,7 +241,7 @@ def r2_score(Y_true, Y_pred):
 
 ## Machine Learning Models
 
-Supervised Learning
+**Supervised Learning**: Labeled data, finding the right answer
 
 - Linear Regression
 - Logistic Regression
@@ -249,7 +249,7 @@ Supervised Learning
 - Decision Trees: XGBoost, LightGBM, CatBoost
 - Neural Networks
 
-Unsupervised Learning
+**Unsupervised Learning**: Unlabeled data, finding patterns
 
 - Clustering: k-means
 - Dimensionality Reduction: PCA
