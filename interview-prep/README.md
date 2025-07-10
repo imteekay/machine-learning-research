@@ -21,3 +21,5 @@
 
 - Explain boosting and bagging and what they can help with
 - What are common algorithms in supervised learning?
+-  What are some common algorithms used in unsupervised learning? How do they work?
+-  What are the differences between supervised and unsupervised learning?
