@@ -343,6 +343,8 @@ def r2_score(Y_true, Y_pred):
   - Fast and good interpretability
   - In bagging, the trees are grown independently on random samples of the observations. Consequently, the trees tend to be quite similar to each other. Thus, bagging can get caught in local optima and can fail to thoroughly explore the model space.
     - Bagging trains multiple models on different subsets of the training data and combines their predictions to make a final prediction.
+    - In classification problems, it uses the mode for the most common label
+    - In regression problems, it uses the average of all predictions
   - In random forests, the trees are once again grown independently on random samples of the observations. However, each split on each tree is performed using a random subset of the features, thereby decorrelating the trees, and leading to a more thorough exploration of model space relative to bagging.
     - For B (B = number of trees to be generated), use sampling with replacement to create a new subset, and train a decision tree on the new dataset
     - For big Bs, it won't hurt but will have diminishing returns
