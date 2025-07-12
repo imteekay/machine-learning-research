@@ -6,6 +6,7 @@
   - [Table of Contents](#table-of-contents)
   - [Pre-processing](#pre-processing)
     - [Handling Missing Data](#handling-missing-data)
+    - [Data Cleaning](#data-cleaning)
     - [Scaling](#scaling)
     - [Data Leakage](#data-leakage)
     - [Encoding Categorical Variables](#encoding-categorical-variables)
@@ -47,6 +48,13 @@
 - Dropping columns with missing values or adding values by infering from the dataset or using default values for a given feature
 - Use `SimpleImputer` to fill missing values with the mean
 - **Insight**: understand the data so you can reason what's the best decision — using the mean value, 0 or dropping the column
+
+### Data Cleaning
+
+- Removing duplicates
+- Fixing incorrect labels
+- Correcting inconsistencies
+- Formatting the values (e.g. using float when the data is object)
 
 ### Scaling
 
