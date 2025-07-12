@@ -8,7 +8,7 @@
     - [Understanding the Data:](#understanding-the-data)
     - [Handling Missing Data](#handling-missing-data)
     - [Data Cleaning](#data-cleaning)
-    - [Scaling](#scaling)
+    - [Scaling/Normalization](#scalingnormalization)
     - [Data Leakage](#data-leakage)
     - [Encoding Categorical Variables](#encoding-categorical-variables)
     - [Splitting Data \& Cross Validation](#splitting-data--cross-validation)
@@ -64,8 +64,11 @@
 - Correcting inconsistencies
 - Formatting the values (e.g. using float when the data is object)
 
-### Scaling
+### Scaling/Normalization
 
+- Transformation (via `FunctionTransformer(np.log1p)` for example) is done to adjust the distribution of the dataset
+  - e.g. when there's more houses with low prices, it will be difficult to the model learns from houses with high prices (low volume) and predict on the test data
+- Standardizing or normalizing numerical features to ensure consistency
 - Use separate scalers for X and Y
   - X and Y have different distributions (different scales and meanings)
   - You can scale Y if it's a regression problem. Don't scale if it's a classification problem, since it's categorical
