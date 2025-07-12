@@ -5,6 +5,7 @@
 - [Machine Learning](#machine-learning)
   - [Table of Contents](#table-of-contents)
   - [Pre-processing](#pre-processing)
+    - [Understanding the Data:](#understanding-the-data)
     - [Handling Missing Data](#handling-missing-data)
     - [Data Cleaning](#data-cleaning)
     - [Scaling](#scaling)
@@ -34,6 +35,7 @@
 
 ## Pre-processing
 
+- **Understanding the Data**: Graph the data, distribution, domain knowledge
 - **Handling Missing Data**: Filling missing values (e.g., using mean, median, mode, or interpolation).
 - **Data Cleaning**: Removing duplicates, fixing incorrect labels, correcting inconsistencies.
 - **Scaling/Normalization**: Standardizing or normalizing numerical features to ensure consistency.
@@ -42,6 +44,12 @@
 - **Handling Outliers**: Removing or transforming extreme values that may distort the model.
 - **Splitting Data & Cross Validation**: Dividing data into training, validation, and test sets.
 - **Handling imbalanced datasets**: Using transformations and other techniques.
+
+### Understanding the Data:
+
+- Graph the data to analyse the distribution: find if the dataset is asymetrical and if it will generate a bias
+- Domain knowledge about the data: understand its features, default values, missing values, the importance or unimportance of each feature
+- Correlations: multicollinearity (independent variables in a regression model are highly correlated)
 
 ### Handling Missing Data
 
