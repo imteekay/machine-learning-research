@@ -641,6 +641,7 @@
 - [Jian Zhou](https://zhoulab.io)
 - [Maria Chikina](https://chikinalab.org)
 - [Sergey Ovchinnikov](https://www.solab.org)
+- [James Zou](https://www.james-zou.com)
 
 ## Research & Laboratories
 
