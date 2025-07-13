@@ -640,6 +640,7 @@
 - [Valerie Chen](https://valeriechen.github.io)
 - [Jian Zhou](https://zhoulab.io)
 - [Maria Chikina](https://chikinalab.org)
+- [Sergey Ovchinnikov](https://www.solab.org)
 
 ## Research & Laboratories
 
