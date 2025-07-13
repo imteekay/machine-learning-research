@@ -638,6 +638,7 @@
 - [Yehlin Cho](https://sites.google.com/view/yehlincho/home)
 - [Lada Nuzhna](https://www.ladanuzhna.xyz)
 - [Valerie Chen](https://valeriechen.github.io)
+- [Jian Zhou](https://zhoulab.io)
 
 ## Research & Laboratories
 
