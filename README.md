@@ -639,6 +639,7 @@
 - [Lada Nuzhna](https://www.ladanuzhna.xyz)
 - [Valerie Chen](https://valeriechen.github.io)
 - [Jian Zhou](https://zhoulab.io)
+- [Maria Chikina](https://chikinalab.org)
 
 ## Research & Laboratories
 
