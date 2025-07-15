@@ -548,6 +548,7 @@
 
 - [Breast Cancer Prediction: Predicting whether breast cancer tumors are malignant or benign](https://github.com/imteekay/breast-cancer-prediction)
 - [House Price Regression: Model prediction for house prices](projects/regression/house-price-regression-model.ipynb)
+- [SVC/Decision Tree Classifiers](projects/classification/svc-decision-tree-classifiers.ipynb)
 
 ## People
 
