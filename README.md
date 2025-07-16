@@ -645,6 +645,7 @@
 - [Sergey Ovchinnikov](https://www.solab.org)
 - [James Zou](https://www.james-zou.com)
 - [Hanxue Gu](https://guhanxue.github.io)
+- [Chaitanya K. Joshi](https://www.chaitjo.com)
 
 ## Research & Laboratories
 
