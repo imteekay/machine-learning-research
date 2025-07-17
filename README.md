@@ -244,6 +244,7 @@
 - [How I Learned to Stop Worrying and Love the Transformer](https://www.youtube.com/watch?v=1GbDTTK3aR4&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=22)
 - [Visualizing transformers and attention](https://www.youtube.com/watch?v=KJtZARuO3JY)
 - [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention)
+- [A deep-dive on the entire history of deep-learning](https://github.com/adam-maj/deep-learning)
 
 ### Deep Reinforcement Learning
 
