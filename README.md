@@ -187,7 +187,6 @@
 ### Advanced Machine Learning
 
 - [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
-- [A Reinforcement Learning Guide](https://naklecha.notion.site/a-reinforcement-learning-guide)
 
 ### Deep Learning
 
@@ -259,6 +258,7 @@
 - [DeepMind Reinforcement Learning Course](https://www.youtube.com/playlist?list=PLqYmG7hTraZBKeNJ-JE_eyJHZ7XgBoAyb)
 - [An Ultra Opinionated Guide to Reinforcement Learning](https://x.com/jsuarez5341/status/1943692998975402064)
 - [Reinforcement Learning Quickstart Guide](https://x.com/jsuarez5341/status/1854855861295849793)
+- [A Reinforcement Learning Guide](https://naklecha.notion.site/a-reinforcement-learning-guide)
 
 ### PyTorch
 
