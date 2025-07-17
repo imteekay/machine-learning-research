@@ -648,6 +648,7 @@
 - [James Zou](https://www.james-zou.com)
 - [Hanxue Gu](https://guhanxue.github.io)
 - [Chaitanya K. Joshi](https://www.chaitjo.com)
+- [Adam Majmudar](https://adammaj.com)
 
 ## Research & Laboratories
 
