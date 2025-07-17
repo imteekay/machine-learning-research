@@ -20,7 +20,6 @@
     - [Data Science Fundamentals](#data-science-fundamentals)
     - [Machine Learning](#machine-learning)
     - [Support Vector Machines](#support-vector-machines)
-    - [Advanced Machine Learning](#advanced-machine-learning)
     - [Deep Learning](#deep-learning)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
     - [PyTorch](#pytorch)
@@ -175,6 +174,7 @@
 - [A Gentle Introduction to Machine Learning Theory](https://data-processing.club/theory)
 - [Stanford Intro to Machine Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
 - [ML Resources](https://www.trybackprop.com/blog/top_ml_learning_resources)
+- [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
 
 ### Support Vector Machines
 
@@ -183,10 +183,6 @@
 - [Support Vector Machines Part 3: The Radial (RBF) Kernel](https://www.youtube.com/watch?v=Qc5IyLW_hns)
 - [MIT — Learning: Support Vector Machines](https://www.youtube.com/watch?v=_PwhiWxHK8o)
 - [Support Vector Machines | Stanford CS229](https://www.youtube.com/watch?v=lDwow4aOrtg)
-
-### Advanced Machine Learning
-
-- [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
 
 ### Deep Learning
 
