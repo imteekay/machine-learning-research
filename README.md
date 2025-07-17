@@ -246,6 +246,7 @@
 - [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention)
 - [A deep-dive on the entire history of deep-learning](https://github.com/adam-maj/deep-learning)
 - [History of Deep Learning](https://github.com/saurabhaloneai/History-of-Deep-Learning)
+- [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
 
 ### Deep Reinforcement Learning
 
