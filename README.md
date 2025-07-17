@@ -549,6 +549,8 @@
 - [Breast Cancer Prediction: Predicting whether breast cancer tumors are malignant or benign](https://github.com/imteekay/breast-cancer-prediction)
 - [House Price Regression: Model prediction for house prices](projects/regression/house-price-regression-model.ipynb)
 - [SVC/Decision Tree Classifiers](projects/classification/svc-decision-tree-classifiers.ipynb)
+- [PyTorch Fundamentals](projects/pytorch/pytorch-fundamentals.ipynb)
+- [PyTorch Neural Network Classification](projects/pytorch/pytorch-neural-network-classification.ipynb)
 
 ## People
 
