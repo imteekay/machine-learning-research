@@ -50,7 +50,7 @@
 - Graph the data to analyse the distribution: find if the dataset is asymetrical and if it will generate a bias
 - Domain knowledge about the data: understand its features, default values, missing values, the importance or unimportance of each feature
 - Correlations: multicollinearity (independent variables in a regression model are highly correlated)
-- Mean, Central Limit Theorem, Confidence interval
+- Mean, Central Limit Theorem, Confidence interval (standard error)
 
 ### Handling Missing Data
 
