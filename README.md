@@ -530,6 +530,7 @@
 - [Data Science Interview Questions Answers](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers)
 - [Machine Learning Interviews](https://github.com/khangich/machine-learning-interview)
 - [Crushing your interviews for Data Science and Machine Learning Engineering roles](https://building.nubank.com.br/crushing-your-interviews-for-data-science-and-machine-learning-engineering-roles-8-practical-tips)
+- [TorchLeet: Leetcode for PyTorch](https://github.com/Exorust/TorchLeet)
 
 ### Jobs
 
