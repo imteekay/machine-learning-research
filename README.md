@@ -100,6 +100,7 @@
 - [Probability and Statistics](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V)
 - [Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en)
 - [Introduction to Statistics and Data Analysis](https://www.youtube.com/playlist?list=PLMrJAkhIeNNT14qn1c5qdL29A1UaHamjx)
+- [Probability Bootcamp](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V)
 
 ### Calculus
 
