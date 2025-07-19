@@ -15,6 +15,7 @@
     - [Optimization](#optimization)
   - [Programming](#programming)
     - [Python](#python)
+    - [Engineering](#engineering)
   - [Artificial Intelligence](#artificial-intelligence)
     - [Learning Roadmap](#learning-roadmap)
     - [Data Science Fundamentals](#data-science-fundamentals)
@@ -120,6 +121,10 @@
 ### Python
 
 - [Practical Python Programming](https://dabeaz-course.github.io/practical-python/Notes/Contents.html)
+
+### Engineering
+
+- [Introduction to Data Intensive Engineering](https://www.youtube.com/playlist?list=PLMrJAkhIeNNTv-u25xlhIyiAIV_d7vf-8)
 
 ## Artificial Intelligence
 
