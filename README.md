@@ -265,6 +265,7 @@
 - [An Ultra Opinionated Guide to Reinforcement Learning](https://x.com/jsuarez5341/status/1943692998975402064)
 - [Reinforcement Learning Quickstart Guide](https://x.com/jsuarez5341/status/1854855861295849793)
 - [A Reinforcement Learning Guide](https://naklecha.notion.site/a-reinforcement-learning-guide)
+- [Reinforcement Learning](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQe1JXNvaFvURxGY4gE9k74)
 
 ### PyTorch
 
