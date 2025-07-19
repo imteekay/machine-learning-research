@@ -182,6 +182,7 @@
 - [Stanford Intro to Machine Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
 - [ML Resources](https://www.trybackprop.com/blog/top_ml_learning_resources)
 - [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
+- [Intro to Data Science](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQV7wi9r7Kut8liLFMWQOXn)
 
 ### Support Vector Machines
 
