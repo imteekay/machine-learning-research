@@ -20,7 +20,6 @@
     - [Learning Roadmap](#learning-roadmap)
     - [Data Science Fundamentals](#data-science-fundamentals)
     - [Machine Learning](#machine-learning)
-    - [Support Vector Machines](#support-vector-machines)
     - [Deep Learning](#deep-learning)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
     - [PyTorch](#pytorch)
@@ -183,9 +182,6 @@
 - [ML Resources](https://www.trybackprop.com/blog/top_ml_learning_resources)
 - [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book)
 - [Intro to Data Science](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQV7wi9r7Kut8liLFMWQOXn)
-
-### Support Vector Machines
-
 - [Support Vector Machines Part 1 (of 3): Main Ideas](https://www.youtube.com/watch?v=efR1C6CvhmE)
 - [Support Vector Machines Part 2: The Polynomial Kernel](https://www.youtube.com/watch?v=Toet3EiSFcM)
 - [Support Vector Machines Part 3: The Radial (RBF) Kernel](https://www.youtube.com/watch?v=Qc5IyLW_hns)
