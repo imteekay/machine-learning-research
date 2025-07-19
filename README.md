@@ -99,6 +99,7 @@
 - [A complete guide to box plots](https://www.atlassian.com/data/charts/box-plot-complete-guide)
 - [Probability and Statistics](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V)
 - [Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en)
+- [Introduction to Statistics and Data Analysis](https://www.youtube.com/playlist?list=PLMrJAkhIeNNT14qn1c5qdL29A1UaHamjx)
 
 ### Calculus
 
