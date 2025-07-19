@@ -430,6 +430,7 @@
 - [Transformer Architecture and Attention Mechanisms in Genome Data Analysis: A Comprehensive Review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10376273)
 - [Biomedical Transformers](https://www.youtube.com/watch?v=nz7_wg5iOlA&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=18)
 - [Large language models for genomics](https://github.com/raphaelmourad/LLM-for-genomics-training)
+- [Data Science for Biologists](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQz4BMoGSsN8cbt8pHlokhV)
 
 ### Databases
 
