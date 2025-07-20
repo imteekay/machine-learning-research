@@ -557,6 +557,7 @@
 - [SVC/Decision Tree Classifiers](projects/classification/svc-decision-tree-classifiers.ipynb)
 - [PyTorch Fundamentals](projects/pytorch/pytorch-fundamentals.ipynb)
 - [PyTorch Neural Network Classification](projects/pytorch/pytorch-neural-network-classification.ipynb)
+- [PyTorch Computer Vision](projects/pytorch/pytorch-computer-vision.ipynb)
 
 ## People
 
