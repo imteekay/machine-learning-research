@@ -558,6 +558,7 @@
 - [PyTorch Fundamentals](projects/pytorch/pytorch-fundamentals.ipynb)
 - [PyTorch Neural Network Classification](projects/pytorch/pytorch-neural-network-classification.ipynb)
 - [PyTorch Computer Vision](projects/pytorch/pytorch-computer-vision.ipynb)
+- [PyTorch Computer Vision Exercises](projects/pytorch/pytorch-computer-vision-exercises.ipynb)
 
 ## People
 
