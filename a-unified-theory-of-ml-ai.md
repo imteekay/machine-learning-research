@@ -161,6 +161,13 @@ Which model is better? It depends on the problem at hand. If the relationship be
 
 ### Model Performance
 
+- Improving model performance and generalization
+  - Regularization
+  - Dropout
+  - More data
+  - Data augmentation
+  - Early stopping
+  - Learning rate decay
 - Prefer choosing models that have good cross-validation and test accuracy
   - The test cost estimates how well the model generalizes to new data (compared to the training cost)
   - training/cross-validation/test
@@ -175,7 +182,7 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - Simple model
     - If the cost of the training set is high, the costs of cross validation and test sets will also be high
     - It doesn't matter if we collect more data, the model is too simple and won't learn more
-  - High variance: overfit
+  - High variance: overfitting
     - Complex model
     - High variability of the model
     - The training cost will be low and the cross validation and test costs will be high
