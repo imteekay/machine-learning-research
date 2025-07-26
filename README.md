@@ -30,7 +30,7 @@
     - [Communities](#communities)
     - [Questions and Answers](#questions-and-answers)
     - [Databases](#databases)
-    - [Lists](#lists)
+    - [Meta / Lists](#meta--lists)
   - [Science](#science)
     - [Fundamentals](#fundamentals)
     - [Science](#science-1)
@@ -424,10 +424,11 @@
 
 - [Penn Machine Learning Benchmarks](https://epistasislab.github.io/pmlb)
 
-### Lists
+### Meta / Lists
 
 - [Papers on machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
 - [Papers on Protein Design using Deep Learning](https://github.com/Peldom/papers_for_protein_design_using_DL)
+- [How To Read AI Research Papers Effectively](https://www.youtube.com/watch?v=K6Wui3mn-uI)
 
 ## Science
 
