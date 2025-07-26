@@ -27,7 +27,6 @@
     - [Books](#books)
     - [Podcasts](#podcasts)
     - [Communities](#communities)
-    - [Online Courses](#online-courses)
     - [Questions and Answers](#questions-and-answers)
     - [Data Science Journey](#data-science-journey)
     - [ML/AI \& Healthcare](#mlai--healthcare)
@@ -188,6 +187,14 @@
 - [Support Vector Machines Part 3: The Radial (RBF) Kernel](https://www.youtube.com/watch?v=Qc5IyLW_hns)
 - [MIT — Learning: Support Vector Machines](https://www.youtube.com/watch?v=_PwhiWxHK8o)
 - [Support Vector Machines | Stanford CS229](https://www.youtube.com/watch?v=lDwow4aOrtg)
+- [Preprocessing for Machine Learning in Python](https://www.datacamp.com/courses/preprocessing-for-machine-learning-in-python)
+- [Computer Science for Artificial Intelligence](https://www.edx.org/professional-certificate/harvardx-computer-science-for-artifical-intelligence)
+- [Machine Learning courses](https://www.edx.org/learn/machine-learning)
+- [Machine Learning Crash Course with TensorFlow APIs](https://developers.google.com/machine-learning/crash-course)
+- [Machine Learning Stanford Course](https://www.coursera.org/learn/machine-learning)
+- [Machine Learning with Python](https://www.coursera.org/learn/machine-learning-with-python)
+- [Math for Machine Learning with Python](https://www.edx.org/learn/math/edx-math-for-machine-learning-with-python)
+- [Machine Learning with Python: from Linear Models to Deep Learning](https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-with-python-from-linear-models-to-deep-learning)
 
 ### Deep Learning
 
@@ -300,17 +307,6 @@
 - [Jean Fan lab](https://jef.works)
 - [Pranav Rajpurkar](https://pranavrajpurkar.com)
 - [The AI Health Podcast](https://twitter.com/AIHealthPodcast)
-
-### Online Courses
-
-- [Preprocessing for Machine Learning in Python](https://www.datacamp.com/courses/preprocessing-for-machine-learning-in-python)
-- [Computer Science for Artificial Intelligence](https://www.edx.org/professional-certificate/harvardx-computer-science-for-artifical-intelligence)
-- [Machine Learning courses](https://www.edx.org/learn/machine-learning)
-- [Machine Learning Crash Course with TensorFlow APIs](https://developers.google.com/machine-learning/crash-course)
-- [Machine Learning Stanford Course](https://www.coursera.org/learn/machine-learning)
-- [Machine Learning with Python](https://www.coursera.org/learn/machine-learning-with-python)
-- [Math for Machine Learning with Python](https://www.edx.org/learn/math/edx-math-for-machine-learning-with-python)
-- [Machine Learning with Python: from Linear Models to Deep Learning](https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-with-python-from-linear-models-to-deep-learning)
 
 ### Questions and Answers
 
