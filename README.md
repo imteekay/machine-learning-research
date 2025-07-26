@@ -538,6 +538,7 @@
 - [Machine Learning Interviews](https://github.com/khangich/machine-learning-interview)
 - [Crushing your interviews for Data Science and Machine Learning Engineering roles](https://building.nubank.com.br/crushing-your-interviews-for-data-science-and-machine-learning-engineering-roles-8-practical-tips)
 - [TorchLeet: Leetcode for PyTorch](https://github.com/Exorust/TorchLeet)
+- [Becoming an MLE at FAANG: What you need to know to know about MLE roles and interviews at Google, Meta, and other top companies](https://interviewing.io/blog/becoming-an-mle-at-faang-what-you-need-to-know)
 
 ### Jobs
 
