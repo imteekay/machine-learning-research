@@ -23,7 +23,6 @@
     - [Deep Learning](#deep-learning)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
     - [PyTorch](#pytorch)
-    - [Generative AI](#generative-ai)
     - [Books](#books)
     - [Podcasts](#podcasts)
     - [Communities](#communities)
@@ -259,6 +258,7 @@
 - [A deep-dive on the entire history of deep-learning](https://github.com/adam-maj/deep-learning)
 - [History of Deep Learning](https://github.com/saurabhaloneai/History-of-Deep-Learning)
 - [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
+- [Intuitions on Language Models & Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=3gb-ZkVRemQ&ab_channel=StanfordOnline)
 
 ### Deep Reinforcement Learning
 
@@ -275,10 +275,6 @@
 ### PyTorch
 
 - [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals)
-
-### Generative AI
-
-- [Intuitions on Language Models & Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=3gb-ZkVRemQ&ab_channel=StanfordOnline)
 
 ### Books
 
