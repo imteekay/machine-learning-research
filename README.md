@@ -18,7 +18,7 @@
     - [Engineering](#engineering)
   - [Artificial Intelligence](#artificial-intelligence)
     - [Learning Roadmap](#learning-roadmap)
-    - [Data Science Fundamentals](#data-science-fundamentals)
+    - [Data Science](#data-science)
     - [Machine Learning](#machine-learning)
     - [Deep Learning](#deep-learning)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
@@ -27,7 +27,6 @@
     - [Podcasts](#podcasts)
     - [Communities](#communities)
     - [Questions and Answers](#questions-and-answers)
-    - [Data Science Journey](#data-science-journey)
     - [ML/AI \& Healthcare](#mlai--healthcare)
     - [ML/AI \& Biology](#mlai--biology)
     - [Databases](#databases)
@@ -132,13 +131,14 @@
 - [Recommendations by Ilya Sutskever](https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE)
 - [The Ultimate Guide to Learning About Artificial Intelligence](https://adam-maj.medium.com/the-ultimate-guide-to-becoming-an-artificial-intelligence-expert-db5124dc8ae0)
 
-### Data Science Fundamentals
+### Data Science
 
 - [Fundamental Python Data Science Libraries: Numpy](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-1-4-58884e95c2bd)
 - [Fundamental Python Data Science Libraries: Pandas](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-2-4-fcf5fab9cdf1)
 - [Fundamental Python Data Science Libraries: Matplotlib](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-3-4-6c2aecc697a4)
 - [Fundamental Python Data Science Libraries: Scikit-Learn](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-4-4-fd8895ef85d5)
 - [Data Engineering Roadmap](https://github.com/hasbrain/data-engineer-roadmap)
+- [How to build a data science project from scratch](https://medium.freecodecamp.org/how-to-build-a-data-science-project-from-scratch-dc4f096a62a1)
 
 ### Machine Learning
 
@@ -309,10 +309,6 @@
 - [Andrew Ng's answer on "How should you start a career in Machine Learning?"](https://www.quora.com/How-should-you-start-a-career-in-Machine-Learning)
 - [How do I learn mathematics for machine learning?](https://www.quora.com/How-do-I-learn-mathematics-for-machine-learning)
 - [How do I learn machine learning?](https://www.quora.com/How-do-I-learn-machine-learning-1)
-
-### Data Science Journey
-
-- [How to build a data science project from scratch](https://medium.freecodecamp.org/how-to-build-a-data-science-project-from-scratch-dc4f096a62a1)
 
 ### ML/AI & Healthcare
 
