@@ -23,12 +23,12 @@
     - [Deep Learning](#deep-learning)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
     - [PyTorch](#pytorch)
+    - [ML/AI \& Healthcare](#mlai--healthcare)
+    - [ML/AI \& Biology](#mlai--biology)
     - [Books](#books)
     - [Podcasts](#podcasts)
     - [Communities](#communities)
     - [Questions and Answers](#questions-and-answers)
-    - [ML/AI \& Healthcare](#mlai--healthcare)
-    - [ML/AI \& Biology](#mlai--biology)
     - [Databases](#databases)
     - [Lists](#lists)
   - [Science](#science)
@@ -276,40 +276,6 @@
 
 - [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals)
 
-### Books
-
-- [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
-- [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
-- [Python Machine Learning](https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1787125939)
-- [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
-- [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
-- [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
-
-### Podcasts
-
-- [Data Science, Past, Present and Future with Hilary Mason](https://www.datacamp.com/community/podcast/data-science-past-present-and-future)
-
-### Communities
-
-- [Machine Learning Reddit](https://www.reddit.com/r/MachineLearning)
-- [NLP Reddit](https://www.reddit.com/r/LanguageTechnology)
-- [Statistics Reddit](https://www.reddit.com/r/statistics)
-- [Data Science Reddit](https://www.reddit.com/r/datascience)
-- [Machine Learning Quora Topic](https://www.quora.com/topic/Machine-Learning)
-- [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
-- [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
-- [Lee Lab of AI for bioMedical Sciences](https://suinlee.cs.washington.edu)
-- [Lab of big data and predictive analysis in healthcare](https://www.fsp.usp.br/labdaps)
-- [Jean Fan lab](https://jef.works)
-- [Pranav Rajpurkar](https://pranavrajpurkar.com)
-- [The AI Health Podcast](https://twitter.com/AIHealthPodcast)
-
-### Questions and Answers
-
-- [Andrew Ng's answer on "How should you start a career in Machine Learning?"](https://www.quora.com/How-should-you-start-a-career-in-Machine-Learning)
-- [How do I learn mathematics for machine learning?](https://www.quora.com/How-do-I-learn-mathematics-for-machine-learning)
-- [How do I learn machine learning?](https://www.quora.com/How-do-I-learn-machine-learning-1)
-
 ### ML/AI & Healthcare
 
 - [[Course] Machine Learning for Healthcare](https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-for-healthcaregit)
@@ -419,6 +385,40 @@
 - [Biomedical Transformers](https://www.youtube.com/watch?v=nz7_wg5iOlA&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=18)
 - [Large language models for genomics](https://github.com/raphaelmourad/LLM-for-genomics-training)
 - [Data Science for Biologists](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQz4BMoGSsN8cbt8pHlokhV)
+
+### Books
+
+- [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+- [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
+- [Python Machine Learning](https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1787125939)
+- [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
+- [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
+- [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
+
+### Podcasts
+
+- [Data Science, Past, Present and Future with Hilary Mason](https://www.datacamp.com/community/podcast/data-science-past-present-and-future)
+
+### Communities
+
+- [Machine Learning Reddit](https://www.reddit.com/r/MachineLearning)
+- [NLP Reddit](https://www.reddit.com/r/LanguageTechnology)
+- [Statistics Reddit](https://www.reddit.com/r/statistics)
+- [Data Science Reddit](https://www.reddit.com/r/datascience)
+- [Machine Learning Quora Topic](https://www.quora.com/topic/Machine-Learning)
+- [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
+- [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
+- [Lee Lab of AI for bioMedical Sciences](https://suinlee.cs.washington.edu)
+- [Lab of big data and predictive analysis in healthcare](https://www.fsp.usp.br/labdaps)
+- [Jean Fan lab](https://jef.works)
+- [Pranav Rajpurkar](https://pranavrajpurkar.com)
+- [The AI Health Podcast](https://twitter.com/AIHealthPodcast)
+
+### Questions and Answers
+
+- [Andrew Ng's answer on "How should you start a career in Machine Learning?"](https://www.quora.com/How-should-you-start-a-career-in-Machine-Learning)
+- [How do I learn mathematics for machine learning?](https://www.quora.com/How-do-I-learn-mathematics-for-machine-learning)
+- [How do I learn machine learning?](https://www.quora.com/How-do-I-learn-machine-learning-1)
 
 ### Databases
 
