@@ -551,6 +551,7 @@
 - [PyTorch Neural Network Classification](projects/pytorch/pytorch-neural-network-classification.ipynb)
 - [PyTorch Computer Vision](projects/pytorch/pytorch-computer-vision.ipynb)
 - [PyTorch Computer Vision Exercises](projects/pytorch/pytorch-computer-vision-exercises.ipynb)
+- [PyTorch Custom Datasets](projects/pytorch/pytorch-custom-datasets.ipynb)
 
 ## People
 
