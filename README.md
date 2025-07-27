@@ -649,6 +649,7 @@
 - [Hanxue Gu](https://guhanxue.github.io)
 - [Chaitanya K. Joshi](https://www.chaitjo.com)
 - [Adam Majmudar](https://adammaj.com)
+- [Qian Huang](https://q-hwang.github.io)
 
 ## Research & Laboratories
 
