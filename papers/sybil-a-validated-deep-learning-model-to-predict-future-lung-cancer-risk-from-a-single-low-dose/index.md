@@ -45,12 +45,12 @@
 
 ## Model Architecture
 
-A deep learning model designed for medical imaging analysis, specifically for 3D volumes. Here's a breakdown of its architecture:
+A deep learning model designed for medical imaging analysis, specifically for 3D volumes. The model is designed to handle 3D medical imaging data (like CT scans) and predict survival probabilities over multiple time points (1-5 years). It uses attention mechanisms at multiple levels to focus on relevant parts of the imaging data, both within individual slices and across the entire volume.
 
 Base Encoder:
 
 - Uses a pre-trained ResNet3D-18 (torchvision.models.video.r3d_18) as the backbone
-- This is a 3D convolutional neural network that processes volumetric medical imaging data
+- This is a 3D convolutional neural network that processes volumetric medical imaging data (LDCT scans)
 
 Multi-level Attention Pooling:
 
@@ -84,7 +84,3 @@ The model uses a complex pooling mechanism called MultiAttentionPool that combin
   - Uses dropout for regularization
   - Implements ReLU activation functions
   - Has a calibration mechanism to ensure probability estimates are well-calibrated
-
-The model is designed to handle 3D medical imaging data (like CT scans) and predict survival probabilities over multiple time points. It uses attention mechanisms at multiple levels to focus on relevant parts of the imaging data, both within individual slices and across the entire volume.
-
-The architecture is particularly sophisticated in how it handles the 3D nature of the input data, using multiple pooling strategies to capture both local and global features, and attention mechanisms to focus on the most relevant parts of the imaging data for the prediction task.
