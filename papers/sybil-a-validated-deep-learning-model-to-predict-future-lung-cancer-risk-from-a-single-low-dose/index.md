@@ -50,7 +50,9 @@ A deep learning model designed for medical imaging analysis, specifically for 3D
 Base Encoder:
 
 - Uses a pre-trained ResNet3D-18 (torchvision.models.video.r3d_18) as the backbone
-- This is a 3D convolutional neural network that processes volumetric medical imaging data (LDCT scans)
+- This is a 3D convolutional neural network that processes volumetric medical imaging data (LDCT scans): take raw 3D medical imaging data (like CT scans) as input
+- Extract meaningful features from this data through a series of convolutional layers
+- Transform the raw pixel data into a more compact, meaningful representation
 
 Multi-level Attention Pooling:
 
