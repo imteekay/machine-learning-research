@@ -4,10 +4,13 @@
 
 - Context
   - Lung cancer screening (LCS) rates have focused on identifying those at the highest risk for lung cancer and directing available resources to screen them
-  - Lung cancer diagnoses among never- and lighter-smokers are rapidly rising
+  - Lung cancer diagnoses among never and lighter-smokers are rapidly rising
 - Data
   - Considered any given LDCT positive in terms of future cancer risk if biopsy-confirmed lung cancer was diagnosed within 6 years, independent of presence absence of nodules or other abnormalities on that examination
-  - Radiologists jointly annotated suspicious lesions on NLST LDCTs using MD.AI software for all participants who developed cancer within 1 year after an LDCT
+  - Radiologists jointly annotated suspicious lesions on NLST LDCTs using MD. AI software for all participants who developed cancer within 1 year after an LDCT
+  - LDCT generates volumetric data (3D)
+    - Slices of 2D images
+    - Combined slices forming a 3D representation
 - Model
   - Sybil was designed to predict future lung cancer risk using a 3D convolutional neural network (CNN) based on the ResNet18 architecture
   - Sybil’s outcome is a set of six scores representing calibrated probabilities of lung cancer diagnosis extending 1 to 6 years following the LDCT
