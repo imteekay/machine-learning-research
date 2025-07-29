@@ -63,8 +63,11 @@ A deep learning model designed for medical imaging analysis, specifically for 3D
 
 The model uses this attention mechanism at multiple levels:
 
-- Image-level attention: to focus on important regions within each slice
-- Volume-level attention: to focus on important slices across the entire volume
+- Image-level attention: to focus on important regions within each slice (2D slice)
+- Volume-level attention: to focus on important slices across the entire volume (anatomical sequence)
+  - Local patterns within individual slices
+  - Relationships between adjacent slices
+  - 3D structures like tumors, organs, and anatomical features
 - Convolutional attention: to capture temporal/spatial relationships
 
 ### Multi-level Attention Pooling:
