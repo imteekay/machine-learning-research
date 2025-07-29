@@ -47,16 +47,29 @@
 
 A deep learning model designed for medical imaging analysis, specifically for 3D volumes. The model is designed to handle 3D medical imaging data (like CT scans) and predict survival probabilities over multiple time points (1-5 years). It uses attention mechanisms at multiple levels to focus on relevant parts of the imaging data, both within individual slices and across the entire volume.
 
-Base Encoder:
+### Base Encoder:
 
-- Uses a pre-trained ResNet3D-18 (torchvision.models.video.r3d_18) as the backbone
+- Uses a pre-trained ResNet3D-18 (torchvision.models.video.r3d_18) as the backbone (transfer learning)
 - This is a 3D convolutional neural network that processes volumetric medical imaging data (LDCT scans): take raw 3D medical imaging data (like CT scans) as input
 - Extract meaningful features from this data through a series of convolutional layers
 - Transform the raw pixel data into a more compact, meaningful representation
 
-Multi-level Attention Pooling:
+### Attention mechanism (weighted pooling mechanism)
 
-The model uses a complex pooling mechanism called MultiAttentionPool that combines several pooling strategies:
+- Is a simpler form of attention that learns to weight different parts of the input
+- Works on spatial and temporal dimensions of the 3D data
+- Uses a single linear layer followed by softmax to compute attention weights
+- Is used to focus on important regions within the medical images
+
+The model uses this attention mechanism at multiple levels:
+
+- Image-level attention: to focus on important regions within each slice
+- Volume-level attention: to focus on important slices across the entire volume
+- Convolutional attention: to capture temporal/spatial relationships
+
+### Multi-level Attention Pooling:
+
+The model uses a complex pooling mechanism called `MultiAttentionPool` that combines several pooling strategies:
 
 - Image-level Attention (Simple_AttentionPool_MultiImg):
   - Learns attention weights for each slice in the 3D volume
