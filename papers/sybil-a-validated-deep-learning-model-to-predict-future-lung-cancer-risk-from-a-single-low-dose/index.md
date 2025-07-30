@@ -111,7 +111,19 @@ The model uses a complex pooling mechanism called `MultiAttentionPool` that comb
 - Final processing (`hidden`: relu + dropout)
 - Risk prediction (`logit` — raw probabilities for the 6 years; `prob` — sigmoid for probabilities between 0 and 1)
 
-## To-Do
+## Clinical Interpretation: output
+
+- `activ`: "What learned features does the 3D ResNet extract from each spatial region?"
+  - Rich, distributed representations before attention pooling
+  - Contains spatial information but requires attention maps to know importance
+- `hidden`: "What is the final feature summary after the model decides what's important?"
+  - Compact representation where attention has already been applied
+  - The "distilled essence" of the CT scan for prediction
+- `logit`: "What are the raw model outputs before probability calibration?"
+- `prob`: "What's the probability this patient will develop lung cancer in years 1, 2, 3, 4, 5, and 6?"
+
+## To-Do: to learn/explore
 
 - [ ] Attention Pooling
 - [ ] Encoder for 3D
+- [ ] Cumulative_Probability_Layer
