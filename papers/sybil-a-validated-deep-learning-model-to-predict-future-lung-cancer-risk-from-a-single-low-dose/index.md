@@ -102,3 +102,8 @@ The model uses a complex pooling mechanism called `MultiAttentionPool` that comb
   - Uses dropout for regularization
   - Implements ReLU activation functions
   - Has a calibration mechanism to ensure probability estimates are well-calibrated
+
+## To-Do
+
+- [ ] Attention Pooling
+- [ ] Encoder for 3D
