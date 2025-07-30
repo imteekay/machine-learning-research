@@ -103,6 +103,14 @@ The model uses a complex pooling mechanism called `MultiAttentionPool` that comb
   - Implements ReLU activation functions
   - Has a calibration mechanism to ensure probability estimates are well-calibrated
 
+## Flow
+
+- Raw CT volume input
+- 3D ResNet feature extraction (`image_encoder`)
+- Multi-level attention pooling (`MultiAttentionPool`)
+- Final processing (`hidden`: relu + dropout)
+- Risk prediction (`logit` — raw probabilities for the 6 years; `prob` — sigmoid for probabilities between 0 and 1)
+
 ## To-Do
 
 - [ ] Attention Pooling
