@@ -116,6 +116,9 @@ The model uses a complex pooling mechanism called `MultiAttentionPool` that comb
 - `activ`: "What learned features does the 3D ResNet extract from each spatial region?"
   - Rich, distributed representations before attention pooling
   - Contains spatial information but requires attention maps to know importance
+- `Attention Maps` (from pooling layer): "Which parts of the CT scan does the model think are most important?"
+  - image_attention_1: Spatial attention within each slice
+  - volume_attention_1: Attention across different slices
 - `hidden`: "What is the final feature summary after the model decides what's important?"
   - Compact representation where attention has already been applied
   - The "distilled essence" of the CT scan for prediction
