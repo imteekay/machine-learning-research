@@ -128,5 +128,5 @@ The model uses a complex pooling mechanism called `MultiAttentionPool` that comb
 ## To-Do: to learn/explore
 
 - [ ] Attention Pooling
-- [ ] Encoder for 3D
+- [ ] Encoder for 3D ResNet Encoder
 - [ ] Cumulative_Probability_Layer
