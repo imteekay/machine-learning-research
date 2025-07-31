@@ -74,9 +74,45 @@ The model uses this attention mechanism at multiple levels:
 
 The model uses a complex pooling mechanism called `MultiAttentionPool` that combines several pooling strategies:
 
-- Image-level Attention (Simple_AttentionPool_MultiImg):
-  - Learns attention weights for each slice in the 3D volume
-  - Processes spatial information within each slice
+#### Understanding Simple_AttentionPool_MultiImg
+
+- Learns attention weights for each slice in the 3D volume
+- Processes spatial information within each slice
+
+This module processes 3D CT data (B, C, T, W, H) and learns spatial attention within each slice, then produces three different representations:
+
+image_attention - Spatial Attention Maps
+- Shape: (B, T, W*H)
+- What it is: Log-softmax attention weights for each pixel in each slice
+- Purpose: "Which pixels within each slice are most important?"
+- Clinical meaning: Shows exactly where in each CT slice the model is focusing
+  - Shows which regions in each CT slice the model focuses on
+  - Might highlight suspicious nodules, irregular tissue patterns, or anatomical landmarks
+  - Can be visualized as heat maps overlaid on original CT images
+- Use case: Visualization and interpretability - can be reshaped to (B, T, W, H) to overlay on original images
+
+multi_image_hidden - Per-Slice Feature Vectors
+- Shape: (B, C, T) = (B, 512, T)
+- What it is: Attention-weighted feature vector for each slice separately
+- Purpose: "What are the important features in each individual slice?"
+- Clinical meaning: Each slice gets its own 512-dimensional feature summary based on spatial attention
+  - Each slice gets a 512-dimensional "summary" of its important features
+  - Slice with a nodule might have different features than a normal slice
+  - Preserves slice-by-slice information for temporal analysis
+- Use case: Input to subsequent temporal attention layers
+
+hidden - Flattened Global Representation
+- Shape: (B, T*C) = (B, T*512)
+- What it is: All per-slice features concatenated into one long vector
+- Purpose: "What are all the slice-wise features combined into one representation?"
+- Clinical meaning: Global representation that preserves slice-specific information
+  - Concatenates all slice summaries into one big vector
+  - Contains information about every slice but loses the slice-specific structure
+  - Less commonly used because it's very high-dimensional and loses spatial organization
+- Use case: Alternative pathway for final prediction (though typically multi_image_hidden is used for further processing)
+
+---
+
 - Volume-level Attention (Simple_AttentionPool):
   - Learns attention weights across the entire volume
   - Combines information from different slices
