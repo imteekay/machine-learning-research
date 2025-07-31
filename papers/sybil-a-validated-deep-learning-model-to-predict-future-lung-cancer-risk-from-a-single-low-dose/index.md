@@ -90,6 +90,14 @@ image_attention - Spatial Attention Maps
   - Might highlight suspicious nodules, irregular tissue patterns, or anatomical landmarks
   - Can be visualized as heat maps overlaid on original CT images
 - Use case: Visualization and interpretability - can be reshaped to (B, T, W, H) to overlay on original images
+- logsoftmax
+  - Purpose: Provides log-probabilities for better numerical properties
+  - Properties:
+    - Numerical stability: Avoids underflow issues with very small probabilities
+    - Storage efficiency: Log-probabilities can represent very small values
+    - Mathematical convenience: Easier to work with in log-space
+    - Interpretability: More negative = less attention
+    - Intuition: "Store attention in log-space to avoid numerical issues and enable better analysis."
 
 multi_image_hidden - Per-Slice Feature Vectors
 - Shape: (B, C, T) = (B, 512, T)
@@ -100,6 +108,14 @@ multi_image_hidden - Per-Slice Feature Vectors
   - Slice with a nodule might have different features than a normal slice
   - Preserves slice-by-slice information for temporal analysis
 - Use case: Input to subsequent temporal attention layers
+- softmax
+  - Purpose: Creates proper probability weights that sum to 1
+  - Properties:
+    - Normalization: All weights sum to 1 across spatial locations
+    - Non-negative: All values between 0 and 1
+    - Differentiable: Gradients flow properly during backpropagation
+    - Interpretable: Each weight represents "proportion of attention"
+    - Intuition: "How much should I focus on each pixel? Pixel A gets 53% of my attention, pixel B gets 26%, etc."
 
 hidden - Flattened Global Representation
 - Shape: (B, T*C) = (B, T*512)
