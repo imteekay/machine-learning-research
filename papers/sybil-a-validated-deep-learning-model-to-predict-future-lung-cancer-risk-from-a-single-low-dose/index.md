@@ -107,6 +107,22 @@ multi_image_hidden - Per-Slice Feature Vectors
   - Each slice gets a 512-dimensional "summary" of its important features
   - Slice with a nodule might have different features than a normal slice
   - Preserves slice-by-slice information for temporal analysis
+- Type of features it can learn
+  - Low-Level Features (early ResNet layers contribute to):
+    - Edge detectors: Boundaries between different tissue types
+    - Texture patterns: Smooth vs. rough tissue textures
+    - Intensity gradients: Changes in CT density values
+    - Basic geometric shapes: Circular, linear, or curved patterns
+  - Mid-Level Features:
+    - Anatomical structures: Ribs, blood vessels, airways, lung boundaries
+    - Tissue characteristics: Solid vs. ground-glass opacities
+    - Size and shape patterns: Small nodular vs. large mass-like features
+    - Spatial relationships: Features that capture how structures relate to each other
+  - High-Level Features:
+    - Pathological patterns: Features that correlate with malignancy
+    - Nodule characteristics: Spiculation, lobulation, irregular margins
+    - Contextual information: How suspicious areas relate to surrounding anatomy
+    - Complex combinations: Abstract patterns that combine multiple lower-level features
 - Use case: Input to subsequent temporal attention layers
 - softmax
   - Purpose: Creates proper probability weights that sum to 1

@@ -529,6 +529,7 @@
 - [Becoming an MLE at FAANG: What you need to know to know about MLE roles and interviews at Google, Meta, and other top companies](https://interviewing.io/blog/becoming-an-mle-at-faang-what-you-need-to-know)
 - [How To Become an ML Engineer in 2024](https://www.youtube.com/watch?v=b7fe72GuFZk)
 - [How to land a Data Scientist job at your dream company — My journey to Airbnb](https://towardsdatascience.com/how-to-land-a-data-scientist-job-at-your-dream-company-my-journey-to-airbnb-f6a1e99892e8)
+- [Data Science Interview Prep](https://www.youtube.com/playlist?list=PLrtCHHeadkHqFEO69UiOj9BHA7pah-0fj)
 
 ### Jobs
 
