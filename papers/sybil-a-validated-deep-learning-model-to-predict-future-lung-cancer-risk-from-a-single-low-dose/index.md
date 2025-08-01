@@ -148,11 +148,21 @@ hidden - Flattened Global Representation
   - Less commonly used because it's very high-dimensional and loses spatial organization
 - Use case: Alternative pathway for final prediction (though typically multi_image_hidden is used for further processing)
 
+#### Simple_AttentionPool
+
+Volume-level Attention
+
+- Learns attention weights across the entire volume
+- Combines information from different slices
+
+"Across all CT slices, which slices are most informative?"
+
+- Some slices might contain key pathology
+- Some slices might be mostly normal tissue
+- Some slices might have better image quality
+
 ---
 
-- Volume-level Attention (Simple_AttentionPool):
-  - Learns attention weights across the entire volume
-  - Combines information from different slices
 - Convolutional Pooling (Conv1d_AttnPool):
   - Uses 1D convolutions to process temporal/spatial relationships
   - Kernel size of 11 with stride 1
