@@ -530,6 +530,7 @@
 - [How To Become an ML Engineer in 2024](https://www.youtube.com/watch?v=b7fe72GuFZk)
 - [How to land a Data Scientist job at your dream company — My journey to Airbnb](https://towardsdatascience.com/how-to-land-a-data-scientist-job-at-your-dream-company-my-journey-to-airbnb-f6a1e99892e8)
 - [Data Science Interview Prep](https://www.youtube.com/playlist?list=PLrtCHHeadkHqFEO69UiOj9BHA7pah-0fj)
+- [Machine Learning Interview Prep](https://www.youtube.com/playlist?list=PLrtCHHeadkHqYX7O5cjHeWHzH2jzQqWg5)
 
 ### Jobs
 
