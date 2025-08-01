@@ -85,6 +85,11 @@ image_attention - Spatial Attention Maps
 - Shape: (B, T, W*H)
 - What it is: Log-softmax attention weights for each pixel in each slice
 - Purpose: "Which pixels within each slice are most important?"
+- The image_attention output allows: serves interpretability and analysis purposes, not prediction
+  - Clinical Validation: "Is the model looking at the right regions?"
+  - Error Analysis: "When the model fails, where was it looking?"
+  - Trust Building: "Can radiologists understand the model's reasoning?"
+  - Research: "What patterns has the model learned to focus on?"
 - Clinical meaning: Shows exactly where in each CT slice the model is focusing
   - Shows which regions in each CT slice the model focuses on
   - Might highlight suspicious nodules, irregular tissue patterns, or anatomical landmarks
