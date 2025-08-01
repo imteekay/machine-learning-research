@@ -195,6 +195,7 @@ hidden - Flattened Global Representation
 
 ## To-Do: to learn/explore
 
-- [ ] Attention Pooling
+- [ ] Multi Attention Pooling
+- [ ] How the model uses the multi attention pooling layer and connect with the classification?
 - [ ] Encoder for 3D ResNet Encoder
 - [ ] Cumulative_Probability_Layer
