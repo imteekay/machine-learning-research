@@ -161,6 +161,26 @@ Volume-level Attention
 - Some slices might be mostly normal tissue
 - Some slices might have better image quality
 
+#### PerFrameMaxPool
+
+Pathology Detection:
+
+- Cancerous nodules often create strong, localized feature responses
+- Max pooling ensures these strong signals aren't diluted by normal tissue
+- "If there's a suspicious pattern anywhere in this slice, capture it"
+
+Robustness to Location:
+
+- Doesn't matter WHERE in the slice the important feature appears
+- Only matters that it's present with sufficient strength
+- "I don't care exactly where the nodule is, just that there is one"
+
+Noise Reduction:
+
+- Weak, diffuse signals (often noise) get ignored
+- Only strong, confident feature responses survive
+- "Focus on clear, definitive patterns"
+
 ---
 
 - Convolutional Pooling (Conv1d_AttnPool):
