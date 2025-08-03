@@ -20,8 +20,15 @@
   - [Model Training](#model-training)
     - [Model Selection](#model-selection)
     - [Model Performance](#model-performance)
-    - [MSE](#mse)
-    - [R²](#r)
+    - [Metrics](#metrics)
+      - [Accuracy](#accuracy)
+      - [F1](#f1)
+      - [Precision](#precision)
+      - [Recall](#recall)
+      - [ROC](#roc)
+      - [Mean squared error](#mean-squared-error)
+      - [R²](#r)
+      - [Log-likelihood](#log-likelihood)
     - [Transfer Learning](#transfer-learning)
   - [Machine Learning Models](#machine-learning-models)
     - [Linear Regression](#linear-regression)
@@ -240,14 +247,36 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - F1 Score = 2 x (Precision x Recall / (Precision + Recall))
   - Importance in applications: In medical diagnosis, the diseases where a false positive can cause unnecessary stress or treatment, high precision is essential.
 
-### MSE
+### Metrics
+
+#### Accuracy
+
+TODO
+
+#### F1
+
+TODO
+
+#### Precision
+
+TODO
+
+#### Recall
+
+TODO
+
+#### ROC
+
+TODO
+
+#### Mean squared error
 
 ```python
 def mean_squared_error(y_true, y_pred):
     return np.mean((Y_test - prediction) ** 2)
 ```
 
-### R²
+#### R²
 
 R² (coefficient of determination): measures how well your model explains the variance in the target variable
 
@@ -257,6 +286,10 @@ def r2_score(Y_true, Y_pred):
    total_sum_of_squares = np.sum((Y_true - np.mean(Y_true)) ** 2)
    return 1 - (residual_sum_of_squares / total_sum_of_squares)
 ```
+
+#### Log-likelihood
+
+TODO
 
 ### Transfer Learning
 
