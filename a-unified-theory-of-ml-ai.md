@@ -29,7 +29,6 @@
       - [Mean squared error](#mean-squared-error)
       - [R²](#r)
       - [Log-likelihood](#log-likelihood)
-    - [Transfer Learning](#transfer-learning)
   - [Machine Learning Models](#machine-learning-models)
     - [Linear Regression](#linear-regression)
     - [Logistic Regression](#logistic-regression)
@@ -37,6 +36,7 @@
     - [Support Vector Machines](#support-vector-machines)
     - [Tree-Based Models](#tree-based-models)
     - [Neural Networks](#neural-networks)
+    - [Transfer Learning](#transfer-learning)
   - [Mathematics](#mathematics)
     - [Linear Algebra](#linear-algebra)
       - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
@@ -291,16 +291,6 @@ def r2_score(Y_true, Y_pred):
 
 TODO
 
-### Transfer Learning
-
-- Learn parameters with a ML model for a given dataset
-- Download the pre-trained parameters
-- Train/fine-tune the model on the new data
-  - If you first trained in a big dataset, the fine tuning can be done with a smaller dataset
-- Training the model
-  - Train all model parameters
-  - Train only the output parameters, leaving the other parameters of the model fixed
-
 ## Machine Learning Models
 
 **Supervised Learning**: Labeled data, finding the right answer
@@ -414,6 +404,16 @@ TODO
       - Amplifies the differences between scores, emphasizing the most likely class.   
       - Allows for the subsequent normalization step to create a valid probability distribution.
       - Provides mathematical convenience for optimization algorithms like gradient descent.
+
+### Transfer Learning
+
+- Learn parameters with a ML model for a given dataset
+- Download the pre-trained parameters
+- Train/fine-tune the model on the new data
+  - If you first trained in a big dataset, the fine tuning can be done with a smaller dataset
+- Training the model
+  - Train all model parameters
+  - Train only the output parameters, leaving the other parameters of the model fixed
 
 ## Mathematics
 
