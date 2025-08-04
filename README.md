@@ -271,6 +271,7 @@
 - [Reinforcement Learning Quickstart Guide](https://x.com/jsuarez5341/status/1854855861295849793)
 - [A Reinforcement Learning Guide](https://naklecha.notion.site/a-reinforcement-learning-guide)
 - [Reinforcement Learning](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQe1JXNvaFvURxGY4gE9k74)
+- [Reinforcement Learning: An Introduction](https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262039249)
 
 ### PyTorch
 
