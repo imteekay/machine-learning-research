@@ -54,9 +54,8 @@
     - [ ] ResNet
     - [ ] UNet
   - [ ] Recurrent Neural Networks (RNNs)
-    - [X] Implement it from scratch
     - [X] Write an article about the implementation
-    - [X] RNNs
+    - [X] [RNNs](projects/rnn/recurrent-neural-network-regression.ipynb)
     - [ ] LSTMs
     - [ ] GRUs
   - [ ] Transformers
