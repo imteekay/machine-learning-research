@@ -54,7 +54,7 @@
     - [ ] ResNet
     - [ ] UNet
   - [ ] Recurrent Neural Networks (RNNs)
-    - [X] Write an article about the implementation
+    - [X] [Recurrent Neural Network](https://www.iamtk.co/building-a-recurrent-neural-network-from-scratch-with-python-and-mathematics)
     - [X] [RNNs](projects/rnn/recurrent-neural-network-regression.ipynb)
     - [ ] LSTMs
     - [ ] GRUs
