@@ -54,9 +54,9 @@
     - [ ] ResNet
     - [ ] UNet
   - [ ] Recurrent Neural Networks (RNNs)
-    - [ ] TODO: implement it from scratch
-    - [ ] TODO: write an article about the implementation
-    - [ ] RNNs
+    - [X] Implement it from scratch
+    - [X] Write an article about the implementation
+    - [X] RNNs
     - [ ] LSTMs
     - [ ] GRUs
   - [ ] Transformers
