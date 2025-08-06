@@ -6,6 +6,7 @@
 
 - [A Unified Theory of ML/AI](#a-unified-theory-of-mlai)
   - [Table of Contents](#table-of-contents)
+  - [ML Engineering](#ml-engineering)
   - [Pre-processing](#pre-processing)
     - [Understanding the Data](#understanding-the-data)
     - [Handling Missing Data](#handling-missing-data)
@@ -41,6 +42,23 @@
     - [Linear Algebra](#linear-algebra)
       - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
     - [Statistics](#statistics)
+
+## ML Engineering
+
+- Scoping
+  - Define which type of problem to work on
+  - Decide on key metrics: accuracy, latency, throughput
+  - Estimate resources and timeline
+- Data
+  - Define data: is data labeled consistently? How to performance data normalization?
+  - Stablish baseline
+  - Label and organize data
+- Modeling
+  - Code
+  - Optimizing the hyperparameters and the data: high performing model
+- Deployment
+  - Deploy in production: Prediction Server API responding the prediction output
+  - Monitor & mantain system
 
 ## Pre-processing
 
