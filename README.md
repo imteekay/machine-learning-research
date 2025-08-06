@@ -655,6 +655,7 @@
 - [Chaitanya K. Joshi](https://www.chaitjo.com)
 - [Adam Majmudar](https://adammaj.com)
 - [Qian Huang](https://q-hwang.github.io)
+- [Lily Liu](https://liuxiaoxuanpku.github.io)
 
 ## Research & Laboratories
 
