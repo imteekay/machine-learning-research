@@ -35,6 +35,8 @@
   - [ ] Accuracy, Loss, ROC AUC, cross-validation, precision/recall
 - [ ] Causal Inference
   - [ ] [[Book] Causal Inference: What If](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/677676888e31cc50c2c33877/1735816881944/hernanrobins_WhatIf_2jan25.pdf)
+- [ ] Machine Learning Engineering
+  - [ ] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 
 ### Foundation in Deep Learning
 
