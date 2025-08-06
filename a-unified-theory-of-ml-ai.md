@@ -49,11 +49,11 @@
   - Define which type of problem to work on
   - Decide on key metrics: accuracy, latency, throughput
   - Estimate resources and timeline
-- Data
+- [Data](#pre-processing)
   - Define data: is data labeled consistently? How to performance data normalization?
   - Stablish baseline
   - Label and organize data
-- Modeling
+- Modeling ([Model Training](#model-training) & [Machine Learning Models](#machine-learning-models))
   - Code
   - Optimizing the hyperparameters and the data: high performing model
 - Deployment
