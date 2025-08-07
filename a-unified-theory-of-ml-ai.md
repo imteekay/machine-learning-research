@@ -6,7 +6,7 @@
 
 - [A Unified Theory of ML/AI](#a-unified-theory-of-mlai)
   - [Table of Contents](#table-of-contents)
-  - [ML Engineering](#ml-engineering)
+  - [ML Engineering \& ML Lifecycle](#ml-engineering--ml-lifecycle)
   - [Pre-processing](#pre-processing)
     - [Understanding the Data](#understanding-the-data)
     - [Handling Missing Data](#handling-missing-data)
@@ -43,7 +43,7 @@
       - [Importance of linear dependence and independence: Linear Algebra](#importance-of-linear-dependence-and-independence-linear-algebra)
     - [Statistics](#statistics)
 
-## ML Engineering
+## ML Engineering & ML Lifecycle
 
 - Scoping
   - Define which type of problem to work on
