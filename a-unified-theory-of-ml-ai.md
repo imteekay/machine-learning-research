@@ -64,6 +64,13 @@
       - e.g. when the price of a house changes over time due to factors like inflation or a change in the market, even if the size of the house remains the same
     - Data drift occurs when the distribution of the input data (x) changes over time, while the relationship between x and y remains the same.
       - e.g. when the input data itself changes, such as people building larger or smaller houses over time, which changes the distribution of house sizes in the data
+  - Software engineering issues/checklist
+    - It should be ran in realtime or in batch?
+    - It runs in the cloud or in the browser/edge?
+    - Compute resources: CPU, GPU, memory
+    - Latency, throughput (QPS - queries per second) requirements
+    - Logging: for analysis and review
+    - Security and privacy
 
 ## Pre-processing
 
