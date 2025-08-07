@@ -130,6 +130,7 @@
 - [How to learn AI and ML](https://www.youtube.com/watch?v=KEB-w9DUdCw&ab_channel=PythonProgrammer)
 - [Recommendations by Ilya Sutskever](https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE)
 - [The Ultimate Guide to Learning About Artificial Intelligence](https://adam-maj.medium.com/the-ultimate-guide-to-becoming-an-artificial-intelligence-expert-db5124dc8ae0)
+- [How I Would Learn Bioinformatics From Scratch 12 Years Later: A Roadmap](https://divingintogeneticsandgenomics.com/post/bioinfo-roadmap)
 
 ### Data Science
 
