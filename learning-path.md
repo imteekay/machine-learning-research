@@ -13,7 +13,6 @@
   - [Foundation in Machine Learning](#foundation-in-machine-learning)
   - [Foundation in Deep Learning](#foundation-in-deep-learning)
   - [Genomic Medicine and Clinical Applications](#genomic-medicine-and-clinical-applications)
-  - [Machine Learning in Healthcare](#machine-learning-in-healthcare)
   - [Machine Learning in BioMedicine](#machine-learning-in-biomedicine)
 
 ## Programming & Data Tools
@@ -94,10 +93,6 @@
 - [ ] Cancer
   - [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
 
-## Machine Learning in Healthcare
-
-- [ ] [AI in Healthcare Specialization](https://www.coursera.org/specializations/ai-healthcare)
-
 ## Machine Learning in BioMedicine
 
 - [ ] Bioinformatics Data Preprocessing
@@ -110,6 +105,7 @@
   - [ ] [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
   - [ ] [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
   - [ ] [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
+- [ ] [AI in Healthcare Specialization](https://www.coursera.org/specializations/ai-healthcare)
 - [ ] [Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
   - [x] [[Course] Introduction to Genomic Technologies](https://www.coursera.org/learn/introduction-genomics)
     - [Introduction to Genomic Technologies Notes](courses/genomic-data-science/introduction-genomics)
