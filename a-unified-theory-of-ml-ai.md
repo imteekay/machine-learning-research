@@ -59,6 +59,11 @@
 - Deployment
   - Deploy in production: Prediction Server API responding the prediction output
   - Monitor & mantain system
+  - Concept and data drift: how has the (test) data changed?
+    - Concept drift occurs when the relationship between the input data (x) and the target variable (y) changes over time.
+      - e.g. when the price of a house changes over time due to factors like inflation or a change in the market, even if the size of the house remains the same
+    - Data drift occurs when the distribution of the input data (x) changes over time, while the relationship between x and y remains the same.
+      - e.g. when the input data itself changes, such as people building larger or smaller houses over time, which changes the distribution of house sizes in the data
 
 ## Pre-processing
 
