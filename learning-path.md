@@ -1,23 +1,35 @@
 <samp>
 
-# Learning Path
+# ML/AI Learning Path
 
 [Structured Learning Path: ML/DL in Biomedicine](https://chatgpt.com/c/6831e921-0168-800b-b284-0eafaff9c8f6)
 
-### Programming & Data Tools
+## Table of Contents
+
+- [ML/AI Learning Path](#mlai-learning-path)
+  - [Table of Contents](#table-of-contents)
+  - [Programming \& Data Tools](#programming--data-tools)
+  - [Math \& Statistics Foundations](#math--statistics-foundations)
+  - [Foundation in Machine Learning](#foundation-in-machine-learning)
+  - [Foundation in Deep Learning](#foundation-in-deep-learning)
+  - [Genomic Medicine and Clinical Applications](#genomic-medicine-and-clinical-applications)
+  - [Machine Learning in Healthcare](#machine-learning-in-healthcare)
+  - [Machine Learning in BioMedicine](#machine-learning-in-biomedicine)
+
+## Programming & Data Tools
 
 - [ ] Python
 - [ ] Numpy
 - [ ] Pandas
 - [ ] Scikit-learn
 
-### Math & Statistics Foundations
+## Math & Statistics Foundations
 
 - [ ] Linear Algebra
 - [ ] Calculus
 - [ ] Probability and Statistics
 
-### Foundation in Machine Learning
+## Foundation in Machine Learning
 
 - [ ] Introduction to Machine Learning with Python (book)
 - [ ] [Machine Learning Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization)
@@ -38,7 +50,7 @@
 - [ ] Machine Learning Engineering
   - [ ] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 
-### Foundation in Deep Learning
+## Foundation in Deep Learning
 
 - [ ] [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
   - [X] [[Course] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
@@ -68,7 +80,7 @@
 - [ ] Deep Reinforcement Learning
   - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
 
-### Genomic Medicine and Clinical Applications
+## Genomic Medicine and Clinical Applications
 
 - [ ] Genetics Fundamentals
   - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
@@ -82,11 +94,11 @@
 - [ ] Cancer
   - [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
 
-### Machine Learning in Healthcare
+## Machine Learning in Healthcare
 
 - [ ] [AI in Healthcare Specialization](https://www.coursera.org/specializations/ai-healthcare)
 
-### Machine Learning in Genomic Medicine
+## Machine Learning in BioMedicine
 
 - [ ] Bioinformatics Data Preprocessing
   - [ ] NGS data formats (FASTA/FASTQ/VCF)
