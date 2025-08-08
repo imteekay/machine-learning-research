@@ -58,6 +58,13 @@
   - Optimizing the hyperparameters and the data: high performing model
 - Deployment
   - Deploy in production: Prediction Server API responding the prediction output
+    - Common deployments
+      - New product/feature
+      - Automate with manual task
+      - Replace previous ML system
+  - Deployment patterns: enables monitoring and rollback
+    - Canary release
+    - Blue green deployment
   - Monitor & mantain system
   - Concept and data drift: how has the (test) data changed?
     - Concept drift occurs when the relationship between the input data (x) and the target variable (y) changes over time.
