@@ -66,6 +66,10 @@
     - Canary release
     - Blue green deployment
   - Monitor & mantain system
+    - Brainstorm all the things that could go wrong
+      - Software metrics: memory, compute, latency, throughput, server load
+      - Input metrics: avg input length, avg input volume, num of missing values (fraction of missing input values), avg image brightness
+      - Output metrics: fraction of non-null outputs, search redos
   - Concept and data drift: how has the (test) data changed?
     - Concept drift occurs when the relationship between the input data (x) and the target variable (y) changes over time.
       - e.g. when the price of a house changes over time due to factors like inflation or a change in the market, even if the size of the house remains the same
