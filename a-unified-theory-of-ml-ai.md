@@ -9,6 +9,7 @@
   - [ML Engineering \& ML Lifecycle](#ml-engineering--ml-lifecycle)
   - [Pre-processing](#pre-processing)
     - [Understanding the Data](#understanding-the-data)
+    - [Training/Test split](#trainingtest-split)
     - [Handling Missing Data](#handling-missing-data)
     - [Data Cleaning](#data-cleaning)
     - [Scaling/Normalization](#scalingnormalization)
@@ -45,9 +46,15 @@
 
 ## ML Engineering & ML Lifecycle
 
-- Scoping
-  - Define which type of problem to work on
+- Scoping: Look at the big picture
+  - Frame the problem: Define which type of problem to work on
+  - Learn: How value will be created solving a given problem
+  - Push back a bit
+    - Is it worth to build a ML model to solve this problem? 
+    - Is it easy for a human do?
+    - How much data do we have and is it enough?
   - Decide on key metrics: accuracy, latency, throughput
+    - Relate it to the business: how do these metrics translate to business value? What does it mean to improve a given metric for the business?
   - Estimate resources and timeline
 - [Data](#pre-processing)
   - Define data: is data labeled consistently? How to performance data normalization?
@@ -101,6 +108,11 @@
 - Domain knowledge about the data: understand its features, default values, missing values, the importance or unimportance of each feature
 - Correlations: multicollinearity (independent variables in a regression model are highly correlated)
 - Mean, Central Limit Theorem, Confidence interval (standard error)
+
+### Training/Test split
+
+- Create the test set early as possible, even before cleaning the data
+- Be careful to not introduce any data leakage
 
 ### Handling Missing Data
 
@@ -180,6 +192,7 @@
 - oversampling: increase the number of data points of a minority class via synthetic generation
 - undersampling: reduces examples from the majority class to balance the number of data points
 - ensemble methods: combine multiple individual models to produce a single, more robust, and often more accurate predictive model
+- stratification: get 20% of class 1, 20% of class 2, etc so the percentage will be equal even if the dataset is imbalanced
 
 ## Feature Engineering
 
