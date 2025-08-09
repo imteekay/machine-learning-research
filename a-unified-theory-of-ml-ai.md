@@ -108,6 +108,7 @@
 - Domain knowledge about the data: understand its features, default values, missing values, the importance or unimportance of each feature
 - Correlations: multicollinearity (independent variables in a regression model are highly correlated)
 - Mean, Central Limit Theorem, Confidence interval (standard error)
+- Visualize the data (TODO: show ways to plot data to better visualize the data)
 
 ### Training/Test split
 
