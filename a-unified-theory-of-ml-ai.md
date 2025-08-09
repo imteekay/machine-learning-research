@@ -19,6 +19,7 @@
   - [Feature Engineering](#feature-engineering)
     - [PCA](#pca)
   - [Model Training](#model-training)
+    - [Baseline](#baseline)
     - [Model Selection](#model-selection)
     - [Model Performance](#model-performance)
     - [Metrics](#metrics)
@@ -223,10 +224,15 @@
     - 70%: training set - fit the data
     - 30%: test set - test the model to this data
 
+### Baseline
+
+- Scikit-learn has a DummyRegressor/DummyClassifier
+  - The dummy model sets a baseline for your performance metrics
+  - Starting with a dummy model also makes it easier to diagnose any bugs in your data preparation code, because the model isn’t adding much complexity
+
 ### Model Selection
 
 Which model is better? It depends on the problem at hand. If the relationship between the features and the response is well approximated by a linear model as in, then an approach such as linear regression will likely work well, and will outperform a method such as a regression tree that does not exploit this linear structure. If instead there is a highly non-linear and complex relationship between the features and the response as indicated by model, then decision trees may outperform classical approaches.
-
 
 ### Model Performance
 
