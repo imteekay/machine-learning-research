@@ -16,7 +16,6 @@
     - [Encoding Categorical Variables](#encoding-categorical-variables)
     - [Splitting Data \& Cross Validation](#splitting-data--cross-validation)
     - [Handling imbalanced datasets](#handling-imbalanced-datasets)
-  - [Feature Engineering](#feature-engineering)
     - [PCA](#pca)
   - [Model Training](#model-training)
     - [Baseline](#baseline)
@@ -197,8 +196,6 @@
 - undersampling: reduces examples from the majority class to balance the number of data points
 - ensemble methods: combine multiple individual models to produce a single, more robust, and often more accurate predictive model
 - stratification: get 20% of class 1, 20% of class 2, etc so the percentage will be equal even if the dataset is imbalanced
-
-## Feature Engineering
 
 ### PCA
 
