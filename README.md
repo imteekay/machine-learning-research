@@ -391,6 +391,7 @@
 - [Large language models for genomics](https://github.com/raphaelmourad/LLM-for-genomics-training)
 - [Data Science for Biologists](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQz4BMoGSsN8cbt8pHlokhV)
 - [Using state-of-the-art AI models to power drug-design](https://www.isomorphiclabs.com/articles/using-bespoke-ai-models-to-power-drug-design)
+- [AlphaGenome: advancing regulatory variant effect prediction with a unified DNA sequence model](https://storage.googleapis.com/deepmind-media/papers/alphagenome.pdf)
 
 ### Books
 
