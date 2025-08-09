@@ -127,6 +127,10 @@
 - Fixing incorrect labels
 - Correcting inconsistencies
 - Formatting the values (e.g. using float when the data is object)
+- It's important to do data imputation and data cleaning after the train-test split
+  - Split the data
+  - Clean and impute the training set
+  - Apply the same imputation rules to the test set
 
 ### Scaling/Normalization
 
