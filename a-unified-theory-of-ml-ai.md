@@ -9,7 +9,6 @@
   - [ML Engineering \& ML Lifecycle](#ml-engineering--ml-lifecycle)
   - [Pre-processing](#pre-processing)
     - [Understanding the Data](#understanding-the-data)
-    - [Training/Test split](#trainingtest-split)
     - [Handling Missing Data](#handling-missing-data)
     - [Data Cleaning](#data-cleaning)
     - [Scaling/Normalization](#scalingnormalization)
@@ -110,11 +109,6 @@
 - Mean, Central Limit Theorem, Confidence interval (standard error)
 - Visualize the data (TODO: show ways to plot data to better visualize the data)
 
-### Training/Test split
-
-- Create the test set early as possible, even before cleaning the data
-- Be careful to not introduce any data leakage
-
 ### Handling Missing Data
 
 - Dropping columns with missing values or adding values by infering from the dataset or using default values for a given feature
@@ -141,6 +135,8 @@
   - X and Y have different distributions (different scales and meanings)
   - You can scale Y if it's a regression problem. Don't scale if it's a classification problem, since it's categorical
   - Tree-based models like XGBoost, Decision Trees, or Random Forests usually don't need scaling because these models are not sensitive to feature scaling
+- Use only the training set to calculate the mean and variance, normalize the training set, and then at test time, use that same (training) mean and variance to normalize the test set
+  - TODO: re-read [this answer](https://datascience.stackexchange.com/questions/39932/feature-scaling-both-training-and-test-data?newreg=64c8fc13490744028eb7414da9b6693a)
 
 ### Data Leakage
 
@@ -172,6 +168,8 @@
 
 ### Splitting Data & Cross Validation
 
+- Create the test set early as possible, even before cleaning the data
+- Be careful to not introduce any data leakage
 - When splitting the data into training and validation, the model can perform well on the 20% validation data and bad in the 80% (or vice-versa)
   - In larger validation sets, there is less randomness ("noise")
 - Cross validation makes you do experiments in different folds
