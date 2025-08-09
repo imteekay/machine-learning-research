@@ -194,8 +194,13 @@
 
 ## Model Training
 
-Analysis
-
+- Analysis
+- Have a data-centric AI development: from data to model rather than model fitting the data
+- Challenges
+  - Do well in the training set
+  - Do well in the validation set
+  - Do well in the test set
+  - Do well on business metrics
 - Model fits the training data well but fail to generalize to new examples
   - The cost is low for the training set because it fits well, but the cost for the test set will be high because it doesn't generalize well
   - Split the dataset into two parts
