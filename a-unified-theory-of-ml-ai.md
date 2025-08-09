@@ -314,6 +314,14 @@ Which model is better? It depends on the problem at hand. If the relationship be
   - **F1 Score**: The "harmonic mean" of precision and recall, providing a balance between the two.
     - F1 Score = 2 x (Precision x Recall / (Precision + Recall))
   - Importance in applications: In medical diagnosis, the diseases where a false positive can cause unnecessary stress or treatment, high precision is essential.
+- Fine-Tune Model
+  - Grid Search
+  - Randomized Search
+  - Ensemble Methods
+  - Analyzing the Best Models and Their Errors
+    - Visualizing errors (poor predictions)
+  - Evaluate the model on the test set
+    - Metrics should be similar to your validation numbers, or else you may have some overfitting going on
 
 ### Metrics
 
