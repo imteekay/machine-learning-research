@@ -208,7 +208,6 @@
 
 ## Model Training
 
-- Analysis
 - Have a data-centric AI development: from data to model rather than model fitting the data
 - Challenges
   - Do well in the training set
