@@ -261,6 +261,7 @@
 - [History of Deep Learning](https://github.com/saurabhaloneai/History-of-Deep-Learning)
 - [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
 - [Intuitions on Language Models & Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=3gb-ZkVRemQ&ab_channel=StanfordOnline)
+- [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness)
 
 ### Deep Reinforcement Learning
 
