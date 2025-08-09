@@ -390,6 +390,7 @@
 - [Biomedical Transformers](https://www.youtube.com/watch?v=nz7_wg5iOlA&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=18)
 - [Large language models for genomics](https://github.com/raphaelmourad/LLM-for-genomics-training)
 - [Data Science for Biologists](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQz4BMoGSsN8cbt8pHlokhV)
+- [Using state-of-the-art AI models to power drug-design](https://www.isomorphiclabs.com/articles/using-bespoke-ai-models-to-power-drug-design)
 
 ### Books
 
