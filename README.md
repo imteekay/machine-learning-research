@@ -129,6 +129,7 @@
 
 - [Practical Python Programming](https://dabeaz-course.github.io/practical-python/Notes/Contents.html)
 - [100 Numpy Exercises](https://www.kaggle.com/code/iamteekay/100-numpy-exercises)
+- [From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy)
 
 ### ML Engineering
 
