@@ -666,6 +666,7 @@
 - [Lily Liu](https://liuxiaoxuanpku.github.io)
 - [Yist Yu](https://yistyu.github.io)
 - [Seul Lee](https://seullee05.github.io)
+- [Zhenqiao Song](https://jocelynsong.github.io)
 
 ## Research & Laboratories
 
