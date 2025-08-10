@@ -6,6 +6,7 @@
 
 - [ML Research](#ml-research)
   - [Table of Contents](#table-of-contents)
+  - [Learning Roadmap](#learning-roadmap)
   - [Mathematics](#mathematics)
     - [General Math](#general-math)
     - [How to learn mathematics](#how-to-learn-mathematics)
@@ -17,7 +18,6 @@
     - [Python](#python)
     - [ML Engineering](#ml-engineering)
   - [Artificial Intelligence](#artificial-intelligence)
-    - [Learning Roadmap](#learning-roadmap)
     - [Data Science](#data-science)
     - [Machine Learning](#machine-learning)
     - [Deep Learning](#deep-learning)
@@ -49,6 +49,16 @@
   - [Research \& Laboratories](#research--laboratories)
   - [License](#license)
 
+## Learning Roadmap
+
+- [Machine Learning Roadmap 2022](https://www.youtube.com/watch?v=y4o9hrSCDPI&list=TLPQMzAxMjIwMjMIRqKttLLFsg&index=3&ab_channel=SmithaKolan-MachineLearningEngineer)
+- [How to learn AI and ML](https://www.youtube.com/watch?v=KEB-w9DUdCw&ab_channel=PythonProgrammer)
+- [Recommendations by Ilya Sutskever](https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE)
+- [The Ultimate Guide to Learning About Artificial Intelligence](https://adam-maj.medium.com/the-ultimate-guide-to-becoming-an-artificial-intelligence-expert-db5124dc8ae0)
+- [How I Would Learn Bioinformatics From Scratch 12 Years Later: A Roadmap](https://divingintogeneticsandgenomics.com/post/bioinfo-roadmap)
+- [Machine Learning and Deep Learning in Python using Scikit-Learn and PyTorch](https://github.com/ageron/handson-mlp)
+- [From Logistic Regression to Transformers: Learning Path](https://romeepanchal.com/posts/deep_learning/learning_path)
+
 ## Mathematics
 
 ### General Math
@@ -58,7 +68,8 @@
 - [Mathematics for Machine Learning](https://github.com/imteekay/mathematics-for-machine-learning)
 - [How to get from high school math to cutting-edge ML/AI](https://www.justinmath.com/how-to-get-from-high-school-math-to-cutting-edge-ml-ai)
 - [The Complete Mathematics of Neural Networks and Deep Learning](https://www.youtube.com/watch?v=Ixl3nykKG9M)
-- [Math   Academy](https://www.mathacademy.com)
+- [Math Academy](https://www.mathacademy.com)
+- [Why Should You Learn Mathematics for ML](https://romeepanchal.com/posts/general/why_learn_maths)
 
 ### How to learn mathematics
 
@@ -126,16 +137,6 @@
 - [From Model-centric to Data-centric AI](https://www.youtube.com/watch?v=06-AZXmwHjo)
 
 ## Artificial Intelligence
-
-### Learning Roadmap
-
-- [Machine Learning Roadmap 2022](https://www.youtube.com/watch?v=y4o9hrSCDPI&list=TLPQMzAxMjIwMjMIRqKttLLFsg&index=3&ab_channel=SmithaKolan-MachineLearningEngineer)
-- [How to learn AI and ML](https://www.youtube.com/watch?v=KEB-w9DUdCw&ab_channel=PythonProgrammer)
-- [Recommendations by Ilya Sutskever](https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE)
-- [The Ultimate Guide to Learning About Artificial Intelligence](https://adam-maj.medium.com/the-ultimate-guide-to-becoming-an-artificial-intelligence-expert-db5124dc8ae0)
-- [How I Would Learn Bioinformatics From Scratch 12 Years Later: A Roadmap](https://divingintogeneticsandgenomics.com/post/bioinfo-roadmap)
-- [Machine Learning and Deep Learning in Python using Scikit-Learn and PyTorch](https://github.com/ageron/handson-mlp)
-- [From Logistic Regression to Transformers: Learning Path](https://romeepanchal.com/posts/deep_learning/learning_path)
 
 ### Data Science
 
