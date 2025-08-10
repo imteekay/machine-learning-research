@@ -123,6 +123,7 @@
 - [Introduction to Data Intensive Engineering](https://www.youtube.com/playlist?list=PLMrJAkhIeNNTv-u25xlhIyiAIV_d7vf-8)
 - [Machine Learning in Production: Why You Should Care About Data and Concept Drift](https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb)
 - [Monitoring Machine Learning Models in Production](https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models)
+- [From Model-centric to Data-centric AI](https://www.youtube.com/watch?v=06-AZXmwHjo)
 
 ## Artificial Intelligence
 
