@@ -289,6 +289,7 @@
 
 - [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals)
 - [Learn PyTorch for deep learning in a day](https://www.youtube.com/watch?v=Z_ikDlimN6A)
+- [PyTorch in One Hour: From Tensors to Training Neural Networks on Multiple GPUs](https://sebastianraschka.com/teaching/pytorch-1h)
 
 ### ML/AI & Healthcare
 
