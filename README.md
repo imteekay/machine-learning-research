@@ -128,6 +128,7 @@
 ### Python
 
 - [Practical Python Programming](https://dabeaz-course.github.io/practical-python/Notes/Contents.html)
+- [100 Numpy Exercises](https://www.kaggle.com/code/iamteekay/100-numpy-exercises)
 
 ### ML Engineering
 
