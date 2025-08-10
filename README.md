@@ -665,6 +665,7 @@
 - [Qian Huang](https://q-hwang.github.io)
 - [Lily Liu](https://liuxiaoxuanpku.github.io)
 - [Yist Yu](https://yistyu.github.io)
+- [Seul Lee](https://seullee05.github.io)
 
 ## Research & Laboratories
 
