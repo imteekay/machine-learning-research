@@ -71,6 +71,7 @@
     - [X] LSTMs
     - [X] GRUs
   - [ ] Transformers
+    - [ ] [Stanford Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
   - [ ] Autoencoders/Variational Autoencoders (VAEs)
   - [ ] Generative Adversarial Networks (GANs)
   - [ ] Graph Neural Networks (GNNs)
