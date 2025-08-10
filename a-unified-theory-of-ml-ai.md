@@ -88,6 +88,20 @@
     - Latency, throughput (QPS - queries per second) requirements
     - Logging: for analysis and review
     - Security and privacy
+  - Experiment Tracking
+    - What to track?
+      - Algorithm/code versioning
+      - Dataset used
+      - Hyperparameters
+      - Results
+    - Tracking tools
+      - Text files
+      - Spreadsheets
+      - Experiment tracking systems
+    - Desired features
+      - Information needed to replicate results
+      - Experiment results (metrics, analysis)
+      - Resource monitoring, visualization, model error analysis
 
 ## Pre-processing
 
