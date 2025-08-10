@@ -288,6 +288,7 @@
 ### PyTorch
 
 - [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals)
+- [Learn PyTorch for deep learning in a day](https://www.youtube.com/watch?v=Z_ikDlimN6A)
 
 ### ML/AI & Healthcare
 
