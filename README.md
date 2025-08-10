@@ -398,6 +398,7 @@
 - [Using state-of-the-art AI models to power drug-design](https://www.isomorphiclabs.com/articles/using-bespoke-ai-models-to-power-drug-design)
 - [AlphaGenome: advancing regulatory variant effect prediction with a unified DNA sequence model](https://storage.googleapis.com/deepmind-media/papers/alphagenome.pdf)
 - [AlphaGenome: AI for better understanding the genome](https://deepmind.google/discover/blog/alphagenome-ai-for-better-understanding-the-genome)
+- [Alphafold](https://www.youtube.com/watch?v=P_fHJIYENdI)
 
 ### Books
 
