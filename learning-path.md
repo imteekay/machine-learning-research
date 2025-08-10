@@ -71,6 +71,7 @@
     - [X] LSTMs
     - [X] GRUs
   - [ ] Transformers
+    - [ ] [Attention | NLP](https://www.coursera.org/learn/attention-models-in-nlp)
     - [ ] [Stanford Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
   - [ ] Autoencoders/Variational Autoencoders (VAEs)
   - [ ] Generative Adversarial Networks (GANs)
