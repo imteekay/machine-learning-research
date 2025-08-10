@@ -135,6 +135,7 @@
 - [The Ultimate Guide to Learning About Artificial Intelligence](https://adam-maj.medium.com/the-ultimate-guide-to-becoming-an-artificial-intelligence-expert-db5124dc8ae0)
 - [How I Would Learn Bioinformatics From Scratch 12 Years Later: A Roadmap](https://divingintogeneticsandgenomics.com/post/bioinfo-roadmap)
 - [Machine Learning and Deep Learning in Python using Scikit-Learn and PyTorch](https://github.com/ageron/handson-mlp)
+- [From Logistic Regression to Transformers: Learning Path](https://romeepanchal.com/posts/deep_learning/learning_path)
 
 ### Data Science
 
