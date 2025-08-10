@@ -15,7 +15,7 @@
     - [Optimization](#optimization)
   - [Programming](#programming)
     - [Python](#python)
-    - [Engineering](#engineering)
+    - [ML Engineering](#ml-engineering)
   - [Artificial Intelligence](#artificial-intelligence)
     - [Learning Roadmap](#learning-roadmap)
     - [Data Science](#data-science)
@@ -118,9 +118,10 @@
 
 - [Practical Python Programming](https://dabeaz-course.github.io/practical-python/Notes/Contents.html)
 
-### Engineering
+### ML Engineering
 
 - [Introduction to Data Intensive Engineering](https://www.youtube.com/playlist?list=PLMrJAkhIeNNTv-u25xlhIyiAIV_d7vf-8)
+- [Machine Learning in Production: Why You Should Care About Data and Concept Drift](https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb)
 
 ## Artificial Intelligence
 
