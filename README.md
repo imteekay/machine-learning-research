@@ -58,6 +58,7 @@
 - [How I Would Learn Bioinformatics From Scratch 12 Years Later: A Roadmap](https://divingintogeneticsandgenomics.com/post/bioinfo-roadmap)
 - [Machine Learning and Deep Learning in Python using Scikit-Learn and PyTorch](https://github.com/ageron/handson-mlp)
 - [From Logistic Regression to Transformers: Learning Path](https://romeepanchal.com/posts/deep_learning/learning_path)
+- [Palindrome: ML Library](https://thepalindrome.org/p/the-palindrome-library)
 
 ## Mathematics
 
