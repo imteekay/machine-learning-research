@@ -20,6 +20,7 @@
   - [Artificial Intelligence](#artificial-intelligence)
     - [Data Science](#data-science)
     - [Machine Learning](#machine-learning)
+    - [Machine learning: Experiment Tracking](#machine-learning-experiment-tracking)
     - [Deep Learning](#deep-learning)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
     - [PyTorch](#pytorch)
@@ -205,6 +206,10 @@
 - [Math for Machine Learning with Python](https://www.edx.org/learn/math/edx-math-for-machine-learning-with-python)
 - [Machine Learning with Python: from Linear Models to Deep Learning](https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-with-python-from-linear-models-to-deep-learning)
 - [Probabilistic Machine Learning](https://probml.github.io/pml-book)
+
+### Machine learning: Experiment Tracking
+
+- [ML Experiment Tracking: What It Is, Why It Matters, and How to Implement It](https://neptune.ai/blog/ml-experiment-tracking)
 
 ### Deep Learning
 
