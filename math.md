@@ -41,3 +41,11 @@ The domain of `f` is the intersection of the domains of its component functions.
 - √-t: -t > 0: (-∞,0]
 - ln(t): t > 0: (0,∞)
 - cot(t): cos(t)/sin(t): sin(t) ≠ 0: t ≠ nπ: (-∞,nπ) ∪ (nπ,∞)
+
+## Linear Algebra
+
+### Matrices
+
+- Upper triangular matrices: square matrix in which all entries below the diagonal are zeros
+- Lower triangular matrices: square matrix in which all entries above the diagonal are zeros
+- Diagonal matrices: matrix for which all entries above and below the diagonal are zeros
