@@ -132,7 +132,20 @@
 ### Data Cleaning
 
 - Removing duplicates
-- Fixing incorrect labels
+- Fixing incorrect labels / label ambiguity
+  - Many ways to label object recognition images
+  - Many ways to transcript audios
+  - Standardize labels (reach agreement on how to label the data), merge classes
+- Major types of data problems
+  - Small data (<= 10,000) + Unstructured: manufacturing visual inspection from 100 training examples
+  - Small data (<= 10,000) + Structured: housing price based on square footage, etc. from 50 training examples
+  - Big data (> 10,000) + Unstructured: speech recognition from 50 million training examples
+  - Big data (> 10,000) + Structured: online shopping recommendations from 1 million users
+- Handling types of data problems:
+  - Unstructured data: humans can label, data augmentation
+  - Structured data: harder to obtain more data
+  - Small data (<= 10,000): clean labels are critical, can manually go through the dataset and fix labels
+  - Big data (> 10,000): emphasis on data process - investigate and improve how the data is collected, labeled (e.g. labeling instructions)
 - Correcting inconsistencies
 - Formatting the values (e.g. using float when the data is object)
 - It's important to do data imputation and data cleaning after the train-test split
