@@ -84,3 +84,11 @@ Functions: catalyze chemical reactions, transmit signals, transport molecules, p
 - **Understanding disease mechanisms**: Many diseases are caused by specific sequence changes (variants, or mutations) that disrupt protein function. A good predictive model can help identify how specific mutations alter function, offering insights into disease mechanisms and potential therapeutic targets.
 - **Genome annotation**: As we continue sequencing the genomes of new species, we’re uncovering vast numbers of proteins whose functions remain unknown. For newly identified proteins—especially those that are distantly evolutionarily related to any known ones—computational prediction is essential for assigning functional hypotheses.
 - **Metagenomics and microbiome analysis**: When sequencing entire microbial communities, such as gut bacteria or ocean microbiota, many protein-coding genes have no close matches in existing databases. Predicting function from sequence helps uncover the roles of these unknown proteins, advancing our understanding of microbial ecosystems and their effects on hosts or the environment.
+
+### Machine Learning Primer
+
+**Embeddings**
+
+- An embedding is a numerical vector—a list of floating-point numbers—that encodes the meaning or structure of an entity like a word, sentence, or protein sequence. 
+- A protein might be represented by an embedding such as [0.1, -0.3, 1.3, 0.9, 0.2], which could capture aspects of its biochemical or structural properties in a compact numerical form.
+- Similar inputs result in similar embeddings: protein sequences with similar structure or function — such as collagen I and collagen II — will tend to have embeddings that are close together in what we might call a “protein space.”
