@@ -279,6 +279,7 @@
 - [A Brief History of Large Language Models](https://medium.com/@bradneysmith/98a1320e7650)
 - [Tokenization — A Complete Guide](https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f72de4e)
 - [Word Embeddings with word2vec from Scratch in Python](https://medium.com/@bradneysmith/word-embeddings-with-word2vec-from-scratch-in-python-eb9326c6ab7c)
+- [Self-Attention Explained with Code](https://medium.com/data-science/contextual-transformer-embeddings-using-self-attention-explained-with-diagrams-and-python-code-d7a9f0f4d94e)
 
 ### Deep Reinforcement Learning
 
