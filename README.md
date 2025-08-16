@@ -277,6 +277,7 @@
 - [Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
 - [The Recurrent Neural Network - Theory and Implementation of the Elman Network and LSTM](https://pabloinsente.github.io/the-recurrent-net)
 - [A Brief History of Large Language Models](https://medium.com/@bradneysmith/98a1320e7650)
+- [Tokenization — A Complete Guide](https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f72de4e)
 
 ### Deep Reinforcement Learning
 
