@@ -577,13 +577,14 @@ def rnn_forward(x, a0, parameters):
 
 ## Word Embedding
 
-- One hot encoding for words: transform a word into a vector of 1 and 0s where 0 represents that it's not the word for that index and 1 it is the word for the position
+- One hot encoding for words: transform a word into a vector of 1s and 0s where 0 represents that it's not the word for that index and 1 it is the word for the position
 - Featurized word embeddings: make associations, relationships to build similarity among all words.
   - e.g. apple and oragen can have a high correlation when it comes to the fruits "feature"
   - Use the t-sne to group data points into positions and build clusters. Each cluster has many similarities. We can plot this into a graph to see the groups in the featurized word embeddings
 - In word embedding, it uses feature representations to measure similarity to reason and compare
   - e.g. for man -> woman, what's the missing word for king -> ?. Based on the feature similarities, the missing word is queen
   - It uses the cosine similarity to measure the similarity of these vectors
+  - Each columns represents a (latent) "feature", which is not interpretable because it's an abstract way to capture the essence of the input through learned properties.
 - The primary purpose of an embedding matrix is to transform sparse, high-dimensional representations of words (like one-hot encodings) into dense, lower-dimensional, and more meaningful continuous vector representations
   - Capturing Relationships
   - Reducing Dimensionality
