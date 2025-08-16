@@ -585,6 +585,7 @@ def rnn_forward(x, a0, parameters):
   - e.g. for man -> woman, what's the missing word for king -> ?. Based on the feature similarities, the missing word is queen
   - It uses the cosine similarity to measure the similarity of these vectors
   - Each columns represents a (latent) "feature", which is not interpretable because it's an abstract way to capture the essence of the input through learned properties.
+  - In latent space, similar words will be closer
 - The primary purpose of an embedding matrix is to transform sparse, high-dimensional representations of words (like one-hot encodings) into dense, lower-dimensional, and more meaningful continuous vector representations
   - Capturing Relationships
   - Reducing Dimensionality
