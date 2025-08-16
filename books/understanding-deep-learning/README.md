@@ -578,6 +578,7 @@ def rnn_forward(x, a0, parameters):
 ## Word Embedding
 
 - One hot encoding for words: transform a word into a vector of 1s and 0s where 0 represents that it's not the word for that index and 1 it is the word for the position
+  - One hot representations treat each word as an isolated entity, so it's difficult to find similarity meaning among words
 - Featurized word embeddings: make associations, relationships to build similarity among all words.
   - e.g. apple and oragen can have a high correlation when it comes to the fruits "feature"
   - Use the t-sne to group data points into positions and build clusters. Each cluster has many similarities. We can plot this into a graph to see the groups in the featurized word embeddings
