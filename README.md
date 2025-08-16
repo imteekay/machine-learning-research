@@ -280,6 +280,7 @@
 - [Tokenization — A Complete Guide](https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f72de4e)
 - [Word Embeddings with word2vec from Scratch in Python](https://medium.com/@bradneysmith/word-embeddings-with-word2vec-from-scratch-in-python-eb9326c6ab7c)
 - [Self-Attention Explained with Code](https://medium.com/data-science/contextual-transformer-embeddings-using-self-attention-explained-with-diagrams-and-python-code-d7a9f0f4d94e)
+- [A Complete Guide to BERT with Code](https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11)
 
 ### Deep Reinforcement Learning
 
