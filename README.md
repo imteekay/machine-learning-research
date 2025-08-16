@@ -278,6 +278,7 @@
 - [The Recurrent Neural Network - Theory and Implementation of the Elman Network and LSTM](https://pabloinsente.github.io/the-recurrent-net)
 - [A Brief History of Large Language Models](https://medium.com/@bradneysmith/98a1320e7650)
 - [Tokenization — A Complete Guide](https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f72de4e)
+- [Word Embeddings with word2vec from Scratch in Python](https://medium.com/@bradneysmith/word-embeddings-with-word2vec-from-scratch-in-python-eb9326c6ab7c)
 
 ### Deep Reinforcement Learning
 
