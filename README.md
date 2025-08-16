@@ -276,11 +276,11 @@
 - [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness)
 - [Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
 - [The Recurrent Neural Network - Theory and Implementation of the Elman Network and LSTM](https://pabloinsente.github.io/the-recurrent-net)
-- [A Brief History of Large Language Models](https://medium.com/@bradneysmith/98a1320e7650)
-- [Tokenization — A Complete Guide](https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f72de4e)
-- [Word Embeddings with word2vec from Scratch in Python](https://medium.com/@bradneysmith/word-embeddings-with-word2vec-from-scratch-in-python-eb9326c6ab7c)
-- [Self-Attention Explained with Code](https://medium.com/data-science/contextual-transformer-embeddings-using-self-attention-explained-with-diagrams-and-python-code-d7a9f0f4d94e)
-- [A Complete Guide to BERT with Code](https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11)
+- [[Article] A Brief History of Large Language Models](https://medium.com/@bradneysmith/98a1320e7650)
+- [[Article] Tokenization — A Complete Guide](https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f72de4e)
+- [[Article] Word Embeddings with word2vec from Scratch in Python](https://medium.com/@bradneysmith/word-embeddings-with-word2vec-from-scratch-in-python-eb9326c6ab7c)
+- [[Article] Self-Attention Explained with Code](https://medium.com/data-science/contextual-transformer-embeddings-using-self-attention-explained-with-diagrams-and-python-code-d7a9f0f4d94e)
+- [[Article] A Complete Guide to BERT with Code](https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11)
 
 ### Deep Reinforcement Learning
 
