@@ -562,6 +562,7 @@
 - [Data Science Interview Prep](https://www.youtube.com/playlist?list=PLrtCHHeadkHqFEO69UiOj9BHA7pah-0fj)
 - [Machine Learning Interview Prep](https://www.youtube.com/playlist?list=PLrtCHHeadkHqYX7O5cjHeWHzH2jzQqWg5)
 - [ML Design Interview strategy](https://www.youtube.com/watch?v=XN2ymraj27g)
+- [[Video] Google DeepMind ML Engineer Interview Tips](https://www.youtube.com/watch?v=UGZRFSqvNng)
 
 ### Jobs
 
