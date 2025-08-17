@@ -92,3 +92,12 @@ Functions: catalyze chemical reactions, transmit signals, transport molecules, p
 - An embedding is a numerical vector—a list of floating-point numbers—that encodes the meaning or structure of an entity like a word, sentence, or protein sequence. 
 - A protein might be represented by an embedding such as [0.1, -0.3, 1.3, 0.9, 0.2], which could capture aspects of its biochemical or structural properties in a compact numerical form.
 - Similar inputs result in similar embeddings: protein sequences with similar structure or function — such as collagen I and collagen II — will tend to have embeddings that are close together in what we might call a “protein space.”
+
+### The ESM2 Protein Language Model
+
+![](images/protein-language-esm.png)
+
+ESM2 is a masked language model (MLM):
+
+- Mask a random subset of amino acids in each protein sequence (randomly selected 15% of the amino acids in each sequence were masked during training)
+- Ask the model to predict them
