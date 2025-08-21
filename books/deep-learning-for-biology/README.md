@@ -101,3 +101,23 @@ ESM2 is a masked language model (MLM):
 
 - Mask a random subset of amino acids in each protein sequence (randomly selected 15% of the amino acids in each sequence were masked during training)
 - Ask the model to predict them
+
+### Embedding Entire Proteins
+
+**Concatenation of amino acid embeddings**: loop through each amino acid in a sequence, extract its embedding, and concatenate them into one long vector. e.g. if a protein has length 10 and each amino acid has a 640-dimensional embedding, this yields a protein embedding of length 10 × 640 = 6400
+
+Several drawbacks:
+
+- **Variable length**: Different proteins will yield different-length embeddings, which complicates model input formatting.
+- **Scalability**: Long proteins produce huge embeddings. For example, titin—the longest known human protein at ~34,000 amino acids—would produce an embedding with over 43 million values. That’s unwieldy for most models.
+- **Limited modeling**: This approach treats amino acids independently, ignoring the contextual relationships that are central to protein function.
+
+**Averaging of amino acid embeddings**: average the token embeddings across the sequence.
+
+- This has the advantage of producing fixed-size vectors, regardless of protein length.
+- It’s efficient and sometimes used, but also crude—averaging discards ordering and interaction information. It’s like summarizing a novel by averaging all its word vectors: some meaning survives, but the nuance is lost.
+
+**Using the model’s contextual sequence embeddings**: extract the hidden representations for the entire sequence directly from the language model
+
+- Concretely, we can pass a protein sequence through ESM2 and extract the final hidden layer activations, resulting in a tensor of shape (L', D), where L' is the number of output tokens (which may differ from the input length L), and D is the model’s hidden size (e.g., 640).
+- We then apply mean pooling across the sequence length to produce a fixed-length embedding of shape (D,). While averaging may seem simplistic, it often works surprisingly well—because the model has already integrated contextual information into each token’s representation using self-attention, the pooled vector still captures meaningful dependencies across the sequence.
