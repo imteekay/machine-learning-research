@@ -415,6 +415,7 @@
 - [AlphaGenome: AI for better understanding the genome](https://deepmind.google/discover/blog/alphagenome-ai-for-better-understanding-the-genome)
 - [Alphafold](https://www.youtube.com/watch?v=P_fHJIYENdI)
 - [[Paper] Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences](https://www.pnas.org/doi/full/10.1073/pnas.2016239118)
+- [[Article] ProteinML 101](https://kidger.site/thoughts/just-know-stuff-protein-ml)
 
 ### Books
 
