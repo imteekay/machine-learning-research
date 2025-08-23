@@ -286,6 +286,7 @@
 - [[Article] Word Embeddings with word2vec from Scratch in Python](https://medium.com/@bradneysmith/word-embeddings-with-word2vec-from-scratch-in-python-eb9326c6ab7c)
 - [[Article] Self-Attention Explained with Code](https://medium.com/data-science/contextual-transformer-embeddings-using-self-attention-explained-with-diagrams-and-python-code-d7a9f0f4d94e)
 - [[Article] A Complete Guide to BERT with Code](https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11)
+- [[Video] The physics behind diffusion models](https://www.youtube.com/watch?v=R0uMcXsfo2o)
 
 ### Deep Reinforcement Learning
 
