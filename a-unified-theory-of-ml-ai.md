@@ -54,7 +54,11 @@
     - How much data do we have and is it enough?
   - Decide on key metrics: accuracy, latency, throughput
     - Relate it to the business: how do these metrics translate to business value? What does it mean to improve a given metric for the business?
+  - Characteristics of ML systems
     - Reliability: perform a correct function. Correctness but in terms of software and in terms of the prediction
+    - Scalability: The system can scale while the ML system grows
+      - Grows in complexity: from logistic regression (1GB of RAM) to a 100-million-parameter neural network (16GB of RAM) for prediction
+      - Grows in traffic volume: 10,000 prediction requests daily -> 10 million
   - Estimate resources and timeline
 - [Data](#pre-processing)
   - Define data: is data labeled consistently? How to performance data normalization?
