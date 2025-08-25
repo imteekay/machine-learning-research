@@ -59,6 +59,11 @@
     - Scalability: The system can scale while the ML system grows
       - Grows in complexity: from logistic regression (1GB of RAM) to a 100-million-parameter neural network (16GB of RAM) for prediction
       - Grows in traffic volume: 10,000 prediction requests daily -> 10 million
+    - Maintainability: easy to maintain the system and enable other people to contribute to the repository
+      - Set up infrastructure
+      - Code documentation
+      - Code versioning
+      - Reproducible models
   - Estimate resources and timeline
 - [Data](#pre-processing)
   - Define data: is data labeled consistently? How to performance data normalization?
