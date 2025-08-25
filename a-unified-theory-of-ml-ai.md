@@ -64,6 +64,9 @@
       - Code documentation
       - Code versioning
       - Reproducible models
+    - Adaptability: the system should have some capacity for both discovering aspects for performance improvement and allowing updates without service interruption
+      - Shifting data distributions
+      - Business requirements
   - Estimate resources and timeline
 - [Data](#pre-processing)
   - Define data: is data labeled consistently? How to performance data normalization?
