@@ -54,6 +54,7 @@
     - How much data do we have and is it enough?
   - Decide on key metrics: accuracy, latency, throughput
     - Relate it to the business: how do these metrics translate to business value? What does it mean to improve a given metric for the business?
+    - Reliability: perform a correct function. Correctness but in terms of software and in terms of the prediction
   - Estimate resources and timeline
 - [Data](#pre-processing)
   - Define data: is data labeled consistently? How to performance data normalization?
