@@ -46,7 +46,16 @@
 ## ML Engineering & ML Lifecycle
 
 - Scoping: Look at the big picture
-  - Frame the problem: Define which type of problem to work on
+  - Frame the problem
+    - Define which type of problem to work on
+    - An ML problem is defined by inputs, outputs, and the objective function that guides the learning process
+    - Framing a problem
+      - Problem: Use ML to speed up your customer service support
+      - Bottleneck: routing customer requests to the right department among four departments: accounting, inventory, HR (human resources), and IT. 
+      - Framing the problem to a ML problem: developing an ML model to predict which of these four departments a request should go to — a classification problem
+        - The input is the customer request
+        - The output is the department the request should go to
+        - The objective function is to minimize the difference between the predicted department and the actual department
   - Learn: How value will be created solving a given problem
   - Push back a bit
     - Is it worth to build a ML model to solve this problem? 
