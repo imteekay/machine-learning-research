@@ -56,6 +56,7 @@
         - The input is the customer request
         - The output is the department the request should go to
         - The objective function is to minimize the difference between the predicted department and the actual department
+    - When framing a problem, think about how the data changes. e.g. predict what app the user should use next. Multiclass classification is the first idea that come to mind when framing the problem. But if a new app is added, you need to retrain the model. If you frame this as a regression problem (input: user's, environment's, and app's features), whenever a new app is added, the model will continue to work properly
   - Learn: How value will be created solving a given problem
   - Push back a bit
     - Is it worth to build a ML model to solve this problem? 
