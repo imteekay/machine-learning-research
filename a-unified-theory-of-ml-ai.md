@@ -25,13 +25,14 @@
     - [Baseline](#baseline)
     - [Model Selection](#model-selection)
     - [Model Performance](#model-performance)
+    - [Objective Functions: Loss functions](#objective-functions-loss-functions)
+      - [Mean squared error](#mean-squared-error)
     - [Metrics](#metrics)
       - [Accuracy](#accuracy)
       - [F1](#f1)
       - [Precision](#precision)
       - [Recall](#recall)
       - [ROC](#roc)
-      - [Mean squared error](#mean-squared-error)
       - [R²](#r)
       - [Log-likelihood](#log-likelihood)
   - [Machine Learning Models](#machine-learning-models)
@@ -380,6 +381,17 @@ Which model is better? It depends on the problem at hand. If the relationship be
   - Evaluate the model on the test set
     - Metrics should be similar to your validation numbers, or else you may have some overfitting going on
 
+### Objective Functions: Loss functions
+
+MSE, RMSE, MAE (mean absolute error) for regression, logistic loss (also log loss) for binary classification, and cross entropy for multiclass classification.
+
+#### Mean squared error
+
+```python
+def mean_squared_error(y_true, y_pred):
+    return np.mean((Y_test - prediction) ** 2)
+```
+
 ### Metrics
 
 #### Accuracy
@@ -401,13 +413,6 @@ TODO
 #### ROC
 
 TODO
-
-#### Mean squared error
-
-```python
-def mean_squared_error(y_true, y_pred):
-    return np.mean((Y_test - prediction) ** 2)
-```
 
 #### R²
 
