@@ -7,6 +7,10 @@
 - [A Unified Theory of ML/AI](#a-unified-theory-of-mlai)
   - [Table of Contents](#table-of-contents)
   - [ML Engineering \& ML Lifecycle](#ml-engineering--ml-lifecycle)
+    - [Scoping: Look at the big picture](#scoping-look-at-the-big-picture)
+    - [Data](#data)
+    - [Modeling (Model Training \& Machine Learning Models)](#modeling-model-training--machine-learning-models)
+    - [Deployment](#deployment)
   - [Pre-processing](#pre-processing)
     - [Understanding the Data](#understanding-the-data)
     - [Handling Missing Data](#handling-missing-data)
@@ -45,86 +49,93 @@
 
 ## ML Engineering & ML Lifecycle
 
-- Scoping: Look at the big picture
-  - Frame the problem
-    - Define which type of problem to work on
-    - An ML problem is defined by inputs, outputs, and the objective function that guides the learning process
-    - Framing a problem
-      - Problem: Use ML to speed up your customer service support
-      - Bottleneck: routing customer requests to the right department among four departments: accounting, inventory, HR (human resources), and IT. 
-      - Framing the problem to a ML problem: developing an ML model to predict which of these four departments a request should go to — a classification problem
-        - The input is the customer request
-        - The output is the department the request should go to
-        - The objective function is to minimize the difference between the predicted department and the actual department
-    - When framing a problem, think about how the data changes. e.g. predict what app the user should use next. Multiclass classification is the first idea that come to mind when framing the problem. But if a new app is added, you need to retrain the model. If you frame this as a regression problem (input: user's, environment's, and app's features), whenever a new app is added, the model will continue to work properly
-  - Learn: How value will be created solving a given problem
-  - Push back a bit
-    - Is it worth to build a ML model to solve this problem? 
-    - Is it easy for a human do?
-    - How much data do we have and is it enough?
-  - Decide on key metrics: accuracy, latency, throughput
-    - Relate it to the business: how do these metrics translate to business value? What does it mean to improve a given metric for the business?
-  - Characteristics of ML systems
-    - Reliability: perform a correct function. Correctness but in terms of software and in terms of the prediction
-    - Scalability: The system can scale while the ML system grows
-      - Grows in complexity: from logistic regression (1GB of RAM) to a 100-million-parameter neural network (16GB of RAM) for prediction
-      - Grows in traffic volume: 10,000 prediction requests daily -> 10 million
-    - Maintainability: easy to maintain the system and enable other people to contribute to the repository
-      - Set up infrastructure
-      - Code documentation
-      - Code versioning
-      - Reproducible models
-    - Adaptability: the system should have some capacity for both discovering aspects for performance improvement and allowing updates without service interruption
-      - Shifting data distributions
-      - Business requirements
-  - Estimate resources and timeline
-- [Data](#pre-processing)
-  - Define data: is data labeled consistently? How to performance data normalization?
-  - Stablish baseline
-  - Label and organize data
-- Modeling ([Model Training](#model-training) & [Machine Learning Models](#machine-learning-models))
-  - Code
-  - Optimizing the hyperparameters and the data: high performing model
-- Deployment
-  - Deploy in production: Prediction Server API responding the prediction output
-    - Common deployments
-      - New product/feature
-      - Automate with manual task
-      - Replace previous ML system
-  - Deployment patterns: enables monitoring and rollback
-    - Canary release
-    - Blue green deployment
-  - Monitor & mantain system
-    - Brainstorm all the things that could go wrong
-      - Software metrics: memory, compute, latency, throughput, server load
-      - Input metrics: avg input length, avg input volume, num of missing values (fraction of missing input values), avg image brightness
-      - Output metrics: fraction of non-null outputs, search redos
-  - Concept and data drift: how has the (test) data changed?
-    - Concept drift occurs when the relationship between the input data (x) and the target variable (y) changes over time.
-      - e.g. when the price of a house changes over time due to factors like inflation or a change in the market, even if the size of the house remains the same
-    - Data drift occurs when the distribution of the input data (x) changes over time, while the relationship between x and y remains the same.
-      - e.g. when the input data itself changes, such as people building larger or smaller houses over time, which changes the distribution of house sizes in the data
-  - Software engineering issues/checklist
-    - It should be ran in realtime or in batch?
-    - It runs in the cloud or in the browser/edge?
-    - Compute resources: CPU, GPU, memory
-    - Latency, throughput (QPS - queries per second) requirements
-    - Logging: for analysis and review
-    - Security and privacy
-  - Experiment Tracking
-    - What to track?
-      - Algorithm/code versioning
-      - Dataset used
-      - Hyperparameters
-      - Results
-    - Tracking tools
-      - Text files
-      - Spreadsheets
-      - Experiment tracking systems
-    - Desired features
-      - Information needed to replicate results
-      - Experiment results (metrics, analysis)
-      - Resource monitoring, visualization, model error analysis
+### Scoping: Look at the big picture
+
+- Frame the problem
+  - Define which type of problem to work on
+  - An ML problem is defined by inputs, outputs, and the objective function that guides the learning process
+  - Framing a problem
+    - Problem: Use ML to speed up your customer service support
+    - Bottleneck: routing customer requests to the right department among four departments: accounting, inventory, HR (human resources), and IT. 
+    - Framing the problem to a ML problem: developing an ML model to predict which of these four departments a request should go to — a classification problem
+      - The input is the customer request
+      - The output is the department the request should go to
+      - The objective function is to minimize the difference between the predicted department and the actual department
+  - When framing a problem, think about how the data changes. e.g. predict what app the user should use next. Multiclass classification is the first idea that come to mind when framing the problem. But if a new app is added, you need to retrain the model. If you frame this as a regression problem (input: user's, environment's, and app's features), whenever a new app is added, the model will continue to work properly
+- Learn: How value will be created solving a given problem
+- Push back a bit
+  - Is it worth to build a ML model to solve this problem? 
+  - Is it easy for a human do?
+  - How much data do we have and is it enough?
+- Decide on key metrics: accuracy, latency, throughput
+  - Relate it to the business: how do these metrics translate to business value? What does it mean to improve a given metric for the business?
+- Characteristics of ML systems
+  - Reliability: perform a correct function. Correctness but in terms of software and in terms of the prediction
+  - Scalability: The system can scale while the ML system grows
+    - Grows in complexity: from logistic regression (1GB of RAM) to a 100-million-parameter neural network (16GB of RAM) for prediction
+    - Grows in traffic volume: 10,000 prediction requests daily -> 10 million
+  - Maintainability: easy to maintain the system and enable other people to contribute to the repository
+    - Set up infrastructure
+    - Code documentation
+    - Code versioning
+    - Reproducible models
+  - Adaptability: the system should have some capacity for both discovering aspects for performance improvement and allowing updates without service interruption
+    - Shifting data distributions
+    - Business requirements
+- Estimate resources and timeline
+
+### [Data](#pre-processing)
+
+- Define data: is data labeled consistently? How to performance data normalization?
+- Stablish baseline
+- Label and organize data
+
+### Modeling ([Model Training](#model-training) & [Machine Learning Models](#machine-learning-models))
+  
+- Code
+- Optimizing the hyperparameters and the data: high performing model
+
+### Deployment
+
+- Deploy in production: Prediction Server API responding the prediction output
+  - Common deployments
+    - New product/feature
+    - Automate with manual task
+    - Replace previous ML system
+- Deployment patterns: enables monitoring and rollback
+  - Canary release
+  - Blue green deployment
+- Monitor & mantain system
+  - Brainstorm all the things that could go wrong
+    - Software metrics: memory, compute, latency, throughput, server load
+    - Input metrics: avg input length, avg input volume, num of missing values (fraction of missing input values), avg image brightness
+    - Output metrics: fraction of non-null outputs, search redos
+- Concept and data drift: how has the (test) data changed?
+  - Concept drift occurs when the relationship between the input data (x) and the target variable (y) changes over time.
+    - e.g. when the price of a house changes over time due to factors like inflation or a change in the market, even if the size of the house remains the same
+  - Data drift occurs when the distribution of the input data (x) changes over time, while the relationship between x and y remains the same.
+    - e.g. when the input data itself changes, such as people building larger or smaller houses over time, which changes the distribution of house sizes in the data
+- Software engineering issues/checklist
+  - It should be ran in realtime or in batch?
+  - It runs in the cloud or in the browser/edge?
+  - Compute resources: CPU, GPU, memory
+  - Latency, throughput (QPS - queries per second) requirements
+  - Logging: for analysis and review
+  - Security and privacy
+- Experiment Tracking
+  - What to track?
+    - Algorithm/code versioning
+    - Dataset used
+    - Hyperparameters
+    - Results
+  - Tracking tools
+    - Text files
+    - Spreadsheets
+    - Experiment tracking systems
+  - Desired features
+    - Information needed to replicate results
+    - Experiment results (metrics, analysis)
+    - Resource monitoring, visualization, model error analysis
 
 ## Pre-processing
 
