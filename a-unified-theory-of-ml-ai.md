@@ -84,6 +84,12 @@
     - Shifting data distributions
     - Business requirements
 - Estimate resources and timeline
+- Decoupling objectives
+  - When minimizing multiple objectives, you need to make the model optimize for different scores. e.g. `loss_quality`: to rank posts by quality; `engagement_loss`: to rank posts by engagement. If you combine both losses into one `loss = ɑ quality_loss + β engagement_loss`, every time you need to tune the hyperparameters (ɑ, β), you need to retrain the model
+  - Another approach is to train two different models, each optimizing one loss. So you have two models:
+    - `quality_model`: Minimizes `quality_loss` and outputs the predicted quality of each post
+    - `engagement_model`: Minimizes `engagement_loss` and outputs the predicted number of clicks of each post
+    - In general, when there are multiple objectives, it’s a good idea to decouple them first because it makes model development and maintenance easier. First, it’s easier to tweak your system without retraining models, as previously explained. Second, it’s easier for maintenance since different objectives might need different maintenance schedules.
 
 ### [Data](#pre-processing)
 
