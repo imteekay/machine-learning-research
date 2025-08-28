@@ -13,6 +13,7 @@
     - [Deployment](#deployment)
   - [Pre-processing](#pre-processing)
     - [Understanding the Data](#understanding-the-data)
+    - [Data Engineering](#data-engineering)
     - [Handling Missing Data](#handling-missing-data)
     - [Data Cleaning](#data-cleaning)
     - [Scaling/Normalization](#scalingnormalization)
@@ -147,6 +148,7 @@
 ## Pre-processing
 
 - **Understanding the Data**: Graph the data, distribution, domain knowledge
+- **Data Engineering**
 - **Handling Missing Data**: Filling missing values (e.g., using mean, median, mode, or interpolation).
 - **Data Cleaning**: Removing duplicates, fixing incorrect labels, correcting inconsistencies.
 - **Scaling/Normalization**: Standardizing or normalizing numerical features to ensure consistency.
@@ -163,6 +165,13 @@
 - Correlations: multicollinearity (independent variables in a regression model are highly correlated)
 - Mean, Central Limit Theorem, Confidence interval (standard error)
 - Visualize the data (TODO: show ways to plot data to better visualize the data)
+
+### Data Engineering
+
+- Data formats: how to store data formats
+  - How do I store multimodal data, e.g., a sample that might contain both images and texts?
+  - Where do I store my data so that it’s cheap and still fast to access?
+  - How do I store complex models so that they can be loaded and run correctly on different hardware?
 
 ### Handling Missing Data
 
