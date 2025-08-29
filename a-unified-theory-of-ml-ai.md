@@ -172,6 +172,24 @@
   - How do I store multimodal data, e.g., a sample that might contain both images and texts?
   - Where do I store my data so that it’s cheap and still fast to access?
   - How do I store complex models so that they can be loaded and run correctly on different hardware?
+- Structured vs Unstructured data
+  - Structured: stored in data warehouses, follows a schema
+  - Unstructured: stored in data lakes (raw data before it's transformed), more flexible, doesn't follow a schema
+- Data processing
+  - Transaction processing uses databases that satisfy the low latency, high availability requirements
+  - ACID (atomicity, consistency, isolation, durability)
+    - **Atomicity**: To guarantee that all the steps in a transaction are completed successfully as a group. If any step in the transaction fails, all other steps must fail also. For example, if a user’s payment fails, you don’t want to still assign a driver to that user.
+    - **Consistency**: To guarantee that all the transactions coming through must follow predefined rules. For example, a transaction must be made by a valid user. 
+    - **Isolation**: To guarantee that two transactions happen at the same time as if they were isolated. Two users accessing the same data won’t change it at the same time. For example, you don’t want two users to book the same driver at the same time.
+    - **Durability**: To guarantee that once a transaction has been committed, it will remain committed even in the case of a system failure. For example, after you’ve ordered a ride and your phone dies, you still want your ride to come.
+- Availability
+  - online: online processing means data is immediately available for input/output
+  - Nearline: which is short for near-online, means data is not immediately available but can be made online quickly without human intervention
+  - Offline: data is not immediately available and requires some human intervention to become online
+- ETL: Extract-Transform-Load
+  - Extract from data sources
+  - Transform: join multiple sources, clean them, standardize values, making operations (transposing, deduplicating, sorting, aggregating, deriving new features)
+  - Load: how and how often to load your transformed data into the target destination
 
 ### Handling Missing Data
 
