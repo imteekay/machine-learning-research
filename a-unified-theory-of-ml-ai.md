@@ -286,11 +286,15 @@
 
 ### Handling imbalanced datasets
 
-- data augmentation: generating more examples for the ML model to train on (e.g. rotating images)
-- oversampling: increase the number of data points of a minority class via synthetic generation
-- undersampling: reduces examples from the majority class to balance the number of data points
-- ensemble methods: combine multiple individual models to produce a single, more robust, and often more accurate predictive model
-- stratification: get 20% of class 1, 20% of class 2, etc so the percentage will be equal even if the dataset is imbalanced
+- Data augmentation: generating more examples for the ML model to train on (e.g. rotating images)
+- Resampling
+  - Oversampling: increase the number of data points of a minority class via synthetic generation
+  - Undersampling: reduces examples from the majority class to balance the number of data points
+- Ensemble methods: combine multiple individual models to produce a single, more robust, and often more accurate predictive model
+- Stratification: get 20% of class 1, 20% of class 2, etc so the percentage will be equal even if the dataset is imbalanced
+- Choosing better metrics: measure precision, recall, and f1 for ROC and AUC graphs
+  - Note: F1 and recall, the ROC curve focuses only on the positive class and doesn’t show how well your model does on the negative class
+  - Precision-Recall Curve: gives a more informative picture of an algorithm’s performance on tasks with heavy class imbalance.
 
 ### PCA
 
