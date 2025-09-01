@@ -194,7 +194,8 @@
 ### Handling Missing Data
 
 - Dropping columns with missing values or adding values by infering from the dataset or using default values for a given feature
-- Use `SimpleImputer` to fill missing values with the mean
+- Dropping the rows that have the missing value for a given feature
+- Use `SimpleImputer` to fill missing values with the mean (mean, median, or mode)
 - **Insight**: understand the data so you can reason what's the best decision — using the mean value, 0 or dropping the column
 
 ### Data Cleaning
