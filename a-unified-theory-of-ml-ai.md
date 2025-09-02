@@ -241,18 +241,21 @@
   - This leads to high performance on the training set (and possibly even the validation data), but the model will perform poorly in production
   - There are two main types of leakage: target leakage and train-test contamination.
 - **Target leakage**: occurs when your predictors include data that will not be available at the time you make predictions.
-  - e.g. after having pneumonia, a patient usually takes antibiotic medicines, so a "took_antibiotic_medicine" information has a strongl relationship with "got_pneumonia". The value of "took_antibiotic_medicine" is usually changed after the value for got_pneumonia is determined
+  - e.g. after having pneumonia, a patient usually takes antibiotic medicines, so a "took_antibiotic_medicine" information has a strong relationship with "got_pneumonia". The value of "took_antibiotic_medicine" is usually changed after the value for "got_pneumonia" is determined
   - In this case, this feature (or any "variable updated (or created) after the target value") should be excluded from the training and validation set
+- Splitting time-correlated data randomly instead of by time leads to data leakage because a later point in time can influence an earlier point
+  - For time-correlated data, don't split randomly, do Time-Based Splitting
 - **Train-Test Contamination**: when you don't distinguish training data from validation data
   - Validation is meant to be a measure of how the model does on data that it hasn't considered before
-  - Running preprocessing before splitting data into train and validation would lead to the model getting good validation scores, giving you great confidence in it, but perform poorly when you deploy it to make decisions
+  - Running preprocessing (e.g. Filling in missing data) before splitting data into train and validation would lead to the model getting good validation scores, giving you great confidence in it, but perform poorly when you deploy it to make decisions
   - The idea is to exclude the validation data from any type of fitting, including the fitting of preprocessing steps
-  - A Pipeline helps handling this kind of leakages
+  - The `Pipeline` helps handling this kind of leakages
 - Divide training and test into separate datasets before performing scaling the features
-  - The mean and standard deviation used for scaling will be computed from the entire dataset.
+  - The mean and standard deviation (global statistics from training data) used for scaling will be computed from the entire dataset.
   - This means that information from the test set is indirectly influencing the training data.
   - Your model will learn from statistics that it would not have access to in a real-world scenario.
   - This can lead to overfitting and poor generalization.
+  - Split first, then scale
 
 ### Encoding Categorical Variables
 
