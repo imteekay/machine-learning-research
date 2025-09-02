@@ -231,8 +231,9 @@
   - X and Y have different distributions (different scales and meanings)
   - You can scale Y if it's a regression problem. Don't scale if it's a classification problem, since it's categorical
   - Tree-based models like XGBoost, Decision Trees, or Random Forests usually don't need scaling because these models are not sensitive to feature scaling
-- Use only the training set to calculate the mean and variance, normalize the training set, and then at test time, use that same (training) mean and variance to normalize the test set
-  - TODO: re-read [this answer](https://datascience.stackexchange.com/questions/39932/feature-scaling-both-training-and-test-data?newreg=64c8fc13490744028eb7414da9b6693a)
+- Use only the training set to calculate the mean and variance, normalize the training set, and then at test time, use that same (training) mean and variance statistics to normalize the test set
+  - If using the whole dataset to figure out the feature mean and variance, you're using knowledge about the distribution of the test set to set the scale of the training set - 'leaking' information — [detailed explanation](https://datascience.stackexchange.com/questions/39932/feature-scaling-both-training-and-test-data?newreg=64c8fc13490744028eb7414da9b6693a)
+  - Don't use statistics and knowledge from test data: this is why the scaling of test features should be done with knowledge from the training set
 
 ### Data Leakage
 
