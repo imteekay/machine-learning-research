@@ -427,6 +427,7 @@ Which model is better? It depends on the problem at hand. If the relationship be
     - Visualizing errors (poor predictions)
   - Evaluate the model on the test set
     - Metrics should be similar to your validation numbers, or else you may have some overfitting going on
+- Learning curves: analyze loss and accuracy metrics with the increase or decrease of training data. Use [LearningCurveDisplay](https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html) to plot a learning curve for different models and understand how they handle different amount of training data.
 
 ### Objective Functions: Loss functions
 
