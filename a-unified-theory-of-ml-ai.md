@@ -256,6 +256,10 @@
   - Your model will learn from statistics that it would not have access to in a real-world scenario.
   - This can lead to overfitting and poor generalization.
   - Split first, then scale
+- Detecting Data Leakage
+  - Measure the predictive power of each feature or a set of features with respect to the target variable (label)
+  - If a feature has unusually high correlation, investigate how this feature is generated and whether the correlation makes sense.
+  - Measure how important a feature or a set of features is to your model. Investigate why that feature is so important
 
 ### Encoding Categorical Variables
 
