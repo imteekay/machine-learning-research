@@ -165,6 +165,7 @@
 - Correlations: multicollinearity (independent variables in a regression model are highly correlated)
 - Mean, Central Limit Theorem, Confidence interval (standard error)
 - Visualize the data (TODO: show ways to plot data to better visualize the data)
+- Feature importance: built-in feature importance functions by XGBoost, SHAP (SHapley Additive exPlanations), InterpretML
 
 ### Data Engineering
 
