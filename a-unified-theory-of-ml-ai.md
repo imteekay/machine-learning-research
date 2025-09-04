@@ -22,7 +22,7 @@
     - [Splitting Data \& Cross Validation](#splitting-data--cross-validation)
     - [Handling imbalanced datasets](#handling-imbalanced-datasets)
     - [PCA](#pca)
-  - [Model Training](#model-training)
+  - [Model Development \& Training](#model-development--training)
     - [Baseline](#baseline)
     - [Model Selection](#model-selection)
     - [Model Performance](#model-performance)
@@ -36,6 +36,7 @@
       - [ROC](#roc)
       - [R²](#r)
       - [Log-likelihood](#log-likelihood)
+    - [Experiment tracking](#experiment-tracking)
   - [Machine Learning Models](#machine-learning-models)
     - [Linear Regression](#linear-regression)
     - [Logistic Regression](#logistic-regression)
@@ -315,7 +316,7 @@
   - A covariance matrix is a square matrix that contains the covariances between pairs of variables in a dataset.
   - Covariance measures the degree to which two variables change together
 
-## Model Training
+## Model Development & Training
 
 - Have a data-centric AI development: from data to model rather than model fitting the data
 - Challenges
@@ -476,6 +477,17 @@ def r2_score(Y_true, Y_pred):
 #### Log-likelihood
 
 TODO
+
+### Experiment tracking
+
+The process of tracking the progress and results of an experiment.
+
+- The loss curve corresponding to the train split and each of the eval splits.
+- The model performance metrics that you care about on all nontest splits, such as accuracy, F1, perplexity.
+- The log of corresponding sample, prediction, and ground truth label.
+- The speed of your model, evaluated by the number of steps per second or, if your data is text, the number of tokens processed per second.
+- System performance metrics such as memory usage and CPU/GPU utilization. They’re important to identify bottlenecks and avoid wasting system resources.
+- The values over time of any parameter and hyperparameter whose changes can affect your model’s performance, such as the learning rate if you use a learning rate schedule; gradient norms (both globally and per layer).
 
 ## Machine Learning Models
 
