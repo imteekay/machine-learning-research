@@ -560,7 +560,7 @@ TODO
     - Sample again and keep doing this process: repeat the selection process multiple times, and each time, the original dataset remains unchanged due to the replacement
   - Decision trees work well in tabular (structured) data but recommended for unstructured data (images, audio, text)
   - Fast and good interpretability
-  - In bagging, the trees are grown independently on random samples of the observations. Consequently, the trees tend to be quite similar to each other. Thus, bagging can get caught in local optima and can fail to thoroughly explore the model space.
+  - **Bagging**: In bagging, the trees are grown independently on random samples of the observations. Consequently, the trees tend to be quite similar to each other. Thus, bagging can get caught in local optima and can fail to thoroughly explore the model space.
     - Bagging trains multiple models on different subsets of the training data and combines their predictions to make a final prediction.
     - In classification problems, it uses the mode for the most common label
     - In regression problems, it uses the average of all predictions
@@ -569,7 +569,7 @@ TODO
     - For big Bs, it won't hurt but will have diminishing returns
     - In the sampling with replacement, it chooses k features out of n (total number of features)
       - k = √n is a very common and often effective default value for k
-  - In boosting, we only use the original data, and do not draw any random samples. The trees are grown successively, using a “slow” learning approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
+  - **Boosting**: In boosting, we only use the original data, and do not draw any random samples. The trees are grown successively, using a “slow” learning approach: each new tree is fit to the signal that is left over from the earlier trees, and shrunken down before it is used.
     - Boosting trains a series of models where each model tries to correct the mistakes made by the previous model. The final prediction is made by all the models.
     - Similar to random forest, but instead of picking from all m examples, make it increase the weight for misclassified examples from previously trained trees and decrease the weight for correctly classified examples
     - The misclassified examples means that the tree algorithm is not doing quite well for these examples and the model should be training more to correctly classify them
