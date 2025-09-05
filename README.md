@@ -140,6 +140,7 @@
 - [Making Deep Learning Go Brrrr From First Principles](https://horace.io/brrr_intro.html)
 - [ML Experiment Tracking: What It Is, Why It Matters, and How to Implement It](https://neptune.ai/blog/ml-experiment-tracking)
 - [ML Model Baselines](https://blog.ml.cmu.edu/2020/08/31/3-baselines)
+- [[Paper] Large Scale Distributed Deep Networks](https://www.cs.toronto.edu/~ranzato/publications/DistBeliefNIPS2012_withAppendix.pdf)
 
 ## Artificial Intelligence
 
