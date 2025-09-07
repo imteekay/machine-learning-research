@@ -301,6 +301,7 @@
 - [A Reinforcement Learning Guide](https://naklecha.notion.site/a-reinforcement-learning-guide)
 - [Reinforcement Learning](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQe1JXNvaFvURxGY4gE9k74)
 - [Reinforcement Learning: An Introduction](https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262039249)
+- [Understanding reinforcement learning for model training from scratch](https://medium.com/data-science-collective/understanding-reinforcement-learning-for-model-training-from-scratch-8bffe8d87a07)
 
 ### PyTorch
 
