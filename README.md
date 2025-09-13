@@ -427,6 +427,7 @@
 - [[Paper] Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747)
 - [[Paper] SE(3)-Stochastic Flow Matching for Protein Backbone Generation](https://arxiv.org/abs/2310.02391)
 - [[Article] Diving Into Protein Design with SE(3) Flow Matching](https://chekmenev.me/posts/protein_discovery)
+- [[Article] Protein Embeddings: Unlocking Protein Secrets with Deep Learning; ESM, and ProteinBERT](https://medium.com/@aynr/protein-embeddings-unlocking-protein-secrets-with-deep-learning-esm-and-protbert-ac1951c31d2f)
 
 ### Podcasts
 
