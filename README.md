@@ -698,6 +698,7 @@
 ## Research & Laboratories
 
 - [Microsoft Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures)
+- [Baker Lab](https://www.bakerlab.org)
 
 ## License
 
