@@ -701,6 +701,7 @@
 - [Baker Lab](https://www.bakerlab.org)
 - [Zhang Lab](https://zhanggroup.org)
 - [Zhang lab @ MIT](https://www.zlab.bio)
+- [The Programmable Biology Group](https://www.chatterjeelab.com)
 
 ## License
 
