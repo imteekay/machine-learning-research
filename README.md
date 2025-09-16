@@ -700,6 +700,7 @@
 - [Microsoft Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures)
 - [Baker Lab](https://www.bakerlab.org)
 - [Zhang Lab](https://zhanggroup.org)
+- [Zhang lab @ MIT](https://www.zlab.bio)
 
 ## License
 
