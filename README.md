@@ -26,7 +26,6 @@
     - [ML/AI \& Healthcare](#mlai--healthcare)
     - [ML/AI \& Biology](#mlai--biology)
     - [Podcasts](#podcasts)
-    - [Communities](#communities)
     - [Questions and Answers](#questions-and-answers)
     - [Databases](#databases)
     - [Meta / Lists](#meta--lists)
@@ -38,14 +37,16 @@
     - [Computational Biology](#computational-biology)
     - [Precision Health](#precision-health)
     - [Meta](#meta)
-    - [Central Resources](#central-resources)
     - [Science: Q\&A](#science-qa)
   - [Careers](#careers)
     - [Interview Prep](#interview-prep)
     - [Jobs](#jobs)
   - [Projects](#projects)
-  - [People](#people)
-  - [Research \& Laboratories](#research--laboratories)
+  - [Community](#community)
+    - [People](#people)
+    - [Research \& Laboratories](#research--laboratories)
+    - [Communities](#communities)
+    - [Central Resources](#central-resources)
   - [License](#license)
 
 ## Learning Roadmap
@@ -435,21 +436,6 @@
 
 - [Data Science, Past, Present and Future with Hilary Mason](https://www.datacamp.com/community/podcast/data-science-past-present-and-future)
 
-### Communities
-
-- [Machine Learning Reddit](https://www.reddit.com/r/MachineLearning)
-- [NLP Reddit](https://www.reddit.com/r/LanguageTechnology)
-- [Statistics Reddit](https://www.reddit.com/r/statistics)
-- [Data Science Reddit](https://www.reddit.com/r/datascience)
-- [Machine Learning Quora Topic](https://www.quora.com/topic/Machine-Learning)
-- [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
-- [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
-- [Lee Lab of AI for bioMedical Sciences](https://suinlee.cs.washington.edu)
-- [Lab of big data and predictive analysis in healthcare](https://www.fsp.usp.br/labdaps)
-- [Jean Fan lab](https://jef.works)
-- [Pranav Rajpurkar](https://pranavrajpurkar.com)
-- [The AI Health Podcast](https://twitter.com/AIHealthPodcast)
-
 ### Questions and Answers
 
 - [Andrew Ng's answer on "How should you start a career in Machine Learning?"](https://www.quora.com/How-should-you-start-a-career-in-Machine-Learning)
@@ -533,19 +519,6 @@
 - [Demis Hassabis, AI to Accelerate Scientific Discovery](https://www.youtube.com/watch?v=u1dl_keFK4w&ab_channel=Axial)
 - [Demis Hassabis, AI for Science](https://www.youtube.com/watch?v=Q2JmdyqLqiw&ab_channel=Axial)
 
-### Central Resources
-
-- [Armando Hasudungan](https://www.youtube.com/user/armandohasudungan)
-- [John Gilmore M.D.](https://www.youtube.com/channel/UCqBho4rDGlST_PY5I2Bh9yQ)
-- [Dr. Najeeb Lectures](https://www.youtube.com/channel/UCPHpx55tgrbm8FrYYCflAHw)
-- [MedCram - Medical Lectures Explained CLEARLY](https://www.youtube.com/channel/UCG-iSMVtWbbwDDXgXXypARQ)
-- [nabil ebraheim](https://www.youtube.com/user/nabilebraheim)
-- [Strong Medicine](https://www.youtube.com/channel/UCFq5vPnNRNNNysLrktz4aSw)
-- [Cancer Research Demystified](https://www.youtube.com/c/CancerResearchDemystified/featured)
-- [Cancer.Net](https://www.cancer.net)
-- [Books on Computational Molecular Biology](https://mitpress.mit.edu/books/series/computational-molecular-biology)
-- [Obenauf Lab](https://www.obenauflab.com)
-
 ### Science: Q&A
 
 - [As a computer science graduate student, I am motivated to do cancer research. How significantly can computer scientists contribute to cancer research? Where are such research institutes where I can pursue a PhD?](https://www.quora.com/As-a-computer-science-graduate-student-I-am-motivated-to-do-cancer-research-How-significantly-can-computer-scientists-contribute-to-cancer-research-Where-are-such-research-institutes-where-I-can-pursue-a-PhD)
@@ -593,7 +566,9 @@
 - [PyTorch Computer Vision Exercises](projects/pytorch/pytorch-computer-vision-exercises.ipynb)
 - [PyTorch Custom Datasets](projects/pytorch/pytorch-custom-datasets.ipynb)
 
-## People
+## Community
+
+### People
 
 - [Andrej Karpathy](https://karpathy.ai)
 - [Alex Krizhevsky](https://www.cs.toronto.edu/~kriz)
@@ -698,13 +673,41 @@
 - [Wenxian Shi](https://wxsh1213.github.io)
 - [Justas Dauparas](https://dauparas.github.io)
 
-## Research & Laboratories
+### Research & Laboratories
 
 - [Microsoft Health Futures](https://www.microsoft.com/en-us/research/lab/microsoft-health-futures)
 - [Baker Lab](https://www.bakerlab.org)
 - [Zhang Lab](https://zhanggroup.org)
 - [Zhang lab @ MIT](https://www.zlab.bio)
 - [The Programmable Biology Group](https://www.chatterjeelab.com)
+
+### Communities
+
+- [Machine Learning Reddit](https://www.reddit.com/r/MachineLearning)
+- [NLP Reddit](https://www.reddit.com/r/LanguageTechnology)
+- [Statistics Reddit](https://www.reddit.com/r/statistics)
+- [Data Science Reddit](https://www.reddit.com/r/datascience)
+- [Machine Learning Quora Topic](https://www.quora.com/topic/Machine-Learning)
+- [Statistics Quora Topic](https://www.quora.com/topic/Statistics-academic-discipline)
+- [Data Science Quora Topic](https://www.quora.com/topic/Data-Science)
+- [Lee Lab of AI for bioMedical Sciences](https://suinlee.cs.washington.edu)
+- [Lab of big data and predictive analysis in healthcare](https://www.fsp.usp.br/labdaps)
+- [Jean Fan lab](https://jef.works)
+- [Pranav Rajpurkar](https://pranavrajpurkar.com)
+- [The AI Health Podcast](https://twitter.com/AIHealthPodcast)
+
+### Central Resources
+
+- [Armando Hasudungan](https://www.youtube.com/user/armandohasudungan)
+- [John Gilmore M.D.](https://www.youtube.com/channel/UCqBho4rDGlST_PY5I2Bh9yQ)
+- [Dr. Najeeb Lectures](https://www.youtube.com/channel/UCPHpx55tgrbm8FrYYCflAHw)
+- [MedCram - Medical Lectures Explained CLEARLY](https://www.youtube.com/channel/UCG-iSMVtWbbwDDXgXXypARQ)
+- [nabil ebraheim](https://www.youtube.com/user/nabilebraheim)
+- [Strong Medicine](https://www.youtube.com/channel/UCFq5vPnNRNNNysLrktz4aSw)
+- [Cancer Research Demystified](https://www.youtube.com/c/CancerResearchDemystified/featured)
+- [Cancer.Net](https://www.cancer.net)
+- [Books on Computational Molecular Biology](https://mitpress.mit.edu/books/series/computational-molecular-biology)
+- [Obenauf Lab](https://www.obenauflab.com)
 
 ## License
 
