@@ -696,6 +696,7 @@
 - [Seul Lee](https://seullee05.github.io)
 - [Zhenqiao Song](https://jocelynsong.github.io)
 - [Wenxian Shi](https://wxsh1213.github.io)
+- [Justas Dauparas](https://dauparas.github.io)
 
 ## Research & Laboratories
 
