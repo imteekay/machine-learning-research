@@ -431,6 +431,7 @@
 - [[Article] Diving Into Protein Design with SE(3) Flow Matching](https://chekmenev.me/posts/protein_discovery)
 - [[Article] Protein Embeddings: Unlocking Protein Secrets with Deep Learning; ESM, and ProteinBERT](https://medium.com/@aynr/protein-embeddings-unlocking-protein-secrets-with-deep-learning-esm-and-protbert-ac1951c31d2f)
 - [[Paper] Transfer learning with graph neural networks for improved molecular property prediction in the multi-fidelity setting](https://www.nature.com/articles/s41467-024-45566-8)
+- [[Paper] Biological structure and function emerge from scalingunsupervised learning to 250 million protein sequences](https://www.pnas.org/doi/epdf/10.1073/pnas.2016239118)
 
 ### Podcasts
 
