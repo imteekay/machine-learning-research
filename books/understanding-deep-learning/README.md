@@ -608,7 +608,15 @@ An example of word embedding usage is to be build a language model that predicts
 
 ![](neural-language-model.png)
 
-## Transformers
+## Attention & Transformers
+
+- Associate each token with a high dimensional vector, an embedding
+  - An embedding has semantic meaning
+  - Initially, the embedding is just a look up table with no reference to the context
+  - With attention, the surrounding embeddings can pass information to one another
+- Attention Pattern
+  - The query Q asks questions how the other tokens relate to the one in question
+  - The key K answers the query Q for each token. It applies softmax to normalize K for each token, as if it was a probability distribution. It gives weights according to how relevant each surrounding token is to the token in question.
 
 **Encoder**: Feedforward after the multi-head attention in the encoder
 
