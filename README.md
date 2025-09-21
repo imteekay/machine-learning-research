@@ -674,6 +674,7 @@
 - [Zhenqiao Song](https://jocelynsong.github.io)
 - [Wenxian Shi](https://wxsh1213.github.io)
 - [Justas Dauparas](https://dauparas.github.io)
+- [Maria Nattestad](https://marianattestad.com)
 
 ### Research & Laboratories
 
@@ -704,7 +705,7 @@
 - [John Gilmore M.D.](https://www.youtube.com/channel/UCqBho4rDGlST_PY5I2Bh9yQ)
 - [Dr. Najeeb Lectures](https://www.youtube.com/channel/UCPHpx55tgrbm8FrYYCflAHw)
 - [MedCram - Medical Lectures Explained CLEARLY](https://www.youtube.com/channel/UCG-iSMVtWbbwDDXgXXypARQ)
-- [nabil ebraheim](https://www.youtube.com/user/nabilebraheim)
+- [Nabil Ebraheim](https://www.youtube.com/user/nabilebraheim)
 - [Strong Medicine](https://www.youtube.com/channel/UCFq5vPnNRNNNysLrktz4aSw)
 - [Cancer Research Demystified](https://www.youtube.com/c/CancerResearchDemystified/featured)
 - [Cancer.Net](https://www.cancer.net)
