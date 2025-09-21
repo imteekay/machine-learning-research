@@ -58,7 +58,7 @@
 
 ### Intuition about Derivatives
 
-![](derivatives-intuition.png)
+![](images/derivatives-intuition.png)
 
 - Derivatives are the slope of a function, in other words, it's how much the function changes if we change its variable
   - How much `f(x)` changes, if we change the `x`
@@ -68,7 +68,7 @@
 
 ## Computation Graph
 
-![](computation-graph.png)
+![](images/computation-graph.png)
 
 - Computing J
   - J(a, b, c) = 3 (a + bc)
@@ -87,14 +87,14 @@
 
 ## Gradient Descent
 
-![](logistic-regression.png)
+![](images/logistic-regression.png)
 
 - `z` is the linear transformation: `wt * x + b`
 - `a` is the prediction, the activation function applied to `z` (sigmoid in this case)
 - The loss function is computed this way with respect to `a`
 - We go backwards using the derivative of the loss function with respect to `a`, `z`, `w1`, and `w2`
 
-![](gradient-descent-m-training-examples.png)
+![](images/gradient-descent-m-training-examples.png)
 
 - Cost function `J` is the mean of the sum of all loss functions
 - Gradient descent is the derivative of the cost function with respect to the weight
@@ -131,22 +131,22 @@
 
 ## Vectorization
 
-![](vectorizing.png)
+![](images/vectorizing.png)
 
 - Vectorization is getting rid of explicit for loops in code
 
-![](vectorizing-across-multiple-examples.png)
+![](images/vectorizing-across-multiple-examples.png)
 
 ## Neural Network
 
-![](neural-network.png)
+![](images/neural-network.png)
 
 - Each node does two things
   - Compute the linear combination
   - Compute the activation function
 - A superscript is the layer and the subscript is the node in the layer
 
-![](linear-combination-in-neural-net.png)
+![](images/linear-combination-in-neural-net.png)
 
 - For X,
   - the horizontal is all the training examples
@@ -155,7 +155,7 @@
   - the horizontal is all the training examples
   - the vertical is the hidden units (nodes) in the hidden layer
 
-![](activation-functions.png)
+![](images/activation-functions.png)
 
 - An activation function is a non-linear function: sigmoid, tanh (superior than sigmoid), relu (most common)
   - tanh: from -1 to 1 -> the mean of the activation function for a given hidden layer is 0 and it makes the learning for the next layer a little bit easier
@@ -189,7 +189,7 @@
 
 ## Bias/Variance
 
-![](bias-and-variance.png)
+![](images/bias-and-variance.png)
 
 - Bias/Variance tradeoff
   - High bias: underfitting
@@ -229,7 +229,7 @@
 
 ## Input Normalization
 
-![](input-normalization.png)
+![](images/input-normalization.png)
 
 - two steps
   - subtract the mean: `x = x - μ` (μ is the mean and x is each training example)
@@ -240,7 +240,7 @@
 - Regularization penalizes big weights in a model
 - Large weights can make a model overly sensitive to small changes in input features, leading to poor generalization on unseen data
 
-![](regularization-neural-network.png)
+![](images/regularization-neural-network.png)
 
 - Almost always help the overfitting problem
 - ƛ: the regularization (hyper)parameter
@@ -248,21 +248,21 @@
   - With a big lambda, we set W to be near zero
   - With most of the hidden units as zero, the neural network becomes simpler and smaller
 
-![](regularization-tanh.png)
+![](images/regularization-tanh.png)
 
 - With a big lambda, we have a smaller W
 - Z = W a + b
 - With a smaller W, we have a smaller Z
 - A smaller Z will be in the region of the function that will be roughly linear
 
-![](dropout-regularization.png)
+![](images/dropout-regularization.png)
 
 - Drop some of the hidden units
 - Make the neural network model smaller and simpler
 
 ## Mini Batch Gradient Descent
 
-![](mini-batch.png)
+![](images/mini-batch.png)
 
 - The idea of the mini batch is to apply gradient descent in mini batches so we can update the parameters and iterate faster
 - Mini batch process
@@ -270,12 +270,12 @@
   - Do the forward prop and backward prop
   - Update the weights and biases
 
-![](batch-vs-mini-batch.png)
+![](images/batch-vs-mini-batch.png)
 
 - if mini batch size = m: batch gradient descent (too long, too much time)
 - if mini batch size = 1 (on every example): stochastic gradient descent (lose speedup from vectorization)
 
-![](mini-batch-size.png)
+![](images/mini-batch-size.png)
 
 - The size of each mini batch
   - size in between 1 and m (not too big or too small): fastest learning
@@ -304,7 +304,7 @@
 
 ## Adam optimization algorithm
 
-![](adam.png)
+![](images/adam.png)
 
 - Adam (Adaptive Moment Estimation) optimization is a combination of Momentum and RMSProp techniques
 - Great to overcome the problem of local optima and plateau
@@ -315,7 +315,7 @@
 
 ## Batch Normalization
 
-![](batch-normalization.png)
+![](images/batch-normalization.png)
 
 - Normalizing input features can speed up learning
 - For deep neural nets, we have not only the input layer but also the activations
@@ -341,7 +341,7 @@
   - Detect horizontal edges
 - For edge detection, we use filters or kernels with convolutions
 
-![](filter-and-convolution.png)
+![](images/filter-and-convolution.png)
 
 - Build a filter (matrix N x N, e.g. 3x3) and apply a convolution operation in the input data that will output a 4x4 matrix
   - A 6x6 matrix convolved with 3x3 matrix outputs a 4x4 matrix
@@ -365,7 +365,7 @@
 
 ## Convolutions in 3D images
 
-![](3d-convolution.png)
+![](images/3d-convolution.png)
 
 - For a 3D image (e.g. RGB image), we need a 3D filter
   - 6 x 6 x 3: height, width, channels (red, green, blue)
@@ -373,7 +373,7 @@
 
 ## Multiple filters
 
-![](multiple-filters.png)
+![](images/multiple-filters.png)
 
 - Apply multiple filters (convolutions) in a convolutional neural network (CNN), an output stack is created. This stack is called "feature map"
 - Each convolutional filter is designed to detect specific patterns or features
@@ -592,7 +592,7 @@ def rnn_forward(x, a0, parameters):
   - Reducing Dimensionality
   - Improved Generalization
 
-![](embedding-matrix.png)
+![](images/embedding-matrix.png)
 
 The embedding matrix is a lookup table that stores vector representations for words. In this case, 300 features for 10,000 words
 
@@ -606,7 +606,7 @@ An example of word embedding usage is to be build a language model that predicts
 - The input of the network is all the word embedding in the sentence
 - The model uses a softmax activation function to compute the probability of all possible tokens and output the best prediction
 
-![](neural-language-model.png)
+![](images/neural-language-model.png)
 
 ## Attention & Transformers
 
