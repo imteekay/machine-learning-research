@@ -675,6 +675,7 @@
 - [Wenxian Shi](https://wxsh1213.github.io)
 - [Justas Dauparas](https://dauparas.github.io)
 - [Maria Nattestad](https://marianattestad.com)
+- [Cao (Danica) Xiao](https://sites.google.com/view/danicaxiao)
 
 ### Research & Laboratories
 
