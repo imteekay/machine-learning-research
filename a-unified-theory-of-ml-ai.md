@@ -12,7 +12,7 @@
     - [Modeling (Model Training \& Machine Learning Models)](#modeling-model-training--machine-learning-models)
     - [Deployment](#deployment)
   - [Pre-processing](#pre-processing)
-    - [Understanding the Data](#understanding-the-data)
+    - [Understanding the Domain/Data](#understanding-the-domaindata)
     - [Data Engineering](#data-engineering)
     - [Handling Missing Data](#handling-missing-data)
     - [Data Cleaning](#data-cleaning)
@@ -159,7 +159,7 @@
 - **Splitting Data & Cross Validation**: Dividing data into training, validation, and test sets.
 - **Handling imbalanced datasets**: Using transformations and other techniques.
 
-### Understanding the Data
+### Understanding the Domain/Data
 
 - Graph the data to analyse the distribution: find if the dataset is asymetrical and if it will generate a bias
 - Domain knowledge about the data: understand its features, default values, missing values, the importance or unimportance of each feature
@@ -167,6 +167,13 @@
 - Mean, Central Limit Theorem, Confidence interval (standard error)
 - Visualize the data (TODO: show ways to plot data to better visualize the data)
 - Feature importance: built-in feature importance functions by XGBoost, SHAP (SHapley Additive exPlanations), InterpretML
+- Understand the domain
+  - Risks and Failures Due to Lack of Domain Knowledge
+    - Conceptual mistakes (e.g. fail to look at the biological context and literature)
+    - Impossible predictions (e.g. AI solutions that result in impossible biological predictions)
+    - Ignore what are the current challenges and what could unlock impactful results
+    - Misunderstanding of foundational concepts
+    - Difficulty catching errors
 
 ### Data Engineering
 
