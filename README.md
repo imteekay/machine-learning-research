@@ -32,6 +32,7 @@
   - [Science](#science)
     - [Fundamentals](#fundamentals)
     - [Science](#science-1)
+    - [Biology](#biology)
     - [Cancer](#cancer)
     - [Genetics](#genetics)
     - [Computational Biology](#computational-biology)
@@ -472,6 +473,10 @@
 - [AI Case Studies for Natural Science Research](https://www.youtube.com/watch?v=rfPQ2y857eM&ab_channel=MicrosoftResearch)
 - [How AI Is Unlocking the Secrets of Nature and the Universe](https://www.youtube.com/watch?v=0_M_syPuFos&ab_channel=TED)
 - [Will AI Spark the Next Scientific Revolution?](https://www.youtube.com/watch?v=7wznuB0sKlw)
+
+### Biology
+
+- [Cell biology by the numbers](https://book.bionumbers.org)
 
 ### Cancer
 
