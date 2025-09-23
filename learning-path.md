@@ -12,7 +12,7 @@
   - [Math \& Statistics Foundations](#math--statistics-foundations)
   - [Foundation in Machine Learning](#foundation-in-machine-learning)
   - [Foundation in Deep Learning](#foundation-in-deep-learning)
-  - [Genomic Medicine and Clinical Applications](#genomic-medicine-and-clinical-applications)
+  - [Bio Medicine and Healthcare](#bio-medicine-and-healthcare)
   - [Machine Learning in BioMedicine](#machine-learning-in-biomedicine)
 
 ## Programming & Data Tools
@@ -76,13 +76,14 @@
   - [ ] Autoencoders/Variational Autoencoders (VAEs)
   - [ ] Generative Adversarial Networks (GANs)
   - [ ] Graph Neural Networks (GNNs)
+  - [ ] Diffusion Models
 - [ ] Deep Learning Frameworks
   - [X] [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)
   - [ ] [Learn PyTorch for Deep Learning](https://www.learnpytorch.io)
 - [ ] Deep Reinforcement Learning
   - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
 
-## Genomic Medicine and Clinical Applications
+## Bio Medicine and Healthcare
 
 - [ ] Genetics Fundamentals
   - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
@@ -90,7 +91,9 @@
   - [ ] [[Course] DNA Decoded](https://www.coursera.org/learn/dna-decoded)
   - [ ] [Genomics Papers](https://github.com/jtleek/genomicspapers)
 - [ ] Molecular Biology
-  - [ ] [Book] Molecular Biology of the Cell
+  - [ ] [[Book] Molecular Biology of the Cell](https://www.amazon.com/Molecular-Biology-Cell-Bruce-Alberts-dp-0393884848/dp/0393884848)
+  - [ ] [Molecular Biology for Computer Scientists](https://tandy.cs.illinois.edu/Hunter_MolecularBiology.pdf)
+  - [ ] [Molecular Biology: A Very Short Introduction](https://academic.oup.com/book/670)
   - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p)
   - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
 - [ ] Cancer Fundamentals
