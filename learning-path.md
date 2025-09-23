@@ -95,6 +95,7 @@
   - [ ] [[Book] Molecular Biology for Computer Scientists](https://tandy.cs.illinois.edu/Hunter_MolecularBiology.pdf)
   - [ ] [[Book] Molecular Biology: A Very Short Introduction](https://academic.oup.com/book/670)
   - [ ] [[Book] A Computer Scientist’s Guide to Cell Biology](https://wwcohen.github.io/GuideToBiology-sampleChapter-release1.4.pdf)
+  - [ ] [[Primer] A Biology Primer for Computer Scientists](https://web.stanford.edu/class/cs173/papers/bioprimer.pdf)
   - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p)
   - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
 - [ ] Cancer Fundamentals
