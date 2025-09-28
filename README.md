@@ -364,6 +364,7 @@
 - [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
 - [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
 - [Multimodal, Generative, and Agentic AI for Pathology](https://www.youtube.com/watch?v=tbJwdK48hJw&list=PLlMMtlgw6qNjROoMNTBQjAcdx53kV50cS&index=2)
+- [[Paper] Medical multimodal foundation models in clinical diagnosis and treatment: Applications, challenges, and future directions](https://www.sciencedirect.com/science/article/abs/pii/S0933365725002003)
 
 ### ML/AI & Biology
 
