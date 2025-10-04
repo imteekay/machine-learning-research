@@ -1,6 +1,7 @@
 # AI for Medical Diagnosis
 
 - [Data Exploration and Image Pre-processing](week1/data-exploration-and-image-pre-processing.ipynb)
+- [Counting Labels and Weighted Loss Function](week1/ai-for-medicine-diagnosis-counting-labels-and-we.ipynb)
 - Chest X-Rays
   - Detection of pneumonia, lung cancer, etc
   - Model -> Mass or Normal (prediction probabilities)
