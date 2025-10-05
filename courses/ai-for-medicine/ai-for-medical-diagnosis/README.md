@@ -13,4 +13,8 @@
     - Weighted Loss: To handle the class imbalance problem, we add weights for each class for the loss function computation. We weight the examples (from the class that has less examples in the dataset) more, so it can have equal contribution to the the loss
     - Resampling the dataset so it can be balanced: the same amount of samples for all classes
   - Multi-task
+    - Rather than just one label, we have multiple labels
+    - Rather than one output, we have multiple prediction outputs, one for each label
+    - Loss calculation: one loss function for each label and then sum them
+      - In each loss function, we have paramters W for each label
   - Dataset size
