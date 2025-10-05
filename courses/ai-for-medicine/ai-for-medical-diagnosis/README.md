@@ -11,5 +11,6 @@
     - e.g. there are a lot more examples of "normal" compared to "mass" when it comes to x-rays for a healthy population
     - Because there is more of one class compared to another, this class has more affect on the loss function
     - Weighted Loss: To handle the class imbalance problem, we add weights for each class for the loss function computation. We weight the examples (from the class that has less examples in the dataset) more, so it can have equal contribution to the the loss
+    - Resampling the dataset so it can be balanced: the same amount of samples for all classes
   - Multi-task
   - Dataset size
