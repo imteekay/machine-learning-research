@@ -291,6 +291,7 @@
 - [[Article] A Complete Guide to BERT with Code](https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11)
 - [[Video] The physics behind diffusion models](https://www.youtube.com/watch?v=R0uMcXsfo2o)
 - [[Paper] An end-to-end attention-based approach for learning on graphs](https://www.nature.com/articles/s41467-025-60252-z)
+- [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book)
 
 ### Deep Reinforcement Learning
 
