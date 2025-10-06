@@ -437,6 +437,7 @@
 - [[Paper] Transfer learning with graph neural networks for improved molecular property prediction in the multi-fidelity setting](https://www.nature.com/articles/s41467-024-45566-8)
 - [[Paper] Biological structure and function emerge from scalingunsupervised learning to 250 million protein sequences](https://www.pnas.org/doi/epdf/10.1073/pnas.2016239118)
 - [[Video] The ESM-1b protein language model](https://www.youtube.com/watch?v=nXaqAEBtItc)
+- [[Paper] AI-driven protein design](https://www.nature.com/articles/s44222-025-00349-8)
 
 ### Podcasts
 
