@@ -24,3 +24,7 @@
     - Data augmentation: generating mode samples
       - It should preserve the label. e.g. flipping the image of an x-ray can make the label go from 'normal' to 'dextrocardia', a rare heart disease, where the heart points to the right side, so it's not a valid data augmentation
       - Rotate, flips, crops, color noise
+- Model test
+  - Data splitting: when splitting patient data into train, validation, and test sets, we should make sure that a patient data belongs to the same set and doesn't leak to another set.
+    - The model doesn't necessarily generalize as it is tested on trained data
+    - Overestimation of performance: it doesn't accurately reflect how the model would perform in a real-world setting on a completely new patient
