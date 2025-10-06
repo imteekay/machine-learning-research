@@ -19,3 +19,8 @@
     - Loss calculation: one loss function for each label and then sum them
       - In each loss function, we have paramters W for each label
   - Dataset size
+    - Use transfer learning: pretrained + fine-tuning models for small datasets
+      - Use pretrained models to learn generic features that can be helpful for specific goals
+    - Data augmentation: generating mode samples
+      - It should preserve the label. e.g. flipping the image of an x-ray can make the label go from 'normal' to 'dextrocardia', a rare heart disease, where the heart points to the right side, so it's not a valid data augmentation
+      - Rotate, flips, crops, color noise
