@@ -1,9 +1,16 @@
 # AI for Medical Diagnosis
 
+## Week 1
+
+### Notebooks
+
 - [Data Exploration and Image Pre-processing](week1/data-exploration-and-image-pre-processing.ipynb)
 - [Counting Labels and Weighted Loss Function](week1/ai-for-medicine-diagnosis-counting-labels-and-we.ipynb)
 - [Denset 121](week1/ai-for-medicine-densenet.ipynb)
 - [Patient Overlap and Data Leakage](week1/ai-for-medicine-patient-overlap-and-data-leakage.ipynb)
+
+### Content
+
 - Chest X-Rays
   - Detection of pneumonia, lung cancer, etc
   - Model -> Mass or Normal (prediction probabilities)
