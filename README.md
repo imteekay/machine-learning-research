@@ -438,6 +438,11 @@
 - [[Paper] Biological structure and function emerge from scalingunsupervised learning to 250 million protein sequences](https://www.pnas.org/doi/epdf/10.1073/pnas.2016239118)
 - [[Video] The ESM-1b protein language model](https://www.youtube.com/watch?v=nXaqAEBtItc)
 - [[Paper] AI-driven protein design](https://www.nature.com/articles/s44222-025-00349-8)
+- [[Paper] Sequence modeling and design from molecular to genome scale with Evo](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Nguyen24.pdf)
+- [[Paper] Learning the protein language: Evolution, structure, and function](http://rivaslab.org/teaching/MCB128_AIMB/downloads/BeplerBerger21.pdf)
+- [[Paper] DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Ji21.pdf)
+- [[Paper] Evolutionary-scale prediction of atomic-level protein structure with a language model](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Lin23.pdf)
+- [[Paper] ProGen2: Exploring the boundaries of protein language models](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Nijkamp23.pdf)
 
 ### Podcasts
 
