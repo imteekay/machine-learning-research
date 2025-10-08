@@ -443,6 +443,7 @@
 - [[Paper] DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Ji21.pdf)
 - [[Paper] Evolutionary-scale prediction of atomic-level protein structure with a language model](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Lin23.pdf)
 - [[Paper] ProGen2: Exploring the boundaries of protein language models](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Nijkamp23.pdf)
+- [[Paper] A Deep Learning Approach to Antibiotic Discovery](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Stokes20.pdf)
 
 ### Podcasts
 
