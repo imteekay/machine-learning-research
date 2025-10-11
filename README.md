@@ -293,6 +293,7 @@
 - [[Paper] An end-to-end attention-based approach for learning on graphs](https://www.nature.com/articles/s41467-025-60252-z)
 - [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book)
 - [[Article] Large Language Model Optimization: Memory, Compute, and Inference Techniques](https://gaurigupta19.github.io/llms/distributed%20ml/optimization/2025/10/02/efficient-ml.html)
+- [[Article] Causal inference resources](https://yanirseroussi.com/causal-inference-resources)
 
 ### Deep Reinforcement Learning
 
