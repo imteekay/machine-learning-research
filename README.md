@@ -216,6 +216,7 @@
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
 - [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
 - [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
+- [Machine Learning Systems](https://www.mlsysbook.ai)
 
 ### Deep Learning
 

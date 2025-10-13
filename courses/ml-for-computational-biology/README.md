@@ -19,3 +19,7 @@
 - Learn patterns in the genome using Convolutional Neural Networks (CNNs)
   - One-hot encoding of ACGT: a matrix or an image representation of genome sequences (2D images)
 - Learn relationships using Graph Neural Networks (GNNs)
+
+## Genomics, Epigenomics, Single-Cell, Networks, Circuitry
+
+### Expression Analysis
