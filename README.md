@@ -715,6 +715,7 @@
 - [Jean Fan lab](https://jef.works)
 - [Pranav Rajpurkar](https://pranavrajpurkar.com)
 - [The AI Health Podcast](https://twitter.com/AIHealthPodcast)
+- [Starkly Speaking](https://portal.valencelabs.com/starklyspeaking)
 
 ### Central Resources
 
