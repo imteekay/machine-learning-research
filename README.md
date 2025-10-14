@@ -17,6 +17,7 @@
   - [Programming](#programming)
     - [Python](#python)
     - [ML Engineering](#ml-engineering)
+    - [Distributed Systems](#distributed-systems)
   - [Artificial Intelligence](#artificial-intelligence)
     - [Data Science](#data-science)
     - [Machine Learning](#machine-learning)
@@ -143,6 +144,12 @@
 - [ML Experiment Tracking: What It Is, Why It Matters, and How to Implement It](https://neptune.ai/blog/ml-experiment-tracking)
 - [ML Model Baselines](https://blog.ml.cmu.edu/2020/08/31/3-baselines)
 - [[Paper] Large Scale Distributed Deep Networks](https://www.cs.toronto.edu/~ranzato/publications/DistBeliefNIPS2012_withAppendix.pdf)
+
+### Distributed Systems
+
+- [What even is distributed systems](https://notes.eatonphil.com/2025-08-09-what-even-is-distributed-systems.html)
+- [6.5840: Distributed Systems course](https://pdos.csail.mit.edu/6.824/index.html)
+- [Blogs](https://eatonphil.com/blogs.html)
 
 ## Artificial Intelligence
 
