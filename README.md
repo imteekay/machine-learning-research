@@ -454,6 +454,7 @@
 - [[Paper] ProGen2: Exploring the boundaries of protein language models](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Nijkamp23.pdf)
 - [[Paper] A Deep Learning Approach to Antibiotic Discovery](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Stokes20.pdf)
 - [[Paper] gReLU: a comprehensive framework for DNA sequence modeling and design](https://www.nature.com/articles/s41592-025-02868-z)
+- [[Paper] DeepSomatic: Accurate somatic small variant discovery for multiple sequencing technologies](https://www.biorxiv.org/content/10.1101/2024.08.16.608331v1.full.pdf)
 
 ### Podcasts
 
