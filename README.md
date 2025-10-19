@@ -41,7 +41,8 @@
     - [Meta](#meta)
     - [Science: Q\&A](#science-qa)
   - [Careers](#careers)
-    - [Interview Prep](#interview-prep)
+    - [How to: Interview Prep](#how-to-interview-prep)
+    - [How to: Coding prep](#how-to-coding-prep)
     - [Jobs](#jobs)
   - [Projects](#projects)
   - [Community](#community)
@@ -556,14 +557,13 @@
 
 ## Careers
 
-### Interview Prep
+### How to: Interview Prep
 
 - [How I Prepared for DeepMind and Google AI Research Internship Interviews in 2019](https://davidstutz.de/how-i-prepared-for-deepmind-and-google-ai-research-internship-interviews-in-2019)
 - [65 Machine Learning Interview Questions](https://github.com/andrewekhalel/MLQuestions)
 - [Data Science Interview Questions Answers](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers)
 - [Machine Learning Interviews](https://github.com/khangich/machine-learning-interview)
 - [Crushing your interviews for Data Science and Machine Learning Engineering roles](https://building.nubank.com.br/crushing-your-interviews-for-data-science-and-machine-learning-engineering-roles-8-practical-tips)
-- [TorchLeet: Leetcode for PyTorch](https://github.com/Exorust/TorchLeet)
 - [Becoming an MLE at FAANG: What you need to know to know about MLE roles and interviews at Google, Meta, and other top companies](https://interviewing.io/blog/becoming-an-mle-at-faang-what-you-need-to-know)
 - [How To Become an ML Engineer in 2024](https://www.youtube.com/watch?v=b7fe72GuFZk)
 - [How to land a Data Scientist job at your dream company — My journey to Airbnb](https://towardsdatascience.com/how-to-land-a-data-scientist-job-at-your-dream-company-my-journey-to-airbnb-f6a1e99892e8)
@@ -571,6 +571,12 @@
 - [Machine Learning Interview Prep](https://www.youtube.com/playlist?list=PLrtCHHeadkHqYX7O5cjHeWHzH2jzQqWg5)
 - [ML Design Interview strategy](https://www.youtube.com/watch?v=XN2ymraj27g)
 - [[Video] Google DeepMind ML Engineer Interview Tips](https://www.youtube.com/watch?v=UGZRFSqvNng)
+
+### How to: Coding prep
+
+- [LeetCode for ML](https://ml1337.ai)
+- [TorchLeet: Leetcode for PyTorch](https://github.com/Exorust/TorchLeet)
+- [Deep-ML](https://www.deep-ml.com)
 
 ### Jobs
 
