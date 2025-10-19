@@ -453,6 +453,7 @@
 - [[Paper] Evolutionary-scale prediction of atomic-level protein structure with a language model](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Lin23.pdf)
 - [[Paper] ProGen2: Exploring the boundaries of protein language models](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Nijkamp23.pdf)
 - [[Paper] A Deep Learning Approach to Antibiotic Discovery](http://rivaslab.org/teaching/MCB128_AIMB/downloads/Stokes20.pdf)
+- [[Paper] gReLU: a comprehensive framework for DNA sequence modeling and design](https://www.nature.com/articles/s41592-025-02868-z)
 
 ### Podcasts
 
