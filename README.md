@@ -304,6 +304,7 @@
 - [[Article] Large Language Model Optimization: Memory, Compute, and Inference Techniques](https://gaurigupta19.github.io/llms/distributed%20ml/optimization/2025/10/02/efficient-ml.html)
 - [[Article] Causal inference resources](https://yanirseroussi.com/causal-inference-resources)
 - [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book/index.html)
+- [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
 
 ### Deep Reinforcement Learning
 
