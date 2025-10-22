@@ -11,3 +11,11 @@
       - the token "pizza" has a higher 'similarity' with the token "tasted" compared to "oven". this is why the token "it" can be highly correlated with "pizza" and not "oven".
 
 ## The Matrix Math for Calculating Self-Attention
+
+It calculates the scaled dot product similarity among all tokens, convert the similarities into percentages with softmax and use these percentages to scale the values, so it becomes the self-attention scores for each word.
+
+Attention(Q, K, V) = SoftMax(QKᵗ/√dᴷ) V
+
+Q = Query
+K = Key
+V = Value
