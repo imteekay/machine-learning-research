@@ -9,3 +9,5 @@
     - self-attention: how similar each word is similar to all of the other words in the sentence
       - e.g. "The pizza came out of the oven and it tasted good"
       - the token "pizza" has a higher 'similarity' with the token "tasted" compared to "oven". this is why the token "it" can be highly correlated with "pizza" and not "oven".
+
+## The Matrix Math for Calculating Self-Attention

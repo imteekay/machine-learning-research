@@ -305,6 +305,7 @@
 - [[Article] Causal inference resources](https://yanirseroussi.com/causal-inference-resources)
 - [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book/index.html)
 - [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
+- [[Course] CMU - Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW)
 
 ### Deep Reinforcement Learning
 
