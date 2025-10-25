@@ -19,3 +19,15 @@ Attention(Q, K, V) = SoftMax(QKᵗ/√dᴷ) V
 Q = Query
 K = Key
 V = Value
+
+## Self-Attention vs Masked Self-Attention
+
+- When using words as input, we need to transform them into numbers.
+- We can assign a *random* number to each word. In theory, it works well, but words with similar meaning need to have approximate numbers so the neural network understand they are similar
+- To add to that, we need a better understanding of the context surrounding the word because the same word in different context, can have different meaning.
+- To understand the meaning behind the word, then, we need to assign a number to similar words with this understanding of the surrounding words context. We use word embeddings for that.
+- Self-Attention: Encoder-only Transformer
+  - Self-Attention is about making predictions of the next word based on the current word or the previous/following N words (the surrounding context — words before and after the word of interest)
+  - Training the neural network to predict the next token outputs the word embedding
+- Masked Self-Attention: Decoder-only Transformer
+  - Masked Self-Attention ignores the words that come after the word of interest. It only look at words before the word of interest
