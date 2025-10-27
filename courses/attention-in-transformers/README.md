@@ -14,7 +14,7 @@
 
 It calculates the scaled dot product similarity among all tokens, convert the similarities into percentages with softmax and use these percentages to scale the values, so it becomes the self-attention scores for each word.
 
-Attention(Q, K, V) = SoftMax(QKᵗ/√dᴷ) V
+Attention(Q, K, V) = SoftMax(QKᵗ/√dᴷ) . V
 
 Q = Query
 K = Key
@@ -31,3 +31,14 @@ V = Value
   - Training the neural network to predict the next token outputs the word embedding
 - Masked Self-Attention: Decoder-only Transformer
   - Masked Self-Attention ignores the words that come after the word of interest. It only look at words before the word of interest
+
+## The Matrix Math for Calculating Masked Self-Attention
+
+The Masked Self-Attention math is similar to Self-Attention, where we have the matrices for Query, Key, and Value, but also add the Mask matrix to mask out the subsequent words of the word of interest. The masking math add `0` to values that will be included in the attention calculation, and negative infinity for values that will be masked out.
+
+Attention(Q, K, V, M) = SoftMax(QKᵗ/√dᴷ + M) . V
+
+Q = Query
+K = Key
+V = Value
+M = Mask
