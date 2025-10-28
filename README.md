@@ -505,6 +505,7 @@
 ### Biology
 
 - [Cell biology by the numbers](https://book.bionumbers.org)
+- [Systems Biology and Biotechnology](https://www.coursera.org/specializations/systems-biology)
 
 ### Cancer
 
