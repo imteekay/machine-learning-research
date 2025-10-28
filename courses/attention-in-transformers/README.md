@@ -42,3 +42,7 @@ Q = Query
 K = Key
 V = Value
 M = Mask
+
+## Multi-Head Attention
+
+Having multiple heads paying attention to different parts of a more complex input (sentence, paragraphs) helps with how tokens are related in longer, complex input
