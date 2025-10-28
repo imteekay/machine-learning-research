@@ -34,7 +34,7 @@ V = Value
 
 ## The Matrix Math for Calculating Masked Self-Attention
 
-The Masked Self-Attention math is similar to Self-Attention, where we have the matrices for Query, Key, and Value, but also add the Mask matrix to mask out the subsequent words of the word of interest. The masking math add `0` to values that will be included in the attention calculation, and negative infinity for values that will be masked out.
+The Masked Self-Attention math is similar to Self-Attention, where we have the matrices for Query, Key, and Value, but also add the Mask matrix to mask out the subsequent words of the word of interest. The masking math adds `0` to values that will be included in the attention calculation, and negative infinity for values that will be masked out.
 
 Attention(Q, K, V, M) = SoftMax(QKᵗ/√dᴷ + M) . V
 
