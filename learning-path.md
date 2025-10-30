@@ -12,8 +12,8 @@
   - [Math \& Statistics Foundations](#math--statistics-foundations)
   - [Foundation in Machine Learning](#foundation-in-machine-learning)
   - [Foundation in Deep Learning](#foundation-in-deep-learning)
-  - [Bio Medicine and Healthcare](#bio-medicine-and-healthcare)
-  - [Machine Learning in BioMedicine](#machine-learning-in-biomedicine)
+  - [Biomedicine and Healthcare](#biomedicine-and-healthcare)
+  - [Machine Learning in Biomedicine](#machine-learning-in-biomedicine)
 
 ## Programming & Data Tools
 
@@ -85,7 +85,7 @@
 - [ ] Deep Reinforcement Learning
   - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
 
-## Bio Medicine and Healthcare
+## Biomedicine and Healthcare
 
 - [ ] Genetics Fundamentals
   - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
@@ -103,7 +103,7 @@
 - [ ] Cancer Fundamentals
   - [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
 
-## Machine Learning in BioMedicine
+## Machine Learning in Biomedicine
 
 - [ ] AI/ML in Healthcare
   - [ ] [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
