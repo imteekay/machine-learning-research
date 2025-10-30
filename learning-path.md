@@ -73,7 +73,7 @@
   - [ ] Transformers
     - [ ] [Attention | NLP](https://www.coursera.org/learn/attention-models-in-nlp)
     - [ ] [Stanford Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
-    - [ ] [Attention in Transformers](https://learn.deeplearning.ai/courses/attention-in-transformers-concepts-and-code-in-pytorch)
+    - [X] [Attention in Transformers](https://learn.deeplearning.ai/courses/attention-in-transformers-concepts-and-code-in-pytorch)
   - [ ] Autoencoders/Variational Autoencoders (VAEs)
   - [ ] Generative Adversarial Networks (GANs)
   - [ ] Graph Neural Networks (GNNs)
