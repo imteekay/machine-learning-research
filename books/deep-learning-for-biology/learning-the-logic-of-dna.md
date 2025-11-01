@@ -11,3 +11,11 @@
   - Genome is a complete set of DNA in an organism
     - Genetics: study specific genes or small set of genes
     - Genomics: study an entire genome
+- Coding and non-coding regions
+  - Coding regions: DNA that are transcribed into RNA and translated into proteins (DNA -> RNA -> Protein)
+  - The human genome contains around 20,000 protein-coding genes.
+  - Protein-coding genes account for only about 2% of the genome. The remaining 98% is noncoding DNA.
+  - Non-coding DNA doesn't produce proteins but plays a critical regulatory role
+    - It can produce RNA that regulate gene expression
+    - It can help organize 3D structure of the genome
+    - It can serve as docking sites for regulatory proteins
