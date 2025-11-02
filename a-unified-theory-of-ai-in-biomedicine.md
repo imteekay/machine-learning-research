@@ -25,6 +25,7 @@
   - Data Leakage: e.g. fail to remove proteins of unknown function from the training set, allowing information to leak between the training and test data
 - Help biologists and scientists to design better experiments
   - The model doesn't need to be super accurate, but it needs to help lab people design better experiments
+  - e.g. chatgpt to as about research question like "should I look at this set of proteins?" or "what tissue should I look at?", or "how should I design my experiment?"
 
 ## Proteins
 
