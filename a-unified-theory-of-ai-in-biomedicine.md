@@ -23,6 +23,8 @@
   - Neglect of Foundational Data Work: doing the essential, foundational work of ensuring datasets are thoughtfully constructed and splits (training/test) are well-designed
   - Biological Impossibility in Predictions: Applying AI without domain expertise can lead to biologically impossible or thermodynamically impossible conclusions
   - Data Leakage: e.g. fail to remove proteins of unknown function from the training set, allowing information to leak between the training and test data
+- Help biologists and scientists to design better experiments
+  - The model doesn't need to be super accurate, but it needs to help lab people design better experiments
 
 ## Proteins
 
