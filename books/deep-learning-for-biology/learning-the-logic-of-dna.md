@@ -21,3 +21,8 @@
     - It can serve as docking sites for regulatory proteins
 - How Transcription Factors Orchestrate Gene Activity
   - Transcription factors binding means that a TF binds to a specific DNA sequence with the purpose of regulate the gene expression: increase/activate or decrease/repress the rate at which the gene is transcribed into RNA
+- CNNs are also used in 1D data like DNA sequences
+  - Shallow layers: detect low-level DNA features (GC-rich, AT-rich regions)
+  - Mid-level filters: identify known TF motifs
+  - Deeper layers: learn higher-level features
+  - CNNs are relatively lightweight and easy to train, but struggle with interactions between distant bases, or in the words, problems involving long-range dependencies, relationships between elements far apart in a sequence
