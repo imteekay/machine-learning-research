@@ -19,3 +19,5 @@
     - It can produce RNA that regulate gene expression
     - It can help organize 3D structure of the genome
     - It can serve as docking sites for regulatory proteins
+- How Transcription Factors Orchestrate Gene Activity
+  - Transcription factors binding means that a TF binds to a specific DNA sequence with the purpose of regulate the gene expression: increase/activate or decrease/repress the rate at which the gene is transcribed into RNA
