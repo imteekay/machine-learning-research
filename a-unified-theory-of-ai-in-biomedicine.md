@@ -26,6 +26,9 @@
 - Help biologists and scientists to design better experiments
   - The model doesn't need to be super accurate, but it needs to help lab people design better experiments
   - e.g. chatgpt to as about research question like "should I look at this set of proteins?" or "what tissue should I look at?", or "how should I design my experiment?"
+- Vision models vs human eyes for microscopy images of cells
+  - Microscopy images are very rich in information
+  - Vision models can interpret more information than human eyes
 
 ## Proteins
 
