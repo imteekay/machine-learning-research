@@ -7,6 +7,7 @@
 - [A Unified Theory of AI in Biomedicine \& Healthcare](#a-unified-theory-of-ai-in-biomedicine--healthcare)
   - [Table of Contents](#table-of-contents)
   - [Current challenges in biology](#current-challenges-in-biology)
+  - [Proteins](#proteins)
 
 ## Current challenges in biology
 
@@ -22,5 +23,9 @@
   - Neglect of Foundational Data Work: doing the essential, foundational work of ensuring datasets are thoughtfully constructed and splits (training/test) are well-designed
   - Biological Impossibility in Predictions: Applying AI without domain expertise can lead to biologically impossible or thermodynamically impossible conclusions
   - Data Leakage: e.g. fail to remove proteins of unknown function from the training set, allowing information to leak between the training and test data
+
+## Proteins
+
+- understand proteins, to understand cells, to build virtual cells
 
 </samp>
