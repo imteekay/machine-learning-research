@@ -44,6 +44,7 @@
     - [Support Vector Machines](#support-vector-machines)
     - [Tree-Based Models](#tree-based-models)
     - [Neural Networks](#neural-networks)
+    - [CNN](#cnn)
     - [Transfer Learning](#transfer-learning)
   - [Mathematics](#mathematics)
     - [Linear Algebra](#linear-algebra)
@@ -661,6 +662,14 @@ The process of tracking the progress and results of an experiment.
   - Squeeze out the juice
     - Model ensembles
     - leave it training
+
+### CNN
+
+- Key components of a CNN architecture
+  - Convolutional layers: have multiple filter/kernels - weight matrices used to compute dot products and act like a pattern detector. It outputs a feature map with all the patterns found
+  - Pooling layers: downsample the features maps to reduce dimentionality and computation. e.g. Max Pooling keeps only the strongest signals in each region, to help the model find the strongest patterns in the data
+  - Normalization: rescaling activations to make training more stable and efficient
+  - Fully connected layers: use the extracted features from earlier layers to make predictions
 
 ### Transfer Learning
 
