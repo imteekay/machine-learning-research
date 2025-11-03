@@ -26,3 +26,11 @@
   - Mid-level filters: identify known TF motifs
   - Deeper layers: learn higher-level features
   - CNNs are relatively lightweight and easy to train, but struggle with interactions between distant bases, or in the words, problems involving long-range dependencies, relationships between elements far apart in a sequence
+- Transformers
+  - CNNs are great to find local patterns
+  - Transformers are powerful for modeling relationships across long distance in a sequence, and global sequence context
+  - Self-attention is a mechanism that receives input token embeddings (input vector) and outputs context-aware embeddings (output vector)
+    - It performs this process by making each token attend and check how much it influences other token positions
+  - Transformer Block: attention/self attention -> feedforward layer -> residual connection -> layer normalization
+  - Transformer models have many of these blocks stacked
+  - Multiheaded Attention: it runs several attention mechanisms in parallel to help capture a richer and more diverse set of relationships within the data
