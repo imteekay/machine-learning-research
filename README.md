@@ -545,7 +545,7 @@
 - [[Book] Introduction to Protein Structure](https://www.goodreads.com/book/show/651485.Introduction_to_Protein_Structure)
 - [[Book] Molecular Modelling: Principles and Applications](https://www.goodreads.com/book/show/1012202.Molecular_Modelling)
 - [[Book] Structural Bioinformatics](https://www.goodreads.com/book/show/737881.Structural_Bioinformatics)
-- [[Book] Computational Structural Biology](https://www.goodreads.com/book/show/737881.Structural_Bioinformatics)
+- [[Book] Computational Structural Biology](https://www.goodreads.com/book/show/8005370-computational-structural-biology)
 
 ### Precision Health
 
