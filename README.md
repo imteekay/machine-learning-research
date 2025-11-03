@@ -543,6 +543,7 @@
 - [Bioinformatics](https://seen-politician-a47.notion.site/ccd895cfaee94849bc9c405a4143b4f5?v=8ca8b89a8be54d7c800a1dfe9780abfc)
 - [Understanding life via computational bioinformatics](https://www.youtube.com/watch?v=KH_ZxNu9vj4&ab_channel=OrangeCountyACMChapter)
 - [Introduction to Protein Structure](https://www.goodreads.com/book/show/651485.Introduction_to_Protein_Structure)
+- [Molecular Modelling: Principles and Applications](https://www.goodreads.com/book/show/1012202.Molecular_Modelling)
 
 ### Precision Health
 
