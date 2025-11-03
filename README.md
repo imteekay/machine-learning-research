@@ -551,6 +551,7 @@
 - [[Book] Understanding Molecular Simulation](https://www.goodreads.com/book/show/258137.Understanding_Molecular_Simulation)
 - [[Book] The Art of Molecular Dynamics Simulation](https://www.goodreads.com/book/show/5345626-the-art-of-molecular-dynamics-simulation)
 - [[Book] Protein Actions: Principles and Modeling](https://www.goodreads.com/book/show/34740617-protein-actions)
+- [[Book] Computational Protein Design](https://www.goodreads.com/book/show/31237121-computational-protein-design)
 
 ### Precision Health
 
