@@ -549,6 +549,7 @@
 - [[Book] Molecular Modelling and Simulation](https://www.goodreads.com/book/show/11639171-molecular-modeling-and-simulation)
 - [[Book] Computational Methods for Protein Structure Prediction and Modeling](https://www.goodreads.com/book/show/651517.Computational_Methods_for_Protein_Structure_Prediction_and_Modeling)
 - [[Book] Understanding Molecular Simulation](https://www.goodreads.com/book/show/258137.Understanding_Molecular_Simulation)
+- [[Book] The Art of Molecular Dynamics Simulation](https://www.goodreads.com/book/show/5345626-the-art-of-molecular-dynamics-simulation)
 
 ### Precision Health
 
