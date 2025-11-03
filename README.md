@@ -546,6 +546,7 @@
 - [[Book] Molecular Modelling: Principles and Applications](https://www.goodreads.com/book/show/1012202.Molecular_Modelling)
 - [[Book] Structural Bioinformatics](https://www.goodreads.com/book/show/737881.Structural_Bioinformatics)
 - [[Book] Computational Structural Biology](https://www.goodreads.com/book/show/8005370-computational-structural-biology)
+- [[Book] Molecular Modelling and Simulation](https://www.goodreads.com/book/show/11639171-molecular-modeling-and-simulation)
 
 ### Precision Health
 
