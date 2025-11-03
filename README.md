@@ -547,6 +547,7 @@
 - [[Book] Structural Bioinformatics](https://www.goodreads.com/book/show/737881.Structural_Bioinformatics)
 - [[Book] Computational Structural Biology](https://www.goodreads.com/book/show/8005370-computational-structural-biology)
 - [[Book] Molecular Modelling and Simulation](https://www.goodreads.com/book/show/11639171-molecular-modeling-and-simulation)
+- [[Book] Computational Methods for Protein Structure Prediction and Modeling](https://www.goodreads.com/book/show/651517.Computational_Methods_for_Protein_Structure_Prediction_and_Modeling)
 
 ### Precision Health
 
