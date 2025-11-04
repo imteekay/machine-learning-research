@@ -34,3 +34,9 @@
   - Transformer Block: attention/self attention -> feedforward layer -> residual connection -> layer normalization
   - Transformer models have many of these blocks stacked
   - Multiheaded Attention: it runs several attention mechanisms in parallel to help capture a richer and more diverse set of relationships within the data
+- Modeling task
+  - Predict if a 200-base DNA sequence, can we predict whether it binds to a specific TF called CTCF
+  - It's a binary classification problem
+    - Input: DNA sequence
+    - Output: 0 or 1 (binary classification: it binds or not the TF)
+  - CTCF helps organizing the genome 3D structure (folding DNA into loops and domains that regulate gene activity)
