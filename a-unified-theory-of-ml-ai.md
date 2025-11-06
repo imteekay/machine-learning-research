@@ -28,6 +28,8 @@
     - [Model Performance](#model-performance)
     - [Objective Functions: Loss functions](#objective-functions-loss-functions)
       - [Mean squared error](#mean-squared-error)
+      - [Binary Cross Entropy loss](#binary-cross-entropy-loss)
+      - [Cross Entropy loss](#cross-entropy-loss)
     - [Metrics](#metrics)
       - [Accuracy](#accuracy)
       - [F1](#f1)
@@ -448,6 +450,14 @@ MSE, RMSE, MAE (mean absolute error) for regression, logistic loss (also log los
 def mean_squared_error(y_true, y_pred):
     return np.mean((Y_test - prediction) ** 2)
 ```
+
+#### Binary Cross Entropy loss
+
+TODO
+
+#### Cross Entropy loss
+
+TODO
 
 ### Metrics
 
