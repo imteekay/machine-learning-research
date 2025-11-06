@@ -453,11 +453,13 @@ def mean_squared_error(y_true, y_pred):
 
 #### Binary Cross Entropy loss
 
-TODO
+- Used for multiclass classification problems
+- TODO: add more details
 
 #### Cross Entropy loss
 
-TODO
+- Used for binary classification problems
+- TODO: add more details
 
 ### Metrics
 
