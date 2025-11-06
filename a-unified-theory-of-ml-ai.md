@@ -27,7 +27,8 @@
     - [Model Selection](#model-selection)
     - [Model Performance](#model-performance)
     - [Objective Functions: Loss functions](#objective-functions-loss-functions)
-      - [Mean squared error](#mean-squared-error)
+      - [Mean squared error (MSE)](#mean-squared-error-mse)
+      - [Mean Absolute Error (MAE)](#mean-absolute-error-mae)
       - [Binary Cross Entropy loss](#binary-cross-entropy-loss)
       - [Cross Entropy loss](#cross-entropy-loss)
     - [Metrics](#metrics)
@@ -444,12 +445,16 @@ Which model is better? It depends on the problem at hand. If the relationship be
 
 MSE, RMSE, MAE (mean absolute error) for regression, logistic loss (also log loss) for binary classification, and cross entropy for multiclass classification.
 
-#### Mean squared error
+#### Mean squared error (MSE)
 
 ```python
 def mean_squared_error(y_true, y_pred):
     return np.mean((Y_test - prediction) ** 2)
 ```
+
+#### Mean Absolute Error (MAE)
+
+TODO
 
 #### Binary Cross Entropy loss
 
