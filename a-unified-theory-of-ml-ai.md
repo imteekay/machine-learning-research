@@ -29,6 +29,7 @@
     - [Objective Functions: Loss functions](#objective-functions-loss-functions)
       - [Mean squared error (MSE)](#mean-squared-error-mse)
       - [Mean Absolute Error (MAE)](#mean-absolute-error-mae)
+      - [Root Mean Squared Error (RMSE)](#root-mean-squared-error-rmse)
       - [Binary Cross Entropy loss](#binary-cross-entropy-loss)
       - [Cross Entropy loss](#cross-entropy-loss)
     - [Metrics](#metrics)
@@ -453,6 +454,10 @@ def mean_squared_error(y_true, y_pred):
 ```
 
 #### Mean Absolute Error (MAE)
+
+TODO
+
+#### Root Mean Squared Error (RMSE)
 
 TODO
 
