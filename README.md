@@ -152,6 +152,7 @@
 - [What even is distributed systems](https://notes.eatonphil.com/2025-08-09-what-even-is-distributed-systems.html)
 - [6.5840: Distributed Systems course](https://pdos.csail.mit.edu/6.824/index.html)
 - [Blogs](https://eatonphil.com/blogs.html)
+- [Distributed Systems Course | Distributed Computing @ University Cambridge](https://www.youtube.com/watch?v=sGzQT_ZrsFI)
 
 ## Artificial Intelligence
 
