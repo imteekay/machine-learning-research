@@ -313,6 +313,7 @@
 
 - [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer)
 - [Recurrent Neural Networks, Transformers, and Attention](https://www.youtube.com/watch?v=GvezxUdLrEk)
+- [Glossary of Deep Learning: Word Embedding](https://medium.com/deeper-learning/glossary-of-deep-learning-word-embedding-f90c3cec34ca)
 
 ### Deep Reinforcement Learning
 
