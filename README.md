@@ -465,6 +465,7 @@
 - [[Video] AI for molecular modeling and protein design](https://www.youtube.com/watch?v=6utofVMSaIw)
 - [[Video] AI Virtual Cell and Spatial Proteomics](https://www.youtube.com/watch?v=Ifc1FDdDlvw)
 - [[Article] No, AlphaFold has not completely solved protein folding](https://blog.genesmindsmachines.com/p/no-alphafold-has-not-completely-solved)
+- [[Video] Making biology programmable](https://www.youtube.com/watch?v=f5N6PU93L0I)
 
 ### Podcasts
 
