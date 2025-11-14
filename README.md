@@ -488,6 +488,7 @@
 - [[Video] AlphaFold - Veritasium](https://www.youtube.com/watch?v=P_fHJIYENdI)
 - [[Article] How to Build the AI Virtual Cell](https://aimm.epfl.ch/blog/how-to-build-the-ai-virtual-cell)
 - [[Paper] Open-source protein structure AI aims to match AlphaFold](https://www.nature.com/articles/d41586-025-03546-y)
+- [[Video] Behind the scenes at Isomorphic Labs](https://vimeo.com/1127619333/2a63980585)
 
 ### Podcasts
 
