@@ -312,6 +312,7 @@
 #### Transformers
 
 - [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer)
+- [Recurrent Neural Networks, Transformers, and Attention](https://www.youtube.com/watch?v=GvezxUdLrEk)
 
 ### Deep Reinforcement Learning
 
