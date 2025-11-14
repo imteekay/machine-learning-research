@@ -323,7 +323,7 @@
 - [Overview of Transformers](https://www.youtube.com/watch?v=JKbtWimlzAE&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=36)
 - [Large Language Models](https://www.youtube.com/playlist?list=PLs8w1Cdi-zva4fwKkl9EK13siFvL9Wewf)
 - [Transformer Neural Networks Derived from Scratch](https://www.youtube.com/watch?v=kWLed8o5M2Y)
-- [The math behind Attention: Keys, Queries, and Values matrices](https://www.youtube.com/watch?v=UPtG_38Oq8o)
+- [The math behind Attention: Keys, Queries, and Values matrices](https://www.youtube.com/watch?v=UPtG_38Oq8o )
 
 ### Deep Reinforcement Learning
 
@@ -486,6 +486,7 @@
 - [[Video] DeepMind AlphaFold](https://www.youtube.com/watch?v=FYVf0bRgO5Q)
 - [[Video] AlphaFold 3 deep dive](https://www.youtube.com/watch?v=Or3iq4_9-wA)
 - [[Video] AlphaFold - Veritasium](https://www.youtube.com/watch?v=P_fHJIYENdI)
+- [[Article] How to Build the AI Virtual Cell](https://aimm.epfl.ch/blog/how-to-build-the-ai-virtual-cell)
 
 ### Podcasts
 
