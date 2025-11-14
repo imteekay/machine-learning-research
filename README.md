@@ -489,6 +489,7 @@
 - [[Article] How to Build the AI Virtual Cell](https://aimm.epfl.ch/blog/how-to-build-the-ai-virtual-cell)
 - [[Paper] Open-source protein structure AI aims to match AlphaFold](https://www.nature.com/articles/d41586-025-03546-y)
 - [[Video] Behind the scenes at Isomorphic Labs](https://vimeo.com/1127619333/2a63980585)
+- [[Paper] Causal Inference for Computational Biology](https://summit.sfu.ca/_flysystem/fedora/2023-05/etd22427.pdf)
 
 ### Podcasts
 
