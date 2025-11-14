@@ -22,6 +22,7 @@
     - [Data Science](#data-science)
     - [Machine Learning](#machine-learning)
     - [Deep Learning](#deep-learning)
+      - [Transformers](#transformers)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
     - [PyTorch](#pytorch)
     - [ML/AI \& Healthcare](#mlai--healthcare)
@@ -307,6 +308,10 @@
 - [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book/index.html)
 - [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
 - [[Course] CMU - Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW)
+
+#### Transformers
+
+- [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer)
 
 ### Deep Reinforcement Learning
 
