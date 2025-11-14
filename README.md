@@ -464,6 +464,7 @@
 - [[Paper] DeepSomatic: Accurate somatic small variant discovery for multiple sequencing technologies](https://www.biorxiv.org/content/10.1101/2024.08.16.608331v1.full.pdf) ([code](https://github.com/google/deepsomatic))
 - [[Video] AI for molecular modeling and protein design](https://www.youtube.com/watch?v=6utofVMSaIw)
 - [[Video] AI Virtual Cell and Spatial Proteomics](https://www.youtube.com/watch?v=Ifc1FDdDlvw)
+- [[Article] No, AlphaFold has not completely solved protein folding](https://blog.genesmindsmachines.com/p/no-alphafold-has-not-completely-solved)
 
 ### Podcasts
 
