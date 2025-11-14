@@ -468,8 +468,7 @@
 - [[Video] Making biology programmable](https://www.youtube.com/watch?v=f5N6PU93L0I)
 - [[Video] DeepMind AlphaFold](https://www.youtube.com/watch?v=FYVf0bRgO5Q)
 - [[Video] AlphaFold 3 deep dive](https://www.youtube.com/watch?v=Or3iq4_9-wA)
-- [[Video] AlphaFold - Veritasium
-]
+- [[Video] AlphaFold - Veritasium](https://www.youtube.com/watch?v=P_fHJIYENdI)
 
 ### Podcasts
 
