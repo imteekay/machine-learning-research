@@ -319,6 +319,7 @@
 - [I How I Learned to Stop Worrying and Love the Transformer](https://www.youtube.com/watch?v=1GbDTTK3aR4&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=23)
 - [Biomedical Transformers](https://www.youtube.com/watch?v=nz7_wg5iOlA&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=19)
 - [Visualizing transformers and attention](https://www.youtube.com/watch?v=KJtZARuO3JY)
+- [Introduction to Transformers](https://www.youtube.com/watch?v=XfpMkf4rD6E)
 
 ### Deep Reinforcement Learning
 
