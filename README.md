@@ -597,6 +597,7 @@
 - [TorchLeet: Leetcode for PyTorch](https://github.com/Exorust/TorchLeet)
 - [Deep-ML](https://www.deep-ml.com)
 - [PyTorch Practice Notebook - ML Interview Preparation](https://colab.research.google.com/drive/1PVHupMXgJwfAVrTWhJQcafxUcqj8IqkD?usp=sharing)
+- [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code)
 
 ### Jobs
 
