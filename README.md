@@ -487,6 +487,7 @@
 - [[Video] AlphaFold 3 deep dive](https://www.youtube.com/watch?v=Or3iq4_9-wA)
 - [[Video] AlphaFold - Veritasium](https://www.youtube.com/watch?v=P_fHJIYENdI)
 - [[Article] How to Build the AI Virtual Cell](https://aimm.epfl.ch/blog/how-to-build-the-ai-virtual-cell)
+- [[Paper] Open-source protein structure AI aims to match AlphaFold](https://www.nature.com/articles/d41586-025-03546-y)
 
 ### Podcasts
 
