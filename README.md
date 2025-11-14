@@ -598,6 +598,7 @@
 - [Deep-ML](https://www.deep-ml.com)
 - [PyTorch Practice Notebook - ML Interview Preparation](https://colab.research.google.com/drive/1PVHupMXgJwfAVrTWhJQcafxUcqj8IqkD?usp=sharing)
 - [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code)
+- [65 Machine Learning Interview Questions](https://github.com/andrewekhalel/MLQuestions)
 
 ### Jobs
 
