@@ -315,6 +315,7 @@
 - [Recurrent Neural Networks, Transformers, and Attention](https://www.youtube.com/watch?v=GvezxUdLrEk)
 - [Glossary of Deep Learning: Word Embedding](https://medium.com/deeper-learning/glossary-of-deep-learning-word-embedding-f90c3cec34ca)
 - [How Transformer LLMs Work](https://www.deeplearning.ai/short-courses/how-transformer-llms-work)
+- [Transformers from Scratch](https://www.kaggle.com/code/auxeno/transformers-from-scratch-dl)
 
 ### Deep Reinforcement Learning
 
