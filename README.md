@@ -339,6 +339,7 @@
 - [Reinforcement Learning: An Introduction](https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262039249)
 - [Understanding reinforcement learning for model training from scratch](https://medium.com/data-science-collective/understanding-reinforcement-learning-for-model-training-from-scratch-8bffe8d87a07)
 - [[Course] Reinforcement Learning of Large Language Models](https://www.youtube.com/playlist?list=PLir0BWtR5vRp5dqaouyMU-oTSzaU5LK9r)
+- [[Book] Reinforcement Learning from Human Feedback](https://rlhfbook.com)
 
 ### PyTorch
 
