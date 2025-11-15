@@ -491,6 +491,7 @@
 - [[Paper] Open-source protein structure AI aims to match AlphaFold](https://www.nature.com/articles/d41586-025-03546-y)
 - [[Video] Behind the scenes at Isomorphic Labs](https://vimeo.com/1127619333/2a63980585)
 - [[Paper] Causal Inference for Computational Biology](https://summit.sfu.ca/_flysystem/fedora/2023-05/etd22427.pdf)
+- [[Video] The State of AI in Drug Discovery 2025](https://webinars.liebertpub.com/e/the-state-of-ai-in-drug-discovery-2025/portal/stage)
 
 ### Podcasts
 
