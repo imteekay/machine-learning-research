@@ -538,6 +538,7 @@
 - [Cell biology by the numbers](https://book.bionumbers.org)
 - [Systems Biology and Biotechnology](https://www.coursera.org/specializations/systems-biology)
 - [MIT Systems Biology](https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014)
+- [The Most Important Concept in Biology](https://www.youtube.com/watch?v=diKGuE7CDsY)
 
 ### Cancer
 
