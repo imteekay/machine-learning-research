@@ -494,6 +494,7 @@
 - [[Video] The State of AI in Drug Discovery 2025](https://webinars.liebertpub.com/e/the-state-of-ai-in-drug-discovery-2025/portal/stage)
 - [[Article] Gaps and Risks of AI in the Life Sciences](https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science)
 - [[Paper] Opportunities and obstacles for deep learning in biology and medicine](https://www.biorxiv.org/content/10.1101/142760v1.full.pdf)
+- [[Notebook] Deep Learning in Genomics Primer](https://colab.research.google.com/drive/17E4h5aAOioh5DiTo7MZg4hpL6Z_0FyWr)
 
 ### Podcasts
 
