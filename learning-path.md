@@ -8,14 +8,14 @@
 
 - [ML/AI Learning Path](#mlai-learning-path)
   - [Table of Contents](#table-of-contents)
-  - [Programming \& Data Tools](#programming--data-tools)
+  - [Programming \& ML Tools](#programming--ml-tools)
   - [Math \& Statistics Foundations](#math--statistics-foundations)
   - [Foundation in Machine Learning](#foundation-in-machine-learning)
   - [Foundation in Deep Learning](#foundation-in-deep-learning)
   - [Biomedicine and Healthcare](#biomedicine-and-healthcare)
   - [Machine Learning in Biomedicine](#machine-learning-in-biomedicine)
 
-## Programming & Data Tools
+## Programming & ML Tools
 
 - [ ] Python
 - [ ] Numpy
