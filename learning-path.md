@@ -21,6 +21,9 @@
 - [ ] Numpy
 - [ ] Pandas
 - [ ] Scikit-learn
+- [ ] Deep Learning Frameworks
+  - [X] [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)
+  - [X] [Learn PyTorch for Deep Learning](https://www.learnpytorch.io)
 
 ## Math & Statistics Foundations
 
@@ -79,9 +82,6 @@
   - [ ] Generative Adversarial Networks (GANs)
   - [ ] Graph Neural Networks (GNNs)
   - [ ] [Diffusion Models](https://learn.deeplearning.ai/courses/diffusion-models)
-- [ ] Deep Learning Frameworks
-  - [X] [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)
-  - [ ] [Learn PyTorch for Deep Learning](https://www.learnpytorch.io)
 - [ ] Deep Reinforcement Learning
   - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
 
