@@ -763,6 +763,7 @@
 - [Justas Dauparas](https://dauparas.github.io)
 - [Maria Nattestad](https://marianattestad.com)
 - [Cao (Danica) Xiao](https://sites.google.com/view/danicaxiao)
+- [Sophia Tang](https://sophtang.github.io)
 
 ### Research & Laboratories
 
