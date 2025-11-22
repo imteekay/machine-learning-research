@@ -764,6 +764,7 @@
 - [Maria Nattestad](https://marianattestad.com)
 - [Cao (Danica) Xiao](https://sites.google.com/view/danicaxiao)
 - [Sophia Tang](https://sophtang.github.io)
+- [So Yeon Tiffany Min](https://soyeonm.github.io)
 
 ### Research & Laboratories
 
