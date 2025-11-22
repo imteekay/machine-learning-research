@@ -21,6 +21,7 @@
   - [Artificial Intelligence](#artificial-intelligence)
     - [Data Science](#data-science)
     - [Machine Learning](#machine-learning)
+      - [Multimodal Machine Learning](#multimodal-machine-learning)
     - [Deep Learning](#deep-learning)
       - [Transformers](#transformers)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
@@ -227,6 +228,10 @@
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
 - [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
 - [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
+
+#### Multimodal Machine Learning
+
+- [Awesome Multimodal Machine Learning](https://github.com/pliang279/awesome-multimodal-ml)
 
 ### Deep Learning
 
