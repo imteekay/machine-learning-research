@@ -767,6 +767,7 @@
 - [So Yeon Tiffany Min](https://soyeonm.github.io)
 - [Carlos Busso](https://carlosbusso.com)
 - [Daniel Fried](https://dpfried.github.io)
+- [Yonatan Bisk](https://talkingtorobots.com/yonatanbisk.html)
 
 ### Research & Laboratories
 
