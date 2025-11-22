@@ -768,6 +768,7 @@
 - [Carlos Busso](https://carlosbusso.com)
 - [Daniel Fried](https://dpfried.github.io)
 - [Yonatan Bisk](https://talkingtorobots.com/yonatanbisk.html)
+- [Paul Liang](https://pliang279.github.io)
 
 ### Research & Laboratories
 
