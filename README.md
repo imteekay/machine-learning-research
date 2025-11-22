@@ -231,8 +231,9 @@
 
 #### Multimodal Machine Learning
 
-- [Awesome Multimodal Machine Learning](https://github.com/pliang279/awesome-multimodal-ml)
+- [[List] Awesome Multimodal Machine Learning](https://github.com/pliang279/awesome-multimodal-ml)
 - [[Course] CMU - Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW)
+- [[Paper] Overview of Multimodal Machine Learning](https://dl.acm.org/doi/abs/10.1145/3701031)
 
 ### Deep Learning
 
