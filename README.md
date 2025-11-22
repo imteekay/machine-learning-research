@@ -765,6 +765,7 @@
 - [Cao (Danica) Xiao](https://sites.google.com/view/danicaxiao)
 - [Sophia Tang](https://sophtang.github.io)
 - [So Yeon Tiffany Min](https://soyeonm.github.io)
+- [Carlos Busso](https://carlosbusso.com)
 
 ### Research & Laboratories
 
