@@ -766,6 +766,7 @@
 - [Sophia Tang](https://sophtang.github.io)
 - [So Yeon Tiffany Min](https://soyeonm.github.io)
 - [Carlos Busso](https://carlosbusso.com)
+- [Daniel Fried](https://dpfried.github.io)
 
 ### Research & Laboratories
 
