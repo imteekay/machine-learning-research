@@ -781,6 +781,7 @@
 - [Daniel Fried](https://dpfried.github.io)
 - [Yonatan Bisk](https://talkingtorobots.com/yonatanbisk.html)
 - [Paul Liang](https://pliang279.github.io)
+- [Alex L. Zhang](https://alexzhang13.github.io)
 
 ### Research & Laboratories
 
