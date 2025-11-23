@@ -15,6 +15,7 @@
     - [Calculus](#calculus)
     - [Optimization](#optimization)
   - [Programming](#programming)
+    - [Algorithms](#algorithms)
     - [Python](#python)
     - [ML Engineering](#ml-engineering)
     - [Distributed Systems](#distributed-systems)
@@ -130,6 +131,10 @@
 - [Understanding Gradient Descent](https://degatchi.com/articles/gradient-descent)
 
 ## Programming
+
+### Algorithms
+
+- [A&DS — Pavel Mavrin](https://www.youtube.com/playlist?list=PLrS21S1jm43igE57Ye_edwds_iL7ZOAG4)
 
 ### Python
 
