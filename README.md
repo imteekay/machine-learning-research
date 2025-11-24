@@ -782,6 +782,7 @@
 - [Yonatan Bisk](https://talkingtorobots.com/yonatanbisk.html)
 - [Paul Liang](https://pliang279.github.io)
 - [Alex L. Zhang](https://alexzhang13.github.io)
+- [Sichuan from Total Health Optimization](https://totalhealthoptimization.com)
 
 ### Research & Laboratories
 
