@@ -713,7 +713,7 @@
 - [Kevin Kaichuang Yang](https://yangkky.github.io)
 - [Terence Parr](https://explained.ai)
 - [Penny Xu](https://penny-xu.github.io)
-- [Amy X. Lu](https://amyxlu.github.io)
+- [Amy X. Lu](https://amyx.lu)
 - [Benjamin Bloem-Reddy](https://www.stat.ubc.ca/~benbr)
 - [Quanhan (Johnny) Xi](https://xijohnny.github.io)
 - [Eric Horvitz](https://erichorvitz.com)
