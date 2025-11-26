@@ -554,6 +554,7 @@
 - [Systems Biology and Biotechnology](https://www.coursera.org/specializations/systems-biology)
 - [MIT Systems Biology](https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014)
 - [The Most Important Concept in Biology](https://www.youtube.com/watch?v=diKGuE7CDsY)
+- [[Course] MIT 7.01SC Fundamentals of Biology](https://www.youtube.com/playlist?list=PLF83B8D8C87426E44)
 
 ### Cancer
 
