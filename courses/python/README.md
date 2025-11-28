@@ -5,3 +5,4 @@
 - [Booleans and Conditionals](booleans-and-conditionals.ipynb )
 - [Lists](lists.ipynb)
 - [Loops and List Comprehensions](loops-and-list-comprehensions.ipynb)
+- [Strings and Dictionaries](strings-and-dictionaries.ipynb)
