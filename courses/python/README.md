@@ -7,3 +7,4 @@
 - [Loops and List Comprehensions](loops-and-list-comprehensions.ipynb)
 - [Strings and Dictionaries](strings-and-dictionaries.ipynb)
 - [Working with External Libraries](working-with-external-libraries.ipynb)
+- [Object Oriented Programming in Python](object-oriented-programming-in-python.ipynb)
