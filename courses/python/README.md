@@ -6,3 +6,4 @@
 - [Lists](lists.ipynb)
 - [Loops and List Comprehensions](loops-and-list-comprehensions.ipynb)
 - [Strings and Dictionaries](strings-and-dictionaries.ipynb)
+- [Working with External Libraries](working-with-external-libraries.ipynb)
