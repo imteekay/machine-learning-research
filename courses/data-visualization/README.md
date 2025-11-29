@@ -6,6 +6,7 @@
 - [Scatter Plots](scatter-plots.ipynb)
 - [Distributions](distributions.ipynb)
 - [Choosing Plot Types and Custom Styles](choosing-plot-types-and-custom-styles.ipynb)
+- [Data Visualization Final Project](data-visualization-final-project.ipynb)
 
 ### Trends
 
