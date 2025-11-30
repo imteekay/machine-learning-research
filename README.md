@@ -321,6 +321,7 @@
 - [[Article] Causal inference resources](https://yanirseroussi.com/causal-inference-resources)
 - [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book/index.html)
 - [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
+- [[Paper Video] Continuous Thought Machine Deep Dive](https://www.youtube.com/watch?v=5X9cjGLggv0)
 
 #### Transformers
 
