@@ -233,6 +233,7 @@
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
 - [Think Stats: Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/html/index.html)
 - [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
+- [[Book] Hyperparameter Optimization in Machine Learning](https://arxiv.org/pdf/2410.22854)
 
 #### Multimodal Machine Learning
 
