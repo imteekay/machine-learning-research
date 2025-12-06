@@ -8,6 +8,7 @@
 - [Counting Labels and Weighted Loss Function](week1/ai-for-medicine-diagnosis-counting-labels-and-we.ipynb)
 - [Denset 121](week1/ai-for-medicine-densenet.ipynb)
 - [Patient Overlap and Data Leakage](week1/ai-for-medicine-patient-overlap-and-data-leakage.ipynb)
+- [Chest X-Ray Medical Diagnosis with Deep Learning](week1/chest-x-ray-medical-diagnosis-with-deep-learning.ipynb)
 
 ### Content
 
