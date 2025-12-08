@@ -171,6 +171,7 @@
 - [Fundamental Python Data Science Libraries: Scikit-Learn](https://hackernoon.com/fundamental-python-data-science-libraries-a-cheatsheet-part-4-4-fd8895ef85d5)
 - [Data Engineering Roadmap](https://github.com/hasbrain/data-engineer-roadmap)
 - [How to build a data science project from scratch](https://medium.freecodecamp.org/how-to-build-a-data-science-project-from-scratch-dc4f096a62a1)
+- [Introdução à Análise de Dados para pesquisa no SUS](https://cursosqualificacao.campusvirtual.fiocruz.br/hotsite/analise-dados-sus)
 
 ### Machine Learning
 
