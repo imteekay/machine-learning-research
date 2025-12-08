@@ -56,4 +56,10 @@
   - False Positive (FP): when the patient doesn't have the disease and the model predicts having the disease
   - True Negative (TN): when the patient doesn't have the disease and the model predicts not having the disease
 - Sensitivity = TP / (TP + FN)
+  - TP is having the disease: we can extract information that the model is predicting the patients have disease when they have actually have
+  - When sensitivity is low, it means the model is predicting patients not having the disease when they have
+  - Low sensitivity in the real world: A patient is incorrectly told they are healthy ($FN$), leading to a missed diagnosis and lack of necessary treatment
 - Specificity = TN / (TN + FP)
+  - TN is not having the disease: we can extract information that the model is predicting the patients not having disease when they don't have
+  - When specificity is low, it means the model is predicting patients having the disease when don't
+  - Low specificity in the real world: A patient is incorrectly told they might have the disease ($FP$), causing unnecessary anxiety, and potentially leading to costly and invasive follow-up tests that they do not need
