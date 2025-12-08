@@ -7,6 +7,7 @@
 - [A Unified Theory of AI in Biomedicine \& Healthcare](#a-unified-theory-of-ai-in-biomedicine--healthcare)
   - [Table of Contents](#table-of-contents)
   - [Current challenges in biology](#current-challenges-in-biology)
+  - [Central Dogma of Biology](#central-dogma-of-biology)
   - [Proteins](#proteins)
 
 ## Current challenges in biology
@@ -29,6 +30,10 @@
 - Vision models vs human eyes for microscopy images of cells
   - Microscopy images are very rich in information
   - Vision models can interpret more information than human eyes
+
+## Central Dogma of Biology
+
+DNA -> RNA -> Protein
 
 ## Proteins
 
