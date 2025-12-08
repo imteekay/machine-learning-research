@@ -37,3 +37,23 @@
   - Data splitting: when splitting patient data into train, validation, and test sets, we should make sure that a patient data belongs to the same set and doesn't leak to another set.
     - The model doesn't necessarily generalize as it is tested on trained data
     - Overestimation of performance: it doesn't accurately reflect how the model would perform in a real-world setting on a completely new patient
+
+## Evaluating Models
+
+- Accuracy: examples correcly classified / total number of examples
+  - P(correct) = probability of being correct
+  - P(correct ⋂ disease) + P(correct ⋂ normal)
+  - P(A ⋂ B) = P(A|B) P(B)
+  - P(correct|disease) P(disease) + P(correct|normal) P(normal)
+  - `Sensitivity` (true positive rate): P(correct|disease) = the probability of being correct given the patient has the disease = predicted positive for disease
+  - `Specificity` (true negative rate): P(correct|normal) = the probability of being correct given the patient doesn't have the disease = predicted negative for normal
+  - Accuracy = Sensitivity x P(disease) + Specificity x P(normal)
+  - Accuracy is a weighted average of sensitivity and specificity
+    - P(disease) and P(normal) are the weights
+- Confusion Matrix: performance of the classifier in a table format
+  - True Positive (TP): when the patient has the disease and the model predicts having the disease
+  - False Negative (FN): when the patient has the disease and the model predicts not having the disease
+  - False Positive (FP): when the patient doesn't have the disease and the model predicts having the disease
+  - True Negative (TN): when the patient doesn't have the disease and the model predicts not having the disease
+- Sensitivity = TP / (TP + FN)
+- Specificity = TN / (TN + FP)
