@@ -603,6 +603,7 @@
 - [[Book] The Art of Molecular Dynamics Simulation](https://www.goodreads.com/book/show/5345626-the-art-of-molecular-dynamics-simulation)
 - [[Book] Protein Actions: Principles and Modeling](https://www.goodreads.com/book/show/34740617-protein-actions)
 - [[Book] Computational Protein Design](https://www.goodreads.com/book/show/31237121-computational-protein-design)
+- [[Article] How anyone can teach themselves bioengineering](https://kakama-content-sharing.notion.site/How-anyone-can-teach-themselves-bioengineering-how-I-did-it-too-7a256c2aa5704e87bd5985cad1fed4ce)
 
 ### Precision Health
 
