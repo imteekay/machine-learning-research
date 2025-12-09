@@ -356,6 +356,7 @@
 - [[Course] Reinforcement Learning of Large Language Models](https://www.youtube.com/playlist?list=PLir0BWtR5vRp5dqaouyMU-oTSzaU5LK9r)
 - [[Book] Reinforcement Learning from Human Feedback](https://rlhfbook.com)
 - [[Course] Mathematical Foundations of Reinforcement Learning](https://www.youtube.com/playlist?list=PLEhdbSEZZbDaFWPX4gehhwB9vJZJ1DNm8)
+- [[Course] Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL)
 
 ### PyTorch
 
