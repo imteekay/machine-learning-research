@@ -6,9 +6,25 @@
 
 - [A Unified Theory of AI in Biomedicine \& Healthcare](#a-unified-theory-of-ai-in-biomedicine--healthcare)
   - [Table of Contents](#table-of-contents)
+  - [How Cells Work](#how-cells-work)
   - [Central Dogma of Biology](#central-dogma-of-biology)
   - [Proteins](#proteins)
   - [Current challenges in biology](#current-challenges-in-biology)
+
+## How Cells Work
+
+- DNA: it's molecule with double helix shape
+  - Group of pairs of nucleotides adenine and thymine (AT) or guanine and cytosine (GC)
+  - The nucleotides carry the genetic information
+- RNA
+  - It has individual strands (compared to the double strands from the DNA)
+  - It uses uracil as a replacement the thymine
+- Proteins
+  - They are biomolecules represented as chains of amino-acids (20 types of amino acids with different chemical properties)
+  - Types of roles: structural, catalyzer (chemical reactions)
+  - They can receive signals, transfort molecules, break down sugar, replicate DNA
+  - Hundreds or thousands of amino acids folded into 3-dimensional structures
+  - Protein shapes and functions are not static, which makes it even more complex
 
 ## Central Dogma of Biology
 
