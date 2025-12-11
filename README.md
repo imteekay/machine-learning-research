@@ -24,6 +24,7 @@
     - [Machine Learning](#machine-learning)
       - [Multimodal Machine Learning](#multimodal-machine-learning)
     - [Deep Learning](#deep-learning)
+      - [Computer Vision](#computer-vision)
       - [Transformers](#transformers)
       - [Large Language Models (LLMs)](#large-language-models-llms)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
@@ -325,6 +326,10 @@
 - [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
 - [[Paper Video] Continuous Thought Machine Deep Dive](https://www.youtube.com/watch?v=5X9cjGLggv0)
 
+#### Computer Vision
+
+- [[Course] Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16)
+
 #### Transformers
 
 - [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer)
@@ -343,7 +348,7 @@
 
 #### Large Language Models (LLMs)
 
-- [Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05)
+- [[Course] Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05)
 
 ### Deep Reinforcement Learning
 
