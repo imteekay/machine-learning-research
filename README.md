@@ -343,7 +343,7 @@
 - [Visualizing transformers and attention](https://www.youtube.com/watch?v=KJtZARuO3JY)
 - [Introduction to Transformers](https://www.youtube.com/watch?v=XfpMkf4rD6E)
 - [Overview of Transformers](https://www.youtube.com/watch?v=JKbtWimlzAE&list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM&index=36)
-- [Large Language Models](https://www.youtube.com/playlist?list=PLs8w1Cdi-zva4fwKkl9EK13siFvL9Wewf)
+- [[Course] Large Language Models](https://www.youtube.com/playlist?list=PLs8w1Cdi-zva4fwKkl9EK13siFvL9Wewf)
 - [Transformer Neural Networks Derived from Scratch](https://www.youtube.com/watch?v=kWLed8o5M2Y)
 - [The math behind Attention: Keys, Queries, and Values matrices](https://www.youtube.com/watch?v=UPtG_38Oq8o )
 
