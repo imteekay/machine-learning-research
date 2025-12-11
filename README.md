@@ -25,6 +25,7 @@
       - [Multimodal Machine Learning](#multimodal-machine-learning)
     - [Deep Learning](#deep-learning)
       - [Transformers](#transformers)
+      - [Large Language Models (LLMs)](#large-language-models-llms)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
     - [PyTorch](#pytorch)
     - [ML/AI \& Healthcare](#mlai--healthcare)
@@ -339,6 +340,10 @@
 - [Large Language Models](https://www.youtube.com/playlist?list=PLs8w1Cdi-zva4fwKkl9EK13siFvL9Wewf)
 - [Transformer Neural Networks Derived from Scratch](https://www.youtube.com/watch?v=kWLed8o5M2Y)
 - [The math behind Attention: Keys, Queries, and Values matrices](https://www.youtube.com/watch?v=UPtG_38Oq8o )
+
+#### Large Language Models (LLMs)
+
+- [Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05)
 
 ### Deep Reinforcement Learning
 
