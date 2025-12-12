@@ -5,3 +5,4 @@
 - [Tools: Passing tools to LLMs](tools.ipynb)
 - [Tools: Email assistant workflow](email-assistant.ipynb)
 - [Component-Level Evaluation: Research workflow](eval.ipynb)
+- [Planning with code: Customer Service Agent](planning-with-code.ipynb)
