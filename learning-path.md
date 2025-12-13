@@ -50,7 +50,7 @@
 - [ ] Causal Inference
   - [ ] [[Book] Causal Inference: What If](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/677676888e31cc50c2c33877/1735816881944/hernanrobins_WhatIf_2jan25.pdf)
 - [ ] Machine Learning Engineering
-  - [ ] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
+  - [X] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 - [ ] Multimodal Machine Learning
   - [ ] [CMU Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW)
   - [ ] [Multimodal Readings](https://cmu-multicomp-lab.github.io/mmml-course/fall2023/readings)
