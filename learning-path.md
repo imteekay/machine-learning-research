@@ -18,6 +18,8 @@
 ## Programming & ML Tools
 
 - [ ] Python
+  - [X] Python Basics
+  - [ ] [Fluent Python](https://www.amazon.com/Fluent-Python-Concise-Effective-Programming-dp-1492056359/dp/1492056359)
 - [ ] Numpy
 - [ ] Pandas
 - [ ] Scikit-learn
