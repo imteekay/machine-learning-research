@@ -24,6 +24,10 @@
 - [ ] Deep Learning Frameworks
   - [X] [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)
   - [X] [Learn PyTorch for Deep Learning](https://www.learnpytorch.io)
+  - [ ] [PyTorch for Deep Learning](https://www.deeplearning.ai/courses/pytorch-for-deep-learning-professional-certificate)
+    - [X] [PyTorch: Fundamentals](https://www.coursera.org/learn/pytorch-fundamentals)
+    - [ ] [PyTorch: Techniques and Ecosystem Tools](https://www.coursera.org/learn/pytorch-techniques-and-ecosystem-tools)
+    - [ ] [PyTorch: Advanced Architectures and Deployment](https://www.coursera.org/learn/pytorch-advanced-architectures-and-deployment)
 
 ## Math & Statistics Foundations
 
