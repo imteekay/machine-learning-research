@@ -46,7 +46,7 @@
     - [ ] TODO: implement it from scratch
     - [ ] TODO: write an article about the implementation
 - [ ] Model Evaluation
-  - [ ] Accuracy, Loss, ROC AUC, precision/recall
+  - [ ] Accuracy, Loss, ROC AUC, Precision, Recall
 - [ ] Causal Inference
   - [ ] [[Book] Causal Inference: What If](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/677676888e31cc50c2c33877/1735816881944/hernanrobins_WhatIf_2jan25.pdf)
 - [ ] Machine Learning Engineering
