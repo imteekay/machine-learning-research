@@ -80,10 +80,11 @@
     - [X] LSTMs
     - [X] GRUs
   - [ ] Transformers
+    - [X] [[Course] Attention in Transformers](https://learn.deeplearning.ai/courses/attention-in-transformers-concepts-and-code-in-pytorch)
+    - [ ] [[Course] How Transformer LLMs Work](https://www.deeplearning.ai/short-courses/how-transformer-llms-work)
+    - [ ] [Transformers Encoder from scratch with PyTorch](https://www.kaggle.com/code/auxeno/transformers-from-scratch-dl)
     - [ ] [[Course] Attention | NLP](https://www.coursera.org/learn/attention-models-in-nlp)
     - [ ] [[Course] Stanford Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
-    - [ ] [[Course] How Transformer LLMs Work](https://www.deeplearning.ai/short-courses/how-transformer-llms-work)
-    - [X] [[Course] Attention in Transformers](https://learn.deeplearning.ai/courses/attention-in-transformers-concepts-and-code-in-pytorch)
   - [ ] Autoencoders/Variational Autoencoders (VAEs)
   - [ ] Generative Adversarial Networks (GANs)
   - [ ] Graph Neural Networks (GNNs)
