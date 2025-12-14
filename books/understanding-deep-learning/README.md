@@ -46,6 +46,7 @@
   - [Bidirectional RNN](#bidirectional-rnn)
   - [Deep RNN](#deep-rnn)
   - [RNN Implementation](#rnn-implementation)
+  - [Bag of Words](#bag-of-words)
   - [Word Embedding](#word-embedding)
   - [Attention \& Transformers](#attention--transformers)
 
@@ -623,6 +624,11 @@ def rnn_forward(x, a0, parameters):
     
     return a, y_pred, (caches, x)
 ```
+
+## Bag of Words
+
+- Breakdown a sentence into words, in other words, have a bag of words (tokens)
+  - Bag of words: counting each word in the vocabulary, building the numerical representation with a specific order
 
 ## Word Embedding
 
