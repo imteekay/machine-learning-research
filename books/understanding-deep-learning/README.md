@@ -632,6 +632,7 @@ def rnn_forward(x, a0, parameters):
 
 ## Word Embedding
 
+- `word2vec` is static regardless of the context
 - One hot encoding for words: transform a word into a vector of 1s and 0s where 0 represents that it's not the word for that index and 1 it is the word for the position
   - One hot representations treat each word as an isolated entity, so it's difficult to find similarity meaning among words
 - Featurized word embeddings: make associations, relationships to build similarity among all words.
