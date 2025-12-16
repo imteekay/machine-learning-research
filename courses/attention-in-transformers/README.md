@@ -52,3 +52,7 @@ M = Mask
 [Multi Head Attention](encoder-decoder-attention.ipynb)
 
 Having multiple heads paying attention to different parts of a more complex input (sentence, paragraphs) helps with how tokens are related in longer, complex input
+
+## Next Token Prediction
+
+[Example of using model to predict the next token](next-token-prediction.ipynb)
