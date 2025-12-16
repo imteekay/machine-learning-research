@@ -49,4 +49,6 @@ M = Mask
 
 ## Multi-Head Attention
 
+[Multi Head Attention](encoder-decoder-attention.ipynb)
+
 Having multiple heads paying attention to different parts of a more complex input (sentence, paragraphs) helps with how tokens are related in longer, complex input
