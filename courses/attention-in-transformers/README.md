@@ -24,6 +24,8 @@ V = Value
 
 ## Self-Attention vs Masked Self-Attention
 
+[Masked Self Attention in PyTorch](masked-self-attention-pytorch.ipynb)
+
 - When using words as input, we need to transform them into numbers.
 - We can assign a *random* number to each word. In theory, it works well, but words with similar meaning need to have approximate numbers so the neural network understand they are similar
 - To add to that, we need a better understanding of the context surrounding the word because the same word in different context, can have different meaning.
