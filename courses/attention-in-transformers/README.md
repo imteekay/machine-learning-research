@@ -12,6 +12,8 @@
 
 ## The Matrix Math for Calculating Self-Attention
 
+[Self Attention in PyTorch](self-attention-pytorch.ipynb)
+
 It calculates the scaled dot product similarity among all tokens, convert the similarities into percentages with softmax and use these percentages to scale the values, so it becomes the self-attention scores for each word.
 
 Attention(Q, K, V) = SoftMax(QKᵗ/√dᴷ) . V
