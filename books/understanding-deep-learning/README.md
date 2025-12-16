@@ -667,6 +667,7 @@ An example of word embedding usage is to be build a language model that predicts
 
 ## Attention & Transformers
 
+- In the transformer block, there are two important pieces: self-attention and the feed forward neural net
 - Associate each token with a high dimensional vector, an embedding
   - An embedding has semantic meaning
   - Initially, the embedding is just a look up table with no reference to the context
