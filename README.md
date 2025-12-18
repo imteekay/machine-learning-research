@@ -621,6 +621,7 @@
 - [[Book] Protein Actions: Principles and Modeling](https://www.goodreads.com/book/show/34740617-protein-actions)
 - [[Book] Computational Protein Design](https://www.goodreads.com/book/show/31237121-computational-protein-design)
 - [[Article] How anyone can teach themselves bioengineering](https://kakama-content-sharing.notion.site/How-anyone-can-teach-themselves-bioengineering-how-I-did-it-too-7a256c2aa5704e87bd5985cad1fed4ce)
+- [[Course] Introduction to Bioinformatics and Computational Biology — Harvard](https://liulab-dfci.github.io/bioinfo-combio/)
 
 ### Precision Health
 
