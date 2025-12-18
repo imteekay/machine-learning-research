@@ -2,12 +2,10 @@
 
 ## The main ideas
 
-4 main parts
-
 - `Tokenization`: breaks the input and separate it into tokens (IDs from vocabulary)
 - `Word Wmbedding`: converts tokens into embedding vectors - lookup vector
-- `Positional Encoding`: keep track of word order - using the same words but different orders can have a totally different meaning, this is why word order is important
-- `Attention`/`Self-attention`: how each word is similar to all of the other words in the sentence
+- `Positional Encoding`: add positional information of each token to the embedding vector
+- `Attention`/`Self-Attention`: how each word is similar to all of the other words in the sentence
 
 ## The Matrix Math for Calculating Self-Attention
 
