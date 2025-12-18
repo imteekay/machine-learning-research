@@ -61,3 +61,7 @@ Having multiple heads paying attention to different parts of a more complex inpu
 ## Next Token Prediction
 
 [Example of using model to predict the next token](next-token-prediction.ipynb)
+
+## Transformers from Scratch
+
+[Transformers from Scratch](transformers-from-scratch.ipynb)
