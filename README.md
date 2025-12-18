@@ -327,6 +327,7 @@
 - [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
 - [[Paper Video] Continuous Thought Machine Deep Dive](https://www.youtube.com/watch?v=5X9cjGLggv0)
 - [[Course] Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X)
+- [PaperCode](https://papercode.in/papers)
 
 #### Computer Vision
 
