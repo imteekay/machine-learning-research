@@ -19,6 +19,10 @@ Q = Query
 K = Key
 V = Value
 
+- QKᵗ: relevance score between tokens
+- √dᴷ: scaling — prevents the dot product values from growing too large in high dimensions
+- SoftMax: transform scores into probabilities
+- V: weighted sum of the values
 - Self-Attention example: 
   - "The pizza came out of the oven and it tasted good"
   - the token "pizza" has a higher 'similarity' with the token "tasted" compared to "oven". This is why the token "it" can be highly correlated with "pizza" and not "oven".
