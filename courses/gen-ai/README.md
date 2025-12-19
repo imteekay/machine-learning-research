@@ -2,6 +2,8 @@
 
 ## Foundational Large Language Models & Text Generation
 
+[Prompt Engineering](prompt-engineering.ipynb)
+
 - [Whitepaper Companion Podcast](https://www.youtube.com/watch?v=Na3O4Pkbp-U&list=PLqFaTIg4myu_yKJpvF8WE2JfaG5kGuvoE)
 - Transformer
   - Preprocessing the input for the model
