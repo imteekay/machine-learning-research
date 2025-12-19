@@ -82,7 +82,7 @@
   - [ ] Transformers
     - [X] [[Course] Attention in Transformers](https://learn.deeplearning.ai/courses/attention-in-transformers-concepts-and-code-in-pytorch)
     - [X] [[Course] How Transformer LLMs Work](https://www.deeplearning.ai/short-courses/how-transformer-llms-work)
-    - [ ] [[Notebook] Transformers Encoder from scratch with PyTorch](https://www.kaggle.com/code/auxeno/transformers-from-scratch-dl)
+    - [X] [[Notebook] Transformers Encoder from scratch with PyTorch](https://www.kaggle.com/code/auxeno/transformers-from-scratch-dl)
     - [ ] [[Book] Understanding Deep Learning: Transformers Chapter](https://udlbook.github.io/udlbook)
     - [ ] [[Course] Attention | NLP](https://www.coursera.org/learn/attention-models-in-nlp)
     - [ ] [[Course] Stanford Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
