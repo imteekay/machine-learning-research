@@ -27,6 +27,7 @@
       - [Computer Vision](#computer-vision)
       - [Transformers](#transformers)
       - [Large Language Models (LLMs)](#large-language-models-llms)
+    - [Generative AI](#generative-ai)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
     - [PyTorch](#pytorch)
     - [ML/AI \& Healthcare](#mlai--healthcare)
@@ -352,6 +353,10 @@
 #### Large Language Models (LLMs)
 
 - [[Course] Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05)
+
+### Generative AI
+
+- [The Principles of Diffusion Models](https://arxiv.org/pdf/2510.21890)
 
 ### Deep Reinforcement Learning
 
