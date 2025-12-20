@@ -3,9 +3,20 @@
 ## The main ideas
 
 - `Tokenization`: breaks the input and separate it into tokens (IDs from vocabulary)
-- `Word Wmbedding`: converts tokens into embedding vectors - lookup vector
+- `Word Embedding`: converts tokens into embedding vectors - lookup vector
 - `Positional Encoding`: add positional information of each token to the embedding vector
 - `Attention`/`Self-Attention`: how each word is similar to all of the other words in the sentence
+
+## Tokenization
+
+- Token: a unit of text. Can be a word or a subword
+- Encode: transform text into tokens
+- Decode: transform tokens into text
+
+## Embeddings
+
+- Token embeddings can be represented in One-Hot-Encoding: 1 for the specific token and 0 for all the rest
+  - Dimensionality and similarity are the limitations of One-Hot-Encoding
 
 ## The Matrix Math for Calculating Self-Attention
 
