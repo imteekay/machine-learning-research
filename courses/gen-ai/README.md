@@ -19,3 +19,6 @@
 ## Embeddings and Vector Stores/Databases
 
 - [Document Q&A with RAG](document-q-a-with-rag.ipynb)
+  - `indexing`: index documents and data to a vector database (like Chroma)
+  - `retrieval`: retrieve information from the indexed documents
+  - `generation`: generate a final answer based on the retrieved information
