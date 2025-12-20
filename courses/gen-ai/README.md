@@ -22,3 +22,5 @@
   - `indexing`: index documents and data to a vector database (like Chroma)
   - `retrieval`: retrieve information from the indexed documents
   - `generation`: generate a final answer based on the retrieved information
+- [Embeddings and Similarity Scores](embeddings-and-similarity-scores.ipynb)
+  - Use semantic similarity to compare texts based on their embeddings
