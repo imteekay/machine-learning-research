@@ -15,3 +15,7 @@
   - Evaluation: generate metrics like Fluency, Coherence, Groundedness, Safety, Instruction Following, Verbosity, Text Quality through a judge model
   - Pointwise Evaluation: give grade or score as an evaluation for the answer
   - Pairwise Evaluation: compare evaluation of different answers
+
+## Embeddings and Vector Stores/Databases
+
+- [Document Q&A with RAG](document-q-a-with-rag.ipynb)
