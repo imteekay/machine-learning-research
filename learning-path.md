@@ -123,7 +123,7 @@
 - [ ] AI/ML in Healthcare
   - [ ] [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
   - [ ] [AI for Medicine Specialization](https://www.coursera.org/specializations/ai-for-medicine)
-    - [ ] [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
+    - [X] [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
     - [ ] [AI for Medical Prognosis](https://www.coursera.org/learn/ai-for-medical-prognosis)
     - [ ] [AI For Medical Treatment](https://www.coursera.org/learn/ai-for-medical-treatment)
   - [ ] [AI in Healthcare Specialization](https://www.coursera.org/specializations/ai-healthcare)
