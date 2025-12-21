@@ -46,9 +46,11 @@
   - [Bidirectional RNN](#bidirectional-rnn)
   - [Deep RNN](#deep-rnn)
   - [RNN Implementation](#rnn-implementation)
-  - [Bag of Words](#bag-of-words)
-  - [Word Embedding](#word-embedding)
-  - [Attention \& Transformers](#attention--transformers)
+  - [Transformers \& LLMs](#transformers--llms)
+    - [Tokenization](#tokenization)
+    - [Bag of Words](#bag-of-words)
+    - [Word Embedding](#word-embedding)
+    - [Attention \& Transformers](#attention--transformers)
 
 ## What's a Neural Network?
 
@@ -588,12 +590,25 @@ In the sequential approach, the network has to learn to infer relationships acro
   - Stores all predictions
   - Stores the cache of each time step (used for backprop, where it will learn — update the parameters)
 
-## Bag of Words
+## Transformers & LLMs
+
+- `Tokenization`: breaks the input and separate it into tokens (IDs from vocabulary)
+- `Word Embedding`: converts tokens into embedding vectors - lookup vector
+- `Positional Encoding`: add positional information of each token to the embedding vector
+- `Attention`/`Self-Attention`: how each word is similar to all of the other words in the sentence
+
+### Tokenization
+
+- Token: a unit of text. Can be a word or a subword
+- Encode: transform text into tokens
+- Decode: transform tokens into text
+
+### Bag of Words
 
 - Breakdown a sentence into words, in other words, have a bag of words (tokens)
   - Bag of words: counting each word in the vocabulary, building the numerical representation with a specific order
 
-## Word Embedding
+### Word Embedding
 
 - `word2vec` is static regardless of the context
 - One hot encoding for words: transform a word into a vector of 1s and 0s where 0 represents that it's not the word for that index and 1 it is the word for the position
@@ -628,7 +643,7 @@ An example of word embedding usage is to be build a language model that predicts
 
 ![](images/neural-language-model.png)
 
-## Attention & Transformers
+### Attention & Transformers
 
 - In the transformer block, there are two important pieces: self-attention and the feed forward neural net
 - Associate each token with a high dimensional vector, an embedding
