@@ -27,3 +27,8 @@
 - [Classifying Embeddings with Keras](classifying-embeddings-with-keras.ipynb)
   - Call a model to generate embeddings for different texts using specific configs (e.g. `classification` as a `task_type`)
   - Use the generated embeddings to train a model to classify each text
+
+## Generative Agents
+
+- [Function Calling with the Gemini API](function-calling-with-the-gemini-api.ipynb)
+  - Provide tools to the model using the `GenerateContentConfig`
