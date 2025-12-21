@@ -121,6 +121,9 @@
 ## Machine Learning in Biomedicine
 
 - [ ] AI/ML in Healthcare
+  - [ ] [[Course] MIT Machine Learning in Computational Biology](https://www.youtube.com/playlist?list=PLypiXJdtIca4gtioEPLIExlAKvu64z7rc)
+    - [Lectures Document](https://docs.google.com/document/d/17eG2nS0kM3RyxDZsxpLiSKaNjFLCsXvRXX3CisZvyjY/edit?tab=t.0#heading=h.b3yfv0f8omfi)
+    - [Course NotebookLM](https://notebooklm.google.com/notebook/eba8fb00-af8f-4720-b151-b90e2da666e8?pli=1)
   - [ ] [Machine Learning for Healthcare](https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019)
   - [ ] [AI for Medicine Specialization](https://www.coursera.org/specializations/ai-for-medicine)
     - [X] [AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis)
