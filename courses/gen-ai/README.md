@@ -32,3 +32,8 @@
 
 - [Function Calling with the Gemini API](function-calling-with-the-gemini-api.ipynb)
   - Provide tools to the model using the `GenerateContentConfig`
+- [Building an Agent with LangGraph](building-an-agent-with-langgraph.ipynb)
+  - `node`: actions or steps taken; nodes can access tools that are binded to the LLM
+  - `edge`: transition between states
+  - `state`: conversation history
+  - `tools`: bind tools to the LLM so it can access, request data, have better context
