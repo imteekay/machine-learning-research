@@ -37,3 +37,7 @@
   - `edge`: transition between states
   - `state`: conversation history
   - `tools`: bind tools to the LLM so it can access, request data, have better context
+
+## Domain-Specific LLMs
+
+- [Fine Tuning a Custom Model](fine-tuning-a-custom-model.ipynb)
