@@ -44,3 +44,6 @@
   - Manual prompt to have a baseline evaluation
   - Fine tune the model based on the dataset (input text and target)
   - Use the fine-tuned model to generate content (e.g. classification task) and improve evaluation metrics
+- [Google Search Grounding](google-search-grounding.ipynb)
+  - Use google search as a tool (grounding technique): similar to RAG, where the model retrieves information from a verifiable source
+  - We can also configure other tools (e.g. `ToolCodeExecution`) when sending a new message
