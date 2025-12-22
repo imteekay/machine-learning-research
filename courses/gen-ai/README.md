@@ -41,3 +41,6 @@
 ## Domain-Specific LLMs
 
 - [Fine Tuning a Custom Model](fine-tuning-a-custom-model.ipynb)
+  - Manual prompt to have a baseline evaluation
+  - Fine tune the model based on the dataset (input text and target)
+  - Use the fine-tuned model to generate content (e.g. classification task) and improve evaluation metrics
