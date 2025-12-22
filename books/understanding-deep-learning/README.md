@@ -645,7 +645,7 @@ An example of word embedding usage is to be build a language model that predicts
 
 ### Attention & Transformers
 
-- In the transformer block, there are two important pieces: self-attention and the feed forward neural net
+- In the transformer block, there are two important pieces: self-attention and the feed forward neural network
 - Associate each token with a high dimensional vector, an embedding
   - An embedding has semantic meaning
   - Initially, the embedding is just a look up table with no reference to the context
@@ -653,6 +653,13 @@ An example of word embedding usage is to be build a language model that predicts
 - Attention Pattern
   - The query Q asks questions how the other tokens relate to the one in question
   - The key K answers the query Q for each token. It applies softmax to normalize K for each token, as if it was a probability distribution. It gives weights according to how relevant each surrounding token is to the token in question.
+  - The Query-Key-Value relationship measure the similarity of each token related to the other tokens
+    - Query for token 1: Key of token 2 + Value of token 2
+    - Query for token 1: Key of token 3 + Value of token 3
+    - Query for token 1: Key of token 4 + Value of token 4
+    - Query for token 2: Key of token 1 + Value of token 1
+    - Query for token 2: Key of token 3 + Value of token 3
+    - Query for token 2: Key of token 4 + Value of token 4
 
 **Encoder**: Feedforward after the multi-head attention in the encoder
 
