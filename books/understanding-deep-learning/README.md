@@ -686,12 +686,19 @@ V = Value = Input x Wᵥ
 - SoftMax: transform scores into probabilities
 - V: weighted sum of the values
 
-**Encoder**: Feedforward after the multi-head attention in the encoder
+**Encoder**: 
 
-- Non-linearity and Feature Transformation: While the multi-head attention mechanism effectively captures relationships between words (contextual information), it's primarily a weighted sum. The feedforward network introduces non-linearity, allowing the model to learn more complex patterns and transformations of the attention outputs. It acts as a sub-layer that processes each position independently and identically.
-- Enriching Representation: After the self-attention layer has aggregated information from all other words based on their relevance, the feedforward network can further refine and enrich this contextual representation for each word. It essentially applies a more traditional neural network processing step to the features extracted by the attention mechanism. This allows the model to learn higher-level abstract features from the attention-weighted inputs.
+- Self-attention produces an encoded token embeddings with contextual awareness
+- Feedforward after the multi-head attention in the encoder
+  - Non-linearity and Feature Transformation: While the multi-head attention mechanism effectively captures relationships between words (contextual information), it's primarily a weighted sum. The feedforward network introduces non-linearity, allowing the model to learn more complex patterns and transformations of the attention outputs. It acts as a sub-layer that processes each position independently and identically.
+  - Enriching Representation: After the self-attention layer has aggregated information from all other words based on their relevance, the feedforward network can further refine and enrich this contextual representation for each word. It essentially applies a more traditional neural network processing step to the features extracted by the attention mechanism. This allows the model to learn higher-level abstract features from the attention-weighted inputs.
+- Output embedding: 
+  - `token-aware`: Feed-Forward Network -	Semantic refinement; processing the specific features of that position
+  - `position-aware`: Positional Encoding -	Sequential meaning; where the token sits in the string
+  - `context-aware`: Multi-Head Attention -	Relational meaning; how tokens relate to each other
 
-**Decoder**: two layers of multi-head attention
+**Decoder**:
 
-- The first attention layer in the decoder provides "what has been translated so far" context, and t
-- The second attention layer provides "what was in the original source sentence" context, allowing the decoder to effectively combine both to generate an accurate translation
+Two layers of multi-head attention
+  - The first attention layer in the decoder provides "what has been translated so far" context, and t
+  - The second attention layer provides "what was in the original source sentence" context, allowing the decoder to effectively combine both to generate an accurate translation
