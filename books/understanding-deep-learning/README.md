@@ -50,6 +50,7 @@
     - [Tokenization](#tokenization)
     - [Bag of Words](#bag-of-words)
     - [Word Embedding](#word-embedding)
+    - [Positional Encoding](#positional-encoding)
     - [Attention \& Transformers](#attention--transformers)
 
 ## What's a Neural Network?
@@ -643,6 +644,14 @@ An example of word embedding usage is to be build a language model that predicts
 
 ![](images/neural-language-model.png)
 
+### Positional Encoding
+
+The purpose of positional encoding is:
+
+- Injecting Order Information: The core self-attention mechanism in the Transformer is inherently agnostic to the order of words in a sequence. If you shuffle the input words, the attention outputs (without positional encoding) would remain the same, because attention simply calculates relationships based on content. However, word order is critical for understanding language (e.g., "dog bites man" vs. "man bites dog").
+- Unique Positional Signature: Positional encodings provide a unique "signature" for each position in the sequence. These encodings are added directly to the word embeddings at the input. By doing so, the model's input for each word now contains information about both its semantic meaning and its position within the sentence.
+- Enabling Positional Awareness: This positional information allows the attention mechanism to implicitly learn to distinguish between words based on their position relative to others, even though the attention calculation itself doesn't explicitly use position. For example, the model can learn that words at the beginning of a sentence might play a different role than words at the end.
+
 ### Attention & Transformers
 
 - In the transformer block, there are two important pieces: self-attention and the feed forward neural network
@@ -653,24 +662,34 @@ An example of word embedding usage is to be build a language model that predicts
 - Attention Pattern
   - The query Q asks questions how the other tokens relate to the one in question
   - The key K answers the query Q for each token. It applies softmax to normalize K for each token, as if it was a probability distribution. It gives weights according to how relevant each surrounding token is to the token in question.
-  - The Query-Key-Value relationship measure the similarity of each token related to the other tokens
-    - Query for token 1: Key of token 2 + Value of token 2
-    - Query for token 1: Key of token 3 + Value of token 3
-    - Query for token 1: Key of token 4 + Value of token 4
-    - Query for token 2: Key of token 1 + Value of token 1
-    - Query for token 2: Key of token 3 + Value of token 3
-    - Query for token 2: Key of token 4 + Value of token 4
+  - The Query-Key relationship measure the similarity of each token related to the other tokens
+    - Query for token 1: 
+      - Key of token 2 + Value of token 2
+      - Key of token 3 + Value of token 3
+      - Key of token 4 + Value of token 4
+    - Query for token 2: 
+      - Key of token 1 + Value of token 1
+      - Key of token 3 + Value of token 3
+      - Key of token 4 + Value of token 4
+  - The division by √dₖ to rescale the similarity scores
+  - Apply softmax so the sum of the probabilities leads to 1
+  - Weighted sum: the values with the probability
+
+Attention(Q, K, V) = SoftMax(QKᵗ/√dᴷ) . V
+
+Q = Query = Input x Wq
+K = Key = Input x Wₖ
+V = Value = Input x Wᵥ
+
+- QKᵗ: relevance score between tokens
+- √dᴷ: scaling — prevents the dot product values from growing too large in high dimensions
+- SoftMax: transform scores into probabilities
+- V: weighted sum of the values
 
 **Encoder**: Feedforward after the multi-head attention in the encoder
 
 - Non-linearity and Feature Transformation: While the multi-head attention mechanism effectively captures relationships between words (contextual information), it's primarily a weighted sum. The feedforward network introduces non-linearity, allowing the model to learn more complex patterns and transformations of the attention outputs. It acts as a sub-layer that processes each position independently and identically.
 - Enriching Representation: After the self-attention layer has aggregated information from all other words based on their relevance, the feedforward network can further refine and enrich this contextual representation for each word. It essentially applies a more traditional neural network processing step to the features extracted by the attention mechanism. This allows the model to learn higher-level abstract features from the attention-weighted inputs.
-
-**Positional Encoding**: The purpose of positional encoding is:
-
-- Injecting Order Information: The core self-attention mechanism in the Transformer is inherently agnostic to the order of words in a sequence. If you shuffle the input words, the attention outputs (without positional encoding) would remain the same, because attention simply calculates relationships based on content. However, word order is critical for understanding language (e.g., "dog bites man" vs. "man bites dog").
-- Unique Positional Signature: Positional encodings provide a unique "signature" for each position in the sequence. These encodings are added directly to the word embeddings at the input. By doing so, the model's input for each word now contains information about both its semantic meaning and its position within the sentence.
-- Enabling Positional Awareness: This positional information allows the attention mechanism to implicitly learn to distinguish between words based on their position relative to others, even though the attention calculation itself doesn't explicitly use position. For example, the model can learn that words at the beginning of a sentence might play a different role than words at the end.
 
 **Decoder**: two layers of multi-head attention
 
