@@ -699,6 +699,15 @@ V = Value = Input x Wᵥ
 
 **Decoder**:
 
-Two layers of multi-head attention
-  - The first attention layer in the decoder provides "what has been translated so far" context, and t
-  - The second attention layer provides "what was in the original source sentence" context, allowing the decoder to effectively combine both to generate an accurate translation
+Masked Self Attention
+
+- The first attention layer in the decoder provides "what has been translated so far" context
+- Each token attends to all tokens that was generated (e.g. translated)
+- They don't look at the tokens that will be generated (right side tokens)
+
+Cross Attention
+
+- The second attention layer provides "what was in the original source sentence" context, allowing the decoder to effectively combine both to generate an accurate translation
+- Each token (in the decoder) attends to the tokens from the input source (from the encoder)
+- Query for the decoder's tokens
+- Key and Value for the encoder's tokens
