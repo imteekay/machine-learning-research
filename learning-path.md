@@ -10,9 +10,13 @@ Core training
   - Top-5 papers in each subfield of interest
 - Implementation
   - Implement paper and architectures of ML models
-- Math
+- Foundational Mathematics
   - Build the mathematical foundation for ML
   - Fill the knowledge gaps from reading papers and technical articles
+- Foundational Biology
+  - Molecular Biology
+  - Genetics
+  - Proteins
 - Advanced ML of field of interest
   - Multimodal ML
   - Transformer Architecture
