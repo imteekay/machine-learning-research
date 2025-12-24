@@ -34,6 +34,7 @@
 ## Math & Statistics Foundations
 
 - [[Book] Mathematics of Machine Learning](https://www.amazon.com/Mathematics-Machine-Learning-calculus-probability/dp/1837027870)
+- [Math Academy](https://www.mathacademy.com)
 - [ ] Linear Algebra
 - [ ] Calculus
 - [ ] Probability and Statistics
