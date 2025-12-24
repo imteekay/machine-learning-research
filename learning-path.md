@@ -20,8 +20,8 @@ Core training
   - Diffusion Models
   - ML Systems
 - Code
-  - Read source code from papers & review
-  - Read source code from ML models & review
+  - Read, unpack & review source code from papers
+  - Read, unpack & review source code from ML models
 
 I *really* need to
 
