@@ -87,7 +87,6 @@
     - [ ] [[Book] Understanding Deep Learning: Transformers Chapter](https://udlbook.github.io/udlbook)
     - [ ] [[Book] Transformers and Large Language Models](https://www.amazon.com/Super-Study-Guide-Transformers-Language/dp/B0DC4NYLTN)
     - [ ] [[Course] Transformers and Large Language Models](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy)
-    - [ ] [[Course] Attention | NLP](https://www.coursera.org/learn/attention-models-in-nlp)
     - [ ] [[Course] Stanford Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
       - [ ] [Assinment 1: Building a Transformer LM](https://github.com/stanford-cs336/assignment1-basics/blob/main/cs336_spring2025_assignment1_basics.pdf)
       - [ ] [Assinment 2: Systems and Parallelism](https://github.com/stanford-cs336/assignment2-systems/blob/main/cs336_spring2025_assignment2_systems.pdf)
