@@ -4,6 +4,28 @@
 
 [Structured Learning Path: ML/DL in Biomedicine](https://chatgpt.com/c/6831e921-0168-800b-b284-0eafaff9c8f6)
 
+Core training
+
+- Papers
+  - Top-5 papers in each subfield of interest
+- Implementation
+  - Implement paper and architectures of ML models
+- Math
+  - Build the mathematical foundation for ML
+  - Fill the knowledge gaps from reading papers and technical articles
+- Advanced ML of field of interest
+  - Multimodal ML
+  - Transformer Architecture
+  - Deep Reinforcement Learning
+  - Diffusion Models
+  - ML Systems
+- Code
+
+I *really* need to
+
+- Read papers (to build the foundation, produce the knowledge gaps)
+- Read technical articles (to build the foundation, produce the knowledge gaps)
+
 ## Table of Contents
 
 - [ML/AI Learning Path](#mlai-learning-path)
