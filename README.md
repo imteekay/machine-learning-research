@@ -812,6 +812,7 @@
 - [Alex L. Zhang](https://alexzhang13.github.io)
 - [Sichuan from Total Health Optimization](https://totalhealthoptimization.com)
 - [Mengyue Yang](https://ymy4323460.github.io)
+- [Shekoofeh Azizi](https://www.shekoofehazizi.com)
 
 ### Research & Laboratories
 
