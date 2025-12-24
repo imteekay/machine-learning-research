@@ -30,7 +30,12 @@ Core training
     - RoseTTaFold
     - AlphaFold
     - Sybil
-    - 
+    - TxGemma ([ref1](https://arxiv.org/pdf/2504.06196), [ref2](https://arxiv.org/pdf/2406.06316))
+    - C2S ([ref1](https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1.full.pdf))
+    - Med-PaLM
+      - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
+      - [Towards Expert-Level Medical Question Answering with Large Language Models](https://arxiv.org/pdf/2305.09617)
+      - [Towards Generalist Biomedical AI](https://arxiv.org/pdf/2307.14334)
 
 I *really* need to
 
