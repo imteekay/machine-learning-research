@@ -19,6 +19,7 @@ Core training
   - Proteins
 - Advanced ML of field of interest
   - Multimodal ML
+    - [Multimodal Deep Learning](https://arxiv.org/pdf/2301.04856)
   - Transformer Architecture
   - Deep Reinforcement Learning
   - Diffusion Models
