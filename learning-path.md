@@ -31,6 +31,7 @@ Core training
     - RoseTTaFold
     - AlphaFold
     - Sybil
+    - ESM-2
     - TxGemma ([ref1](https://arxiv.org/pdf/2504.06196), [ref2](https://arxiv.org/pdf/2406.06316))
     - C2S ([ref1](https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1.full.pdf))
     - Med-PaLM
