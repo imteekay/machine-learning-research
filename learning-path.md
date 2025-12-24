@@ -7,7 +7,7 @@
 Core training
 
 - Papers
-  - Top-5 papers in each subfield of interest
+  - [Top-5 papers](https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap) in each subfield of interest
 - Implementation
   - Implement paper and architectures of ML models
 - Foundational Mathematics
@@ -26,6 +26,11 @@ Core training
 - Code
   - Read, unpack & review source code from papers
   - Read, unpack & review source code from ML models
+  - List
+    - RoseTTaFold
+    - AlphaFold
+    - Sybil
+    - 
 
 I *really* need to
 
