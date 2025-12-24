@@ -75,8 +75,7 @@
     - [ ] ResNet
     - [ ] U-Net
   - [X] Recurrent Neural Networks (RNNs)
-    - [X] [Recurrent Neural Network](https://www.iamtk.co/building-a-recurrent-neural-network-from-scratch-with-python-and-mathematics)
-    - [X] [RNNs](projects/rnn/recurrent-neural-network-regression.ipynb)
+    - [X] [Recurrent Neural Network](https://www.iamtk.co/building-a-recurrent-neural-network-from-scratch-with-python-and-mathematics) ([RNN Lab](projects/rnn/recurrent-neural-network-regression.ipynb))
     - [X] LSTMs
     - [X] GRUs
   - [ ] Transformers
