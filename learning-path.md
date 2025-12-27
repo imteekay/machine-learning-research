@@ -138,7 +138,7 @@ I *really* need to
   - [ ] Autoencoders/Variational Autoencoders (VAEs)
   - [ ] Generative Adversarial Networks (GANs)
   - [ ] Graph Neural Networks (GNNs)
-  - [ ] [Diffusion Models](https://learn.deeplearning.ai/courses/diffusion-models)
+  - [X] [Diffusion Models](https://learn.deeplearning.ai/courses/diffusion-models)
 - [ ] Deep Reinforcement Learning
   - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
 
