@@ -10,6 +10,7 @@
   - [Central Dogma of Biology](#central-dogma-of-biology)
   - [Proteins](#proteins)
   - [Current challenges in biology](#current-challenges-in-biology)
+  - [Multimodality](#multimodality)
 
 ## How Cells Work
 
@@ -54,5 +55,20 @@ DNA -> RNA -> Protein
 - Vision models vs human eyes for microscopy images of cells
   - Microscopy images are very rich in information
   - Vision models can interpret more information than human eyes
+
+## Multimodality
+
+- Multimodality in Oncology
+  - Cancer multiomics
+  - Histopathology
+  - Histology
+  - Clinical records
+  - Imaging
+- Clinical applications
+  - Prevention and early detection
+  - Screening and risk stratification
+  - Diagnosis in pathology and radiology
+  - Prognosis and output prediction
+  - Precision oncology
 
 </samp>

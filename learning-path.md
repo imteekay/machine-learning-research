@@ -157,6 +157,7 @@ I *really* need to
   - [ ] [[Primer] A Biology Primer for Computer Scientists](https://web.stanford.edu/class/cs173/papers/bioprimer.pdf)
   - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p)
   - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
+  - [ ] [[Graduation] Medicina de Precisão e Análise de Dados na Saúde](https://ensino.einstein.br/pos_medicina_precisao_analise_dados_saude_p14796/p)
 - [ ] Cancer Fundamentals
   - [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
 
