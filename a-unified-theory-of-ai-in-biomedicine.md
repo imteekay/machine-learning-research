@@ -67,9 +67,11 @@ DNA -> RNA -> Protein
 - Clinical applications
   - Prevention and early detection
   - Screening and risk stratification
+  - Optimizing trial efficiency
   - Diagnosis in pathology and radiology
   - Prognosis and output prediction
   - Precision oncology
   - Drug development
+  - Diagnostics and treatment improvement leading to better health economic outcome: enhanced health results coupled with reduced costs 
 
 </samp>
