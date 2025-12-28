@@ -533,6 +533,7 @@
 - [[Notebook] Deep Learning in Genomics Primer](https://colab.research.google.com/drive/17E4h5aAOioh5DiTo7MZg4hpL6Z_0FyWr)
 - [[Paper] Designing synthetic regulatory elements using the generative AI framework  DNA-Diffusion](https://www.nature.com/articles/s41588-025-02441-6.epdf?sharing_token=53y8IvPhYfq0ZTmy0QJpRdRgN0jAjWel9jnR3ZoTv0P5wDQIGfy7FJrfwjPqNvr1zRvkWoH8vACly1kiOQ9iZynAyRBgild2HtTvGc5yF6sg51GMBao_B0YWTpr4-wmY29Js7lrQFTV1H6w95z3FF0VJ6zeRJjbMz4C2MoC9xUU%3D)
 - [[Paper] The AI revolution: how multimodal intelligence will reshape the oncology ecosystem](https://www.nature.com/articles/s44387-025-00044-4)
+- [[Paper] A multimodal machine learning model for the stratication of breast cancer risk](https://www.nature.com/articles/s41551-024-01302-7)
 
 ### Podcasts
 
