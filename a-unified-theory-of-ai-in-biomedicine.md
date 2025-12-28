@@ -70,5 +70,6 @@ DNA -> RNA -> Protein
   - Diagnosis in pathology and radiology
   - Prognosis and output prediction
   - Precision oncology
+  - Drug development
 
 </samp>
