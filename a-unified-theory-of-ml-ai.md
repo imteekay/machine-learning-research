@@ -103,6 +103,12 @@
 - Define data: is data labeled consistently? How to performance data normalization?
 - Stablish baseline
 - Label and organize data
+- [Visualizing data](introduction/data/visualizing-data.ipynb)
+  - No dimensions: a scalar value (a single point) — 1 ([])
+  - 1D: a vector (a list of items) — [1, 2, 3, 4] ([4])
+  - 2D: a matrix (a flat grid; e.g. a grayscale image, 28x28 pixels) — [[2, 3], [5, 6]] ([2, 2])
+  - 3D: a cube (a stack of flat grids; e.g. a color image) — ([3, 3, 3])
+  - 4D: a list of cubes (e.g. batches of color images) — ([2, 3, 3, 3])
 
 ### Modeling ([Model Training](#model-training) & [Machine Learning Models](#machine-learning-models))
   
