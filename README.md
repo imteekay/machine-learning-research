@@ -314,7 +314,6 @@
 - [[Article] Large Language Model Optimization: Memory, Compute, and Inference Techniques](https://gaurigupta19.github.io/llms/distributed%20ml/optimization/2025/10/02/efficient-ml.html)
 - [[Article] Causal inference resources](https://yanirseroussi.com/causal-inference-resources)
 - [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book/index.html)
-- [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
 - [[Paper Video] Continuous Thought Machine Deep Dive](https://www.youtube.com/watch?v=5X9cjGLggv0)
 - [[Course] Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X)
 - [PaperCode](https://papercode.in/papers)
@@ -349,6 +348,7 @@
 
 - [[Course] Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05)
 - [[Book] How to Scale Your Model](https://jax-ml.github.io/scaling-book)
+- [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
 
 ### Generative AI
 
