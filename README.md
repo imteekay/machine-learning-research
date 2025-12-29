@@ -299,7 +299,6 @@
 - [Geometric Deep Learning](https://geometricdeeplearning.com)
 - [A deep-dive on the entire history of deep-learning](https://github.com/adam-maj/deep-learning)
 - [History of Deep Learning](https://github.com/saurabhaloneai/History-of-Deep-Learning)
-- [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
 - [Intuitions on Language Models & Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=3gb-ZkVRemQ&ab_channel=StanfordOnline)
 - [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness)
 - [Language Modeling From Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)
@@ -349,6 +348,7 @@
 #### Large Language Models (LLMs)
 
 - [[Course] Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05)
+- [[Book] How to Scale Your Model](https://jax-ml.github.io/scaling-book)
 
 ### Generative AI
 
