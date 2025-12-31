@@ -480,7 +480,7 @@
 - [AI-Driven Drug Discovery Using Digital Biology](https://www.youtube.com/watch?v=27JMkAleyNw)
 - [Digital Biology with insitro's Daphne Koller](https://www.youtube.com/watch?v=79qJLY-30ao)
 - [AI-First: Daphne Koller’s plan to revolutionize drug discovery](https://www.youtube.com/watch?v=ukEaOOn9ZaE)
-- [[Paper] Generative models for molecular discovery: Recentadvances and challenges](https://wires.onlinelibrary.wiley.com/doi/epdf/10.1002/wcms.1608)
+- [[Paper] Generative models for molecular discovery: Recent advances and challenges](https://wires.onlinelibrary.wiley.com/doi/epdf/10.1002/wcms.1608)
 - [How AI is saving billions of years of human research time](https://www.ted.com/talks/max_jaderberg_how_ai_is_saving_billions_of_years_of_human_research_time)
 - [Bioinformatics Toolkit](https://github.com/evanpeikon/Bioinformatics_Toolkit)
 - [An Overview of Deep Generative Models in Functional and Evolutionary Genomics](https://www.annualreviews.org/content/journals/10.1146/annurev-biodatasci-020722-115651)
