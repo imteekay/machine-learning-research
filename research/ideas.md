@@ -10,6 +10,7 @@
 
 - Precision Medicine
   - Multimodal: generalize across multiple types of data
+  - Agentic AI: experimentation, simulation, and decision-making
 - Specialized Tools and Models
   - U-net for image segmentation
   - Transformer-based models for protein structure prediction
