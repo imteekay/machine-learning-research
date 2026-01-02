@@ -107,6 +107,7 @@
 - [Mathematics for Machine Learning - Linear Algebra](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3)
 - [Linear Algebra for Data Science](https://drive.google.com/file/d/1nJVwdQV9zp-Q9VQenZF0-HOOG6L2lEOD/view)
 - [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra)
+- [[Book] Linear Algebra for Data Science](https://drive.google.com/file/d/1pLrhXT_wBeQNJegbkVbC2fll9z_ykXzD/view?pli=1)
 
 ### Statistics
 
