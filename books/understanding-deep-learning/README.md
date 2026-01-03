@@ -681,9 +681,9 @@ Q = Query = Input x Wq
 K = Key = Input x Wₖ
 V = Value = Input x Wᵥ
 
-- QKᵗ: relevance score between tokens
+- QKᵗ: relevance score between tokens — a measure of similarity between its inputs
 - √dᴷ: scaling — prevents the dot product values from growing too large in high dimensions
-- SoftMax: transform scores into probabilities
+- SoftMax: transform scores into probabilities — how one key `K` competes with one another to a particular query `Q`
 - V: weighted sum of the values
 
 **Encoder**: 
