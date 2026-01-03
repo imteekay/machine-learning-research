@@ -256,6 +256,7 @@
 - [[Paper] Everything is Connected: Graph Neural Networks](https://arxiv.org/pdf/2301.08210)
 - [[Article] Graph Convolutional Networks](https://tkipf.github.io/graph-convolutional-networks)
 - [[Video] Theoretical Foundations of Graph Neural Networks](https://www.youtube.com/watch?v=uF53xsT7mjc)
+- [[Book] Geometric Deep Learning](https://geometricdeeplearning.com)
 
 ### Deep Learning
 
@@ -305,7 +306,6 @@
 - [Deep Learning for Data Science (DL4DS)](https://dl4ds.github.io/sp2025/lectures)
 - [Recurrent Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
 - [Deep Learning with PyTorch](https://www.coursera.org/learn/advanced-deep-learning-with-pytorch)
-- [Geometric Deep Learning](https://geometricdeeplearning.com)
 - [A deep-dive on the entire history of deep-learning](https://github.com/adam-maj/deep-learning)
 - [History of Deep Learning](https://github.com/saurabhaloneai/History-of-Deep-Learning)
 - [Intuitions on Language Models & Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=3gb-ZkVRemQ&ab_channel=StanfordOnline)
