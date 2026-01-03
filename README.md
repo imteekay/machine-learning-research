@@ -23,6 +23,7 @@
     - [Data Science](#data-science)
     - [Machine Learning](#machine-learning)
       - [Multimodal Machine Learning](#multimodal-machine-learning)
+      - [Geometric Machine Learninig](#geometric-machine-learninig)
     - [Deep Learning](#deep-learning)
       - [Computer Vision](#computer-vision)
       - [Transformers](#transformers)
@@ -248,6 +249,10 @@
 - [[Paper] Overview of Multimodal Machine Learning](https://dl.acm.org/doi/abs/10.1145/3701031)
 - [[Paper] Foundations & Trends in Multimodal Machine Learning: Principles, Challenges, and Open Questions](https://arxiv.org/pdf/2209.03430)
 
+#### Geometric Machine Learninig
+
+- [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro)
+
 ### Deep Learning
 
 - [Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning)
@@ -291,7 +296,6 @@
 - [Feedforward Neural Networks in Depth, Part 2: Activation Functions](https://jonaslalin.com/2021/12/21/feedforward-neural-networks-part-2)
 - [Feedforward Neural Networks in Depth, Part 3: Cost Functions](https://jonaslalin.com/2021/12/22/feedforward-neural-networks-part-3)
 - [[Paper] Three Decades of Activations: A comprehensive survey of 400 activation functions for neural networks](https://arxiv.org/pdf/2402.09092)
-- [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro)
 - [Famous Deep Learning Papers](https://papers.baulab.info)
 - [[Paper] Decentralized Diffusion Models](https://arxiv.org/pdf/2501.05450)
 - [Deep Learning for Data Science (DL4DS)](https://dl4ds.github.io/sp2025/lectures)
