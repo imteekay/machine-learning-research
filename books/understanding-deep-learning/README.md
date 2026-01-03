@@ -711,3 +711,17 @@ Cross Attention
 - Each token (in the decoder) attends to the tokens from the input source (from the encoder)
 - Query for the decoder's tokens
 - Key and Value for the encoder's tokens
+
+**Multi-head Self-Attention**
+
+- Applies multiple self-attention to the input in parallel
+- Each head has an output and they are concatenated and applied a linear transformation
+
+**Transformer**
+
+- Transformer Layer
+  - Multi-head self-attention with residual connection
+  - Layer normalization
+  - Fully connected neural network with residual conncetion
+  - Layer normalization
+- Residual connection: the output is added back to the original input
