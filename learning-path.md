@@ -101,6 +101,8 @@ I *really* need to
 - [ ] Multimodal Machine Learning
   - [ ] [CMU Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW)
   - [ ] [Multimodal Readings](https://cmu-multicomp-lab.github.io/mmml-course/fall2023/readings)
+- [ ] Geometric Machine Learninig
+  - [ ] [[Book] Graph Neural Networks](https://graph-neural-networks.github.io)
 
 ## Foundation in Deep Learning
 
