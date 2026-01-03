@@ -99,8 +99,8 @@ I *really* need to
 - [ ] Machine Learning Engineering
   - [X] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 - [ ] Multimodal Machine Learning
-  - [ ] [CMU Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW)
-  - [ ] [Multimodal Readings](https://cmu-multicomp-lab.github.io/mmml-course/fall2023/readings)
+  - [ ] [[Course] CMU Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW)
+  - [ ] [[Paper] Multimodal Readings](https://cmu-multicomp-lab.github.io/mmml-course/fall2023/readings)
   - [ ] [[Paper] Scaling Laws for Native Multimodal Models](https://arxiv.org/pdf/2504.07951)
 - [ ] Geometric Machine Learninig
   - [ ] [[Book] Graph Neural Networks](https://graph-neural-networks.github.io)
