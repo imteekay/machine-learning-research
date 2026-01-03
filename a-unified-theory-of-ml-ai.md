@@ -47,6 +47,7 @@
     - [Multiple Logistic Regression](#multiple-logistic-regression)
     - [Support Vector Machines](#support-vector-machines)
     - [Tree-Based Models](#tree-based-models)
+    - [NLP](#nlp)
     - [Neural Networks](#neural-networks)
     - [CNN](#cnn)
     - [Transfer Learning](#transfer-learning)
@@ -622,6 +623,17 @@ The process of tracking the progress and results of an experiment.
     - Similar to random forest, but instead of picking from all m examples, make it increase the weight for misclassified examples from previously trained trees and decrease the weight for correctly classified examples
     - The misclassified examples means that the tree algorithm is not doing quite well for these examples and the model should be training more to correctly classify them
   - In Bayesian Additive Regression Trees (BART), we once again only make use of the original data, and we grow the trees successively. However, each tree is perturbed in order to avoid local minima and achieve a more thorough exploration of the model space.
+
+### NLP
+
+- Handling Data
+  - Tokenize the input sentences
+  - Clean the tokens: remove punctuation, bad words
+  - Add padding: keep input length similar
+  - Input Data
+    - Handling CSV with `csv.reader`
+    - Handling JSON with `json.load`
+    - Handling HTML with `BeautifulSoup`
 
 ### Neural Networks
 
