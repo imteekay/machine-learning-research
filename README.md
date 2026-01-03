@@ -819,6 +819,7 @@
 - [Mengyue Yang](https://ymy4323460.github.io)
 - [Shekoofeh Azizi](https://www.shekoofehazizi.com)
 - [Pedro O. Pinheiro](https://pedro.opinheiro.com)
+- [Ada Fang](https://www.linkedin.com/in/ada--fang)
 
 ### Research & Laboratories
 
