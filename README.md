@@ -253,6 +253,7 @@
 
 - [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro)
 - [[Book] Graph Neural Networks](https://graph-neural-networks.github.io)
+- [[Paper] Everything is Connected: Graph Neural Networks](https://arxiv.org/pdf/2301.08210)
 
 ### Deep Learning
 
