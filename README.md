@@ -820,6 +820,7 @@
 - [Shekoofeh Azizi](https://www.shekoofehazizi.com)
 - [Pedro O. Pinheiro](https://pedro.opinheiro.com)
 - [Ada Fang](https://www.linkedin.com/in/ada--fang)
+- [Shanghua Gao](https://shgao.site)
 
 ### Research & Laboratories
 
