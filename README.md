@@ -255,6 +255,7 @@
 - [[Book] Graph Neural Networks](https://graph-neural-networks.github.io)
 - [[Paper] Everything is Connected: Graph Neural Networks](https://arxiv.org/pdf/2301.08210)
 - [[Article] Graph Convolutional Networks](https://tkipf.github.io/graph-convolutional-networks)
+- [[Video] Theoretical Foundations of Graph Neural Networks](https://www.youtube.com/watch?v=uF53xsT7mjc)
 
 ### Deep Learning
 
