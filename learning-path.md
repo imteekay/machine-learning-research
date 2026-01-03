@@ -137,6 +137,7 @@ I *really* need to
       - [ ] [Assinment 5: Alignment and Reasoning RL](https://github.com/stanford-cs336/assignment5-alignment/blob/main/cs336_spring2025_assignment5_alignment.pdf)
     - [ ] [[Course] LLM Course by Hugging Face](https://huggingface.co/learn/llm-course)
     - [ ] Mixture of Experts (MoE)
+      - [ ] [[Paper] A Survey on Mixture of Experts in Large Language Models](https://arxiv.org/abs/2407.06204)
   - [ ] Generative AI
     - [ ] Autoencoders/Variational Autoencoders (VAEs)
     - [ ] Generative Adversarial Networks (GANs)
