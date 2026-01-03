@@ -135,6 +135,8 @@ I *really* need to
       - [ ] [Assinment 3: Scaling Laws](https://github.com/stanford-cs336/assignment3-scaling/blob/main/cs336_spring2025_assignment3_scaling.pdf)
       - [ ] [Assinment 4: Filtering Language Modeling Data](https://github.com/stanford-cs336/assignment4-data/blob/main/cs336_spring2025_assignment4_data.pdf)
       - [ ] [Assinment 5: Alignment and Reasoning RL](https://github.com/stanford-cs336/assignment5-alignment/blob/main/cs336_spring2025_assignment5_alignment.pdf)
+    - [ ] [[Course] LLM Course by Hugging Face](https://huggingface.co/learn/llm-course)
+    - [ ] Mixture of Experts (MoE)
   - [ ] Generative AI
     - [ ] Autoencoders/Variational Autoencoders (VAEs)
     - [ ] Generative Adversarial Networks (GANs)
