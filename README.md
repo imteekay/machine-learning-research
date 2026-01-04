@@ -442,6 +442,7 @@
 - [Multimodal, Generative, and Agentic AI for Pathology](https://www.youtube.com/watch?v=tbJwdK48hJw&list=PLlMMtlgw6qNjROoMNTBQjAcdx53kV50cS&index=2)
 - [[Paper] Medical multimodal foundation models in clinical diagnosis and treatment: Applications, challenges, and future directions](https://www.sciencedirect.com/science/article/abs/pii/S0933365725002003)
 - [[Paper] Large language models are less effective at clinical prediction tasks than locally trained machine learning models](https://academic.oup.com/jamia/article/32/5/811/8064348)
+- [[Course] Applied Artificial Intelligence for Health Research](https://learninghub.kingshealthpartners.org/course/applied-artificial-intelligence-for-health-research)
 
 #### ML for Clinical Knowledge
 
