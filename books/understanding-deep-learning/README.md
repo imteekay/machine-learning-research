@@ -644,6 +644,11 @@ An example of word embedding usage is to be build a language model that predicts
 
 ![](images/neural-language-model.png)
 
+Example of a word embedding model
+
+- Sentiment analysis for sentences: sarcastic or not sarcastic
+- Process: tokenize -> embedding -> classification NN model -> training and evaluation
+
 ### Positional Encoding
 
 The purpose of positional encoding is:
