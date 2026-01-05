@@ -601,7 +601,7 @@ In the sequential approach, the network has to learn to infer relationships acro
 ### Tokenization
 
 - Token: a unit of text. Can be a word or a subword
-- Encode: transform text into tokens
+- Encode: transform text into tokens from a vocabulary of possible tokens
 - Decode: transform tokens into text
 
 ### Bag of Words
@@ -611,7 +611,6 @@ In the sequential approach, the network has to learn to infer relationships acro
 
 ### Word Embedding
 
-- `word2vec` is static regardless of the context
 - One hot encoding for words: transform a word into a vector of 1s and 0s where 0 represents that it's not the word for that index and 1 it is the word for the position
   - One hot representations treat each word as an isolated entity, so it's difficult to find similarity meaning among words
 - Featurized word embeddings: make associations, relationships to build similarity among all words.
@@ -627,8 +626,13 @@ In the sequential approach, the network has to learn to infer relationships acro
   - Capturing Relationships
   - Reducing Dimensionality
   - Improved Generalization
+- One limitation of word embedding is that it is static regardless of the context
+  - e.g. the word "close" has the same embedding whether you are talking about "To shut something" or "to be near"
+  - There are not context involved in this (static) embedding
 
 ![](images/embedding-matrix.png)
+
+Each token is mapped to a unique word embedding, and then, the embedding matrix is built to represent the entire text.
 
 The embedding matrix is a lookup table that stores vector representations for words. In this case, 300 features for 10,000 words
 
