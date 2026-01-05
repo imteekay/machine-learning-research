@@ -362,12 +362,13 @@ Which model is better? It depends on the problem at hand. If the relationship be
 ### Model Performance
 
 - Improving model performance and generalization
-  - Regularization
+  - Regularization: L1, L2 (`weight_decay` can be used for Adam)
   - Dropout
   - More data
   - Data augmentation
   - Early stopping
   - Learning rate decay
+  - Handle imbalanced datasets
 - Prefer choosing models that have good cross-validation and test accuracy
   - The test cost estimates how well the model generalizes to new data (compared to the training cost)
   - training/cross-validation/test
