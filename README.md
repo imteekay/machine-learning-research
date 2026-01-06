@@ -159,6 +159,7 @@
 - [ML Model Baselines](https://blog.ml.cmu.edu/2020/08/31/3-baselines)
 - [[Paper] Large Scale Distributed Deep Networks](https://www.cs.toronto.edu/~ranzato/publications/DistBeliefNIPS2012_withAppendix.pdf)
 - [[Book] Machine Learning Systems](https://www.mlsysbook.ai) ([PDF](https://www.mlsysbook.ai/assets/downloads/Machine-Learning-Systems.pdf))
+- [[Article] A Meticulous Guide to Advances in Deep Learning Efficiency over the Years](https://alexzhang13.github.io/blog/2024/efficient-dl)
 
 ### Distributed Systems
 
