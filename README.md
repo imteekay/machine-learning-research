@@ -82,6 +82,7 @@
 - [The Complete Mathematics of Neural Networks and Deep Learning](https://www.youtube.com/watch?v=Ixl3nykKG9M)
 - [Math Academy](https://www.mathacademy.com)
 - [Why Should You Learn Mathematics for ML](https://romeepanchal.com/posts/general/why_learn_maths)
+- [[Book] Mathematical Foundations of Machine Learning](https://skim.math.msstate.edu/LectureNotes/Machine_Learning_Lecture.pdf)
 
 ### How to learn mathematics
 
