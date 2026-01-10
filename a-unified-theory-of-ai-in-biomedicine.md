@@ -14,6 +14,7 @@
 
 ## How Cells Work
 
+- Specialization through spacial organization
 - DNA: it's molecule with double helix shape
   - Group of pairs of nucleotides adenine and thymine (AT) or guanine and cytosine (GC)
   - The nucleotides carry the genetic information
@@ -26,6 +27,7 @@
   - They can receive signals, transfort molecules, break down sugar, replicate DNA
   - Hundreds or thousands of amino acids folded into 3-dimensional structures
   - Protein shapes and functions are not static, which makes it even more complex
+  - It's transcribed from a gene into messenger RNA (mRNA) in the nucleus, and then it is translated into a chain of amino acids by ribosomes in the cytoplasm
 
 ## Central Dogma of Biology
 
