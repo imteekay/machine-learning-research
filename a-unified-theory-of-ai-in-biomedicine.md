@@ -28,6 +28,7 @@
   - Hundreds or thousands of amino acids folded into 3-dimensional structures
   - Protein shapes and functions are not static, which makes it even more complex
   - It's transcribed from a gene into messenger RNA (mRNA) in the nucleus, and then it is translated into a chain of amino acids by ribosomes in the cytoplasm
+  - Each protein functions well in their location. Each one of them gets shipped to a specific destination inside the cell
 
 ## Central Dogma of Biology
 
