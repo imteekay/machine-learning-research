@@ -52,6 +52,7 @@
     - [Word Embedding](#word-embedding)
     - [Positional Encoding](#positional-encoding)
     - [Attention \& Transformers](#attention--transformers)
+  - [Variational Autoencoder (VAE) \& VQ-VAEs](#variational-autoencoder-vae--vq-vaes)
 
 ## What's a Neural Network?
 
@@ -734,3 +735,27 @@ Cross Attention
   - Fully connected neural network with residual conncetion
   - Layer normalization
 - Residual connection: the output is added back to the original input
+
+## Variational Autoencoder (VAE) & VQ-VAEs
+
+An autoencoder is a neural network that is trained to reconstruct its input
+
+- Encoder: compresses the input into lower-dimensional representations
+- Decoder: attempts to reconstruct the original input from the compressed versions
+
+It's a fully connected neural network with a 'bottleneck' layer that distill the most important features and patterns from the input while discarding irrelevant details.
+
+In the variational autoencoder, rather than a single fixed number, its encoder outputs two vectors, one for the `means` and another for the `standard deviations`
+
+In Vector-Quantization Variational Autoencoder, there is the `codebook` that holds the available and acceptable vectors that will be passed to the decoder. The `quantization` process finds the closest available option for the encoder's output that will be passed to the decoder.
+
+The `codebook` is learned during training, like the parameters in the encoder and decoder.
+
+Full VQ-VAE diagram:
+
+- Input: e.g. image of a dog
+- CNN Encoder: extracts meaningful features and patterns from the data and transform the data into a compressed latent representation
+- Quantization: receives the encoder's output, finds the closest vector from the codebook (embedding space), and replaces with it to be used in the decoder
+- CNN Decoder: reconstructs the original image as closely as possible
+
+The better the model has learned to encode meaningful information in its quantized representation.
