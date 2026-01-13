@@ -28,7 +28,9 @@
   - Hundreds or thousands of amino acids folded into 3-dimensional structures
   - Protein shapes and functions are not static, which makes it even more complex
   - It's transcribed from a gene into messenger RNA (mRNA) in the nucleus, and then it is translated into a chain of amino acids by ribosomes in the cytoplasm
-  - Each protein functions well in their location. Each one of them gets shipped to a specific destination inside the cell
+- Each protein functions well in their location. Each one of them gets shipped to a specific destination inside the cell
+  - Location importance: in amyotrophic lateral sclerosis (ALS), the protein TDP-43 accumulates in the cytoplasm of neurons, even though its normal location is in the nucleus. The protein isn’t mutated, misfolded, or present in abnormal quantities. It's simply in the wrong place. And that alone is enough to disrupt cellular function and trigger disease.
+  - A protein has a short sequence of aminoacids that guides the cell's transport mechanism to place it in the right location: nucleus, mitochondria, plasma membrane
 
 ## Central Dogma of Biology
 
