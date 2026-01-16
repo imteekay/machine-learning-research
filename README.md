@@ -354,6 +354,7 @@
 - [Transformers from Scratch](https://www.kaggle.com/code/auxeno/transformers-from-scratch-dl)
 - [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention)
 - [Visualizing transformers and attention](https://www.youtube.com/watch?v=KJtZARuO3JY)
+- [[Article] The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer)
 
 #### Large Language Models (LLMs)
 
