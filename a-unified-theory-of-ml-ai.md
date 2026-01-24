@@ -568,6 +568,13 @@ The process of tracking the progress and results of an experiment.
   - Limit the scope of your data: Use a natural slice of your dataset. For example, restrict to a single species, tissue type, year, or patient group. This cuts variability and helps isolate bugs.
   - Check for label leakage: Especially in biological datasets, label leakage can creep in through metadata like patient ID, batch number, or experiment date.
   - Work with synthetic or simulated data: If feasible, start with synthetic data that mimics key characteristics of your real dataset but is easier to understand and trace.
+- Overfit to a single batch
+  - Learning rate issues: The learning rate might be too high (causing divergence) or too low (causing no learning).
+  - Frozen parameters or bad gradients: Sometimes parameters are not being updated at all — for example, if they were accidentally excluded from the params dict due to naming mismatches or scoping issues. Also inspect gradients — if they’re all zero or NaN, that’s a clue.
+  - Loss function bugs: Make sure you’re using the correct loss function for your task (e.g., cross-entropy for classification) and that it’s behaving numerically as expected. Prefer standard implementations over custom home-made ones, at least during debugging.
+  - Model initialization problems: Poor or inconsistent weight initialization can prevent learning, especially in deeper networks. If you’re using custom modules, double-check their initializations.
+  - Batch size too small: Very small batches (e.g., 1–2 examples) can lead to noisy gradients and unstable updates. For debugging, use a small but reasonable batch size like 8–32.
+  - Silent shape mismatches or broadcasting errors: These won’t always crash your code, but they can silently mess up your loss or gradients. Print tensor shapes and inspect intermediate outputs to confirm everything lines up as expected.
 
 ## Machine Learning Models
 
