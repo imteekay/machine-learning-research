@@ -41,6 +41,7 @@
       - [R²](#r)
       - [Log-likelihood](#log-likelihood)
     - [Experiment tracking](#experiment-tracking)
+    - [Model Debugging](#model-debugging)
   - [Machine Learning Models](#machine-learning-models)
     - [Linear Regression](#linear-regression)
     - [Logistic Regression](#logistic-regression)
@@ -529,6 +530,44 @@ The process of tracking the progress and results of an experiment.
 - The speed of your model, evaluated by the number of steps per second or, if your data is text, the number of tokens processed per second.
 - System performance metrics such as memory usage and CPU/GPU utilization. They’re important to identify bottlenecks and avoid wasting system resources.
 - The values over time of any parameter and hyperparameter whose changes can affect your model’s performance, such as the learning rate if you use a learning rate schedule; gradient norms (both globally and per layer).
+
+### Model Debugging
+
+- Simplify Your Model
+  - Simplify your architecture: Complex architectures can make it difficult to reason about what’s going wrong. To help with this:
+    - Eliminate unnecessary layers: If a layer doesn’t contribute directly to the input–output mapping—such as layers that simply add model capacity without altering dimensions—it’s best to remove it during debugging.
+    - Call basic layers directly: Use layers like nn.Conv and nn.Dense instead of custom blocks, which can obscure bugs and internal behavior.
+    - Reduce depth and width: If your model has many layers or units per layer, consider reducing both. A shallower model is easier to debug and understand, especially in the early stages of development.
+    - Remove residual connections: These can complicate debugging by introducing dependencies between layers and by masking issues in the layers they connect (like poor initialization or gradient problems).
+  - Turn off extras, like normalization and dropout: These add complexity that’s often unnecessary during early debugging. In Flax, you must explicitly manage both model state (e.g., batch norm statistics) and random number generators (RNGs), which can easily lead to subtle bugs.
+    - Don’t use batch norm: The complexity of batch norm is threefold. First, it behaves differently during training and inference. Second, it introduces additional state (running mean and variance) that must be updated outside standard gradient updates. Third, it breaks a key assumption: most layers operate independently on each batch element, but batch norm computes statistics across the batch. This makes it incompatible with tools like vmap or sharded training (pmap, pjit) unless you take special care to synchronize statistics across devices.
+    - Skip dropout: Dropout introduces stochasticity, making it harder to determine whether poor performance is due to randomness or a deeper issue.
+  - Simplify your optimizer: Don’t worry about experimenting with different optimizers or learning rate schedules until the basics are working. Pick a sensible default—like good old Adam with a learning rate of 1e-3, and focus on solving more fundamental issues first.
+  - Avoid mixed precision: While lower-precision data types like bfloat16, float16, or TensorFloat32 can improve performance and memory usage (out of scope for this book), they can lead to subtle numerical instability that’s extremely hard to debug. Note that even if you pass in float32 inputs, JAX may default to lower-precision matmuls. To force full float32 precision globally (especially during debugging), add jax.config.update("jax_default_matmul_precision", "float32").
+- Simplify and Control Your Environment
+  - Sort out determinism and reproducibility: It’s easier to isolate issues if your experiments are reproducible. In addition to turning off stochastic components like dropout, consider:
+    - Setting explicit random seeds
+    - Turning off dataset shuffling: Don’t shuffle your training data, or shuffle with a fixed random seed, to maintain a consistent order of examples across runs.
+    - Keeping the environment constant: Avoid inconsistencies caused by external factors (e.g., use the same hardware, library versions, and configurations).
+  - Strip down your training loop: Especially in JAX and Flax, training loops require manual control over RNGs, state, and updates—making them powerful but easy to get wrong.
+    - Train on a single batch for just a few steps
+    - Disable extras like logging, metrics, or learning rate schedules
+    - Use fixed inputs and random seeds: Run your training step on the same batch every time. This eliminates variability due to changing data and makes bugs easier to isolate.
+    - Avoid high-level abstractions temporarily: If you’re using tools like TrainState, try replacing them with raw variable updates until the core logic works.
+  - Make your code self-contained: Especially when working in interactive environments like Colab or Jupyter notebooks, it’s easy for your environment to get cluttered with old variables or states without you realizing it. Restarting the kernel and organizing your code into self-contained functions can really help with debugging.
+  - Turn off JIT compilation (with caution)
+  - Train on a single GPU instead of multiple GPUs: If you are using GPUs, start with just one. Multi-GPU training via sharding (e.g., with jax.pjit) introduces a lot of additional complexity. 
+  - Use CPU for simpler debugging setups
+- Simplify the Data and Problem
+  - Visualize individual examples: Actually plot or print raw inputs and labels—not just summaries. You’ll often catch issues like incorrect encodings, off-by-one errors, or mismatched image-label pairs this way.
+  - Check class balance: An imbalanced dataset can make the model appear broken when it’s just doing the naive thing (predicting the majority class). Consider subsampling or rebalancing during debugging.
+  - Remove data augmentation: Augmentations like cropping, flipping, or adding noise can hide underlying issues or make the task unnecessarily hard. Turn them off until you’re confident the core pipeline works.
+  - Reduce the number of classes: Instead of predicting many categories, reframe your task as binary classification to focus on the clearest signal first.
+  - Simplify the output space: if your target is complex (e.g., a regression label or structured output), try reducing it to something simpler. For instance, predict a binary class or thresholded version of the label instead. 
+  - Make your dataset smaller: Large datasets slow everything down. Use a small, representative subset that captures the key structure.
+  - Limit the scope of your data: Use a natural slice of your dataset. For example, restrict to a single species, tissue type, year, or patient group. This cuts variability and helps isolate bugs.
+  - Check for label leakage: Especially in biological datasets, label leakage can creep in through metadata like patient ID, batch number, or experiment date.
+  - Work with synthetic or simulated data: If feasible, start with synthetic data that mimics key characteristics of your real dataset but is easier to understand and trace.
 
 ## Machine Learning Models
 
