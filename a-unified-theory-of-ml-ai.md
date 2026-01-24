@@ -575,6 +575,12 @@ The process of tracking the progress and results of an experiment.
   - Model initialization problems: Poor or inconsistent weight initialization can prevent learning, especially in deeper networks. If you’re using custom modules, double-check their initializations.
   - Batch size too small: Very small batches (e.g., 1–2 examples) can lead to noisy gradients and unstable updates. For debugging, use a small but reasonable batch size like 8–32.
   - Silent shape mismatches or broadcasting errors: These won’t always crash your code, but they can silently mess up your loss or gradients. Print tensor shapes and inspect intermediate outputs to confirm everything lines up as expected.
+- Log Everything
+  - Log training loss and key metrics over time: At a minimum, track loss, accuracy, and any relevant task-specific metrics (like auROC or auPRC). This makes it easier to spot overfitting, instability, or underperformance.
+  - Log validation performance at regular intervals: Seeing how your model generalizes during training helps detect overfitting early and can catch bugs where validation performance diverges for no obvious reason.
+  - Log inputs, predictions, and errors: Save a few input samples, predicted outputs, and errors at each step (or epoch). This is especially useful for spotting systematic failures (e.g., always misclassifying a certain class).
+  - Record configuration and hyperparameters: Save the learning rate, batch size, optimizer type, and model architecture along with each run.
+  - Use a structured logger or tracking tool: Tools like TensorBoard, Weights & Biases, or even just structured JSON logs can make it easier to compare runs and understand what changed.
 
 ## Machine Learning Models
 
