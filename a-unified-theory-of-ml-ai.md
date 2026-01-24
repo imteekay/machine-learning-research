@@ -581,6 +581,31 @@ The process of tracking the progress and results of an experiment.
   - Log inputs, predictions, and errors: Save a few input samples, predicted outputs, and errors at each step (or epoch). This is especially useful for spotting systematic failures (e.g., always misclassifying a certain class).
   - Record configuration and hyperparameters: Save the learning rate, batch size, optimizer type, and model architecture along with each run.
   - Use a structured logger or tracking tool: Tools like TensorBoard, Weights & Biases, or even just structured JSON logs can make it easier to compare runs and understand what changed.
+- Common Data Issues
+  - Data Leakage
+    - Evaluating the model on the training set itself. This sounds slightly silly, but it’s surprisingly common—especially in informal settings like Kaggle notebooks.
+    - Evaluating on a validation or test set where some examples overlap with the training set.
+    - Leakage through preprocessing, for example, normalizing the full dataset before splitting into train/valid/test sets.
+    - Features that leak future information—correlated with the target only because they wouldn’t be available at prediction time.
+  - To avoid data leakage:
+    - Always ensure that test data is fully isolated and untouched by the training pipeline.
+    - When adding new training data partway through a project, check whether it already appears in your validation or test sets.
+    - Ask yourself: Would this feature be available at inference time? If not, don’t use it.
+    - Use model interpretation tools to see what aspects of your data your model is relying on when making its predictions. Does what you see match your expectations, or is the model picking up on artifacts?
+  - Incorrect Data Labels
+    - Labels stored separately from inputs: If labels are in a separate file (e.g., a CSV with filenames and classes), they can easily be mismatched or misjoined during preprocessing.
+    - Shuffling inputs and labels independently: If you shuffle data and labels separately, they’ll fall out of sync—silently.
+    - Silent shape mismatches in datasets
+    - Merging tabular datasets incorrectly: Joining datasets without verifying alignment (e.g., via merge in pandas) can mislabel data rows without throwing errors.
+    - Data augmentation pipelines modifying labels incorrectly: Augmentation effectively increases your dataset—so it’s also a high-risk area for introducing label corruption.
+  - Imbalanced Classes
+    - Warning signs:
+      - Accuracy is high, but precision or recall on the minority class is poor.
+      - Confusion matrix shows the model rarely predicts the minority class.
+    - To address this:
+      - Use class weighting or focal loss to penalize the model more for mistakes on the minority class. Focal loss down-weights easy examples and focuses learning on hard, misclassified ones—especially useful when the rare class is easily overwhelmed.
+      - Resample the data—either oversample the minority class or undersample the majority class—to reduce imbalance. Oversampling is often safer when data is scarce but can lead to overfitting if not done carefully.
+      - Use stratified sampling to ensure class balance is preserved across your train, validation, and test splits. This means splitting the data so each subset maintains the original class proportions, avoiding skewed performance estimates.
 
 ## Machine Learning Models
 
