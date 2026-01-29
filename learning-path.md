@@ -64,7 +64,7 @@ I *really* need to
 - [ ] Pandas
 - [ ] Scikit-learn
 - [ ] ML Systems
-  - [ ] [[Book] Introduction to Machine Learning Systems](https://www.mlsysbook.ai/assets/downloads/Machine-Learning-Systems.pdf)
+  - [ ] [[Book] Introduction to Machine Learning Systems](https://mlsysbook.ai/book)
 - [ ] Deep Learning Frameworks
   - [X] [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)
   - [X] [Learn PyTorch for Deep Learning](https://www.learnpytorch.io)
