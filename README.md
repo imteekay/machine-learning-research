@@ -356,6 +356,7 @@
 - [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention)
 - [Visualizing transformers and attention](https://www.youtube.com/watch?v=KJtZARuO3JY)
 - [[Article] The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer)
+- [[Article] Attention Mechanism: From Math to GPU](https://isztld.com/posts/attention-mechanism.html)
 
 #### Large Language Models (LLMs)
 
