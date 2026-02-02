@@ -838,6 +838,7 @@
 - [Pedro O. Pinheiro](https://pedro.opinheiro.com)
 - [Ada Fang](https://www.linkedin.com/in/ada--fang)
 - [Shanghua Gao](https://shgao.site)
+- [Ailing Zhang](https://ailzhang.github.io)
 
 ### Research & Laboratories
 
