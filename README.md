@@ -357,6 +357,7 @@
 - [Visualizing transformers and attention](https://www.youtube.com/watch?v=KJtZARuO3JY)
 - [[Article] The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer)
 - [[Article] Attention Mechanism: From Math to GPU](https://isztld.com/posts/attention-mechanism.html)
+- [[Article] Visualizing Parallelism in Transformer](https://ailzhang.github.io/posts/distributed-compute-in-transformer)
 
 #### Large Language Models (LLMs)
 
