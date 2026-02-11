@@ -703,6 +703,10 @@ The process of tracking the progress and results of an experiment.
     - Boosting trains a series of models where each model tries to correct the mistakes made by the previous model. The final prediction is made by all the models.
     - Similar to random forest, but instead of picking from all m examples, make it increase the weight for misclassified examples from previously trained trees and decrease the weight for correctly classified examples
     - The misclassified examples means that the tree algorithm is not doing quite well for these examples and the model should be training more to correctly classify them
+    - XGBoosting
+      - `n_estimators`: number of cycles
+      - `early_stopping_rounds`: number of rounds the model stops improving (early_stopping_rounds = 5 is a reasonable value)
+      - Good to have high `n_estimators` and use `early_stopping_rounds` to find the optimal time to stop
   - In Bayesian Additive Regression Trees (BART), we once again only make use of the original data, and we grow the trees successively. However, each tree is perturbed in order to avoid local minima and achieve a more thorough exploration of the model space.
 
 ### NLP
