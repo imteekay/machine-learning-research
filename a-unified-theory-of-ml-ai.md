@@ -834,6 +834,7 @@ The process of tracking the progress and results of an experiment.
 
 - Mean: average value in a distribution
 - Trimmed mean: drop smallest and biggest values and average the remaining ones (remove the influence of extreme values)
+- Median: the middle number in a sorted list. It depends only on the numbers in the center of the data, so it's not influenced by outliers
 
 To study
 
