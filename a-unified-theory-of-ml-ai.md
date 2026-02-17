@@ -832,6 +832,11 @@ The process of tracking the progress and results of an experiment.
 
 ### Statistics
 
+- Mean: average value in a distribution
+- Trimmed mean: drop smallest and biggest values and average the remaining ones (remove the influence of extreme values)
+
+To study
+
 - [ ] Standard Error (SE)
   - How to interpret this concept
   - What's the range of SE?
