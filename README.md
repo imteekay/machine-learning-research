@@ -840,6 +840,7 @@
 - [Ada Fang](https://www.linkedin.com/in/ada--fang)
 - [Shanghua Gao](https://shgao.site)
 - [Ailing Zhang](https://ailzhang.github.io)
+- [Jun Cheng](https://chengjun.me)
 
 ### Research & Laboratories
 
