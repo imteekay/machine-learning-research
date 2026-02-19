@@ -48,14 +48,14 @@ I *really* need to
 
 - [ML/AI Learning Path](#mlai-learning-path)
   - [Table of Contents](#table-of-contents)
-  - [Programming \& ML Tools](#programming--ml-tools)
+  - [Programming \& Engineering](#programming--engineering)
   - [Math \& Statistics Foundations](#math--statistics-foundations)
   - [Foundation in Machine Learning](#foundation-in-machine-learning)
   - [Foundation in Deep Learning](#foundation-in-deep-learning)
   - [Biomedicine and Healthcare](#biomedicine-and-healthcare)
   - [Machine Learning in Biomedicine](#machine-learning-in-biomedicine)
 
-## Programming & ML Tools
+## Programming & Engineering
 
 - [ ] Python
   - [X] Python Basics
