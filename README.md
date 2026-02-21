@@ -553,6 +553,7 @@
 - [[Paper] A multimodal machine learning model for the stratication of breast cancer risk](https://www.nature.com/articles/s41551-024-01302-7)
 - [[Course] MO640 - Biologia Computacional](https://www.youtube.com/playlist?list=PLf62OlGffu12Vju0L7IgKB2WJh0x3YDGV)
 - [[Thesis] Generative Models for Real-World Drug Discovery](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-223.pdf)
+- [[Book] Deep Learning for Molecules & Materials](https://dmol.pub)
 
 ### Podcasts
 
