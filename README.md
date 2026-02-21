@@ -30,6 +30,7 @@
       - [Large Language Models (LLMs)](#large-language-models-llms)
     - [Generative AI](#generative-ai)
     - [Deep Reinforcement Learning](#deep-reinforcement-learning)
+    - [Causal Inference](#causal-inference)
     - [PyTorch](#pytorch)
     - [ML/AI \& Healthcare](#mlai--healthcare)
       - [ML for Clinical Knowledge](#ml-for-clinical-knowledge)
@@ -324,7 +325,6 @@
 - [[Paper] An end-to-end attention-based approach for learning on graphs](https://www.nature.com/articles/s41467-025-60252-z)
 - [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book)
 - [[Article] Large Language Model Optimization: Memory, Compute, and Inference Techniques](https://gaurigupta19.github.io/llms/distributed%20ml/optimization/2025/10/02/efficient-ml.html)
-- [[Article] Causal inference resources](https://yanirseroussi.com/causal-inference-resources)
 - [[Book] Learning Deep Representations of Data Distributions](https://ma-lab-berkeley.github.io/deep-representation-learning-book/index.html)
 - [[Paper Video] Continuous Thought Machine Deep Dive](https://www.youtube.com/watch?v=5X9cjGLggv0)
 - [[Course] Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X)
@@ -388,6 +388,15 @@
 - [[Course] Stanford CS234 Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)
 - [[Course] Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL)
 - [[Article] How to Explore to Scale RL Training of LLMs on Hard Problems?](https://blog.ml.cmu.edu/2025/11/26/how-to-explore-to-scale-rl-training-of-llms-on-hard-problems)
+
+### Causal Inference
+
+- [[Article] Causal inference resources](https://yanirseroussi.com/causal-inference-resources)
+- [[Book] The Book of Why](https://www.goodreads.com/book/show/36204378-the-book-of-why)
+- [[Book] Causal Inference in Statistics: A Primer](https://www.goodreads.com/book/show/27164550-causal-inference-in-statistics)
+- [[Book] Causal Inference for the Brave and True](https://www.goodreads.com/book/show/58898489-causal-inference-for-the-brave-and-true)
+- [[Book] Causal Inference in Python](https://www.goodreads.com/book/show/140399013-causal-inference-in-python)
+- [[Book] Causal Inference and Discovery in Python](https://www.goodreads.com/book/show/150345394-causal-inference-and-discovery-in-python)
 
 ### PyTorch
 
