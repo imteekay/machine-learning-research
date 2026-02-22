@@ -63,6 +63,9 @@ I *really* need to
 - [ ] Numpy
 - [ ] Pandas
 - [ ] Scikit-learn
+- [ ] Data Engineering
+  - [ ] Feature Engineering
+  - [ ] Data Cleaning
 - [ ] ML Systems
   - [ ] [[Book] Introduction to Machine Learning Systems](https://mlsysbook.ai/book)
 - [ ] Deep Learning Frameworks
