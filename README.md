@@ -850,6 +850,7 @@
 - [Shanghua Gao](https://shgao.site)
 - [Ailing Zhang](https://ailzhang.github.io)
 - [Jun Cheng](https://chengjun.me)
+- [Qiguang Chen](https://lightchen233.github.io)
 
 ### Research & Laboratories
 
