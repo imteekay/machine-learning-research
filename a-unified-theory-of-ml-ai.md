@@ -161,6 +161,10 @@
     - Information needed to replicate results
     - Experiment results (metrics, analysis)
     - Resource monitoring, visualization, model error analysis
+  - A/B testing
+    - Control (baseline) vs Treatment groups
+  - Hypothesis testing
+    - Significance test to assess whether random chance is a reasonable explanation for the observed difference between groups A and B
 
 ## Pre-processing
 
