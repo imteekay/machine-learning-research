@@ -397,6 +397,7 @@
 - [[Book] Causal Inference for the Brave and True](https://www.goodreads.com/book/show/58898489-causal-inference-for-the-brave-and-true)
 - [[Book] Causal Inference in Python](https://www.goodreads.com/book/show/140399013-causal-inference-in-python)
 - [[Book] Causal Inference and Discovery in Python](https://www.goodreads.com/book/show/150345394-causal-inference-and-discovery-in-python)
+- [[Book] Causal Artificial Intelligence](https://causalai-book.net)
 
 ### PyTorch
 
