@@ -852,6 +852,7 @@
 - [Ailing Zhang](https://ailzhang.github.io)
 - [Jun Cheng](https://chengjun.me)
 - [Qiguang Chen](https://lightchen233.github.io)
+- [Yizhong Wang](https://yizhong-wang.com)
 
 ### Research & Laboratories
 
