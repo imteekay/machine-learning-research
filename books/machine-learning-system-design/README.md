@@ -13,3 +13,8 @@
   - Where is the most time wasted?
   - How do we measure user engagement?
   - How are recommendations related to this metric?
+- Find out any possible risks and limitations as soon as possible; otherwise, you can be forced to discard all your hard work
+  - Proper understanding of the costs of a mistake
+    - Affects requirements, data gathering, and metrics to choose
+  - Requirements: Functional requirements, non-functional requirements
+  - Trade-off between robustness (software keeps working) and correctness (returning the correct result)
