@@ -23,3 +23,9 @@
 ## Genomics, Epigenomics, Single-Cell, Networks, Circuitry
 
 ### Expression Analysis
+
+- Making inferences about the world
+  - Express forward probability of an event, given the hidden state of the world
+  - We can estimate
+    - P(gene expression, alzheimer's gene expression)
+    - P(observation, season): P(snow | winter), P(sun, summer)
