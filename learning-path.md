@@ -64,7 +64,7 @@ I *really* need to
 - [ ] Pandas
 - [ ] Scikit-learn
 - [ ] Data Engineering
-  - [ ] Feature Engineering
+  - [ ] [Feature Engineering](https://www.kaggle.com/learn/feature-engineering)
   - [ ] Data Cleaning
   - [X] PySpark
 - [ ] ML Systems
