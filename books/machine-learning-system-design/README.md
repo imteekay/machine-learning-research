@@ -18,3 +18,18 @@
     - Affects requirements, data gathering, and metrics to choose
   - Requirements: Functional requirements, non-functional requirements
   - Trade-off between robustness (software keeps working) and correctness (returning the correct result)
+
+## Design Document
+
+- Goal: reduce the uncertainty about a problem
+  - Successful metrics
+  - Functional and non-functional requirements
+- Antigoals: inverse statements that can help us narrow down both the problem space and the solution space
+  - Find properties of the system you're building that are not hard requirements
+  - It helps us focus only on the important aspects of a system
+- Designing the document
+  - Problem definition
+    - Origin/Context
+    - Relevance and reasons: problem relevance based on exploratory data analysis
+    - Previous work: list of problems to avoid based on previous work
+    - Issues and risks
