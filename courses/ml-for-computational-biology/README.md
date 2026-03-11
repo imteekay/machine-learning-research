@@ -29,3 +29,10 @@
   - We can estimate
     - P(gene expression, alzheimer's gene expression)
     - P(observation, season): P(snow | winter), P(sun, summer)
+- Clustering (unsupervised learning)
+  - No labels
+  - Group points into clusters
+  - Identify structure in data
+- Classification (supervised learning)
+  - Have labels
+  - Model accurately identifies or classifies points to a class
