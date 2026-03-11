@@ -462,6 +462,14 @@ Which model is better? It depends on the problem at hand. If the relationship be
 
 MSE, RMSE, MAE (mean absolute error) for regression, logistic loss (also log loss) for binary classification, and cross entropy for multiclass classification.
 
+- When choosing the loss function, ask yourself "How much do I fear a single massive mistake?"
+  - When outliers are fatal, prefer MSE
+    - Squared error penalizes when there is a big error
+    - The penalty grows exponentially: the model works to ensure no single error gets too large
+    - Specially a good fit for safety use cases. e.g. medicine, aircraft, structural engineering
+  - When consistency and efficiency are important, prefer MAE
+    - MAE treats all errors linearly
+
 #### Mean squared error (MSE)
 
 ```python
