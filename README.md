@@ -854,6 +854,7 @@
 - [Jun Cheng](https://chengjun.me)
 - [Qiguang Chen](https://lightchen233.github.io)
 - [Yizhong Wang](https://yizhong-wang.com)
+- [Yuan Meng](https://www.yuan-meng.com)
 
 ### Research & Laboratories
 
