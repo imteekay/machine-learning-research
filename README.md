@@ -695,6 +695,7 @@
 - [ML Design Interview strategy](https://www.youtube.com/watch?v=XN2ymraj27g)
 - [[Video] Google DeepMind ML Engineer Interview Tips](https://www.youtube.com/watch?v=UGZRFSqvNng)
 - [[Article] An Unofficial Guide to Prepare for a Research Position Application](https://pub.sakana.ai/Unofficial_Guide)
+- [MLE Interview 2.0: Research Engineering and Scary Rounds](https://www.yuan-meng.com/posts/mle_interviews_2.0)
 
 ### How to: Coding prep
 
