@@ -33,6 +33,8 @@
   - No labels
   - Group points into clusters
   - Identify structure in data
+  - Evaluation: cost -> distance between the centroid and the cluster data points
+    - The model tries to minimize the sum of distances
 - Classification (supervised learning)
   - Have labels
   - Model accurately identifies or classifies points to a class
