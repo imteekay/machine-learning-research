@@ -152,6 +152,12 @@ I *really* need to
   - [ ] Graph Neural Networks (GNNs)
 - [ ] Deep Reinforcement Learning
   - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
+- [ ] Papers
+  - [ ] [Mixtral of Experts](https://arxiv.org/abs/2401.04088)
+  - [ ] [Vision Transformer](https://arxiv.org/abs/2010.11929)
+  - [ ] [PPO](https://arxiv.org/abs/1707.06347)
+  - [ ] [Model Distillation](https://arxiv.org/abs/2403.09053)
+  - [ ] [Graph Attention Networks](https://arxiv.org/abs/1710.10903)
 
 ## Biomedicine and Healthcare
 
