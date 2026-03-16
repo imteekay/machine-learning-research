@@ -33,3 +33,19 @@
     - Relevance and reasons: problem relevance based on exploratory data analysis
     - Previous work: list of problems to avoid based on previous work
     - Issues and risks
+
+## Metrics
+
+- Loss metrics, evaluation metrics (offline), proxy metrics, business metrics (online)
+- When metrics have a ratio of 9/10,000, it means
+  - Low amount of class 1 data, huge class imbalance
+  - Increased A/B test duration
+- Build a hierarchy of metrics to understand what could be used as proxy metrics for the actual goal
+  - Use proxy metrics to speed up the experimentation phase and increase the number of class to have a more balanced dataset
+- Summary
+  - Don’t fall into the temptation of using time-tested loss functions just because they worked on your previous project(s).
+  - A loss function must be globally continuous and differentiable.
+  - Loss selection is an important step, but it is even more crucial with deep learning-based systems.
+  - Consider applying consistency metrics when small changes to the inputs can have significant effects on the output of your model from the product perspective.
+  - Offline metrics can be applied before putting your project into production and play the role of proxy metrics for online metrics.
+  - Make sure to have the hierarchy of metrics at hand, as it will be useful while working on the design of your system.

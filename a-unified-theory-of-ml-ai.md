@@ -32,6 +32,7 @@
       - [Root Mean Squared Error (RMSE)](#root-mean-squared-error-rmse)
       - [Binary Cross Entropy loss](#binary-cross-entropy-loss)
       - [Cross Entropy loss](#cross-entropy-loss)
+      - [Focal Loss](#focal-loss)
     - [Metrics](#metrics)
       - [Accuracy](#accuracy)
       - [F1](#f1)
@@ -494,6 +495,12 @@ TODO
 
 - Used for binary classification problems
 - TODO: add more details
+
+#### Focal Loss
+
+- It is a generalization of a binary cross-entropy loss
+- Focal loss down-weights easy examples
+- Useful in cases where the data is imbalanced (focus on the hard examples)
 
 ### Metrics
 
