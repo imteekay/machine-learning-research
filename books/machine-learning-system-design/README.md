@@ -49,3 +49,14 @@
   - Consider applying consistency metrics when small changes to the inputs can have significant effects on the output of your model from the product perspective.
   - Offline metrics can be applied before putting your project into production and play the role of proxy metrics for online metrics.
   - Make sure to have the hierarchy of metrics at hand, as it will be useful while working on the design of your system.
+
+## Datasets
+
+- Sampling is effective when a dataset is not only huge but also tends to be imbalanced and/or may contain a lot of duplicates
+- A critical characteristic of data uncertainty is that no matter how much additional training data gets collated, it does not reduce.
+- Handling data
+  - Generating synthetic data
+  - Using available data from similar situations
+  - Creating data manually
+  - Taking data from a similar problem and trying to adjust it
+  - Use a dummy baseline model or third party to bootstrap
