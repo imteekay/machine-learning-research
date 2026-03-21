@@ -79,3 +79,14 @@
   - Labeling:
     – What labels do we need?
     – What’s the label’s source?
+
+## Evaluation process
+
+- Best evaluation schemas (dataset split): highest reliability and robustness: low bias/low variance
+- Data split
+  - A training set is used for model training
+  - A validation set is designed to evaluate performance during training
+  - A test set is used to calculate final metrics
+- Be careful with validation leading to data leakage and optimistic model performance
+- Cross validation: helps with mitigating "selection bias", when we get a non-representative train/test split
+  - Improve reliability on model performance for unseen data
