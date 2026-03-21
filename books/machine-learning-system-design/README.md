@@ -60,3 +60,22 @@
   - Creating data manually
   - Taking data from a similar problem and trying to adjust it
   - Use a dummy baseline model or third party to bootstrap
+- Properties of a healthy data pipeline
+  - Reproducibility: be able to create a dataset from scratch if needed
+  - Consistency: data origin, how data is preprocessed, filters applied
+  - Reliability: data comes from a reliable source
+  - Availability: pulling data should be fairly easy
+- Design document: Dataset
+  - ETL:
+    – What are the data sources?
+    – How should we represent and store the data for our system?
+  - Filtering:
+    – What are the criteria for good and bad data samples?
+    – What corner cases can we expect? How do we handle them?
+    – Do we filter data automatically or set up a process for manual verification?
+  - Feature engineering:
+    – How are the features computed?
+    – How are representations generated?
+  - Labeling:
+    – What labels do we need?
+    – What’s the label’s source?
