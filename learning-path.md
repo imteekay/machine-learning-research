@@ -52,6 +52,7 @@ I *really* need to
   - [Math \& Statistics Foundations](#math--statistics-foundations)
   - [Foundation in Machine Learning](#foundation-in-machine-learning)
   - [Foundation in Deep Learning](#foundation-in-deep-learning)
+  - [RL](#rl)
   - [Biomedicine and Healthcare](#biomedicine-and-healthcare)
   - [Machine Learning in Biomedicine](#machine-learning-in-biomedicine)
 
@@ -150,14 +151,19 @@ I *really* need to
     - [ ] Generative Adversarial Networks (GANs)
     - [X] [Diffusion Models](https://learn.deeplearning.ai/courses/diffusion-models)
   - [ ] Graph Neural Networks (GNNs)
-- [ ] Deep Reinforcement Learning
-  - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
 - [ ] Papers
   - [ ] [Mixtral of Experts](https://arxiv.org/abs/2401.04088)
   - [ ] [Vision Transformer](https://arxiv.org/abs/2010.11929)
   - [ ] [PPO](https://arxiv.org/abs/1707.06347)
   - [ ] [Model Distillation](https://arxiv.org/abs/2403.09053)
   - [ ] [Graph Attention Networks](https://arxiv.org/abs/1710.10903)
+
+## RL
+
+- [ ] Deep Reinforcement Learning
+  - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
+  - [ ] Foundations of Deep Reinforcement Learning book
+    - [ ] [Code](https://github.com/kengz/SLM-Lab)
 
 ## Biomedicine and Healthcare
 
