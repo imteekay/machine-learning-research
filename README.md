@@ -388,6 +388,11 @@
 - [[Course] Stanford CS234 Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)
 - [[Course] Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL)
 - [[Article] How to Explore to Scale RL Training of LLMs on Hard Problems?](https://blog.ml.cmu.edu/2025/11/26/how-to-explore-to-scale-rl-training-of-llms-on-hard-problems)
+- [[Course] Deep RL by Stanford](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL)
+- [[Book] Deep Reinforcement Learning in Action](https://www.oreilly.com/library/view/deep-reinforcement-learning/9781617295430)
+- [[Article] Reinforcement Learning (RL) Guide by Unsloth](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide)
+- [[Book] Reinforcement Learning: Theory and Python Implementation](https://link.springer.com/book/10.1007/978-981-19-4933-3)
+- [Key Papers](https://spinningup.openai.com/en/latest/spinningup/keypapers.html)
 
 ### Causal Inference
 
