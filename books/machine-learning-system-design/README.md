@@ -90,3 +90,14 @@
 - Be careful with validation leading to data leakage and optimistic model performance
 - Cross validation: helps with mitigating "selection bias", when we get a non-representative train/test split
   - Improve reliability on model performance for unseen data
+
+## Baseline
+
+- Baseline
+  - **Reduce the maximum risk with the lowest amount of time, cost, and effort invested in a product**. At the beginning of the product’s life, it is still unclear whether the market needs it, what use cases the product will have, whether the economy will converge, and so on. To a large extent, these risks are peculiar to ML products, too. In a way, a baseline (or MVP) is the easiest way to test a hypothesis that lies at the heart of your product.
+  - **Get early feedback**. This is the fail-fast principle cut down to the product scale. If the whole idea of your ML system is wrong, you can see it at an early stage, rethink the entire plan, rewrite the design document with new knowledge, and start anew.
+  - **Bring user value as soon as possible**. Each company aims to generate revenue by making its customers happy. If we can bring value to customers early with a baseline and then update it stage by stage while generating a predictable amount of money, why not do this? It will leave everyone in the equation satisfied.
+  - They are good to work as a placeholder to check that components work properly, to compare with (performance metrics), and be a fallback answer in case subsequent models don't work properly
+- Types of baselines
+  - For regression tasks, constant baselines are average or median predictions
+  - For classification tasks, it will be prediction by the major class
