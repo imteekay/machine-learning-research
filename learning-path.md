@@ -224,5 +224,11 @@ I *really* need to
     - [ ] [Data Analysis for Life Sciences](https://www.edx.org/certificates/professional-certificate/harvardx-data-analysis-for-life-sciences)
     - [ ] [Data Analysis for Genomics](https://www.edx.org/certificates/professional-certificate/harvardx-data-analysis-for-genomics)
     - [ ] [Using Python for Research](https://www.edx.org/learn/python/harvard-university-using-python-for-research)
+- [ ] AI/ML in Biology for Medicine
+  - [ ] [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
+  - [ ] [Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences](https://www.biorxiv.org/content/10.1101/622803v4)
+  - [ ] [ProtST: Multi-modal Foundation Model for Protein Representation Learning](https://arxiv.org/abs/2301.12040)
+  - [ ] [Scaling deep learning for materials discovery](https://pubmed.ncbi.nlm.nih.gov/38030720/)
+  - [ ] [DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking](https://arxiv.org/abs/2210.01776)
 
 </samp>
