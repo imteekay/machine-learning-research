@@ -101,3 +101,30 @@
 - Types of baselines
   - For regression tasks, constant baselines are average or median predictions
   - For classification tasks, it will be prediction by the major class
+
+## Error Analysis
+
+- Learning curve analysis: how the loss behaves through the steps
+  - Answer two questions with the learning curve
+    - Does the model converge?
+    - If so, have we avoided underfitting or overfitting issues?
+  - Interpreting loss curves
+    - Pattern #1: loss curve diverges (rather than converging)
+      - Check correlation between features and the target
+      - Reduce the learning rate to prevent the model from bouncing around
+      - Reduce the dataset size to a single batch to see if the model overfits it
+      - Start with baseline, simpler model and improve overtime
+    - Pattern #2: loss explosion or NaN issues
+      - Exploding gradients: gradient clipping, lower learning rate, or different weights initialization
+      - NaN issues (division by zero, the logarithm of zero or negative numbers, or NaNs in data): implementation error, lack of data preprocessing
+    - Pattern #3: model converges (loss decreases), but metrics tell us otherwise
+      - Model learns (loss improves) but metrics (like accuracy, precision, etc) are stuck or don't improve at the same level
+      - It could an implementation error and a poorly chosen metric
+    - Pattern #4: converging learning curve with unexpected loss values
+      - Loss decreasing but still high values
+      - Sanity check: run on a single batch to see overfitting
+      - Be aware of scaling transformations
+    - Pattern #5: training loss decreases and validation loss increases
+      - Model is overfitting due to high variance
+      - Reduce model complexity
+      - Increase regularization
