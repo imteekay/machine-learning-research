@@ -38,3 +38,9 @@
 - Classification (supervised learning)
   - Have labels
   - Model accurately identifies or classifies points to a class
+
+## Single-cell
+
+- Genetics and environmental differences lead to molecular differences (RNA or epigenome level) that manifests in disease state
+  - Single-cell profiling samples healthy and disease sets
+  - Prediction analysis: predict driver genes, regulatory regions, cell types 
