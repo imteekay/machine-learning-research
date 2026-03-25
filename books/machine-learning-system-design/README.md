@@ -140,7 +140,7 @@
     - Which data samples show varying residual patterns with different models?
     - In which data subset do we have the greatest number of wrong answers?
     - What samples affect the final score the most?
-  - Example of residual analysis: plot a graph where the X-axis is the predicted value and the Y-axis is the residuals
+  - [Example of residual analysis](residual_analysis.ipynb): plot a graph where the X-axis is the predicted value and the Y-axis is the residuals
     - Random Scatter: Good Fit, ensure fairness
     - U-Shape or Curve: Non-linearity. The model is too simple (underfitting)
     - Funnel Shape (Widening): Heteroscedasticity. The model's error increases as the input values get larger
