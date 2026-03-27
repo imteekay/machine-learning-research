@@ -860,6 +860,7 @@
 - [Qiguang Chen](https://lightchen233.github.io)
 - [Yizhong Wang](https://yizhong-wang.com)
 - [Yuan Meng](https://www.yuan-meng.com)
+- [Soojung Yang](https://sites.google.com/view/soojungy)
 
 ### Research & Laboratories
 
