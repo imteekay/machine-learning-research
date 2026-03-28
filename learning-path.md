@@ -237,5 +237,6 @@ I *really* need to
     - [ ] [BioEmu: AI‐Powered Revolution in Scalable Protein Dynamics Simulation](https://pmc.ncbi.nlm.nih.gov/articles/PMC12643044)
     - [ ] [Experimental Data Driven AI Framework for Flexible Protein Conformational Reconstruction](https://www.biorxiv.org/content/10.64898/2026.03.12.708611v1)
     - [ ] [Free Energy Calculation Method Based on Enhanced Sampling of Diverse Protein Conformations Predicted by Artificial Intelligence](https://pubs.acs.org/doi/10.1021/acs.jpclett.6c00466)
+    - [ ] [MELD in Action: Harnessing Data to accelerate Molecular Dynamics](https://pmc.ncbi.nlm.nih.gov/articles/PMC12290800)
 
 </samp>
