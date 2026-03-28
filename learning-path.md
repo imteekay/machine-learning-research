@@ -225,13 +225,17 @@ I *really* need to
     - [ ] [Data Analysis for Genomics](https://www.edx.org/certificates/professional-certificate/harvardx-data-analysis-for-genomics)
     - [ ] [Using Python for Research](https://www.edx.org/learn/python/harvard-university-using-python-for-research)
 - [ ] AI/ML in Biology for Medicine
-  - [ ] [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
-  - [ ] [Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences](https://www.biorxiv.org/content/10.1101/622803v4)
-  - [ ] [ProtST: Multi-modal Foundation Model for Protein Representation Learning](https://arxiv.org/abs/2301.12040)
-  - [ ] [Scaling deep learning for materials discovery](https://pubmed.ncbi.nlm.nih.gov/38030720/)
-  - [ ] [DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking](https://arxiv.org/abs/2210.01776)
-  - [ ] [BioReason-Pro: Advancing Protein Function Prediction with Multimodal Biological Reasoning](https://www.biorxiv.org/content/10.64898/2026.03.19.712954v1.full.pdf)
-  - [ ] [Accurate structure prediction of biomolecular interactions with AlphaFold 3](https://www.nature.com/articles/s41586-024-07487-w)
-  - [ ] [BioEmu: AI‐Powered Revolution in Scalable Protein Dynamics Simulation](https://pmc.ncbi.nlm.nih.gov/articles/PMC12643044)
+  - Protein Structure
+    - [ ] [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
+    - [ ] [Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences](https://www.biorxiv.org/content/10.1101/622803v4)
+    - [ ] [ProtST: Multi-modal Foundation Model for Protein Representation Learning](https://arxiv.org/abs/2301.12040)
+  - Protein Simulation
+    - [ ] [Scaling deep learning for materials discovery](https://pubmed.ncbi.nlm.nih.gov/38030720/)
+    - [ ] [DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking](https://arxiv.org/abs/2210.01776)
+    - [ ] [BioReason-Pro: Advancing Protein Function Prediction with Multimodal Biological Reasoning](https://www.biorxiv.org/content/10.64898/2026.03.19.712954v1.full.pdf)
+    - [ ] [Accurate structure prediction of biomolecular interactions with AlphaFold 3](https://www.nature.com/articles/s41586-024-07487-w)
+    - [ ] [BioEmu: AI‐Powered Revolution in Scalable Protein Dynamics Simulation](https://pmc.ncbi.nlm.nih.gov/articles/PMC12643044)
+    - [ ] [Experimental Data Driven AI Framework for Flexible Protein Conformational Reconstruction](https://www.biorxiv.org/content/10.64898/2026.03.12.708611v1)
+    - [ ] [Free Energy Calculation Method Based on Enhanced Sampling of Diverse Protein Conformations Predicted by Artificial Intelligence](https://pubs.acs.org/doi/10.1021/acs.jpclett.6c00466)
 
 </samp>
