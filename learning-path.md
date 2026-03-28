@@ -229,7 +229,7 @@ I *really* need to
     - [ ] [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
     - [ ] [Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences](https://www.biorxiv.org/content/10.1101/622803v4)
     - [ ] [ProtST: Multi-modal Foundation Model for Protein Representation Learning](https://arxiv.org/abs/2301.12040)
-  - Protein Simulation
+  - Protein Dynamics Simulation
     - [ ] [Scaling deep learning for materials discovery](https://pubmed.ncbi.nlm.nih.gov/38030720/)
     - [ ] [DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking](https://arxiv.org/abs/2210.01776)
     - [ ] [BioReason-Pro: Advancing Protein Function Prediction with Multimodal Biological Reasoning](https://www.biorxiv.org/content/10.64898/2026.03.19.712954v1.full.pdf)
