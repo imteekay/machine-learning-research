@@ -144,3 +144,15 @@
     - Random Scatter: Good Fit, ensure fairness
     - U-Shape or Curve: Non-linearity. The model is too simple (underfitting)
     - Funnel Shape (Widening): Heteroscedasticity. The model's error increases as the input values get larger
+
+## Training Pipeline
+
+ML training is about data preparation, modeling, and building artifacts in a reproducible way
+
+- Data fetching: downloading the data from the sources and making it available for the subsequent steps
+- Preprocessing: set of actions performed to prepare the data for model training
+- Model training: takes preprocessed data and produces a trained model
+- Model evaluation and testing: answer the question 'how good is the model?'
+- Postprocessing: set of actions performed to prepare the model for deployment
+- Report generation: validation/test metrics, error analysis 
+- Artifact packaging: packaging the model and other artifacts into a format that can be easily deployed to production
