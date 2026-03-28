@@ -232,5 +232,6 @@ I *really* need to
   - [ ] [DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking](https://arxiv.org/abs/2210.01776)
   - [ ] [BioReason-Pro: Advancing Protein Function Prediction with Multimodal Biological Reasoning](https://www.biorxiv.org/content/10.64898/2026.03.19.712954v1.full.pdf)
   - [ ] [Accurate structure prediction of biomolecular interactions with AlphaFold 3](https://www.nature.com/articles/s41586-024-07487-w)
+  - [ ] [BioEmu: AI‐Powered Revolution in Scalable Protein Dynamics Simulation](https://pmc.ncbi.nlm.nih.gov/articles/PMC12643044)
 
 </samp>
