@@ -861,6 +861,7 @@
 - [Yizhong Wang](https://yizhong-wang.com)
 - [Yuan Meng](https://www.yuan-meng.com)
 - [Soojung Yang](https://sites.google.com/view/soojungy)
+- [Elana P. Simon](https://elanapearl.github.io)
 
 ### Research & Laboratories
 
