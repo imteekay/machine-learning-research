@@ -2,7 +2,8 @@
 
 - Proteins: sequence of amino acids
   - Each protein has a specific structure
-  - Protein functions are strongly determined from their structure
+  - Each protein folds in a specific, unique, and largely predictable way that is essential to its function.
+  - Protein functions are strongly determined from their structure: understanding structure is crucial to understanding function
 - Distance and torsion distribution predictions: Sequence "item" Distance
   - Distance: how far each pair is apart from each other in the sequence
   - Torsion: the angle between two amino acids in the protein structure
