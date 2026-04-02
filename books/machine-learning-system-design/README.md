@@ -156,3 +156,23 @@ ML training is about data preparation, modeling, and building artifacts in a rep
 - Postprocessing: set of actions performed to prepare the model for deployment
 - Report generation: validation/test metrics, error analysis 
 - Artifact packaging: packaging the model and other artifacts into a format that can be easily deployed to production
+
+## Experiment Design
+
+If we do [action A], it will help us achieve/solve [goal/problem P], which will be reflected in the form of an [X%] expected uplift in the [metrics M] based on [research/estimation R].
+
+- Action is deploying a new solution
+- Metrics are providing us with a means of quantifying the progress
+- Expected uplift: benchmarks, a rule of thumb, or even wishful thinking 
+
+What to report
+
+- Report a pointwise effect: "Effect is significant and equal to X" where X is the calculated difference between metric values on both experimental and control groups.
+- Estimate the confidence interval for effect: If the pessimistic estimate of the effect is equal to the lower confidence bound of the difference, the conservative estimate is equal to the pointwise difference, and the optimistic estimate is equal to the upper confidence bound.
+
+Metrics to keep an eye on
+
+- Minimum Detectable Effect (MDE)
+- Lift: percentage between test and control groups
+- p-value
+- Conclusion
