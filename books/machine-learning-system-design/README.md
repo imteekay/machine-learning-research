@@ -159,6 +159,8 @@ ML training is about data preparation, modeling, and building artifacts in a rep
 
 ## Experiment Design
 
+Use offline evaluation to get an approximation of the expected effect of your ML system before deploying
+
 If we do [action A], it will help us achieve/solve [goal/problem P], which will be reflected in the form of an [X%] expected uplift in the [metrics M] based on [research/estimation R].
 
 - Action is deploying a new solution
@@ -176,3 +178,4 @@ Metrics to keep an eye on
 - Lift: percentage between test and control groups
 - p-value
 - Conclusion
+- Confidence intervals for primary metrics
