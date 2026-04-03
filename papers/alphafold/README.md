@@ -26,6 +26,10 @@
   - Alphafold derives features from MSA
   - Input: Matrix of sequences (amino acids X amino acids — pairwise relationships) with multiple channels (features)
   - 220 residual convolution blocks
+- Attention
+  - MSA row-wise attention: related amino acids in a single sequence
+  - MSA column-wise attention: look at different sequences at the same position (amino acid)
+  - Pair representation triangular self-attention: ensure it follows a valid 3D physical shape (Euclidean constraints, triangular inequality)
 
 ## Resources
 
