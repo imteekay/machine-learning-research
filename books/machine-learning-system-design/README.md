@@ -193,3 +193,13 @@ Reliability
 - requests per second
 - error rates, uptime, latency, cold start time
 - system logs
+
+Data quality and integrity — a check for:
+
+- Missing data: NaN, None, N/A, undefined
+- Duplicated data: Duplicates can change the distribution, affecting downstream models
+- Data schema validation
+- Data constraints
+  - Type constraints: e.g. ensuring that a feature is numerical
+  - Feature ranges: e.g. age is less than 100
+- Feature statistics track particular features’ mean values, min-max ranges, standard deviation, the correlation between features, percentile distribution, or specific statistical tests.
