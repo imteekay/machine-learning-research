@@ -211,3 +211,22 @@ A check for:
 - Model drift: model’s performance degrading over time
   - Data drifts occur when the model is applied to inputs that it has not previously encountered, such as data from new demographics. It means the original dataset was not representative enough for the model to generalize. The input distribution changed
   - Concept drifts occur when the relationships in the data change, such as when user behavior evolves. It is important to continuously monitor for model drift and take appropriate action. One of the solutions is to retrain the model to maintain its accuracy and efficiency.
+
+### How to monitor
+
+An effective monitoring setup should provide enough context to efficiently identify and fix any arising problems with your model
+
+- Retraining the model
+- Rebuilding the model
+- Using a backup strategy
+
+What to measure
+
+- Model quality metrics
+  - Mean absolute error and root mean squared error for regression models
+  - Accuracy, precision, and F1-score for classification models
+  - Top-k accuracy and mean average precision for ranking models
+- Model quality by segment: tracking the model’s performance for specific subpopulations within the data, such as a geographical location
+- Prediction drift
+- Input data drift
+- Outliers
