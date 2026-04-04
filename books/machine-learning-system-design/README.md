@@ -188,13 +188,15 @@ Metrics to keep an eye on
   - Scheduled updates: retraining every week on the latest batch of data
 - Model output: concept drift
 
-Reliability
+### SLOs, Reliability
 
 - requests per second
 - error rates, uptime, latency, cold start time
 - system logs
 
-Data quality and integrity — a check for:
+### Data quality and integrity
+
+A check for:
 
 - Missing data: NaN, None, N/A, undefined
 - Duplicated data: Duplicates can change the distribution, affecting downstream models
@@ -203,3 +205,9 @@ Data quality and integrity — a check for:
   - Type constraints: e.g. ensuring that a feature is numerical
   - Feature ranges: e.g. age is less than 100
 - Feature statistics track particular features’ mean values, min-max ranges, standard deviation, the correlation between features, percentile distribution, or specific statistical tests.
+
+### Model quality and relevance
+
+- Model drift: model’s performance degrading over time
+  - Data drifts occur when the model is applied to inputs that it has not previously encountered, such as data from new demographics. It means the original dataset was not representative enough for the model to generalize. The input distribution changed
+  - Concept drifts occur when the relationships in the data change, such as when user behavior evolves. It is important to continuously monitor for model drift and take appropriate action. One of the solutions is to retrain the model to maintain its accuracy and efficiency.
