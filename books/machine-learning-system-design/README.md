@@ -179,3 +179,10 @@ Metrics to keep an eye on
 - p-value
 - Conclusion
 - Confidence intervals for primary metrics
+
+## Monitoring and Reliability
+
+- Incoming data: input data is not immutable or fixed, the distribution can change over time, something can break in the data pipeline (corrupting the input data)
+- Model Retraining
+  - Online training: updating the model based on incoming data in a real-time
+  - Scheduled updates: retraining every week on the latest batch of data
