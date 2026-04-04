@@ -186,3 +186,10 @@ Metrics to keep an eye on
 - Model Retraining
   - Online training: updating the model based on incoming data in a real-time
   - Scheduled updates: retraining every week on the latest batch of data
+- Model output: concept drift
+
+Reliability
+
+- requests per second
+- error rates, uptime, latency, cold start time
+- system logs
