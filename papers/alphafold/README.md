@@ -36,3 +36,4 @@
 - [How does AlphaFold2 work?](https://www.nobelprize.org/uploads/2024/11/fig2_ke_en_24-5.pdf)
 - [DeepMind's AlphaFold 2 Explained! AI Breakthrough in Protein Folding](https://www.youtube.com/watch?v=B9PL__gVxLI)
 - [How AlphaFold *actually* works](https://www.youtube.com/watch?v=3gSy_yN9YBo)
+- [Highly accurate protein structure prediction with AlphaFold: Supplementary information](https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03819-2/MediaObjects/41586_2021_3819_MOESM1_ESM.pdf)
