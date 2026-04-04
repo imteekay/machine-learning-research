@@ -230,3 +230,12 @@ What to measure
 - Prediction drift
 - Input data drift
 - Outliers
+
+### How to react
+
+- Data drift
+  - Investigate the cause of the shift
+  - Reevaluate the model and determine whether it is still appropriate for the current data.
+    - Retrain the model using updated or new data
+    - Consider developing an ML model that is more robust to drift
+  - Data quality problems: data entry errors, changes to the data schema, or problems with upstream models
