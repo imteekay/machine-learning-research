@@ -26,7 +26,7 @@
   - Alphafold derives features from MSA
   - Input: Matrix of sequences (amino acids X amino acids — pairwise relationships) with multiple channels (features)
   - 220 residual convolution blocks
-- Attention
+- Attention: Evoformer
   - MSA row-wise attention: related amino acids in a single sequence
   - MSA column-wise attention: look at different sequences at the same position (amino acid)
   - Pair representation triangular self-attention: ensure it follows a valid 3D physical shape (Euclidean constraints, triangular inequality)
@@ -37,3 +37,4 @@
 - [DeepMind's AlphaFold 2 Explained! AI Breakthrough in Protein Folding](https://www.youtube.com/watch?v=B9PL__gVxLI)
 - [How AlphaFold *actually* works](https://www.youtube.com/watch?v=3gSy_yN9YBo)
 - [Highly accurate protein structure prediction with AlphaFold: Supplementary information](https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03819-2/MediaObjects/41586_2021_3819_MOESM1_ESM.pdf)
+- [AI in Biology then and now](https://www.youtube.com/watch?v=E3nNo8cj0Q8)
