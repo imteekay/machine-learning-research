@@ -239,3 +239,5 @@ What to measure
     - Retrain the model using updated or new data
     - Consider developing an ML model that is more robust to drift
   - Data quality problems: data entry errors, changes to the data schema, or problems with upstream models
+- Concept drift
+  - Retraining the model: tune the model, try new features, architectures, data sources
