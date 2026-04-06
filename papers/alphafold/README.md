@@ -30,6 +30,9 @@
   - MSA row-wise attention: related amino acids in a single sequence
   - MSA column-wise attention: look at different sequences at the same position (amino acid)
   - Pair representation triangular self-attention: ensure it follows a valid 3D physical shape (Euclidean constraints, triangular inequality)
+- Protein Folding Prediction: determines the folded protein shape from an input amino acid sequence (coordinates, rotation)
+  - Coordinates of atoms
+  - Torsion angles of the bonds
 
 ## Resources
 
