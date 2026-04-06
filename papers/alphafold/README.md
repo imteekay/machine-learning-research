@@ -1,5 +1,7 @@
 # Alphafold
 
+## Proteins
+
 - Proteins: sequence of amino acids
   - Each protein has a specific structure
   - Each protein folds in a specific, unique, and largely predictable way that is essential to its function.
@@ -8,6 +10,9 @@
 - Protein Folding Prediction: determines the folded protein shape from an input amino acid sequence (coordinates, rotation)
   - Coordinates of atoms
   - Torsion angles of the bonds
+
+## Input Representation
+
 - Pair Representation: distance and torsion distribution predictions
   - Sequence "item" Distance (geometric/physical constraints)
   - Distance: how far each pair is apart from each other in the sequence
@@ -27,14 +32,16 @@
     - If amino acids co-evolve together in different sequences, it suggests they are paired together
   - Proteins can often tolerate amino acid substitutions without a necessary change in function
   - The function of a protein is largely determined by its three-dimensional structure
-- Deep Learning Model 
-  - Alphafold derives features from MSA
-  - Input: Matrix of sequences (amino acids X amino acids — pairwise relationships) with multiple channels (features)
-  - 220 residual convolution blocks
-  - Attention: Evoformer
-    - MSA row-wise attention: related amino acids in a single sequence
-    - MSA column-wise attention: look at different sequences at the same position (amino acid)
-    - Pair representation triangular self-attention: ensure it follows a valid 3D physical shape (Euclidean constraints, triangular inequality)
+
+## Deep Learning Model
+
+- Alphafold derives features from MSA
+- Input: Matrix of sequences (amino acids X amino acids — pairwise relationships) with multiple channels (features)
+- 220 residual convolution blocks
+- Attention: Evoformer
+  - MSA row-wise attention: related amino acids in a single sequence
+  - MSA column-wise attention: look at different sequences at the same position (amino acid)
+  - Pair representation triangular self-attention: ensure it follows a valid 3D physical shape (Euclidean constraints, triangular inequality)
 
 ## Resources
 
