@@ -329,6 +329,7 @@
 - [[Paper Video] Continuous Thought Machine Deep Dive](https://www.youtube.com/watch?v=5X9cjGLggv0)
 - [[Course] Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X)
 - [PaperCode](https://papercode.in/papers)
+- [Language model alignment-focused deep learning curriculum](https://github.com/jacobhilton/deep_learning_curriculum)
 
 #### Computer Vision
 
