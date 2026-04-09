@@ -376,7 +376,7 @@
 - [Spinning Up in Deep RL](https://spinningup.openai.com/en/latest)
 - [Reinforcement Learning: An Overview](https://arxiv.org/pdf/2412.05265)
 - [A vision researcher’s guide to some RL stuff: PPO & GRPO](https://yugeten.github.io/posts/2025/01/ppogrpo)
-- [DeepMind Reinforcement Learning Course](https://www.youtube.com/playlist?list=PLqYmG7hTraZBKeNJ-JE_eyJHZ7XgBoAyb)
+- [[Course] DeepMind Reinforcement Learning](https://www.youtube.com/playlist?list=PLqYmG7hTraZBKeNJ-JE_eyJHZ7XgBoAyb)
 - [An Ultra Opinionated Guide to Reinforcement Learning](https://x.com/jsuarez5341/status/1943692998975402064)
 - [Reinforcement Learning Quickstart Guide](https://x.com/jsuarez5341/status/1854855861295849793)
 - [A Reinforcement Learning Guide](https://naklecha.notion.site/a-reinforcement-learning-guide)
