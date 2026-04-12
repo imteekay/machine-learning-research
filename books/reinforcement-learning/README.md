@@ -26,3 +26,11 @@
   - Policy Based: behavior function -> what action to take
   - Value Based: how good is state function (prediction)
   - Model Based: how the agent represents the environment
+
+## Markov Decision Processes (MDP)
+
+- Markov decision processes describe an environment in RL
+  - A sequence of random states with the Markov property
+- Markob property: "the future is independent of the past given the present"
+  - What happens next rely only on the previous state (present)
+  - The current state captures all relevant information from the history
