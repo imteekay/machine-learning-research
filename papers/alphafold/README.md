@@ -43,6 +43,19 @@
   - MSA column-wise attention: look at different sequences at the same position (amino acid)
   - Pair representation triangular self-attention: ensure it follows a valid 3D physical shape (Euclidean constraints, triangular inequality)
 
+## IsoLabs
+
+- The drug design goal is to create a molecule that acts like a "perfect-shaped wrench" to throw into the "gears" of a specific protein causing a disease, while avoiding interactions with the thousands of other proteins that keep the body functioning
+- Rapid "In Silico" Visualization and Iteration
+  - Real-time Feedback: With AF3, Isomorphic Labs' medicinal chemists can now visualize how a potential drug molecule fits into a protein structure
+  - Interactive Design: Chemists can make specific 3D modifications to a molecule on their screen and receive an immediate structural prediction
+- Dual-Approach Molecular Design
+  - Hypothesis Testing: test specific ideas like changing a molecule's  shape
+  - Virtual Screening and Generative AI: generative models and AI agents scan chemical spaces to identify those that meet specific design constraints
+- Predicting Toxicity and Side Effects
+  - Use AF3 to model how that molecule interacts with all 20,000 proteins in the human body
+  - Risk Reduction: identify if a drug might inadvertently bind to a crucial protein
+
 ## Resources
 
 - [How does AlphaFold2 work?](https://www.nobelprize.org/uploads/2024/11/fig2_ke_en_24-5.pdf)
