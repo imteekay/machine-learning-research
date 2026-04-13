@@ -58,6 +58,8 @@
 
 ## Resources
 
+### Alphafold Architecture
+
 - [How does AlphaFold2 work?](https://www.nobelprize.org/uploads/2024/11/fig2_ke_en_24-5.pdf)
 - [DeepMind's AlphaFold 2 Explained! AI Breakthrough in Protein Folding](https://www.youtube.com/watch?v=B9PL__gVxLI)
 - [How AlphaFold *actually* works](https://www.youtube.com/watch?v=3gSy_yN9YBo)
