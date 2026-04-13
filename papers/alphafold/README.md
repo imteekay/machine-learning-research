@@ -69,4 +69,5 @@
 
 ### Applications
 
+- [AI drug design | Isomorphic Labs](https://www.youtube.com/watch?v=XpIMuCeEtSk)
 - [AlphaFold2 and its applications in the fields of biology and medicine](https://www.nature.com/articles/s41392-023-01381-z)
