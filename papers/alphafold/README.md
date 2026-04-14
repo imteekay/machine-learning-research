@@ -76,6 +76,7 @@
 - [Highly accurate protein structure prediction with AlphaFold: Supplementary information](https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03819-2/MediaObjects/41586_2021_3819_MOESM1_ESM.pdf)
 - [AI in Biology then and now](https://www.youtube.com/watch?v=E3nNo8cj0Q8)
 - [AlphaFold Architecture](https://www.uvio.bio/alphafold-architecture)
+- [Multiple Sequence Alignment in AlphaFold2](https://www.chrishayduk.com/p/understanding-protein-language-models)
 
 ### Applications
 
