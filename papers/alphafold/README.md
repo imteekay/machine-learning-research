@@ -13,6 +13,11 @@
 
 ## Input Representation
 
+- Input dataset: databases Alphafold used
+  - MGnify
+  - UniRef90
+  - Uniclust30
+  - BFD
 - Pair Representation: distance and torsion distribution predictions
   - Sequence "item" Distance (geometric/physical constraints)
   - Distance: how far each pair is apart from each other in the sequence
@@ -24,6 +29,7 @@
     - Improve the loss to optimize the angle and the distance through gradient descent steps
 - MSA Representation
   - Evolutionary constraints
+  - Multiple sequence alignment is often used to assess sequence conservation of protein domains, tertiary and secondary structures, and even individual amino acids or nucleotides
   - Multiple Sequence Alignment (MSA) is a representation created by aligning similar (homologous) protein sequences
     - Based on a protein sequence, find similar proteins in the genetic database search using MSA
     - Similar proteins can have the same function but have some mutations
@@ -40,8 +46,12 @@
 - 220 residual convolution blocks
 - Attention: Evoformer
   - MSA row-wise attention: related amino acids in a single sequence
+    - Each sequence has a contextual representation for its residues
   - MSA column-wise attention: look at different sequences at the same position (amino acid)
+    - Cross-sequence representation: exchange information across sequences
   - Pair representation triangular self-attention: ensure it follows a valid 3D physical shape (Euclidean constraints, triangular inequality)
+    - Outer product mean: transforms the MSA representation into an update for the pair representation
+    - This final representation is used to measure the similarity between all possible residue pairs in the MSA representation
 
 ## IsoLabs
 
