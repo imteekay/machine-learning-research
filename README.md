@@ -570,6 +570,9 @@
 - [[Thesis] Generative Models for Real-World Drug Discovery](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-223.pdf)
 - [[Book] Deep Learning for Molecules & Materials](https://dmol.pub)
 - [Protein Structure & Structural Bioinformatics](https://www.proteinstructures.com)
+- [Multiple Sequence Alignment in AlphaFold2](https://www.chrishayduk.com/p/understanding-protein-language-models)
+- [Encoder-only Transformers as Continuous Fuzzy String Matching](https://www.chrishayduk.com/p/understanding-protein-language-models-e1a)
+- [Structure Prediction without Multiple Sequence Alignment in ESMFold](https://www.chrishayduk.com/p/understanding-protein-language-models-40b)
 
 ### Podcasts
 
