@@ -40,6 +40,7 @@
       - [Recall](#recall)
       - [ROC](#roc)
       - [R²](#r)
+      - [Youden Index](#youden-index)
       - [Log-likelihood](#log-likelihood)
     - [Experiment tracking](#experiment-tracking)
     - [Model Debugging](#model-debugging)
@@ -533,6 +534,22 @@ def r2_score(Y_true, Y_pred):
    residual_sum_of_squares = np.sum((Y_true - Y_pred) ** 2)
    total_sum_of_squares = np.sum((Y_true - np.mean(Y_true)) ** 2)
    return 1 - (residual_sum_of_squares / total_sum_of_squares)
+```
+
+#### Youden Index
+
+Evaluation of the overall performance of a diagnostic test or binary classifier.
+
+It represents the maximum potential effectiveness of a biomarker, calculating the point on a receiver operating characteristic (ROC) curve where the sum of sensitivity and specificity is maximized.
+
+```python
+import numpy as np
+from sklearn.metrics import roc_curve
+
+def sensivity_specifity_cutoff(y_true, y_score):
+    fpr, tpr, thresholds = roc_curve(y_true, y_score)
+    idx = np.argmax(tpr - fpr)
+    return thresholds[idx]
 ```
 
 #### Log-likelihood
