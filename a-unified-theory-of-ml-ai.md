@@ -41,6 +41,7 @@
       - [ROC](#roc)
       - [R²](#r)
       - [Youden Index](#youden-index)
+      - [DCA](#dca)
       - [Log-likelihood](#log-likelihood)
     - [Experiment tracking](#experiment-tracking)
     - [Model Debugging](#model-debugging)
@@ -551,6 +552,10 @@ def sensivity_specifity_cutoff(y_true, y_score):
     idx = np.argmax(tpr - fpr)
     return thresholds[idx]
 ```
+
+#### DCA
+
+TODO
 
 #### Log-likelihood
 
