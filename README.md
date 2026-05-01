@@ -707,6 +707,7 @@
 - [[Article] An Unofficial Guide to Prepare for a Research Position Application](https://pub.sakana.ai/Unofficial_Guide)
 - [MLE Interview 2.0: Research Engineering and Scary Rounds](https://www.yuan-meng.com/posts/mle_interviews_2.0)
 - [DataLemur: Ace the SQL & Data Science Interview](https://datalemur.com)
+- [[Book] Ace the Data Science Interview](https://www.amazon.com/Ace-Data-Science-Interview-Questions/dp/0578973839)
 
 ### How to: Coding prep
 
