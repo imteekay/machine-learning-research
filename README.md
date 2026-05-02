@@ -869,6 +869,9 @@
 - [Yuan Meng](https://www.yuan-meng.com)
 - [Soojung Yang](https://sites.google.com/view/soojungy)
 - [Elana P. Simon](https://elanapearl.github.io)
+- [Anqi (Angie) Liu](https://anqiliu-ai.github.io)
+- [Ji Won Park](https://jiwoncpark.github.io)
+- [Clara Wong-Fannjiang](https://clarafy.github.io)
 
 ### Research & Laboratories
 
