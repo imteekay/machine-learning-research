@@ -40,3 +40,13 @@ Procedures
   - Get the pair with max count and create a new 'token' (merge)
   - Every time we find this pair, we should replace the two token into this new token
   - Vocabulary size will shrink
+
+## Pytorch & Resource Accounting
+
+How long would it take to train a 70b parameter model on 15T tokens on 1024 H100s?
+
+- Count the total number of flops: 6 * 70e9 * 15e12 (6 * number of parameters * number of tokens)
+- Define h100 flop per sec (h100_flop_per_sec)
+- Define mfu
+- Flops per day = h100_flop_per_sec * mfu * 1024 * (60 * 60 * 24)
+- Days = total flops / flops per day
