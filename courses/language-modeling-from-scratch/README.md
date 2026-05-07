@@ -71,3 +71,18 @@ To compute how much memory is used, we need the number of values (tensor) and th
 - Make go faster
 - Half precision (cut half the memory)
 - It won't be great to represent small or big numbers (underflow/overflow cause instability)
+
+### CPU
+
+By default, tensors are stored in CPU memory. To make use of GPU parallelism (streaming multiprocessor), we need to move them to the GPU memory. 
+
+In PyTorch, we use `.to()` to move the tensor to the GPU.
+
+### Tensor
+
+PyTorch tensors are pointers to the allocated memory.
+
+**Tensor Storage**: for a matrix, it looks like a long array in memory using strides
+**Tensor Slicing**: slicing operation (and many other ops) doesn't copy the tensor, but create a different 'view' (be careful with mutations)
+**Tensor Element-Wise**: it creates new tensors (e.g. `.triu()` for attention mask)
+**Tensor Matmul**: matrix multiplication
