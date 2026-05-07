@@ -50,3 +50,24 @@ How long would it take to train a 70b parameter model on 15T tokens on 1024 H100
 - Define mfu
 - Flops per day = h100_flop_per_sec * mfu * 1024 * (60 * 60 * 24)
 - Days = total flops / flops per day
+
+Tensors are the building blocks that hold the data/values for model training (input, output, parameters)
+
+### Memory
+
+**Known facts**: `float32` holds 4 bytes, 1 byte = 8 bits, so 32 bits is 4 bytes
+
+To compute how much memory is used, we need the number of values (tensor) and the data type
+
+- Tensor: ([4, 8]) -> `float32`
+  - number of values = 4x8 = 32
+  - `float32` = 4 bytes
+  - 4x32 = 128 bytes
+  - For this tensor that holds 32 `float32` values, we use 128 bytes of memory
+
+`float32` -> `float16`:
+
+- Make smaller
+- Make go faster
+- Half precision (cut half the memory)
+- It won't be great to represent small or big numbers (underflow/overflow cause instability)
