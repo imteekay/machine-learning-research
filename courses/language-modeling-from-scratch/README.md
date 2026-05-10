@@ -86,3 +86,15 @@ PyTorch tensors are pointers to the allocated memory.
 **Tensor Slicing**: slicing operation (and many other ops) doesn't copy the tensor, but create a different 'view' (be careful with mutations)
 **Tensor Element-Wise**: it creates new tensors (e.g. `.triu()` for attention mask)
 **Tensor Matmul**: matrix multiplication
+
+### Flops
+
+Floating-point operation (FLOP) is a basic operation like addition or multiplication
+
+- FLOPs: number of floating-point operation
+- FLOP/s: floating-point per second (a measurement of speed)
+
+How to translate into time?
+
+- The FLOP/s depends on the hardware (`H100`, `A100`) and datatype (`float32`, `float16`, etc): we can calculate the number of promised flops per second
+- Model FLOPs utilization (MFU): actual FLOPs / promised FLOPs (MFUs >= 0.5 is considered good)
