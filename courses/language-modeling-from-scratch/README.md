@@ -87,7 +87,7 @@ PyTorch tensors are pointers to the allocated memory.
 **Tensor Element-Wise**: it creates new tensors (e.g. `.triu()` for attention mask)
 **Tensor Matmul**: matrix multiplication
 
-### Flops
+### FLOPs
 
 Floating-point operation (FLOP) is a basic operation like addition or multiplication
 
