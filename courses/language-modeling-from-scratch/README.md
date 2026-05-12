@@ -98,3 +98,16 @@ How to translate into time?
 
 - The FLOP/s depends on the hardware (`H100`, `A100`) and datatype (`float32`, `float16`, etc): we can calculate the number of promised flops per second
 - Model FLOPs utilization (MFU): actual FLOPs / promised FLOPs (MFUs >= 0.5 is considered good)
+
+## Architectures
+
+Summary of architectures
+
+- Pre-vs-Post Norm: everyone does pre-norm
+- Layer vs RMSnorm: RMSnorm has computes win and sometimes performance
+- Gating (activation): GLUs seem generally better
+- Serial vs Parallel layers: most use serial
+- Positional embeddings: sine > absolute/relative > RoPe (rotary positional embedding)
+- Hyperparameters 
+  - Relation between model dimension (input vector) and feedforward dimension — dff = 4 dmodel or dff = 2.66 dmodel
+  - 1x1 ratio for heads: dmodel = dhead x heads (model dimension is equal to the product of the number of heads and the head dimension)
