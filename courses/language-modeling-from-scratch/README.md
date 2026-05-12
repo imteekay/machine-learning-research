@@ -110,4 +110,4 @@ Summary of architectures
 - Positional embeddings: sine > absolute/relative > RoPe (rotary positional embedding)
 - Hyperparameters 
   - Relation between model dimension (input vector) and feedforward dimension — dff = 4 dmodel or dff = 2.66 dmodel
-  - 1x1 ratio for heads: dmodel = dhead x heads (model dimension is equal to the product of the number of heads and the head dimension)
+  - 1x1 ratio for headsg: dmodel = dhead x heads (model dimension is equal to the product of the number of heads and the head dimension)
