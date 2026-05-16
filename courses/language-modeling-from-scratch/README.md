@@ -111,3 +111,24 @@ Summary of architectures
 - Hyperparameters 
   - Relation between model dimension (input vector) and feedforward dimension — dff = 4 dmodel or dff = 2.66 dmodel
   - 1x1 ratio for headsg: dmodel = dhead x heads (model dimension is equal to the product of the number of heads and the head dimension)
+- Vocabulary size
+  - Monolingual models: 30-50k vocab
+  - Multilingual models: 100-250k vocab
+
+## Mixture of Experts
+
+- Smaller FFNs after self-attention, increased number of experts
+  - Common: replace MLP with MoE layer
+- Router to select expert for each token
+- Popular
+  - Parallel on devices
+- Not so popular
+  - High complexity (infra)
+  - Unstable/heuristic training objectives
+- Architecture
+  - Routing function
+    - Token chooses expert
+    - Expert chooses token
+    - Global routing via optimization
+  - Expert sizes
+  - Training objectives
