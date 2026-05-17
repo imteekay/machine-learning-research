@@ -37,6 +37,8 @@ Paper: https://arxiv.org/abs/2507.23267
 
 ---
 
+![](./nuFormer.png)
+
 ============================ JOINT FUSION ARCHITECTURE (nuFormer) ============================
 
       [ SEQUENTIAL TRANSACTION PIPELINE ]                 [ TABULAR FEATURE PIPELINE ]
