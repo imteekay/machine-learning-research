@@ -709,6 +709,7 @@
 - [MLE Interview 2.0: Research Engineering and Scary Rounds](https://www.yuan-meng.com/posts/mle_interviews_2.0)
 - [DataLemur: Ace the SQL & Data Science Interview](https://datalemur.com)
 - [[Book] Ace the Data Science Interview](https://www.amazon.com/Ace-Data-Science-Interview-Questions/dp/0578973839)
+- [[Article] How to Land a Frontier Lab Job](https://vladfeinberg.com/2026/05/10/how-to-land-a-job-at-a-frontier-lab.html)
 
 ### How to: Coding prep
 
