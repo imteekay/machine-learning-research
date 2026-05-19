@@ -874,6 +874,7 @@
 - [Anqi (Angie) Liu](https://anqiliu-ai.github.io)
 - [Ji Won Park](https://jiwoncpark.github.io)
 - [Clara Wong-Fannjiang](https://clarafy.github.io)
+- [Vlad Feinberg](https://vladfeinberg.com)
 
 ### Research & Laboratories
 
