@@ -81,6 +81,7 @@ I *really* need to
   - [ ] [Low Level Technicals of LLMs](https://www.youtube.com/watch?v=pRM_P6UfdIc)
   - [ ] [Making Deep Learning Go Brrrr From First Principles](https://horace.io/brrr_intro.html)
   - [ ] [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
+  - [ ] [CUDA series](https://nichijou.co)
 
 ## Math & Statistics Foundations
 
