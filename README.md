@@ -124,6 +124,7 @@
 - [Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en)
 - [Introduction to Statistics and Data Analysis](https://www.youtube.com/playlist?list=PLMrJAkhIeNNT14qn1c5qdL29A1UaHamjx)
 - [Probability Bootcamp](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V)
+- [[Book Notebooks] Probabilidade e Estatística: teoria, simulação e dados](https://github.com/prof-francisco-rodrigues/livro-prob-est)
 
 ### Calculus
 
