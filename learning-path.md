@@ -77,6 +77,10 @@ I *really* need to
     - [X] [PyTorch: Fundamentals](https://www.coursera.org/learn/pytorch-fundamentals)
     - [ ] [PyTorch: Techniques and Ecosystem Tools](https://www.coursera.org/learn/pytorch-techniques-and-ecosystem-tools)
     - [ ] [PyTorch: Advanced Architectures and Deployment](https://www.coursera.org/learn/pytorch-advanced-architectures-and-deployment)
+- [ ] ML Systems
+  - [ ] [Low Level Technicals of LLMs](https://www.youtube.com/watch?v=pRM_P6UfdIc)
+  - [ ] [Making Deep Learning Go Brrrr From First Principles](https://horace.io/brrr_intro.html)
+  - [ ] [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
 
 ## Math & Statistics Foundations
 
