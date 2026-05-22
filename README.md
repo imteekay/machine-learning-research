@@ -367,6 +367,7 @@
 - [[Course] Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05)
 - [[Book] How to Scale Your Model](https://jax-ml.github.io/scaling-book)
 - [[Course] CME 295 - Transformers & Large Language Models](https://cme295.stanford.edu)
+- [[Course] Foundation models and generative AI](https://www.youtube.com/playlist?list=PLXV9Vh2jYcjbnv67sXNDJiO8MWLA3ZJKR)
 
 ### Generative AI
 
