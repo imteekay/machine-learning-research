@@ -132,3 +132,11 @@ Summary of architectures
     - Global routing via optimization
   - Expert sizes
   - Training objectives
+
+## GPUs
+
+Execution model of a GPU
+
+- Threads: do the work in parallel - same instruction, with different inputs
+- Blocks: groups of threads - each block is assigned to an SM
+- Warps: get threads from a block and execute 32 of them simultaneously
