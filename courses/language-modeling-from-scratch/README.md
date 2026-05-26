@@ -135,8 +135,32 @@ Summary of architectures
 
 ## GPUs
 
+GPUs features, facts
+
+- Massive parallel
+- Matmul hardward: matmuls are special and fast
+- Compute scaling is fast than memory scaling
+  - Interconnect BW (connectivity from the GPU to the host/server): 30x / 20 years
+  - DRAM BW (speed of data being moved to the global memory): 100x / 20 years
+  - HW FLOPS (hardware speed): 60000x / 20 years
+- Respect the memory hierarchy for optimizations
+
 Execution model of a GPU
 
+- Workloads: aggregate of tasks that a processor is required to complete
+- Streaming Multiprocessor (SM): atomic units of execution and control — similar to cores
+- Tensor cores: designed for high-speed matrix multiplications — compared to non-matmul
 - Threads: do the work in parallel - same instruction, with different inputs
 - Blocks: groups of threads - each block is assigned to an SM
 - Warps: get threads from a block and execute 32 of them simultaneously
+
+Strenghts
+
+- Scale up easily (add more SMs)
+- Easy to program (SIMT model)
+- Threads are lightweight: can be stopped and started allowing GPUs get high utilization
+
+### Making ML run faster on GPUs
+
+- Control divergence (conditions): adding conditions lead to significant overhead from the execution model
+- Low precision compute: 
