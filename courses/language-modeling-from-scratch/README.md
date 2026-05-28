@@ -182,3 +182,10 @@ Strenghts
   - Trade memory access with recomputing the operations: trade "cheap" computational power for "expensive" memory bandwidth
   - e.g. Instead of storing every activation from the forward pass in the slow global memory and reading them back during the backward pass, the model recalculates them on the fly
 - Memory coalescing and DRAM (global memory - very slow)
+  - Hardware optimization (burst mode): rather than giving one piece from the global memory, it gives a burst section
+    - e.g. a 16-bytes address space, 4-bytes burst sections (give 3-bytes for free when accessing one of the bytes)
+  - If all accessed locations fall into the same burst section, it needs only 1 DRAM request (fully coalesced)
+  - Coalescing for matrix multiplication
+    - Row-based traversal: not coalesced — item by item per row, where different rows are located far apart in physical memory, so each thread hits different burst sections
+    - Column-based traversal: coalesced — item by item per column, where items are contiguous in memory, so they fall in the same burst section, requiring a single request to the global memory
+- Tiling: group together threads/memory access to minimize global memory access
