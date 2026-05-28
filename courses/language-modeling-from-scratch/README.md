@@ -144,6 +144,7 @@ GPUs features, facts
   - DRAM BW (speed of data being moved to the global memory): 100x / 20 years
   - HW FLOPS (hardware speed): 60000x / 20 years
 - Respect the memory hierarchy for optimizations
+- Memory is the bottleneck
 
 Execution model of a GPU
 
@@ -163,4 +164,21 @@ Strenghts
 ### Making ML run faster on GPUs
 
 - Control divergence (conditions): adding conditions lead to significant overhead from the execution model
-- Low precision compute: 
+- Low precision compute
+  - Different number representations (FP32, FP16, int8): fewer bits leads to fewer bits to move
+  - It improves arithmetic intensity. e.g.:
+    - Float 32: 1 read (memory access — 8 bytes), 1 write (1 FLOP), intensity of 8 bytes / FLOP
+    - Float 16: 1 read (memory access — 4 bytes), 1 write (1 FLOP), intensity of 4 bytes / FLOP
+  - Experiment with lower or mix precision to improve intensity
+  - Operations that can use 16-bit storage (FP16/BF16): Matrix multiplication, pointwise op (relu, tahn)
+  - Operations that need more precision (FP32/FP16): adding small values to large sum (rounding errors), reduction op (max, softmax, normalization)
+  - Operations that need more range (FP32/BF16): pointwise op (exp, log, pow), loss functions
+- Operator fusion
+  - Fused kernel: minimize access memory, compute as many operations before moving data to memory again
+    - A naive approach would have a back-and-forth process between computing operations and accessing memory
+    - If there is no dependency, meaning there is no need to access memory, we can use fusion to compute all the operations in sequence
+  - `torch.compile` for operator fusion
+- Recomputation
+  - Trade memory access with recomputing the operations: trade "cheap" computational power for "expensive" memory bandwidth
+  - e.g. Instead of storing every activation from the forward pass in the slow global memory and reading them back during the backward pass, the model recalculates them on the fly
+- Memory coalescing and DRAM (global memory - very slow)
