@@ -169,7 +169,7 @@ Optimization Groups:
 - **Move memory to shared memory**: tiling
 - **Trade memory for compute/accuracy**: quantization, recomputation
 
-Deep dive:
+Deep dive: FLOPs and memory movement optimizations
 
 - Control divergence (conditions): adding conditions lead to significant overhead from the execution model
 - Low precision compute
