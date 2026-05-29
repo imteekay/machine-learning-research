@@ -163,6 +163,14 @@ Strenghts
 
 ### Making ML run faster on GPUs
 
+Optimization Groups:
+
+- **Reduce memory access**: coalescing, fusion
+- **Move memory to shared memory**: tiling
+- **Trade memory for compute/accuracy**: quantization, recomputation
+
+Deep dive:
+
 - Control divergence (conditions): adding conditions lead to significant overhead from the execution model
 - Low precision compute
   - Different number representations (FP32, FP16, int8): fewer bits leads to fewer bits to move
