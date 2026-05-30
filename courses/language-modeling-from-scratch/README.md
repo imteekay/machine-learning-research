@@ -137,6 +137,7 @@ Summary of architectures
 
 GPUs features, facts
 
+- GPU: 128 SMs (Streaming Multiprocessor) > units to process
 - Massive parallel
 - Matmul hardward: matmuls are special and fast
 - Compute scaling is fast than memory scaling
