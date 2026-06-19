@@ -2,49 +2,20 @@
 
 # ML/AI Learning Path
 
-Core training
+## Core training
 
-- Papers
-  - [Top-5 papers](https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap) in each subfield of interest
-- Implementation
-  - Implement paper and architectures of ML models
-- Foundational Mathematics
-  - Build the mathematical foundation for ML
-  - Fill the knowledge gaps from reading papers and technical articles
-- Foundational Biology
-  - Molecular Biology
-  - Genetics
-  - Proteins
-- Advanced ML of field of interest
-  - Multimodal ML
-    - [Multimodal Deep Learning](https://arxiv.org/pdf/2301.04856)
-  - Transformer Architecture
-  - Deep Reinforcement Learning
-  - Diffusion Models
-  - ML Systems
-- Code
-  - Read, unpack & review source code from papers
-  - Read, unpack & review source code from ML models
-  - List
-    - RoseTTaFold
-    - AlphaFold
-    - Sybil
-    - ESM-2
-    - TxGemma ([ref1](https://arxiv.org/pdf/2504.06196), [ref2](https://arxiv.org/pdf/2406.06316))
-    - C2S ([ref1](https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1.full.pdf))
-    - Med-PaLM
-      - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
-      - [Towards Expert-Level Medical Question Answering with Large Language Models](https://arxiv.org/pdf/2305.09617)
-      - [Towards Generalist Biomedical AI](https://arxiv.org/pdf/2307.14334)
-
-I *really* need to
+How to approach this training:
 
 - Read papers (to build the foundation, produce the knowledge gaps)
-- Read technical articles (to build the foundation, produce the knowledge gaps)
+- Read technical articles (to build the foundation, fill the knowledge gaps)
+- Implement architectures of ML models
+- Read, unpack & review source code from papers
+- Implement code from papers
 
 ## Table of Contents
 
 - [ML/AI Learning Path](#mlai-learning-path)
+  - [Core training](#core-training)
   - [Table of Contents](#table-of-contents)
   - [Engineering](#engineering)
   - [Math \& Statistics Foundation](#math--statistics-foundation)
@@ -83,8 +54,12 @@ I *really* need to
   - [ ] [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
   - [ ] [CUDA series](https://nichijou.co)
   - [ ] [Anatomy of a Compact DSL for High-Performance AI Kernels](https://hamzaelshafie.bearblog.dev/dissecting-thunderkittens-anatomy-of-a-compact-dsl-for-high-performance-ai-kernels)
+- [ ] Machine Learning Engineering / MLOps
+  - [X] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 
 ## Math & Statistics Foundation
+
+Build the mathematical foundation for ML and fill the knowledge gaps from reading papers and technical articles
 
 - [ ] [[Book] Mathematics of Machine Learning](https://www.amazon.com/Mathematics-Machine-Learning-calculus-probability/dp/1837027870)
 - [ ] [Math Academy](https://www.mathacademy.com)
@@ -95,6 +70,8 @@ I *really* need to
   - [X] [Practical Statistics for Data Scientists](https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962)
 
 ## Machine Learning Foundation
+
+Learn ML foundation to broaden my view of the field and experiment with different tools
 
 - [ ] [Machine Learning Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization)
   - [X] [[Course] Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning)
@@ -109,16 +86,17 @@ I *really* need to
   - [ ] Accuracy, Loss, ROC AUC, Precision, Recall
 - [ ] Causal Inference
   - [ ] [[Book] Causal Inference: What If](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/677676888e31cc50c2c33877/1735816881944/hernanrobins_WhatIf_2jan25.pdf)
-- [ ] Machine Learning Engineering
-  - [X] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 - [ ] Multimodal Machine Learning
   - [ ] [[Course] CMU Multimodal Machine Learning](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW)
   - [ ] [[Paper] Multimodal Readings](https://cmu-multicomp-lab.github.io/mmml-course/fall2023/readings)
   - [ ] [[Paper] Scaling Laws for Native Multimodal Models](https://arxiv.org/pdf/2504.07951)
+  - [ ] [[Paper] Multimodal Deep Learning](https://arxiv.org/pdf/2301.04856)
 - [ ] Geometric Machine Learninig
   - [ ] [[Book] Graph Neural Networks](https://graph-neural-networks.github.io)
 
 ## Deep Learning Foundation
+
+Learn DL foundation to broaden my view of the field and experiment with different tools
 
 - [ ] [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
   - [X] [[Course] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
@@ -172,6 +150,8 @@ I *really* need to
     - [ ] [Code](https://github.com/kengz/SLM-Lab)
 
 ## Biomedicine and Healthcare
+
+Biology Foundation: Molecular Biology, Genetics, Proteins
 
 - [ ] Genetics Fundamentals
   - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
@@ -244,5 +224,17 @@ I *really* need to
     - [ ] [Experimental Data Driven AI Framework for Flexible Protein Conformational Reconstruction](https://www.biorxiv.org/content/10.64898/2026.03.12.708611v1)
     - [ ] [Free Energy Calculation Method Based on Enhanced Sampling of Diverse Protein Conformations Predicted by Artificial Intelligence](https://pubs.acs.org/doi/10.1021/acs.jpclett.6c00466)
     - [ ] [MELD in Action: Harnessing Data to accelerate Molecular Dynamics](https://pmc.ncbi.nlm.nih.gov/articles/PMC12290800)
+  - Biology Foundation Models
+    - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
+    - [Towards Expert-Level Medical Question Answering with Large Language Models](https://arxiv.org/pdf/2305.09617)
+    - [Towards Generalist Biomedical AI](https://arxiv.org/pdf/2307.14334)
+  - Unpack Papers and Models
+    - [ ] RoseTTaFold
+    - [ ] AlphaFold
+    - [ ] Sybil
+    - [ ] ESM-2
+    - [ ] TxGemma ([ref1](https://arxiv.org/pdf/2504.06196), [ref2](https://arxiv.org/pdf/2406.06316))
+    - [ ] C2S ([ref1](https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1.full.pdf))
+    - [ ] Med-PaLM
 
 </samp>
