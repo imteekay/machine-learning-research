@@ -27,6 +27,8 @@ How to approach this training:
 
 ## Engineering
 
+Good foundation in coding, ML systems, distributed systems, GPUs/TPUs, Kernel
+
 - [ ] Python
   - [X] Python Basics
   - [ ] [Fluent Python](https://www.amazon.com/Fluent-Python-Concise-Effective-Programming-dp-1492056359/dp/1492056359)
@@ -38,7 +40,6 @@ How to approach this training:
   - [ ] Data Cleaning
   - [X] [PySpark](https://www.alura.com.br/curso-online-spark-pyspark-processamento-modelagem)
 - [ ] ML Systems
-  - [ ] [[Book] Introduction to Machine Learning Systems](https://mlsysbook.ai/book)
 - [ ] Deep Learning Frameworks
   - [X] [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)
   - [X] [Learn PyTorch for Deep Learning](https://www.learnpytorch.io)
@@ -49,11 +50,13 @@ How to approach this training:
 - [ ] ML Systems
   - [X] [Pytorch, Resource Accounting](https://www.youtube.com/watch?v=msHyYioAyNE)
   - [X] [GPUs](https://www.youtube.com/watch?v=6OBtO9niT00)
+  - [ ] [Kernels, Triton](https://www.youtube.com/watch?v=E8Mju53VB00)
   - [ ] [Low Level Technicals of LLMs](https://www.youtube.com/watch?v=pRM_P6UfdIc)
   - [ ] [Making Deep Learning Go Brrrr From First Principles](https://horace.io/brrr_intro.html)
   - [ ] [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
   - [ ] [CUDA series](https://nichijou.co)
   - [ ] [Anatomy of a Compact DSL for High-Performance AI Kernels](https://hamzaelshafie.bearblog.dev/dissecting-thunderkittens-anatomy-of-a-compact-dsl-for-high-performance-ai-kernels)
+  - [ ] [[Book] Introduction to Machine Learning Systems](https://mlsysbook.ai/book)
 - [ ] Machine Learning Engineering / MLOps
   - [X] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 
