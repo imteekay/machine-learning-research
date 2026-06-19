@@ -57,6 +57,8 @@ Good foundation in coding, ML systems, distributed systems, GPUs/TPUs, Kernel
   - [ ] [CUDA series](https://nichijou.co)
   - [ ] [Anatomy of a Compact DSL for High-Performance AI Kernels](https://hamzaelshafie.bearblog.dev/dissecting-thunderkittens-anatomy-of-a-compact-dsl-for-high-performance-ai-kernels)
   - [ ] [[Book] Introduction to Machine Learning Systems](https://mlsysbook.ai/book)
+  - [ ] [How to think in JAX](https://docs.jax.dev/en/latest/notebooks/thinking_in_jax.html)
+  - [ ] [The math behind how LLMs are trained and served](https://www.dwarkesh.com/p/reiner-pope)
 - [ ] Machine Learning Engineering / MLOps
   - [X] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 
