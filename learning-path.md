@@ -46,15 +46,15 @@ I *really* need to
 
 - [ML/AI Learning Path](#mlai-learning-path)
   - [Table of Contents](#table-of-contents)
-  - [Programming \& Engineering](#programming--engineering)
-  - [Math \& Statistics Foundations](#math--statistics-foundations)
-  - [Foundation in Machine Learning](#foundation-in-machine-learning)
-  - [Foundation in Deep Learning](#foundation-in-deep-learning)
-  - [RL](#rl)
+  - [Engineering](#engineering)
+  - [Math \& Statistics Foundation](#math--statistics-foundation)
+  - [Machine Learning Foundation](#machine-learning-foundation)
+  - [Deep Learning Foundation](#deep-learning-foundation)
+  - [RL Foundation](#rl-foundation)
   - [Biomedicine and Healthcare](#biomedicine-and-healthcare)
   - [Machine Learning in Biomedicine](#machine-learning-in-biomedicine)
 
-## Programming & Engineering
+## Engineering
 
 - [ ] Python
   - [X] Python Basics
@@ -65,7 +65,7 @@ I *really* need to
 - [ ] Data Engineering
   - [ ] [Feature Engineering](https://www.kaggle.com/learn/feature-engineering)
   - [ ] Data Cleaning
-  - [X] PySpark
+  - [X] [PySpark](https://www.alura.com.br/curso-online-spark-pyspark-processamento-modelagem)
 - [ ] ML Systems
   - [ ] [[Book] Introduction to Machine Learning Systems](https://mlsysbook.ai/book)
 - [ ] Deep Learning Frameworks
@@ -76,12 +76,15 @@ I *really* need to
     - [ ] [PyTorch: Techniques and Ecosystem Tools](https://www.coursera.org/learn/pytorch-techniques-and-ecosystem-tools)
     - [ ] [PyTorch: Advanced Architectures and Deployment](https://www.coursera.org/learn/pytorch-advanced-architectures-and-deployment)
 - [ ] ML Systems
+  - [X] [Pytorch, Resource Accounting](https://www.youtube.com/watch?v=msHyYioAyNE)
+  - [X] [GPUs](https://www.youtube.com/watch?v=6OBtO9niT00)
   - [ ] [Low Level Technicals of LLMs](https://www.youtube.com/watch?v=pRM_P6UfdIc)
   - [ ] [Making Deep Learning Go Brrrr From First Principles](https://horace.io/brrr_intro.html)
   - [ ] [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
   - [ ] [CUDA series](https://nichijou.co)
+  - [ ] [Anatomy of a Compact DSL for High-Performance AI Kernels](https://hamzaelshafie.bearblog.dev/dissecting-thunderkittens-anatomy-of-a-compact-dsl-for-high-performance-ai-kernels)
 
-## Math & Statistics Foundations
+## Math & Statistics Foundation
 
 - [ ] [[Book] Mathematics of Machine Learning](https://www.amazon.com/Mathematics-Machine-Learning-calculus-probability/dp/1837027870)
 - [ ] [Math Academy](https://www.mathacademy.com)
@@ -91,7 +94,7 @@ I *really* need to
   - [ ] [Introduction to Probability](https://uni.dcdev.ro/y2s2/ps/Introduction%20to%20Probability%20by%20Joseph%20K.%20Blitzstein,%20Jessica%20Hwang%20(z-lib.org).pdf)
   - [X] [Practical Statistics for Data Scientists](https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962)
 
-## Foundation in Machine Learning
+## Machine Learning Foundation
 
 - [ ] [Machine Learning Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization)
   - [X] [[Course] Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning)
@@ -115,7 +118,7 @@ I *really* need to
 - [ ] Geometric Machine Learninig
   - [ ] [[Book] Graph Neural Networks](https://graph-neural-networks.github.io)
 
-## Foundation in Deep Learning
+## Deep Learning Foundation
 
 - [ ] [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
   - [X] [[Course] Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
@@ -161,7 +164,7 @@ I *really* need to
   - [ ] [Model Distillation](https://arxiv.org/abs/2403.09053)
   - [ ] [Graph Attention Networks](https://arxiv.org/abs/1710.10903)
 
-## RL
+## RL Foundation
 
 - [ ] Deep Reinforcement Learning
   - [ ] [[Course] Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - [Lecture](https://rll.berkeley.edu/deeprlcoursesp17)
