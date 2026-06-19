@@ -713,6 +713,7 @@
 - [DataLemur: Ace the SQL & Data Science Interview](https://datalemur.com)
 - [[Book] Ace the Data Science Interview](https://www.amazon.com/Ace-Data-Science-Interview-Questions/dp/0578973839)
 - [[Article] How to Land a Frontier Lab Job](https://vladfeinberg.com/2026/05/10/how-to-land-a-job-at-a-frontier-lab.html)
+- [[Article] My 2026 Interview Season](https://ianjchiu.com/writing/my-2026-interview-season)
 
 ### How to: Coding prep
 
