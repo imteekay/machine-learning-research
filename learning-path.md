@@ -2,8 +2,6 @@
 
 # ML/AI Learning Path
 
-[Structured Learning Path: ML/DL in Biomedicine](https://chatgpt.com/c/6831e921-0168-800b-b284-0eafaff9c8f6)
-
 Core training
 
 - Papers
