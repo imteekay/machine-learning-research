@@ -747,7 +747,7 @@
 - [[Article] Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research)
 - [[Article] An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html)
 - [[Article] The Speed of Being Wrong](https://frahlg.substack.com/p/the-speed-of-being-wrong)
-- [[Article Research Is Not Engineering at a Slower Speed]](https://voiceinthemachine.com/2026/06/10/research-is-not-engineering-at-a-slower-speed)
+- [[Article] Research Is Not Engineering at a Slower Speed](https://voiceinthemachine.com/2026/06/10/research-is-not-engineering-at-a-slower-speed)
 
 ## Projects
 
