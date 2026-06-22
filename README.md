@@ -716,6 +716,10 @@
 - [[Book] Ace the Data Science Interview](https://www.amazon.com/Ace-Data-Science-Interview-Questions/dp/0578973839)
 - [[Article] How to Land a Frontier Lab Job](https://vladfeinberg.com/2026/05/10/how-to-land-a-job-at-a-frontier-lab.html)
 - [[Article] My 2026 Interview Season](https://ianjchiu.com/writing/my-2026-interview-season)
+- [[Article] ML Job Interviews: The Ultimate Guide](https://silviasapora.github.io/blog/ml-interviews.html)
+- [[Article] How I Got a Job at DeepMind as a Research Engineer](https://gordicaleksa.medium.com/how-i-got-a-job-at-deepmind-as-a-research-engineer-without-a-machine-learning-degree-1a45f2a781de)
+- [[Article] Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search)
+- [[Article] Job Hunt as a PhD in AI / ML / RL: How it Actually Happens](https://natolambert.com/writing/ai-phd-job-hunt)
 
 ### How to: Coding prep
 
