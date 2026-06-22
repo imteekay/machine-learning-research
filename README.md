@@ -579,6 +579,7 @@
 - [Multiple Sequence Alignment in AlphaFold2](https://www.chrishayduk.com/p/understanding-protein-language-models)
 - [Encoder-only Transformers as Continuous Fuzzy String Matching](https://www.chrishayduk.com/p/understanding-protein-language-models-e1a)
 - [Structure Prediction without Multiple Sequence Alignment in ESMFold](https://www.chrishayduk.com/p/understanding-protein-language-models-40b)
+- [[Article] On Training Data for Bio AI Models](https://research.dimensioncap.com/p/on-training-data-for-bio-ai-models)
 
 ### Podcasts
 
