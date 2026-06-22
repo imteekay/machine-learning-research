@@ -53,6 +53,8 @@ How long would it take to train a 70b parameter model on 15T tokens on 1024 H100
 
 Tensors are the building blocks that hold the data/values for model training (input, output, parameters)
 
+**Computation** in the context of an LLM: matrix multiplication and addition operations (FLOPs)
+
 ### Memory
 
 **Known facts**: `float32` holds 4 bytes, 1 byte = 8 bits, so 32 bits is 4 bytes
@@ -98,6 +100,27 @@ How to translate into time?
 
 - The FLOP/s depends on the hardware (`H100`, `A100`) and datatype (`float32`, `float16`, etc): we can calculate the number of promised flops per second
 - Model FLOPs utilization (MFU): actual FLOPs / promised FLOPs (MFUs >= 0.5 is considered good)
+- T = Computation FLOPs / Accelerator FLOPs/s
+  - FLOPs/s depends on the hardware
+  - Computation FLOPs depends on the model
+- Communication between/within chips: T = Communication Bytes / Network/Memory Bandwidth Bytes/s
+
+Training and Inference time can be calculated by the sum of the two "times" (computation time + communication time)
+
+- Lower bound = max(Tmath, Tcomms)
+- Upper bound = Tmath + Tcomms
+
+Compute or communication-bound?
+
+- Arithmetic intensity: measures FLOPs per byte (computation FLOPs divided by communication bytes)
+  - High arithmetic intensity: For every byte of data loaded from memory (HBM/DRAM), the processor performs a large number of mathematical operations
+  - Low arithmetic intensity: low math ops compared to the number of bytes loaded
+    - Dot product: x • y: bf16[N], bf16[N] → bf16[1]
+    - `x` and `y` loaded from memory = 2N bytes each = 4N bytes
+    - `N` multiplications and `N - 1` additions
+    - Output is a single value (bf16), which requires 2 bytes of storage
+    - Total FLOPs / Total bytes = N + N - 1 / 4N + 2 = 1/2 → Communication-bound
+- Operational intensity
 
 ## Architectures
 
