@@ -750,6 +750,7 @@
 - [[Article] Research Is Not Engineering at a Slower Speed](https://voiceinthemachine.com/2026/06/10/research-is-not-engineering-at-a-slower-speed)
 - [[Article] An Unofficial Guide to Prepare for a Research Position Application](https://pub.sakana.ai/Unofficial_Guide)
 - [[Article] On research taste](https://kejunying.com/blog/research-taste)
+- [[Article] Zen and the Art of AI Research](https://substack.com/home/post/p-202209611)
 
 ## Projects
 
