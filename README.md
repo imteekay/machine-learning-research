@@ -53,6 +53,7 @@
     - [How to: Interview Prep](#how-to-interview-prep)
     - [How to: Coding prep](#how-to-coding-prep)
     - [Jobs](#jobs)
+  - [Research](#research)
   - [Projects](#projects)
   - [Community](#community)
     - [People](#people)
@@ -736,6 +737,16 @@
 - [(Senior) Principal Scientist, Computational / Systems Biology - Deep Genomics](careers/computational-systems-biology-deep-genomics.pdf)
 - [(Senior) Research Scientist - Statistical Genetics - Deep Genomics](careers/research-scientist-deep-genomics.pdf)
 - [Research Scientist (Computational Biology, Cells and Tissues) — Isomorphic Labs](careers/research-scientist-computational-biolog-isomorphic-labs.pdf)
+
+## Research
+
+- [[Article] How I Think About My Research Process: Explore, Understand, Distill](https://www.alignmentforum.org/s/5GT3yoYM9gRmMEKqL/p/hjMy4ZxS5ogA9cTYK)
+- [[Article] My Research Process: Key Mindsets - Truth-Seeking, Prioritisation, Moving Fast](https://www.alignmentforum.org/posts/cbBwwm4jW6AZctymL/my-research-process-key-mindsets-truth-seeking)
+- [[Article] My Research Process: Understanding and Cultivating Research Taste](https://www.alignmentforum.org/posts/Ldrss6o3tiKT6NdMm)
+- [[Article] A Survival Guide to a PhD](https://karpathy.github.io/2016/09/07/phd)
+- [[Article] Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research)
+- [[Article] An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html)
+- [[Article] The Speed of Being Wrong](https://frahlg.substack.com/p/the-speed-of-being-wrong)
 
 ## Projects
 
