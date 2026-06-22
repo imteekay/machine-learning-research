@@ -748,6 +748,8 @@
 - [[Article] An Opinionated Guide to ML Research](http://joschu.net/blog/opinionated-guide-ml-research.html)
 - [[Article] The Speed of Being Wrong](https://frahlg.substack.com/p/the-speed-of-being-wrong)
 - [[Article] Research Is Not Engineering at a Slower Speed](https://voiceinthemachine.com/2026/06/10/research-is-not-engineering-at-a-slower-speed)
+- [[Article] An Unofficial Guide to Prepare for a Research Position Application](https://pub.sakana.ai/Unofficial_Guide)
+- [[Article] On research taste](https://kejunying.com/blog/research-taste)
 
 ## Projects
 
