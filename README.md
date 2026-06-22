@@ -720,6 +720,7 @@
 - [[Article] How I Got a Job at DeepMind as a Research Engineer](https://gordicaleksa.medium.com/how-i-got-a-job-at-deepmind-as-a-research-engineer-without-a-machine-learning-degree-1a45f2a781de)
 - [[Article] Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search)
 - [[Article] Job Hunt as a PhD in AI / ML / RL: How it Actually Happens](https://natolambert.com/writing/ai-phd-job-hunt)
+- [[Repo] Machine Learning Questions](https://github.com/ktakanopy/machine-learning-questions)
 
 ### How to: Coding prep
 
