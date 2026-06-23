@@ -221,3 +221,11 @@ Deep dive: FLOPs and memory movement optimizations
     - Row-based traversal: not coalesced — item by item per row, where different rows are located far apart in physical memory, so each thread hits different burst sections
     - Column-based traversal: coalesced — item by item per column, where items are contiguous in memory, so they fall in the same burst section, requiring a single request to the global memory
 - Tiling: group together threads/memory access to minimize global memory access
+
+## Kernels, Triton
+
+### Benchmarking and profiling
+
+- `Benchmarking`: How long does it take? end-to-end execution time of a given operation. e.g. MLP call
+  - Warmups: do warmups iterations to remove the time from the startup and other tasks in the background (e.g. compilation), and then run the trials
+- `Profiling`: Where time is being spent?
