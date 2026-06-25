@@ -902,6 +902,7 @@
 - [Clara Wong-Fannjiang](https://clarafy.github.io)
 - [Vlad Feinberg](https://vladfeinberg.com)
 - [Linlu Qiu](https://linlu-qiu.github.io)
+- [Keya Hu](https://lillian039.github.io)
 
 ### Research & Laboratories
 
