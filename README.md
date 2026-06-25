@@ -901,6 +901,7 @@
 - [Ji Won Park](https://jiwoncpark.github.io)
 - [Clara Wong-Fannjiang](https://clarafy.github.io)
 - [Vlad Feinberg](https://vladfeinberg.com)
+- [Linlu Qiu](https://linlu-qiu.github.io)
 
 ### Research & Laboratories
 
