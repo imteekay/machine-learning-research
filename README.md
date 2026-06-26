@@ -903,6 +903,7 @@
 - [Vlad Feinberg](https://vladfeinberg.com)
 - [Linlu Qiu](https://linlu-qiu.github.io)
 - [Keya Hu](https://lillian039.github.io)
+- [Chanwoo Kim](https://chanwoo.kim)
 
 ### Research & Laboratories
 
