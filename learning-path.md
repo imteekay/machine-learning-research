@@ -39,7 +39,6 @@ Good foundation in coding, ML systems, distributed systems, GPUs/TPUs, Kernel
   - [ ] [Feature Engineering](https://www.kaggle.com/learn/feature-engineering)
   - [ ] Data Cleaning
   - [X] [PySpark](https://www.alura.com.br/curso-online-spark-pyspark-processamento-modelagem)
-- [ ] ML Systems
 - [ ] Deep Learning Frameworks
   - [X] [Introduction to Neural Networks and PyTorch](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)
   - [X] [Learn PyTorch for Deep Learning](https://www.learnpytorch.io)
