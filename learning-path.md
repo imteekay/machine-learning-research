@@ -22,8 +22,8 @@ How to approach this training:
   - [Machine Learning Foundation](#machine-learning-foundation)
   - [Deep Learning Foundation](#deep-learning-foundation)
   - [RL Foundation](#rl-foundation)
-  - [Biomedicine and Healthcare](#biomedicine-and-healthcare)
   - [Machine Learning in Biomedicine](#machine-learning-in-biomedicine)
+  - [Biomedicine and Healthcare](#biomedicine-and-healthcare)
 
 ## Engineering
 
@@ -154,27 +154,6 @@ Learn DL foundation to broaden my view of the field and experiment with differen
   - [ ] Foundations of Deep Reinforcement Learning book
     - [ ] [Code](https://github.com/kengz/SLM-Lab)
 
-## Biomedicine and Healthcare
-
-Biology Foundation: Molecular Biology, Genetics, Proteins
-
-- [ ] Genetics Fundamentals
-  - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
-  - [ ] [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
-  - [ ] [[Course] DNA Decoded](https://www.coursera.org/learn/dna-decoded)
-  - [ ] [Genomics Papers](https://github.com/jtleek/genomicspapers)
-- [ ] Molecular Biology
-  - [ ] [[Book] Molecular Biology of the Cell](https://www.amazon.com/Molecular-Biology-Cell-Bruce-Alberts-dp-0393884848/dp/0393884848)
-  - [ ] [[Book] Molecular Biology for Computer Scientists](https://tandy.cs.illinois.edu/Hunter_MolecularBiology.pdf)
-  - [ ] [[Book] Molecular Biology: A Very Short Introduction](https://academic.oup.com/book/670)
-  - [ ] [[Book] A Computer Scientist’s Guide to Cell Biology](https://wwcohen.github.io/GuideToBiology-sampleChapter-release1.4.pdf)
-  - [ ] [[Primer] A Biology Primer for Computer Scientists](https://web.stanford.edu/class/cs173/papers/bioprimer.pdf)
-  - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p)
-  - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
-  - [ ] [[Graduation] Medicina de Precisão e Análise de Dados na Saúde](https://ensino.einstein.br/pos_medicina_precisao_analise_dados_saude_p14796/p)
-- [ ] Cancer Fundamentals
-  - [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
-
 ## Machine Learning in Biomedicine
 
 - [ ] AI/ML in Healthcare
@@ -241,5 +220,26 @@ Biology Foundation: Molecular Biology, Genetics, Proteins
     - [ ] TxGemma ([ref1](https://arxiv.org/pdf/2504.06196), [ref2](https://arxiv.org/pdf/2406.06316))
     - [ ] C2S ([ref1](https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1.full.pdf))
     - [ ] Med-PaLM
+
+## Biomedicine and Healthcare
+
+Biology Foundation: Molecular Biology, Genetics, Proteins
+
+- [ ] Genetics Fundamentals
+  - [ ] [[Course] Genetics: The Fundamentals](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-the-fundamentals)
+  - [ ] [[Course] Genetics: Analysis and Applications](https://www.edx.org/learn/genetics/massachusetts-institute-of-technology-genetics-analysis-and-applications)
+  - [ ] [[Course] DNA Decoded](https://www.coursera.org/learn/dna-decoded)
+  - [ ] [Genomics Papers](https://github.com/jtleek/genomicspapers)
+- [ ] Molecular Biology
+  - [ ] [[Book] Molecular Biology of the Cell](https://www.amazon.com/Molecular-Biology-Cell-Bruce-Alberts-dp-0393884848/dp/0393884848)
+  - [ ] [[Book] Molecular Biology for Computer Scientists](https://tandy.cs.illinois.edu/Hunter_MolecularBiology.pdf)
+  - [ ] [[Book] Molecular Biology: A Very Short Introduction](https://academic.oup.com/book/670)
+  - [ ] [[Book] A Computer Scientist’s Guide to Cell Biology](https://wwcohen.github.io/GuideToBiology-sampleChapter-release1.4.pdf)
+  - [ ] [[Primer] A Biology Primer for Computer Scientists](https://web.stanford.edu/class/cs173/papers/bioprimer.pdf)
+  - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Expressão Gênica, Metagenômica e Machine Learning](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_eg_p5406/p)
+  - [ ] [[Graduation] Bioinformática Aplicada a Genômica Médica - Análise de Variantes Germinativas e Somáticas](https://ensino.einstein.br/pos_bioinformatica_aplicada_genomica_med_av_p5405/p)
+  - [ ] [[Graduation] Medicina de Precisão e Análise de Dados na Saúde](https://ensino.einstein.br/pos_medicina_precisao_analise_dados_saude_p14796/p)
+- [ ] Cancer Fundamentals
+  - [ ] [Cancer Biology Specialization](https://www.coursera.org/specializations/cancer-biology)
 
 </samp>
