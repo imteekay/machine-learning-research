@@ -472,6 +472,7 @@
 - [[Paper] Large language models are less effective at clinical prediction tasks than locally trained machine learning models](https://academic.oup.com/jamia/article/32/5/811/8064348)
 - [[Course] Applied Artificial Intelligence for Health Research](https://learninghub.kingshealthpartners.org/course/applied-artificial-intelligence-for-health-research)
 - [[Paper] Evaluating EHR Foundation Models for Early Pancreatic Cancer Detection](https://media.licdn.com/dms/document/media/v2/D4E1FAQEDeQJU1iZ7tw/feedshare-document-sanitized-pdf/B4EZ474tziHYBE-/0/1779121185005?e=1779757200&v=beta&t=uMixuAouFGSzzAU5KJ4Nyf95oKhFSuWj7JdOM5CLKrA)
+- [[Paper] DT-Transformer: A Foundation Model for Disease Trajectory Prediction on a Real-world Health System](https://arxiv.org/abs/2605.14227)
 
 #### ML for Clinical Knowledge
 
