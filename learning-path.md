@@ -46,6 +46,12 @@ Good foundation in coding, ML systems, distributed systems, GPUs/TPUs, Kernel
     - [X] [PyTorch: Fundamentals](https://www.coursera.org/learn/pytorch-fundamentals)
     - [ ] [PyTorch: Techniques and Ecosystem Tools](https://www.coursera.org/learn/pytorch-techniques-and-ecosystem-tools)
     - [ ] [PyTorch: Advanced Architectures and Deployment](https://www.coursera.org/learn/pytorch-advanced-architectures-and-deployment)
+- [ ] Distributed Systems
+  - [ ] [[Course] MIT 6.824 Distributed Systems](https://www.youtube.com/playlist?list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB)
+  - [ ] [[Book] Understanding Distributed Systems](https://www.amazon.com.br/Understanding-Distributed-Systems-distributed-applications/dp/1838430202)
+  - [ ] [[Book] Designing Data-Intensive Applications](https://www.amazon.com.br/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1098119061)
+  - [ ] [[Book] Patterns of Distributed Systems](https://www.amazon.com/Patterns-Distributed-Systems-Addison-Wesley-Signature/dp/0138221987)
+  - [ ] [[Book] Distributed Services with Go](https://www.amazon.com.br/Distributed-Services-Go-Reliable-Maintainable/dp/1680507605)
 - [ ] ML Systems
   - [X] [Pytorch, Resource Accounting](https://www.youtube.com/watch?v=msHyYioAyNE)
   - [X] [GPUs](https://www.youtube.com/watch?v=6OBtO9niT00)
