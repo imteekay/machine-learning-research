@@ -86,8 +86,8 @@ Learn ML foundation to broaden my view of the field and experiment with differen
   - [X] [Logistic Regression](https://www.iamtk.co/building-a-logistic-regression-from-scratch-with-python-and-mathematics)
   - [ ] Decision Trees
     - [ ] [Decision Tree from Scratch](https://www.kaggle.com/code/fareselmenshawii/decision-tree-from-scratch)
-- [ ] Model Evaluation
-  - [ ] Accuracy, Loss, ROC AUC, Precision, Recall
+- [ ] [[Book] Hands-on Machine Learning with Scikit-Learn and PyTorch](https://www.amazon.com.br/Hands-Machine-Learning-Scikit-Learn-Pytorch/dp/B0F2SG98Q9/ref=asc_df_B0F2SG98Q9)
+  - [ ] Model Evaluation: Loss functions, ROC AUC, Accuracy, Precision, Recall
 - [ ] Causal Inference
   - [ ] [[Book] Causal Inference: What If](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/677676888e31cc50c2c33877/1735816881944/hernanrobins_WhatIf_2jan25.pdf)
 - [ ] Multimodal Machine Learning
