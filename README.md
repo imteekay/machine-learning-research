@@ -581,6 +581,7 @@
 - [Encoder-only Transformers as Continuous Fuzzy String Matching](https://www.chrishayduk.com/p/understanding-protein-language-models-e1a)
 - [Structure Prediction without Multiple Sequence Alignment in ESMFold](https://www.chrishayduk.com/p/understanding-protein-language-models-40b)
 - [[Article] On Training Data for Bio AI Models](https://research.dimensioncap.com/p/on-training-data-for-bio-ai-models)
+- [[Article] Genome Foundation Models](https://andrewcarroll.github.io/2026/05/26/genome-foundation-models.html)
 
 ### Podcasts
 
