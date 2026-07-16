@@ -77,6 +77,7 @@
 - [AI in Biology then and now](https://www.youtube.com/watch?v=E3nNo8cj0Q8)
 - [AlphaFold Architecture](https://www.uvio.bio/alphafold-architecture)
 - [Multiple Sequence Alignment in AlphaFold2](https://www.chrishayduk.com/p/understanding-protein-language-models)
+- [AlphaFold: Deep Learning for Accurate Protein Structure Prediction](https://notebooklm.google.com/notebook/1293928e-3efa-4474-a8ac-f3c6f2c8523e)
 
 ### Applications
 
