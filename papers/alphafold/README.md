@@ -82,6 +82,7 @@
 - [Machine learning for protein structure prediction, Part 2: AlphaFold2 architecture](https://www.youtube.com/watch?v=ri39B0Voujc)
 - [minAlphaFold2](https://github.com/ChrisHayduk/minAlphaFold2)
 - [The Illustrated AlphaFold](https://elanapearl.github.io/blog/2024/the-illustrated-alphafold)
+- [How does DeepMind AlphaFold2 work?](https://borisburkov.net/2021-12-25-1)
 
 ### Applications
 
