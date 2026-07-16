@@ -79,6 +79,7 @@
 - [Multiple Sequence Alignment in AlphaFold2](https://www.chrishayduk.com/p/understanding-protein-language-models)
 - [AlphaFold: Deep Learning for Accurate Protein Structure Prediction](https://notebooklm.google.com/notebook/1293928e-3efa-4474-a8ac-f3c6f2c8523e)
 - [How to Solve the Protein Folding Problem: AlphaFold2](https://medium.com/data-science/how-to-solve-the-protein-folding-problem-alphafold2-6c81faba670d)
+- [Machine learning for protein structure prediction, Part 2: AlphaFold2 architecture](https://www.youtube.com/watch?v=ri39B0Voujc)
 
 ### Applications
 
