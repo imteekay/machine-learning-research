@@ -81,6 +81,7 @@
 - [How to Solve the Protein Folding Problem: AlphaFold2](https://medium.com/data-science/how-to-solve-the-protein-folding-problem-alphafold2-6c81faba670d)
 - [Machine learning for protein structure prediction, Part 2: AlphaFold2 architecture](https://www.youtube.com/watch?v=ri39B0Voujc)
 - [minAlphaFold2](https://github.com/ChrisHayduk/minAlphaFold2)
+- [The Illustrated AlphaFold](https://elanapearl.github.io/blog/2024/the-illustrated-alphafold)
 
 ### Applications
 
