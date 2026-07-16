@@ -83,6 +83,7 @@
 - [minAlphaFold2](https://github.com/ChrisHayduk/minAlphaFold2)
 - [The Illustrated AlphaFold](https://elanapearl.github.io/blog/2024/the-illustrated-alphafold)
 - [How does DeepMind AlphaFold2 work?](https://borisburkov.net/2021-12-25-1)
+- [Highly Accurate Protein Structure Prediction with AlphaFold](https://www.youtube.com/watch?v=tTN0MM2CQLU)
 
 ### Applications
 
