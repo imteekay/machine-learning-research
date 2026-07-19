@@ -760,6 +760,7 @@
 - [[Article] An Unofficial Guide to Prepare for a Research Position Application](https://pub.sakana.ai/Unofficial_Guide)
 - [[Article] On research taste](https://kejunying.com/blog/research-taste)
 - [[Article] Zen and the Art of AI Research](https://substack.com/home/post/p-202209611)
+- [[Video] if you want good taste, you have to eat](https://www.youtube.com/watch?v=F4igbiu9eR8)
 
 ## Projects
 
