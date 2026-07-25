@@ -10,6 +10,7 @@
   - [Central Dogma of Biology](#central-dogma-of-biology)
   - [Proteins](#proteins)
   - [Current challenges in biology](#current-challenges-in-biology)
+  - [Current challenges in clinical healthcare](#current-challenges-in-clinical-healthcare)
   - [Multimodality](#multimodality)
 
 ## How Cells Work
@@ -60,6 +61,14 @@ DNA -> RNA -> Protein
 - Vision models vs human eyes for microscopy images of cells
   - Microscopy images are very rich in information
   - Vision models can interpret more information than human eyes
+
+## Current challenges in clinical healthcare
+
+- Interpretation of biological signals
+- Interpretation of medical images
+- Interpretation of physiological data
+- Interpretation of diagnostic tests
+- The main challenge is rarely the algorithm. It is the data. Reliable, structured, labeled, and validated clinical information has become one of the most valuable assets in digital health
 
 ## Multimodality
 
