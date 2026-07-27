@@ -917,6 +917,7 @@
 - [Zhang Lab](https://zhanggroup.org)
 - [Zhang lab @ MIT](https://www.zlab.bio)
 - [The Programmable Biology Group](https://www.chatterjeelab.com)
+- [Medical AI and Computer Vision Lab](https://marvl.stanford.edu)
 
 ### Communities
 
