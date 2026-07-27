@@ -229,3 +229,13 @@ Deep dive: FLOPs and memory movement optimizations
 - `Benchmarking`: How long does it take? end-to-end execution time of a given operation. e.g. MLP call
   - Warmups: do warmups iterations to remove the time from the startup and other tasks in the background (e.g. compilation), and then run the trials
 - `Profiling`: Where time is being spent?
+
+### Writing Kernels
+
+- CUDA, C++ API for GPU
+  - Threads execute code: Grid -> Thread Block -> Thread (unit of operation)
+- Triton, Python, more accessible, handles block threads rather than threads (vectorized operations)
+- Pytorch compile: compile python code into GPU-ready code
+- Two parts code
+  - Kernel: Code sent and executed in the GPU
+  - Wrapper: orchestrate the launch of the kernel, lives in the CPU
