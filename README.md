@@ -909,6 +909,7 @@
 - [Keya Hu](https://lillian039.github.io)
 - [Chanwoo Kim](https://chanwoo.kim)
 - [Serena Yeung](https://ai.stanford.edu/~syyeung)
+- [Haotian Cui](https://subercui.github.io)
 
 ### Research & Laboratories
 
