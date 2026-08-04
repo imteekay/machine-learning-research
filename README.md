@@ -583,6 +583,7 @@
 - [Structure Prediction without Multiple Sequence Alignment in ESMFold](https://www.chrishayduk.com/p/understanding-protein-language-models-40b)
 - [[Article] On Training Data for Bio AI Models](https://research.dimensioncap.com/p/on-training-data-for-bio-ai-models)
 - [[Article] Genome Foundation Models](https://andrewcarroll.github.io/2026/05/26/genome-foundation-models.html)
+- [[Paper] MAMMAL - Molecular Aligned Multi-Modal Architecture and Language for biomedical discovery](https://www.nature.com/articles/s44386-026-00047-4)
 
 ### Podcasts
 
