@@ -17,76 +17,44 @@ Aqui está um roteiro detalhado de estudos em tópicos, estruturado para cobrir 
 
 ---
 
-## 1. Estrutura de Dados
+Aqui está o seu guia de estudos unificado. Ele combina a riqueza de detalhes teóricos e práticos da primeira lista com a excelente estruturação e o rigor técnico (como notações assintóticas e termos específicos) da segunda lista.
+
+O material foi estruturado para evitar sublistas, mantendo a leitura direta, escaneável e focada no que você precisa saber para provas ou aplicações práticas.
+
+---
+
+## 1. Estruturas de Dados
 
 ### 1.1 Listas Ligadas, Pilhas, Filas e Listas de Prioridade
 
-* **Listas Ligadas (Singly, Doubly, Circular):**
-* **Conceito:** Alocação dinâmica de memória, ponteiros/referências, nós contendo valor e ponteiro para o próximo.
-* **Implementação:** Inserção, remoção e busca (no início, fim e meio); ponteiros `head` e `tail`.
-* **Aplicações:** Gerenciamento dinâmico de memória, histórico de navegação, base para pilhas e filas.
-
-
-* **Pilhas (LIFO - *Last In, First Out*):**
-* **Conceito:** Operações restritas ao topo da estrutura (`push`, `pop`, `peek`/`top`).
-* **Implementação:** Via array dinâmico ou lista encadeada.
-* **Aplicações:** Avaliação e conversão de expressões aritméticas (Infixa $\to$ Pós-fixa), *undo/redo* em editores, pilha de chamadas de funções (*call stack*).
-
-
-* **Filas (FIFO - *First In, First Out*):**
-* **Conceito:** Inserção no fim (`enqueue`) e remoção no início (`dequeue`).
-* **Implementação:** Array circular com ponteiros `front`/`rear` ou lista duplamente encadeada.
-* **Aplicações:** Buffers de impressão/redes, filas de tarefas (*task queues*), busca em largura (BFS).
-
-
-* **Listas de Prioridade (Priority Queues & Heaps):**
-* **Conceito:** Elementos possuem prioridades associadas; remoção sempre do elemento de maior (ou menor) prioridade.
-* **Implementação:** *Max-Heap* e *Min-Heap* (árvores binárias completas representadas em vetores); operações `sift-up` e `sift-down`.
-* **Aplicações:** Algoritmo de Dijkstra, codificação de Huffman, escalonamento de processos em SO.
-
-
+* **Listas Ligadas (Simples, Duplamente Ligadas e Circulares):** Conceito e implementação baseados em alocação dinâmica de memória, onde nós contêm valores e ponteiros para o próximo (e anterior, se dupla). Destacam-se pelas operações de inserção e remoção mais flexíveis que arrays estáticos. Aplicações incluem gerenciamento dinâmico de memória, histórico de navegação (listas de reprodução) e como base estrutural para construir pilhas e filas.
+* **Pilhas (Stacks - LIFO):** Operam no princípio *Last-In, First-Out*. A implementação restringe o acesso ao topo da estrutura através das operações `push`, `pop` e `peek`/`top` (via arrays ou listas encadeadas). Aplicações cobrem desde a avaliação e conversão de expressões matemáticas (Infixa para Pós-fixa), *undo/redo* em editores, até a crucial pilha de execução do sistema (*call stack*).
+* **Filas (Queues - FIFO):** Operam no princípio *First-In, First-Out*. A inserção ocorre no fim (`enqueue`) e a remoção no início (`dequeue`). A implementação costuma usar arrays circulares (com ponteiros `front`/`rear`) ou listas duplamente encadeadas, englobando também os Deques (filas de duas pontas). Aplicações reais envolvem escalonamento de processos no SO, buffers de impressão/redes, controle de tarefas assíncronas e a Busca em Largura (BFS).
+* **Listas de Prioridade (Priority Queues & Heaps):** Estruturas onde os elementos possuem prioridades e a remoção foca sempre no elemento de maior/menor prioridade. Geralmente implementadas usando *Max-Heaps* e *Min-Heaps* (árvores binárias completas mapeadas em vetores) com operações de manutenção como `sift-up` e `sift-down` em tempo $O(\log n)$. Aplicações essenciais no Algoritmo de Dijkstra, codificação de Huffman e escalonamento de processos por prioridade.
 
 ### 1.2 Recursão
 
-* **Conceito:** Resolução de problemas dividindo-os em subproblemas menores do mesmo tipo; caso base (*base case*) vs. passo recursivo.
-* **Implementação:** Relações de recorrência, uso interno da pilha de chamadas (*call stack*), estouro de pilha (*stack overflow*) e recursão de cauda (*tail recursion*).
-* **Aplicações:** Divisão e conquista (Merge Sort, Quick Sort), travessia em árvores, *backtracking* (Sudoku, N-Rainhas).
+* **Conceito e Implementação:** Resolução de problemas pela divisão em subproblemas menores do mesmo tipo. Exige a definição clara de um caso base (condição de parada) e do passo recursivo (relações de recorrência).
+* **Cuidados e Otimizações:** Depende do uso interno da pilha de chamadas, o que traz o risco de estouro de memória (*stack overflow*). É vital entender a diferença entre recursão direta/indireta e a otimização de recursão de cauda (*tail recursion*), que permite a compiladores transformarem a recursão em iteração.
+* **Aplicações Práticas:** Algoritmos de Divisão e Conquista (Merge Sort, Quick Sort), travessia em estruturas de árvores/grafos e algoritmos de *backtracking* (problema das N-Rainhas, resolução de Sudoku).
 
 ### 1.3 Tabelas de Espalhamento (Hash Tables)
 
-* **Conceito:** Mapeamento de chaves para valores em tempo médio $O(1)$ através de uma função hash.
-* **Implementação:**
-* **Funções Hash:** Módulo, multiplicação, funções de hash universais.
-* **Tratamento de Colisões:** Encadeamento (*separate chaining*) vs. Endereçamento Aberto (*linear probing*, *quadratic probing*, *double hashing*).
-* **Fator de Carga (*Load Factor*) e Rehash:** Redimensionamento dinâmico da tabela.
+* **Conceito e Função Hash:** Mapeamento de chaves para índices de um array através de funções matemáticas (módulo, multiplicação, hash universal), permitindo buscas, inserções e remoções em tempo médio $O(1)$.
+* **Tratamento de Colisões e Rehash:** Implementações precisam lidar com colisões via Encadeamento Separado (*separate chaining* usando listas ligadas) ou Endereçamento Aberto (*open addressing* via *linear probing*, *quadratic probing* ou *double hashing*). O redimensionamento dinâmico é controlado pelo fator de carga (*load factor*).
+* **Aplicações Práticas:** Construção de bancos de dados, tabelas de símbolos de compiladores, estruturas de dicionários (chave-valor), conjuntos (*Sets*) e sistemas de cache rápido (como LRU Cache).
 
+### 1.4 Árvores Binárias e de Busca (BST)
 
-* **Aplicações:** Tabelas de símbolos de compiladores, caches (Ex: LRU Cache), conjuntos (*Sets*) e dicionários (*Maps*).
+* **Árvores Binárias Gerais:** Estrutura hierárquica (raiz, folha, altura, profundidade) onde cada nó tem no máximo dois filhos. O domínio das travessias clássicas (Pré-ordem, Em-ordem, Pós-ordem e Por Nível/BFS) usando recursão ou pilhas iterativas é fundamental.
+* **Árvores Binárias de Busca (BST):** Adiciona a propriedade em que nós à esquerda são menores e à direita são maiores. Suporta inserção, busca e busca de mínimo/máximo em tempo $O(h)$, mas a remoção é complexa (exige tratar casos de 0, 1 ou 2 filhos, usando o sucessor em-ordem).
+* **Balanceamento e Aplicações:** No pior caso (árvore degenerada), uma BST vira uma lista ligada com tempo $O(n)$. O entendimento de árvores auto-balanceadas (como AVL e Rubro-Negra) é essencial para garantir operações em $O(\log n)$. Aplicações incluem índices de buscas, sistemas de arquivos e ordenação (*Tree Sort*).
 
-### 1.4 Árvores Binárias e Árvores Binárias de Busca (BST)
+### 1.5 Union-Find (Conjuntos Disjuntos)
 
-* **Árvores Binárias Gerais:**
-* **Conceito:** Estrutura hierárquica onde cada nó possui no máximo dois filhos (esquerdo e direito).
-* **Implementação e Percursos:** Pré-ordem, Em-ordem, Pós-ordem e Por Nível (Breadth-First).
-
-
-* **Árvores Binárias de Busca (BST - *Binary Search Tree*):**
-* **Conceito:** Propriedade da BST: elementos à esquerda do nó são menores; elementos à direita são maiores.
-* **Implementação:** Busca, inserção, remoção (tratando 0, 1 e 2 filhos - sucessor em-ordem) em $O(h)$.
-* **Árvores Balanceadas (Visão Geral):** Entendimento de pior caso $O(n)$ e árvores auto-balanceadas (AVL, Rubro-Negra) garantindo $O(\log n)$.
-
-
-* **Aplicações:** Índices de bancos de dados, sistemas de arquivos, ordenação (*Tree Sort*).
-
-### 1.5 Union-Find (Disjoint-Set)
-
-* **Conceito:** Representação de conjuntos disjuntos com operações para unir conjuntos e determinar se dois elementos pertencem ao mesmo conjunto.
-* **Implementação:**
-* Operações: `find` (encontrar representante) e `union` (juntar conjuntos).
-* Otimizações: **Compressão de caminho** (*Path Compression*) e **União por Rank/Tamanho** (*Union by Rank/Size*). Complexidade amortizada próxima de $O(1)$ ($\alpha(n)$ - função de Ackermann inversa).
-
-
-* **Aplicações:** Algoritmo de Kruskal (Árvore Geradora Mínima), detecção de ciclos em grafos não direcionados, componentes conectados dinâmicos.
+* **Conceito e Operações:** Estrutura para manter o rastro de um conjunto de elementos particionados em subconjuntos disjuntos, operando majoritariamente com os métodos `MakeSet`, `find` (encontra o representante) e `union` (junta dois conjuntos).
+* **Otimizações Críticas:** A combinação das técnicas de Compressão de Caminho (*Path Compression*) e União por Tamanho/Posto (*Union by Rank/Size*) garante uma complexidade de tempo amortizada quase constante, descrita pela função inversa de Ackermann ($\alpha(n)$).
+* **Aplicações Práticas:** Implementação do Algoritmo de Kruskal para Árvores Geradoras Mínimas, encontrar componentes conexos dinâmicos em grafos e detecção rápida de ciclos em grafos não direcionados.
 
 ---
 
@@ -94,84 +62,32 @@ Aqui está um roteiro detalhado de estudos em tópicos, estruturado para cobrir 
 
 ### 2.1 Complexidade Algorítmica e Notação Assintótica
 
-* **Conceito:** Análise do crescimento do tempo de execução e uso de memória em função do tamanho da entrada $n$.
-* **Notações Assintóticas:**
-* $O$ (*Big-O*): Limite superior (pior caso).
-* $\Omega$ (*Big-Omega*): Limite inferior (melhor caso).
-* $\Theta$ (*Big-Theta*): Limite justo (*tight bound*).
-
-
-* **Classes de Complexidade Comuns:** $O(1)$, $O(\log n)$, $O(n)$, $O(n \log n)$, $O(n^2)$, $O(2^n)$, $O(n!)$.
-* **Métodos de Análise:** Análise de laços simples/aninhados, Resolução de Recorrências (Método Mestre, Árvore de Recorrência e Substituição).
+* **Conceitos Básicos:** Análise matemática do crescimento do tempo de execução e consumo de memória (espaço) em função do tamanho da entrada $n$, avaliando laços aninhados, recursões e resolução de recorrências (Método Mestre).
+* **Notações Assintóticas:** Uso de $O$ (*Big-O*) para o limite superior/pior caso (foco principal de entrevistas e provas), $\Omega$ (*Big-Omega*) para limite inferior/melhor caso, e $\Theta$ (*Big-Theta*) para o limite exato (*tight bound*).
+* **Hierarquia de Complexidade:** Compreensão profunda das classes de eficiência, priorizando do mais rápido ao mais lento: $O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(2^n) < O(n!)$.
 
 ### 2.2 Algoritmos de Ordenação e Seleção
 
-* **Algoritmos de Ordenação por Comparação:**
-* **Quadráticos:** Insertion Sort, Selection Sort, Bubble Sort.
-* **Logarítmicos/Divisão e Conquista:** Merge Sort ($O(n \log n)$ garantido), Quick Sort ($O(n \log n)$ médio, escolha de pivô), Heap Sort ($O(n \log n)$ in-place).
-
-
-* **Algoritmos Não-Comparativos (Lineares):** Counting Sort, Radix Sort, Bucket Sort (condições de aplicabilidade e complexidade $O(n + k)$).
-* **Algoritmos de Seleção:**
-* QuickSelect (encontrar o $k$-ésimo menor elemento em tempo médio $O(n)$).
-
-
-* **Aplicações:** Ordenação de dados em bancos de dados, buscas binárias, computação gráfica.
+* **Ordenação Básica / Quadrática ($O(n^2)$):** Bubble Sort, Selection Sort e Insertion Sort (este último notável por ser muito eficiente para listas pequenas ou quase já ordenadas).
+* **Ordenação Eficiente ($O(n \log n)$):** Merge Sort (estável, mas exige memória extra), Quick Sort (*in-place*, rápido na média, mas de pior caso $O(n^2)$ dependendo da escolha do pivô) e Heap Sort (*in-place* e tempo garantido).
+* **Ordenação em Tempo Linear e Seleção:** Algoritmos não-comparativos baseados na natureza dos dados, como Counting Sort, Radix Sort e Bucket Sort (complexidade $O(n + k)$). Inclui também o Quickselect para encontrar o $k$-ésimo menor elemento de um array não ordenado em tempo médio linear.
 
 ### 2.3 Algoritmos para Problemas em Grafos
 
-* **Representação de Grafos:** Matriz de Adjacência vs. Lista de Adjacência (espaço e eficiência).
-* **Buscas e Aplicações:**
-* **Busca em Largura (BFS):** Fila, caminho mínimo em grafos sem peso, verificação de grafos bipartidos.
-* **Busca em Profundidade (DFS):** Pilha/Recursão, tempos de descoberta/finalização, classificação de arestas (árvore, retorno, avanço, cruzamento).
-* **Componentes Conexos:** Identificação via BFS/DFS em grafos não-direcionados.
-* **Componentes Fortemente Conexos (SCC):** Algoritmo de Tarjan ou Kosaraju em grafos direcionados.
-* **Ordenação Topológica:** Algoritmo de Kahn (BFS) e ordenação por tempo de finalização da DFS em DAGs (Grafos Acíclicos Direcionados).
-
-
-* **Árvore Geradora Mínima (MST):**
-* **Algoritmo de Kruskal:** Usa ordenação de arestas + Union-Find.
-* **Algoritmo de Prim:** Usa Fila de Prioridade (*Min-Heap*).
-
-
-* **Caminhos Mínimos:**
-* **Fonte Única sem pesos negativos:** Algoritmo de Dijkstra ($O((V + E) \log V)$ com heap).
-* **Fonte Única com pesos negativos:** Algoritmo de Bellman-Ford (detecção de ciclos negativos).
-* **Todos para Todos:** Algoritmo de Floyd-Warshall ($O(V^3)$ por programação dinâmica).
-
-
+* **Representação e Busca:** Escolha entre Matriz de Adjacência (grafos densos) e Lista de Adjacência (grafos esparsos). Domínio da Busca em Largura (BFS, usa fila, acha caminhos curtos em grafos sem peso) e Busca em Profundidade (DFS, usa recursão/pilha, acha ciclos e labirintos).
+* **Aplicações Avançadas de Busca:** Identificação de Componentes Conexos, Componentes Fortemente Conexos em grafos direcionados (Algoritmos de Tarjan ou Kosaraju) e Ordenação Topológica em DAGs (via DFS ou Algoritmo de Kahn).
+* **Árvore Geradora Mínima (MST):** Algoritmo de Prim (cresce a partir de um vértice usando Fila de Prioridade) e Algoritmo de Kruskal (ordena arestas globais usando Union-Find para evitar ciclos).
+* **Caminhos Mínimos:** Algoritmo de Dijkstra (para grafos com pesos não-negativos, $O((V+E)\log V)$), Bellman-Ford (lida com pesos negativos e detecta ciclos negativos) e Floyd-Warshall (encontra caminhos entre todos os pares usando Programação Dinâmica, $O(V^3)$).
 
 ### 2.4 NP-Completude
 
-* **Classes de Problemas:**
-* **P:** Problemas solúveis em tempo polinomial por uma Máquina de Turing determinística.
-* **NP:** Problemas cujas soluções podem ser verificadas em tempo polinomial por uma Máquina de Turing não-determinística.
-
-
-* **Conceito de Redução Polinomial:** $A \le_P B$ (se $B$ for fácil, $A$ também é).
-* **NP-Duro (NP-Hard) e NP-Completo (NPC):**
-* Definição e Teorema de Cook-Levin (SAT é NP-Completo).
-
-
-* **Problemas Clássicos NP-Completos:** SAT / 3-SAT, Clicagem (*Clique*), Cobertura de Vértices (*Vertex Cover*), Ciclo Hamiltoniano, Caxeiro Viajante (TSP), Soma dos Subconjuntos (*Subset Sum*), Mochila (*Knapsack* 0/1).
-* **Estratégias para Lidar com Problemas NPC:** Algoritmos de aproximação, programação dinâmica (soluções pseudo-polinomiais), heurísticas e *backtracking*/Branch & Bound.
+* **Classes de Complexidade:** Distinção exata entre a classe **P** (resolvível em tempo polinomial), **NP** (verificável em tempo polinomial de forma não-determinística), **NP-Completo** (os problemas mais difíceis dentro de NP, baseados no Teorema de Cook-Levin) e **NP-Difícil** (*NP-Hard*).
+* **Conceitos e Provas:** Uso da redução polinomial ($A \le_P B$) para provar a dificuldade de um problema transformando-o em outro já conhecido.
+* **Problemas Clássicos e Soluções:** Conhecimento de problemas notórios como SAT/3-SAT, Caixeiro Viajante (TSP), Mochila (*Knapsack*), Clique e Cobertura de Vértices (*Vertex Cover*). Na prática, resolvem-se com heurísticas, algoritmos de aproximação, Programação Dinâmica (pseudo-polinomial) ou *Branch & Bound*.
 
 ### 2.5 Autômatos Finitos e Expressões Regulares
 
-* **Autômatos Finitos Determinísticos (AFD):**
-* Definição formal (quíntupla $\Sigma, Q, q_0, F, \delta$), diagrama de estados e tabela de transições.
-
-
-* **Autômatos Finitos Não-Determinísticos (AFN e AFN-$\epsilon$):**
-* Transições múltiplas e transições vazias.
-* Algoritmo de conversão AFN $\to$ AFD (Construção do Subconjunto / *Powerset Construction*).
-
-
-* **Expressões Regulares (ER / Regex):**
-* Operadores regulares: União ($\vert{}$), Concatenação, Fecho de Kleene ($*$).
-* Equivalência entre Expressões Regulares e Autômatos Finitos (Teorema de Kleene).
-
-* **Linguagens Regulares:**
-* Propriedades de fechamento (união, interseção, complemento).
-* **Lema do Bombeamento (*Pumping Lemma*):** Utilização para provar que uma determinada linguagem **não** é regular.
-* **Aplicações:** Análise léxica de compiladores, validação de entrada, busca de padrões em textos.
+* **Expressões Regulares (Regex) e Linguagens:** Descrição de linguagens regulares usando os operadores de união ($\vert$), concatenação e Fecho de Kleene ($*$). Compreensão das propriedades de fechamento e do Lema do Bombeamento (*Pumping Lemma*) usado estritamente para provar que linguagens (como $a^n b^n$) **não** são regulares.
+* **Autômatos Finitos Determinísticos (AFD):** Modelo formal de 5-tuplas ($\Sigma, Q, q_0, F, \delta$) onde para cada estado e símbolo do alfabeto existe apenas uma transição possível.
+* **Autômatos Finitos Não-Determinísticos (AFN e AFN-$\epsilon$):** Permitem ramificações múltiplas de estados para o mesmo símbolo e transições vazias (sem consumir entrada).
+* **Teoremas e Conversões (Teorema de Kleene):** Conversão de Regex para AFN através do Algoritmo de Thompson, e de AFN para AFD utilizando a Construção de Subconjuntos (*Powerset Construction*). Fundamentais para a construção de analisadores léxicos em compiladores e *pattern matching*.
