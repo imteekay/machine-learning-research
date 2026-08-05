@@ -17,12 +17,6 @@ Aqui está um roteiro detalhado de estudos em tópicos, estruturado para cobrir 
 
 ---
 
-Aqui está o seu guia de estudos unificado. Ele combina a riqueza de detalhes teóricos e práticos da primeira lista com a excelente estruturação e o rigor técnico (como notações assintóticas e termos específicos) da segunda lista.
-
-O material foi estruturado para evitar sublistas, mantendo a leitura direta, escaneável e focada no que você precisa saber para provas ou aplicações práticas.
-
----
-
 ## 1. Estruturas de Dados
 
 ### 1.1 Listas Ligadas, Pilhas, Filas e Listas de Prioridade
