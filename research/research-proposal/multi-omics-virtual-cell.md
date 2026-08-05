@@ -43,3 +43,7 @@
 8. **Knowledge to Learn:**
 * *Computational:* Graph Neural Networks (GNNs) for cell-to-cell communication, and Gaussian Processes/Variational Autoencoders for modeling continuous spatial domains.
 * *Biological:* Tissue Microenvironments, Immunology, and how cells physically signal one another across physical space.
+
+## Resources
+
+- [Awesome Foundation Model Single Cell](https://github.com/OmicsML/awesome-foundation-model-single-cell-papers)
