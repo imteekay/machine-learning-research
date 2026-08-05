@@ -1,5 +1,7 @@
 # Exam
 
+[More info](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/3%20%C3%81reas%20Topicos%20e%20Bibliografia%20da%20prova%20-%20revisado_0.pdf)
+
 - Duração máxima de 3 horas
 - A prova será composta por 60 (sessenta) questões de múltipla escolha, com questões divididas igualmente entre as 3 (três) áreas mencionadas acima. 
 - O candidato deve responder a um total de 20 (vinte) questões, sendo que no mínimo 14 (quatorze) devem pertencer a uma única área do conhecimento (as outras seis questões podem ser da mesma área que as 14 ou ser uma combinação de questões das outras áreas, a critério do candidato). 
