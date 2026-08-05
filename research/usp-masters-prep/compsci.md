@@ -1,5 +1,8 @@
 # Computer Science
 
+- [Flashcards](https://gemini.google.com/share/d/1aornDEUH8iBDNt8NwXka1HZ8NXLTmMro?usp=sharing)
+- [Test](https://gemini.google.com/share/d/1S7BW--7cQobPc1Q2Dt1ugwxmwHAJSUJB?usp=sharing)
+
 ## 1. Estruturas de Dados
 
 ### 1.1 Listas Ligadas, Pilhas, Filas e Listas de Prioridade
