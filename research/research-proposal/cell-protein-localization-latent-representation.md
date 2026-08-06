@@ -41,3 +41,8 @@ Vector-Quantized Variational Autoencoders (VQ-VAEs):
   - The codebook is learned during training: random initialization and learned vectors through training
 - Snap (quantization) the input to the nearest match from the codebook
   - Nearest match: euclidean distance
+- Model
+  - Encoding: Image -> Encoder (CNN) -> Encoder Output
+  - Quantization: Encoder Output -> Snap it to the closest match (codebook) -> Quantized output
+  - Decoding: Quantized output -> Decoder (CNN) -> Reconstruct the original image
+  - Codebook embedding: learned vector
