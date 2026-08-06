@@ -585,6 +585,7 @@
 - [[Article] Genome Foundation Models](https://andrewcarroll.github.io/2026/05/26/genome-foundation-models.html)
 - [[Paper] MAMMAL - Molecular Aligned Multi-Modal Architecture and Language for biomedical discovery](https://www.nature.com/articles/s44386-026-00047-4)
   - [The biggest AI breakthrough in medicine & drug discovery](https://www.youtube.com/watch?v=s3rNDndvav0)
+- [[Course] Learn Computer-Aided Drug Design from First Principles](https://learn-cadd.vercel.app)
 
 ### Podcasts
 
