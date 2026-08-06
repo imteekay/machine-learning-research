@@ -28,3 +28,16 @@ Autoencoder:
 - A decoder then attempts to reconstruct the original input from that compressed version.
 
 The internal representation is known as the bottleneck. It forces the model to distill the most important patterns in the data, while discarding irrelevant details. This is a form of dimensionality reduction
+
+Variational Autoencoder:
+
+- The encoder outputs two numbers per latent dimension: a mean and a standard deviation.
+- These define a normal distribution—a bell curve—for each coordinate in the latent space.
+- Instead of feeding a fixed number to the decoder, the model samples a value from each distribution.
+
+Vector-Quantized Variational Autoencoders (VQ-VAEs):
+
+- Codebook: fixed set of allowed vectors
+  - The codebook is learned during training: random initialization and learned vectors through training
+- Snap (quantization) the input to the nearest match from the codebook
+  - Nearest match: euclidean distance
