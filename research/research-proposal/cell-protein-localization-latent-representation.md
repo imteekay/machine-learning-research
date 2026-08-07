@@ -46,3 +46,7 @@ Vector-Quantized Variational Autoencoders (VQ-VAEs):
   - Quantization: Encoder Output -> Snap it to the closest match (codebook) -> Quantized output
   - Decoding: Quantized output -> Decoder (CNN) -> Reconstruct the original image
   - Codebook embedding: learned vector
+
+## Model
+
+- Learn patterns without supervision (labels, annotations)

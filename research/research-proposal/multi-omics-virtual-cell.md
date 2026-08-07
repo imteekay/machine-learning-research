@@ -1,3 +1,12 @@
+# Multiomics Virtual Cell
+
+If we understand cells—how they behave and interact in their native environments—we can identify when they are malfunctioning or mislocalized, allowing us to build better therapies that maximize clinical efficacy while minimizing off-target side effects.
+
+- **Tissue-level world model**: study the ecosystem of disease
+- **Enabling In Silico Clinical Trials and Drug Discovery**: virtually "inject" a drug, observe the epigenetic and transcriptomic shifts in a target cell, and watch the cascading effects on the surrounding tissue
+- **Decoding Emergent, Multicellular Diseases**: understand the collapse of communication between multiple cell types
+- **Precision Medicine tool**: engineer highly localized treatments, maximizing the drug's effectiveness exactly where it is needed
+
 ### Part 1: The Master’s Plan (Years 1-2)
 
 **Theme: The Context-Aware Single Cell (Multi-Omic Perturbations)**
