@@ -50,3 +50,8 @@ Vector-Quantized Variational Autoencoders (VQ-VAEs):
 ## Model
 
 - Learn patterns without supervision (labels, annotations)
+- Dataset
+  - Pixels inside the nucleus are assigned positive values, representing the shortest distance to the nuclear boundary.
+  - Pixels outside the nucleus are assigned negative values, also based on shortest distance to the nuclear edge.
+  - Protein annotations: gene names and unique IDs
+  - Curated localization labels: Manually assigned organelle or compartment categories (not used on training — used afterward to evaluate whether the model has learned biologically meaningful representations on its own)
