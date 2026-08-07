@@ -47,3 +47,4 @@
 ## Resources
 
 - [Awesome Foundation Model Single Cell](https://github.com/OmicsML/awesome-foundation-model-single-cell-papers)
+- [OpenCell Datasets](https://opencell.sf.czbiohub.org)
