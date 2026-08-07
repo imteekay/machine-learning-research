@@ -55,3 +55,16 @@ If our model predicts an 85% chance a user will return an item in their cart, wh
 * **Offline Metric:** F1-Score or Precision/Recall. (If we revoke free shipping based on a False Positive, we might anger a loyal customer. Precision is highly important here).
 * **Online Metric:** Reduction in return shipping costs ($), Cart abandonment rate (checking to make sure our interventions aren't scaring people away from buying altogether).
 * **Risks:** Alienating good customers with aggressive policies.
+
+---
+
+### Conditional Framing
+
+Hypothesis 1: The issue is Wardrobing/Fraud. 
+- If true: We will build a Binary Classification Model to predict the probability of a return at checkout and dynamically remove the "Free Returns" perk for high-risk carts.
+
+Hypothesis 2: The issue is Sizing/Fit. 
+- If true: We will build a Recommendation System (or a simple rules-based engine) that triggers a pop-up warning customers if an item runs small/large based on their past purchase history.
+
+Hypothesis 3: The issue is Damaged Goods or Slow Shipping.
+- If true: No ML needed. We will work with the supply chain team to fix warehouse packaging or change shipping carriers.
