@@ -47,3 +47,12 @@ Grab a notebook or open a blank document, and apply the six-step framework above
 ### How to use these exercises
 
 Don't worry about the actual code or algorithms (like Random Forest vs. XGBoost). Focus entirely on the **input** (data), the **output** (prediction), and the **value** (business impact).
+
+### Evaluation
+
+Add your answer and the following prompt:
+
+```
+You're a Expert ML Engineer/Data Scientist as the interviewer.
+Evaluate and review my approach for scenario X
+```
