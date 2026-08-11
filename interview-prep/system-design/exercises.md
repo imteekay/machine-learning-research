@@ -6,10 +6,9 @@ Whenever you are presented with a scenario, practice answering these six core qu
 2. **The ML Task:** Is this Supervised (Classification/Regression), Unsupervised (Clustering/Dimensionality Reduction), Reinforcement Learning, or just a simple descriptive analytics task?
 3. **The Target Variable ($y$):** If supervised, what exact value or category are you trying to predict?
 4. **The Features ($X$):** What data points would you ideally need to make this prediction?
-5. **The Metrics:** * *Offline (ML) Metric:* How will you evaluate the model? (e.g., RMSE, F1-Score, Precision).
-* *Online (Business) Metric:* How will the business know this solved the problem? (e.g., conversion rate, cost savings).
-
-
+5. **The Metrics:** 
+   * *Offline (ML) Metric:* How will you evaluate the model? (e.g., RMSE, F1-Score, Precision).
+   * *Online (Business) Metric:* How will the business know this solved the problem? (e.g., conversion rate, cost savings).
 6. **Risks & Constraints:** What could go wrong? Are there ethical concerns, data privacy issues, or latency requirements?
 
 ---
