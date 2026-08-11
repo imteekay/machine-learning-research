@@ -160,7 +160,7 @@
 - [Monitoring Machine Learning Models in Production](https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models)
 - [From Model-centric to Data-centric AI](https://www.youtube.com/watch?v=06-AZXmwHjo)
 - [Making Deep Learning Go Brrrr From First Principles](https://horace.io/brrr_intro.html)
-- [ML Experiment Tracking: What It Is, Why It Matters, and How to Implement It](https://neptune.ai/blog/ml-experiment-tracking)
+- [ML Experiment Tracking: What It Is, Why It Matters, and How to Implement It](https://www.bestaiweb.ai/glossary/experiment-tracking/)
 - [ML Model Baselines](https://blog.ml.cmu.edu/2020/08/31/3-baselines)
 - [[Paper] Large Scale Distributed Deep Networks](https://www.cs.toronto.edu/~ranzato/publications/DistBeliefNIPS2012_withAppendix.pdf)
 - [[Book] Machine Learning Systems](https://www.mlsysbook.ai) ([PDF](https://www.mlsysbook.ai/assets/downloads/Machine-Learning-Systems.pdf))
