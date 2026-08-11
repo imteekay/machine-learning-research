@@ -119,7 +119,7 @@ Learn DL foundation to broaden my view of the field and experiment with differen
   - [X] [Deep Neural Networks](https://www.iamtk.co/building-a-deep-neural-network-from-scratch)
   - [ ] Convolutional Neural Networks (CNNs)
     - [ ] VGG
-    - [ ] ResNet
+    - [X] ResNet
     - [ ] U-Net
   - [X] Recurrent Neural Networks (RNNs)
     - [X] [Recurrent Neural Network](https://www.iamtk.co/building-a-recurrent-neural-network-from-scratch-with-python-and-mathematics) ([RNN Lab](projects/rnn/recurrent-neural-network-regression.ipynb))
