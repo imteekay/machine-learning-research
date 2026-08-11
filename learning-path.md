@@ -226,6 +226,7 @@ Learn DL foundation to broaden my view of the field and experiment with differen
     - [A Comprehensive Survey of Foundation Models in Medicine](https://arxiv.org/pdf/2406.10729)
     - [Foundation Model in Biomedicine](https://arxiv.org/pdf/2503.02104)
     - [Single-cell foundation models: bringing artificial intelligence into cell biology](https://www.nature.com/articles/s12276-025-01547-5)
+    - [The Virtual Tissues foundation model resolves spatial proteomics across scales](https://www.nature.com/articles/s41586-026-10884-y)
   - Unpack Papers and Models
     - [ ] RoseTTaFold
     - [ ] AlphaFold
