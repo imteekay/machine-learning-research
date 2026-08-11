@@ -215,6 +215,7 @@ Learn DL foundation to broaden my view of the field and experiment with differen
     - [ ] [MELD in Action: Harnessing Data to accelerate Molecular Dynamics](https://pmc.ncbi.nlm.nih.gov/articles/PMC12290800)
   - Multiomics
     - [Single-Cell Multiomics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11146013)
+    - [Harnessing Artificial Intelligence in Multimodal Omics Data Integration: Paving the Path for the Next Frontier in Precision Medicine](https://pubmed.ncbi.nlm.nih.gov/38768397)
   - Biology Foundation Models
     - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
     - [Towards Expert-Level Medical Question Answering with Large Language Models](https://arxiv.org/pdf/2305.09617)
