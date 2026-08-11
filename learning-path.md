@@ -216,6 +216,7 @@ Learn DL foundation to broaden my view of the field and experiment with differen
   - Multiomics
     - [Single-Cell Multiomics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11146013)
     - [Harnessing Artificial Intelligence in Multimodal Omics Data Integration: Paving the Path for the Next Frontier in Precision Medicine](https://pubmed.ncbi.nlm.nih.gov/38768397)
+    - [Multimodal deep learning approaches for single-cell multi-omics data integration](https://pmc.ncbi.nlm.nih.gov/articles/PMC10516349)
   - Biology Foundation Models
     - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
     - [Towards Expert-Level Medical Question Answering with Large Language Models](https://arxiv.org/pdf/2305.09617)
