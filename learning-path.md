@@ -220,6 +220,7 @@ Learn DL foundation to broaden my view of the field and experiment with differen
     - [Progress and opportunities of foundation models in bioinformatics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11512649)
     - [Foundation models in bioinformatics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11900445)
     - [A Comprehensive Survey of Foundation Models in Medicine](https://arxiv.org/pdf/2406.10729)
+    - [Foundation Model in Biomedicine](https://arxiv.org/pdf/2503.02104)
   - Unpack Papers and Models
     - [ ] RoseTTaFold
     - [ ] AlphaFold
