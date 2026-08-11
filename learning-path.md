@@ -217,6 +217,7 @@ Learn DL foundation to broaden my view of the field and experiment with differen
     - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
     - [Towards Expert-Level Medical Question Answering with Large Language Models](https://arxiv.org/pdf/2305.09617)
     - [Towards Generalist Biomedical AI](https://arxiv.org/pdf/2307.14334)
+    - [Progress and opportunities of foundation models in bioinformatics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11512649)
   - Unpack Papers and Models
     - [ ] RoseTTaFold
     - [ ] AlphaFold
