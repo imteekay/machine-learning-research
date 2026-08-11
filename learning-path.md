@@ -55,7 +55,7 @@ Good foundation in coding, ML systems, distributed systems, GPUs/TPUs, Kernel
 - [ ] ML Systems
   - [X] [Pytorch, Resource Accounting](https://www.youtube.com/watch?v=msHyYioAyNE)
   - [X] [GPUs](https://www.youtube.com/watch?v=6OBtO9niT00)
-  - [ ] [Kernels, Triton](https://www.youtube.com/watch?v=E8Mju53VB00)
+  - [X] [Kernels, Triton](https://www.youtube.com/watch?v=E8Mju53VB00)
   - [ ] [Low Level Technicals of LLMs](https://www.youtube.com/watch?v=pRM_P6UfdIc)
   - [ ] [Making Deep Learning Go Brrrr From First Principles](https://horace.io/brrr_intro.html)
   - [ ] [How to Scale Your Model](https://jax-ml.github.io/scaling-book)
