@@ -7,6 +7,7 @@
 ---
 
 - Business Goal: Make customers happier by responding them as quickly as possible by the correct departmnent (Billing, Tech Support, or Sales)
+  - Business metric: Routing accuracy (how effective the model is) and time to resolution (of the ticket)
 - ML Goal: Automate the (manual) agent routing system with machine learning
 - Supervised learning model: multiclass classification ML model
   - The model is trained on the support ticket content (feature)
@@ -23,9 +24,12 @@
   - NLP: transformer based model with input tokenization
   - Loss: Categorical cross-entropy loss function
   - Metrics: precision, recall, f1 score, ROC-AUC
+  - Human-in-the-loop: probability threshold -> below 80% confidence, send it to the human agent
 - Agent/AI model approach
   - It's an engineering and prompt engineering system
   - Every time the customer sends a support ticket, it goes to a backend that will send the message to a queue (sqs, kafka)
   - The queue reads it, and runs the call for a foundation model (gemini, opus, gpt) and it stores the classification of the support ticket (label = department)
   - Online eval: we can evaluate the output of this model in production - how good the output of the model and where the prompt is failing
   - Going deep into architecture: instead of a simple call to the AI model, we build an agent with tools, the agent has its own prompt (how to read the support ticket, and how to classify the labels) and tools (how to store it in the backend database)
+    - It may be an over engineering solution as a single prompt can be simple and effective compared to building an entire agent
+  - Human-in-the-loop: in the LLM call, ask to output the logprobs (confidence) and use it to assign the label and route to a human agent
