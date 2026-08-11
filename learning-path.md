@@ -213,6 +213,8 @@ Learn DL foundation to broaden my view of the field and experiment with differen
     - [ ] [Experimental Data Driven AI Framework for Flexible Protein Conformational Reconstruction](https://www.biorxiv.org/content/10.64898/2026.03.12.708611v1)
     - [ ] [Free Energy Calculation Method Based on Enhanced Sampling of Diverse Protein Conformations Predicted by Artificial Intelligence](https://pubs.acs.org/doi/10.1021/acs.jpclett.6c00466)
     - [ ] [MELD in Action: Harnessing Data to accelerate Molecular Dynamics](https://pmc.ncbi.nlm.nih.gov/articles/PMC12290800)
+  - Multiomics
+    - [Single-Cell Multiomics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11146013)
   - Biology Foundation Models
     - [Large Language Models Encode Clinical Knowledge](https://arxiv.org/pdf/2212.13138)
     - [Towards Expert-Level Medical Question Answering with Large Language Models](https://arxiv.org/pdf/2305.09617)
@@ -221,6 +223,7 @@ Learn DL foundation to broaden my view of the field and experiment with differen
     - [Foundation models in bioinformatics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11900445)
     - [A Comprehensive Survey of Foundation Models in Medicine](https://arxiv.org/pdf/2406.10729)
     - [Foundation Model in Biomedicine](https://arxiv.org/pdf/2503.02104)
+    - [Single-cell foundation models: bringing artificial intelligence into cell biology](https://www.nature.com/articles/s12276-025-01547-5)
   - Unpack Papers and Models
     - [ ] RoseTTaFold
     - [ ] AlphaFold
