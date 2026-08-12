@@ -1,7 +1,27 @@
 # Computer Science
 
+## Mock Tests
+
 - [Flashcards](https://gemini.google.com/share/d/1aornDEUH8iBDNt8NwXka1HZ8NXLTmMro?usp=sharing)
 - [Test](https://gemini.google.com/share/d/1S7BW--7cQobPc1Q2Dt1ugwxmwHAJSUJB?usp=sharing)
+
+## Prep
+
+Topics to study
+
+- [ ] Listas Ligadas
+- [ ] Pilhas
+- [ ] Filas
+- [ ] Listas de Prioridade
+- [ ] Recursão
+- [ ] Hash Tables
+- [ ] BST
+- [ ] Union-Find
+- [ ] Complexidade Algorítmica e Notação Assintótica
+- [ ] Algoritmos de Ordenação e Seleção
+- [ ] Algoritmos para Problemas em Grafos
+- [ ] NP-Completude
+- [ ] Autômatos Finitos e Expressões Regulares
 
 ## 1. Estruturas de Dados
 
