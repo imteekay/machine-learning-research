@@ -84,6 +84,11 @@ A recursão ocorre quando uma função resolve um problema chamando a si mesma c
 
 A otimização de **recursão de cauda** (*tail recursion*) é um truque de compiladores modernos: se a chamada recursiva for a absoluta última instrução da função, o compilador não cria um novo quadro na memória, mas sim reaproveita o atual, transformando a recursão em um loop iterativo altamente eficiente por baixo dos panos.
 
+- O gatilho (Zero pendências): A otimização só acontece se a função filha for a última coisa a ser executada. Se houver qualquer operação pendente (como n * f(n-1)), o sistema é forçado a empilhar para guardar o estado atual até a volta do cálculo.
+- O que o TCO faz: Quando não há nada pendente, o sistema descarta o estado atual e sobrescreve o mesmo espaço na pilha, em vez de empilhar uma nova chamada por cima da outra.
+- O problema que resolve: Elimina o acúmulo de memória e previne o estouro da pilha (Stack Overflow) em recursões profundas.
+- O resultado: Reduz o consumo de memória de $O(N)$ (que cresce a cada chamada) para $O(1)$ (constante), fazendo a recursão rodar com a mesma eficiência de um loop while.
+
 **Conceito:** Uma função que chama a si mesma para resolver subproblemas menores.
 
 * **Mecânica:** Exige um **Caso Base** (parada) e um **Caso Recursivo**.  
