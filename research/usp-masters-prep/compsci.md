@@ -71,6 +71,22 @@ Uma lista de prioridade garante que o elemento de maior (ou menor) relevância e
 
 **Conceito:** Estrutura onde cada elemento tem uma prioridade. Geralmente implementada como um **Heap** (árvore binária completa num array).
 
+**Insert**:
+
+- Adiciona o elemento na última posição do array
+- Compara com o nó pai: verifica se é mais prioritário (ex: em MaxHeap, mais prioritário significa número maior que o valor do nó pai)
+- Se for mais prioritário, faz o swap
+- Continua esse processo até que chegue no inicio da árvore (index 0 do array) ou se o nó pai for mais prioritário
+
+**Extract**:
+
+- Remove o item mais prioritário (primeiro elemento da lista)
+- Coloca o último item da lista na primeira posição da lista
+- Compara com o nó filha da esquerda e direita e verifica se var fazer o swap e com qual nó fará
+- Continua esse processo até que o elemento esteja na posição certa (não tenha mais itens prioritário) ou chegue no nó da árvore
+
+**Sumário**:
+
 * **Operações:**  
   * Insert: ![][image3]  
   * Extract Max/Min: ![][image3]  
