@@ -938,6 +938,7 @@
 - [Pranav Rajpurkar](https://pranavrajpurkar.com)
 - [The AI Health Podcast](https://twitter.com/AIHealthPodcast)
 - [Starkly Speaking](https://portal.valencelabs.com/starklyspeaking)
+- [Multiomics Reading Group](https://multiomics-reading-group.github.io)
 
 ### Central Resources
 
