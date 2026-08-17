@@ -150,8 +150,8 @@ O Union-Find faz isso elegendo um "nó representante" para cada grupo. A otimiza
 **Conceito:** Gerencia conjuntos disjuntos. Determina rapidamente se dois elementos pertencem ao mesmo grupo.
 
 * **Operações:**  
-  * Find: Identifica o representante do conjunto.  
   * Union: Une dois conjuntos.  
+  * Find: Identifica o representante do conjunto.  
 * **Otimizações:** **Compressão de Caminho** (aponta nós direto para a raiz) e **União por Rank** (árvore menor sob a maior).  
 * **Tempo:** Quase constante ![][image4], onde ![][image5] é a inversa de Ackermann.  
 * **Memória:** ![][image2].
