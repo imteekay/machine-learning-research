@@ -9,14 +9,14 @@
 
 Topics to study
 
-- [ ] Listas Ligadas
-- [ ] Pilhas
-- [ ] Filas
-- [ ] Listas de Prioridade
-- [ ] Recursão
-- [ ] Hash Tables
-- [ ] BST
-- [ ] Union-Find
+- [X] Listas Ligadas
+- [X] Pilhas
+- [X] Filas
+- [X] Listas de Prioridade
+- [X] Recursão
+- [X] Hash Tables
+- [X] BST
+- [X] Union-Find
 - [ ] Complexidade Algorítmica e Notação Assintótica
 - [ ] Algoritmos de Ordenação e Seleção
 - [ ] Algoritmos para Problemas em Grafos
