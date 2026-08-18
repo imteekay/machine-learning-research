@@ -145,16 +145,43 @@ O problema prático é o **desbalanceamento**. Se você inserir dados já ordena
 
 Esta é uma estrutura de nicho, mas extremamente poderosa para rastrear conexões. Imagine uma rede social onde você quer saber rapidamente se a Pessoa A tem alguma conexão indireta com a Pessoa B.
 
-O Union-Find faz isso elegendo um "nó representante" para cada grupo. A otimização que torna isso mágico é a **Compressão de Caminho**: toda vez que você busca o representante do grupo de um nó, a estrutura religa esse nó diretamente ao representante principal. Nas buscas futuras, o acesso é quase instantâneo. A complexidade de tempo se torna a função inversa de Ackermann, $\alpha(n)$, que para propósitos práticos no universo computacional, é $\le 4$ (essencialmente $O(1)$).
+O Union-Find faz isso elegendo um "nó representante" para cada grupo. 
+
+Otimizações
+- A otimização que torna isso mágico é a **Compressão de Caminho** (Path Compression): toda vez que você busca o representante do grupo de um nó, a estrutura religa esse nó diretamente ao representante principal. Nas buscas futuras, o acesso é quase instantâneo. A complexidade de tempo se torna a função inversa de Ackermann, $\alpha(n)$, que para propósitos práticos no universo computacional, é $\le 4$ (essencialmente $O(1)$).
+- Union by Rank é uma técnica de otimização para a estrutura de dados Disjoint Set Union que evita que a árvore de elementos se torne desbalanceada ou "esticada" como uma lista encadeada. Ao unir dois conjuntos, a raiz da árvore de menor rank é anexada como filha da raiz de maior rank.
 
 **Conceito:** Gerencia conjuntos disjuntos. Determina rapidamente se dois elementos pertencem ao mesmo grupo.
 
 * **Operações:**  
   * Union: Une dois conjuntos.  
-  * Find: Identifica o representante do conjunto.  
+  * Find: Identifica e retorna o representante do conjunto. O representate é a raíz do conjunto, ou seja, é preciso fazer a travesia recursivamente até que chegue no pai raíz.
 * **Otimizações:** **Compressão de Caminho** (aponta nós direto para a raiz) e **União por Rank** (árvore menor sob a maior).  
-* **Tempo:** Quase constante ![][image4], onde ![][image5] é a inversa de Ackermann.  
+* **Tempo:** 
+  * Find/Union: Quase constante ![][image4], onde ![][image5] é a inversa de Ackermann.
 * **Memória:** ![][image2].
+
+**Find**
+
+```
+function find(index) {
+  if (parent[index] != index) {
+    return find(parent[index]);
+  }
+
+  return index;
+}
+```
+
+**Union**
+
+```
+function union(a, b) {
+  const repA = find(a);
+  const repB = find(b);
+  parent[repB] = repA;
+}
+```
 
 ---
 
