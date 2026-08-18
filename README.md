@@ -60,6 +60,7 @@
     - [Research \& Laboratories](#research--laboratories)
     - [Communities](#communities)
     - [Central Resources](#central-resources)
+    - [Companies](#companies)
   - [License](#license)
 
 ## Learning Roadmap
@@ -952,6 +953,12 @@
 - [Cancer.Net](https://www.cancer.net)
 - [Books on Computational Molecular Biology](https://mitpress.mit.edu/books/series/computational-molecular-biology)
 - [Obenauf Lab](https://www.obenauflab.com)
+
+### Companies
+
+- [Arcadia](https://www.arcadiascience.com)
+- [Calico](https://www.calicolabs.com)
+- [Altos Labs](https://www.altoslabs.com)
 
 ## License
 
