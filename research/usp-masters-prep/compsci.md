@@ -9,6 +9,7 @@
 
 Topics to study
 
+- [X] Arrays
 - [X] Listas Ligadas
 - [X] Pilhas
 - [X] Filas
@@ -25,19 +26,41 @@ Topics to study
 
 ## 1. Estruturas de Dados
 
-### 1.1 Listas Ligadas, Pilhas, Filas e Listas de Prioridade
+### 1.1 Arrays, Listas Ligadas, Pilhas, Filas e Listas de Prioridade
+
+#### Arrays
+
+O array aloca um bloco contíguo de memória onde cada elemento ocupa uma posição indexada. O acesso por índice é direto — o hardware calcula o endereço de memória em tempo constante. A troca é que inserções e remoções fora do final exigem deslocar os elementos adjacentes, e arrays dinâmicos podem precisar realocar todo o bloco quando a capacidade é esgotada.
+
+**Conceito:** Sequência de elementos em memória contígua, acessados por índice.
+
+* **Operações:**  
+  * Busca por índice: $O(1)$  
+  * Busca por elemento: $O(n)$  
+  * Busca por elemento (array ordenado, busca binária): $O(\log n)$  
+  * Adicionar no final (array estático, com memória disponível): $O(1)$  
+  * Adicionar no final (array dinâmico, worst case — resize): $O(n)$  
+  * Adicionar em posição que não é o final (estático ou dinâmico): $O(n)$ — shift de posição  
+  * Remover o último elemento: $O(1)$  
+  * Remover elemento que não é o último: $O(n)$ — shift de posição  
+* **Memória:** $O(n)$.  
+* **Aplicação:** Base de heaps, buffers, cache de CPU, representação de vetores e matrizes.
 
 #### Listas Ligadas (Linked Lists)
 
-Diferente de um array, que aloca um bloco contíguo de memória, a lista ligada espalha seus elementos (nós) pela memória. Cada nó guarda o dado e um ponteiro de memória indicando onde está o próximo elemento. Isso torna a inserção e remoção no início ou no meio (se você já tiver o ponteiro) extremamente rápidas, operando em tempo $O(1)$. No entanto, você perde o acesso aleatório: para ler o 50º elemento, você obrigatoriamente precisa percorrer os 49 anteriores, resultando em uma busca de tempo $O(n)$.
+Diferente de um array, que aloca um bloco contíguo de memória, a lista ligada espalha seus elementos (nós) pela memória. Cada nó guarda o dado e um ponteiro indicando o próximo elemento. Inserção e remoção no início são $O(1)$, mas qualquer operação no meio ou no final exige percorrer a lista até a posição desejada — $O(n)$. Você também perde o acesso aleatório: para ler o 50º elemento, precisa percorrer os 49 anteriores.
 
 **Conceito:** Sequência de nós onde cada elemento aponta para o próximo na memória. Não ocupa espaço contíguo.
 
 * **Operações:**  
-  * Inserção/Remoção no início: ![][image1]  
-  * Busca/Acesso: ![][image2]  
-  * Inserção/Remoção no meio (com ponteiro): ![][image1]  
-* **Memória:** ![][image2]. Gasta mais que arrays devido aos ponteiros extras.  
+  * Busca por elemento: $O(n)$  
+  * Adicionar no início: $O(1)$  
+  * Adicionar no meio: $O(n)$  
+  * Adicionar no final: $O(n)$  
+  * Remover no início: $O(1)$  
+  * Remover no meio: $O(n)$  
+  * Remover no final: $O(n)$  
+* **Memória:** $O(n)$. Gasta mais que arrays devido aos ponteiros extras.  
 * **Aplicação:** Implementação de pilhas, filas e gerenciamento de memória dinâmica.
 
 #### Pilhas (Stacks)
@@ -47,10 +70,11 @@ A pilha é uma abstração focada em restrição de acesso. Imagine uma pilha de
 **Conceito:** Segue a política LIFO (*Last In, First Out*). O último a entrar é o primeiro a sair.
 
 * **Operações:**  
-  * Push (Inserir no topo): ![][image1]  
-  * Pop (Remover do topo): ![][image1]  
-  * Peek (Ver o topo): ![][image1]  
-* **Memória:** ![][image2].  
+  * Busca por elemento: $O(n)$  
+  * Peek (ver o topo): $O(1)$  
+  * Push (inserir no topo): $O(1)$  
+  * Pop (remover do topo): $O(1)$  
+* **Memória:** $O(n)$.  
 * **Aplicação:** Desfazer (Undo), avaliação de expressões matemáticas, chamadas de funções (Call Stack).
 
 #### Filas (Queues)
@@ -60,9 +84,11 @@ A fila espelha o comportamento de uma fila de banco: o primeiro a entrar é o pr
 **Conceito:** Segue a política FIFO (*First In, First Out*). O primeiro a entrar é o primeiro a sair.
 
 * **Operações:**  
-  * Enqueue (Inserir no fim): ![][image1]  
-  * Dequeue (Remover do início): ![][image1]  
-* **Memória:** ![][image2].  
+  * Busca por elemento: $O(n)$  
+  * Pegar o primeiro (front): $O(1)$  
+  * Enqueue (adicionar no fim): $O(1)$  
+  * Dequeue (remover do início): $O(1)$  
+* **Memória:** $O(n)$.  
 * **Aplicação:** Escalonamento de processos, buffers de impressão, IO de disco.
 
 #### Listas de Prioridade (Heaps)
@@ -88,10 +114,11 @@ Uma lista de prioridade garante que o elemento de maior (ou menor) relevância e
 **Sumário**:
 
 * **Operações:**  
-  * Insert: ![][image3]  
-  * Extract Max/Min: ![][image3]  
-  * Find Max/Min: ![][image1]  
-* **Memória:** ![][image2].  
+  * Busca do elemento mais prioritário (max/min): $O(1)$  
+  * Busca por elemento: $O(\log n)$  
+  * Insert (adicionar): $O(\log n)$  
+  * Extract / remover prioritário: $O(\log n)$  
+* **Memória:** $O(n)$.  
 * **Aplicação:** Algoritmo de Dijkstra, escalonamento de tarefas por prioridade.
 
 ### 1.2 Recursão
@@ -120,10 +147,12 @@ O grande desafio arquitetural aqui são as **colisões**: quando duas chaves dif
 **Conceito:** Mapeia chaves para valores usando uma função Hash.
 
 * **Operações:**  
-  * Busca/Inserção/Remoção (Médio): ![][image1]  
-  * Busca/Inserção/Remoção (Pior Caso \- Colisões): ![][image2]  
+  * Busca por elemento: $O(1)$  
+  * Busca por elemento (com colisão, encadeamento): $O(n)$ — lista ligada no bucket  
+  * Adicionar elemento: $O(1)$  
+  * Remover elemento: $O(1)$  
 * **Colisões:** Resolvidas por **Encadeamento** (listas nos índices) ou **Endereçamento Aberto** (busca o próximo índice vazio).  
-* **Memória:** ![][image2] (proporcional ao número de chaves \+ tamanho do array).  
+* **Memória:** $O(n)$ (proporcional ao número de chaves + tamanho do array).  
 * **Aplicação:** Bancos de dados, Caches, Implementação de Sets e Mapas.
 
 ### 1.4 Árvores Binárias e de Busca (BST)
@@ -147,19 +176,32 @@ Esta é uma estrutura de nicho, mas extremamente poderosa para rastrear conexõe
 
 O Union-Find faz isso elegendo um "nó representante" para cada grupo. 
 
-Otimizações
-- A otimização que torna isso mágico é a **Compressão de Caminho** (Path Compression): toda vez que você busca o representante do grupo de um nó, a estrutura religa esse nó diretamente ao representante principal. Nas buscas futuras, o acesso é quase instantâneo. A complexidade de tempo se torna a função inversa de Ackermann, $\alpha(n)$, que para propósitos práticos no universo computacional, é $\le 4$ (essencialmente $O(1)$).
-- Union by Rank é uma técnica de otimização para a estrutura de dados Disjoint Set Union que evita que a árvore de elementos se torne desbalanceada ou "esticada" como uma lista encadeada. Ao unir dois conjuntos, a raiz da árvore de menor rank é anexada como filha da raiz de maior rank.
+**Otimizações:**
+
+- **União por Rank (Union by Rank):** ao unir dois conjuntos, a raiz da árvore de menor rank é anexada como filha da raiz de maior rank, evitando que a estrutura fique desbalanceada como uma lista encadeada.
+- **Compressão de Caminho (Path Compression):** toda vez que você busca o representante de um nó, a estrutura religa esse nó diretamente ao representante principal, acelerando buscas futuras.
+
+Combinadas, as duas otimizações reduzem a complexidade a $O(\alpha(n))$, a função inversa de Ackermann — que, na prática, é $\le 4$ para qualquer entrada realista.
 
 **Conceito:** Gerencia conjuntos disjuntos. Determina rapidamente se dois elementos pertencem ao mesmo grupo.
 
 * **Operações:**  
-  * Union: Une dois conjuntos.  
-  * Find: Identifica e retorna o representante do conjunto. O representate é a raíz do conjunto, ou seja, é preciso fazer a travesia recursivamente até que chegue no pai raíz.
-* **Otimizações:** **Compressão de Caminho** (aponta nós direto para a raiz) e **União por Rank** (árvore menor sob a maior).  
-* **Tempo:** 
-  * Find/Union: Quase constante ![][image4], onde ![][image5] é a inversa de Ackermann.
-* **Memória:** ![][image2].
+  * Union: une dois conjuntos.  
+  * Find: identifica e retorna o representante do conjunto (raiz), percorrendo recursivamente até o pai raiz.
+* **Otimizações:** **Compressão de Caminho** e **União por Rank**.  
+* **Tempo (sem otimizações):**  
+  * Union: $O(n)$  
+  * Find: $O(n)$  
+* **Tempo (com Union by Rank):**  
+  * Union: $O(\log n)$  
+  * Find: $O(\log n)$  
+* **Tempo (com Path Compression):**  
+  * Union: $O(\log n)$  
+  * Find: $O(\log n)$  
+* **Tempo (com ambas as otimizações):**  
+  * Union: $O(\alpha(n))$  
+  * Find: $O(\alpha(n))$  
+* **Memória:** $O(n)$.
 
 **Find**
 
