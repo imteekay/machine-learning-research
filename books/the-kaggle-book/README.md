@@ -13,3 +13,8 @@
 - Probing from the leaderboard (the scoring system)
 - Overfitting and consequent leaderboard shake-up
 - Private sharing
+
+## After competitions
+
+- Absorbing all the knowledge at the end of a competition
+- Replication of winning solutions in finished competitions
