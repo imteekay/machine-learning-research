@@ -17,7 +17,7 @@ Topics to study
 - [X] Hash Tables
 - [X] BST
 - [X] Union-Find
-- [ ] Complexidade Algorítmica e Notação Assintótica
+- [X] Complexidade Algorítmica e Notação Assintótica
 - [ ] Algoritmos de Ordenação e Seleção
 - [ ] Algoritmos para Problemas em Grafos
 - [ ] NP-Completude
