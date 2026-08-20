@@ -249,19 +249,22 @@ Esta é a régua com a qual medimos a escalabilidade do código. Não medimos o 
 
 A escolha do algoritmo de ordenação depende de recursos de memória e da natureza dos dados.
 
-* **Merge Sort:** Corta o array pela metade repetidamente, ordena as metades e as junta. É brilhante e previsível ($O(n \log n)$ sempre), mas tem um custo oculto: exige criar novos arrays na memória.
-* **Quick Sort:** Elege um "pivô" e joga os menores para a esquerda e maiores para a direita. Modifica o array original (não gasta memória extra), sendo o mais rápido na prática. Porém, se você escolher um pivô ruim constantemente, ele quebra e roda em $O(n^2)$.
-* **Radix/Counting Sort:** Não comparam os itens. Eles agrupam os números por seus dígitos ou valores literais em "baldes". Podem ordenar dados na velocidade da luz (tempo $O(n)$), mas só funcionam se os dados forem inteiros dentro de um limite conhecido.
+* **Quick Sort:** Elege um elemento como "pivô" e reorganiza o array original movendo os valores menores para a esquerda e os maiores para a direita.
+* **Merge Sort:** Corta o array pela metade repetidamente até os elementos ficarem isolados, para então ordená-los e juntá-los novamente.
+* **Heap Sort:** Constrói uma estrutura de árvore (heap) com os dados para extrair repetidamente o maior elemento e colocá-lo no final da lista.
+* **Selection Sort:** Percorre o array repetidas vezes para encontrar o menor elemento da parte não ordenada e trocá-lo para a posição correta.
+* **Counting Sort:** Ordena os dados sem fazer comparações diretas, agrupando os números por seus valores literais em "baldes" de contagem.
 
-| Algoritmo | Tempo (Médio) | Tempo (Pior) | Memória Extra |
-| :---- | :---- | :---- | :---- |
-| **Quick Sort** | **![][image11]** | **![][image12]** | **![][image3]** |
-| **Merge Sort** | **![][image11]** | **![][image11]** | **![][image2]** |
-| **Heap Sort** | **![][image11]** | **![][image11]** | **![][image1]** |
-| **Selection Sort** | **![][image12]** | **![][image12]** | **![][image1]** |
-| **Counting Sort** | **![][image13]** | **![][image13]** | **![][image14]** |
+| Algoritmo | Tempo (Médio) | Tempo (Pior) |
+| :---- | :---- | :---- |
+| Quick Sort | $O(n \log n)$ | $O(n^2)$ |
+| Merge Sort | $O(n \log n)$ | $O(n \log n)$ |
+| Heap Sort | $O(n \log n)$ | $O(n \log n)$ |
+| Selection Sort | $O(n^2)$ | $O(n^2)$ |
+| Counting Sort | $O(n + k)$* | $O(n + k)$* |
 
-* **Seleção:** Encontrar o ![][image15]\-ésimo menor elemento. O algoritmo **QuickSelect** faz isso em tempo médio ![][image2].
+\* $k$ = intervalo (range) dos valores de entrada.
+
 
 ### 2.3 Algoritmos para Problemas em Grafos
 
