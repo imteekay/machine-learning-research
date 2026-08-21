@@ -267,6 +267,10 @@ A escolha do algoritmo de ordenação depende de recursos de memória e da natur
 
 \* $k$ = intervalo (range) dos valores de entrada.
 
+Resources:
+
+- [Heap Sort](https://www.youtube.com/watch?v=2DmK_H7IdTo)
+
 ### 2.3 Algoritmos para Problemas em Grafos
 
 Grafos mapeiam redes (estradas, roteadores, conexões sociais).
