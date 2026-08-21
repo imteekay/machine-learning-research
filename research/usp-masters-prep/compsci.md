@@ -262,6 +262,9 @@ A escolha do algoritmo de ordenação depende de recursos de memória e da natur
   * $O(n \log n)$: heapify is $O(\log n)$, called n - 1 times
 * **Selection Sort:** Percorre o array repetidas vezes para encontrar o menor elemento da parte não ordenada e trocá-lo para a posição correta.
 * **Counting Sort:** Ordena os dados sem fazer comparações diretas, agrupando os números por seus valores literais em "baldes" de contagem.
+  * Conta quantos vezes o número aparece na lista
+  * Faz o cumulativo e define em qual index cada número inicia na lista
+  * Itera sobre a lista e adiciona cada número no index. Ao adicionar o número, incrementa o index na lista auxiliar
 
 | Algoritmo | Tempo (Médio) | Tempo (Pior) |
 | :---- | :---- | :---- |
