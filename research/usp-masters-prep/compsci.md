@@ -250,6 +250,12 @@ Esta é a régua com a qual medimos a escalabilidade do código. Não medimos o 
 A escolha do algoritmo de ordenação depende de recursos de memória e da natureza dos dados.
 
 * **Quick Sort:** Elege um elemento como "pivô" e reorganiza o array original movendo os valores menores para a esquerda e os maiores para a direita.
+  * Loop: Escolhe um pivô
+    * Valor da esquerda: valor maior que o pivô
+    * Valor da direita: valor menor que o pivô
+    * Faz o swap da esquerda e da direita, deixando valores menores na esquerda e maiores na direita
+    * Se o index da esquerda for maior que o da direita, acaba os swaps para esse pivô, faz um último swap entre o pivô e o valor da esquerda (maior elemento, mantendo valores menores na esquerda)
+    * Para o pivô, todos os elementos da esquerda são menores que ele, e todos os da direita são maiores
 * **Merge Sort:** Corta o array pela metade repetidamente até os elementos ficarem isolados, para então ordená-los e juntá-los novamente.
 * **Heap Sort:** Constrói uma estrutura de árvore (max-heap) com os dados para extrair repetidamente o maior elemento e colocá-lo no final da lista. 
   * Loop: max-heap → swap primeiro (max) e último (min) → extrai o novo último (max) → coloca no final da lista
