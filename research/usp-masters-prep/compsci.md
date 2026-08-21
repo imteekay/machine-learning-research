@@ -251,7 +251,9 @@ A escolha do algoritmo de ordenação depende de recursos de memória e da natur
 
 * **Quick Sort:** Elege um elemento como "pivô" e reorganiza o array original movendo os valores menores para a esquerda e os maiores para a direita.
 * **Merge Sort:** Corta o array pela metade repetidamente até os elementos ficarem isolados, para então ordená-los e juntá-los novamente.
-* **Heap Sort:** Constrói uma estrutura de árvore (heap) com os dados para extrair repetidamente o maior elemento e colocá-lo no final da lista.
+* **Heap Sort:** Constrói uma estrutura de árvore (max-heap) com os dados para extrair repetidamente o maior elemento e colocá-lo no final da lista. 
+  * Loop: max-heap → swap primeiro (max) e último (min) → extrai o novo último (max) → coloca no final da lista
+  * $O(n \log n)$: heapify is $O(\log n)$, called n - 1 times
 * **Selection Sort:** Percorre o array repetidas vezes para encontrar o menor elemento da parte não ordenada e trocá-lo para a posição correta.
 * **Counting Sort:** Ordena os dados sem fazer comparações diretas, agrupando os números por seus valores literais em "baldes" de contagem.
 
@@ -264,7 +266,6 @@ A escolha do algoritmo de ordenação depende de recursos de memória e da natur
 | Counting Sort | $O(n + k)$* | $O(n + k)$* |
 
 \* $k$ = intervalo (range) dos valores de entrada.
-
 
 ### 2.3 Algoritmos para Problemas em Grafos
 
