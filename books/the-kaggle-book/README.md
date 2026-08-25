@@ -22,3 +22,4 @@
 ## Competitions
 
 - [Two Sigma Connect: Rental Listing Inquiries - leak](https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries/discussion/31870#176513)
+- [Airbus Ship Detection Challenge - leak](https://www.kaggle.com/c/airbus-ship-detection/discussion/64355#377037)
