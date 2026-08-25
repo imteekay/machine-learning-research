@@ -19,7 +19,7 @@ Topics to study
 - [X] BST
 - [X] Union-Find
 - [X] Complexidade Algorítmica e Notação Assintótica
-- [ ] Algoritmos de Ordenação e Seleção
+- [X] Algoritmos de Ordenação e Seleção
 - [ ] Algoritmos para Problemas em Grafos
 - [ ] NP-Completude
 - [ ] Autômatos Finitos e Expressões Regulares
