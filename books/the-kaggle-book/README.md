@@ -18,3 +18,7 @@
 
 - Absorbing all the knowledge at the end of a competition
 - Replication of winning solutions in finished competitions
+
+## Competitions
+
+- [Two Sigma Connect: Rental Listing Inquiries - leak](https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries/discussion/31870#176513)
