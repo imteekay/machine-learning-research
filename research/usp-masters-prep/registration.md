@@ -1,6 +1,6 @@
 # Registration
 
-[More info](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/Edital%20ingressar%202%20sem%202026.pdf)
+[More info](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/4%20Edital%20IngressoAlunosRegulares%201sem2027.pdf)
 
 Email: bioinformatica@usp.br
 
