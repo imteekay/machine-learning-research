@@ -20,12 +20,15 @@ If we understand cells—how they behave and interact in their native environmen
 4. **How Should It Be Measured:** 
    * **Energy Distance (E-distance):** To measure the statistical distance between your predicted post-perturbation cell state and the ground-truth observed state.
    * **Mean Absolute Error (MAE) & Pearson Correlation:** Between predicted and actual gene expression at the single-cell level.
-5. **Data Needed:** * Paired scRNA-seq and scATAC-seq datasets (e.g., 10x Multiome data).
+5. **Data Needed:** 
+   * Paired scRNA-seq and scATAC-seq datasets (e.g., 10x Multiome data).
    * Large-scale isolated perturbation screens like Perturb-seq or Crop-seq.
-6. **Papers to Read:** * *scGPT: toward building a foundation model for single-cell multi-omics using generative AI* (2024).
+6. **Papers to Read:** 
+   * *scGPT: toward building a foundation model for single-cell multi-omics using generative AI* (2024).
    * *PertEval-scFM: Benchmarking Single-Cell Foundation Models for Perturbation Effect Prediction* (2024).
 7. **Similar/Foundational Models:** scGPT, Geneformer, scBERT.
-8. **Knowledge to Learn:** * *Computational:* Deep understanding of Transformer/Attention architectures and basic Causal Inference.
+8. **Knowledge to Learn:** 
+   * *Computational:* Deep understanding of Transformer/Attention architectures and basic Causal Inference.
    * *Biological:* Gene Regulatory Networks (GRNs) and Epigenetics (what scATAC-seq actually represents biologically).
 
 ### Part 2: The PhD Plan (Years 3-7)
