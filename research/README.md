@@ -130,7 +130,7 @@
 - [USP - Saúde Pública](https://pos.fsp.usp.br/saude-publica)
 - [Bioinformática - USP](https://www.iq.usp.br/portaliqusp/?q=pt-br/pos-bioinformatica)
   - [Ingresso](https://www.iq.usp.br/portaliqusp/?q=pt-br/ingresso)
-    - [Exemplo de Edital de inscrição](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/Edital%20ingressar%202%20sem%202026.pdf)
+    - [Exemplo de Edital de inscrição](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/4%20Edital%20IngressoAlunosRegulares%201sem2027.pdf)
     - [Áreas, Tópicos e Bibliografia da Prova do Processo Seletivo](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/3%20%C3%81reas%20Topicos%20e%20Bibliografia%20da%20prova%20-%20revisado_0.pdf)
     - [Proficiência em inglês](https://www.iq.usp.br/portaliqusp/?q=pt-br/edital-para-exame-de-profici%C3%AAncia-em-ingl%C3%AAs): [Edital](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/Edital%202703%20-%202027.pdf) + [Exemplo de provas](https://clinguas.fflch.usp.br/sites/clinguas.fflch.usp.br/files/inline-files/MODELOS%20DE%20PROVA%20-%20PROFICI%C3%8ANCIA%20EM%20INGL%C3%8AS.pdf)
   - [Orientadores](https://www.iq.usp.br/portaliqusp/?q=pt-br/orientadores)
