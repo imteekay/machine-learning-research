@@ -69,3 +69,5 @@ If we understand cells—how they behave and interact in their native environmen
 - [Reasoning Across Space: Tiny Recursive Models for Spatial Omics](https://openreview.net/pdf?id=vtTox3sHaS)
 - [TheBioCollection: Unified Pre-Training Scale LLM Corpus for Biology](https://arxiv.org/abs/2607.08803)
 - [scVIVA: a probabilistic framework for representation of cells and their environments in spatial transcriptomics](https://www.biorxiv.org/content/10.1101/2025.06.01.657182v1.full.pdf)
+- [Virtual Cells: Predict, Explain, Discover](https://arxiv.org/abs/2505.14613)
+  - [Video](https://www.youtube.com/watch?v=QSfVjsa1i4g)
