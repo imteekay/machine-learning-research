@@ -915,6 +915,7 @@
 - [Serena Yeung](https://ai.stanford.edu/~syyeung)
 - [Haotian Cui](https://subercui.github.io)
 - [Hyunjin Seo](https://hyunjin72.github.io)
+- [Emmanuel Noutahi](https://enoutahi.com)
 
 ### Research & Laboratories
 
