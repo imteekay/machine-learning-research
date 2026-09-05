@@ -64,11 +64,13 @@ If we understand cells—how they behave and interact in their native environmen
 ### Papers
 
 - [Harnessing AI to Build Virtual Cells](https://www.biorxiv.org/content/10.64898/2026.04.11.717183v2)
+  - [Video](https://www.youtube.com/watch?v=pwLfujLYwhA)
 - [Virtual Cells Need Context, Not Just Scale](https://www.biorxiv.org/content/10.64898/2026.02.04.703804v1)
 - [PerturbDiff: Functional Diffusion for Single-Cell Perturbation Modeling](https://arxiv.org/abs/2602.19685)
 - [Reasoning Across Space: Tiny Recursive Models for Spatial Omics](https://openreview.net/pdf?id=vtTox3sHaS)
 - [TheBioCollection: Unified Pre-Training Scale LLM Corpus for Biology](https://arxiv.org/abs/2607.08803)
 - [scVIVA: a probabilistic framework for representation of cells and their environments in spatial transcriptomics](https://www.biorxiv.org/content/10.1101/2025.06.01.657182v1.full.pdf)
+  - [Video](https://www.youtube.com/watch?v=ykVoYVyCVd0)
 - [Virtual Cells: Predict, Explain, Discover](https://arxiv.org/abs/2505.14613)
   - [Video](https://www.youtube.com/watch?v=QSfVjsa1i4g)
 - [Towards multimodal foundation models in molecular cell biology](https://www.nature.com/articles/s41586-025-08710-y)
