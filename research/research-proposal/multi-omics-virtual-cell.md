@@ -3,7 +3,8 @@
 If we understand cells—how they behave and interact in their native environments—we can identify when they are malfunctioning or mislocalized, allowing us to build better therapies that maximize clinical efficacy while minimizing off-target side effects.
 
 - **Tissue-level world model**: study the ecosystem of disease
-- **Enabling In Silico Clinical Trials and Drug Discovery**: virtually "inject" a drug, observe the epigenetic and transcriptomic shifts in a target cell, and watch the cascading effects on the surrounding tissue
+- **Acceleration of Discovery**: Enabling In Silico Clinical Trials and Drug Discovery - virtually "inject" a drug, observe the epigenetic and transcriptomic shifts in a target cell, and watch the cascading effects on the surrounding tissue - improving the discovery phase of drug development, this technology has the potential to move ideas out of the lab and into clinical trials more efficiently
+- **Hypothesis Testing**: It allows for the rapid testing of scientific hypotheses. Instead of manually conducting every potential experiment, scientists can use the virtual model to search for patterns and outcomes, reserving physical validation for the final, most promising steps
 - **Decoding Emergent, Multicellular Diseases**: understand the collapse of communication between multiple cell types
 - **Precision Medicine tool**: engineer highly localized treatments, maximizing the drug's effectiveness exactly where it is needed
 
