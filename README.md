@@ -375,6 +375,7 @@
 ### Generative AI
 
 - [The Principles of Diffusion Models](https://arxiv.org/pdf/2510.21890)
+- [[Notebook] Mathematics of Generative AI Book](https://github.com/mchertkov/Mathematics-of-Generative-AI-Book)
 
 ### Deep Reinforcement Learning
 
