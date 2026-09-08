@@ -10,7 +10,7 @@ O Programa Interunidades de Pós-graduação em Bioinformática (PIPB-USP) desta
 Minhas áreas de interesse de pesquisa concentram-se no desenvolvimento e aplicação de arquiteturas de machine learning e deep learning para predição e modelagem de estruturas biomoleculares, com foco em respostas a perturbações genéticas e integração de dados multi-ômicos. Tenho interesse particular nas linhas de pesquisa voltadas à biologia computacional preditiva e no desenvolvimento de pipelines para análise de dados ômicos em larga escala. Pretendo aplicar minhas bagagem técnica em programação e inteligência artificial para contribuir ativamente com os projetos em andamento nos laboratórios do programa.
 
 [Fechamento entre todos os pontos]
-Acredito que o Mestrado em Bioinformática na USP representará um marco essencial em minha transição e consolidação como pesquisador na interface entre computação e ciências da vida, permitindo-me contribuir para o avanço científico do país nessa área estratégica.
+Acredito que o Mestrado em Bioinformática na USP representará um pilar fundamental em minha consolidação como pesquisador na intersecção entre computação e biologia, permitindo-me impulsionar a pesquisa científica nacional e contribuir para avanços significativos na saúde e medicina.
 
 Atenciosamente,
 
