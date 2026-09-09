@@ -1,7 +1,7 @@
 Prezada Comissão de Seleção,
 
 [Falar sobre mim]
-Escrevo para formalizar meu interesse no ingresso ao Programa Interunidades de Pós-Graduação em Bioinformática da Universidade de São Paulo (USP). Com formação em Ciência da Computação, consolidei minha trajetória profissional durante os últimos 12 anos em desenvolvimento de software e ciência de dados. Ao longo dos últimos anos, direcionei meu interesse de estudo para a interseção entre aprendizado de máquina e biologia, com intuito de impactar a saúde e medicina.
+Escrevo para formalizar meu interesse no ingresso ao Programa Interunidades de Pós-Graduação em Bioinformática da Universidade de São Paulo (USP). Com formação em Ciência da Computação, consolidei minha trajetória profissional durante os últimos 12 anos em engenharia de software e ciência de dados. Ao longo dos últimos anos, direcionei meu interesse de estudo para a interseção entre aprendizado de máquina e biologia, com intuito de impactar as áreas da saúde e medicina.
 
 [Falar sobre o lugar]
 O Programa Interunidades de Pós-graduação em Bioinformática (PIPB-USP) destaca-se como uma das principais referências na área, oferecendo um ambiente interdisciplinar único e de excelência. Meu interesse em integrar o programa tem como motivação em aprofundar minha formação teórica e prática na aplicação de inteligência artificial e aprendizado de máquina voltados à biologia sistêmica celular, multi-ômica e modelagem tecidual. O programa proporciona infraestrutura, mentoria e colaboração necessárias para impulsionar pesquisas em biologia celular e tecidual, acelerando o desenvolvimento de simulações in silico aplicadas à medicina de precisão.
