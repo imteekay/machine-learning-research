@@ -284,16 +284,21 @@ Resources:
 
 Grafos mapeiam redes (estradas, roteadores, conexões sociais).
 
-* **BFS (Largura):** Explora tudo ao seu redor primeiro antes de ir mais fundo. Usa uma fila para rastrear os próximos passos. É o algoritmo exato que o seu GPS usa para encontrar a rota com o menor número de ruas (caminho mínimo sem pesos).
-* **DFS (Profundidade):** Segue um caminho único até o fim, batendo num beco sem saída e voltando. Usa recursão/pilha. É perfeito para resolver labirintos ou checar dependências de código (qual biblioteca deve ser compilada primeiro - Ordenação Topológica).
+* **BFS (Largura):** Explora tudo ao seu redor primeiro antes de ir mais fundo. 
+  * Usa uma fila para rastrear os próximos passos. 
+  * Usa um HashSet para lidar com nodes já explorados, ou seja, quebra o loop de grafos em ciclos
+  * Aplicação: É o algoritmo exato que o seu GPS usa para encontrar a rota com o menor número de ruas (caminho mínimo sem pesos).
+  * Complexidade: ![][image17]
+* **DFS (Profundidade):** Explora o máximo um caminho: segue um caminho único até o fim, batendo num beco sem saída e voltando. 
+  * Usa recursão/pilha. 
+  * Usa um HashSet para lidar com nodes já explorados, ou seja, quebra o loop de grafos em ciclos
+  * É perfeito para resolver labirintos ou checar dependências de código (qual biblioteca deve ser compilada primeiro - Ordenação Topológica).
+  * Aplicação: Detecção de ciclos.
+  * Complexidade: ![][image17]
 * **Algoritmo de Dijkstra:** A evolução do BFS. Ele usa uma Lista de Prioridade para decidir qual o próximo cruzamento explorar, priorizando sempre as ruas mais rápidas/curtas.
 
 **Representação:** Matriz de Adjacência (![][image16] memória) ou Lista de Adjacência (![][image17] memória).
 
-#### **Busca em Largura (BFS) e Profundidade (DFS)**
-
-* **BFS (Fila):** Explora nível por nível. Aplicação: Caminho mínimo em grafos sem peso. ![][image17].  
-* **DFS (Pilha/Recursão):** Explora o máximo um caminho. Aplicação: Detecção de ciclos. ![][image17].
 
 #### **Árvore Geradora Mínima (MST)**
 
