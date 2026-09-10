@@ -295,10 +295,11 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
   * É perfeito para resolver labirintos ou checar dependências de código (qual biblioteca deve ser compilada primeiro - Ordenação Topológica).
   * Aplicação: Detecção de ciclos.
   * Complexidade: ![][image17]
-* **Algoritmo de Dijkstra:** A evolução do BFS. Ele usa uma Lista de Prioridade para decidir qual o próximo cruzamento explorar, priorizando sempre as ruas mais rápidas/curtas.
+* **Algoritmo de Dijkstra:** A evolução do BFS.
+  * Ele usa uma Lista de Prioridade para decidir qual o próximo cruzamento explorar, priorizando sempre as ruas mais rápidas/curtas.
+  * Algoritmo de menor caminho
 
 **Representação:** Matriz de Adjacência (![][image16] memória) ou Lista de Adjacência (![][image17] memória).
-
 
 #### **Árvore Geradora Mínima (MST)**
 
