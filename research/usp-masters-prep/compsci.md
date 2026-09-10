@@ -297,7 +297,8 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
   * Complexidade: ![][image17]
 * **Algoritmo de Dijkstra:** A evolução do BFS.
   * Ele usa uma Lista de Prioridade para decidir qual o próximo cruzamento explorar, priorizando sempre as ruas mais rápidas/curtas.
-  * Algoritmo de menor caminho
+  * Encontrar o caminho mais curto baseado nos pesos
+* **Bellman-Ford:** Funciona com pesos negativos. Detecta ciclos negativos. ![][image20].
 
 **Representação:** Matriz de Adjacência (![][image16] memória) ou Lista de Adjacência (![][image17] memória).
 
@@ -305,11 +306,6 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
 
 * **Kruskal:** Usa Union-Find. Ordena arestas e as adiciona sem criar ciclos. ![][image18].  
 * **Prim:** Usa Lista de Prioridade. Cresce a árvore a partir de um nó inicial. ![][image19].
-
-#### **Caminhos Mínimos**
-
-* **Dijkstra:** Encontra o caminho mais curto de um nó para todos os outros (pesos não-negativos). Usa Heap. ![][image19].  
-* **Bellman-Ford:** Funciona com pesos negativos. Detecta ciclos negativos. ![][image20].
 
 ### 2.4 NP-Completude
 
