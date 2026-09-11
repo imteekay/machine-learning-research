@@ -917,6 +917,7 @@
 - [Haotian Cui](https://subercui.github.io)
 - [Hyunjin Seo](https://hyunjin72.github.io)
 - [Emmanuel Noutahi](https://enoutahi.com)
+- [Aidan Cooper](https://www.aidancooper.co.uk)
 
 ### Research & Laboratories
 
