@@ -295,12 +295,25 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
   * É perfeito para resolver labirintos ou checar dependências de código (qual biblioteca deve ser compilada primeiro - Ordenação Topológica).
   * Aplicação: Detecção de ciclos.
   * Complexidade: ![][image17]
+
+**Representação:** Matriz de Adjacência (![][image16] memória) ou Lista de Adjacência (![][image17] memória).
+
+#### Aplicações de BFS e DFS
+
+* Componentes Conexos (Grafos Não-Direcionados): Identificados diretamente usando tanto BFS quanto DFS
+* Componentes Fortemente Conexos (Grafos Direcionados):
+  * Algoritmo de Kosaraju-Sharir: Usa duas passagens de DFS (uma no grafo original e outra no grafo transposto).
+  * Algoritmo de Tarjan: Encontra os componentes em uma única passagem de DFS usando uma pilha.
+* Ordenação Topológica:
+  * Algoritmo de Kahn: Baseado no grau de entrada dos vértices (usa uma fila/BFS).
+  * DFS com Pós-Ordem Inversa: Utiliza a propriedade de tempo de término da DFS.
+
+#### Caminhos Mínimos (Shortest Paths)
+
 * **Algoritmo de Dijkstra:** A evolução do BFS.
   * Ele usa uma Lista de Prioridade para decidir qual o próximo cruzamento explorar, priorizando sempre as ruas mais rápidas/curtas.
   * Encontrar o caminho mais curto baseado nos pesos
 * **Bellman-Ford:** Funciona com pesos negativos. Detecta ciclos negativos. ![][image20].
-
-**Representação:** Matriz de Adjacência (![][image16] memória) ou Lista de Adjacência (![][image17] memória).
 
 #### **Árvore Geradora Mínima (MST)**
 
