@@ -314,7 +314,8 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
   * Objetivo: encontrar o caminho mais curto baseado nos pesos
   * Utiliza uma Lista de Prioridade para decidir qual o próximo cruzamento explorar, priorizando sempre as ruas mais rápidas/curtas.
   * Para cada vértice, atualiza a distância, escolhendo a menor distância navegada até este momento
-* **Bellman-Ford:** Funciona com pesos negativos. Detecta ciclos negativos. ![][image20].
+* **Bellman-Ford:** ([resource](https://www.youtube.com/watch?v=obWXjtg0L64))
+  * Funciona com pesos negativos. Detecta ciclos negativos. ![][image20].
 
 #### **Árvore Geradora Mínima (MST)**
 
