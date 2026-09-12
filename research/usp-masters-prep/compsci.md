@@ -311,8 +311,9 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
 #### Caminhos Mínimos (Shortest Paths)
 
 * **Algoritmo de Dijkstra:** A evolução do BFS.
-  * Ele usa uma Lista de Prioridade para decidir qual o próximo cruzamento explorar, priorizando sempre as ruas mais rápidas/curtas.
-  * Encontrar o caminho mais curto baseado nos pesos
+  * Objetivo: encontrar o caminho mais curto baseado nos pesos
+  * Utiliza uma Lista de Prioridade para decidir qual o próximo cruzamento explorar, priorizando sempre as ruas mais rápidas/curtas.
+  * Para cada vértice, atualiza a distância, escolhendo a menor distância navegada até este momento
 * **Bellman-Ford:** Funciona com pesos negativos. Detecta ciclos negativos. ![][image20].
 
 #### **Árvore Geradora Mínima (MST)**
