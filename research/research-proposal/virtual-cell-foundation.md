@@ -12,3 +12,8 @@
   - RNA/protein expression: sparse high-dimensional count matrices
   - Microscopy: spatial 2D/3D images
   - Metabolic/Signaling networks: dynamic graphs
+- Virtual cell state: proteins, lipids, ions
+  - We can't measure the whole complexity of a cell
+  - We use the central dogma of molecular biology: DNA -> RNA -> Proteins 
+    - We can measure RNA (RNA-seq (RNA sequencing))
+    - We can measure Proteins
