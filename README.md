@@ -335,6 +335,7 @@
 - [[Course] Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X)
 - [PaperCode](https://papercode.in/papers)
 - [Language model alignment-focused deep learning curriculum](https://github.com/jacobhilton/deep_learning_curriculum)
+- [Deep Learning Alchemy Course](https://deep-learning-alchemy.github.io)
 
 #### Computer Vision
 
