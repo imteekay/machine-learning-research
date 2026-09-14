@@ -189,7 +189,38 @@ Aplicações:
 **Otimizações:**
 
 - **União por Rank (Union by Rank):** ao unir dois conjuntos, a raiz da árvore de menor rank é anexada como filha da raiz de maior rank, evitando que a estrutura fique desbalanceada como uma lista encadeada.
-- **Compressão de Caminho (Path Compression):** toda vez que você busca o representante de um nó, a estrutura religa esse nó diretamente ao representante principal, acelerando buscas futuras.
+
+```
+Antes da União:
+   1 (Rank 1)       5 (Rank 0)
+  /
+ 2
+
+Após union(1, 5):
+     1 (Rank 1)  <-- Permanece com Rank 1 porque 1 > 0
+    / \
+   2   5
+```
+
+- **Compressão de Caminho (Path Compression):** toda vez que você busca o representante de um nó, a estrutura religa todos os nós que que ligam o nó diretamente ao representante principal, acelerando buscas futuras.
+
+```
+       1 (Root)
+      / \
+     2   3
+    /
+   4
+  /
+ 5
+```
+
+`find(5)`: Liga todos os nós que ligam 5 até 1 (nó representante) ao representante, nesse caso, os nós 4 e 5 (2 já está ligado)
+
+```
+       1 (Root)
+    / / \ \
+   5 4   2 3
+```
 
 Combinadas, as duas otimizações reduzem a complexidade a $O(\alpha(n))$, a função inversa de Ackermann — que, na prática, é $\le 4$ para qualquer entrada realista.
 
