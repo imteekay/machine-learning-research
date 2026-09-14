@@ -172,9 +172,19 @@ O problema prático é o **desbalanceamento**. Se você inserir dados já ordena
 
 ### 1.5 Union-Find (Conjuntos Disjuntos)
 
-Esta é uma estrutura de nicho, mas extremamente poderosa para rastrear conexões. Imagine uma rede social onde você quer saber rapidamente se a Pessoa A tem alguma conexão indireta com a Pessoa B.
+Esta é uma estrutura de nicho, mas extremamente poderosa para rastrear conexões. Imagine uma rede social onde você quer saber rapidamente se a Pessoa A tem alguma conexão indireta com a Pessoa B. O Union-Find faz isso elegendo um "nó representante" para cada grupo.
 
-O Union-Find faz isso elegendo um "nó representante" para cada grupo. 
+- Union: une dois conjuntos (se precisar)
+  - Identifica qual os representantes de cada conjunto
+  - Ao unir os dois conjuntos, apenas um dos representantes será o representante do novo conjunto
+- Find: retornar o representante do conjunto
+  - Explora recursivamente o conjunto: procura pelo pai (parent) do nó atual e verifica se é o pai é ele próprio
+  - Se ele próprio, é o nó representante; Se não for, continua a exploração recusiva
+
+Aplicações:
+
+- Dois elementos estão no mesmo subset?
+- Quantos subsets existem?
 
 **Otimizações:**
 
