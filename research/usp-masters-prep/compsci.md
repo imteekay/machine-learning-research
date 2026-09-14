@@ -358,9 +358,17 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
 * **Bellman-Ford:** ([resource](https://www.youtube.com/watch?v=obWXjtg0L64))
   * Funciona com pesos negativos. Detecta ciclos negativos. ![][image20].
 
-#### **Árvore Geradora Mínima (MST)**
+#### Árvore Geradora Mínima (MST) (minimum spanning trees)
 
-* **Kruskal:** Usa Union-Find. Ordena arestas e as adiciona sem criar ciclos. ![][image18].  
+([resource](https://www.youtube.com/watch?v=JZBQLXgSGfs))
+
+É um subgrafo que **conecta todos os vértices de um grafo conexo** e ponderado **sem formar ciclos**, de modo que a **soma dos pesos de suas arestas seja a menor possível**
+
+* **Kruskal:** Usa Union-Find. Ordena arestas e as adiciona sem criar ciclos. ![][image18]
+  * Ordena a lista de arestas do menor peso até o maior
+  * Union-find: para cada aresta na lista ordenada:
+    * Se os 2 nós estiverem unidos (mesmo grupo), não adicione a aresta no grupo (é ignorado para não criar ciclos)
+    * Se os 2 nós não estiverem unidos, adicione a aresta e una os 2 nós
 * **Prim:** Usa Lista de Prioridade. Cresce a árvore a partir de um nó inicial. ![][image19].
 
 ### 2.4 NP-Completude
