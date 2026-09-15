@@ -93,6 +93,8 @@ A fila espelha o comportamento de uma fila de banco: o primeiro a entrar é o pr
 
 #### Listas de Prioridade (Heaps)
 
+[Resource](https://www.youtube.com/watch?v=5EJKm_u6P1o)
+
 Uma lista de prioridade garante que o elemento de maior (ou menor) relevância esteja sempre acessível imediatamente. A forma mais eficiente de construir isso é através de um *Heap*, que é uma árvore binária completa representada matematicamente dentro de um array simples. Quando você insere um elemento, ele vai para o final do array e "flutua" para cima (`sift-up`) trocando de lugar com os "pais" até chegar à posição correta. Isso custa apenas $O(\log n)$ e é o motor por trás de algoritmos de roteamento de GPS (como o Dijkstra).
 
 **Conceito:** Estrutura onde cada elemento tem uma prioridade. Geralmente implementada como um **Heap** (árvore binária completa num array).
