@@ -3,12 +3,12 @@
 Prezada Comissão de Seleção,
 
 [Falar sobre mim]
-Escrevo para formalizar meu interesse no ingresso ao Programa Interunidades de Pós-Graduação em Bioinformática da Universidade de São Paulo (USP). Com formação em Ciência da Computação, consolidei minha trajetória profissional durante os últimos 12 anos em engenharia de software e ciência de dados. Ao longo dos últimos anos, direcionei meu interesse de estudo para a interseção entre machine learning e biologia, com intuito de impactar as áreas da saúde e medicina.
+Escrevo para formalizar meu interesse no ingresso ao Programa Interunidades de Pós-Graduação em Bioinformática da Universidade de São Paulo (USP). Com formação em Ciência da Computação, consolidei minha trajetória profissional durante os últimos 13 anos em engenharia de software e ciência de dados. Ao longo dos últimos anos, direcionei meu interesse de estudo para a interseção entre machine learning e biologia, com intuito de impactar as áreas da saúde e medicina.
 
 [Falar sobre o lugar]
 O Programa Interunidades de Pós-graduação em Bioinformática (PIPB-USP) destaca-se como uma das principais referências na área, oferecendo um ambiente interdisciplinar único e de excelência. Meu interesse em integrar o programa tem como motivação em aprofundar minha formação teórica e prática na aplicação de inteligência artificial e aprendizado de máquina voltados à biologia sistêmica celular, multi-ômica e modelagem tecidual. O programa proporciona infraestrutura, mentoria e colaboração necessárias para impulsionar pesquisas em biologia, acelerando o desenvolvimento de simulações in silico aplicadas à medicina de precisão.
 
-[Falar sobre o interesse]
+[Falar sobre a pesquisa de interesse]
 Minhas áreas de interesse de pesquisa concentram-se no desenvolvimento e aplicação de arquiteturas de machine learning e deep learning para predição e modelagem de estruturas biomoleculares, com foco em respostas a perturbações genéticas e integração de dados multi-ômicos (modelos multimodais). Tenho interesse particular nas linhas de pesquisa voltadas à biologia computacional preditiva, modelos fundacionais, inferência causal e modelagem espacial com redes neurais de grafos. Pretendo aplicar minhas bagagem técnica em programação e inteligência artificial para contribuir ativamente com os projetos em andamento nos laboratórios do programa.
 
 [Fechamento entre todos os pontos]
