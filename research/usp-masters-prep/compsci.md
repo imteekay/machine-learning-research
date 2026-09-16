@@ -20,7 +20,7 @@ Topics to study
 - [X] Union-Find
 - [X] Complexidade Algorítmica e Notação Assintótica
 - [X] Algoritmos de Ordenação e Seleção
-- [ ] Algoritmos para Problemas em Grafos
+- [X] Algoritmos para Problemas em Grafos
 - [ ] NP-Completude
 - [ ] Autômatos Finitos e Expressões Regulares
 
