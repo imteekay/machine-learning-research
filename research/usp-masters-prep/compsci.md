@@ -396,7 +396,16 @@ Problemas **NP-Completos** (como o do Caixeiro Viajante: qual a rota mais curta 
 
 **Conceito:** Modelos matemáticos de computação com memória finita.
 
-* **Expressões Regulares (Regex):** Linguagem para descrever padrões de strings.  
+* **Expressões Regulares (Regex):** Linguagem para descrever padrões de strings.
+  * Aplicações: Facilitar buscas, Validações, Substituições
+  * Elementos básicos de busca:
+    * Colchetes []: Definem um conjunto de caracteres permitido. Por exemplo, [0-9] encontra qualquer número de 0 a 9.
+    * Quantificadores {}: Multiplicam a instrução anterior. [0-9]{6} busca exatamente seis dígitos numéricos.
+    * Âncoras de linha: O caractere ^ indica o início da linha, enquanto o $ indica o fim da linha.
+    * Intervalos: Comandos como [a-z] buscam qualquer letra de 'a' a 'z'.
+  * Substituição avançada:
+    * Parênteses (): Criam grupos de captura. Isso permite extrair partes de um padrão e reutilizá-las no destino.
+    * Referência de grupo: utiliza-se o $ seguido do número do grupo (ex: \$1, \$2) para reorganizar ou substituir partes do texto, como alterar o formato de uma data.
 * **Autômatos Finitos Determinísticos (AFD):** Para cada estado e entrada, há exatamente um próximo estado.  
 * **Autômatos Finitos Não-Determinísticos (AFN):** Pode haver múltiplos caminhos para uma entrada.  
 * **Equivalência:** Todo AFN pode ser convertido em um AFD. Ambos reconhecem as **Linguagens Regulares**.  
