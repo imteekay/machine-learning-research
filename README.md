@@ -250,6 +250,7 @@
 - [The Orange Book of Machine Learning](https://carl-mcbride-ellis.github.io/TOBoML/TOBoML.pdf)
 - [[Book] Hyperparameter Optimization in Machine Learning](https://arxiv.org/pdf/2410.22854)
 - [[Playbook] Tuning Deep Learning Models](https://github.com/google-research/tuning_playbook)
+- [[Course] Machine Learning Masters Degree — IMPA](https://www.youtube.com/playlist?list=PLo4jXE-LdDTRLGDL59SkkLPBHVmYphuqI)
 
 #### Multimodal Machine Learning
 
