@@ -16,6 +16,7 @@
     - [USP](#usp)
     - [Albert Einstein](#albert-einstein)
     - [Unicamp](#unicamp)
+    - [UFMG](#ufmg)
 
 ## Research
 
@@ -151,3 +152,8 @@
 ### Unicamp
 
 - [Joao Meidanis](https://www.ic.unicamp.br/~meidanis)
+
+### UFMG
+
+- [Programa Interunidades de Pós-Graduação em Bioinformática - ICB/UFMG](https://www.pgbioinfo.icb.ufmg.br)
+  - [Lab](https://bioinfo.dcc.ufmg.br)
