@@ -21,7 +21,7 @@ Topics to study
 - [X] Complexidade Algorítmica e Notação Assintótica
 - [X] Algoritmos de Ordenação e Seleção
 - [X] Algoritmos para Problemas em Grafos
-- [ ] NP-Completude
+- [X] P, NP, NP-Completo
 - [ ] Autômatos Finitos e Expressões Regulares
 
 ## 1. Estruturas de Dados
