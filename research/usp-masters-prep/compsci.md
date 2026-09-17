@@ -392,7 +392,11 @@ Problemas **NP-Completos** (como o do Caixeiro Viajante: qual a rota mais curta 
 
 * **Expressões Regulares (Regex):** Uma sintaxe matemática para definir formatos de texto.
 * **Autômatos Finitos (AFD e AFN):** São máquinas de estado teóricas. Imagine um fluxograma com círculos (estados) e setas (transições ligadas a letras). Se a máquina terminar em um estado de "sucesso" ao ler sua string letra por letra, o texto é válido.
+  * **Autômatos Finitos Determinísticos (AFD):** Para cada estado e entrada, há exatamente um próximo estado.  
+  * **Autômatos Finitos Não-Determinísticos (AFN):** Pode haver múltiplos caminhos para uma entrada.  
+  * **Equivalência:** Todo AFN pode ser convertido em um AFD. Ambos reconhecem as **Linguagens Regulares**.  
 * **O Lema do Bombeamento:** É uma prova matemática de limite. Ele prova que Regex e Autômatos **não têm memória**. Você não consegue escrever um Regex que valide se um código fonte tem parênteses perfeitamente balanceados, porque a máquina não consegue se lembrar de quantos parênteses abertos viu no passado. Para isso, precisamos de um nível computacional acima, as Máquinas de Pilha.
+  * **Lema do Bombeamento (Pumping Lemma):** Usado para provar que uma linguagem **não** é regular (ex: strings com parênteses balanceados).
 
 **Conceito:** Modelos matemáticos de computação com memória finita.
 
@@ -406,10 +410,6 @@ Problemas **NP-Completos** (como o do Caixeiro Viajante: qual a rota mais curta 
   * Substituição avançada:
     * Parênteses (): Criam grupos de captura. Isso permite extrair partes de um padrão e reutilizá-las no destino.
     * Referência de grupo: utiliza-se o $ seguido do número do grupo (ex: \$1, \$2) para reorganizar ou substituir partes do texto, como alterar o formato de uma data.
-* **Autômatos Finitos Determinísticos (AFD):** Para cada estado e entrada, há exatamente um próximo estado.  
-* **Autômatos Finitos Não-Determinísticos (AFN):** Pode haver múltiplos caminhos para uma entrada.  
-* **Equivalência:** Todo AFN pode ser convertido em um AFD. Ambos reconhecem as **Linguagens Regulares**.  
-* **Lema do Bombeamento (Pumping Lemma):** Usado para provar que uma linguagem **não** é regular (ex: strings com parênteses balanceados).
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAXCAYAAABnGz2mAAACGElEQVR4Xu2WSytEYRjH3S8LYkGpmTlzq6nZTiIbuYQPoFiILNTslSYfQSnJwnfwEWzYSFZiI8oCWWBBKTRu/+d4X97znzNzXoZY+NWTOb/ncp6ZM+eMiop/fplYLDbErhSO43TgTxX7kuAkTiQSWUXzSjKZbOY8E41Gs4gc+yAw/4WdLxi+JMVYalKO4/F4BMcXiHuu1SQSiTDy5+w1mNlSbIF0Ol2H3DN7kyq10CYnBOQeiw2QPpy8wXT4lNsw60RyOsy8CXJbiEX2Lqr5mL0GuX61+AD5HsSD6ZigxUC1bx7yzDfhxf1EEWumxHE+6LtlsZhbgzc9+C4wtFc1bnyUFYKmVlV3bXpxoVCo0XSM5WIH2GXHFHlp4u8Ig8Um1Al2tUulUk1BJxQsF5v31Ng0CVj8UL2BrHY47rPptTkH5o6/1+A2b7dpEvzqMGyanR9+vQxmdZk17t2AuDOLGFzGUanjRwmGTQWdULBZLBwOd3pqbJqK1WCxbj/PFOs3wawxXuymVJN+SGYymVqfnHunsmcsF8sV1IhAYs8j3/wlIs/eRHrlZ4W9ic1iyO87xh1vJq7UgG3EnVq2i+sY1TPLXoC/RpwjTlXIa89zUKPON8z+y+ByzmHoLftPUimLsSwbNbSGvS3oX0cssy8bXIIRDD5ib4n8Bj+x/DYwfAGXdYZ9ED+6lEYeuOxKgYdqAv+31bP/s7wCFbu/VDeQFXUAAAAASUVORK5CYII=>
 
