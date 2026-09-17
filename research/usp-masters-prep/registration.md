@@ -2,6 +2,9 @@
 
 [More info](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/4%20Edital%20IngressoAlunosRegulares%201sem2027.pdf)
 
+**Data de inscrição**: 01 de setembro até 02 de novembro de 2026 às
+23h55
+
 Email: bioinformatica@usp.br
 
 Assunto: Inscrição 2 semestre de 2026
