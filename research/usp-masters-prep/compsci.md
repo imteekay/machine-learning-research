@@ -22,7 +22,7 @@ Topics to study
 - [X] Algoritmos de Ordenação e Seleção
 - [X] Algoritmos para Problemas em Grafos
 - [X] P, NP, NP-Completo
-- [ ] Autômatos Finitos e Expressões Regulares
+- [X] Autômatos Finitos e Expressões Regulares
 
 ## 1. Estruturas de Dados
 
