@@ -3,7 +3,8 @@
 ## Mock Tests
 
 - [Flashcards](https://gemini.google.com/share/d/1aornDEUH8iBDNt8NwXka1HZ8NXLTmMro?usp=sharing)
-- [Test](https://gemini.google.com/share/d/1S7BW--7cQobPc1Q2Dt1ugwxmwHAJSUJB?usp=sharing)
+- [20 Quizzes Test](https://gemini.google.com/share/d/1S7BW--7cQobPc1Q2Dt1ugwxmwHAJSUJB?usp=sharing)
+- [51 Quizzes Test](https://gemini.google.com/share/d/1xVI2j3eqVCTqyT1G0bvw_qdXbIilvN4R?usp=sharing)
 
 ## Prep
 
