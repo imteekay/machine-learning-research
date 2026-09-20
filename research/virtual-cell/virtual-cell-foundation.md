@@ -5,6 +5,7 @@
 - Virtual cell
   - Many diseases are caused by cells behaving abnormally
   - Virtual experimentation: single-cell perturbation - understanding how the effects of an intervention propagate throughout the cell
+  - Virtual cell models to simulate, predict, and steer cell behavior: a representation model that simulates the biological functions and interactions of a cell
 - The importance of good datasets: fit-for-purpose datasets were the primary driver of rapid innovation (e.g. ImageNet/AlexNet, Internet/LLMs, PDB/AlphaFold)
 - Proteins -> Complexes -> Pathways -> Cells
 - Virtual cell multimodality: DNA defines potential, RNA captures active instructions, proteins execute function, and imaging shows spatial structure
@@ -12,6 +13,10 @@
   - RNA/protein expression: sparse high-dimensional count matrices
   - Microscopy: spatial 2D/3D images
   - Metabolic/Signaling networks: dynamic graphs
+- Representations
+  - **Molecular**: genomic, phenotypic information
+  - **Cellular**: spatial molecular localization
+  - **Multicellular**: spatial information
 - Virtual cell state: proteins, lipids, ions
   - We can't measure the whole complexity of a cell
   - We use the central dogma of molecular biology: DNA -> RNA -> Proteins 
