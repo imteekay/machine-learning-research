@@ -74,7 +74,7 @@ The goal is to create reliable simulations for single-cell and between-cells int
 - [scVIVA: a probabilistic framework for representation of cells and their environments in spatial transcriptomics](https://www.biorxiv.org/content/10.1101/2025.06.01.657182v1.full.pdf) ([Video](https://www.youtube.com/watch?v=ykVoYVyCVd0))
 - [Virtual Cells: Predict, Explain, Discover](https://arxiv.org/abs/2505.14613) ([Video](https://www.youtube.com/watch?v=QSfVjsa1i4g))
 - [Towards multimodal foundation models in molecular cell biology](https://www.nature.com/articles/s41586-025-08710-y) ([Video](https://www.youtube.com/watch?v=7LW9Pn7-YtE))
-- [Universal Cell Embeddings: A Foundation Model for Cell Biology](https://www.biorxiv.org/content/10.1101/2023.11.28.568918v3) ([Video](https://www.youtube.com/watch?v=IWjKDYDJSt8))
+- [Universal cell embedding provides a foundation model for cell biology](https://www.nature.com/articles/s41586-026-10689-z) ([Video](https://www.youtube.com/watch?v=IWjKDYDJSt8))
 - [The Virtual Tissues foundation model resolves spatial proteomics across scales](https://www.nature.com/articles/s41586-026-10884-y)
 - [scGPT: toward building a foundation model for single-cell multi-omics using generative AI](https://www.nature.com/articles/s41592-024-02201-0)
 
