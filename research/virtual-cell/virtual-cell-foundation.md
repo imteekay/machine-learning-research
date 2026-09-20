@@ -17,7 +17,12 @@
   - We use the central dogma of molecular biology: DNA -> RNA -> Proteins 
     - We can measure RNA (RNA-seq (RNA sequencing))
     - We can measure Proteins
+  - In cells, complex behavior emerges from a myriad of molecular interactions [1]
 - How to build virtual cells
   - Sequence the smalles organisms (Mycosplasma bacterium)
   - Simulate the behavior of each of the ~600 genes estimated to be in the genome
   - Model DNA, RNA, Protein -> Molecular representation -> Cellular representation -> Multicellular representation
+
+## Resources
+
+- [1] [How to build the virtual cell with artificial intelligence](papers/how-to-build-the-virtual-cell-with-ai.pdf)
