@@ -62,7 +62,6 @@ The goal is to create reliable simulations for single-cell and between-cells int
 ## Resources
 
 - [Awesome Foundation Model Single Cell](https://github.com/OmicsML/awesome-foundation-model-single-cell-papers)
-- [OpenCell Datasets](https://opencell.sf.czbiohub.org)
 
 ### Papers
 
