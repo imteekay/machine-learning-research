@@ -17,7 +17,8 @@
   - RNA/protein expression: sparse high-dimensional count matrices
   - Microscopy: spatial 2D/3D images
   - Metabolic/Signaling networks: dynamic graphs
-- Representations
+- Different scales: temporal (time) and spatial (size) scales
+- Representations (modalities)
   - **Molecular**: genomic, phenotypic information
   - **Cellular**: spatial molecular localization
   - **Multicellular**: spatial information
