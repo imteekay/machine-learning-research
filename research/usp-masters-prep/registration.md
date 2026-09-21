@@ -7,7 +7,7 @@
 - [ ] Pegar comprovante de pagamento do pagamento de R$40,00 para inscrição
 - [X] Preencher inscrição
 - [ ] Escrever carta de interesse
-- [ ] Pegar histórico escolar de gradução
+- [X] Pegar histórico escolar de gradução
 - [X] Pegar RG (frente e verso)
 - [ ] Escrever Curriculum Vitae
 - [ ] Enviar inscrição por email em 20 de Outubro, 2026
