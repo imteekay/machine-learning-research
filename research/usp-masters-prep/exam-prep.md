@@ -14,11 +14,11 @@
 
 ## Listas Ligadas (Linked Lists)
 
-1. Qual a complexidade de busca por elemento no início?
-2. Qual a complexidade de adicionar elemento no início?
-3. Qual a complexidade de adicionar elemento no meio?
-4. Qual a complexidade de adicionar elemento no final?
-5. Qual a complexidade de remover elemento no início?
-6. Qual a complexidade de remover elemento no meio?
-7. Qual a complexidade de remover elemento no final?
-8. Qual a complexidade de memória de uma lista ligada?
+1. Qual a complexidade de busca por elemento? O(N)
+2. Qual a complexidade de adicionar elemento no início? O(1)
+3. Qual a complexidade de adicionar elemento no meio? O(N)
+4. Qual a complexidade de adicionar elemento no final? O(N)
+5. Qual a complexidade de remover elemento no início? O(1)
+6. Qual a complexidade de remover elemento no meio? O(N)
+7. Qual a complexidade de remover elemento no final? O(N)
+8. Qual a complexidade de memória de uma lista ligada? O(N)
