@@ -2,15 +2,15 @@
 
 ## Arrays
 
-1. Qual a complexidade de busca por índice?
-2. Qual a complexidade de busca por elemento?
-3. Qual a complexidade de busca por elemento em array ordenado?
-4. Qual a complexidade de adicionar novo elemento no final da lista em arrays estáticos?
-5. Qual a complexidade de adicionar novo elemento no final da lista em arrays dinâmicos?
-6. Qual a complexidade de adicionar novo elemento que não é o final da lista?
-7. Qual a complexidade de remover o último elemento da lista?
-8. Qual a complexidade de remover o elemento que não é o último da lista?
-9. Qual a complexidade de memória de um array?
+1. Qual a complexidade de busca por índice? O(1)
+2. Qual a complexidade de busca por elemento? O(N)
+3. Qual a complexidade de busca por elemento em array ordenado? O(logN) - busca binária
+4. Qual a complexidade de adicionar novo elemento no final da lista em arrays estáticos? O(1)
+5. Qual a complexidade de adicionar novo elemento no final da lista em arrays dinâmicos? O(N)
+6. Qual a complexidade de adicionar novo elemento que não é o final da lista? O(N) - shift de posição
+7. Qual a complexidade de remover o último elemento da lista? O(1)
+8. Qual a complexidade de remover o elemento que não é o último da lista? O(N) - shift de posição
+9. Qual a complexidade de memória de um array? O(N)
 
 ## Listas Ligadas (Linked Lists)
 
