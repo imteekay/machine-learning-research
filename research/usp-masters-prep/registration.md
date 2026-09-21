@@ -8,7 +8,7 @@
 - [X] Preencher inscrição
 - [ ] Escrever carta de interesse
 - [ ] Pegar histórico escolar de gradução
-- [ ] Pegar RG (frente e verso)
+- [X] Pegar RG (frente e verso)
 - [ ] Escrever Curriculum Vitae
 - [ ] Enviar inscrição por email em 20 de Outubro, 2026
 
