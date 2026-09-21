@@ -4,6 +4,7 @@
   - Measuring (Single-Cell Sequencing): Captures snapshots of RNA expression — the dynamic "language" of the cell—one cell at a time.
   - Changing (CRISPR Perturbations): Allows precise genome-wide edits, turning individual genes on or off to observe how the cell responds.
   - Understanding (AI Models): Uses foundation models trained on cellular RNA data to predict how cells behave and evolve.
+  - e.g. of a perturbation via CRISPR: Virtual cell-based engineering could enable targeted modifications (turning genes on and off) to pancreatic beta cells to create individualized beta cell replacement therapies for type 1 diabetes. [1]
 - Virtual patient simulation: Simulating first is the gold standard, where complex simulations guide investment decisions prior to real-world manufacturing.
 - Virtual patient (trillion cells) -> virtual cell (single cell)
 - Virtual cell
