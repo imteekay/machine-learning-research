@@ -54,3 +54,13 @@
 3. Qual a complexidade de adicionar elemento? O(1) ou O(N) se ocorrer muitas colisões
 4. Qual a complexidade de remover elemento? O(1)
 5. Qual a complexidade de memória da tabela de espalhamento? O(n)
+
+## Árvores Binárias e de Busca (BST)
+
+1. Qual a complexidade de busca de um elemento numa árvore balanceada? O(logN)
+2. Qual a complexidade de inserção de elemento numa árvore balanceada? O(logN)
+3. Qual a complexidade de remoção de elemento numa árvore balanceada? O(logN)
+1. Qual a complexidade de busca de um elemento numa árvore desbalanceada? O(N)
+2. Qual a complexidade de inserção de elemento numa árvore desbalanceada? O(N)
+3. Qual a complexidade de remoção de elemento numa árvore desbalanceada? O(N)
+5. Qual a complexidade de memória da árvore binária de busca? O(n)

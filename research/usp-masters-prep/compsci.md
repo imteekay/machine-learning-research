@@ -139,7 +139,7 @@ A otimização de **recursão de cauda** (*tail recursion*) é um truque de comp
 
 * **Mecânica:** Exige um **Caso Base** (parada) e um **Caso Recursivo**.  
 * **Recursão de Cauda (Tail Call):** Ocorre quando a chamada recursiva é a última ação. Compiladores podem otimizar para usar espaço de pilha ![][image1].  
-* **Tempo/Memória:** Depende do problema (ex: Fatorial é ![][image2] tempo e ![][image2] memória na pilha).
+* **Tempo/Memória:** Depende do problema (ex: Fatorial é $O(n)$ tempo e $O(n)$ memória na pilha).
 
 ### 1.3 Tabelas de Espalhamento (Hash Tables)
 
@@ -166,12 +166,12 @@ O problema prático é o **desbalanceamento**. Se você inserir dados já ordena
 
 **Conceito:** Cada nó tem no máximo dois filhos. Na **BST**, o filho à esquerda é menor e o à direita é maior que o pai.
 
-* **Operações (BST Balanceada):** Busca/Inserção/Remoção: ![][image3].  
-* **Operações (BST Desbalanceada):** Busca: ![][image2].  
+* **Operações (BST Balanceada):** Busca/Inserção/Remoção: $O(\log n)$.
+* **Operações (BST Desbalanceada):** Busca: $O(n)$.
 * **Roteamento em Árvores Rubro-Negras:**  
   * É uma BST que se auto-balanceia usando uma "cor" (Red/Black) para cada nó.  
   * **Regras:** A raiz é preta; folhas nulas são pretas; um nó vermelho não tem filhos vermelhos; todo caminho da raiz às folhas tem o mesmo número de nós pretos.  
-  * **Mecânica:** Se uma inserção viola as regras, a árvore executa **Rotações** (Esquerda ou Direita) e **Recoloração** para manter a altura ![][image3].
+  * **Mecânica:** Se uma inserção viola as regras, a árvore executa **Rotações** (Esquerda ou Direita) e **Recoloração** para manter a altura $O(\log n)$.
 
 ### 1.5 Union-Find (Conjuntos Disjuntos)
 
@@ -413,10 +413,6 @@ Problemas **NP-Completos** (como o do Caixeiro Viajante: qual a rota mais curta 
     * Referência de grupo: utiliza-se o $ seguido do número do grupo (ex: \$1, \$2) para reorganizar ou substituir partes do texto, como alterar o formato de uma data.
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAXCAYAAABnGz2mAAACGElEQVR4Xu2WSytEYRjH3S8LYkGpmTlzq6nZTiIbuYQPoFiILNTslSYfQSnJwnfwEWzYSFZiI8oCWWBBKTRu/+d4X97znzNzXoZY+NWTOb/ncp6ZM+eMiop/fplYLDbErhSO43TgTxX7kuAkTiQSWUXzSjKZbOY8E41Gs4gc+yAw/4WdLxi+JMVYalKO4/F4BMcXiHuu1SQSiTDy5+w1mNlSbIF0Ol2H3DN7kyq10CYnBOQeiw2QPpy8wXT4lNsw60RyOsy8CXJbiEX2Lqr5mL0GuX61+AD5HsSD6ZigxUC1bx7yzDfhxf1EEWumxHE+6LtlsZhbgzc9+C4wtFc1bnyUFYKmVlV3bXpxoVCo0XSM5WIH2GXHFHlp4u8Ig8Um1Al2tUulUk1BJxQsF5v31Ng0CVj8UL2BrHY47rPptTkH5o6/1+A2b7dpEvzqMGyanR9+vQxmdZk17t2AuDOLGFzGUanjRwmGTQWdULBZLBwOd3pqbJqK1WCxbj/PFOs3wawxXuymVJN+SGYymVqfnHunsmcsF8sV1IhAYs8j3/wlIs/eRHrlZ4W9ic1iyO87xh1vJq7UgG3EnVq2i+sY1TPLXoC/RpwjTlXIa89zUKPON8z+y+ByzmHoLftPUimLsSwbNbSGvS3oX0cssy8bXIIRDD5ib4n8Bj+x/DYwfAGXdYZ9ED+6lEYeuOxKgYdqAv+31bP/s7wCFbu/VDeQFXUAAAAASUVORK5CYII=>
-
-[image2]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAaCAYAAAAjZdWPAAACgklEQVR4Xu2VXYuMYRjH1y5CkS1RM2PeNTUHUnOwOCCUnDhBOBA5UOtYXj4BtSdWCd+A8gUkB5w5FGeUA0kbaldhadfL75quW/f859mZZ4ZRMr+6mn3+/+vlfu69556RkSH/KKVSab9qaSgWi9tU6wsWUMjn87cKhcL1arW6Tn2FwZPEJdXTwpwfqqWGwdPWgAWftOdyuZzn+S3xRXMDlUplM/4b1XuB+hIxq3o3Rn2xj9Qw8BaJ76obVsfLrlK9V+jzifkHVV8SG0y8VD2At9dfap/oO4mvsdYvuVxui81QPRESX6dIbv4niLuxyPPC75xlxWZkMpk1qrfAwN2+mIfqxbDD4543F+umsUOrYy2Ad5s4FJ7pcZS4w8ztcV6Mz5hSvQXbKUvsdiYZdsIbPglarVZba1qcF0D/5p9Wc5iYY8Z6e0Gfd1xrDPT7hW7HzZsmDo6h2XMfNhk0nvck1drCyLvmOdZ/MfZdexBrAb9m23r+gqtqY9pFJ+WxsNOqGdzxW/kY43OT+XpGvde5WAuw6ItJPWPGvMG8GjE0OmJ5eh2y6FOdBuDdUJ/nHa4ti/UA3nmtacMX3TFpqRz7QiXpAa9bEG2mUw0bc7OT34SED52SaPLK/EajsSLBa94oqgfMI+dKgnY5/B17Bt499M+qt2HF7NrTBP2d7pRitfV6faXqnOMN5ul16AsdZd4EcTb2go8+rXoiJL+3AuIxMe/FE5qneE3bl4raY77AFtCemc6OXlXPcG9c9T8KAy4w6KPq/ZDNZnNJLzoQfNBy1XuFPrOF6Bd0oHAUDjDsheq94Hf6jOoDhYFTHJUzqqflrx0LxX5sVEsDu7xLtSFD/hd+Att/xzzV+CFTAAAAAElFTkSuQmCC>
-
-[image3]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAXCAYAAAC/F5msAAADqUlEQVR4Xu1WSWgUURCVJG64i3FgyMzPTAYiAfGQQ8SD4oJ686IoKAYPQlTw4oJeXBBBBEExahQUUfRgUDzoSYxxiyJEXEBEQYhKcEMMRKJGo69mqprqyp9MnEQYIQ+K7nr1qv7/1b9/97BhQxjCP0UikVhouUJEeXn5CstlBRbl4vF4g3OuPpVKjbdxCxSvg23TXDQanQJumuYKAVhXEut6bPkQMPGDEP2GeDX5yWQyDv8D7JvVCioqKmKIt4uPJs6mGmxNWlsowDoPwY5bnlDEDbhpAwTEfsJ6LE+gPBQd5eMLtREEmp/lZNKvLC9AbB43ar7hZ8G+a07wHzTirNOvCJy33u6Ekd4xsEZNwu+2Z4Og0BuB135CsG4sYg5PuDksCwM7YRLrvmieuLKystGaE2RrBPQp8HdhLXIWWdAkEdtJZxYO65G41kDfCTtstQTUnI7YqUgkMob8ysrKccjZRflwi4w8AM1RbrrJ8b3jGpjUKl7YI+FosKCQB75GwL8Pe6n8A84cxJjLPsotLS0diwVO5jrnwC/yjUeNAn8VtpK1ezDf0xSjZvpyBEGME7MKBZjEC9LhWicc/Ll95XLtoBHIXefTs+6O8Tcrv9GXJ0DsOl/TjcA4uyXWn4dFn72pPGhWocCnw4BrLKfBOUEjfDWYb9I869Yr/6QvT4DYFr4+szr4GyyngVgXXYt50LSTDdheS0lnP61oRG2OQaj2DeP30qPuZeaLyXeZT3WrxHH/FdYZJGQB128xXIdvTAHVlhvv5DSyadCImT5ewHk5GwGuRfOo+wB+G6yHc9q0PhtIi9zFHm675jSCcV2OjuFpvaZ4dXX1cE8s/SWxvIBiehfBb/XpHR/Yyu+lyQUsdrnNw9jLhONDt17HCaEc7toTFRf+I03S8hqUW1VVNcLyBIo5809PHCbYID5+x2cQR59LpaGd8Bl2D3YNdh7zWyJxH6B5GlpUhrsiHK7vdExgc4j4RKTLfN666B6D14REHnDOJs1hoQvAvYe9gbXDOnQc/hnOI6PPcYmJX1LxkGmdhsucK6F/DNrFkoe1TNQxAv1z9FXzr4BFb3X9OMj6C9Q75kzjBLyoE5bPF7QzUe+i5fMGdzX0VPMFaj2E3bY8AXwbnuwFy+eLQdsNAjqpnfpbHChQ65dZcAm4ZtgPxQ0I2A07UG+v5QcMFN2P4mstny9QLwE7iobcwvVILBaLWk2+wAEdQc3nlh80YNK1litE4IFttNwQgD+0fleONUA/1gAAAABJRU5ErkJggg==>
 
 [image6]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAbCAYAAABIpm7EAAAAoElEQVR4XmNgGAVDF8jLy38H4k9AfBjKfwrEJ4D4PxCfRlEsJyeXpqioqA6kbaAK/sHkZGVllUFiyOpBpv0B0UAN06GSjDA5oJgWhgYYgJr+C01sPSENx9DEPuLVoKCg4IFFrBJZDAyAguHoJgHdHwoTk5GREQKyp8AlgZzL6BqA/C0wMSD9AlkOHFJAPBlZzNjYmBWkAeosAWS5UTAEAQB35TTi2flf7gAAAABJRU5ErkJggg==>
 
