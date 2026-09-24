@@ -89,7 +89,7 @@ A fila espelha o comportamento de uma fila de banco: o primeiro a entrar é o pr
   * Pegar o primeiro (front): $O(1)$  
   * Enqueue (adicionar no fim): $O(1)$  
   * Dequeue (remover do início): $O(1)$  
-* **Memória:** $O(n)$.  
+* **Memória:** $O(n)$.
 * **Aplicação:** Escalonamento de processos, buffers de impressão, IO de disco.
 
 #### Listas de Prioridade (Heaps)

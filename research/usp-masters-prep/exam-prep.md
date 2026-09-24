@@ -22,3 +22,19 @@
 6. Qual a complexidade de remover elemento no meio? O(N)
 7. Qual a complexidade de remover elemento no final? O(N)
 8. Qual a complexidade de memória de uma lista ligada? O(N)
+
+## Pilhas (Stacks)
+
+1. Qual a complexidade de busca por elemento? O(N)
+2. Qual a complexidade de adicionar novo elemento? O(1)
+3. Qual a complexidade de remover elemento? O(1)
+4. Qual a complexidade de verificar elemento do topo? O(1)
+5. Qual a complexidade de memória de uma pilha? O(N)
+
+## Filas (Queues)
+
+1. Qual a complexidade de busca por elemento? O(N)
+2. Qual a complexidade de pegar o primeiro elemento (front)? O(1)
+3. Qual a complexidade de adicionar novo elemento (enqueue)? O(1)
+4. Qual a complexidade de remover elemento (dequeue)? O(1) - se a estrutura for uma lista ligada / O(N) - se a estrutura for um array dinamico que precisa de shift de posição
+5. Qual a complexidade de memória de uma fila? O(N)
