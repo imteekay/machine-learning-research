@@ -38,3 +38,11 @@
 3. Qual a complexidade de adicionar novo elemento (enqueue)? O(1)
 4. Qual a complexidade de remover elemento (dequeue)? O(1) - se a estrutura for uma lista ligada / O(N) - se a estrutura for um array dinamico que precisa de shift de posição
 5. Qual a complexidade de memória de uma fila? O(N)
+
+## Listas de Prioridade (Heaps)
+
+1. Qual a complexidade de busca do elemento mais prioritário (max/min)? O(1)
+1. Qual a complexidade de busca por elemento? O(log n) - desce por um dos lados da árvore
+1. Qual a complexidade de Insert (adicionar)? O(log n) - desce por um dos lados da árvore
+1. Qual a complexidade de Extract / remover prioritário? O(log n) - a remoção do elemento prioritário é O(1), mas o recolocar outro elemento na parte prioritária necessita de um sift-up passando por um lado da árvore
+2. Qual a complexidade de memória da lista de prioridade? O(n)
