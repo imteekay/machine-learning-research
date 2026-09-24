@@ -43,6 +43,14 @@
 
 1. Qual a complexidade de busca do elemento mais prioritário (max/min)? O(1)
 2. Qual a complexidade de busca por elemento? O(log n) - desce por um dos lados da árvore
-3. Qual a complexidade de Insert (adicionar)? O(log n) - desce por um dos lados da árvore
-4. Qual a complexidade de Extract / remover prioritário? O(log n) - a remoção do elemento prioritário é O(1), mas o recolocar outro elemento na parte prioritária necessita de um sift-up passando por um lado da árvore
+3. Qual a complexidade de insert (adicionar)? O(log n) - desce por um dos lados da árvore
+4. Qual a complexidade de extract / remover prioritário? O(log n) - a remoção do elemento prioritário é O(1), mas o recolocar outro elemento na parte prioritária necessita de um sift-up passando por um lado da árvore
 5. Qual a complexidade de memória da lista de prioridade? O(n)
+
+## Tabelas de Espalhamento (Hash Tables)
+
+1. Qual a complexidade de busca de um elemento? O(1)
+2. Qual a complexidade de busca de um elemento (com colisão)? O(n)
+3. Qual a complexidade de adicionar elemento? O(1) ou O(N) se ocorrer muitas colisões
+4. Qual a complexidade de remover elemento? O(1)
+5. Qual a complexidade de memória da tabela de espalhamento? O(n)
