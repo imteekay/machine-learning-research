@@ -64,3 +64,16 @@
 5. Qual a complexidade de inserção de elemento numa árvore desbalanceada? O(N)
 6. Qual a complexidade de remoção de elemento numa árvore desbalanceada? O(N)
 7. Qual a complexidade de memória da árvore binária de busca? O(n)
+
+## Complexidade Algorítmica e Notação Assintótica
+
+- Conceitos:
+  - $O(g(n))$ (Big-O): Limite superior (pior caso).  
+  - $Ω(g(n))$ (Omega): Limite inferior (melhor caso).  
+  - $ϴ(g(n))$ (Theta): Limite justo (comportamento exato).  
+- Complexidades:
+  - $O(1)$: Constante. Não importa se há 10 ou 1 bilhão de itens, leva o mesmo tempo.
+  - $O(\log n)$: Logarítmico. Extremamente eficiente. Se os dados dobrarem, o algoritmo só faz uma operação a mais.
+  - $O(n)$: Linear. Se os dados dobrarem, o algoritmo dobra em operações.
+  - $O(n^2)$: Quadrático. O pesadelo da escalabilidade. Um loop dentro de outro loop. Se os dados dobrarem, o tempo aumenta em 4 vezes. Se aumentarem 10 vezes, o tempo aumenta 100 vezes.
+- **Hierarquia comum:** $O(1) < O(\log n) < O(n) < O(n \log n) < O(n²) < O(2ᴺ) < O(n!)$.

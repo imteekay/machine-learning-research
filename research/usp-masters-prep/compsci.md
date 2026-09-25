@@ -279,6 +279,7 @@ Esta é a régua com a qual medimos a escalabilidade do código. Não medimos o 
 
 * $O(1)$: Constante. Não importa se há 10 ou 1 bilhão de itens, leva o mesmo tempo.
 * $O(\log n)$: Logarítmico. Extremamente eficiente. Se os dados dobrarem, o algoritmo só faz uma operação a mais.
+* $O(n)$: Linear. Se os dados dobrarem, o algoritmo dobra em operações.
 * $O(n^2)$: Quadrático. O pesadelo da escalabilidade. Um loop dentro de outro loop. Se os dados dobrarem, o tempo aumenta em 4 vezes. Se aumentarem 10 vezes, o tempo aumenta 100 vezes.
 
 **Conceito:** Mede como o tempo ou espaço cresce com o tamanho da entrada ($n$).
