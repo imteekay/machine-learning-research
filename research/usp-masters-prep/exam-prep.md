@@ -80,42 +80,51 @@
 
 ## Bubble Sort
 
-- Como funciona?
-- Qual a complexidade de tempo médio ($θ(n)$)?
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+[Ilustração](https://www.youtube.com/watch?v=xli_FI7CuzA)
+
+- Como funciona? Compara 2 elementos, faz swap se o número for maior, com intuito de mover os maiores números para o final da lista
+- Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n²)$
+- Qual a complexidade de memória? $O(1)$
 
 ## Selection Sort 
 
 - Como funciona?
 - Qual a complexidade de tempo médio ($θ(n)$)?
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+- Qual a complexidade de memória?
 
 ## Insertion Sort
 
 - Como funciona?
 - Qual a complexidade de tempo médio ($θ(n)$)?
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+- Qual a complexidade de memória?
 
 ## Merge Sort
 
 - Como funciona?
 - Qual a complexidade de tempo médio ($θ(n)$)?
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+- Qual a complexidade de memória?
 
 ## Quick Sort
 
 - Como funciona?
 - Qual a complexidade de tempo médio ($θ(n)$)?
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+- Qual a complexidade de memória?
 
 ## Heap Sort
 
 - Como funciona?
 - Qual a complexidade de tempo médio ($θ(n)$)?
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+- Qual a complexidade de memória?
 
 ## Counting Sort
 
 - Como funciona?
 - Qual a complexidade de tempo médio ($θ(n)$)?
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+- Qual a complexidade de memória?
