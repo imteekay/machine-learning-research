@@ -77,3 +77,45 @@
   - $O(n)$: Linear. Se os dados dobrarem, o algoritmo dobra em operações.
   - $O(n^2)$: Quadrático. O pesadelo da escalabilidade. Um loop dentro de outro loop. Se os dados dobrarem, o tempo aumenta em 4 vezes. Se aumentarem 10 vezes, o tempo aumenta 100 vezes.
 - **Hierarquia comum:** $O(1) < O(\log n) < O(n) < O(n \log n) < O(n²) < O(2ᴺ) < O(n!)$.
+
+## Bubble Sort
+
+- Como funciona?
+- Qual a complexidade de tempo médio ($θ(n)$)?
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+
+## Selection Sort 
+
+- Como funciona?
+- Qual a complexidade de tempo médio ($θ(n)$)?
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+
+## Insertion Sort
+
+- Como funciona?
+- Qual a complexidade de tempo médio ($θ(n)$)?
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+
+## Merge Sort
+
+- Como funciona?
+- Qual a complexidade de tempo médio ($θ(n)$)?
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+
+## Quick Sort
+
+- Como funciona?
+- Qual a complexidade de tempo médio ($θ(n)$)?
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+
+## Heap Sort
+
+- Como funciona?
+- Qual a complexidade de tempo médio ($θ(n)$)?
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
+
+## Counting Sort
+
+- Como funciona?
+- Qual a complexidade de tempo médio ($θ(n)$)?
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
