@@ -93,15 +93,17 @@
 
 - Como funciona? Procura o menor elemento, faz o swap pra posição atual e escanea o restante dos elementos fazendo a mesma operação
 - Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? ($O(n)$)? $O(n²)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n²)$
 - Qual a complexidade de memória? $O(1)$
 
 ## Insertion Sort
 
-- Como funciona?
-- Qual a complexidade de tempo médio ($θ(n)$)?
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
-- Qual a complexidade de memória?
+[Ilustração](https://www.youtube.com/watch?v=JU767SDMDvA)
+
+- Como funciona? Compara o elemento atual com os da esquerda e faz swap caso seja um elemento menor, até que chegue na posição correta
+- Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n²)$
+- Qual a complexidade de memória? $O(1)$
 
 ## Merge Sort
 
