@@ -33,6 +33,9 @@
   - Sequence the smalles organisms (Mycosplasma bacterium)
   - Simulate the behavior of each of the ~600 genes estimated to be in the genome
   - Model DNA, RNA, Protein -> Molecular representation -> Cellular representation -> Multicellular representation
+- Spatial Biology
+  - Cancer biology: immune resistance must be understood in the spatial context of the cellular neighborhood to identify the specific cell states and gene signatures involved
+  - Malignant cells within a tumor can engage in active immune evasion by either blocking immune infiltration,133 evading immune recognition, or dampening immune cell function.
 
 ## Resources
 
