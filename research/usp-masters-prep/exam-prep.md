@@ -107,6 +107,8 @@
 
 ## Merge Sort
 
+[Ilustração](https://www.youtube.com/watch?v=4VqmGXwpLqc)
+
 - Como funciona? Divide na metade recursivamente até que chegue ao nível de um elemento. Ao fazer o merge de duas unidades/grupos, junte em ordem. A divisão é feita recursivamente. A junção é feita iterativamente apontando para cada elemento dos dois grupos.
 - Qual a complexidade de tempo médio ($θ(n)$)? $O(n\log n)$
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n\log n)$
@@ -114,7 +116,7 @@
 
 ## Quick Sort
 
-- Como funciona?
+- Como funciona? Funciona com um elemento pivô
 - Qual a complexidade de tempo médio ($θ(n)$)?
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
 - Qual a complexidade de memória?
