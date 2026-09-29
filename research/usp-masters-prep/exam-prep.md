@@ -125,10 +125,12 @@
 
 ## Heap Sort
 
-- Como funciona?
-- Qual a complexidade de tempo médio ($θ(n)$)?
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
-- Qual a complexidade de memória?
+[Ilustração](https://www.youtube.com/watch?v=2DmK_H7IdTo)
+
+- Como funciona? Transforma a lista em uma árvore max heap, remove o elemento prioriário (maior elemento) e move ele para o final da lista ordenada. Recria a árvore max heap e remove o maior elemento novamente. Faça esse procedimento até que todos os elementos forem removidos da heap.
+- Qual a complexidade de tempo médio ($θ(n)$)? $O(n \log n)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n \log n)$
+- Qual a complexidade de memória? $O(1)$
 
 ## Counting Sort
 
