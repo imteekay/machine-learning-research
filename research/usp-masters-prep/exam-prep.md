@@ -112,14 +112,16 @@
 - Como funciona? Divide na metade recursivamente até que chegue ao nível de um elemento. Ao fazer o merge de duas unidades/grupos, junte em ordem. A divisão é feita recursivamente. A junção é feita iterativamente apontando para cada elemento dos dois grupos.
 - Qual a complexidade de tempo médio ($θ(n)$)? $O(n\log n)$
 - Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n\log n)$
-- Qual a complexidade de memória? $O(1)$
+- Qual a complexidade de memória? $O(n)$
 
 ## Quick Sort
 
-- Como funciona? Funciona com um elemento pivô
-- Qual a complexidade de tempo médio ($θ(n)$)?
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
-- Qual a complexidade de memória?
+[Ilustração](https://www.youtube.com/watch?v=Hoixgm4-P4M)
+
+- Como funciona? Funciona com um elemento pivô. Escolha um elemento maior na esquerda e um elemento menor na direita, faça swap deles, até que os ponteiros se cruzem, isso significa que todos os elemento menores que o pivô ficaram na esquerda e os maiores ficaram na direita. Faça o mesmo procedimento recursivamente para o bloco da esquerda e o bloco da direita.
+- Qual a complexidade de tempo médio ($θ(n)$)? $O(n \log n)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n²)$
+- Qual a complexidade de memória? $O(n)$
 
 ## Heap Sort
 
