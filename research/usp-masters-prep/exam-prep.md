@@ -134,7 +134,9 @@
 
 ## Counting Sort
 
-- Como funciona?
-- Qual a complexidade de tempo médio ($θ(n)$)?
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)?
-- Qual a complexidade de memória?
+[Ilustração](https://www.youtube.com/watch?v=OKd534EWcdk)
+
+- Como funciona? Conta a quantidade de cada elemento. Crie um array em order com a soma cumulativa das quantidades. Faça um shift do array para a esquerda e os valores serão o index em que cada elemento começa na array ordenado. Ao atravessar o array desordenado, utilize o valor como index, insira no array na posição correta e incremente o index. Faça isso para todos os elementos.
+- Qual a complexidade de tempo médio ($θ(n)$)? $O(n)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n)$
+- Qual a complexidade de memória? $O(n)$
