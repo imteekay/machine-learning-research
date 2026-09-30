@@ -146,3 +146,9 @@
 - Como funciona? Explora tudo ao redor (filhos em árvores; vizinhos em grafos) antes de aprofundar. Utiliza filas para priorizar o que há ao redor primeiro e enfilera os próximos nós. Utiliza um HashSet para armazenar quais nós já foram visitados, para quebrar o loop de exploração.
 - Complexidade de tempo: $O(V + E)$ (nós explorados (V) + vértices caminhados (E))
 - Complexidade de espaço: $O(V)$ (todos os nós na fila)
+
+## DFS (Profundidade)
+
+- Como funciona? Explora um nó de cada vez, aprofundando o caminho ao máximo. Utiliza pilha para priorizar a profundidade. Utiliza um HashSet para armazenar quais nós já foram visitados, para quebrar o loop de exploração.
+- Complexidade de tempo: $O(V + E)$ (nós explorados (V) + vértices caminhados (E))
+- Complexidade de espaço: $O(V)$ (todos os nós na fila)
