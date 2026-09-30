@@ -6,7 +6,7 @@
 
 - [ ] Pegar comprovante de pagamento do pagamento de R$40,00 para inscrição
 - [X] Preencher inscrição
-- [ ] Escrever carta de interesse
+- [X] Escrever carta de interesse
 - [X] Pegar histórico escolar de gradução
 - [X] Pegar RG (frente e verso)
 - [ ] Escrever Curriculum Vitae
