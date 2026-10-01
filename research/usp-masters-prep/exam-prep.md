@@ -152,3 +152,12 @@
 - Como funciona? Explora um nó de cada vez, aprofundando o caminho ao máximo. Utiliza pilha para priorizar a profundidade. Utiliza um HashSet para armazenar quais nós já foram visitados, para quebrar o loop de exploração.
 - Complexidade de tempo: $O(V + E)$ (nós explorados (V) + vértices caminhados (E))
 - Complexidade de espaço: $O(V)$ (todos os nós na fila)
+
+## Caminhos Mínimos
+
+### Algoritmo de Dijkstra
+
+- Objetivo: dado um vértice, encontrar o caminho mínimo para todos os outros vértices
+- Como funciona: assim como DFS, coloque os vértices vizinhos em uma fila de prioridade. A fila de prioridade precisar ser priorizada/ordenada por menor peso. Para cada vértice visitado, atualize o valor do caminho (soma dos pesos do caminho) caso ache um valor menor do que o atual (inicializa com valor infinito)
+- Complexidade de tempo: $O((V + E) \log V)$ (for binary heap) or $O(V²)$ (for unsorted array)
+- Complexidade de espaço: $O(V)$
