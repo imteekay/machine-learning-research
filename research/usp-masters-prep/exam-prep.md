@@ -161,3 +161,10 @@
 - Como funciona: assim como DFS, coloque os vértices vizinhos em uma fila de prioridade. A fila de prioridade precisar ser priorizada/ordenada por menor peso. Para cada vértice visitado, atualize o valor do caminho (soma dos pesos do caminho) caso ache um valor menor do que o atual (inicializa com valor infinito)
 - Complexidade de tempo: $O((V + E) \log V)$ (for binary heap) or $O(V²)$ (for unsorted array)
 - Complexidade de espaço: $O(V)$
+
+### Bellman-Ford
+
+- Objetivo: encontrar o caminho mínimo
+- Como funciona: O algoritmo roda \(V-1\) vezes. Em cada rodada, ele itera por todas as arestas \((u, v)\) e atualiza o caminho mínimo se a distância atual até u + o peso da aresta for menor que o caminho já conhecido até $v$.
+- Complexidade de tempo: $O((V + E) \log V)$
+- Complexidade de espaço: $O(V)$
