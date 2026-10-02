@@ -369,6 +369,8 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
   * Para cada vértice, atualiza a distância, escolhendo a menor distância navegada até este momento
 * **Bellman-Ford:** ([resource](https://www.youtube.com/watch?v=obWXjtg0L64))
   * Funciona com pesos negativos. Detecta ciclos negativos. $O(V · E)$.
+  * Itera sobre cada edge (aresta) V - 1 vezes
+  * Se o caminho de `u` + o peso até `v` for menor que o caminho conhecido, atualiza o valor do caminho de (`u`, `v`)
 
 #### Árvore Geradora Mínima (MST) (minimum spanning trees)
 
