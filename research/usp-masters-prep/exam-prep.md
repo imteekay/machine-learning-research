@@ -170,3 +170,16 @@
 - Complexidade de espaço: $O(V)$
 
 ## Árvore Geradora Mínima (MST) (minimum spanning trees)
+
+Árvore Geradora Mínima: É um subgrafo que conecta **todos** os vértices de um grafo **conexo** e ponderado **sem formar ciclos**, de modo que a **soma dos pesos de suas arestas seja a menor possível**
+
+### Kruskal
+
+- Grupos/conjuntos são criados para cada vértice (eles seram agrupados/unidos no algoritmo)
+- Ordenada as arestas (pesos) do menor ao maior
+- Itera sobre cada aresta e adiciona em grupos
+  - Se os vértices estiverem no mesmo grupo, ignore para não formar ciclos (não adicione no grupo)
+  - Se os vértices não estiverem unidos (mesmo grupo), adicione a aresta e una os dois no grupo
+  - Para saber se os 2 vértices estão unidos, usamos o find do union-find para verificar quais grupos eles pertencem
+  - Para unir 2 vértices no mesmo grupo, usamos o union do union-find
+- Para a iteração quando formar o conjunto com todas os vértices ($v$) e arestas (N - 1 arestas)
