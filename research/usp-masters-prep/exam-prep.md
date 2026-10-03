@@ -168,3 +168,5 @@
 - Como funciona: O algoritmo roda \(V-1\) vezes. Em cada rodada, ele itera por todas as arestas \((u, v)\) e atualiza o caminho mínimo se a distância atual até u + o peso da aresta for menor que o caminho já conhecido até $v$.
 - Complexidade de tempo: $O((V + E) \log V)$
 - Complexidade de espaço: $O(V)$
+
+## Árvore Geradora Mínima (MST) (minimum spanning trees)
