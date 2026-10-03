@@ -1,10 +1,10 @@
 # CV
 
-- [ ] Nome
-- [ ] Email
-- [ ] LinkedIn
-- [ ] Github
-- [ ] Curriculo Lattes
-- [ ] Experiência profissional
-- [ ] Formação acadêmica
-- [ ] Idiomas
+- [X] Nome
+- [X] Email
+- [X] LinkedIn
+- [X] Github
+- [X] Curriculo Lattes
+- [X] Experiência profissional
+- [X] Formação acadêmica
+- [X] Idiomas
