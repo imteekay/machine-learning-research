@@ -183,3 +183,12 @@
   - Para saber se os 2 vértices estão unidos, usamos o find do union-find para verificar quais grupos eles pertencem
   - Para unir 2 vértices no mesmo grupo, usamos o union do union-find
 - Para a iteração quando formar o conjunto com todas os vértices ($v$) e arestas (N - 1 arestas)
+
+### Prim
+
+- Formar uma árvore geradora mínima (minimum spanning tree)
+- Inicia com um nó do grafo
+- Adiciona os vértices associados ao vértice inicial na lista de prioridade
+- A lista de prioridade vai ordenar pelos vértices com maior prioridade, ou seja, menores pesos das arestas
+- Se o vértice já foi visitado, pula. Se ainda não foi, adiciona na árvore geradora mínima (conjunto de arestas, $v$ e $u$)
+- Sempre marca quais vértices já foram visitados
