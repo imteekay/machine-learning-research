@@ -192,3 +192,10 @@
 - A lista de prioridade vai ordenar pelos vértices com maior prioridade, ou seja, menores pesos das arestas
 - Se o vértice já foi visitado, pula. Se ainda não foi, adiciona na árvore geradora mínima (conjunto de arestas, $v$ e $u$)
 - Sempre marca quais vértices já foram visitados
+
+## NP-Completude
+
+- **P (Polynomial Time):** Problemas que podem ser resolvidos em tempo polinomial ($O(nᴷ)$).
+- **NP (Nondeterministic Polynomial Time):** Problemas cuja solução pode ser **verificada** em tempo polinomial.  
+- **NP-Completo:** Os problemas mais difíceis de NP. Se um for resolvido em tempo polinomial, todos em NP também serão ($P = NP$).  
+- **NP-Hard**: Problemas que são tão difíceis quanto os problemas mais difíceis de NP.
