@@ -393,9 +393,10 @@ Problemas **NP-Completos** (como o do Caixeiro Viajante: qual a rota mais curta 
 
 **Conceito:** Classificação de problemas quanto à dificuldade de resolução.
 
-* **P:** Problemas que podem ser resolvidos em tempo polinomial ($O(nᴷ)$).
-* **NP:** Problemas cuja solução pode ser **verificada** em tempo polinomial.  
+* **P (Polynomial Time):** Problemas que podem ser resolvidos em tempo polinomial ($O(nᴷ)$).
+* **NP (Nondeterministic Polynomial Time):** Problemas cuja solução pode ser **verificada** em tempo polinomial.  
 * **NP-Completo:** Os problemas mais difíceis de NP. Se um for resolvido em tempo polinomial, todos em NP também serão ($P = NP$).  
+* **NP-Hard**: Problemas que são tão difíceis quanto os problemas mais difíceis de NP.
 * **Exemplos:** Caixeiro Viajante, Problema da Mochila, Satisfatibilidade Booleana (SAT).
 
 ### 2.5 Autômatos Finitos e Expressões Regulares
