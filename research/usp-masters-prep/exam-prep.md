@@ -199,3 +199,9 @@
 - **NP (Nondeterministic Polynomial Time):** Problemas cuja solução pode ser **verificada** em tempo polinomial.  
 - **NP-Completo:** Os problemas mais difíceis de NP. Se um for resolvido em tempo polinomial, todos em NP também serão ($P = NP$).  
 - **NP-Hard**: Problemas que são tão difíceis quanto os problemas mais difíceis de NP.
+
+## Autômatos Finitos
+
+- Máquinas de estado
+- Autômatos finitos determinístico: para cada estado e entrada (input), haverá sempre a mesma saída (novo estado)
+- Autômatos finitos não-determinístico: pode haver múltiplas saídas (output) para o mesmo conjunto de estado e entrada
