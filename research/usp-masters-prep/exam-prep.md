@@ -205,3 +205,8 @@
 - Máquinas de estado
 - Autômatos finitos determinístico: para cada estado e entrada (input), haverá sempre a mesma saída (novo estado)
 - Autômatos finitos não-determinístico: pode haver múltiplas saídas (output) para o mesmo conjunto de estado e entrada
+
+## Expressões Regulares
+
+- Linguagem para descrever padrões de texto.
+- Busca, validações, substituições
