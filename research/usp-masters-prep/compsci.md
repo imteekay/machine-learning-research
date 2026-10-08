@@ -401,17 +401,11 @@ Problemas **NP-Completos** (como o do Caixeiro Viajante: qual a rota mais curta 
 
 ### 2.5 Autômatos Finitos e Expressões Regulares
 
-* **Expressões Regulares (Regex):** Uma sintaxe matemática para definir formatos de texto.
 * **Autômatos Finitos (AFD e AFN):** São máquinas de estado teóricas. Imagine um fluxograma com círculos (estados) e setas (transições ligadas a letras). Se a máquina terminar em um estado de "sucesso" ao ler sua string letra por letra, o texto é válido.
   * **Autômatos Finitos Determinísticos (AFD):** Para cada estado e entrada, há exatamente um próximo estado.  
   * **Autômatos Finitos Não-Determinísticos (AFN):** Pode haver múltiplos caminhos para uma entrada.  
   * **Equivalência:** Todo AFN pode ser convertido em um AFD. Ambos reconhecem as **Linguagens Regulares**.  
-* **O Lema do Bombeamento:** É uma prova matemática de limite. Ele prova que Regex e Autômatos **não têm memória**. Você não consegue escrever um Regex que valide se um código fonte tem parênteses perfeitamente balanceados, porque a máquina não consegue se lembrar de quantos parênteses abertos viu no passado. Para isso, precisamos de um nível computacional acima, as Máquinas de Pilha.
-  * **Lema do Bombeamento (Pumping Lemma):** Usado para provar que uma linguagem **não** é regular (ex: strings com parênteses balanceados).
-
-**Conceito:** Modelos matemáticos de computação com memória finita.
-
-* **Expressões Regulares (Regex):** Linguagem para descrever padrões de strings.
+* **Expressões Regulares (Regex):** Linguagem para descrever padrões de texto.
   * Aplicações: Facilitar buscas, Validações, Substituições
   * Elementos básicos de busca:
     * Colchetes []: Definem um conjunto de caracteres permitido. Por exemplo, [0-9] encontra qualquer número de 0 a 9.
@@ -421,3 +415,5 @@ Problemas **NP-Completos** (como o do Caixeiro Viajante: qual a rota mais curta 
   * Substituição avançada:
     * Parênteses (): Criam grupos de captura. Isso permite extrair partes de um padrão e reutilizá-las no destino.
     * Referência de grupo: utiliza-se o $ seguido do número do grupo (ex: \$1, \$2) para reorganizar ou substituir partes do texto, como alterar o formato de uma data.
+* **O Lema do Bombeamento:** É uma prova matemática de limite. Ele prova que Regex e Autômatos **não têm memória**. Você não consegue escrever um Regex que valide se um código fonte tem parênteses perfeitamente balanceados, porque a máquina não consegue se lembrar de quantos parênteses abertos viu no passado. Para isso, precisamos de um nível computacional acima, as Máquinas de Pilha.
+  * **Lema do Bombeamento (Pumping Lemma):** Usado para provar que uma linguagem **não** é regular (ex: strings com parênteses balanceados).
