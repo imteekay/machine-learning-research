@@ -401,7 +401,7 @@ Problemas **NP-Completos** (como o do Caixeiro Viajante: qual a rota mais curta 
 
 ### 2.5 Autômatos Finitos e Expressões Regulares
 
-É a ciência de reconhecer padrões em textos (como validar se um e-mail é válido).
+É a ciência de reconhecer padrões em textos (como validar se uma senha é válida).
 
 * **Expressões Regulares (Regex):** Uma sintaxe matemática para definir formatos de texto.
 * **Autômatos Finitos (AFD e AFN):** São máquinas de estado teóricas. Imagine um fluxograma com círculos (estados) e setas (transições ligadas a letras). Se a máquina terminar em um estado de "sucesso" ao ler sua string letra por letra, o texto é válido.
