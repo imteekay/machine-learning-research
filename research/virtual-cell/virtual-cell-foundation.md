@@ -20,8 +20,8 @@
   - Metabolic/Signaling networks: dynamic graphs
 - Different scales: temporal (time) and spatial (size) scales
 - Cell Biology Representations (modalities)
-  - **Molecular**: genomic, phenotypic information — molecules and their structures found within individual cells
-  - **Cellular**: spatial molecular localization - individual cells, as spatial collections of those interacting molecules and structures
+  - **Molecular**: genomics, phenotypic information, DNA, RNA, and proteins — molecules and their structures found within individual cells
+  - **Cellular**: spatial molecular localization and quantity - individual cells, as spatial collections of those interacting molecules and structures
   - **Multicellular**: spatial information - how individual cells interact with one another and the non-cellular environment in a tissue
 - Virtual cell state: proteins, lipids, ions
   - We can't measure the whole complexity of a cell
