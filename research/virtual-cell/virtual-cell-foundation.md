@@ -19,10 +19,10 @@
   - Microscopy: spatial 2D/3D images
   - Metabolic/Signaling networks: dynamic graphs
 - Different scales: temporal (time) and spatial (size) scales
-- Representations (modalities)
-  - **Molecular**: genomic, phenotypic information
-  - **Cellular**: spatial molecular localization
-  - **Multicellular**: spatial information
+- Cell Biology Representations (modalities)
+  - **Molecular**: genomic, phenotypic information — molecules and their structures found within individual cells
+  - **Cellular**: spatial molecular localization - individual cells, as spatial collections of those interacting molecules and structures
+  - **Multicellular**: spatial information - how individual cells interact with one another and the non-cellular environment in a tissue
 - Virtual cell state: proteins, lipids, ions
   - We can't measure the whole complexity of a cell
   - We use the central dogma of molecular biology: DNA -> RNA -> Proteins 
@@ -33,6 +33,14 @@
   - Sequence the smalles organisms (Mycosplasma bacterium)
   - Simulate the behavior of each of the ~600 genes estimated to be in the genome
   - Model DNA, RNA, Protein -> Molecular representation -> Cellular representation -> Multicellular representation
+  - Two main components
+    - A universal multi-modal multi-scale biological state representation
+    - A set of VIs (Virtual Instruments), which are neural networks that manipulate or decode these representations.
+  - UR (Universal Representation) is the output of an AIVC: an embedding
+  - VI (Virtual Instrument) is a neural network that takes a UR and produce a desired output
+    - Decoder VIs: take a UR as an input and produce human-understandable output, for example, a cell type label or a synthetic microscope image
+    - Manipulator VIs: take a UR as an input and produce another UR as an output, for example, an altered cell state after perturbation
+  - Any built VI can be shared with the community and be reused by different teams
 - Spatial Biology
   - Cancer biology: immune resistance must be understood in the spatial context of the cellular neighborhood to identify the specific cell states and gene signatures involved
   - Malignant cells within a tumor can engage in active immune evasion by either blocking immune infiltration,133 evading immune recognition, or dampening immune cell function.
