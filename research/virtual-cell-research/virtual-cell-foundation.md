@@ -18,8 +18,11 @@
   - RNA/protein expression: sparse high-dimensional count matrices
   - Microscopy: spatial 2D/3D images
   - Metabolic/Signaling networks: dynamic graphs
-- Different scales: temporal (time) and spatial (size) scales
+  - Foundation models integrates heterogeneous and partially overlapping data
 - Cell Biology Representations (modalities)
+  - Different scales: temporal (time) and spatial (size) scales
+  - Each foundation model (of each scale) learns its own distinct UR
+    - Because there is a hierarchical linking, the lower scale is aggregated and fed into the next higher scale (e.g., molecular interactions feed into cell states, and cell states feed into tissue-level multicellular organizations)
   - **Molecular**: genomics, phenotypic information, DNA, RNA, and proteins — molecules and their structures found within individual cells
   - **Cellular**: spatial molecular localization and quantity - individual cells, as spatial collections of those interacting molecules and structures
     - Measurements: transcriptome (single-cell RNA sequencing), chromatin accessibility (scATAC-seq), chromatin modification, transcription factor binding, and proteome
@@ -27,7 +30,7 @@
       - Live-cell imaging: proteins in living cells
       - Cryoelectron microscopy: biomolecular structures
       - Super-resolution microscopy: molecular processes
-  - **Multicellular**: spatial information - how individual cells interact with one another and the non-cellular environment in a tissue
+  - **Multicellular**: spatial information - how individual cells interact with one another and the non-cellular environment in a tissue (spatial proximity, combine into tissues, organs, and whole organisms)
 - Virtual cell state: proteins, lipids, ions
   - We can't measure the whole complexity of a cell
   - We use the central dogma of molecular biology: DNA -> RNA -> Proteins 
