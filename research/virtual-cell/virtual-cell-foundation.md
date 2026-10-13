@@ -22,6 +22,11 @@
 - Cell Biology Representations (modalities)
   - **Molecular**: genomics, phenotypic information, DNA, RNA, and proteins — molecules and their structures found within individual cells
   - **Cellular**: spatial molecular localization and quantity - individual cells, as spatial collections of those interacting molecules and structures
+    - Measurements: transcriptome (single-cell RNA sequencing), chromatin accessibility (scATAC-seq), chromatin modification, transcription factor binding, and proteome
+    - Imaging technologies measure cell morphology at subcellular resolution:
+      - Live-cell imaging: proteins in living cells
+      - Cryoelectron microscopy: biomolecular structures
+      - Super-resolution microscopy: molecular processes
   - **Multicellular**: spatial information - how individual cells interact with one another and the non-cellular environment in a tissue
 - Virtual cell state: proteins, lipids, ions
   - We can't measure the whole complexity of a cell
@@ -41,6 +46,9 @@
     - Decoder VIs: take a UR as an input and produce human-understandable output, for example, a cell type label or a synthetic microscope image
     - Manipulator VIs: take a UR as an input and produce another UR as an output, for example, an altered cell state after perturbation
   - Any built VI can be shared with the community and be reused by different teams
+- ML Architectures
+  - Vision transformers and CNNs are widely applicable to biological images
+  - Autoencoders and transformers have been successfully applied for learning representations for sequence based data
 - Spatial Biology
   - Cancer biology: immune resistance must be understood in the spatial context of the cellular neighborhood to identify the specific cell states and gene signatures involved
   - Malignant cells within a tumor can engage in active immune evasion by either blocking immune infiltration,133 evading immune recognition, or dampening immune cell function.
