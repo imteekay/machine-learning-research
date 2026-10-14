@@ -76,6 +76,7 @@ The goal is to create reliable simulations for single-cell and between-cells int
 - [ ] [Towards multimodal foundation models in molecular cell biology](https://www.nature.com/articles/s41586-025-08710-y) ([Video](https://www.youtube.com/watch?v=7LW9Pn7-YtE))
 - [ ] [Universal cell embedding provides a foundation model for cell biology](https://www.nature.com/articles/s41586-026-10689-z) ([Video](https://www.youtube.com/watch?v=IWjKDYDJSt8))
 - [ ] [The Virtual Tissues foundation model resolves spatial proteomics across scales](https://www.nature.com/articles/s41586-026-10884-y)
+  - [Code](https://github.com/bunnelab/virtues)
 - [ ] [scGPT: toward building a foundation model for single-cell multi-omics using generative AI](https://www.nature.com/articles/s41592-024-02201-0)
 - [ ] [Cross-modality Matching and Prediction of Perturbation Responses with Labeled Gromov-Wasserstein Optimal Transport](https://arxiv.org/pdf/2405.00838)
 
