@@ -24,6 +24,7 @@
   - The importance of good datasets: fit-for-purpose datasets were the primary driver of rapid innovation (e.g. ImageNet/AlexNet, Internet/LLMs, PDB/AlphaFold)
   - Each foundation model (of each scale) learns its own distinct UR
     - Because there is a hierarchical linking, the lower scale is aggregated and fed into the next higher scale (e.g., molecular interactions feed into cell states, and cell states feed into tissue-level multicellular organizations)
+    - Multi-modal integration: bridge different dataset modalities within the same and across scales (same biological sample, tissue slice, or individual cell) — the model learns how the different modalities overlap
   - **Molecular**: genomics, phenotypic information, DNA, RNA, and proteins — molecules and their structures found within individual cells
   - **Cellular**: spatial molecular localization and quantity - individual cells, as spatial collections of those interacting molecules and structures
     - Measurements: transcriptome (single-cell RNA sequencing), chromatin accessibility (scATAC-seq), chromatin modification, transcription factor binding, and proteome
