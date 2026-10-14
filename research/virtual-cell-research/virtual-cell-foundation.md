@@ -5,22 +5,23 @@
   - Changing (CRISPR Perturbations): Allows precise genome-wide edits, turning individual genes on or off to observe how the cell responds.
   - Understanding (AI Models): Uses foundation models trained on cellular RNA data to predict how cells behave and evolve.
   - e.g. of a perturbation via CRISPR: Virtual cell-based engineering could enable targeted modifications (turning genes on and off) to pancreatic beta cells to create individualized beta cell replacement therapies for type 1 diabetes. [1]
-- Virtual patient simulation: Simulating first is the gold standard, where complex simulations guide investment decisions prior to real-world manufacturing.
-- Virtual patient (trillion cells) -> virtual cell (single cell)
-- Virtual cell
+- Virtual cells enable:
+  - Virtual patient simulation: Simulating first is the gold standard, where complex simulations guide investment decisions prior to real-world manufacturing.
+  - Virtual patient (trillion cells) -> virtual cell (single cell)
   - Many diseases are caused by cells behaving abnormally
   - Virtual experimentation: single-cell perturbation - understanding how the effects of an intervention propagate throughout the cell
   - Virtual cell models to simulate, predict, and steer cell behavior: a representation model that simulates the biological functions and interactions of a cell
-- The importance of good datasets: fit-for-purpose datasets were the primary driver of rapid innovation (e.g. ImageNet/AlexNet, Internet/LLMs, PDB/AlphaFold)
-- Proteins -> Complexes -> Pathways -> Cells
 - Virtual cell multimodality: DNA defines potential, RNA captures active instructions, proteins execute function, and imaging shows spatial structure
+  - Proteins -> Complexes -> Pathways -> Cells
   - DNA: 1D sequences
   - RNA/protein expression: sparse high-dimensional count matrices
   - Microscopy: spatial 2D/3D images
   - Metabolic/Signaling networks: dynamic graphs
   - Foundation models integrates heterogeneous and partially overlapping data
+  - Types of behaviors and dynamics: cell division, cell differentiation, cell migration, response to extrinsic and intrinsic perturbations
 - Cell Biology Representations (modalities)
   - Different scales: temporal (time) and spatial (size) scales
+  - The importance of good datasets: fit-for-purpose datasets were the primary driver of rapid innovation (e.g. ImageNet/AlexNet, Internet/LLMs, PDB/AlphaFold)
   - Each foundation model (of each scale) learns its own distinct UR
     - Because there is a hierarchical linking, the lower scale is aggregated and fed into the next higher scale (e.g., molecular interactions feed into cell states, and cell states feed into tissue-level multicellular organizations)
   - **Molecular**: genomics, phenotypic information, DNA, RNA, and proteins — molecules and their structures found within individual cells
@@ -46,8 +47,13 @@
     - A set of VIs (Virtual Instruments), which are neural networks that manipulate or decode these representations.
   - UR (Universal Representation) is the output of an AIVC: an embedding
   - VI (Virtual Instrument) is a neural network that takes a UR and produce a desired output
-    - Decoder VIs: take a UR as an input and produce human-understandable output, for example, a cell type label or a synthetic microscope image
-    - Manipulator VIs: take a UR as an input and produce another UR as an output, for example, an altered cell state after perturbation
+    - **Decoder VIs**: take a UR as an input and produce human-understandable output, for example, a cell type label or a synthetic microscope image
+      - **Classification**: Predicting discrete labels, such as cell types, tissue states, or disease presence.
+      - **Regression & Property Prediction**: Estimating continuous values or structural properties, such as specific gene expression levels, protein structures, or drug responses.
+      - **Reconstruction**: Generating synthetic readouts, such as a simulated fluorescence microscope image or single-cell transcriptomes from label-free imaging.   
+    - **Manipulator VIs**: take a UR as an input and produce another UR as an output, for example, an altered cell state after perturbation
+      - **Perturbation Simulation**: Predicting how a cell's UR shifts after applying a chemical drug or a genetic mutation (like a CRISPR knockout).
+      - **Dynamic Trajectories**: Modeling temporal biological processes, such as cell differentiation, division, or migration from a progenitor state to a mature state.
   - Any built VI can be shared with the community and be reused by different teams
 - ML Architectures
   - Vision transformers and CNNs are widely applicable to biological images
