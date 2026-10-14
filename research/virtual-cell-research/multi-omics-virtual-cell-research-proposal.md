@@ -65,6 +65,7 @@ The goal is to create reliable simulations for single-cell and between-cells int
 
 ### Papers
 
+- [X] [How to build the virtual cell with artificial intelligence: Priorities and opportunities](./papers/how-to-build-the-virtual-cell-with-ai.pdf)
 - [ ] [Harnessing AI to Build Virtual Cells](https://www.biorxiv.org/content/10.64898/2026.04.11.717183v2) ([Video](https://www.youtube.com/watch?v=pwLfujLYwhA))
 - [ ] [Virtual Cells Need Context, Not Just Scale](https://www.biorxiv.org/content/10.64898/2026.02.04.703804v1)
 - [ ] [PerturbDiff: Functional Diffusion for Single-Cell Perturbation Modeling](https://arxiv.org/abs/2602.19685)
