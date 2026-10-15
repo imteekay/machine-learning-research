@@ -85,6 +85,10 @@ The goal is to create reliable simulations for single-cell and between-cells int
 - [Multimodal AI](https://www.youtube.com/playlist?list=PLWzwL390pi04)
   - [ ] [Course](https://mit-mi.github.io/mmai-course/spring2026)
 
+### Articles
+
+- [Drug Discovery Has No Magic Wands](https://www.a16z.news/p/drug-discovery-has-no-magic-wands)
+
 ### Benchmarks
 
 - [PerturBench: Benchmarking Machine Learning Models for Cellular Perturbation Analysis](https://arxiv.org/abs/2408.10609)
