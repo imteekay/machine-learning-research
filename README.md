@@ -478,6 +478,7 @@
 - [[Paper] Evaluating EHR Foundation Models for Early Pancreatic Cancer Detection](https://media.licdn.com/dms/document/media/v2/D4E1FAQEDeQJU1iZ7tw/feedshare-document-sanitized-pdf/B4EZ474tziHYBE-/0/1779121185005?e=1779757200&v=beta&t=uMixuAouFGSzzAU5KJ4Nyf95oKhFSuWj7JdOM5CLKrA)
 - [[Paper] DT-Transformer: A Foundation Model for Disease Trajectory Prediction on a Real-world Health System](https://arxiv.org/abs/2605.14227)
 - [[Paper] Agentic systems for breast cancer treatment recommendations](https://arxiv.org/abs/2607.12051)
+- [PySUS: Library to download, clean and analyze openly available datasets from Brazilian Universal health system, SUS](https://github.com/AlertaDengue/PySUS)
 
 #### ML for Clinical Knowledge
 
