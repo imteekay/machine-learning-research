@@ -922,6 +922,7 @@
 - [Emmanuel Noutahi](https://enoutahi.com)
 - [Aidan Cooper](https://www.aidancooper.co.uk)
 - [Jayoung Ry](https://jykr.github.io)
+- [Ida Johnsson](https://www.idajohnsson.com)
 
 ### Research & Laboratories
 
