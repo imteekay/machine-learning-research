@@ -118,7 +118,7 @@ Uma lista de prioridade garante que o elemento de maior (ou menor) relevância e
 
 * **Operações:**  
   * Busca do elemento mais prioritário (max/min): $O(1)$  
-  * Busca por elemento: $O(\log n)$  
+  * Busca por elemento: $O(\N)$  
   * Insert (adicionar): $O(\log n)$  
   * Extract / remover prioritário: $O(\log n)$  
 * **Memória:** $O(n)$.  

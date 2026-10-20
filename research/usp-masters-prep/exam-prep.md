@@ -42,7 +42,7 @@
 ## Listas de Prioridade (Heaps)
 
 1. Qual a complexidade de busca do elemento mais prioritário (max/min)? O(1)
-2. Qual a complexidade de busca por elemento? O(log N) - desce por um dos lados da árvore
+2. Qual a complexidade de busca por elemento? O(N) - desce por um dos lados da árvore
 3. Qual a complexidade de insert (adicionar)? O(log N) - desce por um dos lados da árvore
 4. Qual a complexidade de extract / remover prioritário? O(log N) - a remoção do elemento prioritário é O(1), mas o recolocar outro elemento na parte prioritária necessita de um sift-up passando por um lado da árvore
 5. Qual a complexidade de memória da lista de prioridade? O(N)
