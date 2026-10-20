@@ -42,18 +42,18 @@
 ## Listas de Prioridade (Heaps)
 
 1. Qual a complexidade de busca do elemento mais prioritário (max/min)? O(1)
-2. Qual a complexidade de busca por elemento? O(log n) - desce por um dos lados da árvore
-3. Qual a complexidade de insert (adicionar)? O(log n) - desce por um dos lados da árvore
-4. Qual a complexidade de extract / remover prioritário? O(log n) - a remoção do elemento prioritário é O(1), mas o recolocar outro elemento na parte prioritária necessita de um sift-up passando por um lado da árvore
-5. Qual a complexidade de memória da lista de prioridade? O(n)
+2. Qual a complexidade de busca por elemento? O(log N) - desce por um dos lados da árvore
+3. Qual a complexidade de insert (adicionar)? O(log N) - desce por um dos lados da árvore
+4. Qual a complexidade de extract / remover prioritário? O(log N) - a remoção do elemento prioritário é O(1), mas o recolocar outro elemento na parte prioritária necessita de um sift-up passando por um lado da árvore
+5. Qual a complexidade de memória da lista de prioridade? O(N)
 
 ## Tabelas de Espalhamento (Hash Tables)
 
 1. Qual a complexidade de busca de um elemento? O(1)
-2. Qual a complexidade de busca de um elemento (com colisão)? O(n)
+2. Qual a complexidade de busca de um elemento (com colisão)? O(N)
 3. Qual a complexidade de adicionar elemento? O(1) ou O(N) se ocorrer muitas colisões
 4. Qual a complexidade de remover elemento? O(1)
-5. Qual a complexidade de memória da tabela de espalhamento? O(n)
+5. Qual a complexidade de memória da tabela de espalhamento? O(N)
 
 ## Árvores Binárias e de Busca (BST)
 
@@ -63,7 +63,7 @@
 4. Qual a complexidade de busca de um elemento numa árvore desbalanceada? O(N)
 5. Qual a complexidade de inserção de elemento numa árvore desbalanceada? O(N)
 6. Qual a complexidade de remoção de elemento numa árvore desbalanceada? O(N)
-7. Qual a complexidade de memória da árvore binária de busca? O(n)
+7. Qual a complexidade de memória da árvore binária de busca? O(N)
 
 ## Complexidade Algorítmica e Notação Assintótica
 
@@ -73,10 +73,10 @@
   - $ϴ(g(n))$ (Theta): Limite justo (comportamento exato).  
 - Complexidades:
   - $O(1)$: Constante. Não importa se há 10 ou 1 bilhão de itens, leva o mesmo tempo.
-  - $O(\log n)$: Logarítmico. Extremamente eficiente. Se os dados dobrarem, o algoritmo só faz uma operação a mais.
-  - $O(n)$: Linear. Se os dados dobrarem, o algoritmo dobra em operações.
+  - $O(\log N)$: Logarítmico. Extremamente eficiente. Se os dados dobrarem, o algoritmo só faz uma operação a mais.
+  - $O(N)$: Linear. Se os dados dobrarem, o algoritmo dobra em operações.
   - $O(n^2)$: Quadrático. O pesadelo da escalabilidade. Um loop dentro de outro loop. Se os dados dobrarem, o tempo aumenta em 4 vezes. Se aumentarem 10 vezes, o tempo aumenta 100 vezes.
-- **Hierarquia comum:** $O(1) < O(\log n) < O(n) < O(n \log n) < O(n²) < O(2ᴺ) < O(n!)$.
+- **Hierarquia comum:** $O(1) < O(\log N) < O(N) < O(n \log N) < O(n²) < O(2ᴺ) < O(n!)$.
 
 ## Bubble Sort
 
@@ -84,7 +84,7 @@
 
 - Como funciona? Compara 2 elementos, faz swap se o número for maior, com intuito de mover os maiores números para o final da lista
 - Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n²)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n²)$
 - Qual a complexidade de memória? $O(1)$
 
 ## Selection Sort 
@@ -93,7 +93,7 @@
 
 - Como funciona? Procura o menor elemento, faz o swap pra posição atual e escanea o restante dos elementos fazendo a mesma operação
 - Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n²)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n²)$
 - Qual a complexidade de memória? $O(1)$
 
 ## Insertion Sort
@@ -102,7 +102,7 @@
 
 - Como funciona? Compara o elemento atual com os da esquerda e faz swap caso seja um elemento menor, até que chegue na posição correta
 - Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n²)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n²)$
 - Qual a complexidade de memória? $O(1)$
 
 ## Merge Sort
@@ -110,26 +110,26 @@
 [Ilustração](https://www.youtube.com/watch?v=4VqmGXwpLqc)
 
 - Como funciona? Divide na metade recursivamente até que chegue ao nível de um elemento. Ao fazer o merge de duas unidades/grupos, junte em ordem. A divisão é feita recursivamente. A junção é feita iterativamente apontando para cada elemento dos dois grupos.
-- Qual a complexidade de tempo médio ($θ(n)$)? $O(n\log n)$
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n\log n)$
-- Qual a complexidade de memória? $O(n)$
+- Qual a complexidade de tempo médio ($θ(n)$)? $O(n\log N)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n\log N)$
+- Qual a complexidade de memória? $O(N)$
 
 ## Quick Sort
 
 [Ilustração](https://www.youtube.com/watch?v=Hoixgm4-P4M)
 
 - Como funciona? Funciona com um elemento pivô. Escolha um elemento maior na esquerda e um elemento menor na direita, faça swap deles, até que os ponteiros se cruzem, isso significa que todos os elemento menores que o pivô ficaram na esquerda e os maiores ficaram na direita. Faça o mesmo procedimento recursivamente para o bloco da esquerda e o bloco da direita.
-- Qual a complexidade de tempo médio ($θ(n)$)? $O(n \log n)$
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n²)$
-- Qual a complexidade de memória? $O(n)$
+- Qual a complexidade de tempo médio ($θ(n)$)? $O(n \log N)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n²)$
+- Qual a complexidade de memória? $O(N)$
 
 ## Heap Sort
 
 [Ilustração](https://www.youtube.com/watch?v=2DmK_H7IdTo)
 
 - Como funciona? Transforma a lista em uma árvore max heap, remove o elemento prioriário (maior elemento) e move ele para o final da lista ordenada. Recria a árvore max heap e remove o maior elemento novamente. Faça esse procedimento até que todos os elementos forem removidos da heap.
-- Qual a complexidade de tempo médio ($θ(n)$)? $O(n \log n)$
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n \log n)$
+- Qual a complexidade de tempo médio ($θ(n)$)? $O(n \log N)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n \log N)$
 - Qual a complexidade de memória? $O(1)$
 
 ## Counting Sort
@@ -137,9 +137,9 @@
 [Ilustração](https://www.youtube.com/watch?v=OKd534EWcdk)
 
 - Como funciona? Conta a quantidade de cada elemento. Crie um array em order com a soma cumulativa das quantidades. Faça um shift do array para a esquerda e os valores serão o index em que cada elemento começa na array ordenado. Ao atravessar o array desordenado, utilize o valor como index, insira no array na posição correta e incremente o index. Faça isso para todos os elementos.
-- Qual a complexidade de tempo médio ($θ(n)$)? $O(n)$
-- Qual a complexidade de tempo limite superior (pior caso) ($O(n)$)? $O(n)$
-- Qual a complexidade de memória? $O(n)$
+- Qual a complexidade de tempo médio ($θ(n)$)? $O(N)$
+- Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(N)$
+- Qual a complexidade de memória? $O(N)$
 
 ## BFS (Largura)
 
