@@ -111,7 +111,7 @@ Uma lista de prioridade garante que o elemento de maior (ou menor) relevância e
 
 - Remove o item mais prioritário (primeiro elemento da lista)
 - Coloca o último item da lista na primeira posição da lista
-- Compara com o nó filha da esquerda e direita e verifica se var fazer o swap e com qual nó fará
+- Compara com o nó filha da esquerda e direita e verifica se vai fazer o swap e com qual nó fará
 - Continua esse processo até que o elemento esteja na posição certa (não tenha mais itens prioritário) ou chegue no nó da árvore
 
 **Sumário**:
