@@ -89,6 +89,7 @@ The goal is to create reliable simulations for single-cell and between-cells int
 
 - [Drug Discovery Has No Magic Wands](https://www.a16z.news/p/drug-discovery-has-no-magic-wands)
 - [Machine Learning in the Life Sciences Has a Data Problem](https://www.aidancooper.co.uk/ml-in-the-life-sciences)
+- [Einstein e Siemens Healthineers anunciam Centro Colaborativo de Inovação com foco em medicina de precisão](https://saudedigitalnews.com.br/15/10/2026/einstein-e-siemens-healthineers-anunciam-centro-colaborativo-de-inovacao-com-foco-em-medicina-de-precisao)
 
 ### Benchmarks
 
