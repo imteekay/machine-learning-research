@@ -4,7 +4,7 @@
 
 ## TO-DO
 
-- [ ] Pegar comprovante de pagamento do pagamento de R$40,00 para inscrição
+- [X] Pegar comprovante de pagamento do pagamento de R$40,00 para inscrição
 - [X] Preencher inscrição
 - [X] Escrever carta de interesse
 - [X] Pegar histórico escolar de gradução
