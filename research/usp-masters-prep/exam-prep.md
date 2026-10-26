@@ -83,6 +83,7 @@
 [Ilustração](https://www.youtube.com/watch?v=xli_FI7CuzA)
 
 - Como funciona? Compara 2 elementos, faz swap se o número for maior, com intuito de mover os maiores números para o final da lista
+  - Foco em colocar o maior número no final
 - Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
 - Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n²)$
 - Qual a complexidade de memória? $O(1)$
@@ -92,6 +93,7 @@
 [Ilustração](https://www.youtube.com/watch?v=g-PGLbMth_g)
 
 - Como funciona? Procura o menor elemento, faz o swap pra posição atual e escanea o restante dos elementos fazendo a mesma operação
+  - Foco em colocar o menor número no final
 - Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
 - Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n²)$
 - Qual a complexidade de memória? $O(1)$
