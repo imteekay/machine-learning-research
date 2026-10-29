@@ -61,39 +61,4 @@ The goal is to create reliable simulations for single-cell and between-cells int
 
 ## Resources
 
-- [ ] [Awesome Foundation Model Single Cell](https://github.com/OmicsML/awesome-foundation-model-single-cell-papers)
-
-### Papers
-
-- [X] [How to build the virtual cell with artificial intelligence: Priorities and opportunities](./papers/how-to-build-the-virtual-cell-with-ai.pdf)
-- [ ] [Harnessing AI to Build Virtual Cells](https://www.biorxiv.org/content/10.64898/2026.04.11.717183v2) ([Video](https://www.youtube.com/watch?v=pwLfujLYwhA))
-- [ ] [Virtual Cells Need Context, Not Just Scale](https://www.biorxiv.org/content/10.64898/2026.02.04.703804v1)
-- [ ] [PerturbDiff: Functional Diffusion for Single-Cell Perturbation Modeling](https://arxiv.org/abs/2602.19685)
-- [ ] [Reasoning Across Space: Tiny Recursive Models for Spatial Omics](https://openreview.net/pdf?id=vtTox3sHaS)
-- [ ] [TheBioCollection: Unified Pre-Training Scale LLM Corpus for Biology](https://arxiv.org/abs/2607.08803)
-- [ ] [scVIVA: a probabilistic framework for representation of cells and their environments in spatial transcriptomics](https://www.biorxiv.org/content/10.1101/2025.06.01.657182v1.full.pdf) ([Video](https://www.youtube.com/watch?v=ykVoYVyCVd0))
-- [ ] [Virtual Cells: Predict, Explain, Discover](https://arxiv.org/abs/2505.14613) ([Video](https://www.youtube.com/watch?v=QSfVjsa1i4g))
-- [ ] [Towards multimodal foundation models in molecular cell biology](https://www.nature.com/articles/s41586-025-08710-y) ([Video](https://www.youtube.com/watch?v=7LW9Pn7-YtE))
-- [ ] [Universal cell embedding provides a foundation model for cell biology](https://www.nature.com/articles/s41586-026-10689-z) ([Video](https://www.youtube.com/watch?v=IWjKDYDJSt8))
-- [ ] [The Virtual Tissues foundation model resolves spatial proteomics across scales](https://www.nature.com/articles/s41586-026-10884-y)
-  - [Code](https://github.com/bunnelab/virtues)
-  - [Notes](./virtual-tissues-foundation-model.md)
-- [ ] [scGPT: toward building a foundation model for single-cell multi-omics using generative AI](https://www.nature.com/articles/s41592-024-02201-0)
-- [ ] [Cross-modality Matching and Prediction of Perturbation Responses with Labeled Gromov-Wasserstein Optimal Transport](https://arxiv.org/pdf/2405.00838)
-
-### Courses
-
-- [Multimodal AI](https://www.youtube.com/playlist?list=PLWzwL390pi04)
-  - [ ] [Course](https://mit-mi.github.io/mmai-course/spring2026)
-
-### Articles
-
-- [Drug Discovery Has No Magic Wands](https://www.a16z.news/p/drug-discovery-has-no-magic-wands)
-- [Machine Learning in the Life Sciences Has a Data Problem](https://www.aidancooper.co.uk/ml-in-the-life-sciences)
-- [Einstein e Siemens Healthineers anunciam Centro Colaborativo de Inovação com foco em medicina de precisão](https://saudedigitalnews.com.br/15/10/2026/einstein-e-siemens-healthineers-anunciam-centro-colaborativo-de-inovacao-com-foco-em-medicina-de-precisao)
-
-### Benchmarks
-
-- [PerturBench: Benchmarking Machine Learning Models for Cellular Perturbation Analysis](https://arxiv.org/abs/2408.10609)
-- [Benchmarking Transcriptomics Foundation Models for Perturbation Analysis : one PCA still rules them all](https://arxiv.org/abs/2410.13956)
-- [Arc Virtual Cell Atlas](https://arcinstitute.org/tools/virtualcellatlas)
+See [Virtual Cell Roadmap](./virtual-cell-roadmap.md): Master's → PhD phases, concepts, readings and experiments.
