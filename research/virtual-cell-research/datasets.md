@@ -7,6 +7,7 @@
 | **[GENCODE](https://gencodegenes.org)** | Reference gene & transcript annotations | GTF/GFF3 files of high-accuracy gene models, lncRNAs, and splice variants | Human and Mouse |
 | **[Ensembl](https://ensembl.org)** | Genome browser & comprehensive annotation | Gene models, comparative genomics, variant tracking, and regulatory features | Vertebrates and diverse non-vertebrates |
 | **[OpenCell](https://opencell.sf.czbiohub.org)** | Proteome-scale measurements of human protein localization and interactions | Protein | Human |
+| **[Genomas SUS](https://genomassus.com.br/browser-de-variantes/)** | Brazilian population genetic variation | Allele frequencies (overall and per macroregion) for ~3.7M variants, with consequence annotation on MANE transcripts | Human (Brazilian cohort) |
 
 ## How the Datasets Fit Together
 
@@ -15,6 +16,7 @@ The datasets map onto the central dogma (DNA → RNA → Protein), as in the [Vi
 | Layer | Dataset | Role in a virtual cell |
 | :--- | :--- | :--- |
 | **Reference / coordinate system** | GENCODE, Ensembl | Gene IDs, TSS positions, transcript structure, orthologs. This is the shared "vocabulary" every other dataset is indexed by |
+| **DNA / genetic variation** | Genomas SUS | How common each variant is in the Brazilian population. Gives the population context for adding genotypes (precision-medicine extension) |
 | **DNA / epigenome** | ENCODE | Where regulatory elements are and which TFs bind them. Gives the regulatory prior used to read scATAC-seq |
 | **RNA / cell state** | CELLxGENE | Millions of single-cell transcriptomes across tissues and diseases. This is the main pre-training corpus |
 | **Protein** | OpenCell | Where proteins sit in the cell and what they bind. Gives the functional layer below the transcriptome |
@@ -466,9 +468,78 @@ Ensembl is also a reference resource, so the metrics are again data-quality ones
 
 ---
 
+## Genomas SUS
+
+### Overview & Purpose
+
+- **Genomas SUS** is the Brazilian Ministry of Health's genome sequencing initiative, funded by DECIT/SCTIE under the **Programa Nacional de Genômica e Saúde de Precisão (Genomas Brasil)**, established by Portaria nº 1949 (August 4, 2020)
+- **Purpose:** characterize the genetic variation of the Brazilian population for use in public health (SUS) and precision medicine
+- **Key output:** the [Browser de Variantes](https://genomassus.com.br/browser-de-variantes/), which shows allele frequencies across Brazil's five macroregions (Norte, Nordeste, Centro-Oeste, Sudeste, Sul)
+
+### Domain Knowledge
+
+- **Allele frequency (AF):** the fraction of chromosomes in a population that carry the alternative allele. Genomas SUS computes it as (heterozygotes + 2 × homozygous alternates) / (2 × genotyped individuals). Samples with no genotype at a position are left out of the denominator
+- **Why a Brazilian reference matters:** the Brazilian population is highly admixed (European, African, and Indigenous ancestry), and the mix differs by region. Large references such as gnomAD are mostly of European ancestry, so a variant that is rare there may be common in Brazil. Without a local reference, common benign variants can be misread as pathogenic
+- **Variant nomenclature** accepted by the browser:
+  - **rsID** from dbSNP (`rs115775983`)
+  - **Genomic position** in GRCh38 (`4:634704`)
+  - **HGVS** coding (`IDUA:c.1360G>A`), protein (`FGFR3:p.Pro449Ser`), or genomic (`NC_000004.12:g.1113690T>C`)
+- **MANE transcripts:** consequences are annotated on MANE v1.5 (the same `MANE_Select` transcripts tagged in GENCODE). The browser highlights the highest-impact consequence and lists the rest under "Outras anotações"
+
+### Characteristics & Scale
+
+- **Organism:** human, Brazilian cohort, whole genomes
+- **Variant panel:** allele frequencies estimated for ~3.7M selected variants
+- **Stratification:** five macroregions. The overall frequency includes individuals with no region recorded
+- **Reference:** GRCh38, MANE v1.5 annotation
+- **Number of genomes:** not shown on the browser page at the time of writing
+- **Status:** prototype (v0.1)
+
+### Format & Shape
+
+- **No downloadable files yet.** The browser is view-only, with no bulk download or sharing
+- What one query returns: one variant → {overall AF, AF per macroregion, allele counts, consequence on MANE transcripts}
+- Coordinates are GRCh38, so lookups line up with GENCODE / Ensembl and ENCODE GRCh38 files
+
+### Key Features / Fields
+
+- Variant identifiers: rsID, `chrom:pos`, HGVS (c./p./g.)
+- Allele frequency overall and per macroregion
+- Predicted impact and consequence per MANE transcript (most severe consequence highlighted)
+
+### How to Use It in This Research
+
+1. **Variant context (PhD / precision-medicine extension):** if patient genotypes are added to the virtual cell, Brazilian AFs tell you whether a variant is common (probably benign) or rare (a candidate driver) in the population the model will serve
+2. **Variant filtering:** filter or down-weight variants that are common in any Brazilian macroregion before treating them as functional perturbations
+3. **Linking to the regulatory layer:** check how often variants that fall inside ENCODE cCREs or ATAC peaks occur in Brazil. This points to regulatory variants that are relevant locally
+4. **Bias check:** compare Brazilian AFs with gnomAD for the genes in the model, to flag where models trained on European-ancestry data may not transfer
+
+### Metrics to Focus On
+
+Genomas SUS is a reference resource (and has no bulk access yet), so the metrics are data-quality and coverage checks:
+
+- **Variant lookup coverage:** the fraction of variants of interest that are in the ~3.7M panel
+- **AF divergence:** how far Brazilian AFs are from gnomAD (e.g., the count of variants that are rare in gnomAD but common (> 1%) in some macroregion)
+- **Regional heterogeneity:** how much AF varies across the five macroregions for the variants used
+
+### Pitfalls / Limitations
+
+- **Prototype, view-only:** no bulk download or API, so it can't be used as training data at scale yet. Programmatic access may come in later versions with different access levels
+- **Selected panel:** frequencies only cover ~3.7M selected variants, not every variant in the genomes
+- **Coarse geography:** five macroregions hide finer ancestry structure within each region
+- **Aggregate only:** no individual-level genotypes or phenotypes, so no genotype–phenotype or expression-QTL analysis
+- **Not cell-level:** this is population genetics, so it has no transcriptomic or perturbation signal
+
+### Access
+
+- Browser: [genomassus.com.br/browser-de-variantes](https://genomassus.com.br/browser-de-variantes/)
+- Project site: [genomassus.com.br](https://genomassus.com.br) (news, calls for proposals ("Editais"), and contact for future access levels)
+
+---
+
 ## Gaps for the Research Proposal
 
-The five datasets above give **reference, regulatory, cell-state, and protein context**, but the [research proposal](./multi-omics-virtual-cell-research-proposal.md) also needs:
+The six datasets above give **reference, population-variant, regulatory, cell-state, and protein context**, but the [research proposal](./multi-omics-virtual-cell-research-proposal.md) also needs:
 
 | Need | Candidate datasets |
 | :--- | :--- |
