@@ -11,7 +11,7 @@
    - 1.1 Arrays, Listas Ligadas, Pilhas, Filas e Listas de Prioridade
    - 1.2 Recursão
    - 1.3 Tabelas de Espalhamento
-   - 1.4 Árvores Binárias, BST, AVL, Rubro-Negra
+   - 1.4 Árvores Binárias e BST
    - 1.5 Union-Find
 2. Algoritmos e Linguagens Formais
    - 2.1 Complexidade e Notação Assintótica
@@ -399,55 +399,6 @@ Exemplo: remover 50 da árvore acima → sucessor 60 vira raiz; 70 fica sem filh
 - Número de BSTs distintas com $n$ chaves: número de Catalan $C_n = \frac{1}{n+1}\binom{2n}{n}$.
 
 **Tree Sort:** inserir tudo e fazer em-ordem → $O(n \log n)$ se balanceada, $O(n^2)$ no pior caso.
-
-#### AVL
-
-**Invariante:** para todo nó, $FB = h(\text{esq}) - h(\text{dir}) \in \{-1, 0, +1\}$. Altura $\le \approx 1{,}44 \log_2 n$.
-
-Após inserir/remover, sobe atualizando alturas; no primeiro nó com $|FB| = 2$, aplica a rotação:
-
-| Caso | Situação | Correção |
-| :---- | :---- | :---- |
-| LL | FB(nó) = +2, FB(filho esq) ≥ 0 | rotação simples à **direita** no nó |
-| RR | FB(nó) = −2, FB(filho dir) ≤ 0 | rotação simples à **esquerda** no nó |
-| LR | FB(nó) = +2, FB(filho esq) = −1 | esquerda no filho esq, depois direita no nó |
-| RL | FB(nó) = −2, FB(filho dir) = +1 | direita no filho dir, depois esquerda no nó |
-
-**Rotação à direita em $y$** (com filho esquerdo $x$):
-
-```
-      y                x
-     / \              / \
-    x   C    ==>     A   y
-   / \                  / \
-  A   B                B   C
-```
-
-A ordem em-ordem (A x B y C) é preservada — por isso a rotação mantém a propriedade de BST. Custo $O(1)$.
-
-**Exemplos:**
-- Inserir 1, 2, 3 → caso RR em 1 → rotação à esquerda → raiz 2.
-- Inserir 3, 1, 2 → caso LR em 3 → esquerda em 1, direita em 3 → raiz 2.
-- Inserir 10, 20, 30, 40, 50: após 30 → raiz 20; após 50 → RR em 30 → `20(10, 40(30, 50))`.
-
-Inserção: no máximo **uma** rotação (simples ou dupla) restaura tudo. Remoção: pode precisar de $O(\log n)$ rotações.
-
-#### Rubro-Negra (Red-Black)
-
-**Regras:**
-1. Todo nó é vermelho ou preto.
-2. Raiz é preta.
-3. Folhas (NIL) são pretas.
-4. Nó vermelho tem filhos pretos (nunca dois vermelhos seguidos).
-5. Todo caminho de um nó até suas folhas tem o mesmo número de nós pretos (**altura negra**).
-
-**Consequência:** o caminho mais longo tem no máximo 2× o mais curto → altura $\le 2\log_2(n+1)$.
-
-Inserção: novo nó entra **vermelho** (não viola regra 5); corrige violações da regra 4 com **recoloração** (tio vermelho) ou **rotações** (tio preto) — no máximo 2 rotações. Remoção: no máximo 3 rotações.
-
-**AVL vs RB:** AVL mais baixa → buscas mais rápidas (bom para leitura intensa). RB menos rotações → inserções/remoções mais rápidas. RB é usada em `std::map`, `TreeMap` do Java, escalonador CFS do Linux.
-
-**Bônus — B-trees:** árvores de busca com muitos filhos por nó, altas taxas de ramificação → poucas leituras de disco. Usadas em índices de bancos de dados e sistemas de arquivos.
 
 ---
 
@@ -1186,14 +1137,3 @@ O jogo: **você** escolhe $w$ (esperta) e $i$; o **adversário** escolhe $p$ e a
 4. Pares não marcados são equivalentes → fundir.
 
 O AFD mínimo é **único** a menos de renomeação. Algoritmo de Hopcroft: $O(n \log n)$.
-
-#### Hierarquia de Chomsky
-
-| Tipo | Linguagem | Máquina | Gramática | Exemplo |
-| :---- | :---- | :---- | :---- | :---- |
-| 3 | Regular | Autômato finito | $A \to aB \mid a$ | $a^*b^*$ |
-| 2 | Livre de contexto | **Autômato de pilha** (não-det.) | $A \to \alpha$ | $a^nb^n$, parênteses |
-| 1 | Sensível ao contexto | Autômato linearmente limitado | $\alpha A \beta \to \alpha\gamma\beta$ | $a^nb^nc^n$ |
-| 0 | Recursivamente enumerável | Máquina de Turing | irrestrita | Problema da Parada (aceitação) |
-
-Regular ⊊ LLC ⊊ LSC ⊊ RE. LLC **não** são fechadas sob interseção nem complemento ($a^nb^nc^m \cap a^mb^nc^n = a^nb^nc^n$).

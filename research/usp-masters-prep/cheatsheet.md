@@ -27,7 +27,6 @@
 | Heap binário | min/max $O(1)$; busca $O(n)$ | $O(\log n)$ (sift-up) | extract $O(\log n)$ (sift-down) | build-heap $O(n)$ |
 | Hash table | $O(1)$ médio / $O(n)$ pior | $O(1)$ médio | $O(1)$ médio | fator de carga $\alpha = n/m$ |
 | BST | $O(h)$ | $O(h)$ | $O(h)$ | $h = \log n$ balanceada, $h = n$ degenerada |
-| AVL / Rubro-Negra | $O(\log n)$ **pior caso** | $O(\log n)$ | $O(\log n)$ | rotações |
 | Union-Find (rank + compressão) | find $O(\alpha(n))$ | union $O(\alpha(n))$ | — | amortizado, $\alpha(n) \le 4$ |
 
 Memória de todas: $O(n)$.
@@ -58,15 +57,12 @@ Memória de todas: $O(n)$.
 - Rehash quando $\alpha$ passa do limite (ex.: 0,75) → dobra tamanho, $O(n)$ pontual, $O(1)$ amortizado.
 - Método da divisão: $k \bmod m$, com $m$ **primo** longe de potência de 2.
 
-### 1.5 BST / AVL / Rubro-Negra
+### 1.5 Árvores Binárias / BST
 
 - BST: esquerda < nó < direita. **Em-ordem = sequência ordenada.**
 - Travessias: Pré (R-E-D), Em (E-R-D), Pós (E-D-R), Nível (BFS com fila).
 - Remoção: 0 filhos → remove; 1 filho → sobe o filho; 2 filhos → troca pelo **sucessor em-ordem** (mínimo da subárvore direita).
 - Inserir dados **ordenados** numa BST simples → degenera em lista → $O(n)$.
-- **AVL**: fator de balanceamento $h_E - h_D \in \{-1, 0, 1\}$. Casos: LL → rotação direita; RR → rotação esquerda; LR → esq+dir; RL → dir+esq.
-- **Rubro-Negra**: raiz preta; folhas NIL pretas; vermelho não tem filho vermelho; mesmo nº de pretos em todo caminho. Altura $\le 2\log(n+1)$.
-- AVL é mais balanceada (busca mais rápida); RB faz menos rotações (atualização mais rápida; usada em `std::map`, `TreeMap`).
 
 ### 1.6 Union-Find
 
@@ -192,7 +188,6 @@ Decore:
 - **Não regulares**: $a^nb^n$, parênteses balanceados, palíndromos, $ww$, $a^{n^2}$, $a^p$ ($p$ primo).
 - **Regulares**: toda linguagem **finita**; $a^*b^*$; $a^nb^m$; nº par de $a$; termina em `01`; binários divisíveis por 3.
 - AFD mínimo é **único** (a menos de renomear estados).
-- **Chomsky**: Regular (AF) ⊂ Livre de contexto (**autômato de pilha**) ⊂ Sensível ao contexto ⊂ Recursivamente enumerável (Máquina de Turing).
 
 ---
 
