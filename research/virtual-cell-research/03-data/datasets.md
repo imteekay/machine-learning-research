@@ -11,7 +11,7 @@
 
 ## How the Datasets Fit Together
 
-The datasets map onto the central dogma (DNA → RNA → Protein), as in the [Virtual Cell Foundation notes](./virtual-cell-foundation.md):
+The datasets map onto the central dogma (DNA → RNA → Protein), as in the [Virtual Cell Foundation notes](../01-foundations/virtual-cell-foundation.md):
 
 | Layer | Dataset | Role in a virtual cell |
 | :--- | :--- | :--- |
@@ -398,7 +398,7 @@ Ensembl is also a reference resource, so the metrics are again data-quality ones
 
 - **OpenCell** (CZ Biohub SF, Leonetti lab; Cho et al., *Science* 2022) is a proteome-scale map of **where human proteins localize** and **which proteins they physically interact with**, measured in the same live cells
 - **Purpose:** bridge the gap between the transcriptome and function. RNA tells you a gene is expressed, while OpenCell shows where the protein actually goes and what it binds
-- The image data trained **cytoself**, the self-supervised VQ-VAE described in the [protein localization notes](./cell-protein-localization-latent-representation.md)
+- The image data trained **cytoself**, the self-supervised VQ-VAE described in the [protein localization notes](../01-foundations/protein-localization-latent-representation.md)
 
 ### Domain Knowledge
 
@@ -539,7 +539,7 @@ Genomas SUS is a reference resource (and has no bulk access yet), so the metrics
 
 ## Gaps for the Research Proposal
 
-The six datasets above give **reference, population-variant, regulatory, cell-state, and protein context**, but the [research proposal](./multi-omics-virtual-cell-research-proposal.md) also needs:
+The six datasets above give **reference, population-variant, regulatory, cell-state, and protein context**, but the [research proposal](../00-plan/research-proposal.md) also needs:
 
 | Need | Candidate datasets |
 | :--- | :--- |

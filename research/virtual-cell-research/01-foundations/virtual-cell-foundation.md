@@ -65,4 +65,4 @@
 
 ## Resources
 
-- [1] [How to build the virtual cell with artificial intelligence](papers/how-to-build-the-virtual-cell-with-ai.pdf)
+- [1] [How to build the virtual cell with artificial intelligence](../papers/how-to-build-the-virtual-cell-with-ai.pdf)

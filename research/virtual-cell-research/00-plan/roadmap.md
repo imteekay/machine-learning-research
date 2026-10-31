@@ -1,6 +1,6 @@
 # Virtual Cell Roadmap
 
-A Master's → PhD roadmap for building a **multi-omic, context-aware virtual cell** and taking it to **healthcare and medicine**. It complements the [Multiomics Virtual Cell research proposal](./multi-omics-virtual-cell-research-proposal.md). Papers come from the original proposal resources and from a curated subset of [Awesome Foundation Model Single Cell](https://github.com/OmicsML/awesome-foundation-model-single-cell-papers).
+A Master's → PhD roadmap for building a **multi-omic, context-aware virtual cell** and taking it to **healthcare and medicine**. It complements the [Multiomics Virtual Cell research proposal](./research-proposal.md). Papers come from the original proposal resources and from a curated subset of [Awesome Foundation Model Single Cell](https://github.com/OmicsML/awesome-foundation-model-single-cell-papers). For the books, foundational papers and codebases behind each concept, see the [Virtual Cell Study Guide](./study-guide.md).
 
 ## Table of Contents
 
@@ -187,8 +187,10 @@ How the experiments chain together. A negative result at one rung tells you what
 
 ### Readings
 
-- [ ] [How to build the virtual cell with artificial intelligence: Priorities and opportunities](./papers/how-to-build-the-virtual-cell-with-ai.pdf) (2024 Cell, already read): the field's manifesto. Re-read at the end of each phase to check which "priority" you can now address
-- [ ] [Virtual Cells: Predict, Explain, Discover](https://arxiv.org/abs/2505.14613) ([Video](https://www.youtube.com/watch?v=QSfVjsa1i4g)) ([PDF](./papers/virtual-cells-predict-explain-discover.pdf)): the three capabilities that structure this roadmap's goals
+Books, foundational papers and code to study for this phase: [Study Guide → Phase 0](./study-guide.md#phase-0-foundations).
+
+- [ ] [How to build the virtual cell with artificial intelligence: Priorities and opportunities](../papers/how-to-build-the-virtual-cell-with-ai.pdf) (2024 Cell, already read): the field's manifesto. Re-read at the end of each phase to check which "priority" you can now address
+- [ ] [Virtual Cells: Predict, Explain, Discover](https://arxiv.org/abs/2505.14613) ([Video](https://www.youtube.com/watch?v=QSfVjsa1i4g)) ([PDF](../papers/virtual-cells-predict-explain-discover.pdf)): the three capabilities that structure this roadmap's goals
 - [ ] [Towards multimodal foundation models in molecular cell biology](https://www.nature.com/articles/s41586-025-08710-y) ([Video](https://www.youtube.com/watch?v=7LW9Pn7-YtE)) (2025 Nature): the map of modalities and scales you will combine
 - [ ] [Harnessing the deep learning power of foundation models in single-cell omics](https://www.nature.com/articles/s41580-024-00756-6) (2024 NRMCB): biologist-friendly review of how scFMs are built and used
 - [ ] [Transformers in single-cell omics: a review and new perspectives](https://www.nature.com/articles/s41592-024-02353-z) (2024 Nature Methods): bridges transformer theory to gene tokens
@@ -257,6 +259,8 @@ Run a full Scanpy + scvi-tools workflow on a public 10x Multiome PBMC dataset (Q
 - **Privacy of single-cell data**: count matrices can re-identify donors → patient-derived data needs privacy-preserving training and controlled access. This is a hard constraint for healthcare
 
 ### Readings
+
+Books, foundational papers and code to study for this phase: [Study Guide → Phase 1](./study-guide.md#phase-1-single-cell-data-and-tooling).
 
 - [ ] [Scanpy / AnnData: large-scale single-cell gene expression data analysis](https://doi.org/10.1186/s13059-017-1382-0) (2018 Genome Biology): the core data structures
 - [ ] [scvi-tools: a Python library for probabilistic analysis of single-cell omics data](https://doi.org/10.1038/s41587-021-01206-w) (2022 Nature Biotechnology): the probabilistic modeling toolkit you'll extend
@@ -338,6 +342,8 @@ Build a pipeline (config-driven, version-controlled) that pulls a CELLxGENE Cens
 - **LLM–cell bridges (Cell2Sentence, GenePT, CellWhisperer)**: link expression to text knowledge → an inexpensive source of gene priors (text embeddings) for unseen perturbations and a natural-language interface for clinicians
 
 ### Readings
+
+Books, foundational papers and code to study for this phase: [Study Guide → Phase 2](./study-guide.md#phase-2-single-cell-foundation-models).
 
 Core models (read in order; the lineage matters):
 
@@ -438,6 +444,8 @@ Fine-tune scGPT (or Geneformer) and train an HVG + PCA + logistic regression bas
 
 ### Readings
 
+Books, foundational papers and code to study for this phase: [Study Guide → Phase 3](./study-guide.md#phase-3-multi-omics-and-epigenetic-context).
+
 ATAC and regulation foundation models:
 
 - [ ] [GET: A foundation model of transcription across human cell types](https://www.nature.com/articles/s41586-024-08391-z) (2025 Nature): predicts expression from accessibility + sequence and generalizes to unseen cell types. A key reference for the Master's hypothesis
@@ -526,6 +534,8 @@ Train a joint RNA + ATAC model (start from scGPT or CLM-X, or a MultiVI baseline
 - **Reinforcement fine-tuning and reward design for perturbation models**: optimize for evaluation-aligned rewards → a 2026 direction. It needs good metrics first or it optimizes the shortcut
 
 ### Readings
+
+Books, foundational papers and code to study for this phase: [Study Guide → Phase 4](./study-guide.md#phase-4-perturbation-modeling-and-causal-prediction).
 
 Model lineage (read in order):
 
@@ -642,6 +652,8 @@ Reproduce GEARS, a linear/additive baseline and a control-mean baseline on Norma
 
 ### Readings
 
+Books, foundational papers and code to study for this phase: [Study Guide → Phase 5](./study-guide.md#phase-5-spatial-and-tissue-level-modeling).
+
 Spatial foundation models:
 
 - [ ] [Nicheformer: a foundation model for single-cell and spatial omics](https://www.nature.com/articles/s41592-025-02814-z) (2025 Nature Methods): joint dissociated + spatial pretraining (SpatialCorpus-110M)
@@ -659,7 +671,7 @@ Spatial foundation models:
 
 Spatial proteomics and multi-omics:
 
-- [ ] [The Virtual Tissues foundation model resolves spatial proteomics across scales](https://www.nature.com/articles/s41586-026-10884-y) ([Code](https://github.com/bunnelab/virtues), [Notes](./virtual-tissues-foundation-model.md), [PDF](./papers/the-virtual-tissues-foundation-model.pdf)) (2026 Nature): VirTues, a tissue-scale FM. Proteins are the drug targets
+- [ ] [The Virtual Tissues foundation model resolves spatial proteomics across scales](https://www.nature.com/articles/s41586-026-10884-y) ([Code](https://github.com/bunnelab/virtues), [Notes](../02-paper-notes/virtual-tissues-virtues.md), [PDF](../papers/the-virtual-tissues-foundation-model.pdf)) (2026 Nature): VirTues, a tissue-scale FM. Proteins are the drug targets
 - [ ] [KRONOS: A Foundation Model for Spatial Proteomics](https://arxiv.org/abs/2506.03373) (2025 arXiv): spatial proteomics FM
 - [ ] [Spatium: A Protein Language Foundation Model for Spatial Proteomics](https://www.biorxiv.org/content/10.64898/2026.07.23.740264v1) (2026 bioRxiv): protein-language priors for spatial panels
 - [ ] [SWITCH: Integrative deep learning of spatial multi-omics](https://www.nature.com/articles/s43588-025-00891-w) (2025 Nature Computational Science) and [SpaTranslator](https://www.biorxiv.org/content/10.1101/2025.11.15.688644v1) (2025 bioRxiv): spatial RNA + ATAC/protein, the Master's multi-omics in space
@@ -667,7 +679,7 @@ Spatial proteomics and multi-omics:
 Spatial perturbation (the PhD core):
 
 - [ ] [SpatialProp: tissue perturbation modeling with spatially resolved single-cell transcriptomics](https://www.biorxiv.org/content/10.64898/2025.11.30.691355v1) (2025 bioRxiv): propagates perturbations through tissue. Cited in the proposal
-- [ ] CONCERT: niche-aware perturbation responses in spatial transcriptomics (2025, Zitnik Lab): cited in the proposal as the closest prior model
+- [ ] CONCERT: niche-aware perturbation responses in spatial transcriptomics (2025, Zitnik Lab) ([Code](https://github.com/mims-harvard/CONCERT)): cited in the proposal as the closest prior model
 - [ ] [A Generative Virtual Tissue Model Enables Computational Design of Therapeutic Perturbation Strategies](https://www.biorxiv.org/content/10.64898/2026.08.12.743536v1) (2026 bioRxiv): from tissue simulation to therapy design. The PhD's end goal in miniature
 - [ ] [Dhainaut et al., Spatial CRISPR genomics identifies regulators of the tumor microenvironment (Perturb-map)](https://doi.org/10.1016/j.cell.2022.02.015) (2022 Cell): the spatial perturbation dataset named in the proposal
 
@@ -736,6 +748,8 @@ Pretrain or fine-tune a niche-aware model (Novae / Nicheformer / scGPT-spatial) 
 
 ### Readings
 
+Books, foundational papers and code to study for this phase: [Study Guide → Phase 6](./study-guide.md#phase-6-world-models-closed-loop-and-clinical-translation).
+
 World models and virtual-cell frameworks:
 
 - [ ] [What Makes a Virtual Cell a World Model? Three Gaps, Three Experiments, and a Roadmap](https://openreview.net/forum?id=YyI469JbU3) (2026 OpenReview): concrete criteria for calling something a world model
@@ -746,7 +760,7 @@ World models and virtual-cell frameworks:
 - [ ] [VCWorld: A Biological World Model for Virtual Cell Simulation](https://arxiv.org/abs/2512.00306) (2026 ICLR): simulation-oriented virtual cell
 - [ ] [An operational perturbation proteomics-based virtual cell model](https://www.nature.com/articles/s41586-026-11001-9) (2026 Nature): a virtual cell built on proteins, the drug-acting layer
 - [ ] [MaxToki: Temporal AI model predicts drivers of cell state trajectories across human aging](https://www.biorxiv.org/content/10.64898/2026.03.30.715396v1) (2026 bioRxiv): temporal modeling and aging
-- [ ] [Virtual Cells Need Context, Not Just Scale](https://www.biorxiv.org/content/10.64898/2026.02.04.703804v1) ([PDF](./papers/virtual-cells-need-context-not-just-scale.pdf)) (from the original resources): the argument behind this whole roadmap
+- [ ] [Virtual Cells Need Context, Not Just Scale](https://www.biorxiv.org/content/10.64898/2026.02.04.703804v1) ([PDF](../papers/virtual-cells-need-context-not-just-scale.pdf)) (from the original resources): the argument behind this whole roadmap
 - [ ] [Harnessing AI to Build Virtual Cells](https://www.biorxiv.org/content/10.64898/2026.04.11.717183v2) ([Video](https://www.youtube.com/watch?v=pwLfujLYwhA)) (from the original resources)
 - [ ] [The virtual cell](https://www.nature.com/articles/s41592-025-02951-5) (2025 Nature Methods) and [Grow AI virtual cells: three data pillars and closed-loop learning](https://www.nature.com/articles/s41422-025-01101-y) (2025 Cell Research): data and closed-loop perspectives
 - [ ] [Towards autonomous mechanistic reasoning in virtual cells](https://arxiv.org/abs/2604.11661) (2026): reasoning on top of simulation ("Explain")
@@ -833,6 +847,8 @@ Pick one clinical question (e.g., immunotherapy or CAR-T response, or drug resis
 
 ## Cross-Cutting Tracks
 
+Books and code for these tracks: [Study Guide → Cross-Cutting Tracks](./study-guide.md#cross-cutting-tracks).
+
 These run through every phase. Revisit them at each exit check.
 
 ### Causal Inference for Perturbations
@@ -878,13 +894,13 @@ These run through every phase. Revisit them at each exit check.
 
 ## Appendix A: Original Resources
 
-Moved from the [research proposal](./multi-omics-virtual-cell-research-proposal.md). Each item is also placed in the phase where it fits.
+Moved from the [research proposal](./research-proposal.md). Each item is also placed in the phase where it fits.
 
 - [ ] [Awesome Foundation Model Single Cell](https://github.com/OmicsML/awesome-foundation-model-single-cell-papers)
 
 ### Papers
 
-- [X] [How to build the virtual cell with artificial intelligence: Priorities and opportunities](./papers/how-to-build-the-virtual-cell-with-ai.pdf) (Phase 0)
+- [X] [How to build the virtual cell with artificial intelligence: Priorities and opportunities](../papers/how-to-build-the-virtual-cell-with-ai.pdf) (Phase 0)
 - [ ] [Harnessing AI to Build Virtual Cells](https://www.biorxiv.org/content/10.64898/2026.04.11.717183v2) ([Video](https://www.youtube.com/watch?v=pwLfujLYwhA)) (Phase 6)
 - [ ] [Virtual Cells Need Context, Not Just Scale](https://www.biorxiv.org/content/10.64898/2026.02.04.703804v1) (Phase 6)
 - [ ] [PerturbDiff: Functional Diffusion for Single-Cell Perturbation Modeling](https://arxiv.org/abs/2602.19685) (Phase 4)
@@ -896,7 +912,7 @@ Moved from the [research proposal](./multi-omics-virtual-cell-research-proposal.
 - [ ] [Universal cell embedding provides a foundation model for cell biology](https://www.nature.com/articles/s41586-026-10689-z) ([Video](https://www.youtube.com/watch?v=IWjKDYDJSt8)) (Phase 2)
 - [ ] [The Virtual Tissues foundation model resolves spatial proteomics across scales](https://www.nature.com/articles/s41586-026-10884-y) (Phase 5)
   - [Code](https://github.com/bunnelab/virtues)
-  - [Notes](./virtual-tissues-foundation-model.md)
+  - [Notes](../02-paper-notes/virtual-tissues-virtues.md)
 - [ ] [scGPT: toward building a foundation model for single-cell multi-omics using generative AI](https://www.nature.com/articles/s41592-024-02201-0) (Phase 2)
 - [ ] [Cross-modality Matching and Prediction of Perturbation Responses with Labeled Gromov-Wasserstein Optimal Transport](https://arxiv.org/pdf/2405.00838) (Phase 3)
 
@@ -919,7 +935,7 @@ Moved from the [research proposal](./multi-omics-virtual-cell-research-proposal.
 
 ## Appendix B: Datasets Cheat-Table
 
-See [datasets.md](./datasets.md) for the full list. These are the datasets this roadmap's experiments rely on.
+See [datasets.md](../03-data/datasets.md) for the full list. These are the datasets this roadmap's experiments rely on.
 
 | Dataset | Modality | Used in | Why |
 | --- | --- | --- | --- |

@@ -4,7 +4,7 @@
 
 Conventions used in this note:
 - **(paper)** = stated in the paper; **(code)** = read from the GitHub repo; **(my take)** = my own inference/suggestion, not a claim of the authors.
-- Builds on [Virtual Cell Foundation](virtual-cell-foundation.md) (UR + Virtual Instruments framing) and feeds the PhD part of the [research proposal](multi-omics-virtual-cell-research-proposal.md) (tissue-level world model).
+- Builds on [Virtual Cell Foundation](../01-foundations/virtual-cell-foundation.md) (UR + Virtual Instruments framing) and feeds the PhD part of the [research proposal](../00-plan/research-proposal.md) (tissue-level world model).
 
 ---
 
@@ -40,7 +40,7 @@ Conventions used in this note:
   - ViT/CNN cost grows quadratically with spatial size × channel count.
   - Channel-agnostic designs treat all channels the same and can't discount redundant markers.
   - No mechanism to integrate different panels or use prior knowledge about the molecules (sequence/structure).
-- **"Virtual tissue"** = a computational, spatially resolved representation of the measured tissue state that can be *queried, compared, reconstructed and reused* — the tissue-scale analogue of the "AI virtual cell" (Bunne et al. 2024, see [virtual-cell-foundation.md](virtual-cell-foundation.md)).
+- **"Virtual tissue"** = a computational, spatially resolved representation of the measured tissue state that can be *queried, compared, reconstructed and reused* — the tissue-scale analogue of the "AI virtual cell" (Bunne et al. 2024, see [virtual-cell-foundation.md](../01-foundations/virtual-cell-foundation.md)).
   - In the UR/VI framing: VirTues encoder = the **Universal Representation** at tissue scale; the decoder (virtual staining), linear probes, segmentation head, ABMIL, retrieval = **Virtual Instruments** (decoder VIs).
 
 ---
@@ -883,7 +883,7 @@ Format: **Hypothesis** → experiment → metric → what would confirm it.
 
 - What a dataset needs to be useful **for pretraining**: images + channel→protein mapping + tissue masks + patient IDs.
 - **For evaluation**: cell masks + cell labels (cell-level), clinical labels per patient (tissue-level), ideally an independent cohort with the same endpoint.
-- Also add to [datasets.md](datasets.md) once explored.
+- Also add to [datasets.md](../03-data/datasets.md) once explored.
 
 ---
 
@@ -926,12 +926,12 @@ Format: **Hypothesis** → experiment → metric → what would confirm it.
 - **Cell-level FMs**: scGPT, Geneformer, UCE (Universal Cell Embeddings, Rosen et al. 2026).
 - **Methods**: MAE (He et al. 2022), MultiMAE (Bachmann et al. 2022), TimeSformer (Bertasius et al. 2021), RoFormer (Su et al. 2024), FlashAttention-2 (Dao 2024), ABMIL (Ilse et al. 2018), Sinkhorn / Computational OT (Cuturi 2013; Peyré & Cuturi 2019), ESM-2 (Lin et al. 2023).
 - **Biology**: de Souza, Zhao & Bodenmiller 2024 (*Multiplex protein imaging in tumour biology*, Nat Rev Cancer) — best single review to start the domain.
-- **Context in this folder**: [How to build the virtual cell with AI](papers/how-to-build-the-virtual-cell-with-ai.pdf), [Virtual cells need context, not just scale](papers/virtual-cells-need-context-not-just-scale.pdf).
+- **Context in this folder**: [How to build the virtual cell with AI](../papers/how-to-build-the-virtual-cell-with-ai.pdf), [Virtual cells need context, not just scale](../papers/virtual-cells-need-context-not-just-scale.pdf).
 
 ---
 
 ## Resources
 
-- [1] [The Virtual Tissues foundation model resolves spatial proteomics across scales (PDF)](papers/the-virtual-tissues-foundation-model.pdf) · [Nature, doi:10.1038/s41586-026-10884-y](https://doi.org/10.1038/s41586-026-10884-y)
+- [1] [The Virtual Tissues foundation model resolves spatial proteomics across scales (PDF)](../papers/the-virtual-tissues-foundation-model.pdf) · [Nature, doi:10.1038/s41586-026-10884-y](https://doi.org/10.1038/s41586-026-10884-y)
 - [2] [Code: bunnelab/virtues](https://github.com/bunnelab/virtues) · [Datasets](https://github.com/bunnelab/virtues#datasets) · [Models](https://github.com/bunnelab/virtues#models)
-- [3] [How to build the virtual cell with artificial intelligence: Priorities and opportunities](papers/how-to-build-the-virtual-cell-with-ai.pdf)
+- [3] [How to build the virtual cell with artificial intelligence: Priorities and opportunities](../papers/how-to-build-the-virtual-cell-with-ai.pdf)

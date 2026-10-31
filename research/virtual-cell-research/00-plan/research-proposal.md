@@ -61,4 +61,4 @@ The goal is to create reliable simulations for single-cell and between-cells int
 
 ## Resources
 
-See [Virtual Cell Roadmap](./virtual-cell-roadmap.md): Master's → PhD phases, concepts, readings and experiments.
+See [Virtual Cell Roadmap](./roadmap.md): Master's → PhD phases, concepts, readings and experiments.
