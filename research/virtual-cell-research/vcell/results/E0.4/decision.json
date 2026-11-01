@@ -1,0 +1,179 @@
+{
+  "rule": {
+    "alpha": 0.01,
+    "min_median_delta_r": 0.1,
+    "min_gap_closure": 0.2,
+    "worlds_needed": 4
+  },
+  "worlds": {
+    "world_0": {
+      "a_specific_vs_shuffled": {
+        "n": 80,
+        "median_difference": 0.14164,
+        "p_value": 2.50038e-11,
+        "pass": true
+      },
+      "b_mse_vs_mean_shift": {
+        "n": 80,
+        "median_difference": 0.0067034,
+        "p_value": 2.53875e-13,
+        "gap_closure": 0.0442985,
+        "pass": false
+      },
+      "pass": false
+    },
+    "world_1": {
+      "a_specific_vs_shuffled": {
+        "n": 80,
+        "median_difference": 0.0853925,
+        "p_value": 1.00445e-05,
+        "pass": false
+      },
+      "b_mse_vs_mean_shift": {
+        "n": 80,
+        "median_difference": 0.00286314,
+        "p_value": 2.81338e-09,
+        "gap_closure": 0.0255362,
+        "pass": false
+      },
+      "pass": false
+    },
+    "world_2": {
+      "a_specific_vs_shuffled": {
+        "n": 80,
+        "median_difference": 0.101246,
+        "p_value": 1.1422e-09,
+        "pass": true
+      },
+      "b_mse_vs_mean_shift": {
+        "n": 80,
+        "median_difference": 0.00322325,
+        "p_value": 2.55013e-10,
+        "gap_closure": 0.0209455,
+        "pass": false
+      },
+      "pass": false
+    },
+    "world_3": {
+      "a_specific_vs_shuffled": {
+        "n": 80,
+        "median_difference": 0.125583,
+        "p_value": 5.1184e-10,
+        "pass": true
+      },
+      "b_mse_vs_mean_shift": {
+        "n": 80,
+        "median_difference": 0.00306024,
+        "p_value": 5.36556e-12,
+        "gap_closure": 0.0275202,
+        "pass": false
+      },
+      "pass": false
+    },
+    "world_4": {
+      "a_specific_vs_shuffled": {
+        "n": 80,
+        "median_difference": 0.0728341,
+        "p_value": 0.000173097,
+        "pass": false
+      },
+      "b_mse_vs_mean_shift": {
+        "n": 80,
+        "median_difference": 0.00384063,
+        "p_value": 3.43822e-09,
+        "gap_closure": 0.0219625,
+        "pass": false
+      },
+      "pass": false
+    }
+  },
+  "worlds_passing": 0,
+  "verdict": "H rejected",
+  "exploratory": {
+    "world_0": {
+      "mlp_vs_ridge_pearson_systema": {
+        "n": 80,
+        "median_difference": -0.0714864,
+        "p_value": 1.0
+      },
+      "mlp_vs_ridge_mse": {
+        "n": 80,
+        "median_difference": -0.00240158,
+        "p_value": 0.999948
+      },
+      "screen_program_sources": [
+        "TF17",
+        "TF35",
+        "TF67"
+      ]
+    },
+    "world_1": {
+      "mlp_vs_ridge_pearson_systema": {
+        "n": 80,
+        "median_difference": -0.0412687,
+        "p_value": 0.999945
+      },
+      "mlp_vs_ridge_mse": {
+        "n": 80,
+        "median_difference": -0.00134827,
+        "p_value": 0.999287
+      },
+      "screen_program_sources": [
+        "TF24",
+        "TF36",
+        "TF47"
+      ]
+    },
+    "world_2": {
+      "mlp_vs_ridge_pearson_systema": {
+        "n": 80,
+        "median_difference": -0.0518102,
+        "p_value": 0.999999
+      },
+      "mlp_vs_ridge_mse": {
+        "n": 80,
+        "median_difference": -0.00215662,
+        "p_value": 1.0
+      },
+      "screen_program_sources": [
+        "TF36",
+        "TF48",
+        "TF55"
+      ]
+    },
+    "world_3": {
+      "mlp_vs_ridge_pearson_systema": {
+        "n": 80,
+        "median_difference": -0.0539538,
+        "p_value": 0.999998
+      },
+      "mlp_vs_ridge_mse": {
+        "n": 80,
+        "median_difference": -0.00201815,
+        "p_value": 0.999996
+      },
+      "screen_program_sources": [
+        "TF26",
+        "TF51",
+        "TF64"
+      ]
+    },
+    "world_4": {
+      "mlp_vs_ridge_pearson_systema": {
+        "n": 80,
+        "median_difference": -0.0755949,
+        "p_value": 1.0
+      },
+      "mlp_vs_ridge_mse": {
+        "n": 80,
+        "median_difference": -0.00211559,
+        "p_value": 1.0
+      },
+      "screen_program_sources": [
+        "TF18",
+        "TF26",
+        "TF73"
+      ]
+    }
+  }
+}
