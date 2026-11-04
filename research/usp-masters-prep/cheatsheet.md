@@ -121,10 +121,6 @@ Decore:
 | Quick | $n\log n$ | $n\log n$ | $n^2$ | $\log n$ (pilha) | ❌ | ✅ |
 | Heap | $n\log n$ | $n\log n$ | $n\log n$ | $1$ | ❌ | ✅ |
 | Counting | $n+k$ | $n+k$ | $n+k$ | $n+k$ | ✅ | ❌ |
-| Radix (LSD) | $d(n+k)$ | $d(n+k)$ | $d(n+k)$ | $n+k$ | ✅ | ❌ |
-| Bucket | $n+k$ | $n+k$ | $n^2$ | $n+k$ | ✅* | ❌ |
-
-\* Bucket é estável se a ordenação interna de cada balde for estável (ex.: Insertion).
 
 - **Limite inferior** de ordenação por comparação: $\Omega(n \log n)$ (árvore de decisão com $n!$ folhas).
 - Insertion: ótimo para **quase ordenado** / pequeno; nº de trocas = nº de **inversões**.
@@ -142,21 +138,15 @@ Decore:
 | :---- | :---- | :---- | :---- | :---- |
 | BFS | caminho mínimo **sem pesos**, níveis | **fila** | $O(V+E)$ | |
 | DFS | ciclos, topológica, SCC, labirinto | **pilha**/recursão | $O(V+E)$ | |
-| Kahn | ordenação topológica | fila + grau de entrada | $O(V+E)$ | só DAG |
 | DFS pós-ordem invertida | ordenação topológica | pilha | $O(V+E)$ | só DAG |
-| Kosaraju | SCC | 2 DFS (G e $G^T$) | $O(V+E)$ | dirigido |
-| Tarjan | SCC | 1 DFS + pilha + *low-link* | $O(V+E)$ | dirigido |
 | Dijkstra | caminho mínimo, fonte única | fila de prioridade | $O((V+E)\log V)$ heap; $O(V^2)$ array | **pesos $\ge 0$** |
 | Bellman-Ford | caminho mínimo, fonte única | relaxa todas as arestas $V-1$ vezes | $O(V \cdot E)$ | aceita negativos; **detecta ciclo negativo** |
-| Floyd-Warshall | todos os pares | DP, matriz | $\Theta(V^3)$ tempo, $\Theta(V^2)$ memória | aceita negativos, sem ciclo negativo |
 | Prim | MST | fila de prioridade | $O(E\log V)$; $O(V^2)$ array | conexo, não dir. |
 | Kruskal | MST | ordena arestas + Union-Find | $O(E\log E) = O(E\log V)$ | não dir. |
 
 - **Relaxamento**: se $d[u] + w(u,v) < d[v]$ então $d[v] \leftarrow d[u] + w(u,v)$.
 - Bellman-Ford: se na **$V$-ésima** rodada ainda relaxar → **ciclo negativo**.
-- Floyd-Warshall: $d[i][j] = \min(d[i][j],\ d[i][k] + d[k][j])$ com $k$ no laço **externo**. Ciclo negativo ⇔ $d[i][i] < 0$.
 - Dijkstra falha com pesos negativos porque **finaliza** o vértice quando ele sai da fila.
-- DAG: caminho mínimo em $O(V+E)$ (topológica + relaxar), aceita pesos negativos.
 - Grafo dirigido tem ciclo ⇔ DFS encontra **aresta de retorno** (back edge).
 - **MST**: $V-1$ arestas, sem ciclos. Única se todos os pesos forem distintos. Propriedade do corte: a menor aresta que cruza um corte está em alguma MST. MST ≠ árvore de caminhos mínimos.
 
@@ -166,11 +156,6 @@ Decore:
 - **NP**: solução **verificável** em tempo polinomial (certificado) = resolvível por máquina **não-determinística** em tempo polinomial. **P ⊆ NP**. P = NP? **em aberto**.
 - **NP-Difícil**: todo problema de NP se reduz a ele. Pode não estar em NP (ex.: Problema da Parada).
 - **NP-Completo** = NP ∩ NP-Difícil.
-- **Redução** $A \le_p B$: "$B$ é pelo menos tão difícil quanto $A$". Para provar que **$B$ é NP-difícil**, reduza um NP-completo **conhecido $A$ para $B$**.
-- Para provar NP-completo: (1) $B \in$ NP; (2) NPC conhecido $\le_p B$.
-- **Cook-Levin**: SAT é NP-completo (o primeiro).
-- **NPC**: SAT, 3-SAT, Clique, Vertex Cover, Conjunto Independente, Ciclo Hamiltoniano, TSP (decisão), Mochila (decisão), Subset Sum, 3-Coloração, Set Cover.
-- **Em P**: 2-SAT, caminho mínimo, MST, ciclo **Euleriano**, 2-coloração (bipartido), emparelhamento, programação linear, primalidade.
 - Mochila DP $O(nW)$ é **pseudo-polinomial** (polinomial no **valor** de $W$, exponencial nos bits).
 - Na prática: heurísticas, aproximação (Vertex Cover 2-aprox), DP pseudo-polinomial, Branch & Bound.
 
@@ -178,10 +163,6 @@ Decore:
 
 - **AFD**: $M = (Q, \Sigma, \delta, q_0, F)$, $\delta: Q \times \Sigma \to Q$ (exatamente uma transição por par).
 - **AFN**: $\delta: Q \times (\Sigma \cup \{\epsilon\}) \to \mathcal{P}(Q)$. Aceita se **algum** caminho termina em estado final.
-- **Kleene**: Regex ≡ AFN-ε ≡ AFN ≡ AFD → todos reconhecem as **linguagens regulares**.
-  - Regex → AFN-ε: **Thompson** ($O(m)$ estados).
-  - AFN → AFD: **construção de subconjuntos** (até $2^n$ estados; pior caso atingível).
-  - AFD → Regex: eliminação de estados.
 - Precedência regex: `*` > concatenação > `|`.
 - Regulares são **fechadas** sob: união, concatenação, estrela, **complemento**, **interseção**, diferença, reverso.
 - **Lema do Bombeamento**: se $L$ é regular, $\exists p$ tal que toda $w \in L$, $|w| \ge p$, se divide em $w = xyz$ com $|xy| \le p$, $|y| \ge 1$ e $xy^iz \in L$ $\forall i \ge 0$. Serve **só para provar que NÃO é regular** (condição necessária, não suficiente).
