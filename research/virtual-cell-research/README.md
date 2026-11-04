@@ -59,7 +59,9 @@ PDFs without a note yet:
 
 ### 04-experiments: Experiments
 
-None yet. The roadmap lists the planned experiments, starting with E0.1–E0.3 in [Phase 0](./00-plan/roadmap.md#phase-0-foundations).
+| Experiment | Question | Verdict |
+| --- | --- | --- |
+| [E0.4](./04-experiments/E0.4-minimal-virtual-cell.md) | Can a minimal virtual cell predict unseen knockouts? (code: [`vcell/`](./vcell/)) | H rejected |
 
 ## Suggested Reading Order
 

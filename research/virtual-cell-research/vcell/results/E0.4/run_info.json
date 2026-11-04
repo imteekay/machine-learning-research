@@ -1,0 +1,23 @@
+{
+  "python": "3.12.15",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.0",
+    "torch": "2.15.0",
+    "matplotlib": "3.11.2"
+  },
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "device": "cpu (1 thread)",
+  "git_head": "9ffec8d",
+  "git_dirty": true,
+  "seconds": {
+    "world_0": 25.3015,
+    "world_1": 19.5736,
+    "world_2": 19.3115,
+    "world_3": 24.9087,
+    "world_4": 22.0007,
+    "total": 111.176
+  }
+}

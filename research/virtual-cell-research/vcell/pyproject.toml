@@ -1,0 +1,29 @@
+[project]
+name = "vcell"
+version = "0.1.0"
+description = "A minimal, educational virtual cell: a toy GRN cell simulator, perturbation baselines, a Δ-predicting MLP and an evaluation harness."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "scipy>=1.18.1",
+    "torch>=2.15.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "nbconvert>=7.17.2",
+    "nbformat>=5.11.1",
+    "pytest>=9.2.0",
+]

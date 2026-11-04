@@ -15,6 +15,12 @@ Entry format:
 
 ---
 
+## 2026-10-31: E0.4 minimal virtual cell
+
+- **Did**: built `vcell/`, a toy GRN simulator plus a harness and a Δ-MLP. Pre-registered E0.4, passed the pilot, and ran worlds 0–4.
+- **Learned**: H rejected. The co-expression signal is real but tiny, ridge beats the MLP, and the models cannot tell regulators from nulls.
+- **Next**: E0.5, a bilinear decoder with GRN priors.
+
 ## 2026-10-31: Reorganized the research folder
 
 - **Did**: split the flat folder into `00-plan/`, `01-foundations/`, `02-paper-notes/`, `03-data/` and `04-experiments/`. Added a [README](./README.md) index, this log, and templates for [paper notes](./02-paper-notes/_template.md) and [experiments](./04-experiments/_template.md).

@@ -235,6 +235,14 @@ Run a full Scanpy + scvi-tools workflow on a public 10x Multiome PBMC dataset (Q
 - **Metric & success criterion**: rank agreement between metrics, and the minimum number of cells for E-distance to detect the difference
 - **Progress signal**: a short note that states which metric you will report for which claim, and why
 
+**E0.4: Can a minimal virtual cell predict knockouts it has never seen?** ([write-up](../04-experiments/E0.4-minimal-virtual-cell.md))
+- **Hypothesis (H)**: on a synthetic toy cell with a known GRN, a minimal virtual cell (perturbation embedding → MLP → Δ added to the control state) predicts the *specific* response to unseen regulator knockouts. It represents each knockout by the knocked-out gene's co-expression in control cells. It beats the same model with shuffled embeddings, and it has lower error than the mean-shift baseline. *Null*: no gain over shuffled embeddings, or no error reduction compared with mean shift
+- **Why it moves the research forward**: it builds the harness every later model plugs into: a simulator with ground truth, splits by unseen perturbation, mean and linear baselines, Systema-corrected metrics, and positive and negative controls. It checks that harness on a world where the answer is known. If H holds, the same harness moves to real screens (Replogle) and richer embeddings. If it fails, you learn that generalizing to unseen perturbations needs priors, before you spend time on real data
+- **Knowledge tested**: *domain*: GRN propagation, knockdown efficiency and escapers, systematic (generic) responses, co-expression vs intervention (a target gene co-expressed with its regulator is not a regulator). *Technical*: Δ prediction, perturbation-level cross-validation, perturbation representations, Systema metrics, shuffled and leaky controls, paired tests, noise ceilings
+- **Design**: [`vcell`](../vcell/) toy cell: 500 genes, 80 regulators, 120 knockouts × 100 cells, NB counts, a shared stress program and 20% escapers. 5 worlds × 5-fold CV over knockouts. Models: mean shift, ridge, MLP with co-expression embeddings, MLP with shuffled embeddings, and an oracle ceiling
+- **Metric & success criterion**: per regulator knockout, Systema Pearson (against the perturbed mean) and MSE on the 20 most affected genes. H holds if, in ≥ 4 of 5 worlds, the co-expression MLP beats the shuffled MLP (median ΔPearson ≥ 0.1, Wilcoxon p < 0.01) *and* beats mean shift on MSE (p < 0.01, closing ≥ 20% of the gap to the oracle)
+- **Progress signal**: you can explain from the simulator's mechanism why co-expression generalizes and where it fails (null knockouts inside regulator modules). Any new model runs through the harness as one function
+
 ### Exit Check
 
 - Explain to a biologist what an ATAC peak is and why it might change a knockout's effect
