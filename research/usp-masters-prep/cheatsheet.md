@@ -140,7 +140,6 @@ Decore:
 | BFS | caminho mínimo **sem pesos**, níveis | **fila** | $O(V+E)$ | |
 | DFS | ciclos, topológica, SCC, labirinto | **pilha**/recursão | $O(V+E)$ | |
 | DFS pós-ordem invertida | ordenação topológica | pilha | $O(V+E)$ | só DAG |
-| Tarjan | SCC | 1 DFS + pilha + *low-link* | $O(V+E)$ | dirigido |
 | Dijkstra | caminho mínimo, fonte única | fila de prioridade | $O((V+E)\log V)$ heap; $O(V^2)$ array | **pesos $\ge 0$** |
 | Bellman-Ford | caminho mínimo, fonte única | relaxa todas as arestas $V-1$ vezes | $O(V \cdot E)$ | aceita negativos; **detecta ciclo negativo** |
 | Prim | MST | fila de prioridade | $O(E\log V)$; $O(V^2)$ array | conexo, não dir. |
