@@ -124,14 +124,11 @@ Decore:
 | Radix (LSD) | $d(n+k)$ | $d(n+k)$ | $d(n+k)$ | $n+k$ | ✅ | ❌ |
 | Bucket | $n+k$ | $n+k$ | $n^2$ | $n+k$ | ✅* | ❌ |
 
-\* Bucket é estável se a ordenação interna de cada balde for estável (ex.: Insertion).
-
 - **Limite inferior** de ordenação por comparação: $\Omega(n \log n)$ (árvore de decisão com $n!$ folhas).
 - Insertion: ótimo para **quase ordenado** / pequeno; nº de trocas = nº de **inversões**.
 - Selection: mínimo de trocas ($O(n)$ swaps), mas sempre $\Theta(n^2)$ comparações.
 - Quick pior caso: pivô sempre extremo (array já ordenado com pivô no início/fim). Solução: pivô aleatório / mediana de três.
 - Merge: estável, bom para listas ligadas e ordenação externa.
-- Radix usa ordenação **estável** (Counting) por dígito, do menos significativo para o mais.
 - **Quickselect** (k-ésimo menor): $O(n)$ médio, $O(n^2)$ pior. **Mediana das medianas**: $O(n)$ pior caso.
 
 ### 2.4 Grafos
