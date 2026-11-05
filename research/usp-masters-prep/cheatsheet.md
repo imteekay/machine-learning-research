@@ -121,8 +121,6 @@ Decore:
 | Quick | $n\log n$ | $n\log n$ | $n^2$ | $\log n$ (pilha) | ❌ | ✅ |
 | Heap | $n\log n$ | $n\log n$ | $n\log n$ | $1$ | ❌ | ✅ |
 | Counting | $n+k$ | $n+k$ | $n+k$ | $n+k$ | ✅ | ❌ |
-| Radix (LSD) | $d(n+k)$ | $d(n+k)$ | $d(n+k)$ | $n+k$ | ✅ | ❌ |
-| Bucket | $n+k$ | $n+k$ | $n^2$ | $n+k$ | ✅* | ❌ |
 
 - **Limite inferior** de ordenação por comparação: $\Omega(n \log n)$ (árvore de decisão com $n!$ folhas).
 - Insertion: ótimo para **quase ordenado** / pequeno; nº de trocas = nº de **inversões**.
