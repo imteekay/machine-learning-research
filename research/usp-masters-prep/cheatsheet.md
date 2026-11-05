@@ -147,10 +147,7 @@ Decore:
 
 - **Relaxamento**: se $d[u] + w(u,v) < d[v]$ então $d[v] \leftarrow d[u] + w(u,v)$.
 - Bellman-Ford: se na **$V$-ésima** rodada ainda relaxar → **ciclo negativo**.
-- Floyd-Warshall: $d[i][j] = \min(d[i][j],\ d[i][k] + d[k][j])$ com $k$ no laço **externo**. Ciclo negativo ⇔ $d[i][i] < 0$.
 - Dijkstra falha com pesos negativos porque **finaliza** o vértice quando ele sai da fila.
-- DAG: caminho mínimo em $O(V+E)$ (topológica + relaxar), aceita pesos negativos.
-- Grafo dirigido tem ciclo ⇔ DFS encontra **aresta de retorno** (back edge).
 - **MST**: $V-1$ arestas, sem ciclos. Única se todos os pesos forem distintos. Propriedade do corte: a menor aresta que cruza um corte está em alguma MST. MST ≠ árvore de caminhos mínimos.
 
 ### 2.5 P, NP, NP-Completo, NP-Difícil
@@ -161,7 +158,6 @@ Decore:
 - **NP-Completo** = NP ∩ NP-Difícil.
 - **Redução** $A \le_p B$: "$B$ é pelo menos tão difícil quanto $A$". Para provar que **$B$ é NP-difícil**, reduza um NP-completo **conhecido $A$ para $B$**.
 - Para provar NP-completo: (1) $B \in$ NP; (2) NPC conhecido $\le_p B$.
-- **Cook-Levin**: SAT é NP-completo (o primeiro).
 - **NPC**: SAT, 3-SAT, Clique, Vertex Cover, Conjunto Independente, Ciclo Hamiltoniano, TSP (decisão), Mochila (decisão), Subset Sum, 3-Coloração, Set Cover.
 - **Em P**: 2-SAT, caminho mínimo, MST, ciclo **Euleriano**, 2-coloração (bipartido), emparelhamento, programação linear, primalidade.
 - Mochila DP $O(nW)$ é **pseudo-polinomial** (polinomial no **valor** de $W$, exponencial nos bits).
