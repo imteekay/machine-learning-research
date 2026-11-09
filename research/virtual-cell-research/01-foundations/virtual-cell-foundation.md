@@ -63,6 +63,20 @@
   - Cancer biology: immune resistance must be understood in the spatial context of the cellular neighborhood to identify the specific cell states and gene signatures involved
   - Malignant cells within a tumor can engage in active immune evasion by either blocking immune infiltration,133 evading immune recognition, or dampening immune cell function.
 
+## Generalization
+
+### 1. Zero-Shot Generalization
+
+- Definition: Predicting the outcome of an intervention on a cell type, drug, or cellular context that the model has never encountered in the training data.
+- In the Virtual Cell Context: Suppose the model was trained entirely on perturbation experiments using kinase inhibitors, metabolic drugs, and immunotherapies across various lung and breast cancer cell lines. You now introduce a completely novel compound (say, a newly synthesized PROTAC degrader) tested on a completely new patient-derived tumor xenograft that was never part of the training set.
+- How it works: The model does not need training data for this specific drug-cell pair. Instead, it relies on shared semantic and structural features. It maps the chemical structure of the new drug (e.g., via a molecular encoder) and recognizes that it binds to Protein Target $X$, which the model does know. It then evaluates Target $X$’s position within the pre-learned cellular interaction graph and predicts the downstream single-cell state shift and macroscopic tumor shrinkage entirely out-of-the-box (zero-shot).
+
+### 2. One-Shot (or Few-Shot) Generalization
+
+- Definition: Predicting the outcome of a novel intervention after being shown only a single (or very few) experimental data points for that specific intervention or cell context.
+- In the Virtual Cell Context: Suppose you test the new drug on a tumor cell line at just one single time point or one single dosage (the "one shot"), and you want the model to predict the full continuous response across all unmeasured dosages, temporal horizons, and combination therapies, or predict how that drug will behave on a different metastatic lesion of the same tumor.
+- How it works: The single experimental observation acts as an anchor or in-context prompt. The virtual cell takes this sparse, highly limited empirical data point and uses its pre-trained prior (its understanding of cellular manifold geometry and gene regulatory networks) to rapidly "fill in the blanks." Rather than learning the biological system from scratch, the model uses the single data point to calibrate its latent space, allowing it to accurately extrapolate the broader dose-response curve or combinatorial effects.
+
 ## Resources
 
 - [1] [How to build the virtual cell with artificial intelligence](../papers/how-to-build-the-virtual-cell-with-ai.pdf)
