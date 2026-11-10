@@ -65,12 +65,16 @@
 
 ## Generalization
 
-Biological modalities
+### Biological modalities
 
-- Protein sequences (ESM architectures) — structural physics
-- Small molecule structures (graph neural networks or chemical language models)
-- Single-cell expression profiles — regulatory logic
-- Cellular interaction networks — biochemical conservation
+| Modality Layer | Primary Architectures & Encoders | Core Biological Domain | What it Contributes to the Virtual Cell |
+| --- | --- | --- | --- |
+| **Genomics & Epigenetics** | Sequence transformers (Enformer, Borzoi), genomic DNA encoders | Regulatory access & chromatin state | Governs non-coding DNA rules, enhancer-promoter looping, and whether target genes are physically accessible for transcription. |
+| **Proteins** | Protein language models (ESM, AlphaFold 3, Evoformer) | Structural physics & 3D binding | Predicts 3D folding, binding pocket geometries, mutation impacts, and target interaction sites. |
+| **Small Molecules** | Graph Neural Networks (GNNs), chemical language models (SMILES/SELFIES transformers) | Chemical space & pharmacophores | Represents chemical structures, functional groups, and binding affinity to candidate target proteins. |
+| **Post-Translational Cascade** | Biochemical network models, phosphorylation encoders | Instantaneous signaling dynamics | Captures rapid, non-transcriptional biochemical events (seconds-to-minutes scale) such as kinase inhibition, degradation, and protein activation. |
+| **Single-Cell Expression** | Single-cell foundation models (scBERT, Geneformer, Gene-space transformers) | Cell state & gene co-expression | Maps steady-state transcriptomic landscapes (scRNA-seq), cell-state transitions, and cell fate trajectory manifolds. |
+| **Cellular Networks & Spatial TME** | Graph Neural Networks, Spatial transformers (10x Visium, Xenium, MERFISH encoders) | Biochemical conservation & microenvironment | Models gene regulatory networks (GRNs), protein-protein interaction (PPI) topology, and cell-to-cell paracrine signaling across physical tissue coordinates. |
 
 Foundation models approach generalization compositionally: learn independent representations of the drug's chemical features, its protein target's 3D structure, and the target cell's baseline gene regulatory network.
 
