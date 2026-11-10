@@ -65,6 +65,17 @@
 
 ## Generalization
 
+Biological modalities
+
+- Protein sequences (ESM architectures) — structural physics
+- Small molecule structures (graph neural networks or chemical language models)
+- Single-cell expression profiles — regulatory logic
+- Cellular interaction networks — biochemical conservation
+
+Foundation models approach generalization compositionally: learn independent representations of the drug's chemical features, its protein target's 3D structure, and the target cell's baseline gene regulatory network.
+
+$$\text{Novel Intervention} = \text{Novel Chemical Structure} \to \text{Known Target Protein} \to \text{Perturbed Pathway Graph}$$
+
 ### 1. Zero-Shot Generalization
 
 - Definition: Predicting the outcome of an intervention on a cell type, drug, or cellular context that the model has never encountered in the training data.
