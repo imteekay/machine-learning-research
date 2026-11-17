@@ -6,7 +6,7 @@
 
 ## 0. Formato da prova
 
-- 17/11/2026, 08:30, 3h, múltipla escolha.
+- 01/12/2026, 08:30 (Brasília), 3h, remota (online), múltipla escolha.
 - Responder **exatamente 20** questões (mín. 14 de uma mesma área). **Nunca responda mais de 20.**
 - Nota mínima: 6,0 → 12 acertos de 20. Pule as dúvidas e volte depois (~9 min por questão).
 

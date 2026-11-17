@@ -1,6 +1,6 @@
 # Quiz & Flashcards
 
-> **Como usar até 17/11:** leia a pergunta, responda em voz alta ou no papel e só então abra a resposta. Marque com ❌ as que errar e repita **só essas** no dia seguinte, depois em 3 dias, depois em 7. Faça o **Simulado** (final do arquivo) cronometrado: 20 questões em ~1h30.
+> **Como usar até 01/12:** leia a pergunta, responda em voz alta ou no papel e só então abra a resposta. Marque com ❌ as que errar e repita **só essas** no dia seguinte, depois em 3 dias, depois em 7. Faça o **Simulado** (final do arquivo) cronometrado: 20 questões em ~1h30.
 >
 > Formato: **Flashcards** (resposta curta) e **Múltipla escolha** (estilo prova, com justificativa).
 
