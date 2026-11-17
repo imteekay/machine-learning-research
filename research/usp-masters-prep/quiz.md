@@ -221,7 +221,7 @@ Guarda a raiz, move o último elemento para a raiz e faz **sift-down** (troca co
 
 </details>
 
-**F22.** Custo de construir um heap a partir de um array de $n$ elementos (build-heap)?
+**F22.** Custo de construir um heap a partir de um array de $n$ elementos (build-heap — array desordenado + sift down)?
 <details><summary>Resposta</summary>
 
 $O(n)$ — sift-down de $\lfloor n/2 \rfloor - 1$ até 0. A maioria dos nós está perto das folhas e desce pouco.
