@@ -6,7 +6,7 @@
 
 ## 0. Formato da prova
 
-- 17/11/2026, 08:30, 3h, múltipla escolha.
+- 01/12/2026, 08:30 (Brasília), 3h, remota (online), múltipla escolha.
 - Responder **exatamente 20** questões (mín. 14 de uma mesma área). **Nunca responda mais de 20.**
 - Nota mínima: 6,0 → 12 acertos de 20. Pule as dúvidas e volte depois (~9 min por questão).
 
@@ -146,6 +146,7 @@ Decore:
 - **Relaxamento**: se $d[u] + w(u,v) < d[v]$ então $d[v] \leftarrow d[u] + w(u,v)$.
 - Bellman-Ford: se na **$V$-ésima** rodada ainda relaxar → **ciclo negativo**.
 - Dijkstra falha com pesos negativos porque **finaliza** o vértice quando ele sai da fila.
+- Grafo dirigido tem ciclo ⇔ DFS encontra **aresta de retorno** (back edge).
 - **MST**: $V-1$ arestas, sem ciclos. Única se todos os pesos forem distintos. Propriedade do corte: a menor aresta que cruza um corte está em alguma MST. MST ≠ árvore de caminhos mínimos.
 
 ### 2.5 P, NP, NP-Completo, NP-Difícil
@@ -165,10 +166,6 @@ Decore:
 
 - **AFD**: $M = (Q, \Sigma, \delta, q_0, F)$, $\delta: Q \times \Sigma \to Q$ (exatamente uma transição por par).
 - **AFN**: $\delta: Q \times (\Sigma \cup \{\epsilon\}) \to \mathcal{P}(Q)$. Aceita se **algum** caminho termina em estado final.
-- **Kleene**: Regex ≡ AFN-ε ≡ AFN ≡ AFD → todos reconhecem as **linguagens regulares**.
-  - Regex → AFN-ε: **Thompson** ($O(m)$ estados).
-  - AFN → AFD: **construção de subconjuntos** (até $2^n$ estados; pior caso atingível).
-  - AFD → Regex: eliminação de estados.
 - Precedência regex: `*` > concatenação > `|`.
 - Regulares são **fechadas** sob: união, concatenação, estrela, **complemento**, **interseção**, diferença, reverso.
 - **Lema do Bombeamento**: se $L$ é regular, $\exists p$ tal que toda $w \in L$, $|w| \ge p$, se divide em $w = xyz$ com $|xy| \le p$, $|y| \ge 1$ e $xy^iz \in L$ $\forall i \ge 0$. Serve **só para provar que NÃO é regular** (condição necessária, não suficiente).

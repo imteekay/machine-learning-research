@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max-Heap Construction: Sift-Down O(n) vs Sift-Up O(n log n)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #3b82f6;
+      --compare: #f59e0b;
+      --swap: #ef4444;
+      --done: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container { max-width: 1000px; width: 100%; }
+
+    header { text-align: center; margin-bottom: 20px; }
+    header h1 { margin: 0 0 6px; font-size: 1.5rem; }
+    header p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      background: var(--panel);
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    button, select {
+      background: #0f172a;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    button:hover { border-color: var(--primary); }
+    button.active { background: var(--primary); border-color: var(--primary); font-weight: 600; }
+    button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .stat-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .stat-card span { display: block; color: var(--muted); font-size: 0.8rem; }
+    .stat-card strong { font-size: 1.4rem; margin-top: 4px; display: block; }
+
+    .canvas-box {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      position: relative;
+      overflow-x: auto;
+    }
+
+    svg { width: 100%; min-width: 760px; height: 360px; display: block; }
+
+    .status-bar {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      min-height: 24px;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 12px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Max-Heap Construction Visualizer</h1>
+      <p>Compare bottom-up <strong>Sift-Down O(n)</strong> vs. top-down insertion <strong>Sift-Up O(n log n)</strong></p>
+    </header>
+
+    <div class="controls">
+      <button id="modeDown" class="active" onclick="setMode('down')">Sift-Down (build-heap) — O(n)</button>
+      <button id="modeUp" onclick="setMode('up')">Sift-Up (1-by-1 insert) — O(n log n)</button>
+      <select id="sizeSelect" onchange="resetArray()">
+        <option value="15">15 Nodes (Height 3)</option>
+        <option value="31" selected>31 Nodes (Height 4)</option>
+      </select>
+      <button onclick="resetArray()">New Array</button>
+      <button id="prevBtn" onclick="step(-1)">◀ Prev</button>
+      <button id="playBtn" onclick="togglePlay()">▶ Play</button>
+      <button id="nextBtn" onclick="step(1)">Next ▶</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <span>Comparisons</span>
+        <strong id="compCount" style="color: var(--compare)">0</strong>
+      </div>
+      <div class="stat-card">
+        <span>Swaps</span>
+        <strong id="swapCount" style="color: var(--swap)">0</strong>
+      </div>
+      <div class="stat-card">
+        <span>Total Operations</span>
+        <strong id="totalCount" style="color: var(--primary)">0</strong>
+      </div>
+    </div>
+
+    <div class="canvas-box">
+      <svg id="treeSvg" viewBox="0 0 900 360"></svg>
+      <div class="status-bar" id="statusText">Ready</div>
+      <div class="legend">
+        <span><i class="dot" style="background:#334155"></i>Unprocessed / Inactive</span>
+        <span><i class="dot" style="background:#3b82f6"></i>In Heap</span>
+        <span><i class="dot" style="background:#f59e0b"></i>Comparing</span>
+        <span><i class="dot" style="background:#ef4444"></i>Swapping</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+
+    let baseArray = [];
+    let steps = [];
+    let currentStep = 0;
+    let mode = 'down';
+    let timer = null;
+
+    function generateArray(n) {
+      // Ascending order is the worst case for sift-up, highlighting the O(n) vs O(n log n) gap
+      return Array.from({ length: n }, (_, i) => i + 1);
+    }
+
+    function snapshot(a, activeLimit, compare, swap, comps, swaps, msg) {
+      return { arr: [...a], activeLimit, compare, swap, comps, swaps, msg };
+    }
+
+    function recordSiftDown(arr) {
+      const a = [...arr];
+      const n = a.length;
+      const history = [];
+      let comps = 0;
+      let swaps = 0;
+
+      history.push(snapshot(a, n, [], [], comps, swaps, 'Initial array loaded into complete binary tree.'));
+
+      for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
+        let curr = i;
+        while (true) {
+          let largest = curr;
+          const left = 2 * curr + 1;
+          const right = 2 * curr + 2;
+
+          if (left < n) {
+            comps++;
+            history.push(snapshot(a, n, [largest, left], [], comps, swaps,
+              `Comparing node ${a[largest]} with left child ${a[left]}`));
+            if (a[left] > a[largest]) largest = left;
+          }
+          if (right < n) {
+            comps++;
+            history.push(snapshot(a, n, [largest, right], [], comps, swaps,
+              `Comparing ${a[largest]} with right child ${a[right]}`));
+            if (a[right] > a[largest]) largest = right;
+          }
+          if (largest !== curr) {
+            const parentVal = a[curr];
+            const childVal = a[largest];
+            [a[curr], a[largest]] = [a[largest], a[curr]];
+            swaps++;
+            history.push(snapshot(a, n, [], [curr, largest], comps, swaps,
+              `Swapped ${parentVal} down with ${childVal}`));
+            curr = largest;
+          } else {
+            break;
+          }
+        }
+      }
+
+      history.push(snapshot(a, n, [], [], comps, swaps,
+        `Max-Heap built in ${comps + swaps} total operations!`));
+      return history;
+    }
+
+    function recordSiftUp(arr) {
+      const a = [...arr];
+      const n = a.length;
+      const history = [];
+      let comps = 0;
+      let swaps = 0;
+
+      history.push(snapshot(a, 1, [], [], comps, swaps, 'Starting with root element.'));
+
+      for (let i = 1; i < n; i++) {
+        let curr = i;
+        history.push(snapshot(a, i + 1, [curr], [], comps, swaps,
+          `Inserted ${a[curr]} at index ${curr}`));
+
+        while (curr > 0) {
+          const parent = Math.floor((curr - 1) / 2);
+          comps++;
+          history.push(snapshot(a, i + 1, [curr, parent], [], comps, swaps,
+            `Comparing child ${a[curr]} with parent ${a[parent]}`));
+
+          if (a[curr] > a[parent]) {
+            const childVal = a[curr];
+            const parentVal = a[parent];
+            [a[curr], a[parent]] = [a[parent], a[curr]];
+            swaps++;
+            history.push(snapshot(a, i + 1, [], [curr, parent], comps, swaps,
+              `Swapped ${childVal} up with ${parentVal}`));
+            curr = parent;
+          } else {
+            break;
+          }
+        }
+      }
+
+      history.push(snapshot(a, n, [], [], comps, swaps,
+        `Max-Heap built in ${comps + swaps} total operations!`));
+      return history;
+    }
+
+    function getCoords(index, totalNodes) {
+      const level = Math.floor(Math.log2(index + 1));
+      const maxLevel = Math.floor(Math.log2(totalNodes));
+      const levelStart = Math.pow(2, level) - 1;
+      const posInLevel = index - levelStart;
+      const nodesInLevel = Math.pow(2, level);
+
+      const width = 860;
+      const x = 20 + (width / nodesInLevel) * (posInLevel + 0.5);
+      const y = 35 + level * (290 / Math.max(maxLevel, 1));
+      return { x, y };
+    }
+
+    function render() {
+      const state = steps[currentStep];
+      const svg = document.getElementById('treeSvg');
+      svg.innerHTML = '';
+
+      const n = state.arr.length;
+      const radius = n > 15 ? 14 : 18;
+
+      // Edges
+      for (let i = 1; i < n; i++) {
+        const p = Math.floor((i - 1) / 2);
+        const c1 = getCoords(p, n);
+        const c2 = getCoords(i, n);
+        const line = document.createElementNS(SVG_NS, 'line');
+        line.setAttribute('x1', c1.x);
+        line.setAttribute('y1', c1.y);
+        line.setAttribute('x2', c2.x);
+        line.setAttribute('y2', c2.y);
+        line.setAttribute('stroke', i < state.activeLimit ? '#475569' : '#1e293b');
+        line.setAttribute('stroke-width', '2');
+        svg.appendChild(line);
+      }
+
+      // Nodes
+      for (let i = 0; i < n; i++) {
+        const { x, y } = getCoords(i, n);
+        let fill = i < state.activeLimit ? '#3b82f6' : '#334155';
+        if (state.compare.includes(i)) fill = '#f59e0b';
+        if (state.swap.includes(i)) fill = '#ef4444';
+
+        const circle = document.createElementNS(SVG_NS, 'circle');
+        circle.setAttribute('cx', x);
+        circle.setAttribute('cy', y);
+        circle.setAttribute('r', radius);
+        circle.setAttribute('fill', fill);
+        circle.setAttribute('stroke', '#0f172a');
+        circle.setAttribute('stroke-width', '2');
+        svg.appendChild(circle);
+
+        const text = document.createElementNS(SVG_NS, 'text');
+        text.setAttribute('x', x);
+        text.setAttribute('y', y + 4);
+        text.setAttribute('text-anchor', 'middle');
+        text.setAttribute('fill', '#ffffff');
+        text.setAttribute('font-size', n > 15 ? '11' : '13');
+        text.setAttribute('font-weight', 'bold');
+        text.textContent = state.arr[i];
+        svg.appendChild(text);
+      }
+
+      document.getElementById('compCount').textContent = state.comps;
+      document.getElementById('swapCount').textContent = state.swaps;
+      document.getElementById('totalCount').textContent = state.comps + state.swaps;
+      document.getElementById('statusText').textContent =
+        `Step ${currentStep + 1}/${steps.length}: ${state.msg}`;
+      document.getElementById('prevBtn').disabled = currentStep === 0;
+      document.getElementById('nextBtn').disabled = currentStep === steps.length - 1;
+    }
+
+    function setMode(newMode) {
+      stopPlay();
+      mode = newMode;
+      document.getElementById('modeDown').classList.toggle('active', mode === 'down');
+      document.getElementById('modeUp').classList.toggle('active', mode === 'up');
+      rebuildSteps();
+    }
+
+    function rebuildSteps() {
+      steps = mode === 'down' ? recordSiftDown(baseArray) : recordSiftUp(baseArray);
+      currentStep = 0;
+      render();
+    }
+
+    function resetArray() {
+      stopPlay();
+      const size = parseInt(document.getElementById('sizeSelect').value, 10);
+      baseArray = generateArray(size);
+      rebuildSteps();
+    }
+
+    function step(delta) {
+      stopPlay();
+      currentStep = Math.max(0, Math.min(steps.length - 1, currentStep + delta));
+      render();
+    }
+
+    function togglePlay() {
+      if (timer) {
+        stopPlay();
+        return;
+      }
+      if (currentStep === steps.length - 1) currentStep = 0;
+      document.getElementById('playBtn').textContent = '⏸ Pause';
+      timer = setInterval(() => {
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          render();
+        } else {
+          stopPlay();
+        }
+      }, 250);
+    }
+
+    function stopPlay() {
+      clearInterval(timer);
+      timer = null;
+      document.getElementById('playBtn').textContent = '▶ Play';
+    }
+
+    resetArray();
+  </script>
+</body>
+</html>

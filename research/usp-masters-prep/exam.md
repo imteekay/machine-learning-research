@@ -2,7 +2,7 @@
 
 [More info](https://www.iq.usp.br/portaliqusp/sites/default/files/anexos/3%20%C3%81reas%20Topicos%20e%20Bibliografia%20da%20prova%20-%20revisado_0.pdf)
 
-- Data da prova: 17 de novembro de 2026 (terça-feira), com início às 08:30
+- Data da prova: 01 de dezembro de 2026 (terça-feira), com início às 08:30 (horário de Brasília), exclusivamente remota (online)
 - Lista de aprovados: 24 de novembro de 2026
 - Duração máxima de 3 horas
 - A prova será composta por 60 (sessenta) questões de múltipla escolha, com questões divididas igualmente entre as 3 (três) áreas mencionadas acima. 

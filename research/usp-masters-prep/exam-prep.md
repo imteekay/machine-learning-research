@@ -93,7 +93,7 @@
 [Ilustração](https://www.youtube.com/watch?v=g-PGLbMth_g)
 
 - Como funciona? Procura o menor elemento, faz o swap pra posição atual e escanea o restante dos elementos fazendo a mesma operação
-  - Foco em colocar o menor número no final
+  - Foco em colocar o menor número no início
 - Qual a complexidade de tempo médio ($θ(n)$)? $θ(n²)$
 - Qual a complexidade de tempo limite superior (pior caso) ($O(N)$)? $O(n²)$
 - Qual a complexidade de memória? $O(1)$
