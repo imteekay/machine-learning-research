@@ -424,6 +424,7 @@ Fine-tune scGPT (or Geneformer) and train an HVG + PCA + logistic regression bas
 - **Why it moves the research forward**: it tests the "Explain" capability early. If FMs hold pathway knowledge but not regulatory logic, the Master's model needs explicit regulatory input (ATAC, GRN priors). That *directly* motivates Phase 3
 - **Knowledge tested**: *domain*: pathways vs regulatory edges; what CollecTRI/ChIP-seq ground truth means. *Technical*: SAEs, enrichment analysis, GRN evaluation (precision–recall vs co-expression baseline)
 - **Design**: train an SAE on scGPT/Geneformer activations. Run enrichment of top-activating genes per feature. Compare GRN recovery against co-expression and GENIE3
+- **Warm-up (done)**: [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) validates the SAE → association → replication → DML toolkit on synthetic data ([Glyph note](../02-paper-notes/glyph.md), [`glyph-mini/`](../glyph-mini/))
 - **Metric & success criterion**: fraction of features enriched for a Hallmark (FDR < 0.05) vs PCA; AUPRC for TF → target edges
 - **Progress signal**: a clear statement of what the backbone *does not* know, which becomes the motivation section of your thesis
 

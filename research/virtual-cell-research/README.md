@@ -19,6 +19,7 @@ The numbered folders follow the research loop: **plan → learn → read papers 
 | [`03-data/`](./03-data/) | Dataset catalogue and notes on data access and preprocessing |
 | [`04-experiments/`](./04-experiments/) | One file per experiment (`EX.Y-slug.md`). Start from [`_template.md`](./04-experiments/_template.md) |
 | [`papers/`](./papers/) | Source PDFs. Each one should have a matching note in `02-paper-notes/` |
+| [`glyph-mini/`](./glyph-mini/) | Minimal PoC of [Glyph](./02-paper-notes/glyph.md) (SAE concepts → association → replication → DML), with tests. Python package (uv) |
 | [`research-log.md`](./research-log.md) | Dated log of progress, findings and next steps, newest first |
 
 ## Index
@@ -45,6 +46,7 @@ The numbered folders follow the research loop: **plan → learn → read papers 
 | Note | Paper | Roadmap phase |
 | --- | --- | --- |
 | [virtual-tissues-virtues.md](./02-paper-notes/virtual-tissues-virtues.md) | *The Virtual Tissues foundation model resolves spatial proteomics across scales* (Nature 2026) | 5 |
+| [glyph.md](./02-paper-notes/glyph.md) | *Glyph: An Interpretability Engine for AI-Driven Scientific Discovery from Clinical Data* (arXiv 2026) · [code](https://github.com/StanfordMIMI/Glyph) · [PoC](./glyph-mini/) | 2, 6 |
 
 PDFs without a note yet:
 - [How to build the virtual cell with AI](./papers/how-to-build-the-virtual-cell-with-ai.pdf)
@@ -62,6 +64,7 @@ PDFs without a note yet:
 | Experiment | Question | Verdict |
 | --- | --- | --- |
 | [E0.4](./04-experiments/E0.4-minimal-virtual-cell.md) | Can a minimal virtual cell predict unseen knockouts? (code: [`vcell/`](./vcell/)) | H rejected |
+| [E2.3a](./04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) | Does a Glyph-style pipeline (SAE → association → replication → DML) recover known truth on synthetic data? (code: [`glyph-mini/`](./glyph-mini/)) | H1–H5 supported |
 
 ## Suggested Reading Order
 

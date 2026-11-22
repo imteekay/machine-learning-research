@@ -1,0 +1,197 @@
+{
+  "verdicts": {
+    "H1 recovery": true,
+    "H2 sparsity/matryoshka": true,
+    "H3 discovery": true,
+    "H4 replication": true,
+    "H5 confounding": true
+  },
+  "main": {
+    "h1": {
+      "mean_max_cosine": 0.9781412247492559,
+      "min_max_cosine": 0.8491377075373924,
+      "random_baseline_cosine": 0.2662491696662665,
+      "val_r2_site_a": 0.94929039478302,
+      "r2_site_b": 0.9005903601646423,
+      "alive_features": 63
+    },
+    "h2": {
+      "prefix_8_r2": 0.2829933762550354,
+      "prefix_16_r2": 0.5176126956939697,
+      "prefix_32_r2": 0.9086154699325562,
+      "prefix_64_r2": 0.94929039478302
+    },
+    "h3": {
+      "n_tested": 61,
+      "expected_features": [
+        3,
+        9,
+        20
+      ],
+      "discovered_features": [
+        3,
+        9,
+        20
+      ],
+      "all_true_discovered": true,
+      "extra_discoveries": {},
+      "false_discoveries": [],
+      "null_outcome_hits": 0,
+      "top3_by_p": [
+        3,
+        9,
+        20
+      ]
+    },
+    "h4": {
+      "n_discoveries": 3,
+      "n_replicated": 3,
+      "replication_rate": 1.0
+    },
+    "h5": {
+      "causal_0": {
+        "feature": 20,
+        "naive_or": 1.341126435479991,
+        "naive_ci": [
+          1.276933903966772,
+          1.4085459790486303
+        ],
+        "adjusted_or": 1.491630985356418,
+        "adjusted_ci": [
+          1.4019422029633954,
+          1.5870575775322826
+        ]
+      },
+      "causal_1": {
+        "feature": 9,
+        "naive_or": 1.3148970429598108,
+        "naive_ci": [
+          1.2572283157061368,
+          1.3752110193392897
+        ],
+        "adjusted_or": 1.5853210210571131,
+        "adjusted_ci": [
+          1.4914027780605568,
+          1.6851535861250222
+        ]
+      },
+      "confounded": {
+        "feature": 3,
+        "naive_or": 1.6164199926763718,
+        "naive_ci": [
+          1.539656185245976,
+          1.6970110715376743
+        ],
+        "adjusted_or": 0.9445196988268366,
+        "adjusted_ci": [
+          0.8831544490247912,
+          1.010148861795402
+        ]
+      }
+    },
+    "config": {
+      "data": {
+        "n_concepts": 32,
+        "dim": 64,
+        "p_active": 0.1,
+        "noise": 0.05,
+        "causal": [
+          0,
+          1
+        ],
+        "confounded": 2,
+        "beta": 1.0,
+        "gamma": 1.5,
+        "b0": -1.5,
+        "seed": 0
+      },
+      "sae": {
+        "dict_size": 64,
+        "k": 6,
+        "prefixes": [
+          8,
+          16,
+          32,
+          64
+        ],
+        "lr": 0.001,
+        "batch_size": 256,
+        "max_steps": 3000,
+        "l1": 0.001,
+        "aux_k": 16,
+        "aux_scale": 1.0,
+        "eval_every": 50,
+        "patience": 20,
+        "seed": 0
+      }
+    }
+  },
+  "h2": {
+    "r2_by_k": {
+      "1": 0.37930911779403687,
+      "2": 0.6326851844787598,
+      "4": 0.8876245617866516,
+      "6": 0.94929039478302,
+      "10": 0.9584795236587524
+    },
+    "matryoshka_prefix_r2": {
+      "8": 0.2829933762550354,
+      "16": 0.5176126956939697,
+      "32": 0.9086154699325562,
+      "64": 0.94929039478302
+    },
+    "plain_prefix_r2": {
+      "8": 0.14818304777145386,
+      "16": 0.28396522998809814,
+      "32": 0.5278966426849365,
+      "64": 0.9673298597335815
+    }
+  },
+  "seeds": [
+    {
+      "seed": 0,
+      "H1 recovery": true,
+      "H2 sparsity/matryoshka": true,
+      "H3 discovery": true,
+      "H4 replication": true,
+      "H5 confounding": true,
+      "mean_max_cosine": 0.9781412247492559
+    },
+    {
+      "seed": 1,
+      "H1 recovery": true,
+      "H2 sparsity/matryoshka": true,
+      "H3 discovery": true,
+      "H4 replication": true,
+      "H5 confounding": true,
+      "mean_max_cosine": 0.968703561347785
+    },
+    {
+      "seed": 2,
+      "H1 recovery": true,
+      "H2 sparsity/matryoshka": true,
+      "H3 discovery": true,
+      "H4 replication": true,
+      "H5 confounding": true,
+      "mean_max_cosine": 0.9713703154955919
+    },
+    {
+      "seed": 3,
+      "H1 recovery": true,
+      "H2 sparsity/matryoshka": true,
+      "H3 discovery": true,
+      "H4 replication": true,
+      "H5 confounding": true,
+      "mean_max_cosine": 0.9801349353005435
+    },
+    {
+      "seed": 4,
+      "H1 recovery": true,
+      "H2 sparsity/matryoshka": true,
+      "H3 discovery": true,
+      "H4 replication": true,
+      "H5 confounding": true,
+      "mean_max_cosine": 0.9701302818188546
+    }
+  ]
+}
