@@ -1,0 +1,154 @@
+{
+  "config": {
+    "toy": {
+      "n_genes": 500,
+      "n_regulators": 80,
+      "n_masters": 10,
+      "max_regulator_parents": 2,
+      "max_target_parents": 3,
+      "weight_range": [
+        0.3,
+        1.0
+      ],
+      "p_activating": 0.7,
+      "baseline_mean": 1.0,
+      "baseline_sd": 0.8,
+      "noise_sd": 0.3,
+      "library_sd": 0.3,
+      "nb_theta": 10.0,
+      "responder_frac": 0.8,
+      "kd_range": [
+        1.5,
+        2.5
+      ],
+      "n_stress_genes": 25,
+      "stress_range": [
+        0.3,
+        0.8
+      ],
+      "systematic_strength": 1.0,
+      "gamma_range": [
+        0.5,
+        1.5
+      ],
+      "n_null_perts": 40,
+      "n_ctrl": 2000,
+      "cells_per_pert": 200,
+      "oracle_cells": 4000
+    },
+    "fit": {
+      "hidden": 64,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "max_epochs": 2000,
+      "patience": 100
+    },
+    "emb_dim": 64,
+    "n_folds": 5,
+    "k_top": 20,
+    "k_explain": 20,
+    "screen_k": 10,
+    "pilot_world": 1000,
+    "worlds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rule": {
+      "alpha": 0.01,
+      "min_median_delta_r": 0.1,
+      "min_gap_closure": 0.2,
+      "worlds_needed": 4
+    },
+    "pilot_rule": {
+      "min_oracle_r": 0.7,
+      "max_shuffled_r": 0.1,
+      "max_shuffled_gap_closure": 0.1
+    }
+  },
+  "world": 1000,
+  "checks": {
+    "1_oracle_ceiling": {
+      "median_pearson_systema": 0.79492,
+      "pass": true
+    },
+    "2_positive_control": {
+      "a_specific_vs_shuffled": {
+        "n": 80,
+        "median_difference": 0.383888,
+        "p_value": 4.07618e-15,
+        "pass": true
+      },
+      "b_mse_vs_mean_shift": {
+        "n": 80,
+        "median_difference": 0.0548521,
+        "p_value": 5.30954e-15,
+        "gap_closure": 0.303385,
+        "pass": true
+      },
+      "pass": true
+    },
+    "3_negative_control": {
+      "median_pearson_systema": -0.00439613,
+      "gap_closure": -0.00012597,
+      "pass": true
+    }
+  },
+  "passed": true,
+  "summary": [
+    {
+      "world": 1000,
+      "model": "MeanShift",
+      "median_pearson_systema": 0.0,
+      "median_pearson_delta": 0.745386,
+      "mean_mse_top20": 0.196482,
+      "gap_closure": 0.0,
+      "median_precision_at_k": 0.0,
+      "null_auroc": 0.5,
+      "screen_spearman": null,
+      "screen_hit@10": null,
+      "prediction_spread": 0.00743882
+    },
+    {
+      "world": 1000,
+      "model": "MLP (oracle embedding)",
+      "median_pearson_systema": 0.396815,
+      "median_pearson_delta": 0.770935,
+      "mean_mse_top20": 0.138406,
+      "gap_closure": 0.303385,
+      "median_precision_at_k": 0.242647,
+      "null_auroc": 0.81375,
+      "screen_spearman": 0.289249,
+      "screen_hit@10": 0.3,
+      "prediction_spread": 0.0427678
+    },
+    {
+      "world": 1000,
+      "model": "MLP (shuffled)",
+      "median_pearson_systema": -0.00439613,
+      "median_pearson_delta": 0.745237,
+      "mean_mse_top20": 0.196506,
+      "gap_closure": -0.00012597,
+      "median_precision_at_k": 0.05,
+      "null_auroc": 0.50625,
+      "screen_spearman": -0.0891606,
+      "screen_hit@10": 0.1,
+      "prediction_spread": 0.00744273
+    },
+    {
+      "world": 1000,
+      "model": "Oracle",
+      "median_pearson_systema": 0.79492,
+      "median_pearson_delta": 0.909684,
+      "mean_mse_top20": 0.00505505,
+      "gap_closure": 1.0,
+      "median_precision_at_k": 1.0,
+      "null_auroc": 0.99625,
+      "screen_spearman": 0.958664,
+      "screen_hit@10": 1.0,
+      "prediction_spread": 0.0778352
+    }
+  ]
+}

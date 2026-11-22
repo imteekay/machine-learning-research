@@ -64,6 +64,7 @@ Good foundation in coding, ML systems, distributed systems, GPUs/TPUs, Kernel
   - [ ] [[Book] Introduction to Machine Learning Systems](https://mlsysbook.ai/book)
   - [ ] [How to think in JAX](https://docs.jax.dev/en/latest/notebooks/thinking_in_jax.html)
   - [ ] [The math behind how LLMs are trained and served](https://www.dwarkesh.com/p/reiner-pope)
+  - [ ] [ML System Design](https://www.evidentlyai.com/ml-system-design)
 - [ ] Machine Learning Engineering / MLOps
   - [X] [Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
 

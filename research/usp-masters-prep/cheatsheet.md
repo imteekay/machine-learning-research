@@ -127,7 +127,6 @@ Decore:
 - Selection: mínimo de trocas ($O(n)$ swaps), mas sempre $\Theta(n^2)$ comparações.
 - Quick pior caso: pivô sempre extremo (array já ordenado com pivô no início/fim). Solução: pivô aleatório / mediana de três.
 - Merge: estável, bom para listas ligadas e ordenação externa.
-- Radix usa ordenação **estável** (Counting) por dígito, do menos significativo para o mais.
 - **Quickselect** (k-ésimo menor): $O(n)$ médio, $O(n^2)$ pior. **Mediana das medianas**: $O(n)$ pior caso.
 
 ### 2.4 Grafos
@@ -156,6 +155,10 @@ Decore:
 - **NP**: solução **verificável** em tempo polinomial (certificado) = resolvível por máquina **não-determinística** em tempo polinomial. **P ⊆ NP**. P = NP? **em aberto**.
 - **NP-Difícil**: todo problema de NP se reduz a ele. Pode não estar em NP (ex.: Problema da Parada).
 - **NP-Completo** = NP ∩ NP-Difícil.
+- **Redução** $A \le_p B$: "$B$ é pelo menos tão difícil quanto $A$". Para provar que **$B$ é NP-difícil**, reduza um NP-completo **conhecido $A$ para $B$**.
+- Para provar NP-completo: (1) $B \in$ NP; (2) NPC conhecido $\le_p B$.
+- **NPC**: SAT, 3-SAT, Clique, Vertex Cover, Conjunto Independente, Ciclo Hamiltoniano, TSP (decisão), Mochila (decisão), Subset Sum, 3-Coloração, Set Cover.
+- **Em P**: 2-SAT, caminho mínimo, MST, ciclo **Euleriano**, 2-coloração (bipartido), emparelhamento, programação linear, primalidade.
 - Mochila DP $O(nW)$ é **pseudo-polinomial** (polinomial no **valor** de $W$, exponencial nos bits).
 - Na prática: heurísticas, aproximação (Vertex Cover 2-aprox), DP pseudo-polinomial, Branch & Bound.
 
