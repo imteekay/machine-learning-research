@@ -105,6 +105,7 @@
 ### My Research Proposals
 
 - [Towards Performance Insights and Optimizations in TypeScript](./my-proposal)
+- [RecSys & Search Ranking Research](./recsys-search-ranking-research)
 - [Science + Machine Learning](https://github.com/imteekay/science-and-machine-learning-research)
 
 ## Labs
