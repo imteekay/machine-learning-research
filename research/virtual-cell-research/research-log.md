@@ -24,6 +24,20 @@ Entry format:
 
 ---
 
+## 2026-11-25: scGPT note + scgpt-mini PoC (E2.1 mini)
+
+- **Did**: wrote the [scGPT note](./02-paper-notes/scgpt.md). Built [`scgpt-mini/`](./scgpt-mini/): gene + value-bin tokens, GEP + GEPC pretraining, and frozen `<cls>` probes, with 7 tests. Ran [E2.1 mini](./04-experiments/E2.1-mini-scgpt-vs-pca.md): pretrained on pbmc3k, probed on pbmc3k held-out cells and on pbmc68k (transfer).
+- **Learned**: H rejected. On transfer with a linear probe, PCA scores 0.69 macro-F1 vs 0.24 for scGPT-mini, and it wins beyond the CI in 3/3 seeds. The trained model is barely better than random-init, even though its pretraining loss beat the mean floor. 70% of nonzero UMIs are 1, so per-cell bins collapse into one tied block, and scGPT's `np.digitize` puts that block in the top bin.
+- **Open questions**: does `<cls>` encode depth or the number of nonzero genes instead of cell type? Does GEPC matter?
+- **Next**: an E2.1b diagnostic regression and a GEP-only ablation, then the full E2.1 with real checkpoints and donor splits.
+
+## 2026-11-25: E1.1 integration without erasing disease (scPoli-mini)
+
+- **Did**: read scPoli ([note](./02-paper-notes/scpoli.md)). Built [`scpoli-mini/`](./scpoli-mini/) (cVAE with learned condition embeddings + prototype loss, 10 tests). Ran [E1.1](./04-experiments/E1.1-integration-without-erasing-disease.md) on synthetic multi-study data (3 seeds) and Kang 2018 IFN-β PBMCs.
+- **Learned**: H supported on synthetic (batch R² 0.49 → 0.003, held-out disease AUROC kept at 0.999). Kang is inconclusive: donors were multiplexed, so there is almost no batch to remove. Conditioning on donor when disease is donor-level erases it (AUROC 0.75). Under-trained VAEs silently drop the ISG program.
+- **Open questions**: do scPoli sample embeddings separate disease with many donors? How does query mapping change this?
+- **Next**: E1.1b on a CELLxGENE lupus/COVID multi-study PBMC set with a held-out query study.
+
 ## 2026-11-25: E5.1 niche context (nicheformer-mini)
 
 - **Did**: read Nicheformer ([note](./02-paper-notes/nicheformer.md)). Built [`nicheformer-mini/`](./nicheformer-mini/): a synthetic tumor section with known niches and spillover, ridge/neighbor-aggregation models and a rank-token mini transformer. Ran [E5.1](./04-experiments/E5.1-niche-context.md) with spatial block CV on 3 seeds. All 4 pre-registered criteria pass: IFN R² gain +0.12 at the border vs +0.05 far away; shuffled neighbors and housekeeping genes gain nothing.
