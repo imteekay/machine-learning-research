@@ -1,0 +1,130 @@
+{
+  "dataset": "dixit2016_GSM2396858",
+  "n_cells": 33013,
+  "n_genes": 23111,
+  "n_guides": 30,
+  "guides_per_target": {
+    "CREB1": 3,
+    "E2F4": 2,
+    "EGR1": 3,
+    "ELF1": 4,
+    "ELK1": 3,
+    "ETS1": 2,
+    "GABPA": 2,
+    "IRF1": 2,
+    "NR2C2": 3,
+    "YY1": 2,
+    "control": 4
+  },
+  "frac_cells_0_guides": 0.15081937418592675,
+  "frac_cells_1_guide": 0.8491806258140733,
+  "frac_cells_2plus_guides": 0.0,
+  "n_control_only_cells": 5381,
+  "median_umi": 19433.0,
+  "median_genes": 3811.0,
+  "genes_detected_in_5pct_cells": 9677,
+  "knockdown": {
+    "CREB1": {
+      "n_cells": 2713,
+      "detect_frac_ctrl": 0.2406615870656012,
+      "detect_frac_ko": 0.22742351640250644,
+      "log_fc": -0.004812739789485931
+    },
+    "E2F4": {
+      "n_cells": 1696,
+      "detect_frac_ctrl": 0.4255714551198662,
+      "detect_frac_ko": 0.3897405660377358,
+      "log_fc": -0.020515933632850647
+    },
+    "EGR1": {
+      "n_cells": 2275,
+      "detect_frac_ctrl": 0.29920089202750416,
+      "detect_frac_ko": 0.3767032967032967,
+      "log_fc": 0.06683462858200073
+    },
+    "ELF1": {
+      "n_cells": 4220,
+      "detect_frac_ctrl": 0.40066902062813603,
+      "detect_frac_ko": 0.3542654028436019,
+      "log_fc": -0.03430218994617462
+    },
+    "ELK1": {
+      "n_cells": 2733,
+      "detect_frac_ctrl": 0.28266121538747446,
+      "detect_frac_ko": 0.27588730332967437,
+      "log_fc": -0.004953891038894653
+    },
+    "ETS1": {
+      "n_cells": 1784,
+      "detect_frac_ctrl": 0.00037167812674224123,
+      "detect_frac_ko": 0.0005605381165919282,
+      "log_fc": 0.00016868706734385341
+    },
+    "GABPA": {
+      "n_cells": 2020,
+      "detect_frac_ctrl": 0.22653781824939603,
+      "detect_frac_ko": 0.2628712871287129,
+      "log_fc": 0.020104020833969116
+    },
+    "IRF1": {
+      "n_cells": 1402,
+      "detect_frac_ctrl": 0.07916744099609738,
+      "detect_frac_ko": 0.06918687589158345,
+      "log_fc": -0.007021619006991386
+    },
+    "NR2C2": {
+      "n_cells": 1816,
+      "detect_frac_ctrl": 0.08325590039026204,
+      "detect_frac_ko": 0.07764317180616741,
+      "log_fc": -0.0018552280962467194
+    },
+    "YY1": {
+      "n_cells": 1994,
+      "detect_frac_ctrl": 0.8002230068760453,
+      "detect_frac_ko": 0.695085255767302,
+      "log_fc": -0.09783977270126343
+    }
+  },
+  "collectri_coverage": {
+    "CREB1": {
+      "collectri_targets": 464,
+      "targets_expressed_5pct": 189
+    },
+    "E2F4": {
+      "collectri_targets": 169,
+      "targets_expressed_5pct": 142
+    },
+    "EGR1": {
+      "collectri_targets": 359,
+      "targets_expressed_5pct": 139
+    },
+    "ELF1": {
+      "collectri_targets": 79,
+      "targets_expressed_5pct": 33
+    },
+    "ELK1": {
+      "collectri_targets": 61,
+      "targets_expressed_5pct": 32
+    },
+    "ETS1": {
+      "collectri_targets": 231,
+      "targets_expressed_5pct": 89
+    },
+    "GABPA": {
+      "collectri_targets": 48,
+      "targets_expressed_5pct": 20
+    },
+    "IRF1": {
+      "collectri_targets": 168,
+      "targets_expressed_5pct": 58
+    },
+    "NR2C2": {
+      "collectri_targets": 59,
+      "targets_expressed_5pct": 26
+    },
+    "YY1": {
+      "collectri_targets": 264,
+      "targets_expressed_5pct": 124
+    }
+  }
+}
