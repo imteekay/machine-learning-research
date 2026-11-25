@@ -1,0 +1,524 @@
+{
+  "config": {
+    "houses_per_city": 600,
+    "n_users": 1500,
+    "epochs": 5,
+    "seeds": [
+      0
+    ]
+  },
+  "summary": {
+    "full": {
+      "retrieval_global.hit@10": {
+        "mean": 0.3914081145584726,
+        "std": 0.0
+      },
+      "retrieval_global.recall@10": {
+        "mean": 0.04350936049404533,
+        "std": 0.0
+      },
+      "retrieval_global.ndcg@10": {
+        "mean": 0.06421558807658259,
+        "std": 0.0
+      },
+      "retrieval_global.mrr": {
+        "mean": 0.16690446668065895,
+        "std": 0.0
+      },
+      "retrieval_global.coverage@10": {
+        "mean": 0.3138888888888889,
+        "std": 0.0
+      },
+      "retrieval_city.hit@10": {
+        "mean": 0.3914081145584726,
+        "std": 0.0
+      },
+      "retrieval_city.recall@10": {
+        "mean": 0.04410601920526251,
+        "std": 0.0
+      },
+      "retrieval_city.ndcg@10": {
+        "mean": 0.06463271066189338,
+        "std": 0.0
+      },
+      "retrieval_city.mrr": {
+        "mean": 0.16730286629626423,
+        "std": 0.0
+      },
+      "retrieval_city.coverage@10": {
+        "mean": 0.31222222222222223,
+        "std": 0.0
+      },
+      "info_abundance": {
+        "mean": 3.7645039558410645,
+        "std": 0.0
+      },
+      "alpha_mean_abs": {
+        "mean": 0.07028846442699432,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_offer": {
+        "mean": 0.3200856472346206,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_visit": {
+        "mean": 0.33833835160246706,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_offer": {
+        "mean": 0.4815172851431916,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_visit": {
+        "mean": 0.5020417031050682,
+        "std": 0.0
+      }
+    },
+    "geo_latlng": {
+      "retrieval_global.hit@10": {
+        "mean": 0.39618138424821003,
+        "std": 0.0
+      },
+      "retrieval_global.recall@10": {
+        "mean": 0.048608519917263976,
+        "std": 0.0
+      },
+      "retrieval_global.ndcg@10": {
+        "mean": 0.06932927442996409,
+        "std": 0.0
+      },
+      "retrieval_global.mrr": {
+        "mean": 0.1721608170941111,
+        "std": 0.0
+      },
+      "retrieval_global.coverage@10": {
+        "mean": 0.3005555555555556,
+        "std": 0.0
+      },
+      "retrieval_city.hit@10": {
+        "mean": 0.4009546539379475,
+        "std": 0.0
+      },
+      "retrieval_city.recall@10": {
+        "mean": 0.04930462174701735,
+        "std": 0.0
+      },
+      "retrieval_city.ndcg@10": {
+        "mean": 0.06990030129995962,
+        "std": 0.0
+      },
+      "retrieval_city.mrr": {
+        "mean": 0.17355491255399352,
+        "std": 0.0
+      },
+      "retrieval_city.coverage@10": {
+        "mean": 0.2961111111111111,
+        "std": 0.0
+      },
+      "info_abundance": {
+        "mean": 3.6130354404449463,
+        "std": 0.0
+      },
+      "alpha_mean_abs": {
+        "mean": 0.06987999379634857,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_offer": {
+        "mean": 0.3415020712470253,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_visit": {
+        "mean": 0.3562403748574184,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_offer": {
+        "mean": 0.4828268744898153,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_visit": {
+        "mean": 0.4979460770949913,
+        "std": 0.0
+      }
+    },
+    "user_mean": {
+      "retrieval_global.hit@10": {
+        "mean": 0.4033412887828162,
+        "std": 0.0
+      },
+      "retrieval_global.recall@10": {
+        "mean": 0.04172250209505886,
+        "std": 0.0
+      },
+      "retrieval_global.ndcg@10": {
+        "mean": 0.060574968413349015,
+        "std": 0.0
+      },
+      "retrieval_global.mrr": {
+        "mean": 0.15964215808410384,
+        "std": 0.0
+      },
+      "retrieval_global.coverage@10": {
+        "mean": 0.34555555555555556,
+        "std": 0.0
+      },
+      "retrieval_city.hit@10": {
+        "mean": 0.4033412887828162,
+        "std": 0.0
+      },
+      "retrieval_city.recall@10": {
+        "mean": 0.04172250209505886,
+        "std": 0.0
+      },
+      "retrieval_city.ndcg@10": {
+        "mean": 0.060583682489351545,
+        "std": 0.0
+      },
+      "retrieval_city.mrr": {
+        "mean": 0.1597244499222694,
+        "std": 0.0
+      },
+      "retrieval_city.coverage@10": {
+        "mean": 0.345,
+        "std": 0.0
+      },
+      "info_abundance": {
+        "mean": 3.9913506507873535,
+        "std": 0.0
+      },
+      "alpha_mean_abs": {
+        "mean": 0.08240528404712677,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_offer": {
+        "mean": 0.31757519605069334,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_visit": {
+        "mean": 0.3344529677864218,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_offer": {
+        "mean": 0.4940059871003573,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_visit": {
+        "mean": 0.5082405209166461,
+        "std": 0.0
+      }
+    },
+    "random_batches": {
+      "retrieval_global.hit@10": {
+        "mean": 0.36754176610978523,
+        "std": 0.0
+      },
+      "retrieval_global.recall@10": {
+        "mean": 0.04220485932669704,
+        "std": 0.0
+      },
+      "retrieval_global.ndcg@10": {
+        "mean": 0.06250219108377483,
+        "std": 0.0
+      },
+      "retrieval_global.mrr": {
+        "mean": 0.16243231544922404,
+        "std": 0.0
+      },
+      "retrieval_global.coverage@10": {
+        "mean": 0.24333333333333335,
+        "std": 0.0
+      },
+      "retrieval_city.hit@10": {
+        "mean": 0.36754176610978523,
+        "std": 0.0
+      },
+      "retrieval_city.recall@10": {
+        "mean": 0.04220485932669704,
+        "std": 0.0
+      },
+      "retrieval_city.ndcg@10": {
+        "mean": 0.06250219108377483,
+        "std": 0.0
+      },
+      "retrieval_city.mrr": {
+        "mean": 0.16243231544922404,
+        "std": 0.0
+      },
+      "retrieval_city.coverage@10": {
+        "mean": 0.24333333333333335,
+        "std": 0.0
+      },
+      "info_abundance": {
+        "mean": 3.9429948329925537,
+        "std": 0.0
+      },
+      "alpha_mean_abs": {
+        "mean": 0.07716144621372223,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_offer": {
+        "mean": 0.31683504738956614,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_visit": {
+        "mean": 0.33970363858140257,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_offer": {
+        "mean": 0.48918069830553507,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_visit": {
+        "mean": 0.5040904859504218,
+        "std": 0.0
+      }
+    },
+    "no_images": {
+      "retrieval_global.hit@10": {
+        "mean": 0.3937947494033413,
+        "std": 0.0
+      },
+      "retrieval_global.recall@10": {
+        "mean": 0.04124017700897052,
+        "std": 0.0
+      },
+      "retrieval_global.ndcg@10": {
+        "mean": 0.06132913857611021,
+        "std": 0.0
+      },
+      "retrieval_global.mrr": {
+        "mean": 0.1651004093288143,
+        "std": 0.0
+      },
+      "retrieval_global.coverage@10": {
+        "mean": 0.32666666666666666,
+        "std": 0.0
+      },
+      "retrieval_city.hit@10": {
+        "mean": 0.39856801909307876,
+        "std": 0.0
+      },
+      "retrieval_city.recall@10": {
+        "mean": 0.04214603537620309,
+        "std": 0.0
+      },
+      "retrieval_city.ndcg@10": {
+        "mean": 0.06236919942687958,
+        "std": 0.0
+      },
+      "retrieval_city.mrr": {
+        "mean": 0.16695262019999152,
+        "std": 0.0
+      },
+      "retrieval_city.coverage@10": {
+        "mean": 0.32055555555555554,
+        "std": 0.0
+      },
+      "info_abundance": {
+        "mean": 3.6033411026000977,
+        "std": 0.0
+      },
+      "alpha_mean_abs": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_offer": {
+        "mean": 0.3086415497062922,
+        "std": 0.0
+      },
+      "search.dot_product.ndcg@5_visit": {
+        "mean": 0.3320356333313839,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_offer": {
+        "mean": 0.48329256623953487,
+        "std": 0.0
+      },
+      "search.search_head.ndcg@5_visit": {
+        "mean": 0.49954839445442417,
+        "std": 0.0
+      }
+    },
+    "popularity": {
+      "search.popularity.ndcg@5_offer": {
+        "mean": 0.45415304809343904,
+        "std": 0.0
+      },
+      "search.popularity.ndcg@5_visit": {
+        "mean": 0.4664632816995623,
+        "std": 0.0
+      },
+      "retrieval_global.hit@10": {
+        "mean": 0.1957040572792363,
+        "std": 0.0
+      },
+      "retrieval_global.recall@10": {
+        "mean": 0.02150520533487923,
+        "std": 0.0
+      },
+      "retrieval_global.ndcg@10": {
+        "mean": 0.032444067693451976,
+        "std": 0.0
+      },
+      "retrieval_global.mrr": {
+        "mean": 0.09770556044580159,
+        "std": 0.0
+      },
+      "retrieval_global.coverage@10": {
+        "mean": 0.011111111111111112,
+        "std": 0.0
+      },
+      "retrieval_city.hit@10": {
+        "mean": 0.4486873508353222,
+        "std": 0.0
+      },
+      "retrieval_city.recall@10": {
+        "mean": 0.05393141916480181,
+        "std": 0.0
+      },
+      "retrieval_city.ndcg@10": {
+        "mean": 0.07658436288361899,
+        "std": 0.0
+      },
+      "retrieval_city.mrr": {
+        "mean": 0.19568431468833739,
+        "std": 0.0
+      },
+      "retrieval_city.coverage@10": {
+        "mean": 0.03111111111111111,
+        "std": 0.0
+      }
+    },
+    "random": {
+      "search.random.ndcg@5_offer": {
+        "mean": 0.2702268895618245,
+        "std": 0.0
+      },
+      "search.random.ndcg@5_visit": {
+        "mean": 0.293455901569152,
+        "std": 0.0
+      },
+      "retrieval_global.hit@10": {
+        "mean": 0.06443914081145585,
+        "std": 0.0
+      },
+      "retrieval_global.recall@10": {
+        "mean": 0.008918872580934692,
+        "std": 0.0
+      },
+      "retrieval_global.ndcg@10": {
+        "mean": 0.009436124486798418,
+        "std": 0.0
+      },
+      "retrieval_global.mrr": {
+        "mean": 0.03286643548808078,
+        "std": 0.0
+      },
+      "retrieval_global.coverage@10": {
+        "mean": 0.8955555555555555,
+        "std": 0.0
+      },
+      "retrieval_city.hit@10": {
+        "mean": 0.18377088305489261,
+        "std": 0.0
+      },
+      "retrieval_city.recall@10": {
+        "mean": 0.01882596984913748,
+        "std": 0.0
+      },
+      "retrieval_city.ndcg@10": {
+        "mean": 0.024824767638561538,
+        "std": 0.0
+      },
+      "retrieval_city.mrr": {
+        "mean": 0.08071515593992863,
+        "std": 0.0
+      },
+      "retrieval_city.coverage@10": {
+        "mean": 0.8911111111111111,
+        "std": 0.0
+      }
+    },
+    "gbdt": {
+      "search.gbdt.ndcg@5_offer": {
+        "mean": 0.5255313337173412,
+        "std": 0.0
+      },
+      "search.gbdt.ndcg@5_visit": {
+        "mean": 0.5477571010882004,
+        "std": 0.0
+      }
+    }
+  },
+  "policy": [
+    {
+      "gamma": 0.0,
+      "ndcg@5": {
+        "mean": 0.5020417031050682,
+        "std": 0.0
+      },
+      "hot_share@3": {
+        "mean": 0.351362099821038,
+        "std": 0.0
+      }
+    },
+    {
+      "gamma": 0.1,
+      "ndcg@5": {
+        "mean": 0.4994667180925071,
+        "std": 0.0
+      },
+      "hot_share@3": {
+        "mean": 0.31735931596738914,
+        "std": 0.0
+      }
+    },
+    {
+      "gamma": 0.25,
+      "ndcg@5": {
+        "mean": 0.48107599427100717,
+        "std": 0.0
+      },
+      "hot_share@3": {
+        "mean": 0.23152382846158945,
+        "std": 0.0
+      }
+    },
+    {
+      "gamma": 0.5,
+      "ndcg@5": {
+        "mean": 0.40866311527461147,
+        "std": 0.0
+      },
+      "hot_share@3": {
+        "mean": 0.06681248757208193,
+        "std": 0.0
+      }
+    },
+    {
+      "gamma": 1.0,
+      "ndcg@5": {
+        "mean": 0.2676177073586043,
+        "std": 0.0
+      },
+      "hot_share@3": {
+        "mean": 0.00026512891893683304,
+        "std": 0.0
+      }
+    }
+  ],
+  "gbdt_features": [
+    "price",
+    "area",
+    "beds",
+    "slots",
+    "pop14",
+    "price_gap",
+    "dist_mean",
+    "dist_last",
+    "img_affinity",
+    "n_hist",
+    "same_mid",
+    "same_fine",
+    "price_vs_filter"
+  ]
+}

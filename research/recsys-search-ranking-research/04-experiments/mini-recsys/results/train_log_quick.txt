@@ -1,0 +1,40 @@
+seed 0: 1800 houses, 15004 sessions, 67219 events, 419 retrieval queries, 8651/5029 train/val sessions, cold-start share of val users 0.40 (excluded from retrieval)
+  [random] {"search.random.ndcg@5_offer": 0.2702268895618245, "search.random.ndcg@5_visit": 0.293455901569152, "retrieval_global.hit@10": 0.06443914081145585, "retrieval_global.recall@10": 0.008918872580934692, "retrieval_global.ndcg@10": 0.009436124486798418, "retrieval_global.mrr": 0.03286643548808078, "retrieval_global.coverage@10": 0.8955555555555555, "retrieval_city.hit@10": 0.18377088305489261, "retrieval_city.recall@10": 0.01882596984913748, "retrieval_city.ndcg@10": 0.024824767638561538, "retrieval_city.mrr": 0.08071515593992863, "retrieval_city.coverage@10": 0.8911111111111111}
+  [popularity] {"search.popularity.ndcg@5_offer": 0.45415304809343904, "search.popularity.ndcg@5_visit": 0.4664632816995623, "retrieval_global.hit@10": 0.1957040572792363, "retrieval_global.recall@10": 0.02150520533487923, "retrieval_global.ndcg@10": 0.032444067693451976, "retrieval_global.mrr": 0.09770556044580159, "retrieval_global.coverage@10": 0.011111111111111112, "retrieval_city.hit@10": 0.4486873508353222, "retrieval_city.recall@10": 0.05393141916480181, "retrieval_city.ndcg@10": 0.07658436288361899, "retrieval_city.mrr": 0.19568431468833739, "retrieval_city.coverage@10": 0.03111111111111111}
+  [gbdt] {"search.gbdt.ndcg@5_offer": 0.5255313337173412, "search.gbdt.ndcg@5_visit": 0.5477571010882004}
+  training full {}
+  epoch 1/5 loss=7.5664 recs=5.2791 search=1.1436 tau=0.158 |alpha|=0.015
+  epoch 2/5 loss=7.2821 recs=5.0012 search=1.1405 tau=0.159 |alpha|=0.023
+  epoch 3/5 loss=7.2431 recs=4.9929 search=1.1251 tau=0.159 |alpha|=0.037
+  epoch 4/5 loss=7.1880 recs=4.9420 search=1.1230 tau=0.159 |alpha|=0.050
+  epoch 5/5 loss=7.0323 recs=4.8172 search=1.1075 tau=0.153 |alpha|=0.070
+  [full] {"retrieval_global.hit@10": 0.3914081145584726, "retrieval_global.recall@10": 0.04350936049404533, "retrieval_global.ndcg@10": 0.06421558807658259, "retrieval_global.mrr": 0.16690446668065895, "retrieval_global.coverage@10": 0.3138888888888889, "retrieval_city.hit@10": 0.3914081145584726, "retrieval_city.recall@10": 0.04410601920526251, "retrieval_city.ndcg@10": 0.06463271066189338, "retrieval_city.mrr": 0.16730286629626423, "retrieval_city.coverage@10": 0.31222222222222223, "info_abundance": 3.7645039558410645, "alpha_mean_abs": 0.07028846442699432, "search.dot_product.ndcg@5_offer": 0.3200856472346206, "search.dot_product.ndcg@5_visit": 0.33833835160246706, "search.search_head.ndcg@5_offer": 0.4815172851431916, "search.search_head.ndcg@5_visit": 0.5020417031050682}
+  training geo_latlng {'geo_mode': 'latlng'}
+  epoch 1/5 loss=7.5644 recs=5.2783 search=1.1431 tau=0.157 |alpha|=0.012
+  epoch 2/5 loss=7.2474 recs=4.9669 search=1.1402 tau=0.157 |alpha|=0.021
+  epoch 3/5 loss=7.2149 recs=4.9610 search=1.1270 tau=0.155 |alpha|=0.034
+  epoch 4/5 loss=7.1528 recs=4.9012 search=1.1258 tau=0.153 |alpha|=0.048
+  epoch 5/5 loss=7.0290 recs=4.8048 search=1.1121 tau=0.147 |alpha|=0.070
+  [geo_latlng] {"retrieval_global.hit@10": 0.39618138424821003, "retrieval_global.recall@10": 0.048608519917263976, "retrieval_global.ndcg@10": 0.06932927442996409, "retrieval_global.mrr": 0.1721608170941111, "retrieval_global.coverage@10": 0.3005555555555556, "retrieval_city.hit@10": 0.4009546539379475, "retrieval_city.recall@10": 0.04930462174701735, "retrieval_city.ndcg@10": 0.06990030129995962, "retrieval_city.mrr": 0.17355491255399352, "retrieval_city.coverage@10": 0.2961111111111111, "info_abundance": 3.6130354404449463, "alpha_mean_abs": 0.06987999379634857, "search.dot_product.ndcg@5_offer": 0.3415020712470253, "search.dot_product.ndcg@5_visit": 0.3562403748574184, "search.search_head.ndcg@5_offer": 0.4828268744898153, "search.search_head.ndcg@5_visit": 0.4979460770949913}
+  training user_mean {'user_mode': 'mean'}
+  epoch 1/5 loss=7.5601 recs=5.2729 search=1.1436 tau=0.157 |alpha|=0.015
+  epoch 2/5 loss=7.3426 recs=5.0605 search=1.1411 tau=0.155 |alpha|=0.025
+  epoch 3/5 loss=7.2347 recs=4.9832 search=1.1258 tau=0.153 |alpha|=0.042
+  epoch 4/5 loss=7.1578 recs=4.9109 search=1.1235 tau=0.150 |alpha|=0.058
+  epoch 5/5 loss=7.0220 recs=4.8187 search=1.1017 tau=0.145 |alpha|=0.082
+  [user_mean] {"retrieval_global.hit@10": 0.4033412887828162, "retrieval_global.recall@10": 0.04172250209505886, "retrieval_global.ndcg@10": 0.060574968413349015, "retrieval_global.mrr": 0.15964215808410384, "retrieval_global.coverage@10": 0.34555555555555556, "retrieval_city.hit@10": 0.4033412887828162, "retrieval_city.recall@10": 0.04172250209505886, "retrieval_city.ndcg@10": 0.060583682489351545, "retrieval_city.mrr": 0.1597244499222694, "retrieval_city.coverage@10": 0.345, "info_abundance": 3.9913506507873535, "alpha_mean_abs": 0.08240528404712677, "search.dot_product.ndcg@5_offer": 0.31757519605069334, "search.dot_product.ndcg@5_visit": 0.3344529677864218, "search.search_head.ndcg@5_offer": 0.4940059871003573, "search.search_head.ndcg@5_visit": 0.5082405209166461}
+  training random_batches {'city_grouped': False}
+  epoch 1/5 loss=7.0641 recs=4.7912 search=1.1365 tau=0.156 |alpha|=0.016
+  epoch 2/5 loss=6.4807 recs=4.2295 search=1.1256 tau=0.151 |alpha|=0.030
+  epoch 3/5 loss=6.3973 recs=4.1525 search=1.1224 tau=0.144 |alpha|=0.046
+  epoch 4/5 loss=6.3649 recs=4.1279 search=1.1185 tau=0.137 |alpha|=0.061
+  epoch 5/5 loss=6.3270 recs=4.1122 search=1.1074 tau=0.130 |alpha|=0.077
+  [random_batches] {"retrieval_global.hit@10": 0.36754176610978523, "retrieval_global.recall@10": 0.04220485932669704, "retrieval_global.ndcg@10": 0.06250219108377483, "retrieval_global.mrr": 0.16243231544922404, "retrieval_global.coverage@10": 0.24333333333333335, "retrieval_city.hit@10": 0.36754176610978523, "retrieval_city.recall@10": 0.04220485932669704, "retrieval_city.ndcg@10": 0.06250219108377483, "retrieval_city.mrr": 0.16243231544922404, "retrieval_city.coverage@10": 0.24333333333333335, "info_abundance": 3.9429948329925537, "alpha_mean_abs": 0.07716144621372223, "search.dot_product.ndcg@5_offer": 0.31683504738956614, "search.dot_product.ndcg@5_visit": 0.33970363858140257, "search.search_head.ndcg@5_offer": 0.48918069830553507, "search.search_head.ndcg@5_visit": 0.5040904859504218}
+  training no_images {'use_img': False}
+  epoch 1/5 loss=7.5690 recs=5.2822 search=1.1434 tau=0.158 |alpha|=0.000
+  epoch 2/5 loss=7.2683 recs=4.9859 search=1.1412 tau=0.158 |alpha|=0.000
+  epoch 3/5 loss=7.2477 recs=4.9977 search=1.1250 tau=0.159 |alpha|=0.000
+  epoch 4/5 loss=7.1750 recs=4.9273 search=1.1239 tau=0.158 |alpha|=0.000
+  epoch 5/5 loss=7.0568 recs=4.8387 search=1.1091 tau=0.153 |alpha|=0.000
+  [no_images] {"retrieval_global.hit@10": 0.3937947494033413, "retrieval_global.recall@10": 0.04124017700897052, "retrieval_global.ndcg@10": 0.06132913857611021, "retrieval_global.mrr": 0.1651004093288143, "retrieval_global.coverage@10": 0.32666666666666666, "retrieval_city.hit@10": 0.39856801909307876, "retrieval_city.recall@10": 0.04214603537620309, "retrieval_city.ndcg@10": 0.06236919942687958, "retrieval_city.mrr": 0.16695262019999152, "retrieval_city.coverage@10": 0.32055555555555554, "info_abundance": 3.6033411026000977, "alpha_mean_abs": 0.0, "search.dot_product.ndcg@5_offer": 0.3086415497062922, "search.dot_product.ndcg@5_visit": 0.3320356333313839, "search.search_head.ndcg@5_offer": 0.48329256623953487, "search.search_head.ndcg@5_visit": 0.49954839445442417}
+seed 0 done in 38s
