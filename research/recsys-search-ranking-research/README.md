@@ -55,7 +55,7 @@ The numbered folders follow the research loop: **plan → learn → read papers 
 
 | Experiment | Question | Verdict |
 | --- | --- | --- |
-| — | *(none yet: the first is [E0.1](./00-plan/roadmap.md#experiments--hypotheses))* | — |
+| [E7.0](./04-experiments/E7.0-mini-recsys-poc.md) | Does a toy rebuild of a geo → sequential two-tower → search head → policy stack reproduce its design claims on synthetic data? | Search head beats GBDT and the policy trade-off holds; geo, sequence and city-batch ablations did **not** help at toy scale |
 
 ## Suggested Reading Order
 

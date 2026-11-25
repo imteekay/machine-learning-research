@@ -1,0 +1,345 @@
+seed 0: 4500 houses, 40025 sessions, 178246 events, 1115 retrieval queries, 23023/13348 train/val sessions, cold-start share of val users 0.41 (excluded from retrieval)
+  [random] {"search.random.ndcg@5_offer": 0.27556748074558335, "search.random.ndcg@5_visit": 0.2990436068303242, "retrieval_global.hit@10": 0.02242152466367713, "retrieval_global.recall@10": 0.0014067976869737014, "retrieval_global.ndcg@10": 0.0023361534479586234, "retrieval_global.mrr": 0.0154225444124281, "retrieval_global.coverage@10": 0.9166666666666666, "retrieval_city.hit@10": 0.07443946188340807, "retrieval_city.recall@10": 0.0053217156432756735, "retrieval_city.ndcg@10": 0.007803669401410628, "retrieval_city.mrr": 0.038494152124029346, "retrieval_city.coverage@10": 0.9206666666666666}
+  [popularity] {"search.popularity.ndcg@5_offer": 0.45969099842584615, "search.popularity.ndcg@5_visit": 0.4692335843818293, "retrieval_global.hit@10": 0.10582959641255606, "retrieval_global.recall@10": 0.009316862598499525, "retrieval_global.ndcg@10": 0.014800889224462281, "retrieval_global.mrr": 0.050489566140741335, "retrieval_global.coverage@10": 0.004888888888888889, "retrieval_city.hit@10": 0.2484304932735426, "retrieval_city.recall@10": 0.021374341683662614, "retrieval_city.ndcg@10": 0.03259559293102013, "retrieval_city.mrr": 0.10383019043353302, "retrieval_city.coverage@10": 0.011111111111111112}
+  [gbdt] {"search.gbdt.ndcg@5_offer": 0.5436065271604659, "search.gbdt.ndcg@5_visit": 0.5619654591150861}
+  training full {}
+  epoch 1/20 loss=7.3601 recs=5.0932 search=1.1335 tau=0.158 |alpha|=0.029
+  epoch 2/20 loss=7.1318 recs=4.8929 search=1.1194 tau=0.152 |alpha|=0.057
+  epoch 3/20 loss=7.0461 recs=4.8412 search=1.1025 tau=0.144 |alpha|=0.064
+  epoch 4/20 loss=7.0134 recs=4.8231 search=1.0952 tau=0.135 |alpha|=0.072
+  epoch 5/20 loss=7.0043 recs=4.8221 search=1.0911 tau=0.129 |alpha|=0.074
+  epoch 6/20 loss=6.9501 recs=4.7635 search=1.0933 tau=0.121 |alpha|=0.077
+  epoch 7/20 loss=6.9448 recs=4.7654 search=1.0897 tau=0.117 |alpha|=0.083
+  epoch 8/20 loss=6.9261 recs=4.7583 search=1.0839 tau=0.117 |alpha|=0.089
+  epoch 9/20 loss=6.7835 recs=4.6297 search=1.0769 tau=0.110 |alpha|=0.089
+  epoch 10/20 loss=6.7438 recs=4.6005 search=1.0716 tau=0.105 |alpha|=0.096
+  epoch 11/20 loss=6.8745 recs=4.7349 search=1.0698 tau=0.108 |alpha|=0.095
+  epoch 12/20 loss=6.6955 recs=4.5699 search=1.0628 tau=0.102 |alpha|=0.098
+  epoch 13/20 loss=6.8300 recs=4.7045 search=1.0628 tau=0.106 |alpha|=0.101
+  epoch 14/20 loss=6.7252 recs=4.6178 search=1.0537 tau=0.103 |alpha|=0.103
+  epoch 15/20 loss=6.7146 recs=4.6083 search=1.0532 tau=0.100 |alpha|=0.106
+  epoch 16/20 loss=6.6830 recs=4.5859 search=1.0486 tau=0.099 |alpha|=0.107
+  epoch 17/20 loss=6.6989 recs=4.6023 search=1.0483 tau=0.097 |alpha|=0.105
+  epoch 18/20 loss=6.6505 recs=4.5645 search=1.0430 tau=0.094 |alpha|=0.113
+  epoch 19/20 loss=6.7217 recs=4.6278 search=1.0469 tau=0.096 |alpha|=0.113
+  epoch 20/20 loss=6.6753 recs=4.5808 search=1.0473 tau=0.094 |alpha|=0.113
+  [full] {"retrieval_global.hit@10": 0.32466367713004485, "retrieval_global.recall@10": 0.033463738518805276, "retrieval_global.ndcg@10": 0.04961775533989818, "retrieval_global.mrr": 0.13555035285352268, "retrieval_global.coverage@10": 0.35555555555555557, "retrieval_city.hit@10": 0.3309417040358744, "retrieval_city.recall@10": 0.03432674601505742, "retrieval_city.ndcg@10": 0.050693064315382425, "retrieval_city.mrr": 0.13777060959182436, "retrieval_city.coverage@10": 0.35844444444444445, "info_abundance": 4.397589206695557, "alpha_mean_abs": 0.1134553775191307, "search.dot_product.ndcg@5_offer": 0.41016770495466376, "search.dot_product.ndcg@5_visit": 0.42501987376190875, "search.search_head.ndcg@5_offer": 0.5555407019831069, "search.search_head.ndcg@5_visit": 0.5667761512622176}
+  training geo_latlng {'geo_mode': 'latlng'}
+  epoch 1/20 loss=7.3324 recs=5.0639 search=1.1342 tau=0.155 |alpha|=0.023
+  epoch 2/20 loss=7.1609 recs=4.9009 search=1.1300 tau=0.149 |alpha|=0.040
+  epoch 3/20 loss=7.0839 recs=4.8475 search=1.1182 tau=0.140 |alpha|=0.077
+  epoch 4/20 loss=6.9977 recs=4.7966 search=1.1006 tau=0.130 |alpha|=0.077
+  epoch 5/20 loss=6.9535 recs=4.7653 search=1.0941 tau=0.123 |alpha|=0.080
+  epoch 6/20 loss=6.8509 recs=4.6656 search=1.0927 tau=0.118 |alpha|=0.083
+  epoch 7/20 loss=6.8244 recs=4.6519 search=1.0863 tau=0.114 |alpha|=0.092
+  epoch 8/20 loss=6.8155 recs=4.6520 search=1.0818 tau=0.112 |alpha|=0.099
+  epoch 9/20 loss=6.7072 recs=4.5502 search=1.0785 tau=0.108 |alpha|=0.100
+  epoch 10/20 loss=6.7010 recs=4.5410 search=1.0800 tau=0.107 |alpha|=0.109
+  epoch 11/20 loss=6.8100 recs=4.6611 search=1.0744 tau=0.110 |alpha|=0.111
+  epoch 12/20 loss=6.6306 recs=4.4904 search=1.0701 tau=0.105 |alpha|=0.116
+  epoch 13/20 loss=6.7886 recs=4.6438 search=1.0724 tau=0.108 |alpha|=0.117
+  epoch 14/20 loss=6.6629 recs=4.5289 search=1.0670 tau=0.104 |alpha|=0.120
+  epoch 15/20 loss=6.6555 recs=4.5218 search=1.0669 tau=0.103 |alpha|=0.124
+  epoch 16/20 loss=6.6455 recs=4.5173 search=1.0641 tau=0.101 |alpha|=0.125
+  epoch 17/20 loss=6.6560 recs=4.5321 search=1.0619 tau=0.101 |alpha|=0.125
+  epoch 18/20 loss=6.5981 recs=4.4854 search=1.0563 tau=0.098 |alpha|=0.128
+  epoch 19/20 loss=6.6785 recs=4.5606 search=1.0589 tau=0.101 |alpha|=0.132
+  epoch 20/20 loss=6.6239 recs=4.5075 search=1.0582 tau=0.099 |alpha|=0.137
+  [geo_latlng] {"retrieval_global.hit@10": 0.3704035874439462, "retrieval_global.recall@10": 0.04339455475346515, "retrieval_global.ndcg@10": 0.058130939345808735, "retrieval_global.mrr": 0.14743142077340146, "retrieval_global.coverage@10": 0.5766666666666667, "retrieval_city.hit@10": 0.37309417040358744, "retrieval_city.recall@10": 0.044335688126560795, "retrieval_city.ndcg@10": 0.058839954982780385, "retrieval_city.mrr": 0.1480699187552788, "retrieval_city.coverage@10": 0.576, "info_abundance": 5.187650203704834, "alpha_mean_abs": 0.137369304895401, "search.dot_product.ndcg@5_offer": 0.4027456172393461, "search.dot_product.ndcg@5_visit": 0.4166459722419756, "search.search_head.ndcg@5_offer": 0.5445002465586556, "search.search_head.ndcg@5_visit": 0.557250931625582}
+  training user_mean {'user_mode': 'mean'}
+  epoch 1/20 loss=7.3310 recs=5.0640 search=1.1335 tau=0.152 |alpha|=0.030
+  epoch 2/20 loss=7.1159 recs=4.8721 search=1.1219 tau=0.142 |alpha|=0.063
+  epoch 3/20 loss=7.0158 recs=4.8102 search=1.1028 tau=0.133 |alpha|=0.074
+  epoch 4/20 loss=6.9711 recs=4.7839 search=1.0936 tau=0.127 |alpha|=0.080
+  epoch 5/20 loss=6.9429 recs=4.7697 search=1.0866 tau=0.123 |alpha|=0.086
+  epoch 6/20 loss=6.8424 recs=4.6799 search=1.0812 tau=0.116 |alpha|=0.089
+  epoch 7/20 loss=6.8333 recs=4.6806 search=1.0764 tau=0.113 |alpha|=0.092
+  epoch 8/20 loss=6.8287 recs=4.6943 search=1.0672 tau=0.115 |alpha|=0.099
+  epoch 9/20 loss=6.6930 recs=4.5742 search=1.0594 tau=0.108 |alpha|=0.100
+  epoch 10/20 loss=6.6846 recs=4.5652 search=1.0597 tau=0.105 |alpha|=0.107
+  epoch 11/20 loss=6.7856 recs=4.6752 search=1.0552 tau=0.107 |alpha|=0.110
+  epoch 12/20 loss=6.6227 recs=4.5157 search=1.0535 tau=0.102 |alpha|=0.116
+  epoch 13/20 loss=6.7647 recs=4.6599 search=1.0524 tau=0.107 |alpha|=0.115
+  epoch 14/20 loss=6.6347 recs=4.5488 search=1.0429 tau=0.103 |alpha|=0.119
+  epoch 15/20 loss=6.6002 recs=4.5250 search=1.0376 tau=0.102 |alpha|=0.122
+  epoch 16/20 loss=6.5817 recs=4.5141 search=1.0338 tau=0.102 |alpha|=0.128
+  epoch 17/20 loss=6.5868 recs=4.5286 search=1.0291 tau=0.100 |alpha|=0.129
+  epoch 18/20 loss=6.5190 recs=4.4770 search=1.0210 tau=0.098 |alpha|=0.131
+  epoch 19/20 loss=6.5949 recs=4.5489 search=1.0230 tau=0.100 |alpha|=0.136
+  epoch 20/20 loss=6.5413 recs=4.4990 search=1.0212 tau=0.099 |alpha|=0.140
+  [user_mean] {"retrieval_global.hit@10": 0.3775784753363229, "retrieval_global.recall@10": 0.044480080464708395, "retrieval_global.ndcg@10": 0.06575064420157638, "retrieval_global.mrr": 0.16876164058891008, "retrieval_global.coverage@10": 0.5917777777777777, "retrieval_city.hit@10": 0.37847533632286995, "retrieval_city.recall@10": 0.045095135564068425, "retrieval_city.ndcg@10": 0.06611433574407712, "retrieval_city.mrr": 0.16885063609175965, "retrieval_city.coverage@10": 0.5926666666666667, "info_abundance": 5.27264404296875, "alpha_mean_abs": 0.13953039050102234, "search.dot_product.ndcg@5_offer": 0.43659239564538677, "search.dot_product.ndcg@5_visit": 0.4532245038868154, "search.search_head.ndcg@5_offer": 0.5766907575763766, "search.search_head.ndcg@5_visit": 0.5882580725672563}
+  training random_batches {'city_grouped': False}
+  epoch 1/20 loss=6.6955 recs=4.4272 search=1.1341 tau=0.148 |alpha|=0.033
+  epoch 2/20 loss=6.3606 recs=4.1216 search=1.1195 tau=0.131 |alpha|=0.073
+  epoch 3/20 loss=6.2879 recs=4.0860 search=1.1009 tau=0.116 |alpha|=0.074
+  epoch 4/20 loss=6.2454 recs=4.0546 search=1.0954 tau=0.105 |alpha|=0.077
+  epoch 5/20 loss=6.2088 recs=4.0219 search=1.0935 tau=0.097 |alpha|=0.081
+  epoch 6/20 loss=6.1615 recs=3.9808 search=1.0904 tau=0.091 |alpha|=0.077
+  epoch 7/20 loss=6.1274 recs=3.9513 search=1.0881 tau=0.088 |alpha|=0.081
+  epoch 8/20 loss=6.0595 recs=3.9032 search=1.0782 tau=0.084 |alpha|=0.084
+  epoch 9/20 loss=6.0067 recs=3.8733 search=1.0667 tau=0.081 |alpha|=0.088
+  epoch 10/20 loss=5.9833 recs=3.8612 search=1.0610 tau=0.080 |alpha|=0.088
+  epoch 11/20 loss=5.9561 recs=3.8473 search=1.0544 tau=0.080 |alpha|=0.088
+  epoch 12/20 loss=5.9438 recs=3.8424 search=1.0507 tau=0.079 |alpha|=0.090
+  epoch 13/20 loss=5.9239 recs=3.8315 search=1.0462 tau=0.078 |alpha|=0.095
+  epoch 14/20 loss=5.8985 recs=3.8119 search=1.0433 tau=0.077 |alpha|=0.097
+  epoch 15/20 loss=5.8702 recs=3.7934 search=1.0384 tau=0.074 |alpha|=0.099
+  epoch 16/20 loss=5.8661 recs=3.7920 search=1.0371 tau=0.074 |alpha|=0.101
+  epoch 17/20 loss=5.8505 recs=3.7820 search=1.0342 tau=0.073 |alpha|=0.103
+  epoch 18/20 loss=5.8276 recs=3.7689 search=1.0294 tau=0.072 |alpha|=0.105
+  epoch 19/20 loss=5.8210 recs=3.7658 search=1.0276 tau=0.072 |alpha|=0.108
+  epoch 20/20 loss=5.8064 recs=3.7553 search=1.0255 tau=0.070 |alpha|=0.113
+  [random_batches] {"retrieval_global.hit@10": 0.36412556053811657, "retrieval_global.recall@10": 0.04161419943799567, "retrieval_global.ndcg@10": 0.05989333671976037, "retrieval_global.mrr": 0.1533614463323083, "retrieval_global.coverage@10": 0.5288888888888889, "retrieval_city.hit@10": 0.36412556053811657, "retrieval_city.recall@10": 0.04161419943799567, "retrieval_city.ndcg@10": 0.05989333671976037, "retrieval_city.mrr": 0.1533628783442163, "retrieval_city.coverage@10": 0.5288888888888889, "info_abundance": 4.8609161376953125, "alpha_mean_abs": 0.11330238729715347, "search.dot_product.ndcg@5_offer": 0.4340928604650002, "search.dot_product.ndcg@5_visit": 0.44845445106885967, "search.search_head.ndcg@5_offer": 0.5734150036478635, "search.search_head.ndcg@5_visit": 0.5851545743872537}
+  training no_images {'use_img': False}
+  epoch 1/20 loss=7.3388 recs=5.0717 search=1.1335 tau=0.156 |alpha|=0.000
+  epoch 2/20 loss=7.1527 recs=4.8946 search=1.1290 tau=0.152 |alpha|=0.000
+  epoch 3/20 loss=7.0955 recs=4.8446 search=1.1254 tau=0.145 |alpha|=0.000
+  epoch 4/20 loss=7.0675 recs=4.8268 search=1.1203 tau=0.137 |alpha|=0.000
+  epoch 5/20 loss=7.0674 recs=4.8317 search=1.1179 tau=0.131 |alpha|=0.000
+  epoch 6/20 loss=6.9930 recs=4.7567 search=1.1181 tau=0.122 |alpha|=0.000
+  epoch 7/20 loss=6.9842 recs=4.7529 search=1.1156 tau=0.119 |alpha|=0.000
+  epoch 8/20 loss=6.9683 recs=4.7518 search=1.1082 tau=0.120 |alpha|=0.000
+  epoch 9/20 loss=6.8476 recs=4.6426 search=1.1025 tau=0.113 |alpha|=0.000
+  epoch 10/20 loss=6.8194 recs=4.6234 search=1.0980 tau=0.109 |alpha|=0.000
+  epoch 11/20 loss=6.9263 recs=4.7370 search=1.0947 tau=0.111 |alpha|=0.000
+  epoch 12/20 loss=6.7550 recs=4.5770 search=1.0890 tau=0.105 |alpha|=0.000
+  epoch 13/20 loss=6.9341 recs=4.7428 search=1.0956 tau=0.113 |alpha|=0.000
+  epoch 14/20 loss=6.7879 recs=4.6205 search=1.0837 tau=0.107 |alpha|=0.000
+  epoch 15/20 loss=6.7705 recs=4.6073 search=1.0816 tau=0.103 |alpha|=0.000
+  epoch 16/20 loss=6.7462 recs=4.5910 search=1.0776 tau=0.101 |alpha|=0.000
+  epoch 17/20 loss=6.7703 recs=4.6130 search=1.0787 tau=0.100 |alpha|=0.000
+  epoch 18/20 loss=6.7143 recs=4.5715 search=1.0714 tau=0.097 |alpha|=0.000
+  epoch 19/20 loss=6.7811 recs=4.6304 search=1.0754 tau=0.099 |alpha|=0.000
+  epoch 20/20 loss=6.7222 recs=4.5789 search=1.0716 tau=0.096 |alpha|=0.000
+  [no_images] {"retrieval_global.hit@10": 0.32286995515695066, "retrieval_global.recall@10": 0.03566963388078471, "retrieval_global.ndcg@10": 0.05131701494668184, "retrieval_global.mrr": 0.13364360387520635, "retrieval_global.coverage@10": 0.43, "retrieval_city.hit@10": 0.32825112107623317, "retrieval_city.recall@10": 0.03722376646235068, "retrieval_city.ndcg@10": 0.0526646613878501, "retrieval_city.mrr": 0.13540328810587324, "retrieval_city.coverage@10": 0.4275555555555556, "info_abundance": 4.29942512512207, "alpha_mean_abs": 0.0, "search.dot_product.ndcg@5_offer": 0.4029130557961637, "search.dot_product.ndcg@5_visit": 0.4182026754757031, "search.search_head.ndcg@5_offer": 0.5363293983231898, "search.search_head.ndcg@5_visit": 0.549088049656482}
+seed 0 done in 359s
+seed 1: 4500 houses, 39763 sessions, 178486 events, 1126 retrieval queries, 22901/13261 train/val sessions, cold-start share of val users 0.40 (excluded from retrieval)
+  [random] {"search.random.ndcg@5_offer": 0.2865950797614143, "search.random.ndcg@5_visit": 0.30660572555818905, "retrieval_global.hit@10": 0.023978685612788632, "retrieval_global.recall@10": 0.0018019946308730247, "retrieval_global.ndcg@10": 0.0026997927434592663, "retrieval_global.mrr": 0.015646913035264953, "retrieval_global.coverage@10": 0.9175555555555556, "retrieval_city.hit@10": 0.0719360568383659, "retrieval_city.recall@10": 0.005600810342289573, "retrieval_city.ndcg@10": 0.007939835432245069, "retrieval_city.mrr": 0.037763312538826775, "retrieval_city.coverage@10": 0.9177777777777778}
+  [popularity] {"search.popularity.ndcg@5_offer": 0.45255840984528783, "search.popularity.ndcg@5_visit": 0.4676719108125437, "retrieval_global.hit@10": 0.10923623445825932, "retrieval_global.recall@10": 0.009379637163185442, "retrieval_global.ndcg@10": 0.0131617692979133, "retrieval_global.mrr": 0.045666914518806, "retrieval_global.coverage@10": 0.004666666666666667, "retrieval_city.hit@10": 0.2433392539964476, "retrieval_city.recall@10": 0.023045354174180015, "retrieval_city.ndcg@10": 0.034254826622809646, "retrieval_city.mrr": 0.10711096258588408, "retrieval_city.coverage@10": 0.015333333333333332}
+  [gbdt] {"search.gbdt.ndcg@5_offer": 0.5336732990467383, "search.gbdt.ndcg@5_visit": 0.5560073504779746}
+  training full {}
+  epoch 1/20 loss=7.4452 recs=5.1815 search=1.1319 tau=0.159 |alpha|=0.030
+  epoch 2/20 loss=7.2289 recs=5.0090 search=1.1100 tau=0.161 |alpha|=0.062
+  epoch 3/20 loss=7.1583 recs=4.9815 search=1.0884 tau=0.160 |alpha|=0.073
+  epoch 4/20 loss=7.1368 recs=4.9754 search=1.0807 tau=0.161 |alpha|=0.076
+  epoch 5/20 loss=7.1269 recs=4.9654 search=1.0807 tau=0.164 |alpha|=0.086
+  epoch 6/20 loss=7.1114 recs=4.9600 search=1.0757 tau=0.165 |alpha|=0.091
+  epoch 7/20 loss=7.0837 recs=4.9381 search=1.0728 tau=0.166 |alpha|=0.096
+  epoch 8/20 loss=7.0236 recs=4.8863 search=1.0687 tau=0.169 |alpha|=0.096
+  epoch 9/20 loss=6.9532 recs=4.8468 search=1.0532 tau=0.168 |alpha|=0.102
+  epoch 10/20 loss=6.9189 recs=4.8234 search=1.0478 tau=0.164 |alpha|=0.106
+  epoch 11/20 loss=6.8937 recs=4.8138 search=1.0399 tau=0.162 |alpha|=0.113
+  epoch 12/20 loss=6.8704 recs=4.7972 search=1.0366 tau=0.160 |alpha|=0.110
+  epoch 13/20 loss=6.8423 recs=4.7820 search=1.0302 tau=0.161 |alpha|=0.120
+  epoch 14/20 loss=6.8162 recs=4.7658 search=1.0252 tau=0.159 |alpha|=0.121
+  epoch 15/20 loss=6.7890 recs=4.7464 search=1.0213 tau=0.158 |alpha|=0.125
+  epoch 16/20 loss=6.7741 recs=4.7378 search=1.0182 tau=0.156 |alpha|=0.131
+  epoch 17/20 loss=6.7540 recs=4.7305 search=1.0118 tau=0.156 |alpha|=0.133
+  epoch 18/20 loss=6.7129 recs=4.6999 search=1.0065 tau=0.153 |alpha|=0.139
+  epoch 19/20 loss=6.7186 recs=4.7087 search=1.0049 tau=0.151 |alpha|=0.141
+  epoch 20/20 loss=6.6968 recs=4.6859 search=1.0055 tau=0.150 |alpha|=0.147
+  [full] {"retrieval_global.hit@10": 0.1483126110124334, "retrieval_global.recall@10": 0.013844565085154458, "retrieval_global.ndcg@10": 0.01918084598769194, "retrieval_global.mrr": 0.06179815289163221, "retrieval_global.coverage@10": 0.39555555555555555, "retrieval_city.hit@10": 0.3401420959147424, "retrieval_city.recall@10": 0.03526445749971092, "retrieval_city.ndcg@10": 0.04979728705264541, "retrieval_city.mrr": 0.13171905617891527, "retrieval_city.coverage@10": 0.5551111111111111, "info_abundance": 4.212235927581787, "alpha_mean_abs": 0.1473882794380188, "search.dot_product.ndcg@5_offer": 0.4278155923055117, "search.dot_product.ndcg@5_visit": 0.4471815019672384, "search.search_head.ndcg@5_offer": 0.5737077211605084, "search.search_head.ndcg@5_visit": 0.5864334804707046}
+  training geo_latlng {'geo_mode': 'latlng'}
+  epoch 1/20 loss=7.3933 recs=5.1280 search=1.1327 tau=0.156 |alpha|=0.027
+  epoch 2/20 loss=7.1462 recs=4.8895 search=1.1284 tau=0.145 |alpha|=0.060
+  epoch 3/20 loss=7.0826 recs=4.8823 search=1.1001 tau=0.147 |alpha|=0.074
+  epoch 4/20 loss=6.9871 recs=4.8141 search=1.0865 tau=0.136 |alpha|=0.079
+  epoch 5/20 loss=6.8952 recs=4.7349 search=1.0801 tau=0.127 |alpha|=0.088
+  epoch 6/20 loss=6.9127 recs=4.7661 search=1.0733 tau=0.126 |alpha|=0.090
+  epoch 7/20 loss=6.8007 recs=4.6667 search=1.0670 tau=0.116 |alpha|=0.094
+  epoch 8/20 loss=6.8689 recs=4.7358 search=1.0666 tau=0.118 |alpha|=0.101
+  epoch 9/20 loss=6.7830 recs=4.6649 search=1.0590 tau=0.116 |alpha|=0.103
+  epoch 10/20 loss=6.7888 recs=4.6731 search=1.0579 tau=0.114 |alpha|=0.106
+  epoch 11/20 loss=6.7857 recs=4.6864 search=1.0496 tau=0.112 |alpha|=0.108
+  epoch 12/20 loss=6.7231 recs=4.6208 search=1.0511 tau=0.109 |alpha|=0.114
+  epoch 13/20 loss=6.6927 recs=4.5994 search=1.0466 tau=0.106 |alpha|=0.117
+  epoch 14/20 loss=6.7281 recs=4.6277 search=1.0502 tau=0.106 |alpha|=0.117
+  epoch 15/20 loss=6.6055 recs=4.5137 search=1.0459 tau=0.103 |alpha|=0.124
+  epoch 16/20 loss=6.6851 recs=4.5886 search=1.0483 tau=0.104 |alpha|=0.126
+  epoch 17/20 loss=6.6967 recs=4.6106 search=1.0431 tau=0.104 |alpha|=0.132
+  epoch 18/20 loss=6.6358 recs=4.5513 search=1.0423 tau=0.103 |alpha|=0.130
+  epoch 19/20 loss=6.6973 recs=4.6162 search=1.0406 tau=0.104 |alpha|=0.136
+  epoch 20/20 loss=6.6550 recs=4.5788 search=1.0381 tau=0.101 |alpha|=0.141
+  [geo_latlng] {"retrieval_global.hit@10": 0.3836589698046181, "retrieval_global.recall@10": 0.044365001450404104, "retrieval_global.ndcg@10": 0.06293674855193349, "retrieval_global.mrr": 0.1654427360671052, "retrieval_global.coverage@10": 0.5977777777777777, "retrieval_city.hit@10": 0.3836589698046181, "retrieval_city.recall@10": 0.044544415484169826, "retrieval_city.ndcg@10": 0.06324528609019277, "retrieval_city.mrr": 0.1662935317373231, "retrieval_city.coverage@10": 0.598, "info_abundance": 5.289919853210449, "alpha_mean_abs": 0.14075320959091187, "search.dot_product.ndcg@5_offer": 0.4116971853353657, "search.dot_product.ndcg@5_visit": 0.4271578651379657, "search.search_head.ndcg@5_offer": 0.5512404935431863, "search.search_head.ndcg@5_visit": 0.5628461675175878}
+  training user_mean {'user_mode': 'mean'}
+  epoch 1/20 loss=7.4382 recs=5.1754 search=1.1314 tau=0.157 |alpha|=0.036
+  epoch 2/20 loss=7.1468 recs=4.9258 search=1.1105 tau=0.151 |alpha|=0.088
+  epoch 3/20 loss=7.0240 recs=4.8433 search=1.0903 tau=0.145 |alpha|=0.100
+  epoch 4/20 loss=6.9448 recs=4.8003 search=1.0723 tau=0.137 |alpha|=0.104
+  epoch 5/20 loss=6.8602 recs=4.7200 search=1.0701 tau=0.132 |alpha|=0.122
+  epoch 6/20 loss=6.8314 recs=4.7262 search=1.0526 tau=0.129 |alpha|=0.114
+  epoch 7/20 loss=6.7229 recs=4.6408 search=1.0411 tau=0.125 |alpha|=0.122
+  epoch 8/20 loss=6.7617 recs=4.6875 search=1.0371 tau=0.126 |alpha|=0.132
+  epoch 9/20 loss=6.6738 recs=4.6222 search=1.0258 tau=0.120 |alpha|=0.132
+  epoch 10/20 loss=6.6736 recs=4.6276 search=1.0230 tau=0.119 |alpha|=0.136
+  epoch 11/20 loss=6.6809 recs=4.6473 search=1.0168 tau=0.117 |alpha|=0.137
+  epoch 12/20 loss=6.6119 recs=4.5801 search=1.0159 tau=0.114 |alpha|=0.141
+  epoch 13/20 loss=6.5893 recs=4.5638 search=1.0128 tau=0.112 |alpha|=0.145
+  epoch 14/20 loss=6.6073 recs=4.5783 search=1.0145 tau=0.111 |alpha|=0.149
+  epoch 15/20 loss=6.4926 recs=4.4698 search=1.0114 tau=0.108 |alpha|=0.156
+  epoch 16/20 loss=6.5434 recs=4.5249 search=1.0092 tau=0.106 |alpha|=0.152
+  epoch 17/20 loss=6.5572 recs=4.5482 search=1.0045 tau=0.106 |alpha|=0.159
+  epoch 18/20 loss=6.5030 recs=4.4932 search=1.0049 tau=0.104 |alpha|=0.155
+  epoch 19/20 loss=6.5824 recs=4.5739 search=1.0043 tau=0.106 |alpha|=0.162
+  epoch 20/20 loss=6.5387 recs=4.5316 search=1.0035 tau=0.104 |alpha|=0.164
+  [user_mean] {"retrieval_global.hit@10": 0.3623445825932504, "retrieval_global.recall@10": 0.04180175566880493, "retrieval_global.ndcg@10": 0.06034459825285546, "retrieval_global.mrr": 0.15748828040186327, "retrieval_global.coverage@10": 0.622, "retrieval_city.hit@10": 0.3623445825932504, "retrieval_city.recall@10": 0.04180175566880493, "retrieval_city.ndcg@10": 0.06034459825285546, "retrieval_city.mrr": 0.1575366796584655, "retrieval_city.coverage@10": 0.6228888888888889, "info_abundance": 5.918352127075195, "alpha_mean_abs": 0.16377763450145721, "search.dot_product.ndcg@5_offer": 0.4395388016515016, "search.dot_product.ndcg@5_visit": 0.45424637076828933, "search.search_head.ndcg@5_offer": 0.5808427606510654, "search.search_head.ndcg@5_visit": 0.5920186605938966}
+  training random_batches {'city_grouped': False}
+  epoch 1/20 loss=7.1879 recs=4.9213 search=1.1333 tau=0.154 |alpha|=0.032
+  epoch 2/20 loss=6.4240 recs=4.2257 search=1.0991 tau=0.132 |alpha|=0.063
+  epoch 3/20 loss=6.2500 recs=4.0778 search=1.0861 tau=0.116 |alpha|=0.068
+  epoch 4/20 loss=6.1979 recs=4.0351 search=1.0814 tau=0.105 |alpha|=0.076
+  epoch 5/20 loss=6.1466 recs=3.9976 search=1.0745 tau=0.099 |alpha|=0.078
+  epoch 6/20 loss=6.1085 recs=3.9718 search=1.0683 tau=0.095 |alpha|=0.078
+  epoch 7/20 loss=6.0618 recs=3.9437 search=1.0590 tau=0.091 |alpha|=0.080
+  epoch 8/20 loss=6.0305 recs=3.9298 search=1.0504 tau=0.089 |alpha|=0.083
+  epoch 9/20 loss=6.0061 recs=3.9167 search=1.0447 tau=0.087 |alpha|=0.091
+  epoch 10/20 loss=5.9831 recs=3.9031 search=1.0400 tau=0.085 |alpha|=0.091
+  epoch 11/20 loss=5.9763 recs=3.8987 search=1.0388 tau=0.084 |alpha|=0.091
+  epoch 12/20 loss=5.9620 recs=3.8920 search=1.0350 tau=0.084 |alpha|=0.095
+  epoch 13/20 loss=5.9339 recs=3.8705 search=1.0317 tau=0.082 |alpha|=0.099
+  epoch 14/20 loss=5.9129 recs=3.8580 search=1.0275 tau=0.080 |alpha|=0.098
+  epoch 15/20 loss=5.8957 recs=3.8438 search=1.0260 tau=0.080 |alpha|=0.102
+  epoch 16/20 loss=5.8684 recs=3.8294 search=1.0195 tau=0.079 |alpha|=0.101
+  epoch 17/20 loss=5.8523 recs=3.8158 search=1.0183 tau=0.078 |alpha|=0.106
+  epoch 18/20 loss=5.8348 recs=3.8052 search=1.0148 tau=0.078 |alpha|=0.107
+  epoch 19/20 loss=5.8122 recs=3.7902 search=1.0110 tau=0.078 |alpha|=0.113
+  epoch 20/20 loss=5.8032 recs=3.7836 search=1.0098 tau=0.077 |alpha|=0.114
+  [random_batches] {"retrieval_global.hit@10": 0.35257548845470693, "retrieval_global.recall@10": 0.041186706499703206, "retrieval_global.ndcg@10": 0.05665341985863818, "retrieval_global.mrr": 0.1446732861823818, "retrieval_global.coverage@10": 0.5717777777777778, "retrieval_city.hit@10": 0.35257548845470693, "retrieval_city.recall@10": 0.041186706499703206, "retrieval_city.ndcg@10": 0.05665341985863818, "retrieval_city.mrr": 0.14467426453090126, "retrieval_city.coverage@10": 0.5717777777777778, "info_abundance": 5.229823112487793, "alpha_mean_abs": 0.11391174793243408, "search.dot_product.ndcg@5_offer": 0.4403966619711942, "search.dot_product.ndcg@5_visit": 0.45589119544023016, "search.search_head.ndcg@5_offer": 0.5794395672130195, "search.search_head.ndcg@5_visit": 0.5917696729635563}
+  training no_images {'use_img': False}
+  epoch 1/20 loss=7.4348 recs=5.1709 search=1.1320 tau=0.158 |alpha|=0.000
+  epoch 2/20 loss=7.2624 recs=5.0077 search=1.1274 tau=0.158 |alpha|=0.000
+  epoch 3/20 loss=7.2312 recs=4.9823 search=1.1244 tau=0.157 |alpha|=0.000
+  epoch 4/20 loss=7.2132 recs=4.9765 search=1.1183 tau=0.160 |alpha|=0.000
+  epoch 5/20 loss=7.2037 recs=4.9646 search=1.1195 tau=0.161 |alpha|=0.000
+  epoch 6/20 loss=7.1779 recs=4.9502 search=1.1139 tau=0.164 |alpha|=0.000
+  epoch 7/20 loss=7.1166 recs=4.8915 search=1.1125 tau=0.160 |alpha|=0.000
+  epoch 8/20 loss=7.0720 recs=4.8493 search=1.1113 tau=0.163 |alpha|=0.000
+  epoch 9/20 loss=6.9619 recs=4.7736 search=1.0942 tau=0.150 |alpha|=0.000
+  epoch 10/20 loss=6.9354 recs=4.7583 search=1.0886 tau=0.145 |alpha|=0.000
+  epoch 11/20 loss=6.9139 recs=4.7571 search=1.0784 tau=0.142 |alpha|=0.000
+  epoch 12/20 loss=6.8472 recs=4.6969 search=1.0751 tau=0.134 |alpha|=0.000
+  epoch 13/20 loss=6.8014 recs=4.6641 search=1.0686 tau=0.127 |alpha|=0.000
+  epoch 14/20 loss=6.8092 recs=4.6761 search=1.0666 tau=0.121 |alpha|=0.000
+  epoch 15/20 loss=6.7036 recs=4.5720 search=1.0658 tau=0.113 |alpha|=0.000
+  epoch 16/20 loss=6.7492 recs=4.6229 search=1.0631 tau=0.112 |alpha|=0.000
+  epoch 17/20 loss=6.7614 recs=4.6440 search=1.0587 tau=0.110 |alpha|=0.000
+  epoch 18/20 loss=6.6882 recs=4.5771 search=1.0555 tau=0.106 |alpha|=0.000
+  epoch 19/20 loss=6.7595 recs=4.6545 search=1.0525 tau=0.107 |alpha|=0.000
+  epoch 20/20 loss=6.7234 recs=4.6171 search=1.0531 tau=0.105 |alpha|=0.000
+  [no_images] {"retrieval_global.hit@10": 0.3383658969804618, "retrieval_global.recall@10": 0.037614688972303086, "retrieval_global.ndcg@10": 0.05268841529809337, "retrieval_global.mrr": 0.1321755570007985, "retrieval_global.coverage@10": 0.5557777777777778, "retrieval_city.hit@10": 0.3410301953818828, "retrieval_city.recall@10": 0.03810413517783792, "retrieval_city.ndcg@10": 0.05305654710162376, "retrieval_city.mrr": 0.13269836643863384, "retrieval_city.coverage@10": 0.5531111111111111, "info_abundance": 4.608921527862549, "alpha_mean_abs": 0.0, "search.dot_product.ndcg@5_offer": 0.4302548522740596, "search.dot_product.ndcg@5_visit": 0.4451872162386873, "search.search_head.ndcg@5_offer": 0.5461451275903544, "search.search_head.ndcg@5_visit": 0.5616087904000212}
+seed 1 done in 359s
+seed 2: 4500 houses, 40012 sessions, 179354 events, 1137 retrieval queries, 23102/13182 train/val sessions, cold-start share of val users 0.40 (excluded from retrieval)
+  [random] {"search.random.ndcg@5_offer": 0.28070167961062537, "search.random.ndcg@5_visit": 0.3015957484099188, "retrieval_global.hit@10": 0.026385224274406333, "retrieval_global.recall@10": 0.0016869248993273017, "retrieval_global.ndcg@10": 0.002705041832555963, "retrieval_global.mrr": 0.0158246067579351, "retrieval_global.coverage@10": 0.9233333333333333, "retrieval_city.hit@10": 0.08179419525065963, "retrieval_city.recall@10": 0.006078736769576535, "retrieval_city.ndcg@10": 0.009141597371935975, "retrieval_city.mrr": 0.04142607844906415, "retrieval_city.coverage@10": 0.9273333333333333}
+  [popularity] {"search.popularity.ndcg@5_offer": 0.4589587254422535, "search.popularity.ndcg@5_visit": 0.4703949843099349, "retrieval_global.hit@10": 0.10554089709762533, "retrieval_global.recall@10": 0.008521484001825577, "retrieval_global.ndcg@10": 0.012870865319283166, "retrieval_global.mrr": 0.0471464717043183, "retrieval_global.coverage@10": 0.005555555555555556, "retrieval_city.hit@10": 0.25241864555848725, "retrieval_city.recall@10": 0.0231521953107604, "retrieval_city.ndcg@10": 0.03536531567886756, "retrieval_city.mrr": 0.10698055503608699, "retrieval_city.coverage@10": 0.012444444444444444}
+  [gbdt] {"search.gbdt.ndcg@5_offer": 0.5407284226442538, "search.gbdt.ndcg@5_visit": 0.5606472391570607}
+  training full {}
+  epoch 1/20 loss=7.3844 recs=5.1219 search=1.1313 tau=0.157 |alpha|=0.025
+  epoch 2/20 loss=7.1670 recs=4.9272 search=1.1199 tau=0.153 |alpha|=0.062
+  epoch 3/20 loss=7.0078 recs=4.8251 search=1.0913 tau=0.147 |alpha|=0.066
+  epoch 4/20 loss=6.9476 recs=4.7836 search=1.0820 tau=0.142 |alpha|=0.075
+  epoch 5/20 loss=6.8863 recs=4.7359 search=1.0752 tau=0.136 |alpha|=0.074
+  epoch 6/20 loss=6.7309 recs=4.5985 search=1.0662 tau=0.126 |alpha|=0.079
+  epoch 7/20 loss=6.8143 recs=4.6958 search=1.0592 tau=0.123 |alpha|=0.087
+  epoch 8/20 loss=6.7081 recs=4.6047 search=1.0517 tau=0.119 |alpha|=0.088
+  epoch 9/20 loss=6.6905 recs=4.6049 search=1.0428 tau=0.117 |alpha|=0.090
+  epoch 10/20 loss=6.6533 recs=4.5816 search=1.0358 tau=0.113 |alpha|=0.092
+  epoch 11/20 loss=6.6773 recs=4.6218 search=1.0278 tau=0.110 |alpha|=0.095
+  epoch 12/20 loss=6.6362 recs=4.5910 search=1.0226 tau=0.110 |alpha|=0.097
+  epoch 13/20 loss=6.6008 recs=4.5567 search=1.0221 tau=0.106 |alpha|=0.100
+  epoch 14/20 loss=6.6513 recs=4.6098 search=1.0208 tau=0.108 |alpha|=0.103
+  epoch 15/20 loss=6.5804 recs=4.5519 search=1.0142 tau=0.107 |alpha|=0.107
+  epoch 16/20 loss=6.5196 recs=4.4987 search=1.0104 tau=0.104 |alpha|=0.112
+  epoch 17/20 loss=6.4941 recs=4.4747 search=1.0097 tau=0.101 |alpha|=0.106
+  epoch 18/20 loss=6.5423 recs=4.5202 search=1.0110 tau=0.102 |alpha|=0.113
+  epoch 19/20 loss=6.4312 recs=4.4192 search=1.0060 tau=0.098 |alpha|=0.119
+  epoch 20/20 loss=6.4686 recs=4.4638 search=1.0024 tau=0.097 |alpha|=0.119
+  [full] {"retrieval_global.hit@10": 0.38698328935795956, "retrieval_global.recall@10": 0.04868438509653672, "retrieval_global.ndcg@10": 0.06814895177486378, "retrieval_global.mrr": 0.16382893607203317, "retrieval_global.coverage@10": 0.556, "retrieval_city.hit@10": 0.38698328935795956, "retrieval_city.recall@10": 0.04868438509653672, "retrieval_city.ndcg@10": 0.06815406209477394, "retrieval_city.mrr": 0.16386231027914366, "retrieval_city.coverage@10": 0.556, "info_abundance": 5.3265838623046875, "alpha_mean_abs": 0.11876527965068817, "search.dot_product.ndcg@5_offer": 0.45749125851894734, "search.dot_product.ndcg@5_visit": 0.4717193074496873, "search.search_head.ndcg@5_offer": 0.5945163828334367, "search.search_head.ndcg@5_visit": 0.6050285136083959}
+  training geo_latlng {'geo_mode': 'latlng'}
+  epoch 1/20 loss=7.2996 recs=5.0366 search=1.1315 tau=0.153 |alpha|=0.022
+  epoch 2/20 loss=7.1601 recs=4.9115 search=1.1243 tau=0.148 |alpha|=0.043
+  epoch 3/20 loss=7.0099 recs=4.7988 search=1.1055 tau=0.134 |alpha|=0.075
+  epoch 4/20 loss=6.9591 recs=4.7729 search=1.0931 tau=0.127 |alpha|=0.078
+  epoch 5/20 loss=6.8988 recs=4.7135 search=1.0927 tau=0.119 |alpha|=0.084
+  epoch 6/20 loss=6.7954 recs=4.6241 search=1.0856 tau=0.111 |alpha|=0.088
+  epoch 7/20 loss=6.9229 recs=4.7508 search=1.0860 tau=0.109 |alpha|=0.094
+  epoch 8/20 loss=6.8288 recs=4.6664 search=1.0812 tau=0.107 |alpha|=0.094
+  epoch 9/20 loss=6.8737 recs=4.7091 search=1.0823 tau=0.110 |alpha|=0.100
+  epoch 10/20 loss=6.8185 recs=4.6651 search=1.0767 tau=0.107 |alpha|=0.097
+  epoch 11/20 loss=6.8536 recs=4.7073 search=1.0731 tau=0.106 |alpha|=0.100
+  epoch 12/20 loss=6.8139 recs=4.6710 search=1.0714 tau=0.106 |alpha|=0.101
+  epoch 13/20 loss=6.7925 recs=4.6491 search=1.0717 tau=0.105 |alpha|=0.102
+  epoch 14/20 loss=6.8494 recs=4.7054 search=1.0720 tau=0.108 |alpha|=0.108
+  epoch 15/20 loss=6.7696 recs=4.6348 search=1.0674 tau=0.107 |alpha|=0.112
+  epoch 16/20 loss=6.7021 recs=4.5733 search=1.0644 tau=0.104 |alpha|=0.113
+  epoch 17/20 loss=6.6622 recs=4.5378 search=1.0622 tau=0.100 |alpha|=0.112
+  epoch 18/20 loss=6.7116 recs=4.5855 search=1.0631 tau=0.101 |alpha|=0.118
+  epoch 19/20 loss=6.5915 recs=4.4764 search=1.0576 tau=0.098 |alpha|=0.116
+  epoch 20/20 loss=6.6519 recs=4.5345 search=1.0587 tau=0.099 |alpha|=0.116
+  [geo_latlng] {"retrieval_global.hit@10": 0.39577836411609496, "retrieval_global.recall@10": 0.05032313653917282, "retrieval_global.ndcg@10": 0.07106664100045502, "retrieval_global.mrr": 0.17385670581213367, "retrieval_global.coverage@10": 0.5991111111111111, "retrieval_city.hit@10": 0.3966578715919085, "retrieval_city.recall@10": 0.050578193707158756, "retrieval_city.ndcg@10": 0.07122826837794914, "retrieval_city.mrr": 0.1738966540218881, "retrieval_city.coverage@10": 0.5988888888888889, "info_abundance": 4.804005146026611, "alpha_mean_abs": 0.11629458516836166, "search.dot_product.ndcg@5_offer": 0.3994624296754145, "search.dot_product.ndcg@5_visit": 0.4141663224097764, "search.search_head.ndcg@5_offer": 0.5447537972047555, "search.search_head.ndcg@5_visit": 0.5587476564458912}
+  training user_mean {'user_mode': 'mean'}
+  epoch 1/20 loss=7.3439 recs=5.0821 search=1.1309 tau=0.155 |alpha|=0.033
+  epoch 2/20 loss=7.1064 recs=4.8747 search=1.1159 tau=0.148 |alpha|=0.063
+  epoch 3/20 loss=6.9344 recs=4.7564 search=1.0890 tau=0.138 |alpha|=0.077
+  epoch 4/20 loss=6.8539 recs=4.7043 search=1.0748 tau=0.131 |alpha|=0.080
+  epoch 5/20 loss=6.7605 recs=4.6289 search=1.0658 tau=0.125 |alpha|=0.091
+  epoch 6/20 loss=6.6215 recs=4.5140 search=1.0538 tau=0.117 |alpha|=0.094
+  epoch 7/20 loss=6.7057 recs=4.6155 search=1.0451 tau=0.115 |alpha|=0.102
+  epoch 8/20 loss=6.6337 recs=4.5463 search=1.0437 tau=0.112 |alpha|=0.102
+  epoch 9/20 loss=6.6287 recs=4.5564 search=1.0362 tau=0.110 |alpha|=0.104
+  epoch 10/20 loss=6.6094 recs=4.5461 search=1.0316 tau=0.108 |alpha|=0.108
+  epoch 11/20 loss=6.6410 recs=4.5906 search=1.0252 tau=0.106 |alpha|=0.109
+  epoch 12/20 loss=6.6082 recs=4.5612 search=1.0235 tau=0.106 |alpha|=0.111
+  epoch 13/20 loss=6.5819 recs=4.5359 search=1.0230 tau=0.104 |alpha|=0.113
+  epoch 14/20 loss=6.6242 recs=4.5804 search=1.0219 tau=0.105 |alpha|=0.120
+  epoch 15/20 loss=6.5705 recs=4.5369 search=1.0168 tau=0.105 |alpha|=0.121
+  epoch 16/20 loss=6.5157 recs=4.4893 search=1.0132 tau=0.104 |alpha|=0.122
+  epoch 17/20 loss=6.4883 recs=4.4653 search=1.0115 tau=0.100 |alpha|=0.119
+  epoch 18/20 loss=6.5251 recs=4.5031 search=1.0110 tau=0.100 |alpha|=0.128
+  epoch 19/20 loss=6.4266 recs=4.4086 search=1.0090 tau=0.097 |alpha|=0.124
+  epoch 20/20 loss=6.4669 recs=4.4554 search=1.0058 tau=0.098 |alpha|=0.127
+  [user_mean] {"retrieval_global.hit@10": 0.4098504837291117, "retrieval_global.recall@10": 0.05456097573579884, "retrieval_global.ndcg@10": 0.07453527891800407, "retrieval_global.mrr": 0.1773297746228607, "retrieval_global.coverage@10": 0.6311111111111111, "retrieval_city.hit@10": 0.4098504837291117, "retrieval_city.recall@10": 0.05456097573579884, "retrieval_city.ndcg@10": 0.07453527891800407, "retrieval_city.mrr": 0.17733904978294482, "retrieval_city.coverage@10": 0.6311111111111111, "info_abundance": 5.571713924407959, "alpha_mean_abs": 0.12744465470314026, "search.dot_product.ndcg@5_offer": 0.4423141901345057, "search.dot_product.ndcg@5_visit": 0.45817558604981523, "search.search_head.ndcg@5_offer": 0.5927665809187708, "search.search_head.ndcg@5_visit": 0.6048796367176651}
+  training random_batches {'city_grouped': False}
+  epoch 1/20 loss=6.7365 recs=4.4741 search=1.1312 tau=0.146 |alpha|=0.034
+  epoch 2/20 loss=6.3254 recs=4.0812 search=1.1221 tau=0.126 |alpha|=0.060
+  epoch 3/20 loss=6.1972 recs=4.0057 search=1.0958 tau=0.109 |alpha|=0.077
+  epoch 4/20 loss=6.1040 recs=3.9425 search=1.0808 tau=0.099 |alpha|=0.077
+  epoch 5/20 loss=6.0488 recs=3.9043 search=1.0722 tau=0.092 |alpha|=0.078
+  epoch 6/20 loss=6.0114 recs=3.8816 search=1.0649 tau=0.087 |alpha|=0.079
+  epoch 7/20 loss=5.9893 recs=3.8669 search=1.0612 tau=0.084 |alpha|=0.083
+  epoch 8/20 loss=5.9626 recs=3.8482 search=1.0572 tau=0.082 |alpha|=0.085
+  epoch 9/20 loss=5.9500 recs=3.8433 search=1.0534 tau=0.080 |alpha|=0.084
+  epoch 10/20 loss=5.9372 recs=3.8322 search=1.0525 tau=0.079 |alpha|=0.088
+  epoch 11/20 loss=5.9282 recs=3.8297 search=1.0492 tau=0.078 |alpha|=0.087
+  epoch 12/20 loss=5.9072 recs=3.8142 search=1.0465 tau=0.077 |alpha|=0.090
+  epoch 13/20 loss=5.9063 recs=3.8185 search=1.0439 tau=0.078 |alpha|=0.091
+  epoch 14/20 loss=5.8949 recs=3.8137 search=1.0406 tau=0.077 |alpha|=0.094
+  epoch 15/20 loss=5.8834 recs=3.8018 search=1.0408 tau=0.076 |alpha|=0.099
+  epoch 16/20 loss=5.8786 recs=3.8027 search=1.0380 tau=0.076 |alpha|=0.101
+  epoch 17/20 loss=5.8616 recs=3.7896 search=1.0360 tau=0.076 |alpha|=0.102
+  epoch 18/20 loss=5.8468 recs=3.7818 search=1.0325 tau=0.076 |alpha|=0.103
+  epoch 19/20 loss=5.8401 recs=3.7771 search=1.0315 tau=0.076 |alpha|=0.104
+  epoch 20/20 loss=5.8270 recs=3.7690 search=1.0290 tau=0.074 |alpha|=0.104
+  [random_batches] {"retrieval_global.hit@10": 0.3562005277044855, "retrieval_global.recall@10": 0.04396369024851091, "retrieval_global.ndcg@10": 0.06194723282264446, "retrieval_global.mrr": 0.15257496104651758, "retrieval_global.coverage@10": 0.46955555555555556, "retrieval_city.hit@10": 0.3562005277044855, "retrieval_city.recall@10": 0.04396369024851091, "retrieval_city.ndcg@10": 0.06194723282264446, "retrieval_city.mrr": 0.15260654465319515, "retrieval_city.coverage@10": 0.4688888888888889, "info_abundance": 4.930715084075928, "alpha_mean_abs": 0.10433778166770935, "search.dot_product.ndcg@5_offer": 0.4112784134195494, "search.dot_product.ndcg@5_visit": 0.42782170759679616, "search.search_head.ndcg@5_offer": 0.5683678870576152, "search.search_head.ndcg@5_visit": 0.5779722160223663}
+  training no_images {'use_img': False}
+  epoch 1/20 loss=7.3811 recs=5.1186 search=1.1312 tau=0.157 |alpha|=0.000
+  epoch 2/20 loss=7.1777 recs=4.9295 search=1.1241 tau=0.153 |alpha|=0.000
+  epoch 3/20 loss=7.0540 recs=4.8205 search=1.1167 tau=0.146 |alpha|=0.000
+  epoch 4/20 loss=7.0127 recs=4.7929 search=1.1099 tau=0.142 |alpha|=0.000
+  epoch 5/20 loss=6.9621 recs=4.7522 search=1.1050 tau=0.137 |alpha|=0.000
+  epoch 6/20 loss=6.8625 recs=4.6620 search=1.1003 tau=0.128 |alpha|=0.000
+  epoch 7/20 loss=6.9555 recs=4.7571 search=1.0992 tau=0.124 |alpha|=0.000
+  epoch 8/20 loss=6.8601 recs=4.6751 search=1.0925 tau=0.119 |alpha|=0.000
+  epoch 9/20 loss=6.8790 recs=4.6978 search=1.0906 tau=0.117 |alpha|=0.000
+  epoch 10/20 loss=6.8480 recs=4.6705 search=1.0887 tau=0.114 |alpha|=0.000
+  epoch 11/20 loss=6.8887 recs=4.7215 search=1.0836 tau=0.114 |alpha|=0.000
+  epoch 12/20 loss=6.8495 recs=4.6890 search=1.0802 tau=0.113 |alpha|=0.000
+  epoch 13/20 loss=6.8215 recs=4.6625 search=1.0795 tau=0.109 |alpha|=0.000
+  epoch 14/20 loss=6.8587 recs=4.7006 search=1.0791 tau=0.111 |alpha|=0.000
+  epoch 15/20 loss=6.7793 recs=4.6325 search=1.0734 tau=0.109 |alpha|=0.000
+  epoch 16/20 loss=6.7163 recs=4.5778 search=1.0693 tau=0.107 |alpha|=0.000
+  epoch 17/20 loss=6.6936 recs=4.5559 search=1.0689 tau=0.103 |alpha|=0.000
+  epoch 18/20 loss=6.7180 recs=4.5843 search=1.0668 tau=0.104 |alpha|=0.000
+  epoch 19/20 loss=6.5876 recs=4.4712 search=1.0582 tau=0.100 |alpha|=0.000
+  epoch 20/20 loss=6.6341 recs=4.5261 search=1.0540 tau=0.101 |alpha|=0.000
+  [no_images] {"retrieval_global.hit@10": 0.3843447669305189, "retrieval_global.recall@10": 0.045528335875077486, "retrieval_global.ndcg@10": 0.06532540197901641, "retrieval_global.mrr": 0.16390353748047323, "retrieval_global.coverage@10": 0.6097777777777778, "retrieval_city.hit@10": 0.38522427440633245, "retrieval_city.recall@10": 0.04559115783763559, "retrieval_city.ndcg@10": 0.06538367306384876, "retrieval_city.mrr": 0.1639959604100996, "retrieval_city.coverage@10": 0.6111111111111112, "info_abundance": 4.8997483253479, "alpha_mean_abs": 0.0, "search.dot_product.ndcg@5_offer": 0.4348768046658831, "search.dot_product.ndcg@5_visit": 0.44921607218655496, "search.search_head.ndcg@5_offer": 0.560851910265075, "search.search_head.ndcg@5_visit": 0.5744504970202534}
+seed 2 done in 363s
