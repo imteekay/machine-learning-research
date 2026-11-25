@@ -15,6 +15,15 @@ Entry format:
 
 ---
 
+## 2026-11-25: E3.1 ATAC regulatory info + get-mini (GET PoC)
+
+- **Did**: read GET ([note](./02-paper-notes/get-general-expression-transformer.md)). Built [`get-mini/`](./get-mini/): 10x Multiome PBMC 3k loader, EDA, metacells, ridge baselines, TinyGET with region tokens. Ran [E3.1](./04-experiments/E3.1-atac-regulatory-info.md) with 3 seeds plus a synthetic positive control.
+- **Learned**: H rejected on PBMC. The ATAC gain correlates with tau (ρ = 0.14), but shuffled peaks give the same gain and correlation, so the signal is a cell-type proxy. The gene-identity-free TinyGET does use gene-specific regions (r 0.21 vs 0.07 shuffled) and attends to promoter-proximal peaks. More peaks hurt the ridge (p ≈ n).
+- **Open questions**: do motif/TF-activity features recover a gene-specific gain? Does ATAC help where RNA can't see the state (stimulation, unseen cell types)?
+- **Next**: E3.1b: chromVAR-style motif features, a held-out cell type, strand-aware TSS and GTEx tau.
+
+---
+
 ## 2026-11-25: scGPT note + scgpt-mini PoC (E2.1 mini)
 
 - **Did**: wrote the [scGPT note](./02-paper-notes/scgpt.md). Built [`scgpt-mini/`](./scgpt-mini/): gene + value-bin tokens, GEP + GEPC pretraining, and frozen `<cls>` probes, with 7 tests. Ran [E2.1 mini](./04-experiments/E2.1-mini-scgpt-vs-pca.md): pretrained on pbmc3k, probed on pbmc3k held-out cells and on pbmc68k (transfer).
