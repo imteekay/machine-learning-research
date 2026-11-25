@@ -1,0 +1,25 @@
+[project]
+name = "scpoli-mini"
+version = "0.1.0"
+description = "A minimal, educational scPoli: conditional VAE with learned condition embeddings and cell-type prototypes, tested on integration without erasing disease (E1.1)."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "anndata>=0.11",
+    "matplotlib>=3.9",
+    "numpy>=2.0",
+    "scikit-learn>=1.5",
+    "scipy>=1.13",
+    "torch>=2.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.8,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[dependency-groups]
+dev = ["pytest>=8"]

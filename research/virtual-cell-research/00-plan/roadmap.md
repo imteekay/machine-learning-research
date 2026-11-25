@@ -300,7 +300,7 @@ Build a pipeline (config-driven, version-controlled) that pulls a CELLxGENE Cens
 
 ### Experiments & Hypotheses
 
-**E1.1: Integration without erasing disease**
+**E1.1: Integration without erasing disease** ([write-up](../04-experiments/E1.1-integration-without-erasing-disease.md))
 - **Hypothesis (H)**: in a naive merge of ≥ 3 studies of the same tissue (healthy + disease), batch explains more variance than cell type. scVI/scPoli integration reverses this *while keeping* a known disease signal (e.g., interferon response in lupus or COVID-19 PBMCs). *Null*: integration either fails to remove batch or removes the disease signal along with it
 - **Why it moves the research forward**: pretraining and clinical models need multi-study data. This experiment sets the integration recipe and shows its cost on the biology you care about. If disease signal is erased, you need batch-aware modeling (covariates, conditional models) instead of correction
 - **Knowledge tested**: *domain*: what the disease signature is biologically (e.g., interferon-stimulated genes) and which cell types carry it. *Technical*: variance decomposition, latent-variable integration, scIB metrics and their failures
@@ -403,7 +403,7 @@ Fine-tune scGPT (or Geneformer) and train an HVG + PCA + logistic regression bas
 
 ### Experiments & Hypotheses
 
-**E2.1: Do scFM embeddings beat PCA?**
+**E2.1: Do scFM embeddings beat PCA?** ([write-up](../04-experiments/E2.1-mini-scgpt-vs-pca.md))
 - **Hypothesis (H)**: zero-shot embeddings from scGPT, Geneformer and UCE beat HVG + PCA for cell-type annotation and batch integration on a tissue *not* well covered by pretraining. *Null*: no improvement (the expected result from the critical literature)
 - **Why it moves the research forward**: it replicates a known critique in your own hands. A null result means the Master's model should fine-tune, not use frozen embeddings, and must always report PCA/linear baselines. A positive result shows *where* pretraining helps (rare cell types, small data)
 - **Knowledge tested**: *domain*: cell-type identity vs state, tissue coverage in CELLxGENE. *Technical*: embedding evaluation, kNN/linear probes, scIB, metric pitfalls
@@ -492,7 +492,7 @@ Train a joint RNA + ATAC model (start from scGPT or CLM-X, or a MultiVI baseline
 
 ### Experiments & Hypotheses
 
-**E3.1: Is the ATAC information regulatory?**
+**E3.1: Is the ATAC information regulatory?** ([write-up](../04-experiments/E3.1-atac-regulatory-info.md))
 - **Hypothesis (H)**: adding ATAC to a model that predicts held-out genes' RNA improves accuracy more for TF-driven, cell-type-specific genes than for housekeeping genes. *Null*: the gain is uniform (ATAC adds only generic depth or cell-type information)
 - **Why it moves the research forward**: the Master's hypothesis assumes ATAC provides *regulatory* context. If the gain is uniform, ATAC is just a second cell-type label and the thesis needs rethinking (e.g., use motif-level TF activity instead of raw peaks). If H holds, the mechanism is supported before any perturbation data is used
 - **Knowledge tested**: *domain*: housekeeping vs cell-type-specific genes, enhancer-driven regulation, which genes have strong distal regulation. *Technical*: masked-gene prediction, stratified evaluation, ablation design
@@ -634,6 +634,14 @@ Reproduce GEARS, a linear/additive baseline and a control-mean baseline on Norma
 - **Design**: residualize predictions and truths by the average perturbation effect. Add a label-shuffled control model
 - **Metric & success criterion**: Pearson on residual Δ; the gap vs the label-shuffled model
 - **Progress signal**: this test runs automatically in your evaluation harness for every model you train from now on
+
+**E4.5: Does latent arithmetic predict the response of an unseen cell type?** ([write-up](../04-experiments/E4.5-scgen-unseen-cell-type.md))
+- **Hypothesis (H)**: a mini scGen VAE (latent δ learned on other cell types) predicts an unseen cell type's IFN-β response better than no change and than the gene-space mean shift, and keeps skill after removing the shared response. *Null*: all skill is the generic ISG program (no gain over the gene shift; residual matched by a shuffled-δ control)
+- **Why it moves the research forward**: it is the cheapest real-data test of the "unseen cell context" split in E4.1 and of the E4.4 shortcut check, on scGen's own benchmark
+- **Knowledge tested**: *domain*: type I IFN signaling (JAK–STAT, ISGs), why monocytes respond hardest, shared vs type-specific programs. *Technical*: VAE latent arithmetic, leave-one-cell-type-out, R² on means vs Δ, Systema residuals, energy distance, negative controls
+- **Design**: Kang 2018 PBMC IFN-β (GEO GSE96583). Hold out the stimulated cells of CD4 T, B, CD14 Mono in turn. Models: control, gene shift, PCA arithmetic, mini scGen VAE; negative controls: shuffled-label δ and random δ
+- **Metric & success criterion**: R² top-100 DE (scGen), Δ Pearson, residual Pearson after removing the generic response, energy distance. H holds if VAE beats the gene shift by ≥ 0.05 R² and residual ≥ 0.2 above the shuffled control on ≥ 2/3 types
+- **Progress signal**: the residual test runs on real data with negative controls behaving as expected
 
 ### Exit Check
 

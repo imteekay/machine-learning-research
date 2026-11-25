@@ -1,0 +1,106 @@
+{
+ "source": "10x Multiome PBMC granulocyte-sorted 3k (ARC 2.0.0)",
+ "n_cells": 2711,
+ "n_genes_total": 36601,
+ "n_peaks": 98319,
+ "sparsity": {
+  "rna_frac_nonzero_per_cell_median": 0.04893308925985641,
+  "atac_frac_nonzero_per_cell_median": 0.07637384432306626,
+  "atac_nonzero_value_frac": {
+   "1": 0.10707006318914297,
+   "2": 0.6461396590515808,
+   ">=3": 0.24679027775927626
+  },
+  "rna_umis_per_cell_median": 3790.0,
+  "atac_counts_in_peaks_per_cell_median": 18881.0
+ },
+ "qc": {
+  "atac_fragments_per_cell_median": 14479.0,
+  "tss_fraction_median": 0.5670068928950159,
+  "frip_median": 0.6975964225824483,
+  "spearman_rna_umis_vs_atac_frags": -0.02698782590043023
+ },
+ "clusters": {
+  "0": {
+   "label": "CD4 T",
+   "n_cells": 95
+  },
+  "1": {
+   "label": "CD14 mono",
+   "n_cells": 531
+  },
+  "2": {
+   "label": "NK",
+   "n_cells": 243
+  },
+  "3": {
+   "label": "CD4 T",
+   "n_cells": 401
+  },
+  "4": {
+   "label": "B",
+   "n_cells": 220
+  },
+  "5": {
+   "label": "CD14 mono",
+   "n_cells": 68
+  },
+  "6": {
+   "label": "DC",
+   "n_cells": 392
+  },
+  "7": {
+   "label": "CD4 T",
+   "n_cells": 761
+  }
+ },
+ "linking": {
+  "peaks_per_gene_median": 19.0,
+  "peaks_per_gene_max": 32,
+  "frac_links_in_gene_body": 0.07528829543862925,
+  "frac_links_within_5kb": 0.16080115785050655
+ },
+ "rna_atac": {
+  "median_r_gas_vs_rna": 0.12833744185143536,
+  "spearman_r_vs_tau": 0.3320396960396961,
+  "spearman_r_vs_npeaks": 0.1296670323586469,
+  "tau_median": 0.47634467085409454
+ },
+ "examples": {
+  "ACTB": {
+   "tau": 0.5345162933961995,
+   "r_gas_rna": -0.20723540051329875,
+   "n_peaks": 27
+  },
+  "GAPDH": {
+   "tau": 0.3918584903331495,
+   "r_gas_rna": 0.11329268936994606,
+   "n_peaks": 32
+  },
+  "RPL13": {
+   "tau": 0.43529136968606036,
+   "r_gas_rna": 0.037195519844210614,
+   "n_peaks": 27
+  },
+  "EEF1A1": {
+   "tau": 0.5410709194722915,
+   "r_gas_rna": 0.12201758339922619,
+   "n_peaks": 19
+  },
+  "B2M": {
+   "tau": 0.4984447916811092,
+   "r_gas_rna": -0.06724897429835251,
+   "n_peaks": 19
+  },
+  "LYZ": {
+   "tau": 0.7705429327426384,
+   "r_gas_rna": 0.23906095239502614,
+   "n_peaks": 13
+  },
+  "IL7R": {
+   "tau": 0.7481937865631433,
+   "r_gas_rna": 0.8186121816551505,
+   "n_peaks": 27
+  }
+ }
+}
