@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-25: OmiCLIP paper + omiclip-mini PoC (E6.2)
+
+- **Did**: wrote the [OmiCLIP / Loki note](./02-paper-notes/omiclip-loki.md) (chosen by the Phase 6 citation ranking and preferred over UNI). Built [`omiclip-mini/`](./omiclip-mini/): synthetic H&E tiles and spot counts from shared cells, a CNN + gene-sentence CLIP, and kNN PredEx. Ran [E6.2](./04-experiments/E6.2-histology-to-expression.md) with patient-grouped CV over 3 worlds.
+- **Learned**: partially supported. The immune ranking survives (ρ 0.70–0.81) while median gene r is about 0.47. The IFN program fails (1/3 worlds) because its patient gain is invisible in H&E. kNN retrieval ranks worse than a linear probe or hand-crafted ridge. A constant baseline is anti-correlated under grouped CV.
+- **Open questions**: how much of real PD-L1/IFN variance is morphology-visible? Does stain augmentation matter on real slides?
+- **Next**: a HEST-1k multi-patient subset with a pathology-FM linear probe and a segmentation-based composition ceiling.
+
 ## 2026-11-25: E4.5 scGen latent arithmetic on an unseen cell type
 
 - **Did**: read scGen ([note](./02-paper-notes/scgen.md)). Built [`scgen-mini/`](./scgen-mini/) (VAE + baselines + Systema-style residuals, 5 tests) and ran [E4.5](./04-experiments/E4.5-scgen-unseen-cell-type.md) on Kang 2018 PBMC IFN-β (GEO), holding out CD4 T, B and CD14 Mono, 3 seeds.

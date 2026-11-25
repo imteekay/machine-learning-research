@@ -1,0 +1,19 @@
+{
+ "immune": {
+  "pass_per_world": [
+   true
+  ],
+  "n_pass": 1,
+  "holds": true
+ },
+ "ifn": {
+  "pass_per_world": [
+   false
+  ],
+  "n_pass": 0,
+  "holds": false
+ },
+ "verdict": "H partially supported (biomarker-dependent)",
+ "quick": false,
+ "runtime_s": 500.1
+}
