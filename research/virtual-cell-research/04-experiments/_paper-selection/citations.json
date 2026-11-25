@@ -1,0 +1,1335 @@
+{
+ "queried": "2026-11-25",
+ "phases": {
+  "0": [
+   {
+    "title": "Perturb-seq: dissecting molecular circuits with scalable single-cell RNA profiling of pooled genetic screens",
+    "url": "https://doi.org/10.1016/j.cell.2016.11.038",
+    "method": true,
+    "citations": 1922,
+    "year": 2016
+   },
+   {
+    "title": "Transformers in single-cell omics: a review and new perspectives",
+    "url": "https://www.nature.com/articles/s41592-024-02353-z",
+    "method": false,
+    "citations": 183,
+    "year": 2024
+   },
+   {
+    "title": "Towards multimodal foundation models in molecular cell biology",
+    "url": "https://www.nature.com/articles/s41586-025-08710-y",
+    "method": false,
+    "citations": 151,
+    "year": 2025
+   },
+   {
+    "title": "A mini-review on perturbation modelling across single-cell omic modalities",
+    "url": "https://doi.org/10.1016/j.csbj.2024.04.058",
+    "method": false,
+    "citations": 64,
+    "year": 2024
+   },
+   {
+    "title": "Harnessing the deep learning power of foundation models in single-cell omics",
+    "url": "https://www.nature.com/articles/s41580-024-00756-6",
+    "method": false,
+    "citations": 32,
+    "year": 2024
+   },
+   {
+    "title": "Interpretation, extrapolation and perturbation of single cells",
+    "url": "https://www.nature.com/articles/s41576-025-00920-4",
+    "method": false,
+    "citations": 28,
+    "year": 2026
+   },
+   {
+    "title": "Flow matching for generative modelling in bioinformatics and computational biology",
+    "url": "https://www.nature.com/articles/s42256-026-01220-0",
+    "method": false,
+    "citations": 11,
+    "year": 2026
+   },
+   {
+    "title": "Virtual Cells: Predict, Explain, Discover",
+    "url": "https://arxiv.org/abs/2505.14613",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Single-cell best practices",
+    "url": "https://www.sc-best-practices.org",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Hern\u00e1n & Robins, *Causal Inference: What If*",
+    "url": "https://miguelhernan.org/whatifbook",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "MIT Multimodal AI course",
+    "url": "https://mit-mi.github.io/mmai-course/spring2026",
+    "method": true,
+    "citations": null,
+    "year": null
+   }
+  ],
+  "1": [
+   {
+    "title": "Scanpy / AnnData: large-scale single-cell gene expression data analysis",
+    "url": "https://doi.org/10.1186/s13059-017-1382-0",
+    "method": false,
+    "citations": 8934,
+    "year": 2018
+   },
+   {
+    "title": "Tabula Sapiens",
+    "url": "https://doi.org/10.1126/science.abl4896",
+    "method": false,
+    "citations": 1261,
+    "year": 2021
+   },
+   {
+    "title": "scvi-tools: a Python library for probabilistic analysis of single-cell omics data",
+    "url": "https://doi.org/10.1038/s41587-021-01206-w",
+    "method": false,
+    "citations": 769,
+    "year": 2022
+   },
+   {
+    "title": "The Human Cell Atlas from a cell census to a unified foundation model",
+    "url": "https://www.nature.com/articles/s41586-024-08338-4",
+    "method": false,
+    "citations": 158,
+    "year": 2024
+   },
+   {
+    "title": "scPoli: Population-level integration of single-cell datasets enables multi-scale analysis across samples",
+    "url": "https://www.nature.com/articles/s41592-023-02035-2",
+    "method": true,
+    "citations": 125,
+    "year": 2022
+   },
+   {
+    "title": "Pertpy: an end-to-end framework for perturbation analysis",
+    "url": "https://www.nature.com/articles/s41592-025-02909-7",
+    "method": false,
+    "citations": 77,
+    "year": 2024
+   },
+   {
+    "title": "Shortcomings of silhouette in single-cell integration benchmarking",
+    "url": "https://doi.org/10.1038/s41587-025-02743-4",
+    "method": false,
+    "citations": 39,
+    "year": 2025
+   },
+   {
+    "title": "scBaseCount: an AI agent-curated, uniformly processed single-cell data repository",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.02.27.640494v3",
+    "method": false,
+    "citations": 18,
+    "year": 2025
+   },
+   {
+    "title": "Toward informed batch correction for single-cell transcriptome integration",
+    "url": "https://www.nature.com/articles/s43588-025-00943-1",
+    "method": true,
+    "citations": 10,
+    "year": 2026
+   },
+   {
+    "title": "scDataset: Scalable Data Loading for Deep Learning on Large-Scale Single-Cell Omics",
+    "url": "https://arxiv.org/html/2506.01883v3",
+    "method": false,
+    "citations": 6,
+    "year": 2025
+   },
+   {
+    "title": "FedscGen: privacy-preserving federated batch effect correction",
+    "url": "https://doi.org/10.1186/s13059-025-03684-6",
+    "method": true,
+    "citations": 5,
+    "year": 2025
+   },
+   {
+    "title": "hECA v2.0: an AI-ready ensemble cell atlas of single-cell RNA and ATAC sequencing data",
+    "url": "https://www.nature.com/articles/s41597-025-06426-2",
+    "method": false,
+    "citations": 4,
+    "year": 2025
+   },
+   {
+    "title": "Batch Effects Remain a Fundamental Barrier to Universal Embeddings in Single-Cell Foundation Models",
+    "url": "https://www.biorxiv.org/content/10.64898/2025.12.19.695371v1",
+    "method": false,
+    "citations": 2,
+    "year": 2025
+   },
+   {
+    "title": "GPU-accelerated single-cell analysis at scale with rapids-singlecell",
+    "url": "https://arxiv.org/abs/2603.02402",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Single-cell metadata as language",
+    "url": "https://www.nxn.se/valent/2024/2/4/single-cell-metadata-as-language",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "CZ CELLxGENE Discover",
+    "url": "https://academic.oup.com/nar/article/53/D1/D886/7912032",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Arc Virtual Cell Atlas",
+    "url": "https://arcinstitute.org/tools/virtualcellatlas",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "cellNexus: Quality control, annotation, aggregation and analytical layers for the Human Cell Atlas data",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.04.14.718336v1",
+    "method": false,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "Private information leakage from single-cell count matrices",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(24",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Machine Learning in the Life Sciences Has a Data Problem",
+    "url": "https://www.aidancooper.co.uk/ml-in-the-life-sciences",
+    "method": true,
+    "citations": null,
+    "year": null
+   }
+  ],
+  "2": [
+   {
+    "title": "scGPT: toward building a foundation model for single-cell multi-omics using generative AI",
+    "url": "https://www.nature.com/articles/s41592-024-02201-0",
+    "method": true,
+    "citations": 1613,
+    "year": 2024
+   },
+   {
+    "title": "Geneformer: Transfer learning enables predictions in network biology",
+    "url": "https://www.nature.com/articles/s41586-023-06139-9",
+    "method": true,
+    "citations": 1442,
+    "year": 2023
+   },
+   {
+    "title": "scFoundation: Large Scale Foundation Model on Single-cell Transcriptomics",
+    "url": "https://www.nature.com/articles/s41592-024-02305-7",
+    "method": true,
+    "citations": 786,
+    "year": 2023
+   },
+   {
+    "title": "scBERT as a large-scale pretrained deep language model for cell type annotation",
+    "url": "https://www.nature.com/articles/s42256-022-00534-z",
+    "method": true,
+    "citations": 719,
+    "year": 2022
+   },
+   {
+    "title": "Zero-shot evaluation reveals limitations of single-cell foundation models",
+    "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03574-x",
+    "method": false,
+    "citations": 192,
+    "year": 2025
+   },
+   {
+    "title": "SCimilarity: A cell atlas foundation model for scalable search of similar human cells",
+    "url": "https://www.nature.com/articles/s41586-024-08411-y",
+    "method": true,
+    "citations": 173,
+    "year": 2024
+   },
+   {
+    "title": "CellFM: a large-scale foundation model pre-trained on transcriptomics of 100 million human cells",
+    "url": "https://www.nature.com/articles/s41467-025-59926-5",
+    "method": true,
+    "citations": 127,
+    "year": 2024
+   },
+   {
+    "title": "GenePT: Simple and effective embedding model for single-cell biology built from ChatGPT",
+    "url": "https://www.nature.com/articles/s41551-024-01284-6",
+    "method": true,
+    "citations": 115,
+    "year": 2024
+   },
+   {
+    "title": "scPRINT: pre-training on 50 million cells allows robust gene network predictions",
+    "url": "https://www.nature.com/articles/s41467-025-58699-1",
+    "method": true,
+    "citations": 80,
+    "year": 2024
+   },
+   {
+    "title": "Universal cell embedding provides a foundation model for cell biology",
+    "url": "https://www.nature.com/articles/s41586-026-10689-z",
+    "method": true,
+    "citations": 62,
+    "year": 2026
+   },
+   {
+    "title": "CellWhisperer: chat-based exploration of single-cell data",
+    "url": "https://www.nature.com/articles/s41587-025-02857-9",
+    "method": true,
+    "citations": 59,
+    "year": 2025
+   },
+   {
+    "title": "Delineating the effective use of self-supervised learning in single-cell genomics",
+    "url": "https://www.nature.com/articles/s42256-024-00934-3",
+    "method": false,
+    "citations": 47,
+    "year": 2024
+   },
+   {
+    "title": "Stack: In-Context Learning of Single-Cell Biology",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.01.09.698608v1",
+    "method": true,
+    "citations": 41,
+    "year": 2026
+   },
+   {
+    "title": "TranscriptFormer: A Cross-Species Generative Cell Atlas Across 1.5 Billion Years of Evolution",
+    "url": "https://www.science.org/doi/10.1126/science.aec8514",
+    "method": true,
+    "citations": 39,
+    "year": 2026
+   },
+   {
+    "title": "Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.10.23.683759v1",
+    "method": true,
+    "citations": 27,
+    "year": 2025
+   },
+   {
+    "title": "GeneformerV2: Scaling and quantization",
+    "url": "https://www.nature.com/articles/s43588-026-00972-4",
+    "method": true,
+    "citations": 22,
+    "year": 2026
+   },
+   {
+    "title": "RegFormer: a single-cell foundation model powered by gene regulatory hierarchies",
+    "url": "https://www.nature.com/articles/s41467-026-72198-x",
+    "method": true,
+    "citations": 16,
+    "year": 2025
+   },
+   {
+    "title": "scPEFT: parameter-efficient fine-tuning of single-cell LLMs",
+    "url": "https://www.nature.com/articles/s42256-025-01170-z",
+    "method": true,
+    "citations": 12,
+    "year": 2025
+   },
+   {
+    "title": "Metric Mirages in Cell Embeddings",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.04.02.587824v1",
+    "method": false,
+    "citations": 12,
+    "year": 2024
+   },
+   {
+    "title": "Cell-JEPA: Latent Representation Learning for Single-Cell Transcriptomics",
+    "url": "https://arxiv.org/abs/2602.02093",
+    "method": true,
+    "citations": 8,
+    "year": 2026
+   },
+   {
+    "title": "Fundamental Limitations of Foundation Models in Single-Cell Transcriptomics",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.06.26.661767v1",
+    "method": false,
+    "citations": 7,
+    "year": 2025
+   },
+   {
+    "title": "Sparse autoencoders reveal organized biological knowledge but minimal regulatory logic",
+    "url": "https://arxiv.org/abs/2603.02952",
+    "method": true,
+    "citations": 6,
+    "year": 2026
+   },
+   {
+    "title": "HEIMDALL: A Modular Framework for Tokenization in Single-Cell Foundation Models",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.11.09.687403v3",
+    "method": true,
+    "citations": 5,
+    "year": 2025
+   },
+   {
+    "title": "Scaling up training dataset size for transcriptomic AI models is much pain with little gain",
+    "url": "https://www.nature.com/articles/s41592-026-03119-5",
+    "method": false,
+    "citations": 1,
+    "year": 2026
+   },
+   {
+    "title": "Context-dependent utility and robustness of pretrained scFM representations",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733285v2",
+    "method": false,
+    "citations": 1,
+    "year": 2026
+   },
+   {
+    "title": "VCBench: A Multi-Dimensional Benchmark for Single-Cell Foundation Models",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733146v1",
+    "method": false,
+    "citations": 1,
+    "year": 2026
+   },
+   {
+    "title": "ScDiVa: Masked discrete diffusion for joint modeling of single-cell identity and expression",
+    "url": "https://arxiv.org/abs/2602.03477",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Parameter-free representations outperform single-cell foundation models on downstream benchmarks",
+    "url": "https://arxiv.org/abs/2602.16696",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Scaling recipes for scRNA-seq foundation models: when do scaling laws hold?",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.08.31.747783v1",
+    "method": false,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "Systematic evaluation of scFM interpretability: attention-derived edge scores add no incremental value",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13390336/",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Cell2Sentence",
+    "url": "https://proceedings.mlr.press/v235/levine24a.html",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "CellVerse: Do Large Language Models Really Understand Cell Biology?",
+    "url": "https://arxiv.org/abs/2505.07865",
+    "method": false,
+    "citations": null,
+    "year": null
+   }
+  ],
+  "3": [
+   {
+    "title": "GET: A foundation model of transcription across human cell types",
+    "url": "https://www.nature.com/articles/s41586-024-08391-z",
+    "method": true,
+    "citations": 142,
+    "year": 2025
+   },
+   {
+    "title": "Multitask benchmarking of single-cell multimodal omics integration methods",
+    "url": "https://www.nature.com/articles/s41592-025-02856-3",
+    "method": false,
+    "citations": 39,
+    "year": 2025
+   },
+   {
+    "title": "EpiAgent: foundation model for single-cell epigenomics",
+    "url": "https://www.nature.com/articles/s41592-025-02822-z",
+    "method": true,
+    "citations": 33,
+    "year": 2025
+   },
+   {
+    "title": "Transcription factor networks disproportionately enrich for heritability of blood cell phenotypes (Perturb-multiome)",
+    "url": "https://www.science.org/doi/10.1126/science.ads7951",
+    "method": false,
+    "citations": 21,
+    "year": 2024
+   },
+   {
+    "title": "CAPTAIN: a multimodal foundation model pretrained on co-assayed single-cell RNA and protein",
+    "url": "https://www.nature.com/articles/s41467-026-72882-y",
+    "method": true,
+    "citations": 20,
+    "year": 2026
+   },
+   {
+    "title": "Cross-modality Matching and Prediction of Perturbation Responses with Labeled Gromov-Wasserstein Optimal Transport",
+    "url": "https://arxiv.org/pdf/2405.00838",
+    "method": true,
+    "citations": 20,
+    "year": 2024
+   },
+   {
+    "title": "scTranslator: translating single-cell transcriptomes to proteomes",
+    "url": "https://www.nature.com/articles/s41551-025-01528-z",
+    "method": true,
+    "citations": 14,
+    "year": 2025
+   },
+   {
+    "title": "EpiFoundation: a Foundation Model for scATAC-seq via Peak-to-Gene Alignment",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.02.05.636688v2",
+    "method": true,
+    "citations": 11,
+    "year": 2025
+   },
+   {
+    "title": "SCARF: Single Cell ATAC-seq and RNA-seq Foundation model",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.04.07.647689v1",
+    "method": true,
+    "citations": 10,
+    "year": 2025
+   },
+   {
+    "title": "SCMBench: benchmarking domain-specific and foundation models for single-cell multi-omics integration",
+    "url": "https://www.nature.com/articles/s41467-026-72570-x",
+    "method": false,
+    "citations": 8,
+    "year": 2026
+   },
+   {
+    "title": "Atacformer: a transformer-based foundation model for ATAC-seq",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.11.03.685753v1",
+    "method": true,
+    "citations": 3,
+    "year": 2025
+   },
+   {
+    "title": "CLM-X: multi-way Transformer for unified scRNA-seq and scATAC-seq",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.02.17.704943v1",
+    "method": true,
+    "citations": 3,
+    "year": 2026
+   },
+   {
+    "title": "HoloCell: A Generative Foundation Model for Holistic Cellular Modeling",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.06.07.730684v1",
+    "method": true,
+    "citations": 2,
+    "year": 2026
+   },
+   {
+    "title": "PertFormer: Multimodal foundation model predicts zero-shot functional perturbations and cell fate dynamics",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.12.19.629561v2",
+    "method": true,
+    "citations": 2,
+    "year": 2025
+   },
+   {
+    "title": "RegFM: an interpretable context-aware foundation model for human transcriptional regulation",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.08.17.744355v1",
+    "method": true,
+    "citations": 1,
+    "year": 2026
+   },
+   {
+    "title": "scLinguist: hyena-based cross-modality translation in single-cell multi-omics",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.09.30.679123v1",
+    "method": true,
+    "citations": 1,
+    "year": 2025
+   },
+   {
+    "title": "scTranslation: A Comprehensive Benchmark for Single-Cell Multi-Omics Modality Translation",
+    "url": "https://dl.acm.org/doi/10.1145/3770855.3817464",
+    "method": false,
+    "citations": 1,
+    "year": 2026
+   },
+   {
+    "title": "ChromFound: Towards A Universal Foundation Model for Single-Cell Chromatin Accessibility Data",
+    "url": "https://arxiv.org/abs/2505.12638",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "ChromBERT: interpretable representations for context-specific transcriptional regulatory networks",
+    "url": "https://www.cell.com/cell-genomics/fulltext/S2666-979X(25",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Foundation model reveals the shared organization of transcription and topologically associating domains",
+    "url": "https://www.cell.com/cell-systems/abstract/S2405-4712(26",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "scCLIP: Multi-modal Single-cell Contrastive Learning Integration Pre-training",
+    "url": "https://openreview.net/pdf?id=KMtM5ZHxct",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Bayesian hyperparameter optimization improves scGPT fine-tuning for multi-omics integration",
+    "url": "https://academic.oup.com/bioinformatics/article/42/7/btag374/8707330",
+    "method": true,
+    "citations": null,
+    "year": null
+   }
+  ],
+  "4": [
+   {
+    "title": "Replogle et al., Mapping information-rich genotype\u2013phenotype landscapes with genome-scale Perturb-seq",
+    "url": "https://doi.org/10.1016/j.cell.2022.05.013",
+    "method": false,
+    "citations": 856,
+    "year": 2021
+   },
+   {
+    "title": "scGen predicts single-cell perturbation responses",
+    "url": "https://www.nature.com/articles/s41592-019-0494-8",
+    "method": true,
+    "citations": 816,
+    "year": 2019
+   },
+   {
+    "title": "GEARS: Predicting transcriptional outcomes of novel multigene perturbations",
+    "url": "https://www.nature.com/articles/s41587-023-01905-6",
+    "method": true,
+    "citations": 544,
+    "year": 2023
+   },
+   {
+    "title": "Norman et al., Exploring genetic interaction manifolds constructed from rich single-cell phenotypes",
+    "url": "https://doi.org/10.1126/science.aax4438",
+    "method": false,
+    "citations": 507,
+    "year": 2019
+   },
+   {
+    "title": "CPA: Predicting cellular responses to complex perturbations",
+    "url": "https://www.embopress.org/doi/full/10.15252/msb.202211517",
+    "method": true,
+    "citations": 467,
+    "year": 2023
+   },
+   {
+    "title": "Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines",
+    "url": "https://www.nature.com/articles/s41592-025-02772-6",
+    "method": false,
+    "citations": 319,
+    "year": 2025
+   },
+   {
+    "title": "Tahoe-100M: A Giga-Scale Single-Cell Perturbation Atlas",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.02.20.639398v1",
+    "method": false,
+    "citations": 166,
+    "year": 2025
+   },
+   {
+    "title": "Systema: evaluating genetic perturbation response prediction beyond systematic variation",
+    "url": "https://www.nature.com/articles/s41587-025-02777-8",
+    "method": false,
+    "citations": 136,
+    "year": 2025
+   },
+   {
+    "title": "CINEMA-OT: Causal identification of single-cell experimental perturbation effects",
+    "url": "https://www.nature.com/articles/s41592-023-02040-5",
+    "method": true,
+    "citations": 121,
+    "year": 2023
+   },
+   {
+    "title": "Benchmarking algorithms for generalizable single-cell perturbation response prediction",
+    "url": "https://www.nature.com/articles/s41592-025-02980-0",
+    "method": false,
+    "citations": 87,
+    "year": 2025
+   },
+   {
+    "title": "X-Atlas/Orion: Genome-wide Perturb-seq datasets via a scalable fix-cryopreserve platform",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.06.11.659105v1",
+    "method": false,
+    "citations": 54,
+    "year": 2025
+   },
+   {
+    "title": "Benchmarking Transcriptomics Foundation Models for Perturbation Analysis: one PCA still rules them all",
+    "url": "https://arxiv.org/abs/2410.13956",
+    "method": false,
+    "citations": 53,
+    "year": 2024
+   },
+   {
+    "title": "scLAMBDA: Modeling and predicting single-cell multi-gene perturbation responses",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.12.04.626878v1",
+    "method": true,
+    "citations": 35,
+    "year": 2024
+   },
+   {
+    "title": "In silico biological discovery with large perturbation models",
+    "url": "https://www.nature.com/articles/s43588-025-00870-1",
+    "method": true,
+    "citations": 30,
+    "year": 2025
+   },
+   {
+    "title": "X-Cell: Scaling Causal Perturbation Prediction Across Diverse Cellular Contexts via Diffusion Language Models",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.18.712807v1",
+    "method": true,
+    "citations": 24,
+    "year": 2026
+   },
+   {
+    "title": "Squidiff: predicting cellular development and responses to perturbations using a diffusion model",
+    "url": "https://www.nature.com/articles/s41592-025-02877-y",
+    "method": true,
+    "citations": 24,
+    "year": 2025
+   },
+   {
+    "title": "PerturbDiff: Functional Diffusion for Single-Cell Perturbation Modeling",
+    "url": "https://arxiv.org/abs/2602.19685",
+    "method": true,
+    "citations": 21,
+    "year": 2026
+   },
+   {
+    "title": "A single-cell cytokine dictionary of human peripheral blood",
+    "url": "https://www.biorxiv.org/content/10.64898/2025.12.12.693897v1",
+    "method": false,
+    "citations": 20,
+    "year": 2025
+   },
+   {
+    "title": "scGenePT: Is language all you need for modeling single-cell perturbations?",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.10.23.619972v1",
+    "method": true,
+    "citations": 16,
+    "year": 2024
+   },
+   {
+    "title": "Deep Learning-Based Genetic Perturbation Models Do Outperform Uninformative Baselines on Well-Calibrated Metrics",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.10.20.683304v1",
+    "method": false,
+    "citations": 15,
+    "year": 2025
+   },
+   {
+    "title": "Foundation Models Improve Perturbation Response Prediction",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.02.18.706454v1",
+    "method": false,
+    "citations": 12,
+    "year": 2026
+   },
+   {
+    "title": "Perturbation response decomposition enables biologically aligned generalization",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.24.740459v1",
+    "method": true,
+    "citations": 6,
+    "year": 2026
+   },
+   {
+    "title": "PRiMeFlow: Capturing Complex Expression Heterogeneity in Perturbation Response Modelling",
+    "url": "https://arxiv.org/abs/2604.13986",
+    "method": true,
+    "citations": 5,
+    "year": 2026
+   },
+   {
+    "title": "Towards Principled Evaluation of Single-Cell Perturbation Prediction Models",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740433v1",
+    "method": false,
+    "citations": 5,
+    "year": 2026
+   },
+   {
+    "title": "PerturbGen: Predicting how perturbations reshape cellular trajectories",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.04.709254v1",
+    "method": true,
+    "citations": 3,
+    "year": 2026
+   },
+   {
+    "title": "STATE: Predicting cellular responses to perturbation across diverse contexts",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "SCALE: Scalable conditional atlas-level endpoint transport",
+    "url": "https://arxiv.org/abs/2603.17380",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "scDFM: Distributional Flow Matching for Robust Single-Cell Perturbation Prediction",
+    "url": "https://arxiv.org/abs/2602.07103",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "**MultiFlow**: coupled flow matching for predicting single-cell multiomic perturbation responses in unseen cellular contexts",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.08.20.746112v1",
+    "method": true,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "PertAdapt: Unlocking scFMs for Genetic Perturbation Prediction via Condition-Sensitive Adaptation",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.11.21.689655v1",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "scDEBART: in silico perturbation via large-scale differential expression learning",
+    "url": "https://openreview.net/forum?id=pJyidZg93y",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "MAP: A Knowledge-driven Framework for Predicting Single-cell Responses for Unprofiled Drugs",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.02.25.708091v1",
+    "method": true,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "Unbalanced Perturbation Dynamics For Cell Fate Design",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735555v1",
+    "method": true,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "CellRFT: Reinforcement Fine-Tuning for Single-Cell Perturbation Modeling",
+    "url": "https://arxiv.org/abs/2609.19970",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "LangPert: LLM-Driven Contextual Synthesis for Unseen Perturbation Prediction",
+    "url": "https://openreview.net/forum?id=Tmx4o3Jg55",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "PerturBase",
+    "url": "https://academic.oup.com/nar/article/53/D1/D1099/7815638",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "PerturBench: Benchmarking ML Models for Cellular Perturbation Analysis",
+    "url": "https://openreview.net/forum?id=PPPDuyiZaG",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "PertEval-scFM: Benchmarking Single-Cell Foundation Models for Perturbation Effect Prediction",
+    "url": "https://proceedings.mlr.press/v267/wenteler25a.html",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "scArchon: a scalable benchmarking framework for single-cell perturbation models",
+    "url": "https://link.springer.com/article/10.1186/s13059-026-04104-z",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Benchmarking virtual cell models for in-the-wild perturbation response",
+    "url": "https://arxiv.org/abs/2604.27646",
+    "method": false,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "Virtual Cell Challenge: Toward a Turing test for the virtual cell",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(25",
+    "method": false,
+    "citations": null,
+    "year": null
+   }
+  ],
+  "5": [
+   {
+    "title": "Dhainaut et al., Spatial CRISPR genomics identifies regulators of the tumor microenvironment (Perturb-map)",
+    "url": "https://doi.org/10.1016/j.cell.2022.02.015",
+    "method": false,
+    "citations": 267,
+    "year": 2022
+   },
+   {
+    "title": "Nicheformer: a foundation model for single-cell and spatial omics",
+    "url": "https://www.nature.com/articles/s41592-025-02814-z",
+    "method": true,
+    "citations": 228,
+    "year": 2024
+   },
+   {
+    "title": "scGPT-spatial: Continual Pretraining of Single-Cell Foundation Model for Spatial Transcriptomics",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.02.05.636714v1",
+    "method": true,
+    "citations": 68,
+    "year": 2025
+   },
+   {
+    "title": "Novae: a graph-based foundation model for spatial transcriptomics data",
+    "url": "https://www.nature.com/articles/s41592-025-02899-6",
+    "method": true,
+    "citations": 55,
+    "year": 2025
+   },
+   {
+    "title": "HEIST: A graph foundation model for spatial transcriptomics and proteomics data",
+    "url": "https://arxiv.org/abs/2506.11152",
+    "method": true,
+    "citations": 23,
+    "year": 2025
+   },
+   {
+    "title": "SWITCH: Integrative deep learning of spatial multi-omics",
+    "url": "https://www.nature.com/articles/s43588-025-00891-w",
+    "method": true,
+    "citations": 19,
+    "year": 2025
+   },
+   {
+    "title": "The Virtual Tissues foundation model resolves spatial proteomics across scales",
+    "url": "https://www.nature.com/articles/s41586-026-10884-y",
+    "method": true,
+    "citations": 13,
+    "year": 2026
+   },
+   {
+    "title": "Large-scale characterization of cell niches in spatial atlases using bio-inspired graph learning",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.02.21.581428v1",
+    "method": true,
+    "citations": 9,
+    "year": 2024
+   },
+   {
+    "title": "Reusability report: transferability of SSL models from single-cell to spatial transcriptomics",
+    "url": "https://www.nature.com/articles/s42256-025-01097-5",
+    "method": false,
+    "citations": 8,
+    "year": 2025
+   },
+   {
+    "title": "Multi-scale modeling of human tissues from spatial transcriptomics with TERRA",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741565v1",
+    "method": true,
+    "citations": 6,
+    "year": 2026
+   },
+   {
+    "title": "SpatialFormer: universal spatial representation learning from subcellular to multicellular",
+    "url": "https://www.nature.com/articles/s43588-026-01016-7",
+    "method": true,
+    "citations": 5,
+    "year": 2026
+   },
+   {
+    "title": "scVIVA: a probabilistic framework for representation of cells and their environments in spatial transcriptomics",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.06.01.657182v1.full.pdf",
+    "method": true,
+    "citations": 4,
+    "year": 2025
+   },
+   {
+    "title": "SpatialProp: tissue perturbation modeling with spatially resolved single-cell transcriptomics",
+    "url": "https://www.biorxiv.org/content/10.64898/2025.11.30.691355v1",
+    "method": true,
+    "citations": 4,
+    "year": 2025
+   },
+   {
+    "title": "OmniCell: Unified Foundation Modeling of Single-Cell and Spatial Transcriptomics",
+    "url": "https://www.biorxiv.org/content/10.64898/2025.12.29.696804v1",
+    "method": true,
+    "citations": 2,
+    "year": 2026
+   },
+   {
+    "title": "A Generative Virtual Tissue Model Enables Computational Design of Therapeutic Perturbation Strategies",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.08.12.743536v1",
+    "method": true,
+    "citations": 1,
+    "year": 2026
+   },
+   {
+    "title": "Evaluating the ability of spatial transcriptomics foundation models to learn multi-scale spatial variation",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.08.01.742217v1",
+    "method": false,
+    "citations": 1,
+    "year": 2026
+   },
+   {
+    "title": "SToFM: a Multi-scale Foundation Model for Spatial Transcriptomics",
+    "url": "https://arxiv.org/abs/2507.11588",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "CellWorld: From Gene-Level Reconstruction to Latent Cell Prediction in Spatial Transcriptomics FMs",
+    "url": "https://arxiv.org/abs/2608.06659",
+    "method": true,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "Reasoning Across Space: Tiny Recursive Models for Spatial Omics",
+    "url": "https://openreview.net/pdf?id=vtTox3sHaS",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "KRONOS: A Foundation Model for Spatial Proteomics",
+    "url": "https://arxiv.org/abs/2506.03373",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Spatium: A Protein Language Foundation Model for Spatial Proteomics",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740264v1",
+    "method": true,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "A perspective on developing foundation models for analyzing spatial transcriptomic data",
+    "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/qub2.70010",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Multimodal spatial omics: From data acquisition to computational integration",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666389926001017",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Spatial omics at the forefront: emerging technologies, analytical innovations, and clinical applications",
+    "url": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(25",
+    "method": false,
+    "citations": null,
+    "year": null
+   }
+  ],
+  "6": [
+   {
+    "title": "OmiCLIP: A visual\u2013omics foundation model to bridge histopathology with spatial transcriptomics",
+    "url": "https://www.nature.com/articles/s41592-025-02707-1",
+    "method": true,
+    "citations": 171,
+    "year": 2025
+   },
+   {
+    "title": "HEX: AI-enabled virtual spatial proteomics from histopathology for interpretable biomarker discovery in lung cancer",
+    "url": "https://www.nature.com/articles/s41591-025-04060-4",
+    "method": true,
+    "citations": 79,
+    "year": 2026
+   },
+   {
+    "title": "Active learning framework leveraging transcriptomics identifies modulators of disease phenotypes",
+    "url": "https://www.science.org/doi/10.1126/science.adi8577",
+    "method": true,
+    "citations": 74,
+    "year": 2025
+   },
+   {
+    "title": "STPath: a generative foundation model for integrating spatial transcriptomics and whole-slide images",
+    "url": "https://www.nature.com/articles/s41746-025-02020-3",
+    "method": true,
+    "citations": 43,
+    "year": 2025
+   },
+   {
+    "title": "Virtual Cells Need Context, Not Just Scale",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.02.04.703804v1",
+    "method": false,
+    "citations": 22,
+    "year": 2026
+   },
+   {
+    "title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
+    "url": "https://www.nature.com/articles/s41591-026-04502-7",
+    "method": true,
+    "citations": 18,
+    "year": 2025
+   },
+   {
+    "title": "Agentic systems are adept at solving well-scoped, verifiable problems in computational biology",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.04.06.716850v1",
+    "method": false,
+    "citations": 14,
+    "year": 2026
+   },
+   {
+    "title": "scDrugMap: benchmarking large foundation models for drug response prediction",
+    "url": "https://www.nature.com/articles/s41467-025-67481-2",
+    "method": false,
+    "citations": 11,
+    "year": 2025
+   },
+   {
+    "title": "AlphaCell: Towards building a World Model to simulate perturbation-induced cellular dynamics",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.02.709176v1",
+    "method": true,
+    "citations": 10,
+    "year": 2026
+   },
+   {
+    "title": "CancerFoundation: a scRNA-seq foundation model to decipher drug resistance in cancer",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.11.01.621087v1",
+    "method": true,
+    "citations": 9,
+    "year": 2024
+   },
+   {
+    "title": "An operational perturbation proteomics-based virtual cell model",
+    "url": "https://www.nature.com/articles/s41586-026-11001-9",
+    "method": true,
+    "citations": 6,
+    "year": 2026
+   },
+   {
+    "title": "Harnessing AI to Build Virtual Cells",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.04.11.717183v2",
+    "method": false,
+    "citations": 6,
+    "year": 2026
+   },
+   {
+    "title": "Empirical Evaluation of Single-Cell Foundation Models for Predicting Cancer Outcomes",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.10.31.685892v1",
+    "method": false,
+    "citations": 4,
+    "year": 2025
+   },
+   {
+    "title": "MaxToki: Temporal AI model predicts drivers of cell state trajectories across human aging",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.30.715396v1",
+    "method": true,
+    "citations": 3,
+    "year": 2026
+   },
+   {
+    "title": "The virtual cell",
+    "url": "https://www.nature.com/articles/s41592-025-02951-5",
+    "method": false,
+    "citations": 3,
+    "year": 2025
+   },
+   {
+    "title": "CellOS: Learning a World Model of Cellular State through Joint Embedding Prediction",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733163v2",
+    "method": true,
+    "citations": 2,
+    "year": 2026
+   },
+   {
+    "title": "STP-BENCH: Benchmark for Virtual Spatial Transcriptomics from Histopathology Images",
+    "url": "https://arxiv.org/abs/2609.05956",
+    "method": false,
+    "citations": 2,
+    "year": 2026
+   },
+   {
+    "title": "How to build an AI-driven digital organism",
+    "url": "https://www.nature.com/articles/s41591-026-04595-0",
+    "method": false,
+    "citations": 1,
+    "year": 2026
+   },
+   {
+    "title": "What Makes a Virtual Cell a World Model? Three Gaps, Three Experiments, and a Roadmap",
+    "url": "https://openreview.net/forum?id=YyI469JbU3",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "World models for biomedicine",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells",
+    "url": "https://arxiv.org/abs/2603.25240",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "VCWorld: A Biological World Model for Virtual Cell Simulation",
+    "url": "https://arxiv.org/abs/2512.00306",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Towards autonomous mechanistic reasoning in virtual cells",
+    "url": "https://arxiv.org/abs/2604.11661",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Fifteen challenges for generative AI applications to cell biology",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "DeepSpot-M: transcriptome-wide virtual spatial transcriptomics from histology",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Single-cell foundation models predict durable CAR T response despite imperfect cell annotation",
+    "url": "https://www.researchsquare.com/article/rs-10412263/v1",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "EVA: a Foundation Model Advancing Translational Drug Development in Immuno-Inflammation",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.05.02.651839v1",
+    "method": true,
+    "citations": 0,
+    "year": 2025
+   },
+   {
+    "title": "DeepRNAi: Predicting on- and off-target siRNA activity and establishing a benchmark",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.11.12.766311v1",
+    "method": true,
+    "citations": 0,
+    "year": 2026
+   },
+   {
+    "title": "RisQ: Learning the shared structure of human health across diseases, modalities, and time",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26357373v1",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "AI virtual cells for drug discovery and pharmacology",
+    "url": "https://www.cell.com/trends/pharmacological-sciences/abstract/S0165-6147(26",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "From equations to agents: The AI virtual cell reshaping precision oncology",
+    "url": "https://www.the-innovation.org/article/doi/10.59717/j.xinn-oncol.2026.100002",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "The next-generation virtual cell: closed-loop target discovery in complex diseases",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0024320526004091",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas",
+    "url": "https://www.cell.com/cell/abstract/S0092-8674(24",
+    "method": false,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Drug Discovery Has No Magic Wands",
+    "url": "https://www.a16z.news/p/drug-discovery-has-no-magic-wands",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Einstein e Siemens Healthineers anunciam Centro Colaborativo de Inova\u00e7\u00e3o com foco em medicina de precis\u00e3o",
+    "url": "https://saudedigitalnews.com.br/15/10/2026/einstein-e-siemens-healthineers-anunciam-centro-colaborativo-de-inovacao-com-foco-em-medicina-de-precisao",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "Many needles in a haystack: Active hit discovery for perturbation experiments",
+    "url": "https://arxiv.org/abs/2605.10196",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "CellForge: Agentic Design of Virtual Cell Models",
+    "url": "https://arxiv.org/abs/2508.02276",
+    "method": true,
+    "citations": null,
+    "year": null
+   },
+   {
+    "title": "CellVoyager: AI compbio agent generates new insights by autonomously analyzing biological data",
+    "url": "https://www.nature.com/articles/s41592-026-03029-6",
+    "method": true,
+    "citations": null,
+    "year": null
+   }
+  ]
+ }
+}
