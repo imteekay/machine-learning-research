@@ -300,7 +300,7 @@ Build a pipeline (config-driven, version-controlled) that pulls a CELLxGENE Cens
 
 ### Experiments & Hypotheses
 
-**E1.1: Integration without erasing disease**
+**E1.1: Integration without erasing disease** ([write-up](../04-experiments/E1.1-integration-without-erasing-disease.md))
 - **Hypothesis (H)**: in a naive merge of ≥ 3 studies of the same tissue (healthy + disease), batch explains more variance than cell type. scVI/scPoli integration reverses this *while keeping* a known disease signal (e.g., interferon response in lupus or COVID-19 PBMCs). *Null*: integration either fails to remove batch or removes the disease signal along with it
 - **Why it moves the research forward**: pretraining and clinical models need multi-study data. This experiment sets the integration recipe and shows its cost on the biology you care about. If disease signal is erased, you need batch-aware modeling (covariates, conditional models) instead of correction
 - **Knowledge tested**: *domain*: what the disease signature is biologically (e.g., interferon-stimulated genes) and which cell types carry it. *Technical*: variance decomposition, latent-variable integration, scIB metrics and their failures
@@ -403,7 +403,7 @@ Fine-tune scGPT (or Geneformer) and train an HVG + PCA + logistic regression bas
 
 ### Experiments & Hypotheses
 
-**E2.1: Do scFM embeddings beat PCA?**
+**E2.1: Do scFM embeddings beat PCA?** ([write-up](../04-experiments/E2.1-mini-scgpt-vs-pca.md))
 - **Hypothesis (H)**: zero-shot embeddings from scGPT, Geneformer and UCE beat HVG + PCA for cell-type annotation and batch integration on a tissue *not* well covered by pretraining. *Null*: no improvement (the expected result from the critical literature)
 - **Why it moves the research forward**: it replicates a known critique in your own hands. A null result means the Master's model should fine-tune, not use frozen embeddings, and must always report PCA/linear baselines. A positive result shows *where* pretraining helps (rare cell types, small data)
 - **Knowledge tested**: *domain*: cell-type identity vs state, tissue coverage in CELLxGENE. *Technical*: embedding evaluation, kNN/linear probes, scIB, metric pitfalls
@@ -492,7 +492,7 @@ Train a joint RNA + ATAC model (start from scGPT or CLM-X, or a MultiVI baseline
 
 ### Experiments & Hypotheses
 
-**E3.1: Is the ATAC information regulatory?**
+**E3.1: Is the ATAC information regulatory?** ([write-up](../04-experiments/E3.1-atac-regulatory-info.md))
 - **Hypothesis (H)**: adding ATAC to a model that predicts held-out genes' RNA improves accuracy more for TF-driven, cell-type-specific genes than for housekeeping genes. *Null*: the gain is uniform (ATAC adds only generic depth or cell-type information)
 - **Why it moves the research forward**: the Master's hypothesis assumes ATAC provides *regulatory* context. If the gain is uniform, ATAC is just a second cell-type label and the thesis needs rethinking (e.g., use motif-level TF activity instead of raw peaks). If H holds, the mechanism is supported before any perturbation data is used
 - **Knowledge tested**: *domain*: housekeeping vs cell-type-specific genes, enhancer-driven regulation, which genes have strong distal regulation. *Technical*: masked-gene prediction, stratified evaluation, ablation design

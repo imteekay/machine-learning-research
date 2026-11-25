@@ -1,0 +1,86 @@
+{
+  "synthetic": {
+    "n_cells": 3600,
+    "pca_var_study": 0.5058340714829359,
+    "pca_var_celltype": 0.42301174354333354,
+    "pca_var_disease": 0.040395522002643895,
+    "median_counts_per_study": {
+      "study0": 1969.0,
+      "study1": 1385.0,
+      "study2": 1848.5
+    }
+  },
+  "kang2018": {
+    "n_cells": 24673,
+    "n_genes_kept": 2018,
+    "isg_genes_found": [
+      "ISG15",
+      "IFI6",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "MX1",
+      "MX2",
+      "OAS1",
+      "OAS2",
+      "IFI44L",
+      "RSAD2",
+      "ISG20",
+      "LY6E",
+      "IFITM3",
+      "XAF1",
+      "STAT1",
+      "IRF7",
+      "HERC5",
+      "IFI35",
+      "EPSTI1"
+    ],
+    "cells_per_donor": {
+      "patient_101": 2024,
+      "patient_1015": 5090,
+      "patient_1016": 3358,
+      "patient_1039": 1102,
+      "patient_107": 1042,
+      "patient_1244": 3343,
+      "patient_1256": 4134,
+      "patient_1488": 4580
+    },
+    "median_umis_per_donor": {
+      "patient_101": 1278.5,
+      "patient_1015": 1293.0,
+      "patient_1016": 1053.5,
+      "patient_1039": 1459.5,
+      "patient_107": 1422.0,
+      "patient_1244": 1314.0,
+      "patient_1256": 1228.5,
+      "patient_1488": 1215.0
+    },
+    "median_umis_ctrl_vs_stim": [
+      1202.0,
+      1287.0
+    ],
+    "celltype_counts": {
+      "B cells": 2651,
+      "CD14+ Monocytes": 5697,
+      "CD4 T cells": 11238,
+      "CD8 T cells": 1621,
+      "Dendritic cells": 529,
+      "FCGR3A+ Monocytes": 1089,
+      "Megakaryocytes": 132,
+      "NK cells": 1716
+    },
+    "isg_score_stim_minus_ctrl_by_celltype": {
+      "B cells": 1.2355332374572754,
+      "CD14+ Monocytes": 1.629772663116455,
+      "CD4 T cells": 1.0056911706924438,
+      "CD8 T cells": 1.0218631029129028,
+      "Dendritic cells": 1.6776432991027832,
+      "FCGR3A+ Monocytes": 1.4799832105636597,
+      "Megakaryocytes": 0.1502056121826172,
+      "NK cells": 1.1924545764923096
+    },
+    "pca_var_donor": 0.024786848313715363,
+    "pca_var_celltype": 0.5085804964575977,
+    "pca_var_stim": 0.13000587071320466
+  }
+}

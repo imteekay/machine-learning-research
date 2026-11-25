@@ -1,0 +1,338 @@
+{
+  "config": {
+    "quick": false,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 60,
+    "proto_weight": 10.0,
+    "n_latent": 10
+  },
+  "synthetic": {
+    "per_seed": {
+      "0": {
+        "pca_uncorrected": {
+          "var_batch": 0.5058340714829359,
+          "var_celltype": 0.42301174354333354,
+          "var_disease": 0.040395522002643895,
+          "batch_mixing": 0.0,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.985158950617284,
+          "isg_spearman_heldout": 0.8780435718887623
+        },
+        "cvae_onehot": {
+          "var_batch": 0.024452067870387794,
+          "var_celltype": 0.7872441785600972,
+          "var_disease": 0.14489003185671095,
+          "batch_mixing": 0.672642109725279,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9996077160493828,
+          "isg_spearman_heldout": 0.9168001946572635
+        },
+        "scpoli_mini_noproto": {
+          "var_batch": 0.003027640716732881,
+          "var_celltype": 0.7507637443917312,
+          "var_disease": 0.15952168579230866,
+          "batch_mixing": 0.38112713576550006,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.999720987654321,
+          "isg_spearman_heldout": 0.9209121271497999
+        },
+        "scpoli_mini": {
+          "var_batch": 0.003939337086489089,
+          "var_celltype": 0.7850527525830154,
+          "var_disease": 0.1347278866128444,
+          "batch_mixing": 0.3717438154393019,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9997462962962963,
+          "isg_spearman_heldout": 0.9198178672316121
+        },
+        "neg_ctrl_shuffled_batch": {
+          "var_batch": 0.3409669941951318,
+          "var_celltype": 0.548512318624554,
+          "var_disease": 0.09075644529320444,
+          "batch_mixing": 0.0,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9979533950617284,
+          "isg_spearman_heldout": 0.9043487628685345
+        }
+      },
+      "1": {
+        "pca_uncorrected": {
+          "var_batch": 0.4905449346957276,
+          "var_celltype": 0.40359825431113916,
+          "var_disease": 0.039020522311652754,
+          "batch_mixing": 0.0,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9951351851851852,
+          "isg_spearman_heldout": 0.9100787889755408
+        },
+        "cvae_onehot": {
+          "var_batch": 0.017827493067016805,
+          "var_celltype": 0.7850455988393428,
+          "var_disease": 0.1321085298397116,
+          "batch_mixing": 0.6358532594353326,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9991228395061729,
+          "isg_spearman_heldout": 0.9132766302826432
+        },
+        "scpoli_mini_noproto": {
+          "var_batch": 0.0035374523261769235,
+          "var_celltype": 0.764552443444978,
+          "var_disease": 0.1484167242801555,
+          "batch_mixing": 0.5744558824137733,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9991768518518518,
+          "isg_spearman_heldout": 0.9165362793891002
+        },
+        "scpoli_mini": {
+          "var_batch": 0.003597465218053595,
+          "var_celltype": 0.7760402691717998,
+          "var_disease": 0.13235899934301032,
+          "batch_mixing": 0.5446016559586211,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9992916666666667,
+          "isg_spearman_heldout": 0.9157637473869009
+        },
+        "neg_ctrl_shuffled_batch": {
+          "var_batch": 0.35132962698895065,
+          "var_celltype": 0.5244188241420978,
+          "var_disease": 0.08755073854060001,
+          "batch_mixing": 0.0,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9989216049382716,
+          "isg_spearman_heldout": 0.9147843008662789
+        }
+      },
+      "2": {
+        "pca_uncorrected": {
+          "var_batch": 0.47909054944068596,
+          "var_celltype": 0.4053853867815122,
+          "var_disease": 0.03859849542474083,
+          "batch_mixing": 0.0,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9584302469135803,
+          "isg_spearman_heldout": 0.8857463190573925
+        },
+        "cvae_onehot": {
+          "var_batch": 0.00888323622231064,
+          "var_celltype": 0.8076050740060988,
+          "var_disease": 0.12487063151887032,
+          "batch_mixing": 0.761802769249972,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9989583333333334,
+          "isg_spearman_heldout": 0.9147223755803933
+        },
+        "scpoli_mini_noproto": {
+          "var_batch": 0.0015961870756974565,
+          "var_celltype": 0.7622428922357247,
+          "var_disease": 0.15883756792523418,
+          "batch_mixing": 0.7403505197948139,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9993138888888888,
+          "isg_spearman_heldout": 0.9188802345281172
+        },
+        "scpoli_mini": {
+          "var_batch": 0.0018441666184546438,
+          "var_celltype": 0.7903258224584256,
+          "var_disease": 0.13741815092088952,
+          "batch_mixing": 0.7407512634986648,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9991287037037037,
+          "isg_spearman_heldout": 0.9177176469554745
+        },
+        "neg_ctrl_shuffled_batch": {
+          "var_batch": 0.33018368184373503,
+          "var_celltype": 0.5274805630021929,
+          "var_disease": 0.09617743216979519,
+          "batch_mixing": 0.0,
+          "celltype_knn_acc": 1.0,
+          "disease_auroc_heldout": 0.9966058641975308,
+          "isg_spearman_heldout": 0.9093122819584939
+        }
+      }
+    },
+    "sample_condition_probe": {
+      "0": {
+        "var_batch": 0.10519296856157037,
+        "var_celltype": 0.7975951542756881,
+        "var_disease": 0.03698749791430434,
+        "batch_mixing": 0.12592982740343392,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.9494192901234568,
+        "isg_spearman_heldout": 0.8283227372637596,
+        "sample_embedding_disease_auroc_loso": 0.13888888888888887
+      },
+      "1": {
+        "var_batch": 0.16697457041346703,
+        "var_celltype": 0.7478111648712714,
+        "var_disease": 0.015412403201387648,
+        "batch_mixing": 0.14208700614870295,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.6516248456790124,
+        "isg_spearman_heldout": 0.34583370623122955,
+        "sample_embedding_disease_auroc_loso": 0.7777777777777778
+      },
+      "2": {
+        "var_batch": 0.08292256230326106,
+        "var_celltype": 0.7919938999498848,
+        "var_disease": 0.03073731681948822,
+        "batch_mixing": 0.2418600129299665,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.6411836419753086,
+        "isg_spearman_heldout": 0.3981148564158336,
+        "sample_embedding_disease_auroc_loso": 0.3888888888888889
+      }
+    },
+    "mean": {
+      "pca_uncorrected": {
+        "var_batch": 0.49182318520644985,
+        "var_celltype": 0.410665128211995,
+        "var_disease": 0.03933817991301249,
+        "batch_mixing": 0.0,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.9795747942386831,
+        "isg_spearman_heldout": 0.8912895599738985
+      },
+      "cvae_onehot": {
+        "var_batch": 0.01705426571990508,
+        "var_celltype": 0.7932982838018462,
+        "var_disease": 0.13395639773843096,
+        "batch_mixing": 0.6900993794701945,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.9992296296296296,
+        "isg_spearman_heldout": 0.9149330668401
+      },
+      "scpoli_mini_noproto": {
+        "var_batch": 0.0027204267062024205,
+        "var_celltype": 0.7591863600241447,
+        "var_disease": 0.15559199266589943,
+        "batch_mixing": 0.5653111793246958,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.9994039094650207,
+        "isg_spearman_heldout": 0.9187762136890057
+      },
+      "scpoli_mini": {
+        "var_batch": 0.0031269896409991094,
+        "var_celltype": 0.7838062814044137,
+        "var_disease": 0.13483501229224806,
+        "batch_mixing": 0.5523655782988626,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.9993888888888889,
+        "isg_spearman_heldout": 0.9177664205246625
+      },
+      "neg_ctrl_shuffled_batch": {
+        "var_batch": 0.3408267676759391,
+        "var_celltype": 0.533470568589615,
+        "var_disease": 0.09149487200119988,
+        "batch_mixing": 0.0,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.9978269547325104,
+        "isg_spearman_heldout": 0.9094817818977691
+      },
+      "scpoli_cond=sample": {
+        "var_batch": 0.11836336709276617,
+        "var_celltype": 0.7791334063656148,
+        "var_disease": 0.027712405978393403,
+        "batch_mixing": 0.1699589488273678,
+        "celltype_knn_acc": 1.0,
+        "disease_auroc_heldout": 0.7474092592592593,
+        "isg_spearman_heldout": 0.5240904333036076,
+        "sample_embedding_disease_auroc_loso": 0.4351851851851852
+      }
+    },
+    "verdict_per_seed": {
+      "0": {
+        "precondition_pca_batch_gt_celltype": true,
+        "scpoli_batch_lt_celltype": true,
+        "scpoli_batch_var_reduced_vs_pca": true,
+        "disease_auroc_not_dropped_gt_0.05": true,
+        "isg_spearman_not_dropped_gt_0.10": true,
+        "neg_ctrl_mixing_lt_scpoli": true,
+        "H_supported": true
+      },
+      "1": {
+        "precondition_pca_batch_gt_celltype": true,
+        "scpoli_batch_lt_celltype": true,
+        "scpoli_batch_var_reduced_vs_pca": true,
+        "disease_auroc_not_dropped_gt_0.05": true,
+        "isg_spearman_not_dropped_gt_0.10": true,
+        "neg_ctrl_mixing_lt_scpoli": true,
+        "H_supported": true
+      },
+      "2": {
+        "precondition_pca_batch_gt_celltype": true,
+        "scpoli_batch_lt_celltype": true,
+        "scpoli_batch_var_reduced_vs_pca": true,
+        "disease_auroc_not_dropped_gt_0.05": true,
+        "isg_spearman_not_dropped_gt_0.10": true,
+        "neg_ctrl_mixing_lt_scpoli": true,
+        "H_supported": true
+      }
+    }
+  },
+  "kang2018": {
+    "n_cells": 10000,
+    "n_genes": 2018,
+    "n_isg_found": 20,
+    "metrics": {
+      "pca_uncorrected": {
+        "var_batch": 0.02424202781560933,
+        "var_celltype": 0.5000102449676608,
+        "var_disease": 0.1273891601885499,
+        "batch_mixing": 0.8394237733115623,
+        "celltype_knn_acc": 0.9308,
+        "disease_auroc_heldout": 0.9969951652641105,
+        "isg_spearman_heldout": 0.9452391749060324
+      },
+      "cvae_onehot": {
+        "var_batch": 0.0045404743639427675,
+        "var_celltype": 0.324832214911701,
+        "var_disease": 0.12369799566836259,
+        "batch_mixing": 0.8625501419153613,
+        "celltype_knn_acc": 0.9564,
+        "disease_auroc_heldout": 0.9979406361937544,
+        "isg_spearman_heldout": 0.929008781144184
+      },
+      "scpoli_mini_noproto": {
+        "var_batch": 0.0043918367429779176,
+        "var_celltype": 0.35206174857142297,
+        "var_disease": 0.10613433286606404,
+        "batch_mixing": 0.8564480905215235,
+        "celltype_knn_acc": 0.955,
+        "disease_auroc_heldout": 0.9978196347949781,
+        "isg_spearman_heldout": 0.9310474190838667
+      },
+      "scpoli_mini": {
+        "var_batch": 0.011262522856927526,
+        "var_celltype": 0.44773406745847566,
+        "var_disease": 0.11232015418106767,
+        "batch_mixing": 0.8490715272653919,
+        "celltype_knn_acc": 0.996,
+        "disease_auroc_heldout": 0.9979117158594354,
+        "isg_spearman_heldout": 0.9317193071388528
+      },
+      "neg_ctrl_shuffled_batch": {
+        "var_batch": 0.025031597317165786,
+        "var_celltype": 0.4416962562202279,
+        "var_disease": 0.11293546533489279,
+        "batch_mixing": 0.8093626684550673,
+        "celltype_knn_acc": 0.9964,
+        "disease_auroc_heldout": 0.9983013603637259,
+        "isg_spearman_heldout": 0.9333243975586388
+      }
+    },
+    "verdict": {
+      "precondition_pca_batch_gt_celltype": false,
+      "scpoli_batch_lt_celltype": true,
+      "scpoli_batch_var_reduced_vs_pca": true,
+      "disease_auroc_not_dropped_gt_0.05": true,
+      "isg_spearman_not_dropped_gt_0.10": true,
+      "neg_ctrl_mixing_lt_scpoli": true,
+      "H_supported": true
+    }
+  },
+  "runtime_s": 392.4
+}
