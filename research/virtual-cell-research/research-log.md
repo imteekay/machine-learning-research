@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-25: scGPT note + scgpt-mini PoC (E2.1 mini)
+
+- **Did**: wrote the [scGPT note](./02-paper-notes/scgpt.md). Built [`scgpt-mini/`](./scgpt-mini/): gene + value-bin tokens, GEP + GEPC pretraining, and frozen `<cls>` probes, with 7 tests. Ran [E2.1 mini](./04-experiments/E2.1-mini-scgpt-vs-pca.md): pretrained on pbmc3k, probed on pbmc3k held-out cells and on pbmc68k (transfer).
+- **Learned**: H rejected. On transfer with a linear probe, PCA scores 0.69 macro-F1 vs 0.24 for scGPT-mini, and it wins beyond the CI in 3/3 seeds. The trained model is barely better than random-init, even though its pretraining loss beat the mean floor. 70% of nonzero UMIs are 1, so per-cell bins collapse into one tied block, and scGPT's `np.digitize` puts that block in the top bin.
+- **Open questions**: does `<cls>` encode depth or the number of nonzero genes instead of cell type? Does GEPC matter?
+- **Next**: an E2.1b diagnostic regression and a GEP-only ablation, then the full E2.1 with real checkpoints and donor splits.
+
 ## 2026-11-22: Glyph paper deep dive + glyph-mini PoC
 
 - **Did**: read Glyph ([note](./02-paper-notes/glyph.md), [PDF](./papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf), [code](https://github.com/StanfordMIMI/Glyph)). Built [`glyph-mini/`](./glyph-mini/), a minimal PoC with 18 tests, and ran [E2.3a](./04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) on synthetic data with known truth. H1–H5 pass on seeds 0–4.

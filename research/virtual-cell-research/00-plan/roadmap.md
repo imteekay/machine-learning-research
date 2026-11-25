@@ -403,7 +403,7 @@ Fine-tune scGPT (or Geneformer) and train an HVG + PCA + logistic regression bas
 
 ### Experiments & Hypotheses
 
-**E2.1: Do scFM embeddings beat PCA?**
+**E2.1: Do scFM embeddings beat PCA?** ([write-up](../04-experiments/E2.1-mini-scgpt-vs-pca.md))
 - **Hypothesis (H)**: zero-shot embeddings from scGPT, Geneformer and UCE beat HVG + PCA for cell-type annotation and batch integration on a tissue *not* well covered by pretraining. *Null*: no improvement (the expected result from the critical literature)
 - **Why it moves the research forward**: it replicates a known critique in your own hands. A null result means the Master's model should fine-tune, not use frozen embeddings, and must always report PCA/linear baselines. A positive result shows *where* pretraining helps (rare cell types, small data)
 - **Knowledge tested**: *domain*: cell-type identity vs state, tissue coverage in CELLxGENE. *Technical*: embedding evaluation, kNN/linear probes, scIB, metric pitfalls
