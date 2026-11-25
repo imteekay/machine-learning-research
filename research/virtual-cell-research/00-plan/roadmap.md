@@ -825,7 +825,7 @@ Pick one clinical question (e.g., immunotherapy or CAR-T response, or drug resis
 - **Metric & success criterion**: AUROC / C-index with bootstrap CIs, calibration slope, decision-curve net benefit. H holds if gains are significant on the external cohort
 - **Progress signal**: a model card with intended use, limitations and failure subgroups
 
-**E6.2: Can routine histology carry the virtual cell to patients?**
+**E6.2: Can routine histology carry the virtual cell to patients?** ([write-up](../04-experiments/E6.2-histology-to-expression.md))
 - **Hypothesis (H)**: spatial expression predicted from H&E keeps the *ranking* of clinically used biomarkers (e.g., immune infiltration, PD-L1-related programs) across patients, even if gene-level accuracy is moderate. *Null*: patient-level biomarker rankings from predicted maps don't correlate with measured ones
 - **Why it moves the research forward**: if rankings hold, the PhD's tissue model can run on cheap, routine slides. That makes clinical deployment realistic. If not, measured spatial data stays a requirement
 - **Knowledge tested**: *domain*: histopathology, biomarker definitions, inter-patient vs intra-tumor heterogeneity. *Technical*: image–omics models, STP-BENCH evaluation, rank-based metrics

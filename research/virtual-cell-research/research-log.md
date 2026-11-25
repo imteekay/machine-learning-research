@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-25: OmiCLIP paper + omiclip-mini PoC (E6.2)
+
+- **Did**: wrote the [OmiCLIP / Loki note](./02-paper-notes/omiclip-loki.md) (chosen by the Phase 6 citation ranking and preferred over UNI). Built [`omiclip-mini/`](./omiclip-mini/): synthetic H&E tiles and spot counts from shared cells, a CNN + gene-sentence CLIP, and kNN PredEx. Ran [E6.2](./04-experiments/E6.2-histology-to-expression.md) with patient-grouped CV over 3 worlds.
+- **Learned**: partially supported. The immune ranking survives (ρ 0.70–0.81) while median gene r is about 0.47. The IFN program fails (1/3 worlds) because its patient gain is invisible in H&E. kNN retrieval ranks worse than a linear probe or hand-crafted ridge. A constant baseline is anti-correlated under grouped CV.
+- **Open questions**: how much of real PD-L1/IFN variance is morphology-visible? Does stain augmentation matter on real slides?
+- **Next**: a HEST-1k multi-patient subset with a pathology-FM linear probe and a segmentation-based composition ceiling.
+
 ## 2026-11-22: Glyph paper deep dive + glyph-mini PoC
 
 - **Did**: read Glyph ([note](./02-paper-notes/glyph.md), [PDF](./papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf), [code](https://github.com/StanfordMIMI/Glyph)). Built [`glyph-mini/`](./glyph-mini/), a minimal PoC with 18 tests, and ran [E2.3a](./04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) on synthetic data with known truth. H1–H5 pass on seeds 0–4.

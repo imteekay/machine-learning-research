@@ -1,0 +1,19 @@
+{
+ "immune": {
+  "pass_per_world": [
+   false
+  ],
+  "n_pass": 0,
+  "holds": false
+ },
+ "ifn": {
+  "pass_per_world": [
+   false
+  ],
+  "n_pass": 0,
+  "holds": false
+ },
+ "verdict": "H rejected",
+ "quick": true,
+ "runtime_s": 11.9
+}
