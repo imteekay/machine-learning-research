@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-25: E1.1 integration without erasing disease (scPoli-mini)
+
+- **Did**: read scPoli ([note](./02-paper-notes/scpoli.md)). Built [`scpoli-mini/`](./scpoli-mini/) (cVAE with learned condition embeddings + prototype loss, 10 tests). Ran [E1.1](./04-experiments/E1.1-integration-without-erasing-disease.md) on synthetic multi-study data (3 seeds) and Kang 2018 IFN-β PBMCs.
+- **Learned**: H supported on synthetic (batch R² 0.49 → 0.003, held-out disease AUROC kept at 0.999). Kang is inconclusive: donors were multiplexed, so there is almost no batch to remove. Conditioning on donor when disease is donor-level erases it (AUROC 0.75). Under-trained VAEs silently drop the ISG program.
+- **Open questions**: do scPoli sample embeddings separate disease with many donors? How does query mapping change this?
+- **Next**: E1.1b on a CELLxGENE lupus/COVID multi-study PBMC set with a held-out query study.
+
 ## 2026-11-22: Glyph paper deep dive + glyph-mini PoC
 
 - **Did**: read Glyph ([note](./02-paper-notes/glyph.md), [PDF](./papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf), [code](https://github.com/StanfordMIMI/Glyph)). Built [`glyph-mini/`](./glyph-mini/), a minimal PoC with 18 tests, and ran [E2.3a](./04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) on synthetic data with known truth. H1–H5 pass on seeds 0–4.

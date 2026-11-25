@@ -300,7 +300,7 @@ Build a pipeline (config-driven, version-controlled) that pulls a CELLxGENE Cens
 
 ### Experiments & Hypotheses
 
-**E1.1: Integration without erasing disease**
+**E1.1: Integration without erasing disease** ([write-up](../04-experiments/E1.1-integration-without-erasing-disease.md))
 - **Hypothesis (H)**: in a naive merge of ≥ 3 studies of the same tissue (healthy + disease), batch explains more variance than cell type. scVI/scPoli integration reverses this *while keeping* a known disease signal (e.g., interferon response in lupus or COVID-19 PBMCs). *Null*: integration either fails to remove batch or removes the disease signal along with it
 - **Why it moves the research forward**: pretraining and clinical models need multi-study data. This experiment sets the integration recipe and shows its cost on the biology you care about. If disease signal is erased, you need batch-aware modeling (covariates, conditional models) instead of correction
 - **Knowledge tested**: *domain*: what the disease signature is biologically (e.g., interferon-stimulated genes) and which cell types carry it. *Technical*: variance decomposition, latent-variable integration, scIB metrics and their failures
