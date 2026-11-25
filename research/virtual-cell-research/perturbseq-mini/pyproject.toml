@@ -1,0 +1,23 @@
+[project]
+name = "perturbseq-mini"
+version = "0.1.0"
+description = "Minimal Perturb-seq PoC (Dixit 2016): MIMOSCA-style ridge model of guide effects and a TF-target enrichment test (E0.2)."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib>=3.9",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scipy>=1.13",
+]
+
+[build-system]
+requires = ["uv_build>=0.8,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
