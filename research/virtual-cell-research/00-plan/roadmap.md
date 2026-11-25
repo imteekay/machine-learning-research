@@ -492,7 +492,7 @@ Train a joint RNA + ATAC model (start from scGPT or CLM-X, or a MultiVI baseline
 
 ### Experiments & Hypotheses
 
-**E3.1: Is the ATAC information regulatory?**
+**E3.1: Is the ATAC information regulatory?** ([write-up](../04-experiments/E3.1-atac-regulatory-info.md))
 - **Hypothesis (H)**: adding ATAC to a model that predicts held-out genes' RNA improves accuracy more for TF-driven, cell-type-specific genes than for housekeeping genes. *Null*: the gain is uniform (ATAC adds only generic depth or cell-type information)
 - **Why it moves the research forward**: the Master's hypothesis assumes ATAC provides *regulatory* context. If the gain is uniform, ATAC is just a second cell-type label and the thesis needs rethinking (e.g., use motif-level TF activity instead of raw peaks). If H holds, the mechanism is supported before any perturbation data is used
 - **Knowledge tested**: *domain*: housekeeping vs cell-type-specific genes, enhancer-driven regulation, which genes have strong distal regulation. *Technical*: masked-gene prediction, stratified evaluation, ablation design

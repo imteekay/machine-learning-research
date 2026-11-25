@@ -15,6 +15,15 @@ Entry format:
 
 ---
 
+## 2026-11-25: E3.1 ATAC regulatory info + get-mini (GET PoC)
+
+- **Did**: read GET ([note](./02-paper-notes/get-general-expression-transformer.md)). Built [`get-mini/`](./get-mini/): 10x Multiome PBMC 3k loader, EDA, metacells, ridge baselines, TinyGET with region tokens. Ran [E3.1](./04-experiments/E3.1-atac-regulatory-info.md) with 3 seeds plus a synthetic positive control.
+- **Learned**: H rejected on PBMC. The ATAC gain correlates with tau (ρ = 0.14), but shuffled peaks give the same gain and correlation, so the signal is a cell-type proxy. The gene-identity-free TinyGET does use gene-specific regions (r 0.21 vs 0.07 shuffled) and attends to promoter-proximal peaks. More peaks hurt the ridge (p ≈ n).
+- **Open questions**: do motif/TF-activity features recover a gene-specific gain? Does ATAC help where RNA can't see the state (stimulation, unseen cell types)?
+- **Next**: E3.1b: chromVAR-style motif features, a held-out cell type, strand-aware TSS and GTEx tau.
+
+---
+
 ## 2026-11-22: Glyph paper deep dive + glyph-mini PoC
 
 - **Did**: read Glyph ([note](./02-paper-notes/glyph.md), [PDF](./papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf), [code](https://github.com/StanfordMIMI/Glyph)). Built [`glyph-mini/`](./glyph-mini/), a minimal PoC with 18 tests, and ran [E2.3a](./04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) on synthetic data with known truth. H1–H5 pass on seeds 0–4.
