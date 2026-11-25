@@ -1,0 +1,312 @@
+{
+ "n_cells": 24594,
+ "n_genes": 2000,
+ "n_donors": 8,
+ "qc": {
+  "ctrl": {
+   "median_umis": 1205.0,
+   "median_genes": 508.0
+  },
+  "stim": {
+   "median_umis": 1284.0,
+   "median_genes": 529.0
+  }
+ },
+ "median_umis_by_type": {
+  "CD4 T cells": 1188.0,
+  "CD14+ Monocytes": 2245.0,
+  "B cells": 1119.0,
+  "CD8 T cells": 944.0,
+  "NK cells": 891.0,
+  "FCGR3A+ Monocytes": 2569.0,
+  "Dendritic cells": 3415.0,
+  "Megakaryocytes": 1322.5
+ },
+ "composition": {
+  "CD4 T cells": {
+   "ctrl": 5256,
+   "stim": 5100
+  },
+  "CD14+ Monocytes": {
+   "ctrl": 2843,
+   "stim": 2532
+  },
+  "B cells": {
+   "ctrl": 1331,
+   "stim": 1232
+  },
+  "CD8 T cells": {
+   "ctrl": 1097,
+   "stim": 942
+  },
+  "NK cells": {
+   "ctrl": 935,
+   "stim": 1048
+  },
+  "FCGR3A+ Monocytes": {
+   "ctrl": 756,
+   "stim": 835
+  },
+  "Dendritic cells": {
+   "ctrl": 207,
+   "stim": 224
+  },
+  "Megakaryocytes": {
+   "ctrl": 124,
+   "stim": 132
+  }
+ },
+ "isgs_used": [
+  "ISG15",
+  "IFI6",
+  "IFI44L",
+  "RSAD2",
+  "STAT1",
+  "HERC5",
+  "LY6E",
+  "IFIT2",
+  "IFIT3",
+  "IFIT1",
+  "IFITM3",
+  "IRF7",
+  "OAS1",
+  "OAS2",
+  "OASL",
+  "IFI27",
+  "ISG20",
+  "XAF1",
+  "MX2",
+  "MX1"
+ ],
+ "response_by_type": {
+  "CD4 T cells": {
+   "ctrl": 0.16682329773902893,
+   "stim": 1.5779860019683838,
+   "delta_norm_all_genes": 10.195646286010742,
+   "n_genes_abs_delta_gt_1": 18
+  },
+  "CD14+ Monocytes": {
+   "ctrl": 0.27903929352760315,
+   "stim": 2.6129724979400635,
+   "delta_norm_all_genes": 22.105575561523438,
+   "n_genes_abs_delta_gt_1": 85
+  },
+  "B cells": {
+   "ctrl": 0.20866981148719788,
+   "stim": 1.8533955812454224,
+   "delta_norm_all_genes": 13.12726879119873,
+   "n_genes_abs_delta_gt_1": 32
+  },
+  "CD8 T cells": {
+   "ctrl": 0.22628074884414673,
+   "stim": 1.61808443069458,
+   "delta_norm_all_genes": 10.392231941223145,
+   "n_genes_abs_delta_gt_1": 20
+  },
+  "NK cells": {
+   "ctrl": 0.2968272566795349,
+   "stim": 1.915696144104004,
+   "delta_norm_all_genes": 12.01651668548584,
+   "n_genes_abs_delta_gt_1": 26
+  },
+  "FCGR3A+ Monocytes": {
+   "ctrl": 0.48672670125961304,
+   "stim": 2.5691163539886475,
+   "delta_norm_all_genes": 18.04181480407715,
+   "n_genes_abs_delta_gt_1": 55
+  },
+  "Dendritic cells": {
+   "ctrl": 0.2403668463230133,
+   "stim": 2.3463287353515625,
+   "delta_norm_all_genes": 17.856647491455078,
+   "n_genes_abs_delta_gt_1": 57
+  },
+  "Megakaryocytes": {
+   "ctrl": 0.16120167076587677,
+   "stim": 1.3199225664138794,
+   "delta_norm_all_genes": 9.274776458740234,
+   "n_genes_abs_delta_gt_1": 11
+  }
+ },
+ "top_up_genes": {
+  "CD14+ Monocytes": [
+   "ISG15",
+   "CXCL10",
+   "CCL8",
+   "APOBEC3A",
+   "ISG20",
+   "IFITM3",
+   "RSAD2",
+   "TNFSF10",
+   "IFIT3",
+   "IFIT1",
+   "LY6E",
+   "IDO1"
+  ],
+  "CD4 T cells": [
+   "ISG15",
+   "IFI6",
+   "IFIT3",
+   "ISG20",
+   "IFIT1",
+   "LY6E",
+   "MX1",
+   "IFIT2",
+   "MT2A",
+   "OAS1",
+   "SAT1",
+   "IFI44L"
+  ],
+  "B cells": [
+   "ISG15",
+   "IFIT3",
+   "IFI6",
+   "ISG20",
+   "IFIT1",
+   "MX1",
+   "CXCL10",
+   "LY6E",
+   "IFIT2",
+   "TNFSF10",
+   "IRF7",
+   "PLSCR1"
+  ]
+ },
+ "delta_corr": {
+  "types": [
+   "CD4 T cells",
+   "CD14+ Monocytes",
+   "B cells",
+   "CD8 T cells",
+   "NK cells",
+   "FCGR3A+ Monocytes",
+   "Dendritic cells",
+   "Megakaryocytes"
+  ],
+  "matrix": [
+   [
+    1.0,
+    0.688,
+    0.893,
+    0.927,
+    0.893,
+    0.755,
+    0.772,
+    0.845
+   ],
+   [
+    0.688,
+    1.0,
+    0.733,
+    0.671,
+    0.708,
+    0.955,
+    0.847,
+    0.69
+   ],
+   [
+    0.893,
+    0.733,
+    1.0,
+    0.857,
+    0.859,
+    0.797,
+    0.847,
+    0.813
+   ],
+   [
+    0.927,
+    0.671,
+    0.857,
+    1.0,
+    0.939,
+    0.732,
+    0.745,
+    0.794
+   ],
+   [
+    0.893,
+    0.708,
+    0.859,
+    0.939,
+    1.0,
+    0.762,
+    0.769,
+    0.777
+   ],
+   [
+    0.755,
+    0.955,
+    0.797,
+    0.732,
+    0.762,
+    1.0,
+    0.881,
+    0.747
+   ],
+   [
+    0.772,
+    0.847,
+    0.847,
+    0.745,
+    0.769,
+    0.881,
+    1.0,
+    0.753
+   ],
+   [
+    0.845,
+    0.69,
+    0.813,
+    0.794,
+    0.777,
+    0.747,
+    0.753,
+    1.0
+   ]
+  ],
+  "mean_offdiag": 0.8018016440100763
+ },
+ "shared_response_loo": {
+  "CD4 T cells": {
+   "r_with_others_mean": 0.8802468180656433,
+   "scale_beta": 0.6705726385116577,
+   "frac_var_explained": 0.7748143672943115
+  },
+  "CD14+ Monocytes": {
+   "r_with_others_mean": 0.8504608869552612,
+   "scale_beta": 1.57612144947052,
+   "frac_var_explained": 0.723256528377533
+  },
+  "B cells": {
+   "r_with_others_mean": 0.8976985216140747,
+   "scale_beta": 0.9089372158050537,
+   "frac_var_explained": 0.8058536052703857
+  },
+  "CD8 T cells": {
+   "r_with_others_mean": 0.8607253432273865,
+   "scale_beta": 0.669150710105896,
+   "frac_var_explained": 0.7408391833305359
+  },
+  "NK cells": {
+   "r_with_others_mean": 0.8731110692024231,
+   "scale_beta": 0.798515796661377,
+   "frac_var_explained": 0.7623215913772583
+  },
+  "FCGR3A+ Monocytes": {
+   "r_with_others_mean": 0.9148721694946289,
+   "scale_beta": 1.3444007635116577,
+   "frac_var_explained": 0.8369889855384827
+  },
+  "Dendritic cells": {
+   "r_with_others_mean": 0.897135853767395,
+   "scale_beta": 1.2915828227996826,
+   "frac_var_explained": 0.8047990798950195
+  },
+  "Megakaryocytes": {
+   "r_with_others_mean": 0.8321110010147095,
+   "scale_beta": 0.5662757754325867,
+   "frac_var_explained": 0.6923407912254333
+  }
+ }
+}

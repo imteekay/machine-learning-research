@@ -635,6 +635,14 @@ Reproduce GEARS, a linear/additive baseline and a control-mean baseline on Norma
 - **Metric & success criterion**: Pearson on residual Δ; the gap vs the label-shuffled model
 - **Progress signal**: this test runs automatically in your evaluation harness for every model you train from now on
 
+**E4.5: Does latent arithmetic predict the response of an unseen cell type?** ([write-up](../04-experiments/E4.5-scgen-unseen-cell-type.md))
+- **Hypothesis (H)**: a mini scGen VAE (latent δ learned on other cell types) predicts an unseen cell type's IFN-β response better than no change and than the gene-space mean shift, and keeps skill after removing the shared response. *Null*: all skill is the generic ISG program (no gain over the gene shift; residual matched by a shuffled-δ control)
+- **Why it moves the research forward**: it is the cheapest real-data test of the "unseen cell context" split in E4.1 and of the E4.4 shortcut check, on scGen's own benchmark
+- **Knowledge tested**: *domain*: type I IFN signaling (JAK–STAT, ISGs), why monocytes respond hardest, shared vs type-specific programs. *Technical*: VAE latent arithmetic, leave-one-cell-type-out, R² on means vs Δ, Systema residuals, energy distance, negative controls
+- **Design**: Kang 2018 PBMC IFN-β (GEO GSE96583). Hold out the stimulated cells of CD4 T, B, CD14 Mono in turn. Models: control, gene shift, PCA arithmetic, mini scGen VAE; negative controls: shuffled-label δ and random δ
+- **Metric & success criterion**: R² top-100 DE (scGen), Δ Pearson, residual Pearson after removing the generic response, energy distance. H holds if VAE beats the gene shift by ≥ 0.05 R² and residual ≥ 0.2 above the shuffled control on ≥ 2/3 types
+- **Progress signal**: the residual test runs on real data with negative controls behaving as expected
+
 ### Exit Check
 
 - The Master's thesis question has a defended answer (positive or negative) with strong baselines and OOD splits

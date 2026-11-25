@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-25: E4.5 scGen latent arithmetic on an unseen cell type
+
+- **Did**: read scGen ([note](./02-paper-notes/scgen.md)). Built [`scgen-mini/`](./scgen-mini/) (VAE + baselines + Systema-style residuals, 5 tests) and ran [E4.5](./04-experiments/E4.5-scgen-unseen-cell-type.md) on Kang 2018 PBMC IFN-β (GEO), holding out CD4 T, B and CD14 Mono, 3 seeds.
+- **Learned**: H1–H3 supported. The VAE beats the gene-space shift (R² top-100: 0.96/0.97/0.64 vs 0.87/0.92/0.33) and keeps a residual correlation of ~0.8 after removing the shared response; negative controls sit at no-change level. The shared ISG program explains 70–84% of each type's Δ, but amplitude differs 2.4× (monocytes respond hardest), so a plain subtract-the-generic residual also rewards amplitude: project it out instead. The VAE decoder smooths cells and loses on energy distance for lymphocytes.
+- **Open questions**: is the monocyte skill just borrowed from FCGR3A Mono/DCs in training? Would it survive holding out a whole lineage or a donor?
+- **Next**: lineage-level and donor-level holdouts; reuse the harness for E4.1's unseen-context arm.
+
 ## 2026-11-22: Glyph paper deep dive + glyph-mini PoC
 
 - **Did**: read Glyph ([note](./02-paper-notes/glyph.md), [PDF](./papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf), [code](https://github.com/StanfordMIMI/Glyph)). Built [`glyph-mini/`](./glyph-mini/), a minimal PoC with 18 tests, and ran [E2.3a](./04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) on synthetic data with known truth. H1–H5 pass on seeds 0–4.
