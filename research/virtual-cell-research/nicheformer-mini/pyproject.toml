@@ -1,0 +1,23 @@
+[project]
+name = "nicheformer-mini"
+version = "0.1.0"
+description = "Minimal, educational Nicheformer-style PoC: synthetic tissue with ground-truth niches, rank-token transformer, neighbor-aggregation models, spatial block CV."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib>=3.9",
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "torch>=2.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.0,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]

@@ -22,6 +22,13 @@ Entry format:
 - **Open questions**: does `<cls>` encode depth or the number of nonzero genes instead of cell type? Does GEPC matter?
 - **Next**: an E2.1b diagnostic regression and a GEP-only ablation, then the full E2.1 with real checkpoints and donor splits.
 
+## 2026-11-25: E5.1 niche context (nicheformer-mini)
+
+- **Did**: read Nicheformer ([note](./02-paper-notes/nicheformer.md)). Built [`nicheformer-mini/`](./nicheformer-mini/): a synthetic tumor section with known niches and spillover, ridge/neighbor-aggregation models and a rank-token mini transformer. Ran [E5.1](./04-experiments/E5.1-niche-context.md) with spatial block CV on 3 seeds. All 4 pre-registered criteria pass: IFN R² gain +0.12 at the border vs +0.05 far away; shuffled neighbors and housekeeping genes gain nothing.
+- **Learned**: cell type alone predicts neighborhood composition with R² 0.36, so it is the baseline to beat. The mini transformer (0.48) matched but did not beat ridge (0.49). Neighbor features that don't encode depth miss the hypoxic core.
+- **Open questions**: how large are spillover and spatial leakage on real MERFISH/Xenium? Does pretraining (not tested) make rank tokens worth it?
+- **Next**: run the harness on a public MERFISH/Xenium tumor section, then E5.2.
+
 ## 2026-11-25: E0.2 TF knockout targets (Perturb-seq, Dixit 2016)
 
 - **Did**: picked one driving paper per phase ([paper selection](./04-experiments/_paper-selection/paper-selection.md)). Read Dixit 2016 ([note](./02-paper-notes/perturb-seq-dixit-2016.md)), built [`perturbseq-mini/`](./perturbseq-mini/) (MIMOSCA-style ridge + expression-matched target-set test), and ran [E0.2](./04-experiments/E0.2-tf-knockout-targets.md) on the paper's own K562 TF screen (GEO GSM2396858) with CollecTRI targets.
