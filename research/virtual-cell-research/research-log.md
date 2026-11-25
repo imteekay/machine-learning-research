@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-25: E4.5 scGen latent arithmetic on an unseen cell type
+
+- **Did**: read scGen ([note](./02-paper-notes/scgen.md)). Built [`scgen-mini/`](./scgen-mini/) (VAE + baselines + Systema-style residuals, 5 tests) and ran [E4.5](./04-experiments/E4.5-scgen-unseen-cell-type.md) on Kang 2018 PBMC IFN-β (GEO), holding out CD4 T, B and CD14 Mono, 3 seeds.
+- **Learned**: H1–H3 supported. The VAE beats the gene-space shift (R² top-100: 0.96/0.97/0.64 vs 0.87/0.92/0.33) and keeps a residual correlation of ~0.8 after removing the shared response; negative controls sit at no-change level. The shared ISG program explains 70–84% of each type's Δ, but amplitude differs 2.4× (monocytes respond hardest), so a plain subtract-the-generic residual also rewards amplitude: project it out instead. The VAE decoder smooths cells and loses on energy distance for lymphocytes.
+- **Open questions**: is the monocyte skill just borrowed from FCGR3A Mono/DCs in training? Would it survive holding out a whole lineage or a donor?
+- **Next**: lineage-level and donor-level holdouts; reuse the harness for E4.1's unseen-context arm.
+
 ## 2026-11-25: E3.1 ATAC regulatory info + get-mini (GET PoC)
 
 - **Did**: read GET ([note](./02-paper-notes/get-general-expression-transformer.md)). Built [`get-mini/`](./get-mini/): 10x Multiome PBMC 3k loader, EDA, metacells, ridge baselines, TinyGET with region tokens. Ran [E3.1](./04-experiments/E3.1-atac-regulatory-info.md) with 3 seeds plus a synthetic positive control.
