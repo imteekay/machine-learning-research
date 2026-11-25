@@ -1,0 +1,1534 @@
+{
+ "config": {
+  "seeds": [
+   0
+  ],
+  "n_cells": 1500,
+  "epochs": 4,
+  "runtime_s": 9.5
+ },
+ "summary": {
+  "spillover=0.0": {
+   "border (<0.05)|IFN|gain_niche_vs_intrinsic": {
+    "mean": 0.12404212103331533,
+    "sd": 0.0,
+    "per_seed": [
+     0.124
+    ]
+   },
+   "border (<0.05)|IFN|gain_shuffled_vs_intrinsic": {
+    "mean": -0.026538008571958573,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0265
+    ]
+   },
+   "border (<0.05)|hypoxia|gain_niche_vs_intrinsic": {
+    "mean": 0.020249054865486282,
+    "sd": 0.0,
+    "per_seed": [
+     0.0202
+    ]
+   },
+   "border (<0.05)|hypoxia|gain_shuffled_vs_intrinsic": {
+    "mean": -0.02730325606584688,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0273
+    ]
+   },
+   "border (<0.05)|housekeeping|gain_niche_vs_intrinsic": {
+    "mean": -0.026340774598942292,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0263
+    ]
+   },
+   "border (<0.05)|housekeeping|gain_shuffled_vs_intrinsic": {
+    "mean": -0.023216599883783298,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0232
+    ]
+   },
+   "mid (0.05-0.12)|IFN|gain_niche_vs_intrinsic": {
+    "mean": 0.10689850312038275,
+    "sd": 0.0,
+    "per_seed": [
+     0.1069
+    ]
+   },
+   "mid (0.05-0.12)|IFN|gain_shuffled_vs_intrinsic": {
+    "mean": -0.022356302554066593,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0224
+    ]
+   },
+   "mid (0.05-0.12)|hypoxia|gain_niche_vs_intrinsic": {
+    "mean": -0.018797837943358264,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0188
+    ]
+   },
+   "mid (0.05-0.12)|hypoxia|gain_shuffled_vs_intrinsic": {
+    "mean": -0.016167586038691756,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0162
+    ]
+   },
+   "mid (0.05-0.12)|housekeeping|gain_niche_vs_intrinsic": {
+    "mean": -0.007094437497543793,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0071
+    ]
+   },
+   "mid (0.05-0.12)|housekeeping|gain_shuffled_vs_intrinsic": {
+    "mean": -0.014350760178270174,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0144
+    ]
+   },
+   "far (>0.12)|IFN|gain_niche_vs_intrinsic": {
+    "mean": 0.06019253883239576,
+    "sd": 0.0,
+    "per_seed": [
+     0.0602
+    ]
+   },
+   "far (>0.12)|IFN|gain_shuffled_vs_intrinsic": {
+    "mean": -0.019841944440849114,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0198
+    ]
+   },
+   "far (>0.12)|hypoxia|gain_niche_vs_intrinsic": {
+    "mean": 0.03257023197931122,
+    "sd": 0.0,
+    "per_seed": [
+     0.0326
+    ]
+   },
+   "far (>0.12)|hypoxia|gain_shuffled_vs_intrinsic": {
+    "mean": -0.0066992784514465775,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0067
+    ]
+   },
+   "far (>0.12)|housekeeping|gain_niche_vs_intrinsic": {
+    "mean": -0.021291019994425488,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0213
+    ]
+   },
+   "far (>0.12)|housekeeping|gain_shuffled_vs_intrinsic": {
+    "mean": -0.012072862975493082,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0121
+    ]
+   },
+   "overall|IFN|celltype_mean|block_cv": {
+    "mean": 0.006751950654375079,
+    "sd": 0.0,
+    "per_seed": [
+     0.0068
+    ]
+   },
+   "overall|IFN|celltype_mean|random_cv": {
+    "mean": 0.013551062564132577,
+    "sd": 0.0,
+    "per_seed": [
+     0.0136
+    ]
+   },
+   "overall|IFN|intrinsic|block_cv": {
+    "mean": 0.06252624398245553,
+    "sd": 0.0,
+    "per_seed": [
+     0.0625
+    ]
+   },
+   "overall|IFN|intrinsic|random_cv": {
+    "mean": 0.06884587213252402,
+    "sd": 0.0,
+    "per_seed": [
+     0.0688
+    ]
+   },
+   "overall|IFN|niche|block_cv": {
+    "mean": 0.1486249822581123,
+    "sd": 0.0,
+    "per_seed": [
+     0.1486
+    ]
+   },
+   "overall|IFN|niche|random_cv": {
+    "mean": 0.15236267215282712,
+    "sd": 0.0,
+    "per_seed": [
+     0.1524
+    ]
+   },
+   "overall|IFN|niche_shuffled|block_cv": {
+    "mean": 0.040822415781593346,
+    "sd": 0.0,
+    "per_seed": [
+     0.0408
+    ]
+   },
+   "overall|IFN|niche_shuffled|random_cv": {
+    "mean": 0.052208192270911745,
+    "sd": 0.0,
+    "per_seed": [
+     0.0522
+    ]
+   },
+   "overall|hypoxia|celltype_mean|block_cv": {
+    "mean": 0.06607634720998168,
+    "sd": 0.0,
+    "per_seed": [
+     0.0661
+    ]
+   },
+   "overall|hypoxia|celltype_mean|random_cv": {
+    "mean": 0.07379418433815352,
+    "sd": 0.0,
+    "per_seed": [
+     0.0738
+    ]
+   },
+   "overall|hypoxia|intrinsic|block_cv": {
+    "mean": 0.05829607787333943,
+    "sd": 0.0,
+    "per_seed": [
+     0.0583
+    ]
+   },
+   "overall|hypoxia|intrinsic|random_cv": {
+    "mean": 0.06475230290472714,
+    "sd": 0.0,
+    "per_seed": [
+     0.0648
+    ]
+   },
+   "overall|hypoxia|niche|block_cv": {
+    "mean": 0.0749741842953619,
+    "sd": 0.0,
+    "per_seed": [
+     0.075
+    ]
+   },
+   "overall|hypoxia|niche|random_cv": {
+    "mean": 0.09478802100344041,
+    "sd": 0.0,
+    "per_seed": [
+     0.0948
+    ]
+   },
+   "overall|hypoxia|niche_shuffled|block_cv": {
+    "mean": 0.04590081062972173,
+    "sd": 0.0,
+    "per_seed": [
+     0.0459
+    ]
+   },
+   "overall|hypoxia|niche_shuffled|random_cv": {
+    "mean": 0.05112555576868033,
+    "sd": 0.0,
+    "per_seed": [
+     0.0511
+    ]
+   },
+   "overall|housekeeping|celltype_mean|block_cv": {
+    "mean": -0.0042979699935956185,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0043
+    ]
+   },
+   "overall|housekeeping|celltype_mean|random_cv": {
+    "mean": -0.0025344735640427498,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0025
+    ]
+   },
+   "overall|housekeeping|intrinsic|block_cv": {
+    "mean": -0.019336009969111556,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0193
+    ]
+   },
+   "overall|housekeeping|intrinsic|random_cv": {
+    "mean": -0.015511855723056467,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0155
+    ]
+   },
+   "overall|housekeeping|niche|block_cv": {
+    "mean": -0.03747318082278903,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0375
+    ]
+   },
+   "overall|housekeeping|niche|random_cv": {
+    "mean": -0.030578698654253243,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0306
+    ]
+   },
+   "overall|housekeeping|niche_shuffled|block_cv": {
+    "mean": -0.034044632767700735,
+    "sd": 0.0,
+    "per_seed": [
+     -0.034
+    ]
+   },
+   "overall|housekeeping|niche_shuffled|random_cv": {
+    "mean": -0.03200982005749779,
+    "sd": 0.0,
+    "per_seed": [
+     -0.032
+    ]
+   }
+  },
+  "spillover=0.15": {
+   "border (<0.05)|IFN|gain_niche_vs_intrinsic": {
+    "mean": 0.13401357298813876,
+    "sd": 0.0,
+    "per_seed": [
+     0.134
+    ]
+   },
+   "border (<0.05)|IFN|gain_shuffled_vs_intrinsic": {
+    "mean": -0.020314815340553682,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0203
+    ]
+   },
+   "border (<0.05)|hypoxia|gain_niche_vs_intrinsic": {
+    "mean": 0.06556754713497104,
+    "sd": 0.0,
+    "per_seed": [
+     0.0656
+    ]
+   },
+   "border (<0.05)|hypoxia|gain_shuffled_vs_intrinsic": {
+    "mean": -0.01573008627470346,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0157
+    ]
+   },
+   "border (<0.05)|housekeeping|gain_niche_vs_intrinsic": {
+    "mean": -0.014314557123184968,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0143
+    ]
+   },
+   "border (<0.05)|housekeeping|gain_shuffled_vs_intrinsic": {
+    "mean": -0.021523900431140212,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0215
+    ]
+   },
+   "mid (0.05-0.12)|IFN|gain_niche_vs_intrinsic": {
+    "mean": 0.12220488935510916,
+    "sd": 0.0,
+    "per_seed": [
+     0.1222
+    ]
+   },
+   "mid (0.05-0.12)|IFN|gain_shuffled_vs_intrinsic": {
+    "mean": -0.015226682515582096,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0152
+    ]
+   },
+   "mid (0.05-0.12)|hypoxia|gain_niche_vs_intrinsic": {
+    "mean": 0.012170101577399783,
+    "sd": 0.0,
+    "per_seed": [
+     0.0122
+    ]
+   },
+   "mid (0.05-0.12)|hypoxia|gain_shuffled_vs_intrinsic": {
+    "mean": -0.012836545674029698,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0128
+    ]
+   },
+   "mid (0.05-0.12)|housekeeping|gain_niche_vs_intrinsic": {
+    "mean": -0.012539002123969767,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0125
+    ]
+   },
+   "mid (0.05-0.12)|housekeeping|gain_shuffled_vs_intrinsic": {
+    "mean": -0.023477672904619773,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0235
+    ]
+   },
+   "far (>0.12)|IFN|gain_niche_vs_intrinsic": {
+    "mean": 0.0933178639165118,
+    "sd": 0.0,
+    "per_seed": [
+     0.0933
+    ]
+   },
+   "far (>0.12)|IFN|gain_shuffled_vs_intrinsic": {
+    "mean": -0.0193244162458448,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0193
+    ]
+   },
+   "far (>0.12)|hypoxia|gain_niche_vs_intrinsic": {
+    "mean": 0.03845044721745866,
+    "sd": 0.0,
+    "per_seed": [
+     0.0385
+    ]
+   },
+   "far (>0.12)|hypoxia|gain_shuffled_vs_intrinsic": {
+    "mean": -0.009985067887109289,
+    "sd": 0.0,
+    "per_seed": [
+     -0.01
+    ]
+   },
+   "far (>0.12)|housekeeping|gain_niche_vs_intrinsic": {
+    "mean": -0.010937904729893998,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0109
+    ]
+   },
+   "far (>0.12)|housekeeping|gain_shuffled_vs_intrinsic": {
+    "mean": -0.01786276785578165,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0179
+    ]
+   },
+   "overall|IFN|celltype_mean|block_cv": {
+    "mean": 0.007271129677357269,
+    "sd": 0.0,
+    "per_seed": [
+     0.0073
+    ]
+   },
+   "overall|IFN|celltype_mean|random_cv": {
+    "mean": 0.014201507744964184,
+    "sd": 0.0,
+    "per_seed": [
+     0.0142
+    ]
+   },
+   "overall|IFN|intrinsic|block_cv": {
+    "mean": 0.054233406057783505,
+    "sd": 0.0,
+    "per_seed": [
+     0.0542
+    ]
+   },
+   "overall|IFN|intrinsic|random_cv": {
+    "mean": 0.0620055070679417,
+    "sd": 0.0,
+    "per_seed": [
+     0.062
+    ]
+   },
+   "overall|IFN|niche|block_cv": {
+    "mean": 0.16311972297416852,
+    "sd": 0.0,
+    "per_seed": [
+     0.1631
+    ]
+   },
+   "overall|IFN|niche|random_cv": {
+    "mean": 0.17170356596691186,
+    "sd": 0.0,
+    "per_seed": [
+     0.1717
+    ]
+   },
+   "overall|IFN|niche_shuffled|block_cv": {
+    "mean": 0.03613753632107747,
+    "sd": 0.0,
+    "per_seed": [
+     0.0361
+    ]
+   },
+   "overall|IFN|niche_shuffled|random_cv": {
+    "mean": 0.04515161759902921,
+    "sd": 0.0,
+    "per_seed": [
+     0.0452
+    ]
+   },
+   "overall|hypoxia|celltype_mean|block_cv": {
+    "mean": 0.04702028972980207,
+    "sd": 0.0,
+    "per_seed": [
+     0.047
+    ]
+   },
+   "overall|hypoxia|celltype_mean|random_cv": {
+    "mean": 0.05650290250377493,
+    "sd": 0.0,
+    "per_seed": [
+     0.0565
+    ]
+   },
+   "overall|hypoxia|intrinsic|block_cv": {
+    "mean": 0.02986238414402287,
+    "sd": 0.0,
+    "per_seed": [
+     0.0299
+    ]
+   },
+   "overall|hypoxia|intrinsic|random_cv": {
+    "mean": 0.05056484382659249,
+    "sd": 0.0,
+    "per_seed": [
+     0.0506
+    ]
+   },
+   "overall|hypoxia|niche|block_cv": {
+    "mean": 0.06429389199482924,
+    "sd": 0.0,
+    "per_seed": [
+     0.0643
+    ]
+   },
+   "overall|hypoxia|niche|random_cv": {
+    "mean": 0.09168153858504596,
+    "sd": 0.0,
+    "per_seed": [
+     0.0917
+    ]
+   },
+   "overall|hypoxia|niche_shuffled|block_cv": {
+    "mean": 0.018220935273925515,
+    "sd": 0.0,
+    "per_seed": [
+     0.0182
+    ]
+   },
+   "overall|hypoxia|niche_shuffled|random_cv": {
+    "mean": 0.03826971441527449,
+    "sd": 0.0,
+    "per_seed": [
+     0.0383
+    ]
+   },
+   "overall|housekeeping|celltype_mean|block_cv": {
+    "mean": -0.0043567769737610455,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0044
+    ]
+   },
+   "overall|housekeeping|celltype_mean|random_cv": {
+    "mean": -0.0038995310954980655,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0039
+    ]
+   },
+   "overall|housekeeping|intrinsic|block_cv": {
+    "mean": -0.019732654545684715,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0197
+    ]
+   },
+   "overall|housekeeping|intrinsic|random_cv": {
+    "mean": -0.016375779610682862,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0164
+    ]
+   },
+   "overall|housekeeping|niche|block_cv": {
+    "mean": -0.031730593607169455,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0317
+    ]
+   },
+   "overall|housekeeping|niche|random_cv": {
+    "mean": -0.026947785273298906,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0269
+    ]
+   },
+   "overall|housekeeping|niche_shuffled|block_cv": {
+    "mean": -0.03950893424250244,
+    "sd": 0.0,
+    "per_seed": [
+     -0.0395
+    ]
+   },
+   "overall|housekeeping|niche_shuffled|random_cv": {
+    "mean": -0.034960625557898584,
+    "sd": 0.0,
+    "per_seed": [
+     -0.035
+    ]
+   }
+  },
+  "niche_composition": {
+   "celltype_mean": {
+    "mean_r2": {
+     "mean": 0.33378770794117474,
+     "sd": 0.0,
+     "per_seed": [
+      0.3338
+     ]
+    },
+    "r2_tumor": {
+     "mean": 0.6656976484554664,
+     "sd": 0.0,
+     "per_seed": [
+      0.6657
+     ]
+    },
+    "r2_T_cell": {
+     "mean": 0.019487398642295872,
+     "sd": 0.0,
+     "per_seed": [
+      0.0195
+     ]
+    },
+    "r2_fibroblast": {
+     "mean": 0.5104761637390027,
+     "sd": 0.0,
+     "per_seed": [
+      0.5105
+     ]
+    },
+    "r2_macrophage": {
+     "mean": 0.13948962092793393,
+     "sd": 0.0,
+     "per_seed": [
+      0.1395
+     ]
+    }
+   },
+   "ridge_expression": {
+    "mean_r2": {
+     "mean": 0.48602689789278464,
+     "sd": 0.0,
+     "per_seed": [
+      0.486
+     ]
+    },
+    "r2_tumor": {
+     "mean": 0.7220703569282685,
+     "sd": 0.0,
+     "per_seed": [
+      0.7221
+     ]
+    },
+    "r2_T_cell": {
+     "mean": 0.4777285881803338,
+     "sd": 0.0,
+     "per_seed": [
+      0.4777
+     ]
+    },
+    "r2_fibroblast": {
+     "mean": 0.5695198584956295,
+     "sd": 0.0,
+     "per_seed": [
+      0.5695
+     ]
+    },
+    "r2_macrophage": {
+     "mean": 0.1747887879669069,
+     "sd": 0.0,
+     "per_seed": [
+      0.1748
+     ]
+    }
+   },
+   "mini_nicheformer": {
+    "mean_r2": {
+     "mean": 0.3802882663268774,
+     "sd": 0.0,
+     "per_seed": [
+      0.3803
+     ]
+    },
+    "r2_tumor": {
+     "mean": 0.6708662739138473,
+     "sd": 0.0,
+     "per_seed": [
+      0.6709
+     ]
+    },
+    "r2_T_cell": {
+     "mean": 0.18845090354133598,
+     "sd": 0.0,
+     "per_seed": [
+      0.1885
+     ]
+    },
+    "r2_fibroblast": {
+     "mean": 0.5270078298470225,
+     "sd": 0.0,
+     "per_seed": [
+      0.527
+     ]
+    },
+    "r2_macrophage": {
+     "mean": 0.13482805800530395,
+     "sd": 0.0,
+     "per_seed": [
+      0.1348
+     ]
+    }
+   },
+   "mini_nicheformer_shuffled_target": {
+    "mean_r2": {
+     "mean": -0.07263905831992395,
+     "sd": 0.0,
+     "per_seed": [
+      -0.0726
+     ]
+    },
+    "r2_tumor": {
+     "mean": -0.10001324300973291,
+     "sd": 0.0,
+     "per_seed": [
+      -0.1
+     ]
+    },
+    "r2_T_cell": {
+     "mean": -0.007377475892004215,
+     "sd": 0.0,
+     "per_seed": [
+      -0.0074
+     ]
+    },
+    "r2_fibroblast": {
+     "mean": -0.18308508186920092,
+     "sd": 0.0,
+     "per_seed": [
+      -0.1831
+     ]
+    },
+    "r2_macrophage": {
+     "mean": -8.04325087577773e-05,
+     "sd": 0.0,
+     "per_seed": [
+      -0.0001
+     ]
+    }
+   }
+  }
+ },
+ "runs": [
+  {
+   "seed": 0,
+   "spillover": 0.0,
+   "expression_block_cv": {
+    "overall": {
+     "celltype_mean": {
+      "IFN": 0.006751950654375079,
+      "hypoxia": 0.06607634720998168,
+      "housekeeping": -0.0042979699935956185
+     },
+     "intrinsic": {
+      "IFN": 0.06252624398245553,
+      "hypoxia": 0.05829607787333943,
+      "housekeeping": -0.019336009969111556
+     },
+     "niche": {
+      "IFN": 0.1486249822581123,
+      "hypoxia": 0.0749741842953619,
+      "housekeeping": -0.03747318082278903
+     },
+     "niche_shuffled": {
+      "IFN": 0.040822415781593346,
+      "hypoxia": 0.04590081062972173,
+      "housekeeping": -0.034044632767700735
+     }
+    },
+    "by_bin": {
+     "border (<0.05)": {
+      "n_cells": 274,
+      "celltype_mean": {
+       "IFN": -0.021325845642942192,
+       "hypoxia": -0.17398677367983784,
+       "housekeeping": -0.0033045247604758243
+      },
+      "intrinsic": {
+       "IFN": 0.07348528304640789,
+       "hypoxia": -0.18558692028502816,
+       "housekeeping": -0.02278791920625155
+      },
+      "niche": {
+       "IFN": 0.19752740407972322,
+       "hypoxia": -0.16533786541954187,
+       "housekeeping": -0.04912869380519384
+      },
+      "niche_shuffled": {
+       "IFN": 0.04694727447444932,
+       "hypoxia": -0.21289017635087504,
+       "housekeeping": -0.04600451909003485
+      }
+     },
+     "mid (0.05-0.12)": {
+      "n_cells": 402,
+      "celltype_mean": {
+       "IFN": 0.028306569112684532,
+       "hypoxia": 0.08237206345444564,
+       "housekeeping": -0.006424567613201737
+      },
+      "intrinsic": {
+       "IFN": 0.10855570880303735,
+       "hypoxia": 0.06682850548771807,
+       "housekeeping": -0.02082159351204429
+      },
+      "niche": {
+       "IFN": 0.2154542119234201,
+       "hypoxia": 0.048030667544359806,
+       "housekeeping": -0.02791603100958808
+      },
+      "niche_shuffled": {
+       "IFN": 0.08619940624897075,
+       "hypoxia": 0.050660919449026315,
+       "housekeeping": -0.03517235369031446
+      }
+     },
+     "far (>0.12)": {
+      "n_cells": 824,
+      "celltype_mean": {
+       "IFN": -0.013245468940019581,
+       "hypoxia": 0.11389581254267866,
+       "housekeeping": -0.005089259197679885
+      },
+      "intrinsic": {
+       "IFN": 0.013668402318133191,
+       "hypoxia": 0.11089947793299279,
+       "housekeeping": -0.01907091512584127
+      },
+      "niche": {
+       "IFN": 0.07386094115052895,
+       "hypoxia": 0.143469709912304,
+       "housekeeping": -0.040361935120266756
+      },
+      "niche_shuffled": {
+       "IFN": -0.006173542122715925,
+       "hypoxia": 0.10420019948154621,
+       "housekeeping": -0.03114377810133435
+      }
+     }
+    },
+    "per_gene_r2": {
+     "celltype_mean": {
+      "STAT1": 0.0067,
+      "IRF1": 0.001,
+      "CXCL9": 0.0133,
+      "CXCL10": 0.0118,
+      "GBP1": -0.0089,
+      "B2M": 0.0165,
+      "CA9": 0.084,
+      "VEGFA": 0.0818,
+      "SLC2A1": 0.0352,
+      "LDHA": 0.0633,
+      "HK00": -0.0029,
+      "HK01": -0.0017,
+      "HK02": -0.0081,
+      "HK03": -0.0073,
+      "HK04": 0.001,
+      "HK05": 0.0016,
+      "HK06": -0.0062,
+      "HK07": -0.004,
+      "HK08": -0.0086,
+      "HK09": -0.007
+     },
+     "intrinsic": {
+      "STAT1": 0.0607,
+      "IRF1": 0.0737,
+      "CXCL9": 0.055,
+      "CXCL10": 0.0605,
+      "GBP1": 0.0328,
+      "B2M": 0.0926,
+      "CA9": 0.0714,
+      "VEGFA": 0.0681,
+      "SLC2A1": 0.0377,
+      "LDHA": 0.0559,
+      "HK00": -0.0091,
+      "HK01": -0.0185,
+      "HK02": -0.0211,
+      "HK03": -0.0255,
+      "HK04": -0.0118,
+      "HK05": -0.0163,
+      "HK06": -0.0129,
+      "HK07": -0.0187,
+      "HK08": -0.0226,
+      "HK09": -0.0368
+     },
+     "niche": {
+      "STAT1": 0.1322,
+      "IRF1": 0.1426,
+      "CXCL9": 0.1308,
+      "CXCL10": 0.1604,
+      "GBP1": 0.1352,
+      "B2M": 0.1905,
+      "CA9": 0.0758,
+      "VEGFA": 0.0914,
+      "SLC2A1": 0.0726,
+      "LDHA": 0.06,
+      "HK00": -0.0282,
+      "HK01": -0.035,
+      "HK02": -0.0413,
+      "HK03": -0.0616,
+      "HK04": -0.0151,
+      "HK05": -0.0327,
+      "HK06": -0.0266,
+      "HK07": -0.0301,
+      "HK08": -0.0464,
+      "HK09": -0.0576
+     },
+     "niche_shuffled": {
+      "STAT1": 0.0345,
+      "IRF1": 0.0603,
+      "CXCL9": 0.0244,
+      "CXCL10": 0.0337,
+      "GBP1": 0.0104,
+      "B2M": 0.0816,
+      "CA9": 0.0549,
+      "VEGFA": 0.0527,
+      "SLC2A1": 0.0272,
+      "LDHA": 0.0488,
+      "HK00": -0.0387,
+      "HK01": -0.0275,
+      "HK02": -0.0229,
+      "HK03": -0.0345,
+      "HK04": -0.0377,
+      "HK05": -0.0275,
+      "HK06": -0.0381,
+      "HK07": -0.0331,
+      "HK08": -0.0359,
+      "HK09": -0.0445
+     }
+    }
+   },
+   "expression_random_cv": {
+    "overall": {
+     "celltype_mean": {
+      "IFN": 0.013551062564132577,
+      "hypoxia": 0.07379418433815352,
+      "housekeeping": -0.0025344735640427498
+     },
+     "intrinsic": {
+      "IFN": 0.06884587213252402,
+      "hypoxia": 0.06475230290472714,
+      "housekeeping": -0.015511855723056467
+     },
+     "niche": {
+      "IFN": 0.15236267215282712,
+      "hypoxia": 0.09478802100344041,
+      "housekeeping": -0.030578698654253243
+     },
+     "niche_shuffled": {
+      "IFN": 0.052208192270911745,
+      "hypoxia": 0.05112555576868033,
+      "housekeeping": -0.03200982005749779
+     }
+    },
+    "by_bin": {
+     "border (<0.05)": {
+      "n_cells": 274,
+      "celltype_mean": {
+       "IFN": -0.018895241116935708,
+       "hypoxia": -0.19865266369345264,
+       "housekeeping": -0.0029261279066000513
+      },
+      "intrinsic": {
+       "IFN": 0.08019198842911006,
+       "hypoxia": -0.21280384707723077,
+       "housekeeping": -0.016738906020289455
+      },
+      "niche": {
+       "IFN": 0.20551071231665521,
+       "hypoxia": -0.15269514627571407,
+       "housekeeping": -0.038154918617133896
+      },
+      "niche_shuffled": {
+       "IFN": 0.06033054797079862,
+       "hypoxia": -0.23285536085114028,
+       "housekeeping": -0.0417627205249053
+      }
+     },
+     "mid (0.05-0.12)": {
+      "n_cells": 402,
+      "celltype_mean": {
+       "IFN": 0.03749309943148351,
+       "hypoxia": 0.09108006187922488,
+       "housekeeping": -0.004440928359205431
+      },
+      "intrinsic": {
+       "IFN": 0.11584543251396039,
+       "hypoxia": 0.06986729798845542,
+       "housekeeping": -0.016357869516088298
+      },
+      "niche": {
+       "IFN": 0.21559057672209583,
+       "hypoxia": 0.06426679536505617,
+       "housekeeping": -0.021429980021664973
+      },
+      "niche_shuffled": {
+       "IFN": 0.0985365226091947,
+       "hypoxia": 0.05661185908033087,
+       "housekeeping": -0.029506545034575993
+      }
+     },
+     "far (>0.12)": {
+      "n_cells": 824,
+      "celltype_mean": {
+       "IFN": -0.006017189350658092,
+       "hypoxia": 0.1299303037795972,
+       "housekeeping": -0.0029149861065724592
+      },
+      "intrinsic": {
+       "IFN": 0.01926762164185451,
+       "hypoxia": 0.12805125763314384,
+       "housekeeping": -0.01606497874310122
+      },
+      "niche": {
+       "IFN": 0.07795182873434565,
+       "hypoxia": 0.16711465842926476,
+       "housekeeping": -0.034377123115144695
+      },
+      "niche_shuffled": {
+       "IFN": 0.003848154003018763,
+       "hypoxia": 0.11566269484644306,
+       "housekeeping": -0.03152109317266545
+      }
+     }
+    },
+    "per_gene_r2": {
+     "celltype_mean": {
+      "STAT1": 0.0123,
+      "IRF1": 0.0103,
+      "CXCL9": 0.0115,
+      "CXCL10": 0.0183,
+      "GBP1": 0.003,
+      "B2M": 0.0259,
+      "CA9": 0.0882,
+      "VEGFA": 0.0902,
+      "SLC2A1": 0.0509,
+      "LDHA": 0.0659,
+      "HK00": 0.0004,
+      "HK01": -0.0021,
+      "HK02": -0.0049,
+      "HK03": -0.0053,
+      "HK04": 0.0028,
+      "HK05": 0.0014,
+      "HK06": -0.0043,
+      "HK07": -0.002,
+      "HK08": -0.0049,
+      "HK09": -0.0063
+     },
+     "intrinsic": {
+      "STAT1": 0.063,
+      "IRF1": 0.0824,
+      "CXCL9": 0.0617,
+      "CXCL10": 0.0551,
+      "GBP1": 0.054,
+      "B2M": 0.0969,
+      "CA9": 0.0819,
+      "VEGFA": 0.0742,
+      "SLC2A1": 0.054,
+      "LDHA": 0.0488,
+      "HK00": -0.0182,
+      "HK01": -0.0215,
+      "HK02": -0.0167,
+      "HK03": -0.0094,
+      "HK04": -0.0172,
+      "HK05": -0.0106,
+      "HK06": -0.0215,
+      "HK07": -0.014,
+      "HK08": -0.0138,
+      "HK09": -0.0123
+     },
+     "niche": {
+      "STAT1": 0.1325,
+      "IRF1": 0.1565,
+      "CXCL9": 0.1329,
+      "CXCL10": 0.1515,
+      "GBP1": 0.1404,
+      "B2M": 0.2003,
+      "CA9": 0.1095,
+      "VEGFA": 0.1118,
+      "SLC2A1": 0.1,
+      "LDHA": 0.0578,
+      "HK00": -0.0397,
+      "HK01": -0.0329,
+      "HK02": -0.0391,
+      "HK03": -0.019,
+      "HK04": -0.0131,
+      "HK05": -0.0262,
+      "HK06": -0.0349,
+      "HK07": -0.0329,
+      "HK08": -0.0327,
+      "HK09": -0.0353
+     },
+     "niche_shuffled": {
+      "STAT1": 0.0365,
+      "IRF1": 0.0707,
+      "CXCL9": 0.0422,
+      "CXCL10": 0.0357,
+      "GBP1": 0.0431,
+      "B2M": 0.0851,
+      "CA9": 0.0643,
+      "VEGFA": 0.0611,
+      "SLC2A1": 0.0485,
+      "LDHA": 0.0307,
+      "HK00": -0.0381,
+      "HK01": -0.0355,
+      "HK02": -0.0105,
+      "HK03": -0.0377,
+      "HK04": -0.0358,
+      "HK05": -0.0219,
+      "HK06": -0.0475,
+      "HK07": -0.0329,
+      "HK08": -0.0337,
+      "HK09": -0.0266
+     }
+    }
+   }
+  },
+  {
+   "seed": 0,
+   "spillover": 0.15,
+   "expression_block_cv": {
+    "overall": {
+     "celltype_mean": {
+      "IFN": 0.007271129677357269,
+      "hypoxia": 0.04702028972980207,
+      "housekeeping": -0.0043567769737610455
+     },
+     "intrinsic": {
+      "IFN": 0.054233406057783505,
+      "hypoxia": 0.02986238414402287,
+      "housekeeping": -0.019732654545684715
+     },
+     "niche": {
+      "IFN": 0.16311972297416852,
+      "hypoxia": 0.06429389199482924,
+      "housekeeping": -0.031730593607169455
+     },
+     "niche_shuffled": {
+      "IFN": 0.03613753632107747,
+      "hypoxia": 0.018220935273925515,
+      "housekeeping": -0.03950893424250244
+     }
+    },
+    "by_bin": {
+     "border (<0.05)": {
+      "n_cells": 274,
+      "celltype_mean": {
+       "IFN": -0.014326138350712688,
+       "hypoxia": -0.20032172866154468,
+       "housekeeping": -0.009816888444646222
+      },
+      "intrinsic": {
+       "IFN": 0.08957040392702904,
+       "hypoxia": -0.21675146334594725,
+       "housekeeping": -0.021413365311595843
+      },
+      "niche": {
+       "IFN": 0.22358397691516782,
+       "hypoxia": -0.1511839162109762,
+       "housekeeping": -0.03572792243478081
+      },
+      "niche_shuffled": {
+       "IFN": 0.06925558858647536,
+       "hypoxia": -0.2324815496206507,
+       "housekeeping": -0.042937265742736055
+      }
+     },
+     "mid (0.05-0.12)": {
+      "n_cells": 402,
+      "celltype_mean": {
+       "IFN": 0.02568644392980331,
+       "hypoxia": 0.06954317520869974,
+       "housekeeping": -0.0054095503858707875
+      },
+      "intrinsic": {
+       "IFN": 0.09993707959318583,
+       "hypoxia": 0.04590907634500713,
+       "housekeeping": -0.013754546780320865
+      },
+      "niche": {
+       "IFN": 0.222141968948295,
+       "hypoxia": 0.05807917792240691,
+       "housekeeping": -0.026293548904290632
+      },
+      "niche_shuffled": {
+       "IFN": 0.08471039707760374,
+       "hypoxia": 0.03307253067097743,
+       "housekeeping": -0.037232219684940636
+      }
+     },
+     "far (>0.12)": {
+      "n_cells": 824,
+      "celltype_mean": {
+       "IFN": -0.013094980983215968,
+       "hypoxia": 0.08387674346579346,
+       "housekeeping": -0.004781618534919596
+      },
+      "intrinsic": {
+       "IFN": -0.003571109138528187,
+       "hypoxia": 0.06919134520829806,
+       "housekeeping": -0.025397265236587606
+      },
+      "niche": {
+       "IFN": 0.0897467547779836,
+       "hypoxia": 0.10764179242575672,
+       "housekeeping": -0.036335169966481604
+      },
+      "niche_shuffled": {
+       "IFN": -0.022895525384372988,
+       "hypoxia": 0.05920627732118877,
+       "housekeeping": -0.043260033092369254
+      }
+     }
+    },
+    "per_gene_r2": {
+     "celltype_mean": {
+      "STAT1": 0.006,
+      "IRF1": 0.0147,
+      "CXCL9": 0.009,
+      "CXCL10": 0.0133,
+      "GBP1": 0.0008,
+      "B2M": -0.0002,
+      "CA9": 0.0552,
+      "VEGFA": 0.0401,
+      "SLC2A1": 0.0399,
+      "LDHA": 0.0528,
+      "HK00": -0.0075,
+      "HK01": -0.0068,
+      "HK02": -0.0048,
+      "HK03": -0.0027,
+      "HK04": -0.001,
+      "HK05": -0.0024,
+      "HK06": -0.001,
+      "HK07": -0.003,
+      "HK08": -0.0067,
+      "HK09": -0.0076
+     },
+     "intrinsic": {
+      "STAT1": 0.0715,
+      "IRF1": 0.0641,
+      "CXCL9": 0.0545,
+      "CXCL10": 0.0594,
+      "GBP1": 0.0177,
+      "B2M": 0.0582,
+      "CA9": 0.0338,
+      "VEGFA": 0.0285,
+      "SLC2A1": 0.0223,
+      "LDHA": 0.0348,
+      "HK00": -0.0238,
+      "HK01": -0.0218,
+      "HK02": -0.0145,
+      "HK03": -0.0094,
+      "HK04": -0.0208,
+      "HK05": -0.0262,
+      "HK06": -0.0181,
+      "HK07": -0.0165,
+      "HK08": -0.0268,
+      "HK09": -0.0193
+     },
+     "niche": {
+      "STAT1": 0.2217,
+      "IRF1": 0.143,
+      "CXCL9": 0.1517,
+      "CXCL10": 0.156,
+      "GBP1": 0.1127,
+      "B2M": 0.1937,
+      "CA9": 0.1038,
+      "VEGFA": 0.0513,
+      "SLC2A1": 0.0283,
+      "LDHA": 0.0738,
+      "HK00": -0.0343,
+      "HK01": -0.0419,
+      "HK02": -0.0318,
+      "HK03": -0.0172,
+      "HK04": -0.0385,
+      "HK05": -0.0376,
+      "HK06": -0.0261,
+      "HK07": -0.0229,
+      "HK08": -0.0346,
+      "HK09": -0.0324
+     },
+     "niche_shuffled": {
+      "STAT1": 0.0461,
+      "IRF1": 0.0474,
+      "CXCL9": 0.0364,
+      "CXCL10": 0.0389,
+      "GBP1": 0.0062,
+      "B2M": 0.0419,
+      "CA9": 0.0246,
+      "VEGFA": 0.0183,
+      "SLC2A1": 0.0035,
+      "LDHA": 0.0265,
+      "HK00": -0.0436,
+      "HK01": -0.0455,
+      "HK02": -0.0313,
+      "HK03": -0.0247,
+      "HK04": -0.0348,
+      "HK05": -0.056,
+      "HK06": -0.0424,
+      "HK07": -0.0436,
+      "HK08": -0.0395,
+      "HK09": -0.0338
+     }
+    }
+   },
+   "expression_random_cv": {
+    "overall": {
+     "celltype_mean": {
+      "IFN": 0.014201507744964184,
+      "hypoxia": 0.05650290250377493,
+      "housekeeping": -0.0038995310954980655
+     },
+     "intrinsic": {
+      "IFN": 0.0620055070679417,
+      "hypoxia": 0.05056484382659249,
+      "housekeeping": -0.016375779610682862
+     },
+     "niche": {
+      "IFN": 0.17170356596691186,
+      "hypoxia": 0.09168153858504596,
+      "housekeeping": -0.026947785273298906
+     },
+     "niche_shuffled": {
+      "IFN": 0.04515161759902921,
+      "hypoxia": 0.03826971441527449,
+      "housekeeping": -0.034960625557898584
+     }
+    },
+    "by_bin": {
+     "border (<0.05)": {
+      "n_cells": 274,
+      "celltype_mean": {
+       "IFN": -0.008505502466836642,
+       "hypoxia": -0.2421598299181077,
+       "housekeeping": -0.008181788542056378
+      },
+      "intrinsic": {
+       "IFN": 0.09127720840476562,
+       "hypoxia": -0.247601261756624,
+       "housekeeping": -0.015434455037304794
+      },
+      "niche": {
+       "IFN": 0.23213327971936107,
+       "hypoxia": -0.16054613180618726,
+       "housekeeping": -0.03569733178816623
+      },
+      "niche_shuffled": {
+       "IFN": 0.07662993637900568,
+       "hypoxia": -0.26918493943376925,
+       "housekeeping": -0.03547941374495132
+      }
+     },
+     "mid (0.05-0.12)": {
+      "n_cells": 402,
+      "celltype_mean": {
+       "IFN": 0.03442541733988286,
+       "hypoxia": 0.08176523923904225,
+       "housekeeping": -0.006293668168039834
+      },
+      "intrinsic": {
+       "IFN": 0.10869282636567977,
+       "hypoxia": 0.07125774733654655,
+       "housekeeping": -0.01806646234799387
+      },
+      "niche": {
+       "IFN": 0.23476905194793482,
+       "hypoxia": 0.08307820344735065,
+       "housekeeping": -0.026918171134587943
+      },
+      "niche_shuffled": {
+       "IFN": 0.0888447551848179,
+       "hypoxia": 0.06404865489147082,
+       "housekeeping": -0.04062721148209458
+      }
+     },
+     "far (>0.12)": {
+      "n_cells": 824,
+      "celltype_mean": {
+       "IFN": -0.006653396480605071,
+       "hypoxia": 0.10416482701865482,
+       "housekeeping": -0.004046544360535043
+      },
+      "intrinsic": {
+       "IFN": 0.00622770488320934,
+       "hypoxia": 0.09988386622722095,
+       "housekeeping": -0.01895405505550666
+      },
+      "niche": {
+       "IFN": 0.09610196938028864,
+       "hypoxia": 0.14492100797080748,
+       "housekeeping": -0.027149738507470288
+      },
+      "niche_shuffled": {
+       "IFN": -0.010333614292783197,
+       "hypoxia": 0.08721270984373125,
+       "housekeeping": -0.03523961094587624
+      }
+     }
+    },
+    "per_gene_r2": {
+     "celltype_mean": {
+      "STAT1": 0.0145,
+      "IRF1": 0.0204,
+      "CXCL9": 0.0124,
+      "CXCL10": 0.0215,
+      "GBP1": 0.0081,
+      "B2M": 0.0083,
+      "CA9": 0.0577,
+      "VEGFA": 0.0491,
+      "SLC2A1": 0.0599,
+      "LDHA": 0.0593,
+      "HK00": -0.004,
+      "HK01": -0.0008,
+      "HK02": -0.0064,
+      "HK03": -0.0085,
+      "HK04": 0.002,
+      "HK05": -0.0005,
+      "HK06": -0.0072,
+      "HK07": -0.0038,
+      "HK08": -0.0034,
+      "HK09": -0.0064
+     },
+     "intrinsic": {
+      "STAT1": 0.0742,
+      "IRF1": 0.0562,
+      "CXCL9": 0.0508,
+      "CXCL10": 0.0701,
+      "GBP1": 0.0411,
+      "B2M": 0.0797,
+      "CA9": 0.0548,
+      "VEGFA": 0.0474,
+      "SLC2A1": 0.0492,
+      "LDHA": 0.0508,
+      "HK00": -0.0213,
+      "HK01": -0.0186,
+      "HK02": 0.0014,
+      "HK03": -0.0259,
+      "HK04": -0.0006,
+      "HK05": -0.0217,
+      "HK06": -0.0187,
+      "HK07": -0.0107,
+      "HK08": -0.0265,
+      "HK09": -0.0212
+     },
+     "niche": {
+      "STAT1": 0.2163,
+      "IRF1": 0.1423,
+      "CXCL9": 0.1538,
+      "CXCL10": 0.1775,
+      "GBP1": 0.1355,
+      "B2M": 0.2048,
+      "CA9": 0.1228,
+      "VEGFA": 0.0872,
+      "SLC2A1": 0.064,
+      "LDHA": 0.0928,
+      "HK00": -0.0322,
+      "HK01": -0.0263,
+      "HK02": -0.0082,
+      "HK03": -0.0265,
+      "HK04": -0.0094,
+      "HK05": -0.04,
+      "HK06": -0.0367,
+      "HK07": -0.0267,
+      "HK08": -0.0402,
+      "HK09": -0.0233
+     },
+     "niche_shuffled": {
+      "STAT1": 0.0467,
+      "IRF1": 0.0377,
+      "CXCL9": 0.0371,
+      "CXCL10": 0.0554,
+      "GBP1": 0.0287,
+      "B2M": 0.0653,
+      "CA9": 0.0413,
+      "VEGFA": 0.0371,
+      "SLC2A1": 0.0324,
+      "LDHA": 0.0423,
+      "HK00": -0.0405,
+      "HK01": -0.0311,
+      "HK02": -0.0135,
+      "HK03": -0.0489,
+      "HK04": -0.0122,
+      "HK05": -0.045,
+      "HK06": -0.0449,
+      "HK07": -0.0314,
+      "HK08": -0.0354,
+      "HK09": -0.0467
+     }
+    }
+   },
+   "niche_composition": {
+    "celltype_mean": {
+     "mean_r2": 0.33378770794117474,
+     "r2_tumor": 0.6656976484554664,
+     "r2_T_cell": 0.019487398642295872,
+     "r2_fibroblast": 0.5104761637390027,
+     "r2_macrophage": 0.13948962092793393
+    },
+    "ridge_expression": {
+     "mean_r2": 0.48602689789278464,
+     "r2_tumor": 0.7220703569282685,
+     "r2_T_cell": 0.4777285881803338,
+     "r2_fibroblast": 0.5695198584956295,
+     "r2_macrophage": 0.1747887879669069
+    },
+    "mini_nicheformer": {
+     "mean_r2": 0.3802882663268774,
+     "r2_tumor": 0.6708662739138473,
+     "r2_T_cell": 0.18845090354133598,
+     "r2_fibroblast": 0.5270078298470225,
+     "r2_macrophage": 0.13482805800530395
+    },
+    "mini_nicheformer_shuffled_target": {
+     "mean_r2": -0.07263905831992395,
+     "r2_tumor": -0.10001324300973291,
+     "r2_T_cell": -0.007377475892004215,
+     "r2_fibroblast": -0.18308508186920092,
+     "r2_macrophage": -8.04325087577773e-05
+    }
+   }
+  }
+ ]
+}
