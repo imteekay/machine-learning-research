@@ -219,7 +219,7 @@ Run a full Scanpy + scvi-tools workflow on a public 10x Multiome PBMC dataset (Q
 - **Metric & success criterion**: held-out reconstruction log-likelihood, plus the mean–variance relationship of posterior-predictive samples vs observed. H holds if NB's mean–variance curve tracks the data and ZINB gives no gain beyond the confidence interval
 - **Progress signal**: you can explain *why* each likelihood behaves as it does from the biology of the assay
 
-**E0.2: Do knockouts move their known targets?**
+**E0.2: Do knockouts move their known targets?** ([write-up](../04-experiments/E0.2-tf-knockout-targets.md))
 - **Hypothesis (H)**: knocking out a transcription factor in a Perturb-seq screen shifts the expression of its annotated targets (e.g., from DoRothEA/CollecTRI) more than random gene sets of matched expression level. *Null*: target and random gene sets shift equally
 - **Why it moves the research forward**: it shows the perturbation signal exists and follows known regulatory structure. That justifies using GRN priors later (Phase 4). A null result points to weak knockdowns or poor priors, which tells you what data to trust
 - **Knowledge tested**: *domain*: TF biology, direct vs indirect targets, knockdown efficiency. *Technical*: pseudobulk DE, permutation testing, FDR

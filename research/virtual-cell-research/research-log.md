@@ -24,6 +24,13 @@ Entry format:
 
 ---
 
+## 2026-11-25: E0.2 TF knockout targets (Perturb-seq, Dixit 2016)
+
+- **Did**: picked one driving paper per phase ([paper selection](./04-experiments/_paper-selection/paper-selection.md)). Read Dixit 2016 ([note](./02-paper-notes/perturb-seq-dixit-2016.md)), built [`perturbseq-mini/`](./perturbseq-mini/) (MIMOSCA-style ridge + expression-matched target-set test), and ran [E0.2](./04-experiments/E0.2-tf-knockout-targets.md) on the paper's own K562 TF screen (GEO GSM2396858) with CollecTRI targets.
+- **Learned**: H rejected: 0/10 TFs enrich their targets; negative controls clean; synthetic positive control works. Only YY1 moves the transcriptome above the shuffled noise floor. Cas9 KO does not lower the TF's own mRNA, so knockdown QC needs CRISPRi or protein data. The public guide dictionary has no MOI > 1 cells.
+- **Open questions**: how much signal does MIMOSCA's EM escaper step recover? Is the null due to the prior (multi-cell-type CollecTRI) or the knockouts?
+- **Next**: E0.2b, add the EM step; then rerun on Replogle 2022 CRISPRi.
+
 ## 2026-11-22: Glyph paper deep dive + glyph-mini PoC
 
 - **Did**: read Glyph ([note](./02-paper-notes/glyph.md), [PDF](./papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf), [code](https://github.com/StanfordMIMI/Glyph)). Built [`glyph-mini/`](./glyph-mini/), a minimal PoC with 18 tests, and ran [E2.3a](./04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) on synthetic data with known truth. H1–H5 pass on seeds 0–4.
