@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: drugs are the real intervention; these show how to generalize to drugs with no profile and to link cell lines to patients. **(my take)**
 - **Main claim**: MAP +12.2% (Tahoe-100M), +8.2% (OP3), +10.4% (SciPlex3) top-50 DEG Pearson-delta for unprofiled drugs; AetherCell median DEG PCC 0.82-0.83 on unseen cells/compounds, misidentification 0.03 vs 0.20 (TranSiGen), plus mouse validation of two repurposed drugs. **(paper, self-reported)**
 
+## Research summary
+
+- **Context (already known)**: most drugs lack single-cell perturbation profiles, and structure-only models generalise poorly to them. **(paper)**
+- **Gap (not known)**: whether knowledge-graph and multi-encoder context can predict responses to unprofiled drugs, and link cell lines to patients. **(paper)**
+- **Hypothesis / what they try to determine**: aligning drug, gene and cell representations with biological knowledge improves prediction for unprofiled compounds. **(paper)**
+- **Approach (how they investigated)**: MAP: contrastive alignment on a 14-source knowledge graph feeding a transformer conditioned on STATE cell embeddings. AetherCell: aligns clinical bulk RNA-seq with L1000 and predicts a latent shift. **(paper)**
+- **Results (what they found)**: MAP +12.2% (Tahoe-100M), +8.2% (OP3), +10.4% (SciPlex3) top-50 DEG Pearson-delta; AetherCell median DEG PCC 0.82-0.83 on unseen cells/compounds, plus mouse validation of two repurposed drugs (self-reported). **(paper)**
+- **Implications (what it means)**: knowledge priors may help for unseen drugs, but no matched ridge/linear baseline and possible knowledge-graph leakage mean the gain is not yet isolated. **(my take)**
+
 ## 2. Problem it solves
 
 Most drugs lack single-cell perturbation profiles; chemical-structure-only models generalize poorly, and generic stress responses mask mechanism. **(paper)**

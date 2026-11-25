@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: most screens measure one modality per experiment. Labels are free side information that make unpaired matching tractable, which is exactly the E3.2 problem of attaching ATAC context to RNA-only Perturb-seq. **(my take)**
 - **Main claim**: labeled GW methods match cells across modalities better (especially on dose) and give better cross-modal prediction than unlabeled OT and domain-adversarial VAEs; cost drops by ~a factor of L (number of labels). **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Gromov-Wasserstein OT can match unpaired cells across modalities by intra-modality structure, but is costly and ignores side information. **(paper)**
+- **Gap (not known)**: whether perturbation labels can constrain matching so that cross-modal perturbation responses can be matched and predicted. **(paper)**
+- **Hypothesis / what they try to determine**: restricting couplings to cells with the same perturbation label improves matching and downstream cross-modal prediction. **(paper)**
+- **Approach (how they investigated)**: extend entropic GW and co-optimal transport with label-blocked couplings; test on T cells under 11 kinase inhibitors with paired RNA (2,000 genes) and protein (123), hiding the pairing. **(paper)**
+- **Results (what they found)**: labeled ECOOT/EGWOT reach FOSCTTM ~0.27-0.28 and dosage match ~0.45 vs 0.07 for the best unlabeled GW; RNA-from-protein prediction correlation is low (Rs 0.085). **(paper)**
+- **Implications (what it means)**: labels make unpaired matching tractable, but low prediction correlation, one unreleased dataset and no per-label-mean baseline limit how far this supports ATAC-to-RNA transfer. **(my take)**
+
 ## 2. Problem it solves
 
 Unpaired multimodal perturbation data: how to transfer perturbation responses across modalities measured in different cells. **(paper)**

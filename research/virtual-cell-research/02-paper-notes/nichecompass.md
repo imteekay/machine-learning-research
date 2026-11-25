@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it explains niches by *which signals* are active, the mechanistic layer a bystander-effect model needs.
 - **Main claim**: scales to atlases (8.4M-cell, 239-section mouse brain), characterizes tumor niches in breast and NSCLC, and extends to multimodal (spatial ATAC+RNA) data **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: niche methods exist for spatial data but are often not interpretable, do not scale to multi-sample atlases and cannot map new samples to a reference. **(paper)**
+- **Gap (not known)**: whether a graph model with prior gene programs can give interpretable, scalable niche embeddings. **(paper)**
+- **Hypothesis / what they try to determine**: tying latent dimensions to ligand-receptor and signalling programs yields niches explained by active signals. **(paper)**
+- **Approach (how they investigated)**: a GNN autoencoder on a spatial neighbour graph with prior-program-constrained latents and scArches-style conditional embeddings; applied to mouse embryo, breast cancer, NSCLC and an 8.4M-cell mouse brain atlas. **(paper)**
+- **Results (what they found)**: abstract-only: scales to 239-section atlas, separates basal vs luminal tumor niches and characterises NSCLC TME; no benchmark numbers read. **(paper)**
+- **Implications (what it means)**: niche identity can be explained by pathway activity, but discovery is limited to known programs and L-R co-expression is not proof of signalling. **(my take)**
+
 ## 2. Problem it solves
 
 Niche identification methods are not interpretable, don't scale to multi-sample atlases, and can't query new samples against a reference **(paper)**.

@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: tells us how to adapt a Phase 2 backbone: native fine-tuning is weak, conditioning on the perturbation with biological masks and DE-focused loss helps. **(my take)**
 - **Main claim**: PertAdapt MSE improves ~11% on hardest Norman double-KO splits and 17-30%+ on single-gene sets vs best baselines (Dixit >90%); a linear model is competitive with many FMs. Closing the loop reports PPV roughly tripled in T-cell activation. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Fine-tuned single-cell FMs give only marginal gains over non-pretrained baselines on perturbation prediction, and open-loop in silico perturbation cannot learn from follow-up experiments. **(paper)**
+- **Gap (not known)**: Whether adapter-style conditioning with biological masks and DE-focused loss fixes this, and whether closing the loop improves hit rate, is not known; PertAdapt is mostly read, closing-the-loop is abstract-only. **(my take)**
+- **Hypothesis / what they try to determine**: PertAdapt: a frozen FM plus a perturbation encoder and GO-masked attention beats native fine-tuning. Closing the loop: adding perturbation examples to fine-tuning improves in silico perturbation precision. **(paper)**
+- **Approach (how they investigated)**: PertAdapt adds GNN perturbation encoder, masked attention and an adaptive all-gene/top-20 DE loss on frozen scFoundation/AIDO.Cell, tested on Norman, Replogle, Nadig, Adamson, Dixit with random splits. Closing the loop fine-tunes Geneformer on T-cell CRISPRi/a screens. **(paper)**
+- **Results (what they found)**: PertAdapt: ~11% MSE gain on hardest Norman double-KO splits and 17-30%+ on single-gene sets, a linear model stays competitive. Closing the loop: PPV about tripled in T-cell activation (abstract-level). **(paper)**
+- **Implications (what it means)**: Conditioning and loss design matter more than backbone scale, but random splits and MSE are lenient, so OOD gains are unproven. **(my take)**
+
 ## 2. Problem it solves
 
 FM fine-tuning gives marginal gains over non-pretrained baselines because all genes are treated equally though few respond. Open-loop ISP cannot learn from follow-up experiments. **(paper)**

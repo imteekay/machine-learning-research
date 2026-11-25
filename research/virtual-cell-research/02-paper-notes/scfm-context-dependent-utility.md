@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: a model choice should be conditional on task and data shape. A leaderboard rank does not transfer. **(my take)**
 - **Main claim**: no method wins across cell- and gene-level tasks, and high accuracy on the original data does not predict robustness. Several top methods are fragile to changes in cell count, gene count and class balance. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scFMs are benchmarked by averaged leaderboards on few datasets. **(paper)**
+- **Gap (not known)**: Whether utility and robustness of zero-shot scFM representations depend on task and dataset structure. **(paper)**
+- **Hypothesis / what they try to determine**: No method is best across tasks, and accuracy on original data does not predict robustness. **(paper)**
+- **Approach (how they investigated)**: Zero-shot evaluation of 20 methods on 6 tasks and 1,607 datasets (~21.8M cells) with controlled changes in cell number, gene number and class balance. **(paper, abstract-level)**
+- **Results (what they found)**: No method wins across cell- and gene-level tasks; several top methods are fragile to those changes. **(paper)**
+- **Implications (what it means)**: Model choice must be conditional on task and data shape. Full text not retrieved (bioRxiv blocked). **(my take)**
+
 ## 2. Problem it solves
 
 Benchmarks report averaged leaderboards on few datasets, which hides task dependence and fragility. **(paper)**

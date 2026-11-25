@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it sets the baseline bar. Any claim that a pretrained representation "knows biology" has to beat a few-line linear pipeline that needs no pretraining. **(my take)**
 - **Main claim**: simple pipelines reach SOTA or near-SOTA on cell-type, disease-state and cross-species tasks, and win on cross-species OOD. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scFMs are marketed as general-purpose, but zero-shot comparisons with strong simple baselines are often missing. **(paper)**
+- **Gap (not known)**: Whether a well-normalized linear pipeline matches foundation models on cell-type, disease and cross-species tasks. **(paper)**
+- **Hypothesis / what they try to determine**: Rank-based normalization plus ANOVA selection, whitened PCA and logistic regression reaches near-SOTA on these tasks. **(paper)**
+- **Approach (how they investigated)**: Compare the pipeline zero-shot against TranscriptFormer, ESM2-CE, UCE, scVI and Geneformer with the same splits and classifier. **(paper)**
+- **Results (what they found)**: Cross-species macro F1 0.679 vs 0.639 for the best FM; Tabula Sapiens 0.887 vs 0.911 for TF-Sapiens; COVID-19 0.850. **(paper)**
+- **Implications (what it means)**: Foundation-model claims need strong simple baselines as controls; any gain from ATAC or pretraining should be shown over such a pipeline. **(my take)**
+
 ## 2. Problem it solves
 
 scFM papers usually compare against weak baselines such as raw HVG + PCA. This paper asks how far careful normalization and linear methods go on the benchmarks the scFMs report. **(paper)**

@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: a clinical-grade example of the histology bridge, validated on outcomes in thousands of patients, which is what E6.1/E6.2 aim at. **(my take)**
 - **Main claim**: multimodal integration with HEX features improves prognostic accuracy by 22% and immunotherapy response prediction by 24–39% over conventional approaches. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: spatial proteomics (CODEX, multiplex IF) is informative for tumor immunology but rare in clinical cohorts, while H&E is universal. **(paper)**
+- **Gap (not known)**: whether protein maps predicted from H&E are accurate and useful enough to give interpretable biomarkers that improve prognosis and immunotherapy-response prediction in lung cancer. **(paper)**
+- **Hypothesis / what they try to determine**: virtual spatial proteomics from H&E carries outcome information beyond conventional approaches. **(paper)**
+- **Approach (how they investigated)**: train an H&E-to-40-protein model on 819,000 tiles from 382 samples, then derive spatial features and apply them to 6 NSCLC cohorts (2,298 patients) and 12 other cancer types (5,019 patients). **(paper)**
+- **Results (what they found)**: per the abstract, +22% prognostic accuracy and +24-39% immunotherapy-response accuracy over conventional approaches; neutrophil aggregates linked to non-response. **(paper)**
+- **Implications (what it means)**: histology can act as a cheap bridge to spatial protein state, but relative gains need absolute metrics and an end-to-end H&E baseline before the protein bottleneck is judged useful. **(my take)**
+
 ## 2. Problem it solves
 
 Spatial proteomics (CODEX/multiplex IF) is expensive and rare in clinical cohorts; H&E is everywhere. **(paper)**

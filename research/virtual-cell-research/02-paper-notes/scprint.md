@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the clearest attempt at the "Explain" capability: extracting regulatory networks from an FM rather than only embeddings. **(my take)**
 - **Main claim**: better GRN inference than SOTA on atlas-level benchmarks, plus competitive zero-shot denoising, batch correction and label prediction. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Attention maps of transformer scFMs may encode gene networks, but most scFMs are not designed or evaluated for GRN inference. **(paper)**
+- **Gap (not known)**: Whether a large cell model with GRN-oriented pretraining can infer gene networks better than existing methods. **(paper)**
+- **Hypothesis / what they try to determine**: Pretraining tasks and protein-embedding gene tokens designed for GRN inference yield better network predictions from attention. **(paper)**
+- **Approach (how they investigated)**: Pretrain on >50M CELLxGENE cells (scPRINT-2: ~350M, 16 species) and benchmark GRN inference, denoising, batch correction and label prediction (abstract-level). **(paper)**
+- **Results (what they found)**: The abstract reports superior GRN inference on atlas-level benchmarks and competitive zero-shot denoising, integration and labels; numbers and ground truths not read. **(paper)**
+- **Implications (what it means)**: If the benchmarks are fair, attention-derived GRNs are usable, but ground-truth choice and baselines are unverified. **(my take)**
+
 ## 2. Problem it solves
 
 FMs learn something about gene–gene relations, but whether it is usable as a regulatory network is unclear. scPRINT designs pretraining to make GRNs extractable and benchmarks them. **(paper)**

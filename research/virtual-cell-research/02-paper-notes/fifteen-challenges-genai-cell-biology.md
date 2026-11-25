@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: the roadmap says to pick PhD contributions from this list; it should be the checklist that each roadmap experiment maps onto. **(my take)**
 - **Main claim**: current AI models in biology have not shown they can predict cell behavior; the community should focus on biologically relevant problems. **(paper, via press release)**
 
+## Research summary
+
+- **Context (already known)**: Generative AI models in biology are widely benchmarked, yet current models have not shown they can predict cell behavior. **(paper, via press release)**
+- **Gap (not known)**: Which biologically relevant problems the field should prioritize. The list of 15 challenges is not known to me (full text not retrieved). **(paper, via press release)**
+- **Hypothesis / what they try to determine**: Posing 15 critical problems, in the manner of Hilbert's 1900 list, will focus generative AI on questions that matter for cell biology. **(paper, via press release)**
+- **Approach (how they investigated)**: A perspective article (no experiments expected). Only a Columbia news release was read; cell.com returned HTTP 403. **(paper, via press release)**
+- **Results (what they found)**: Not available: only the framing (15 problems, models not yet predicting cell behavior) was seen. **(paper, via press release)**
+- **Implications (what it means)**: If each challenge has a falsifiable success criterion, it can serve as a checklist for roadmap experiments. This cannot be judged until the list is read. **(my take)**
+
 ## 2. Problem it solves
 
 Agenda-setting: too many benchmarks measure what is easy, not what matters biologically. **(paper, via press release)**

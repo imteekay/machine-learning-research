@@ -5,7 +5,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 6](../00-plan/roadmap.md#phase-6-world-models-closed-loop-and-clinical-translation)
-- **Status**: skimmed (abstract via Sciety summary; bioRxiv 429)
+- **Status**: skimmed (abstract-only; bioRxiv returned 429 again on re-attempt)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -13,6 +13,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: a multi-view model learning cell states from paired expression and "perception" views, 12B parameters, trained on 390.5M transcriptomes with three stages: causal cell-sentence LM, dense-to-MoE expansion, LLM-JEPA latent alignment **(paper, abstract)**.
 - **Why it matters for the virtual cell**: JEPA is the leading alternative to reconstruction for world models; tests predicting in latent space.
 - **Main claim**: beats SOTA single-cell FMs on cell-state annotation, batch integration and perturbation-response prediction **(paper, unreviewed)**.
+
+## Research summary
+
+- **Context (already known)**: Single-view, reconstruction-trained cell FMs capture expression levels but not complementary views of state. **(paper)**
+- **Gap (not known)**: Whether a multi-view model trained with latent joint-embedding prediction learns better cell-state representations than reconstruction. **(paper)**
+- **Hypothesis / what they try to determine**: That a 12B model on 390.5M transcriptomes with LLM-JEPA alignment beats existing single-cell FMs. **(paper)**
+- **Approach (how they investigated)**: Three stages: causal cell-sentence LM, dense-to-MoE expansion, LLM-JEPA latent alignment. Details are abstract-only. **(paper)**
+- **Results (what they found)**: Claimed gains on annotation, batch integration and perturbation response; no numbers available in abstract. **(paper)**
+- **Implications (what it means)**: If real, it supports latent prediction for world models, but scale confounds the JEPA contribution without an ablation. **(my take)**
 
 ## 2. Problem it solves
 

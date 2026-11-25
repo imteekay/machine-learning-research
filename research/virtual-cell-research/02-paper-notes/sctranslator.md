@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: drugs act on proteins, and RNA-protein correlation is modest; a virtual cell that stops at RNA predicts the wrong layer for many interventions. scTranslator is a cheap "protein head" for RNA-only perturbation data. **(my take)**
 - **Main claim**: beats cTP-net, sciPENN, Seurat, BABEL and others on protein inference, especially few-shot (reported ~80-95% of full-data performance after fine-tuning on ~20 cells), and supports downstream tasks (gene/protein interaction inference, perturbation, clustering, batch correction). **(paper, preprint; not verified against journal version)**
 
+## Research summary
+
+- **Context (already known)**: Proteins are costly to measure at scale and RNA-to-protein predictors exist (cTP-net, sciPENN, BABEL), but they need large paired data. **(paper)**
+- **Gap (not known)**: Whether a pretrained transformer can translate transcriptomes into proteomes with few paired cells. **(paper)**
+- **Hypothesis / what they try to determine**: Two-stage pretraining on paired bulk then single-cell data gives a model that infers proteins and adapts with little fine-tuning data. **(paper)**
+- **Approach (how they investigated)**: Performer-style encoder-decoder pretrained on bulk and single-cell paired data (76 datasets in the preprint), compared with nine frameworks (preprint via secondary sources). **(paper)**
+- **Results (what they found)**: It wins on five datasets in few-shot tests, reaching ~80-95% of full performance with ~20 fine-tuning cells (preprint, secondary source). **(paper)**
+- **Implications (what it means)**: Protein inference may be possible for new panels with few cells, but cell-type-lookup and copy-RNA baselines are missing, so within-type skill is unproven. **(my take)**
+
 ## 2. Problem it solves
 
 CITE-seq-style protein measurements are expensive and panel-limited; most single-cell data are RNA only. Inferring the proteome from RNA unlocks protein-level analysis on existing atlases and screens. **(paper)**

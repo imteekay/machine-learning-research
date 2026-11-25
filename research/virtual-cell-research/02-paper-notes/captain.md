@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 3](../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context)
-- **Status**: skimmed (abstract-only; full text not accessible)
+- **Status**: skimmed (abstract-only; Nature and bioRxiv full text not retrievable on 2026-11-25 re-attempt)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -15,6 +15,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: a multimodal foundation model pretrained on >4 million cells with paired transcriptome and up to 382 surface proteins (human and mouse), with an RNA encoder initialised from scGPT. **(paper)**
 - **Why it matters for the virtual cell**: it is the first large-scale *paired* RNA+protein pretraining; it shows whether joint pretraining on co-assayed modalities beats bolting a modality onto an RNA model, which is exactly the design choice the Master's RNA+ATAC model faces. **(my take)**
 - **Main claim**: strong performance on protein imputation/panel expansion, cell type annotation and batch harmonisation, in fine-tuned and zero-shot settings; zero-shot protein estimation from RNA-only data. **(paper)**
+
+## Research summary
+
+- **Context (already known)**: CITE-seq data exist at scale, and RNA-only scFMs such as scGPT ignore protein. **(paper)**
+- **Gap (not known)**: Whether joint pretraining on co-assayed RNA and protein beats RNA-only models and enables protein imputation. **(paper)**
+- **Hypothesis / what they try to determine**: That paired RNA and surface-protein pretraining yields a model that transfers zero-shot to protein estimation and annotation. **(paper)**
+- **Approach (how they investigated)**: Pretrain on >4M paired cells (382 proteins, human and mouse) with an scGPT-initialised RNA encoder. Details are abstract-only. **(paper)**
+- **Results (what they found)**: Strong protein imputation, annotation and batch harmonisation, plus a COVID-19 application; no numbers available in abstract. **(paper)**
+- **Implications (what it means)**: Co-assay pretraining may be a recipe for adding a modality, but without an ablation it is unclear that protein supervision helped. **(my take)**
 
 ## 2. Problem it solves
 

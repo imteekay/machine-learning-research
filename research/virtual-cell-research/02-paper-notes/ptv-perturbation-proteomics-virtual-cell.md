@@ -14,13 +14,22 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: proteins are the drug-acting layer; RNA-trained models can miss it.
 - **Main claim**: abstract-only; the title claims an operational virtual cell. Results not retrieved.
 
+## Research summary
+
+- **Context (already known)**: Virtual cell models mostly predict RNA, while proteins are the drug-acting layer. **(paper)**
+- **Gap (not known)**: Whether a model trained on perturbation proteomics gives an operational virtual cell is not known; full text not retrieved. **(my take)**
+- **Hypothesis / what they try to determine**: Whether protein-level perturbation data can power a virtual cell model. **(paper)**
+- **Approach (how they investigated)**: Foundation model on perturbation proteomics (~16k samples, ~38M abundances per secondary sources); details not retrieved. **(paper)**
+- **Results (what they found)**: Not retrieved; the title claims an operational model. **(paper)**
+- **Implications (what it means)**: If validated it supports the argument that RNA is not enough, but baselines and held-out splits must be checked. **(my take)**
+
 ## 2. Problem it solves
 
 Most virtual cells model RNA; protein response to perturbation is the functionally relevant readout for drugs.
 
 ## 3-5. Method, data, results
 
-Abstract-only: not retrieved. Preprint title: "A perturbation proteomics-based foundation model for virtual cell construction".
+Abstract-only: not retrieved. GitHub README (code) lists only analysis scripts: ChemmineR.R builds 881-dimensional drug molecular fingerprints and 54-dimensional drug physicochemical properties as ML inputs; a differential-expression script; a PertScore script classifying proteins as up (1), down (-1) or unchanged (0) from p value and fold change; and mFuzz clustering of protein abundances across time points. **(code)** Preprint title: "A perturbation proteomics-based foundation model for virtual cell construction".
 
 ## 6. Critical analysis
 

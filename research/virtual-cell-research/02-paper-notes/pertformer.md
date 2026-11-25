@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the closest prior work to the Master's goal (multi-omic context + perturbation); any thesis claim must be positioned against it. **(my take)**
 - **Main claim**: zero-shot gains of 20.9%-480.2% over existing methods; predicted tumour treatment targets validated experimentally. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Perturbation models need perturbation data per context, and multi-omic FMs rarely predict perturbation effects. **(paper)**
+- **Gap (not known)**: Whether multi-omic pretraining alone gives zero-shot perturbation prediction that beats strong simple baselines is not known; full text not retrieved. **(my take)**
+- **Hypothesis / what they try to determine**: A 3B multimodal model pretrained on paired omics can predict zero-shot functional perturbations and cell fate dynamics. **(paper)**
+- **Approach (how they investigated)**: Pretrain on 9 data types (~1.5B derived pairs from ~1M cells), perturb by editing inputs, and compare with existing methods; experimental validation of predicted tumour targets. Details abstract-only. **(paper)**
+- **Results (what they found)**: Reports 20.9-480.2% relative zero-shot gains and experimentally validated tumour treatment targets; baselines and metrics not seen. **(paper)**
+- **Implications (what it means)**: Positions PertFormer as the closest prior to multi-omic perturbation work, but headline relative gains cannot be trusted until mean/linear baselines and leakage are checked. **(my take)**
+
 ## 2. Problem it solves
 
 Perturbation models need perturbation training data for each context; PertFormer aims at zero-shot prediction from multi-omic pretraining. **(paper)**

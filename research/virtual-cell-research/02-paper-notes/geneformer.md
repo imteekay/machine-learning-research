@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: the first scFM to claim in silico perturbation and to back some predictions with wet-lab tests. It is the main reference for "token deletion = knockout", which this roadmap must know the limits of. **(my take)**
 - **Main claim**: pretraining encodes network hierarchy in the model's attention and embeddings, so fine-tuning with few labeled cells beats alternatives on chromatin and network tasks, and in silico deletion finds disease drivers and candidate targets. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: gene regulatory networks drive cell state and disease, but mapping them needs large, disease-specific datasets. Large unlabeled single-cell corpora exist, and transfer learning had transformed NLP and vision. **(paper)**
+- **Gap (not known)**: whether a model pretrained on a broad, non-disease-specific corpus encodes network-level biology that transfers to data-limited settings, and whether it can predict the effect of removing a gene without perturbation data. **(paper)**
+- **Hypothesis / what they try to determine**: self-supervised pretraining on ~30M cells gives the model a context-aware view of network hierarchy, so small fine-tuning sets suffice for network tasks, and token deletion ranks candidate disease drivers. **(paper)**
+- **Approach (how they investigated)**: pretrain a 6-layer transformer on rank-encoded cells (Genecorpus-30M); fine-tune on chromatin and network tasks (dosage-sensitive TFs, bivalent marks, NOTCH1 centrality) and on cardiomyopathy cardiomyocytes; run in silico deletion; validate a few hits in iPSC cardiomyocytes. **(paper)**
+- **Results (what they found)**: AUC 0.81–0.93 on network tasks, beating alternatives even with 884 cells; 90% cardiomyopathy accuracy; 447/478 deletion hits shifting cells toward hypertrophic/dilated states; TEAD4, GSN and PLN knockouts changed contractile stress in the expected direction. **(paper)**
+- **Implications (what it means)**: pretraining is useful for low-data biology and deletion is a cheap hypothesis generator. It is not shown to predict a knockout's expression response, and no null or differential-expression baseline is given, so treat deletion as an association score until tested on Perturb-seq. **(my take)**
+
 ## 2. Problem it solves
 
 Mapping gene networks needs large disease-specific data, which rare diseases and hard-to-reach tissues lack. Transfer learning from a large general corpus could fill the gap. **(paper)**

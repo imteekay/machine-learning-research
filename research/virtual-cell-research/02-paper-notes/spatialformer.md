@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is one of few models using *subcellular* transcript locations, a scale below the cell that other spatial FMs discard.
 - **Main claim**: embeddings capture both molecular (subcellular) and multicellular structure, useful zero-shot for annotation and cell-cell communication in pulmonary fibrosis and breast cancer **(paper, abstract)**.
 
+## Research summary
+
+- **Context (already known)**: Spatial foundation models (e.g. Nicheformer) treat cells as bags of counts. **(paper)**
+- **Gap (not known)**: Whether subcellular transcript positions and exact neighbor geometry add useful signal beyond cell-level counts. **(paper)**
+- **Hypothesis / what they try to determine**: That one embedding can capture both subcellular molecular and multicellular structure. **(paper)**
+- **Approach (how they investigated)**: Multi-task training on Xenium-style data: masked tokens, cell-pair proximity and gene-gene transcript co-occurrence. Full architecture not verified (abstract-only). **(paper)**
+- **Results (what they found)**: Zero-shot embeddings support annotation and cell-cell communication analysis in pulmonary fibrosis and breast cancer; no numbers available in abstract. **(paper)**
+- **Implications (what it means)**: Plausible but unverified; a controlled ablation against cell-level counts is needed to show the subcellular scale helps. **(my take)**
+
 ## 2. Problem it solves
 
 Spatial FMs treat cells as bags of counts; imaging platforms record transcript coordinates inside cells and the exact neighbor geometry, which is ignored **(paper)**.

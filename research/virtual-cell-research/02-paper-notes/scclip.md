@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the simplest strong baseline for E3.2 (matching cells across modalities) and for imputing ATAC context onto RNA-only Perturb-seq cells. **(my take)**
 - **Main claim**: outperforms competing integration methods and transfers zero-shot to unseen datasets across modalities. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Paired multiome data exists, and CLIP-style contrastive learning aligns two modalities in one embedding space. **(paper)**
+- **Gap (not known)**: Whether contrastive pretraining of RNA and ATAC transformers gives embeddings that integrate and transfer zero-shot across modalities and datasets. **(paper)**
+- **Hypothesis / what they try to determine**: Contrastive alignment of paired RNA and ATAC cells yields a shared space usable on new unpaired data. **(paper)**
+- **Approach (how they investigated)**: Two modality-specific transformers trained with InfoNCE on paired multiome cells; compared with integration methods. Details abstract-only. **(paper)**
+- **Results (what they found)**: Outperforms competing integration methods and transfers zero-shot; numbers not available in abstract. **(paper)**
+- **Implications (what it means)**: A simple baseline for E3.2 and ATAC imputation, but it may align only shared (cell-identity) signal. **(my take)**
+
 ## 2. Problem it solves
 
 Integrating paired RNA+ATAC so that new unpaired data from either modality can be embedded in the same space. **(paper)**

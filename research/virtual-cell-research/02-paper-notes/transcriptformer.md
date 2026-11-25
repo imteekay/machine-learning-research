@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: a generative (not only embedding) model across species is a candidate prior for predicting human states from model-organism data, the mouse→human gap that limits translation. **(my take)**
 - **Main claim**: SOTA cell type classification even across species separated by >685 My; zero-shot disease state identification in human cells; lineages and phylogeny emerge unsupervised. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Cross-species comparison is hard because gene sets differ and models are species-specific. **(paper)**
+- **Gap (not known)**: Whether one generative model can span species across 1.5 billion years of evolution. **(paper)**
+- **Hypothesis / what they try to determine**: That a generative cell model trained across 12 species transfers cell and disease knowledge. **(paper)**
+- **Approach (how they investigated)**: Generative transformer on up to 112M cells from 12 species; architecture not verified (abstract-only). **(paper)**
+- **Results (what they found)**: SOTA cell-type classification across species >685 My apart, zero-shot human disease-state identification, emergent phylogeny. No numbers. **(paper)**
+- **Implications (what it means)**: Candidate cross-species prior, but counterfactual generation is not claimed and disease detection may reflect batch. **(my take)**
+
 ## 2. Problem it solves
 
 Comparing transcriptional programs across the tree of life is hard because gene sets differ and models are species-specific. **(paper)**

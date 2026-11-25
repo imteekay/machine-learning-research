@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the conceptual frame for Phase 4: what "extrapolation" to unseen perturbations or contexts means and which assumptions each method family makes. **(my take)**
 - **Main claim**: single-cell analysis has moved from atlasing to causal and mechanistic inference; a unifying ontology helps practitioners pick methods for a question. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: single-cell ML now spans representation learning, causal inference, mechanistic discovery, disentanglement and population tracing, with many overlapping methods. **(paper)**
+- **Gap (not known)**: which assumptions each method family makes and which method suits a given question (e.g. unseen knockout vs regulatory mechanism). **(paper)**
+- **Hypothesis / what they try to determine**: a unifying ontology organised by modelling concept, assumptions and task lets practitioners select and extrapolate methods more reliably. **(paper)**
+- **Approach (how they investigated)**: a literature review that classifies methods and provides an online companion resource with technical details. **(paper)**
+- **Results (what they found)**: abstract-only: a taxonomy and a list of promising directions and under-used data properties; the specifics were not read. **(paper)**
+- **Implications (what it means)**: it gives Phase 4 a vocabulary for 'extrapolation', but a taxonomy does not tell which assumptions hold in a dataset, so assumption tests are still needed. **(my take)**
+
 ## 2. Problem it solves
 
 Many methods, overlapping goals, and unstated assumptions. Practitioners cannot easily tell which model fits "predict an unseen knockout" vs "find a regulatory mechanism" vs "trace a population". **(paper)**

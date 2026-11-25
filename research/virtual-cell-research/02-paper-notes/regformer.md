@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: an explicit regulatory inductive bias, the same bet as my H1 (but via prior GRNs rather than measured ATAC). **(my take)**
 - **Main claim**: beats scGPT and Geneformer on annotation, GRN reconstruction, perturbation and drug response. **(preprint)**
 
+## Research summary
+
+- **Context (already known)**: Generic scFMs (scGPT, Geneformer) treat genes as a flat or expression-ranked sequence, and regulatory relationships are known from GRN resources. **(paper)**
+- **Gap (not known)**: Whether injecting GRN hierarchy into a single-cell FM improves representation and downstream tasks; the exact gains and the effect of the prior are not available in the abstract. **(my take)**
+- **Hypothesis / what they try to determine**: Ordering and structuring genes by regulatory hierarchy, with a Mamba backbone, yields a better FM than hierarchy-free models. **(paper)**
+- **Approach (how they investigated)**: Pretrain a ~50M-parameter Mamba model on 22M human cells with GRN-derived gene ordering, then compare with scGPT and Geneformer on annotation, GRN reconstruction, perturbation and drug response. **(paper, abstract-level)**
+- **Results (what they found)**: Reported wins over scGPT and Geneformer on four task families; numbers not available in abstract. **(paper)**
+- **Implications (what it means)**: If the gain survives a shuffled-GRN control it supports regulatory inductive bias; without that ablation it may just reflect Mamba. Full text unavailable (bioRxiv returned HTTP 429). **(my take)**
+
 ## 2. Problem it solves
 
 Generic FMs treat genes as an unordered set and may not learn regulatory logic. **(preprint)**

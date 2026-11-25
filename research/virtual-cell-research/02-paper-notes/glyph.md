@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: "Explain" and "Discover" are two of the three virtual-cell capabilities. Glyph is a worked, end-to-end recipe for going from an FM embedding to a *falsifiable, replicated, confounder-adjusted* statement about biology. The same recipe applies to scFM cell embeddings (roadmap E2.3) **(my take)**.
 - **Main claim**: of 604,185 concept-outcome pairs on 41,628 patients, 4,463 associations pass Bonferroni; 69–74% reproduce at held-out and external sites; the top-10 concepts beat literature markers on reproduction (64.8% vs 41.2%) and adjusted effect size (median OR 1.31 vs 1.16); adding them to literature markers raises AUROC from 0.749 to 0.774 **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: Clinical discovery usually starts from predefined phenotypes, and frozen foundation-model embeddings hold more information but are dense and polysemantic. **(paper)**
+- **Gap (not known)**: Whether embeddings can be turned into named, replicable, confounder-adjusted concepts that reveal new associations with future diagnoses. **(paper)**
+- **Hypothesis / what they try to determine**: A sparse autoencoder dictionary over frozen embeddings gives concepts that, treated like genotypes in a GWAS, yield associations that replicate externally. **(paper)**
+- **Approach (how they investigated)**: Matryoshka Top-K SAEs on frozen CT, report and lab embeddings, LLM naming of concepts, a concept-wide association study, then Bonferroni, external BH-FDR replication and double-ML confounder adjustment. **(paper)**
+- **Results (what they found)**: Of 604,185 concept-outcome pairs in 41,628 patients, 4,463 pass Bonferroni and 69-74% reproduce externally; the top-10 concepts beat literature markers (64.8% vs 41.2% reproduction), and AUROC rises from 0.749 to 0.774. **(paper)**
+- **Implications (what it means)**: A worked recipe for explain-and-discover from FM embeddings, applicable to scFM cell embeddings (E2.3), subject to the quality of the frozen embedding. **(my take)**
+
 ## 2. Problem it solves
 
 - Clinical discovery usually starts from **predefined phenotypes** (ICD codes, known markers). You can only find associations among variables someone already thought to measure **(paper)**.

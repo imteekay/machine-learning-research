@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 6](../00-plan/roadmap.md#phase-6-world-models-closed-loop-and-clinical-translation) ("Explain")
-- **Status**: skimmed
+- **Status**: read (arXiv HTML, first ~100k characters; appendix not read)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: prediction alone is not a virtual cell; the "Explain" step needs structured outputs that can be wrong in a checkable way. **(my take)**
 - **Main claim**: training on VC-TRACES improves factual precision and gives a better supervision signal for downstream gene-expression prediction. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: LLM explanations in biology are fluent but often ungrounded, and virtual cells mostly predict without explaining. **(paper)**
+- **Gap (not known)**: Whether mechanistic explanations can be generated as checkable structures and used as supervision for expression prediction. **(paper)**
+- **Hypothesis / what they try to determine**: Explanations written as action graphs, built by retrieval plus verifiers, are more factually precise and improve downstream prediction. **(paper)**
+- **Approach (how they investigated)**: VCR-Agent (HunFlair2 entity extraction, retrieval from PrimeKG, Harmonizome, PubMed, Wikipedia, Claude 4 builds a DAG over 20 action primitives) with Boltz-2 DTI and Tahoe-100M DE verifiers; VC-TRACES from 18,950 compound-context pairs. **(paper)**
+- **Results (what they found)**: VCR-Agent beat Claude-Sonnet-4 on DTI (0.725 vs 0.657) and DE (0.528 vs 0.504) verifier scores; filtering removed 28.2% of faulty DTI claims. SFT on traces helped TahoeQA (figure-only numbers). **(paper)**
+- **Implications (what it means)**: Explanations can be made checkable, but the DE verifier and data share a source (Tahoe), so gains may reflect known drug-target priors. **(my take)**
+
 ## 2. Problem it solves
 
 LLM explanations in biology are fluent but often ungrounded and not actionable. A graph of mechanistic steps (drug → target → pathway → genes) can be checked against databases and data. **(paper)**
@@ -23,20 +32,20 @@ LLM explanations in biology are fluent but often ungrounded and not actionable. 
 ## 3. Method
 
 - Explanation = action graph of mechanistic steps. **(paper)**
-- VCR-Agent: retrieval from biological knowledge sources + verifier agents that filter unsupported steps. Agent design details: abstract-only. **(paper)**
+- VCR-Agent: retrieval from biological knowledge sources + verifier agents that filter unsupported steps. Report generator (HunFlair2 entities, retrieval from PrimeKG/Harmonizome/PubMed/Wikipedia, Claude 4) then explanation constructor (DAG over 20 action primitives); verifiers for DTI (Boltz-2) and DE (Tahoe-100M) filter actions. **(paper)**
 - Explanations used as auxiliary supervision for an expression predictor. **(paper)**
 
 ## 4. Data
 
-- **VC-TRACES** (new): verified mechanistic explanations derived from Tahoe-100M drug × cell-line perturbations. **(paper)**
+- **VC-TRACES** (new, 18,950 compound-context pairs; main experiments on 5 cell lines: C32, HOP62, HepG2/C3A, Hs 766T, PANC-1): verified mechanistic explanations derived from Tahoe-100M drug × cell-line perturbations. **(paper)**
 
 ## 5. Evaluation and results
 
-Factual precision and downstream expression prediction improve. Numbers, baselines: abstract-only.
+Explanation quality (as extracted, check table in PDF): VCR-Agent validity 1.00, verifiability 0.945, DTI 0.725, DE 0.528 vs Claude-Sonnet-4 1.00 / 0.867 / 0.657 / 0.504; filtering excluded 28.2% of faulty DTI claims. TahoeQA (F1, DE detection and direction) vs random, mean-per-compound, kNN-ECFP, STATE and Qwen3-4B: SFT on traces best, values figure-only. **(paper)**
 
 ## 6. Critical analysis
 
-- Limitations (paper): not retrieved.
+- Limitations (paper): only 2 of 4 verifiers used; plausibility not causal discovery; knowledge-base bias and hallucination; SFT only; DE verifier shares its source (Tahoe-100M) with the data (0.2% test-label overlap reported).
 - Weaknesses I see (my take):
   - "Verified" probably means consistent with curated knowledge. That favors well-studied pathways and can't find new mechanisms.
   - Gains in expression prediction may come from injecting drug-target priors, which a simple target-gene feature would also give. Needs that ablation.

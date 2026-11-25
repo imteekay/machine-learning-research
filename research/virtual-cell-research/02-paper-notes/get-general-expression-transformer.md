@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it turns chromatin context into a mechanistic, interpretable input: which regions and motifs drive which gene. That is exactly the "context" the Master's H1 needs. It also supports in-silico motif and region perturbations. **(my take)**
 - **Main claim**: expression in held-out cell types is predicted with accuracy close to experimental replicates (Pearson ≈ 0.9 on held-out fetal astrocytes *[uncertain on exact number]*), plus a catalog of TF–TF interactions read out of the model. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Sequence-only models cannot represent cell type, and expression-only models lack mechanism. Chromatin accessibility atlases of many cell types exist. **(paper)**
+- **Gap (not known)**: Whether a model reading cell-type-specific accessibility plus motif content can predict expression in cell types it has never seen. **(paper)**
+- **Hypothesis / what they try to determine**: Region tokens carrying motif scores weighted by accessibility let one pretrained transformer transfer across cell types and expose regulatory interactions. **(paper)**
+- **Approach (how they investigated)**: Pretrain with masked-region prediction on pseudobulk scATAC from ~213 cell types, fine-tune to predict expression, and evaluate on held-out cell types and lentiMPRA enhancers. **(paper)**
+- **Results (what they found)**: Leave-out-cell-type predictions beat sequence-only and accessibility-only baselines (about 0.9 Pearson on held-out fetal astrocytes, number uncertain), and attributions yield TF-TF interaction hypotheses. **(paper)**
+- **Implications (what it means)**: GET is the template for ATAC as regulatory context, but across-gene correlation overstates learning and a gene-wise, across-cell-type test against a gene-activity baseline is missing. **(my take)**
+
 ## 2. Problem it solves
 
 Sequence-only models (Enformer-style) are blind to cell type: one DNA sequence, many cell states. Expression-only models have no mechanism. GET takes *cell-type-specific accessibility* plus *sequence motifs* as input, so it can be applied to any cell type that has an ATAC profile, including unseen ones. **(paper)**

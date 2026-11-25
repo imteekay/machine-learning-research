@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: joint pretraining is the obvious alternative to "separate encoders + alignment" for the Master's model. X-Omics may be the largest paired or unpaired RNA+ATAC pretraining set available. **(my take)**
 - **Main claim**: state-of-the-art results on cell representation, cross-modality cell matching, and cross-omics translation. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scRNA and scATAC foundation models mostly exist as unimodal models, and paired multiome data carries complementary information. **(paper)**
+- **Gap (not known)**: Whether joint pretraining on RNA and ATAC at multi-million-cell scale improves representation, cross-modal matching and translation; details are not available in the abstract. **(my take)**
+- **Hypothesis / what they try to determine**: Joint pretraining on the X-Omics corpus (>2.7M cells, multiple tissues and species) gives better cell representation, cross-modality matching and cross-omics translation. **(paper)**
+- **Approach (how they investigated)**: Pretrain a joint RNA+ATAC model on X-Omics and evaluate on representation, cell matching and translation tasks. Specifics not available in abstract (bioRxiv returned HTTP 429). **(paper, abstract-level)**
+- **Results (what they found)**: Claims state-of-the-art on the three task types; no numbers available in abstract. **(paper)**
+- **Implications (what it means)**: If matching holds within cell type it is a strong baseline and corpus for E3.2; unverified until full text and baselines are read. **(my take)**
+
 ## 2. Problem it solves
 
 Unimodal FMs cannot use the complementary information in paired multiome data. **(paper)**

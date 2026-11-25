@@ -136,6 +136,13 @@ The model didn't need training data for *Drug $B$ on this tumor cell*. Instead, 
 
 $$\text{Drug } B \xrightarrow{\text{Latent Similarity}} \text{ Behaves like Drug } A \xrightarrow{\text{Known Pathway}} \text{ Inhibits Kinase X } \xrightarrow{\text{Cell Manifold}} \text{ Tumor Shrinkage}$$
 
+## Caveats from the paper notes
+
+- The universal representation (UR) plus virtual instruments (VI) framework and the three scales come from a perspective with no experiments ([ai-virtual-cell-priorities](../02-paper-notes/ai-virtual-cell-priorities.md)); it names no baseline a virtual cell must beat, so treat it as vocabulary, not a result.
+- The zero-shot toy example above is illustrative and uses made-up vectors. Real evidence is less favorable: zero-shot scGPT and Geneformer embeddings lost to HVG on all cell-type metrics across 5 datasets ([zero-shot-scfm-limitations](../02-paper-notes/zero-shot-scfm-limitations.md)), and a linear rank-normalised pipeline is near FMs ([simple-models-beat-scfms](../02-paper-notes/simple-models-beat-scfms.md)). A closer working example of knowledge-based zero-shot drug response is [vcworld](../02-paper-notes/vcworld.md) (chemical perturbations, one data source).
+- "Embeddings plus manipulators give a world model" is contested: [vcwm-three-gaps](../02-paper-notes/vcwm-three-gaps.md) (abstract-only) argues representation is not dynamics and multimodality is not multiscale, and [virtual-cells-need-context](../02-paper-notes/virtual-cells-need-context.md) (full text) argues the bottleneck is context coverage, not scale; its scLDM test on a 22M-cell primary CD4+ T cell Perturb-seq (held-out donor-timepoint contexts) finds DEG recall of only about 0.09 and DEG-F1 rising with the number of contexts a perturbation was seen in (below 0.1 at 3 or fewer, about 0.19 at 8), not with cell count (r = 0.11). vcwm-three-gaps is not verified from full text.
+- Fit-for-purpose data and a stated goal matter: see [virtual-cells-predict-explain-discover](../02-paper-notes/virtual-cells-predict-explain-discover.md) (predict, explain, discover with lab-in-the-loop falsification). Open questions and experiments: [insights-and-open-questions.md](insights-and-open-questions.md).
+
 ## Resources
 
 - [1] [How to build the virtual cell with artificial intelligence](../papers/how-to-build-the-virtual-cell-with-ai.pdf)

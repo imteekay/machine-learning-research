@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the probabilistic, count-aware baseline for niche-aware representation; small, principled, and uses proper NB likelihoods — the kind of baseline large spatial FMs must beat.
 - **Main claim**: finds a spatially restricted tumor-promoting endothelial population in breast cancer and niche-associated T-cell states shared across cancers **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: Spatial transcriptomics shows cells depend on their niche, but standard scVI-style embeddings use only each cell's own expression. **(paper)**
+- **Gap (not known)**: Whether a deep generative model informed by neighbors can capture niche-dependent cell state. **(paper)**
+- **Hypothesis / what they try to determine**: Conditioning a cell's latent on its neighborhood expression reveals niche-specific states that expression alone misses. **(paper)**
+- **Approach (how they investigated)**: scVI-family VAE with neighborhood terms on single-cell-resolution spatial data, applied to breast cancer and other cancers (abstract/docs-level). **(paper)**
+- **Results (what they found)**: It finds a spatially restricted tumor-promoting endothelial population in breast cancer and niche-associated T-cell states shared across cancers. **(paper)**
+- **Implications (what it means)**: Niche-aware embeddings support discovery in tumors, but quantitative benchmarks and ablations were not read. **(my take)**
+
 ## 2. Problem it solves
 
 Most cell embeddings ignore neighbors, so cells with identical intrinsic programs in different niches are merged **(paper)**.

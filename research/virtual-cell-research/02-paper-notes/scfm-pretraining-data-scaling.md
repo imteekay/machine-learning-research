@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: if scFM data scaling plateaus, the path forward is new *kinds* of data and context, not more cells. **(my take)**
 - **Main claim**: performance plateaus at a fraction of current corpus sizes, there is no clear LLM-like data scaling law, and naive diversity boosting (cell-type reweighting, geometric sketching) does not reliably help. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scFMs are justified by analogy with LLM scaling. **(paper)**
+- **Gap (not known)**: Whether pretraining dataset size and diversity improve scFM performance in the way LLM scaling predicts. **(paper)**
+- **Hypothesis / what they try to determine**: Performance scales with data size and diversity enrichment helps. **(my take, tested and not supported)**
+- **Approach (how they investigated)**: Pretrain ~400 models on random and diversity-enriched subsets of a 22.2M-cell corpus and run ~6,400 evaluations. **(paper)**
+- **Results (what they found)**: Performance plateaus at a fraction of corpus size; no clear scaling law; diversity methods did not reliably help. **(paper)**
+- **Implications (what it means)**: More cells alone is not the lever; new data types and context may be. Full text not retrieved (Nature login, bioRxiv blocked). **(my take)**
+
 ## 2. Problem it solves
 
 scFMs are justified by analogy to LLM scaling. This tests that analogy directly with controlled pretraining subsets. **(paper)**

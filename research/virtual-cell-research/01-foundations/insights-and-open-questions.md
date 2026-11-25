@@ -15,6 +15,7 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 
 1. [Cross-cutting insights](#1-cross-cutting-insights)
 2. [Contradictions and tensions](#2-contradictions-and-tensions)
+   - [2A. Known / not known / what the findings mean](#2a-known--not-known--what-the-findings-mean)
 3. [Ranked falsifiable hypotheses and experiments](#3-ranked-falsifiable-hypotheses-and-experiments)
 4. [Open questions and the re-fetch / verify-first list](#4-open-questions-and-the-re-fetch--verify-first-list)
 5. [Index of `01-foundations/`](#5-index-of-01-foundations)
@@ -31,7 +32,7 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 
 **Evidence.**
 - [simple-models-beat-scfms](../02-paper-notes/simple-models-beat-scfms.md): a few-line rank-normalised linear pipeline matches or beats zero-shot scFMs (small loss in-distribution, wins cross-species).
-- [zero-shot-scfm-limitations](../02-paper-notes/zero-shot-scfm-limitations.md), [scfm-context-dependent-utility](../02-paper-notes/scfm-context-dependent-utility.md): same direction (abstract-only).
+- [zero-shot-scfm-limitations](../02-paper-notes/zero-shot-scfm-limitations.md) (full text): zero-shot scGPT (3 variants) and Geneformer on 5 human datasets; HVG beat both on all cell-type metrics, scGPT won only on PBMC 12k AvgBIO, Geneformer ranked last on batch integration. [scfm-context-dependent-utility](../02-paper-notes/scfm-context-dependent-utility.md): same direction (skimmed). [fm-fundamental-limitations](../02-paper-notes/fm-fundamental-limitations.md): FMs below Seurat v5 under Gaussian noise (abstract-only, no numbers).
 - [spatialprop](../02-paper-notes/spatialprop.md): only modest gains over a k-hop mean. [nicheformer](../02-paper-notes/nicheformer.md) critique: cell type alone is a niche shortcut.
 - Toy: [E2.1](../04-experiments/E2.1-mini-scgpt-vs-pca.md) (random-init transformer as a negative control; PCA wins at toy scale), [E5.1](../04-experiments/E5.1-niche-context.md) (cell type alone gives R² 0.36 for neighborhood composition), [E0.4](../04-experiments/E0.4-minimal-virtual-cell.md) (a mean-shift baseline scores 0.755 on raw delta Pearson).
 
@@ -45,7 +46,7 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 
 **Evidence.**
 - [perturbation-response-decomposition](../02-paper-notes/perturbation-response-decomposition.md): a global template plus an interaction term (read to ~100k characters); [virtual-cells-predict-explain-discover](../02-paper-notes/virtual-cells-predict-explain-discover.md) (full read): relative change plus negative controls is the most actionable rule.
-- Many notes list the same caveat: [gears](../02-paper-notes/gears.md), [cpa](../02-paper-notes/cpa.md), [scgenept](../02-paper-notes/scgenept.md), [scouter](../02-paper-notes/scouter.md), [x-cell](../02-paper-notes/x-cell.md), [state-arc](../02-paper-notes/state-arc.md), [pertformer](../02-paper-notes/pertformer.md).
+- Many notes list the same caveat: [gears](../02-paper-notes/gears.md), [cpa](../02-paper-notes/cpa.md), [scgenept](../02-paper-notes/scgenept.md) [README only], [scouter](../02-paper-notes/scouter.md) [full], [x-cell](../02-paper-notes/x-cell.md), [state-arc](../02-paper-notes/state-arc.md), [pertformer](../02-paper-notes/pertformer.md).
 - Toy: [E4.5](../04-experiments/E4.5-scgen-unseen-cell-type.md): the shared ISG program explains roughly 70-84% of each type's response; uncorrected R² hides this. [E0.4](../04-experiments/E0.4-minimal-virtual-cell.md): raw delta Pearson rewards the mean-shift baseline.
 
 **Confidence: High** for the mechanism (full-text + toy). Medium for how much of any specific published model's gain it removes (those notes are abstract-only).
@@ -57,7 +58,7 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 **Why it matters.** The "context vs scale" framing of the thesis depends on whether scale is truly exhausted for the tasks that matter (unseen perturbations, unseen contexts). Nobody in the notes has shown a downstream power law on an OOD task.
 
 **Evidence.**
-- [scfm-pretraining-data-scaling](../02-paper-notes/scfm-pretraining-data-scaling.md) (abstract-only): plateau claim. [scfm-scaling-recipes](../02-paper-notes/scfm-scaling-recipes.md) (abstract-only): loss scaling vs downstream. [x-cell](../02-paper-notes/x-cell.md) (abstract-only): the "scale" arm for perturbations.
+- [scfm-pretraining-data-scaling](../02-paper-notes/scfm-pretraining-data-scaling.md) (abstract-only): plateau claim. [scfm-scaling-recipes](../02-paper-notes/scfm-scaling-recipes.md) (abstract-only): loss scaling vs downstream. [x-cell](../02-paper-notes/x-cell.md) (project page only; alpha about 0.32, R2 0.96): the "scale" arm for perturbations.
 - Toy: [E2.1](../04-experiments/E2.1-mini-scgpt-vs-pca.md): pretraining loss fell below the floor while `<cls>` barely beat an untrained network (toy scale; the guess that `<cls>` encodes depth is untested).
 - [fm-fundamental-limitations](../02-paper-notes/fm-fundamental-limitations.md) (abstract-only): robustness failures under noise.
 
@@ -70,7 +71,7 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 **Why it matters.** This is the central thesis hypothesis (H1) and the PhD hypothesis. The synthesis suggests framing context as a menu with separate tests: chromatin (E4.1/E3.x), trans regulator activity (RegFM-like), prior knowledge graphs (GO/text/DepMap), niche (E5.x).
 
 **Evidence.**
-- [virtual-cells-need-context](../02-paper-notes/virtual-cells-need-context.md) (abstract-only; see section 4), [ai-virtual-cell-priorities](../02-paper-notes/ai-virtual-cell-priorities.md) ("universal" vs task-specific representation), [large-perturbation-model-lpm](../02-paper-notes/large-perturbation-model-lpm.md) (context is a lookup ID, so it cannot do unseen contexts by construction).
+- [virtual-cells-need-context](../02-paper-notes/virtual-cells-need-context.md) (full text; see section 4), [ai-virtual-cell-priorities](../02-paper-notes/ai-virtual-cell-priorities.md) ("universal" vs task-specific representation), [large-perturbation-model-lpm](../02-paper-notes/large-perturbation-model-lpm.md) (context is a lookup ID, so it cannot do unseen contexts by construction).
 - Competing context sources: [regfm](../02-paper-notes/regfm.md) (trans activity), [scgenept](../02-paper-notes/scgenept.md) and [langpert](../02-paper-notes/langpert.md) (text/LLM priors), [pertadapt-closing-the-loop](../02-paper-notes/pertadapt-closing-the-loop.md) (GO-masked adapter), [fifteen-challenges-genai-cell-biology](../02-paper-notes/fifteen-challenges-genai-cell-biology.md) (placeholder; see H-15C1 below).
 
 **Confidence: Medium.** The conceptual argument is consistent across notes; direct evidence that a *specific* context type reduces unseen-context error is absent from the notes I have full text for.
@@ -109,7 +110,7 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 
 **Evidence.**
 - Toy [E1.1](../04-experiments/E1.1-integration-without-erasing-disease.md): donor conditioning dropped held-out disease AUROC 0.999 to 0.75 and ISG Spearman 0.92 to 0.52 when disease was donor-level; inconclusive on Kang (no real batch).
-- [scpoli](../02-paper-notes/scpoli.md) (read at method level), [drifting-islands-embedding-metrics](../02-paper-notes/drifting-islands-embedding-metrics.md) (abstract-only: top on standard metrics, worst on scGraph in 7/11 atlases), [cpa](../02-paper-notes/cpa.md) (leakage concern; abstract-only/model memory).
+- [scpoli](../02-paper-notes/scpoli.md) (read at method level), [drifting-islands-embedding-metrics](../02-paper-notes/drifting-islands-embedding-metrics.md) (abstract plus code README only: top on standard metrics, worst on scGraph in 7/11 atlases), [cpa](../02-paper-notes/cpa.md) (leakage concern; abstract-only/model memory).
 
 **Confidence: Medium.** Mechanism demonstrated on synthetic data only; the metric-gaming evidence is abstract-only.
 
@@ -161,7 +162,7 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 
 **Why it matters.** Phase 6 and the proposal's "cascading effects" claim need rollouts. Without a closure/compounding test the label carries no predictive content.
 
-**Evidence.** [cell-world-models-perspectives](../02-paper-notes/cell-world-models-perspectives.md), [vcwm-three-gaps](../02-paper-notes/vcwm-three-gaps.md), [cellos](../02-paper-notes/cellos.md), [chreode](../02-paper-notes/chreode.md), [alphacell](../02-paper-notes/alphacell.md), [cellworld](../02-paper-notes/cellworld.md), [maxtoki](../02-paper-notes/maxtoki.md), [lingshu-cell](../02-paper-notes/lingshu-cell.md), [perturbgen](../02-paper-notes/perturbgen.md) (all abstract-only except partial reads of perturbgen).
+**Evidence.** [cell-world-models-perspectives](../02-paper-notes/cell-world-models-perspectives.md), [vcwm-three-gaps](../02-paper-notes/vcwm-three-gaps.md), [cellos](../02-paper-notes/cellos.md), [chreode](../02-paper-notes/chreode.md), [alphacell](../02-paper-notes/alphacell.md), [cellworld](../02-paper-notes/cellworld.md), [maxtoki](../02-paper-notes/maxtoki.md), [lingshu-cell](../02-paper-notes/lingshu-cell.md), [perturbgen](../02-paper-notes/perturbgen.md) (abstract-only except [cellworld](../02-paper-notes/cellworld.md), read in full text but a spatial latent-prediction model with no rollout test, and partial reads of perturbgen).
 
 **Confidence: Low.** The gap is stated consistently by the critiques, but each is based on abstracts.
 
@@ -181,7 +182,7 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 
 **Why it matters.** Every E4.x result must report equal tuning budgets, held-out-after-cutoff data, and leakage checks. Otherwise the thesis result is uninterpretable.
 
-**Evidence.** [vcbench-biollm](../02-paper-notes/vcbench-biollm.md) (abstract-only: contamination), [scgpt-bayesian-hpo-multiomics](../02-paper-notes/scgpt-bayesian-hpo-multiomics.md) (full text, with internal inconsistencies noted), [scgenept](../02-paper-notes/scgenept.md), [langpert](../02-paper-notes/langpert.md), [vcworld](../02-paper-notes/vcworld.md), [stp-bench-and-st-prediction-review](../02-paper-notes/stp-bench-and-st-prediction-review.md), [stpath](../02-paper-notes/stpath.md) (donor/slide leakage).
+**Evidence.** [vcbench-biollm](../02-paper-notes/vcbench-biollm.md) (partial: VCBench via GitHub README, BioLLM abstract-only; contamination), [scgpt-bayesian-hpo-multiomics](../02-paper-notes/scgpt-bayesian-hpo-multiomics.md) (full text, with internal inconsistencies noted), [scgenept](../02-paper-notes/scgenept.md), [langpert](../02-paper-notes/langpert.md), [vcworld](../02-paper-notes/vcworld.md), [stp-bench-and-st-prediction-review](../02-paper-notes/stp-bench-and-st-prediction-review.md), [stpath](../02-paper-notes/stpath.md) (donor/slide leakage).
 
 **Confidence: Medium.** One full-text paper plus consistent flags across many abstract-only notes.
 
@@ -215,6 +216,39 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 
 ---
 
+## 2A. Known / not known / what the findings mean
+
+Consolidated from the *Research summary* blocks of the notes. Evidence tier: **[full]** = note says full text was read; **[abstract]** = abstract, press release or skimmed only, so claims are not verified; **[partial]** = only part of the paper, a README or a model card was read; **[none]** = placeholder, no paper content. Numbers are those stated in the notes.
+
+**Already known (full text read)**
+- Scale does not help because the bottleneck is context coverage (a transportability problem); within one context simple baselines match sophisticated models, across contexts all fail. In held-out donor-timepoint contexts of a 22M-cell primary CD4+ T cell Perturb-seq, scLDM beats mean baselines on Δ-correlation, cosine and L2 but DEG recall is about 0.09 (precision about 0.67); DEG-F1 rises from below 0.1 to about 0.19 as a perturbation is seen in 8 rather than 3 or fewer contexts, and correlates weakly with cell count (r = 0.11) ([virtual-cells-need-context](../02-paper-notes/virtual-cells-need-context.md) [full]).
+- Text priors cut unseen-gene error: Scouter's single-gene normalized MSE is about 49% of biolord's and 51% of GEARS', and on Norman two-gene perturbations 21.2% of GEARS' (against GEARS, biolord and fine-tuned FMs only, no mean/ridge baseline) ([scouter](../02-paper-notes/scouter.md) [full]).
+- A pretrained generative slide-level model predicts expression across organs: pretraining-validation PCC 0.266 vs 0.198 for TRIPLEX (+34.4%), first in PCC on 8 of 10 zero-shot HEST-Bench datasets; low absolute level, possibly encoder-driven ([stpath](../02-paper-notes/stpath.md) [full]).
+- Squidiff and PerturbGen are full-text reads: PerturbGen balanced accuracy 62.8-72.0% vs 43.5-52.7% for CellOracle; Squidiff beats scGen and GEARS on selected comparisons, one split not significant ([squidiff](../02-paper-notes/squidiff.md) [full], [perturbgen](../02-paper-notes/perturbgen.md) [full]).
+- A rank-normalised linear pipeline (ANOVA selection, whitened PCA, logistic regression) is near foundation models zero-shot: cross-species macro F1 0.679 vs 0.639 for the best FM, Tabula Sapiens 0.887 vs 0.911 for TF-Sapiens ([simple-models-beat-scfms](../02-paper-notes/simple-models-beat-scfms.md) [full]).
+- Zero-shot scGPT and Geneformer embeddings lose to HVG on all cell-type metrics on 5 human datasets ([zero-shot-scfm-limitations](../02-paper-notes/zero-shot-scfm-limitations.md) [full]).
+- Latent prediction of masked cells (JEPA-style) over 46M spatial cells helps region and niche tasks more than annotation; Nicheformer stays best on fine-tuned annotation; evidence covers four datasets and 300 HVGs ([cellworld](../02-paper-notes/cellworld.md) [full]).
+- A knowledge-grounded LLM reasoner reaches DE F1 0.63 vs GAT 0.49, scVI 0.21, STATE 0.17, CPA 0.03 on Tahoe-100M-derived chemical perturbations; removing biological context drops it to near random. Single data source, closed-source LLM, no post-cutoff contamination test ([vcworld](../02-paper-notes/vcworld.md) [full]).
+- A panel-agnostic marker-token MAE transfers across spatial-proteomics cohorts (reconstruction r 0.800, zero-shot segmentation wins 8/9) ([virtual-tissues-virtues](../02-paper-notes/virtual-tissues-virtues.md)).
+- Perspectives define the field: universal representations plus virtual instruments ([ai-virtual-cell-priorities](../02-paper-notes/ai-virtual-cell-priorities.md) [full]) and predict / explain / discover with L1-L3 levels ([virtual-cells-predict-explain-discover](../02-paper-notes/virtual-cells-predict-explain-discover.md) [full]). Neither contains experiments or a minimum baseline.
+
+**Claimed but not verified (abstract-only)**
+- FM embeddings carry no future-fate signal, endpoint predictors lose state-space closure under iteration, and a multimodal model shows no meaningful chromatin-to-RNA intervention effect ([vcwm-three-gaps](../02-paper-notes/vcwm-three-gaps.md) [abstract], qualitative).
+- No FM publishes a cell-level training manifest, and multi-scale integration and in-silico experimentation are not testable end to end ([vcbench-biollm](../02-paper-notes/vcbench-biollm.md) [partial: VCBench README numbers, BioLLM abstract]). README numbers: perturbation PRR Geneformer 0.627, scGPT 0.503, Arc State 0.402 vs additive 0.890 and mean 0.579; no model reaches virtual-cell level 3.
+- FMs fall below Seurat v5 under added noise ([fm-fundamental-limitations](../02-paper-notes/fm-fundamental-limitations.md) [abstract]); the "missing biological context" explanation is the authors' attribution, untested.
+- World-model and "15 challenges" framings ([cell-world-models-perspectives](../02-paper-notes/cell-world-models-perspectives.md) [abstract], [fifteen-challenges-genai-cell-biology](../02-paper-notes/fifteen-challenges-genai-cell-biology.md) [press release only]). [harnessing-ai-to-build-virtual-cells](../02-paper-notes/virtual-cell-perspectives-2025.md) is [partial] (piece 2 only; a perspective with no new data, so still not evidence for performance). [harnessing-ai-to-build-virtual-cells](../02-paper-notes/harnessing-ai-to-build-virtual-cells.md) is [none]: nothing in it is evidence. Other partial or README-only support: [tahoe-x1](../02-paper-notes/tahoe-x1.md) [model card only, no metric values], [x-cell](../02-paper-notes/x-cell.md) [project page only], [chrombert](../02-paper-notes/chrombert.md) [abstract plus docs], [scgenept](../02-paper-notes/scgenept.md) / [sclambda](../02-paper-notes/sclambda.md) / [ptv-perturbation-proteomics-virtual-cell](../02-paper-notes/ptv-perturbation-proteomics-virtual-cell.md) [README only], [drifting-islands-embedding-metrics](../02-paper-notes/drifting-islands-embedding-metrics.md) [README only].
+
+**Not known**
+- Whether any OOD task benefits from scale; whether adding explicit context (chromatin, space, donor) fixes transport (no positive control seen in any note); how much of published perturbation-model gain survives a corrected harness; whether pretraining overlap inflates OOD results; what operational threshold makes a model a "world model".
+
+**What the papers try to determine and how**
+- Mostly: is a heavily pretrained model better than a cheap baseline (linear pipeline, HVG, Seurat, GAT), judged by held-out classification, integration or DE F1 on shared splits. Perspectives instead try to fix definitions and priorities; they run no experiments.
+
+**What it means (my take, partly inference)**
+- The strongest verified pattern is I1: strong simple baselines are routinely competitive zero-shot. The perspectives give vocabulary but set no baseline, so they cannot be falsified; the context argument is plausible but rests on an abstract. Read all "context fixes it" and "world model" claims as hypotheses until a positive control or rollout test exists (rows 19-21 in section 3).
+
+---
+
 ## 3. Ranked falsifiable hypotheses and experiments
 
 Ranked by (a) how much a result would change the Master's/PhD direction, (b) how cheap the test is, (c) whether a prerequisite is already built in `04-experiments/`. Phases follow [`../00-plan/roadmap.md`](../00-plan/roadmap.md). "Status" refers to existing write-ups.
@@ -241,6 +275,9 @@ Ranked by (a) how much a result would change the Master's/PhD direction, (b) how
 | 16 | **E6.1 / E6.2** (P6) | After regressing predicted composition per spot, residual predicted expression has PCC < 0.1 (state not captured); patient-level ranking differs from spot-level ranking; donor-level split reduces PCC vs slide-level; an interpretable bottleneck loses < 0.02 AUROC vs end-to-end H&E. | Residual PCC substantial; same ranking; no leakage. | Toy [E6.2](../04-experiments/E6.2-histology-to-expression.md) partially supported; real HEST-1k subset is the next step. | No |
 | 17 | **E6.3** (P6) | Uncertainty-based acquisition reaches 50% of hits with >= 30% fewer perturbations than random in a retrospective simulation; a new-context acquisition rule beats a new-gene rule. | No difference. | Not run. From [virtual-cell-perspectives-2025](../02-paper-notes/virtual-cell-perspectives-2025.md) (placeholder). | No |
 | 18 | **E6.4** (P6) | One-step endpoint predictors iterated k times compound error faster than latent rollouts; "world model" label adds no predictive content. | Equal compounding. | Not run. Needs time-resolved data; depends on notes that are abstract-only ([chreode](../02-paper-notes/chreode.md), [cellos](../02-paper-notes/cellos.md), [vcwm-three-gaps](../02-paper-notes/vcwm-three-gaps.md)). | No |
+| 19 | **E2.4** (P2) | Adding explicit context (cell-type one-hot, donor, ATAC-derived or niche features) to a within-context-trained model improves held-out-context error over the same model without it, while a parameter-matched larger model does not ([virtual-cells-need-context](../02-paper-notes/virtual-cells-need-context.md) transportability claim). | Context features and extra parameters give the same cross-context error. | Not run; the source is abstract-only, so first check its splits. | No |
+| 20 | **E2.5** (P2) | Under binomial count thinning, the linear rank-normalised pipeline of [simple-models-beat-scfms](../02-paper-notes/simple-models-beat-scfms.md) degrades no faster than scGPT/Geneformer embeddings, and "missing context" ([fm-fundamental-limitations](../02-paper-notes/fm-fundamental-limitations.md)) does not explain the gap: the FM gap is unchanged by adding a cell-type prior. | FM degrades faster and a context prior closes the gap. | Not run; merges with E2.1/E2.2. | No |
+| 21 | **E6.5** (P6) | Applying the [vcwm-three-gaps](../02-paper-notes/vcwm-three-gaps.md) tests to one released model: (a) frozen embeddings predict future fate from a time-resolved split no better than a shuffled-time baseline; (b) k-fold iteration of an endpoint predictor leaves the data manifold (measured by distance to the nearest real cell) faster than a latent rollout; (c) a [vcworld](../02-paper-notes/vcworld.md)-style LLM reasoner keeps its DE F1 on drugs released after the LLM cutoff. | Embeddings predict fate, iteration stays on-manifold, or F1 collapses post-cutoff. | Not run; needs time-resolved data and a contamination-safe drug set. | No |
 
 Quick, cheap checks worth slotting in early (no new data): contamination check on E2.1 (gains larger on datasets likely in pretraining), shared-encoder rule for any H&E comparison, report scGraph beside scIB, and a random-init and shuffled-graph control for every model-based claim.
 
@@ -270,9 +307,9 @@ Ordered by how much a thesis decision depends on them.
 | Note | Problem | What to extract on re-fetch |
 |------|---------|------------------------------|
 | [harnessing-ai-to-build-virtual-cells](../02-paper-notes/harnessing-ai-to-build-virtual-cells.md) | Not retrieved; not even the abstract. | The 3 reading questions in its section 7: definition (task vs architecture), context as first-class input, proposed evaluation. |
-| [virtual-cell-perspectives-2025](../02-paper-notes/virtual-cell-perspectives-2025.md) | Not retrieved. | Whether closed-loop claims carry a measurable test (E6.3). |
+| [virtual-cell-perspectives-2025](../02-paper-notes/virtual-cell-perspectives-2025.md) | Partial: piece 2 read via PMC (no experiments; closed-loop speed-up cited, not demonstrated); piece 1 not retrieved. | Whether closed-loop claims carry a measurable test (E6.3). |
 | [fifteen-challenges-genai-cell-biology](../02-paper-notes/fifteen-challenges-genai-cell-biology.md) | Not retrieved. | Build the planned table: challenge -> E-ID -> falsifiable metric; find uncovered challenges. |
-| [geneformer-v2](../02-paper-notes/geneformer-v2.md) | Abstract/secondary only; critique is borrowed from the V1 benchmark. | Whether zero-shot gap to HVG+PCA is addressed; quantization claims. |
+| [geneformer-v2](../02-paper-notes/geneformer-v2.md) | Full text read (Europe PMC); exact AUCs and any HVG baseline comparison are still missing, and the zero-shot critique is borrowed from the V1 benchmark. | Whether zero-shot gap to HVG+PCA is addressed; quantization claims. |
 
 **B. Built from model memory or marked uncertain (verify method and numbers before use)**
 
@@ -281,11 +318,11 @@ Ordered by how much a thesis decision depends on them.
 **C. Position-defining abstract-only notes (the thesis argument leans on them)**
 
 1. [multiflow](../02-paper-notes/multiflow.md): ablations, splits, baselines, whether ATAC is input or output. Highest priority (pre-emption risk for H1).
-2. [virtual-cells-need-context](../02-paper-notes/virtual-cells-need-context.md): case-study model, splits and numbers (PDF is in `../papers/` but unread).
+2. [virtual-cells-need-context](../02-paper-notes/virtual-cells-need-context.md): case-study model, splits and numbers (now read in full; remaining: Appendices C and D).
 3. [scfm-pretraining-data-scaling](../02-paper-notes/scfm-pretraining-data-scaling.md), [scfm-scaling-recipes](../02-paper-notes/scfm-scaling-recipes.md), [x-cell](../02-paper-notes/x-cell.md): what is being scaled (data vs model vs compute) and which metric.
-4. [zero-shot-scfm-limitations](../02-paper-notes/zero-shot-scfm-limitations.md), [fm-fundamental-limitations](../02-paper-notes/fm-fundamental-limitations.md), [scfm-context-dependent-utility](../02-paper-notes/scfm-context-dependent-utility.md): protocol details and contamination overlap.
+4. [fm-fundamental-limitations](../02-paper-notes/fm-fundamental-limitations.md), [scfm-context-dependent-utility](../02-paper-notes/scfm-context-dependent-utility.md): protocol details and contamination overlap ([zero-shot-scfm-limitations](../02-paper-notes/zero-shot-scfm-limitations.md) is now full text; only its contamination overlap with pretraining data remains to check).
 5. [pertformer](../02-paper-notes/pertformer.md), [clm-x](../02-paper-notes/clm-x.md), [regfm](../02-paper-notes/regfm.md), [state-arc](../02-paper-notes/state-arc.md), [tahoe-x1](../02-paper-notes/tahoe-x1.md), [holocell](../02-paper-notes/holocell.md): whether the splits are unseen-perturbation or unseen-cell-type, and what baselines were used.
-6. [epiagent](../02-paper-notes/epiagent.md), [chromfound](../02-paper-notes/chromfound.md) and [chrombert](../02-paper-notes/chrombert.md): ATAC-model scale and validation (note: chromfound is read in full but its enhancer-gene evidence covers 2 genes).
+6. [epiagent](../02-paper-notes/epiagent.md), [chromfound](../02-paper-notes/chromfound.md) and [chrombert](../02-paper-notes/chrombert.md) (abstract plus project docs): ATAC-model scale and validation (note: chromfound is read in full but its enhancer-gene evidence covers 2 genes).
 7. [vcbench-biollm](../02-paper-notes/vcbench-biollm.md): contamination findings and the name collision with the 2026 arXiv "VCBench" in-the-wild benchmark.
 8. World-model set: [cell-world-models-perspectives](../02-paper-notes/cell-world-models-perspectives.md), [vcwm-three-gaps](../02-paper-notes/vcwm-three-gaps.md), [cellos](../02-paper-notes/cellos.md), [chreode](../02-paper-notes/chreode.md), [alphacell](../02-paper-notes/alphacell.md), [cellworld](../02-paper-notes/cellworld.md), [maxtoki](../02-paper-notes/maxtoki.md) (note: built from blog/press/README).
 9. Spatial set: [novae](../02-paper-notes/novae.md), [scviva](../02-paper-notes/scviva.md), [nichecompass](../02-paper-notes/nichecompass.md), [spatialformer](../02-paper-notes/spatialformer.md), [omnicell](../02-paper-notes/omnicell.md), [scgpt-spatial](../02-paper-notes/scgpt-spatial.md), [terra](../02-paper-notes/terra.md), [cifm-generative-virtual-tissue](../02-paper-notes/cifm-generative-virtual-tissue.md), [tiny-recursive-spatial-omics](../02-paper-notes/tiny-recursive-spatial-omics.md).

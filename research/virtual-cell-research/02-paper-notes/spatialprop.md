@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the closest published attempt at the PhD's "bystander effect" module, trained only on observational spatial data.
 - **Main claim**: beats a global-mean baseline, but is only *similar* to a k-hop microenvironment mean; shows causal-direction enrichment on a new benchmark, CausalInteractionBench **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: Perturb-seq perturbs cells in isolation, while tissue responses spread via signaling; spatial perturbation data is scarce. **(paper)**
+- **Gap (not known)**: How far observational spatial data alone can support simulation of tissue perturbation propagation. **(paper)**
+- **Hypothesis / what they try to determine**: That a neighbor-conditioned GNN can predict a cell's expression from its microenvironment and so simulate edit-and-propagate perturbations. **(paper)**
+- **Approach (how they investigated)**: 2-hop GIN on Delaunay graphs over nine spatial datasets, evaluated on tissue steering and the new CausalInteractionBench. **(paper)**
+- **Results (what they found)**: Beats a global-mean baseline but only ties a k-hop microenvironment mean; shows a modest causal-direction enrichment (mean Spearman gap 0.094). **(paper)**
+- **Implications (what it means)**: The k-hop mean is the bar to beat; neighbor-conditioned predictors likely learn correlation, not intervention. **(my take)**
+
 ## 2. Problem it solves
 
 Perturb-seq perturbs cells in isolation; real tissue responses spread via signaling. Spatial perturbation data is scarce, so the paper asks how far observational spatial data can go **(paper)**.

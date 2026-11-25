@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the field's vocabulary for the "next step" the PhD targets.
 - **Main claim**: abstract-only; no results (perspectives).
 
+## Research summary
+
+- **Context (already known)**: Biomedical AI mostly does classification and single-step prediction, and "world model" and "virtual cell" are used loosely. (paper, secondary summary)
+- **Gap (not known)**: What a world model of a cell or of biomedicine should be, and how it differs from task-specific predictors. (paper, secondary summary)
+- **Hypothesis / what they try to determine**: That models should represent states, accept interventions and simulate future states. (paper, abstract-only)
+- **Approach (how they investigated)**: Position pieces: they propose definitions, with no experiments. (paper, abstract-only)
+- **Results (what they found)**: No results; full text not available (Cell pages returned 403). (paper)
+- **Implications (what it means)**: The definitions give vocabulary for the PhD target but are not testable without a benchmark. **(my take)**
+
 ## 2. Problem it solves
 
 Fragmented use of "world model" and "virtual cell" **(paper, secondary)**.

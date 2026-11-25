@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it says *when* pretraining pays off. That turns "do FMs help?" into a testable data-regime question (E2.2). **(my take)**
 - **Main claim**: SSL helps mainly in transfer, when a small target dataset benefits from a large auxiliary pretraining corpus. Masked autoencoders beat contrastive methods for single-cell. SSL pretraining on the same data used for fine-tuning gives no gain over supervised training. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: SSL is standard in vision and NLP and is being adopted for single-cell data. **(paper)**
+- **Gap (not known)**: Which SSL objectives and data regimes actually help on sparse count data. **(paper)**
+- **Hypothesis / what they try to determine**: That SSL gains depend on transfer from large auxiliary corpora, and on the objective type. **(paper)**
+- **Approach (how they investigated)**: Benchmark of masked and contrastive SSL pretrained on >20M CELLxGENE cells, evaluated on cell-type prediction, reconstruction, cross-modality prediction and integration. **(paper)**
+- **Results (what they found)**: SSL helps mainly for small target datasets with large auxiliary pretraining; masking beats contrastive; in-domain SSL gives no gain over supervised. Numbers not available in abstract. **(paper)**
+- **Implications (what it means)**: Frames FM benefit as a data-regime question; baselines being supervised nets leaves open the comparison to strong linear pipelines. **(my take)**
+
 ## 2. Problem it solves
 
 The SSL literature is borrowed from vision and NLP. It was unclear which objectives and regimes transfer to sparse count data. **(paper)**

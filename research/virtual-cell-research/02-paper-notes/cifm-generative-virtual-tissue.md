@@ -5,7 +5,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 5](../00-plan/roadmap.md#phase-5-spatial-and-tissue-level-modeling)
-- **Status**: skimmed (abstract-level, via search summary; bioRxiv returned 429)
+- **Status**: skimmed (abstract-only; bioRxiv returned 429 again on re-attempt)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -13,6 +13,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: the Cell Interaction Foundation Model (CIFM), a geometric graph neural network trained on millions of cellular microenvironments that forward-simulates tissue responses to treatments from a spatial transcriptomic seed **(paper, abstract-only)**.
 - **Why it matters for the virtual cell**: it goes from simulation to *design*: screening >10^6 single and combinatorial perturbations to find immunotherapy strategies, the PhD end goal in miniature.
 - **Main claim**: CIFM designs pathway-manipulation strategies that induce or suppress immune activation in cancer and autoimmune disease **(paper, abstract-only)**.
+
+## Research summary
+
+- **Context (already known)**: Cell-level perturbation models cannot rank therapeutic perturbation combinations at the tissue level. **(my take)**
+- **Gap (not known)**: Whether a tissue-level generative simulator can design perturbation strategies from spatial transcriptomic seeds. **(paper)**
+- **Hypothesis / what they try to determine**: That a geometric GNN over cellular microenvironments can forward-simulate treatment responses and design immune-modulating strategies. **(paper)**
+- **Approach (how they investigated)**: Train CIFM on millions of microenvironments and screen more than 10^6 in-silico perturbations. Details are abstract-only. **(paper)**
+- **Results (what they found)**: It designs pathway manipulations that induce or suppress immune activation in cancer and autoimmune disease; no numbers or validation available in abstract. **(paper)**
+- **Implications (what it means)**: It is a template for the design end goal, but counterfactual validity is unverified without held-out perturbation data. **(my take)**
 
 ## 2. Problem it solves
 

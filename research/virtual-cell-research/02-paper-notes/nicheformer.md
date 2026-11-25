@@ -17,6 +17,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the first large model to ask whether a *single cell's* expression encodes *where it lives*. That is the bridge from cell-level to tissue-level virtual cells.
 - **Main claim**: joint pretraining on spatial + dissociated data gives embeddings that predict spatial labels (niche, region, neighborhood composition, neighborhood density) better than models trained on dissociated data only, and lets spatial labels be transferred onto dissociated cells **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: scFMs pretrained on dissociated scRNA-seq never see spatial variation, and imaging spatial data measure only hundreds of genes. **(paper)**
+- **Gap (not known)**: whether a single cell's expression encodes its tissue context and whether joint pretraining on spatial and dissociated data helps. **(paper)**
+- **Hypothesis / what they try to determine**: pretraining on both modalities gives embeddings that predict spatial labels better than dissociated-only models. **(paper)**
+- **Approach (how they investigated)**: Geneformer-style encoder with species, modality and technology tokens, pretrained on SpatialCorpus-110M; linear probing and fine-tuning on niche, region, neighbourhood composition and density. **(paper)**
+- **Results (what they found)**: beats scGPT, Geneformer, UCE and PCA on spatial label and composition prediction, and models without spatial pretraining do worse; exact figures not re-checked. **(paper)**
+- **Implications (what it means)**: spatial context can be inferred from one cell, but segmentation spillover, cell-type shortcuts and random splits could inflate gains without held-out-slide controls. **(my take)**
+
 ## 2. Problem it solves
 
 Dissociated scRNA-seq has whole-transcriptome depth but loses position. Imaging spatial methods keep position but measure only a few hundred genes. scFMs pretrained only on dissociated data never see spatial variation, so they cannot be expected to encode it **(paper)**.

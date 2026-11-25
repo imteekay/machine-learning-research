@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it uses RNA as the supervision signal for ATAC, so the ATAC embedding is forced to encode *gene-regulatory* information. That is the property the Master's hypothesis assumes ATAC has. **(my take)**
 - **Main claim**: state-of-the-art annotation and batch correction, and better expression prediction than Signac gene activity. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Masked reconstruction of sparse binary peaks mostly learns depth and cell-type structure, and paired RNA offers a denser target. **(paper)**
+- **Gap (not known)**: Whether supervising an ATAC model with paired gene expression yields better scATAC embeddings and expression prediction. **(paper)**
+- **Hypothesis / what they try to determine**: Predicting binarized gene expression from the ATAC [CLS] embedding (peak-to-gene alignment) forces the embedding to encode regulatory information. **(paper)**
+- **Approach (how they investigated)**: A 6-layer transformer over non-zero peaks pretrained on MiniAtlas (>100k Multiome cells, 19 tissues, 56 cell types), evaluated on annotation, batch correction and expression prediction. **(paper)**
+- **Results (what they found)**: Annotation accuracy 0.914 (kidney), 0.884 (PBMC), 0.842 (all tissues); best NMI on kidney and PBMC batch correction; PBMC expression prediction Spearman 0.42 vs 0.16 for Signac gene activity. **(paper)**
+- **Implications (what it means)**: RNA supervision is a clean way to make an ATAC context encoder regulatory by design, but the only expression baseline is weak and the pretraining target matches the test task. **(my take)**
+
 ## 2. Problem it solves
 
 Masked reconstruction on sparse binary peaks learns mostly depth and cell-type structure. Dense, paired RNA gives a richer target. **(paper)**

@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: a ready encoder for the "niche context" input of the PhD tissue-level model. **(my take)**
 - **Main claim**: trained on ~29M cells, 18 tissues, three technologies; zero-shot spatial domain identification, built-in batch correction, downstream spatially variable genes and domain trajectories. **(paper, summary)**
 
+## Research summary
+
+- **Context (already known)**: Spatial transcriptomics domain-identification methods are mostly trained per dataset and gene panel, and single-cell FMs ignore tissue structure. **(paper)**
+- **Gap (not known)**: Whether one self-supervised graph model can give zero-shot niche representations across panels, technologies and tissues is not established; full text not read. **(my take)**
+- **Hypothesis / what they try to determine**: Whether a graph attention network pretrained on ~29M cells from 18 tissues and 3 technologies transfers zero-shot to spatial domain identification. **(paper)**
+- **Approach (how they investigated)**: Self-supervised graph attention over cell neighborhoods, benchmarked on domain identification and downstream spatially variable genes and domain trajectories; benchmark details not retrieved (abstract-only). **(paper)**
+- **Results (what they found)**: Reported zero-shot domain identification with built-in batch correction; no numbers or baselines seen. **(paper)**
+- **Implications (what it means)**: If it holds, Novae is a ready niche encoder for tissue-level models, but whether niche embeddings add information beyond cell type is untested here. **(my take)**
+
 ## 2. Problem it solves
 
 Spatial domain methods are tied to one dataset/panel and need retraining. **(paper)**

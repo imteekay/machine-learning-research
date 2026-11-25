@@ -25,6 +25,15 @@ Conventions used in this note:
 
 ---
 
+## Research summary
+
+- **Context (already known)**: Spatial proteomics studies use different antibody panels and platforms, so encoders and annotations do not transfer. **(paper)**
+- **Gap (not known)**: Whether one panel-agnostic, multiscale representation can serve many cohorts. **(paper)**
+- **Hypothesis / what they try to determine**: Marker tokens from ESM-2 plus factorized attention in an MAE yield a transferable representation from patch to patient. **(paper)**
+- **Approach (how they investigated)**: MAE ViT on 15 IMC cohorts (3,102 patients), extended to 32 cohorts across 4 technologies. **(paper)**
+- **Results (what they found)**: Reconstruction r 0.800 (independent masking); beats KRONOS and CA-MAE on cell typing; zero-shot segmentation wins 8/9; TNBC anti-PD-L1 AUROC 0.823. **(paper)**
+- **Implications (what it means)**: A tissue-scale universal representation is feasible and is a base for a tissue world model. **(my take)**
+
 ## 2. The problem VirTues solves
 
 - **Spatial proteomics** = measuring *which proteins are where* in an intact tissue slice, at (sub)cellular resolution, for 10s–100s of proteins at once.

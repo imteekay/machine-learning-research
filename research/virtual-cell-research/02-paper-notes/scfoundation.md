@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it treats sequencing depth as an explicit input, which is the right inductive bias for a model that must generalize across protocols and clinical samples with very different depths. **(my take)**
 - **Main claim**: state of the art on expression enhancement, tissue and single-cell drug response, perturbation prediction, annotation and gene-module inference. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Earlier scFMs truncate to HVGs or rank-encode genes, discarding absolute expression and depth. **(paper, abstract-level)**
+- **Gap (not known)**: Whether a model over ~20k genes with explicit read-depth handling, pretrained at >50M cells, transfers across many tasks. **(paper)**
+- **Hypothesis / what they try to determine**: An asymmetric encoder-decoder with depth-aware pretraining gives better representations for enhancement, drug response, perturbation and annotation. **(paper)**
+- **Approach (how they investigated)**: Pretrain on >50M human profiles and evaluate on six task families, including GEARS-style perturbation. Details abstract-only. **(paper)**
+- **Results (what they found)**: Claims state of the art across tasks; numbers not available in abstract. **(paper)**
+- **Implications (what it means)**: Depth conditioning is a good bias, but gains may come from downstream heads; unverified. **(my take)**
+
 ## 2. Problem it solves
 
 Earlier scFMs truncate to a few thousand HVGs or rank-encode genes, discarding absolute expression and depth. scFoundation tries to model the full gene set and the count scale at once. **(paper, abstract-level)**

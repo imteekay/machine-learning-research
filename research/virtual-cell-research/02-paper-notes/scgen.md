@@ -17,6 +17,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: the first widely used "unseen cell context" perturbation model, and the ancestor of CPA, scPreGAN, CellOT, etc. It defines the split (leave-one-cell-type-out) that E4.1 inherits. **(my take)**
 - **Main claim**: latent arithmetic in a VAE beats arithmetic in gene space or PCA space and beats CVAE / style-transfer GAN baselines, across cell types, studies and species. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Perturbation effects are partly shared across cell types, and VAEs learn compact latent spaces of expression. **(paper)**
+- **Gap (not known)**: Whether the response to a perturbation can be transferred to a cell type never perturbed, using only its control cells. **(paper)**
+- **Hypothesis / what they try to determine**: A single latent shift vector from a VAE transfers better than shifts in gene or PCA space. **(paper)**
+- **Approach (how they investigated)**: Train a VAE, compute delta = mean z(stimulated) - mean z(control) on seen types, add it to latent codes of the held-out type, decode, and compare with linear, CVAE and GAN baselines. **(paper)**
+- **Results (what they found)**: High R2 on held-out cells (e.g. CD4 T), VAE beating baselines across cell types, studies and species; exact numbers uncertain. **(paper)**
+- **Implications (what it means)**: It defines the leave-one-cell-type-out split, but mean R2 is flattered by baseline expression, so shared response must be controlled for. **(my take)**
+
 ## 2. Problem it solves
 
 Measuring every perturbation in every cell type is impossible. If a perturbation's effect is partly shared across types, a model could learn it on some types and transfer it to others, from control cells alone. **(paper)**

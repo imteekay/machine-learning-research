@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it kills the shortcut "read the GRN off attention". Causal structure has to be tested with perturbations, not with attention maps. **(my take)**
 - **Main claim**: gene-level features (variance, mean, dropout) reach AUROC 0.81–0.88 for predicting perturbation targets, against about 0.70 for attention or correlation edges. Adding edges to gene features gives about zero gain over 559,720 perturbation–gene pairs. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scFM papers often present attention-derived edges as gene regulatory networks. **(paper)**
+- **Gap (not known)**: Whether attention edges carry information beyond trivial gene-level features such as mean, variance and dropout. **(paper)**
+- **Hypothesis / what they try to determine**: Attention edges add no incremental value over gene-level features for predicting perturbation targets. **(paper)**
+- **Approach (how they investigated)**: 37 analyses and 153 tests on scGPT and Geneformer: TF-target recovery and DE-target prediction on CRISPR screens, with residualization, matching and head ablations. **(paper)**
+- **Results (what they found)**: Gene features give AUROC 0.81-0.88 against about 0.70 for edges, and edges add about 0 over 559,720 pairs. Ablating TRRUST-aligned heads changes nothing. **(paper)**
+- **Implications (what it means)**: Interpretability claims need perturbation tests and gene-level baselines; the result covers two model families and the attention pathway only. **(my take)**
+
 ## 2. Problem it solves
 
 Many scFM papers show attention-derived "GRNs" without testing whether they carry information beyond gene marginals. **(paper)**

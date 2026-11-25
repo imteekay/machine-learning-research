@@ -2,10 +2,10 @@
 
 > Kedzierska KZ, Crawford L, Amini AP, Lu AX. *Zero-shot evaluation reveals limitations of single-cell foundation models*. Genome Biology (2025). DOI: [10.1186/s13059-025-03574-x](https://doi.org/10.1186/s13059-025-03574-x) · PMC12007350 · Code: [microsoft/zero-shot-scfoundation](https://github.com/microsoft/zero-shot-scfoundation)
 
-Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim. Only the abstract or secondary sources were read for this note (**abstract-only**); details beyond those are marked as missing rather than guessed.
+Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim. The PMC full text was read for this note; anything not in it is marked as missing rather than guessed.
 
 - **Roadmap phase(s)**: [Phase 2](../00-plan/roadmap.md#phase-2-single-cell-foundation-models)
-- **Status**: skimmed
+- **Status**: read (PMC full text)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -13,6 +13,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: zero-shot benchmark of scGPT and Geneformer embeddings for cell-type clustering and batch integration. **(paper)**
 - **Why it matters for the virtual cell**: it is the central critique behind **E2.1**: frozen FM embeddings may add nothing over HVG + standard methods. **(my take)**
 - **Main claim**: both models are worse than HVG selection, Harmony and scVI on cell-type clustering (AvgBio); Geneformer also underperforms on batch integration. **(paper)**
+
+## Research summary
+
+- **Context (already known)**: Fine-tuned benchmarks suggest scFMs are strong, but exploratory analyses use frozen embeddings. **(paper)**
+- **Gap (not known)**: How scGPT and Geneformer perform zero-shot against simple baselines. **(paper)**
+- **Hypothesis / what they try to determine**: Zero-shot embeddings do not beat HVG, Harmony or scVI. **(paper)**
+- **Approach (how they investigated)**: Zero-shot scGPT (3 variants) and Geneformer on 5 human datasets with scIB-style metrics (AvgBIO, batch scores). **(paper)**
+- **Results (what they found)**: HVG beat both FMs on all cell-type metrics; scGPT won only on PBMC 12k AvgBIO; Geneformer ranked last on batch integration. **(paper)**
+- **Implications (what it means)**: Frozen embeddings need baselines; benchmarks must use data excluded from pretraining. **(my take)**
 
 ## 2. Problem it solves
 
@@ -24,17 +33,17 @@ Compare zero-shot embeddings from scGPT variants and Geneformer to HVG, Harmony,
 
 ## 4. Data
 
-Multiple public datasets including Pancreas and PBMC 12k. **(paper)**
+Five human datasets: Pancreas, PBMC 12k, PBMC 95k, Immune, Tabula Sapiens; some overlap pretraining. Models: Geneformer (6 layers, 27.4M cells), scGPT kidney/blood/human (814K/10.3M/33M cells). Baselines: 2,000 HVG, scVI, Harmony. **(paper)**
 
 ## 5. Evaluation and results
 
 - HVG / Harmony / scVI outperform both FMs on AvgBio clustering. **(paper)**
 - Geneformer underperforms scGPT, Harmony and scVI on batch integration; Harmony and scVI integrate Pancreas well. **(paper)**
-- Pretraining helped on PBMC 12k, but models did not perform well even on datasets seen in pretraining. **(paper)** Exact numbers: not extracted.
+- Pretraining helped on PBMC 12k, but models did not perform well even on datasets seen in pretraining. **(paper)** scGPT beat baselines on AvgBIO only for PBMC 12k; HVG won batch integration everywhere; Geneformer last; scGPT beat scVI/Harmony on Immune and Tabula Sapiens batch metrics; scGPT without cell embeddings reconstructed worse than the mean; larger pretraining did not guarantee better results. **(paper)**
 
 ## 6. Critical analysis
 
-- Limitations (paper): only two models; zero-shot only.
+- Limitations (paper): only two public-weight models, transcriptomics only; evaluation sets overlap pretraining; scVI/Harmony trained on target data (asymmetric); scGPT variants confound size and tissue.
 - Weaknesses I see (my take): newer FMs (UCE, TranscriptFormer, scFoundation) not covered; results may shift with scale.
 - What would change my mind: a newer FM beating HVG+scVI on the same protocol.
 

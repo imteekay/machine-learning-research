@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the map of which modalities exist and how they could share one model. The Master's project (RNA + ATAC) is the smallest real case of this vision. **(my take)**
 - **Main claim**: like LLMs in NLP, joint pretraining on diverse omics would give holistic maps of cells, genes and tissues and support transfer to cell-type discovery, biomarkers, gene regulation inference and in silico perturbation. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: omics data are growing quickly and foundation models trained on single modalities already exist. **(paper)**
+- **Gap (not known)**: how to build models that combine genomics, transcriptomics, epigenomics, proteomics, metabolomics and spatial data. **(paper)**
+- **Hypothesis / what they try to determine**: joint multimodal pretraining, like LLMs in NLP, would give holistic maps of cells and support transfer to downstream tasks. **(paper)**
+- **Approach (how they investigated)**: a perspective: it reviews modalities and scales and sets out a vision; no experiments. **(paper)**
+- **Results (what they found)**: abstract-only: a case for multimodal pretraining and context-specific transfer; details not read (Nature paywall). **(paper)**
+- **Implications (what it means)**: it frames the Master's RNA+ATAC project as the smallest real case, though paired data scarcity and weak perturbation benchmarks temper the scale argument. **(my take)**
+
 ## 2. Problem it solves
 
 Omics data grows faster than our ability to analyze it, and most models handle one modality. The authors argue a joint model is needed to describe cell state across a continuum. **(paper)**

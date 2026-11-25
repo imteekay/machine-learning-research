@@ -14,13 +14,22 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: tests whether prior knowledge written in text can stand in for missing experimental data on unseen perturbations, the same role ATAC plays in the Master's hypothesis. **(my take)**
 - **Main claim**: textual gene representations add complementary value to embeddings learned from expression alone; subcellular-location text helps most for single-gene perturbations and protein information most for combinations. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Expression-only scFMs such as scGPT know a gene only through co-expression, and curated text knowledge (GenePT-style gene descriptions) exists for most genes. **(paper)**
+- **Gap (not known)**: Whether adding text and annotation embeddings to a perturbation-tuned scGPT improves prediction for unseen perturbations. **(paper)**
+- **Hypothesis / what they try to determine**: Textual gene representations carry information complementary to expression-learned embeddings, so adding them helps on unseen perturbations. **(paper)**
+- **Approach (how they investigated)**: Combine scGPT gene tokens with NCBI/UniProt/GO language embeddings and fine-tune on Perturb-seq prediction; compare variants by information source (abstract-level only). **(paper)**
+- **Results (what they found)**: Language embeddings add value over scGPT alone; subcellular-location text helps most for single-gene perturbations and protein information for combinations. No numbers were read. **(paper)**
+- **Implications (what it means)**: Prior knowledge in text may substitute for missing experimental data on unseen genes, but without full text we cannot tell if the gain survives linear/mean baselines or poorly annotated genes. **(my take)**
+
 ## 2. Problem it solves
 
 Expression-only foundation models know a gene only through its co-expression. For a gene never perturbed in training, that may not be enough signal; curated knowledge (function, location, protein) may fill the gap. **(paper)**
 
 ## 3. Method
 
-scGPT backbone; each gene token embedding is summed/combined with a language-model embedding of the gene's text description (GenePT-style OpenAI text embeddings of NCBI/UniProt summaries) and GO-annotation embeddings; fine-tuned on Perturb-seq with the GEARS-style task. Exact fusion and LLM version: abstract-only, not verified. **(paper / uncertain)**
+scGPT backbone; each gene token embedding is summed/combined with a language-model embedding of the gene's text description (GenePT-style OpenAI text embeddings of NCBI/UniProt summaries) and GO-annotation embeddings; fine-tuned on Perturb-seq with the GEARS-style task. Exact fusion and LLM version: abstract-only, not verified. **(paper / uncertain)** README (code): language embeddings come from NCBI gene summaries, UniProt protein summaries and GO annotations (Molecular Function, Biological Process, Cellular Component), released as model variants scgenept_ncbi, scgenept_ncbi+uniprot, scgenept_go_c/f/p/all; weights and precomputed gene embeddings are in a public S3 bucket (s3://czi-scgenept-public). **(code)**
 
 ## 4. Data
 

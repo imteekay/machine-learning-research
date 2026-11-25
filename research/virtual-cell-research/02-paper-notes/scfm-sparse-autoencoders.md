@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it separates "knows co-expression and pathways" from "knows causal regulation". Only the second supports perturbation prediction. **(my take)**
 - **Main claim**: (1) features are organized biology (29–59% annotate to databases), but TF-specific regulatory responses hold for only **3/48 TFs (6.2%)**, 5/48 with a multi-tissue control. (2) Cell-type features are found but are not unified across studies. Activating drug-encoding features steers control cells toward drug-perturbed states in a dose-dependent way. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scFM embeddings are dense and opaque; SAEs have given interpretable features in LLMs and protein models. **(paper)**
+- **Gap (not known)**: Whether scFM SAE features encode causal regulatory logic or only co-expression and pathway structure. **(paper)**
+- **Hypothesis / what they try to determine**: SAE features on Geneformer and scGPT align with biology but may not carry TF-specific regulatory responses. **(paper)**
+- **Approach (how they investigated)**: TopK SAEs on all layers of Geneformer V2-316M and scGPT, annotated against GO/KEGG/Reactome/STRING/TRRUST and tested with genome-scale CRISPRi; (2) SAEs with steering. **(paper)**
+- **Results (what they found)**: 29-59% of features annotate; only 3/48 TFs show regulatory responses (5/48 with multi-tissue control); drug features steer cells dose-dependently. **(paper)**
+- **Implications (what it means)**: scFMs encode organized biology but little regulation, so perturbation prediction should not be assumed from embeddings. **(my take)**
+
 ## 2. Problem it solves
 
 Dense FM embeddings are opaque. SAEs give a dictionary of features you can annotate and intervene on. **(paper)**

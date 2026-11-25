@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: scGPT is the proposal's backbone; if defaults are badly off, any "scGPT vs baseline" comparison (E2.1, E2.2, E4.1) is confounded by tuning budget. **(my take)**
 - **Main claim**: tuned scGPT beats default scGPT and matches/exceeds Seurat v4 on integration. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scGPT is fine-tuned with hand-picked defaults for multi-omic integration, and tuning effects are rarely quantified. **(paper)**
+- **Gap (not known)**: Whether systematic hyperparameter search materially improves scGPT RNA+protein integration, and whether it matches Seurat v4. **(paper)**
+- **Hypothesis / what they try to determine**: TPE-based Bayesian optimization of layers, learning rate, epochs and batch size gives better integration than default scGPT. **(paper)**
+- **Approach (how they investigated)**: 30-trial Hyperopt search (10 random, 20 TPE) on validation loss, evaluated on BMMC CITE-seq and GSE194122 with AvgBIO, PCR and ARI. **(paper)**
+- **Results (what they found)**: Tuned scGPT raised BMMC AvgBIO 0.59 to 0.67 and GSE194122 AvgBIO 0.19 to 0.60, and slightly exceeded Seurat v4 (0.60) on BMMC. **(paper)**
+- **Implications (what it means)**: Tuning budget can confound model comparisons; however the near-failed default on GSE194122 and missing PCA/scVI/totalVI baselines mean the size of the effect is uncertain. **(my take)**
+
 ## 2. Problem it solves
 
 Manual, irreproducible fine-tuning of scGPT for multi-omic integration. **(paper)**

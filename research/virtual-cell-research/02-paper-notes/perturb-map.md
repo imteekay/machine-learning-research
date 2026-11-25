@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the spatial perturbation dataset in the proposal: perturbations with known location, so neighbor (bystander) responses can be measured.
 - **Main claim**: dozens of genes knocked out in parallel in a mouse lung cancer model; e.g. Tgfbr2 loss gave a fibro-mucinous microenvironment with T-cell exclusion via higher TGFb bioavailability **(paper, abstract-level)**.
 
+## Research summary
+
+- **Context (already known)**: Pooled CRISPR screens read growth or FACS phenotypes and lose spatial context, while tumor immune composition is a spatial phenotype. **(paper)**
+- **Gap (not known)**: Which genes regulate tumor microenvironment composition in vivo in a spatially resolved, multiplexed way is not known. **(paper)**
+- **Hypothesis / what they try to determine**: Whether barcoded CRISPR knockouts imaged in situ can link tumor-cell genes to local immune and spatial phenotypes. **(paper)**
+- **Approach (how they investigated)**: Pro-Code barcoded CRISPR pool in mouse lung cancer, with multiplex imaging, histopathology and spatial transcriptomics per clone; full text not read (PMC captcha). **(paper)**
+- **Results (what they found)**: Dozens of genes knocked out in parallel; for example Tgfbr2 loss gave a fibro-mucinous microenvironment with T-cell exclusion via higher TGFb bioavailability (abstract-level). **(paper)**
+- **Implications (what it means)**: It is a data and assay template for perturbations with known location, enabling neighbor-effect modeling, though per-KO replication and resolution look limiting. **(my take)**
+
 ## 2. Problem it solves
 
 Pooled screens lose spatial context; tumor immune composition is a spatial, multicellular phenotype.

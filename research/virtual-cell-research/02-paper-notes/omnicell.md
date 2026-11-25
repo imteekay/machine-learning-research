@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: a single model for both data types means the Master's dissociated perturbation data and the PhD's spatial data can share one backbone.
 - **Main claim**: ~67M profiles pretraining (scRNA from 45 tissues + Stereo-seq from 26 tissue types); preserves identity in spatial maps; improves deconvolution and domain reconstruction **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: scRNA and spatial foundation models are built separately, and spatial models rarely attend jointly over genes and neighbors. **(paper)**
+- **Gap (not known)**: Whether one model pretrained on both data types improves spatial tasks, and whether it generalizes beyond Stereo-seq, is not known. **(my take)**
+- **Hypothesis / what they try to determine**: Whether a transformer that packs a focal cell with its neighbors, trained on ~67M profiles, unifies scRNA and spatial modeling. **(paper)**
+- **Approach (how they investigated)**: Neighbor-packed transformer with 2D rotary position encoding and a symmetric bilinear output, pretrained on scRNA (45 tissues) plus Stereo-seq (26 tissue types); evaluated on deconvolution and domain reconstruction. Details abstract-only. **(paper)**
+- **Results (what they found)**: Claims identity preservation in spatial maps and improved deconvolution and domain reconstruction; no numbers seen. **(paper)**
+- **Implications (what it means)**: A shared backbone for dissociated and spatial data is attractive, but the benefit of the dissociated data is unverified without an ablation. **(my take)**
+
 ## 2. Problem it solves
 
 Separate scRNA and spatial FMs; spatial models that do not jointly attend over genes and neighbors **(paper)**.

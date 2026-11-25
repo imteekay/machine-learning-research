@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: a perturbation's ripple through tissue is an iterative propagation; recursion is a structural match, and small models are trainable on a student budget.
 - **Main claim**: beats several slice-specific unsupervised methods at domain identification; SOTA among supervised methods for gene expression prediction; beats parameter-matched supervised baselines; recursion enables test-time scaling/adaptive compute; domain ID generalizes only partially across tissues **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: Spatial methods reason locally in a single pass and large FMs are costly. **(paper)**
+- **Gap (not known)**: Whether small recursive models can reason globally over tissue cheaply. **(paper)**
+- **Hypothesis / what they try to determine**: That Tiny Recursive Models iterated on latent state improve spatial omics tasks without test-time training. **(paper)**
+- **Approach (how they investigated)**: TRM-style recursion over tissue representations; details abstract-only. **(paper)**
+- **Results (what they found)**: Beats several slice-specific unsupervised methods at domain identification and is SOTA among supervised methods for expression prediction; domain ID generalizes only partially across tissues. No numbers. **(paper)**
+- **Implications (what it means)**: Recursion offers adaptive compute, but equal-FLOPs non-recursive controls are needed. **(my take)**
+
 ## 2. Problem it solves
 
 Current spatial methods reason locally in one pass; large FMs are expensive **(paper)**.

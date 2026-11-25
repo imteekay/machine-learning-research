@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: the first scFM; the simplest example of the "pretrain on cells, fine-tune on a task" recipe that scGPT and Geneformer extend. **(my take)**
 - **Main claim**: scBERT gives strong cell type annotation, detects novel cell types, is robust to batch effects and is interpretable, using all genes without HVG selection or dimensionality reduction. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Cell annotation relied on marker lists or HVG selection and transferred poorly across batches; large unlabeled scRNA-seq corpora exist. **(paper)**
+- **Gap (not known)**: Whether BERT-style pretraining on unlabeled cells, using all genes, gives better annotation, novel-type detection and batch robustness. **(paper)**
+- **Hypothesis / what they try to determine**: Pretraining with masked expression prediction learns gene-gene relations that transfer to annotation. **(paper)**
+- **Approach (how they investigated)**: Pretrain a Performer on PanglaoDB with gene2vec plus binned expression embeddings, then fine-tune a classifier head and compare on annotated datasets. **(paper, code)**
+- **Results (what they found)**: Abstract reports superior annotation, novel-type discovery, batch robustness and interpretability; numbers not available in abstract. **(paper)**
+- **Implications (what it means)**: It established the pretrain-then-fine-tune recipe, but advantage over linear baselines is unverified here (full text not retrieved: bioRxiv HTTP 429). **(my take)**
+
 ## 2. Problem it solves
 
 Annotation methods depend on marker lists or HVG selection and transfer poorly across batches. Pretraining on large unlabeled data could learn gene-gene interactions useful for annotation. **(paper)**

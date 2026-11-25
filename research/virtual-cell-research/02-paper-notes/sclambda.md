@@ -14,13 +14,22 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: combinatorial perturbations are the space no screen can cover; composition in a disentangled latent is the main bet for covering it. **(my take)**
 - **Main claim**: outperforms state-of-the-art methods on several Perturb-seq datasets and generalizes to unseen target genes and unseen multi-gene perturbations. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Perturbation predictors like GEARS and CPA need single perturbations or all targets of a combination in training. **(paper)**
+- **Gap (not known)**: Whether a disentangled generative model with LLM gene embeddings can predict multi-gene perturbations with unseen targets or combinations. **(paper)**
+- **Hypothesis / what they try to determine**: Separating a basal cell state from a salient perturbation representation tied to gene embeddings lets unseen combinations be composed. **(paper)**
+- **Approach (how they investigated)**: VAE-style basal encoder plus perturbation embedding from LLM gene embeddings, evaluated on several Perturb-seq sets (abstract-level). **(paper)**
+- **Results (what they found)**: The abstract reports outperforming state of the art and generalizing to unseen genes and unseen combinations; no numbers were read. **(paper)**
+- **Implications (what it means)**: Composition in latent space is a bet for covering combinatorial space, but claims must be checked against the additive baseline on epistatic pairs. **(my take)**
+
 ## 2. Problem it solves
 
 Earlier methods need either the single-gene perturbations or all target genes of a combination in training. **(paper)**
 
 ## 3. Method
 
-VAE-style encoder for basal state; salient embedding derived from (LLM) gene embeddings of targets, combined for multi-gene perturbations; decoder reconstructs expression. Details abstract-only. **(paper)**
+VAE-style encoder for basal state; salient embedding derived from (LLM) gene embeddings of targets, combined for multi-gene perturbations; decoder reconstructs expression. Details abstract-only. **(paper)** README (code): the model separates basal cell representation from a salient perturbation representation, takes LLM-derived gene embeddings of target genes as input, accepts logged AnnData with perturbations in obs['condition'] ("gene_a+gene_b" for combos, "ctrl" for controls), and ships tutorials for Norman et al. Perturb-seq and a multi-cell-line essential-gene setting. **(code)**
 
 ## 4. Data
 

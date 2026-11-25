@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: gives falsifiable criteria so the PhD can claim (or not) a world model.
 - **Main claim**: three gaps: representation is not dynamics, prediction is not intervention, multimodality is not multiscale **(paper)**. Three axes (intervenable trajectory rollout, scale coupling, biology-constrained transitions), each with an L0-L3 capability ladder **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: "World model" is applied loosely to virtual cells, and FM embeddings and multimodal models are often called world models. **(paper)**
+- **Gap (not known)**: What concretely separates a virtual cell from a world model, and how to tell. **(paper)**
+- **Hypothesis / what they try to determine**: Three gaps (representation is not dynamics, prediction is not intervention, multimodality is not multiscale) define world-model status. **(paper)**
+- **Approach (how they investigated)**: Three motivating experiments plus an L0-L3 capability ladder on three axes. Models and datasets: not available in abstract. **(paper)**
+- **Results (what they found)**: FM embeddings carry no future-fate signal, an endpoint predictor loses state-space closure under iteration, and a multimodal model shows no meaningful chromatin-to-RNA intervention effects (qualitative). **(paper)**
+- **Implications (what it means)**: Gives falsifiable criteria for a world-model claim, but the ladder needs operational thresholds. **(my take)**
+
 ## 2. Problem it solves
 
 "World model" is applied loosely to systems with very different commitments **(paper)**.

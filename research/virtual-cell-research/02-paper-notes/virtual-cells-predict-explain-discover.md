@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it gives this roadmap its three goals and gives concrete design rules (predict *relative* change, use negative controls) that directly shape how E4.x targets are defined. **(my take)**
 - **Main claim**: prediction alone is not enough for drug discovery. Models must give falsifiable mechanistic explanations and be improved by experiments chosen to falsify them. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Roughly 9 in 10 drugs entering trials fail, atomistic cell simulation is intractable, and data-driven virtual cells lack an agreed goal. **(paper)**
+- **Gap (not known)**: What a virtual cell must do to be useful for drug discovery. **(paper)**
+- **Hypothesis / what they try to determine**: A virtual cell must predict, explain and support discovery via lab-in-the-loop falsification. **(paper)**
+- **Approach (how they investigated)**: Perspective with design principles (relative change, negative controls, Popperian active learning) and L1-L3 capability levels. **(paper)**
+- **Results (what they found)**: No experiments; benchmark recommendations and principles only. **(paper)**
+- **Implications (what it means)**: Gives concrete target definitions for E4.x, but explanation lacks a scoring rule. **(my take)**
+
 ## 2. Problem it solves
 
 About 9 in 10 drugs that enter clinical trials fail. Full atomistic simulation of a cell (~100 trillion atoms) is intractable, and even the minimal cell JCVI-syn3A could not be simulated end to end with MD. Data-driven virtual cells are the alternative, but the field lacks agreement on what they should do. **(paper)**

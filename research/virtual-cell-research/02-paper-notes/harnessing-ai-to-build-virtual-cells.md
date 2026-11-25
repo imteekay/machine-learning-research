@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 6](../00-plan/roadmap.md#phase-6-world-models-closed-loop-and-clinical-translation)
-- **Status**: skimmed
+- **Status**: skimmed (not retrieved; bioRxiv HTTP 429 again on 2026-11-25)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -15,6 +15,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: not retrieved (title only). From the title and its place in the original resources, likely a perspective/review on AI methods for virtual cells. **(my take)**
 - **Why it matters for the virtual cell**: listed in the original resources that seeded this roadmap. **(my take)**
 - **Main claim**: not retrieved.
+
+## Research summary
+
+- **Context (already known)**: Not retrieved; nothing in this note comes from the paper. **(my take)**
+- **Gap (not known)**: Not retrieved. **(my take)**
+- **Hypothesis / what they try to determine**: Not retrieved; likely a perspective on AI methods for virtual cells, judging from the title only. **(my take)**
+- **Approach (how they investigated)**: Not retrieved. **(my take)**
+- **Results (what they found)**: Not retrieved. **(my take)**
+- **Implications (what it means)**: Unknown until the text is read; see the reading questions in section 7. **(my take)**
 
 ## 2. Problem it solves
 

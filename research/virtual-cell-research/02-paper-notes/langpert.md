@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: LLM knowledge as a prior for unseen genes with a simple, interpretable numeric predictor. **(my take)**
 - **Main claim**: state-of-the-art on single-gene perturbation prediction across multiple datasets (abstract; not verified). **(paper)**
 
+## Research summary
+
+- **Context (already known)**: perturbation predictors need observed data for each gene, and LLMs encode broad gene-function knowledge. **(paper)**
+- **Gap (not known)**: whether LLM knowledge can supply useful neighbours for genes never perturbed in the data. **(paper)**
+- **Hypothesis / what they try to determine**: an LLM-selected set of functionally similar genes, averaged by kNN over observed effects, predicts unseen single-gene perturbations well. **(paper)**
+- **Approach (how they investigated)**: prompt an LLM (with cell-type/experiment context) for neighbour genes and aggregate their observed perturbation effects with kNN. **(paper)**
+- **Results (what they found)**: abstract-only: reports state-of-the-art single-gene prediction across several datasets; numbers not available in abstract. **(paper)**
+- **Implications (what it means)**: a cheap, interpretable baseline that other methods should beat, but possible benchmark memorisation and the lack of a GO/STRING/DepMap neighbour control keep the LLM's contribution unproven. **(my take)**
+
 ## 2. Problem it solves
 
 Predicting effects of genes never perturbed in the data. **(paper)**

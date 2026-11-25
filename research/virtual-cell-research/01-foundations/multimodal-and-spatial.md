@@ -2,7 +2,7 @@
 
 A synthesis of what the paper notes in [`../02-paper-notes/`](../02-paper-notes/) teach about two extensions of an RNA-only virtual cell: **adding modalities** (chromatin, protein, histology) and **adding space** (neighbors, niches, tissue). It is the conceptual bridge between roadmap [Phase 3](../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context) (the Master's hypothesis: epigenetic context) and [Phase 5](../00-plan/roadmap.md#phase-5-spatial-and-tissue-level-modeling) / [Phase 6](../00-plan/roadmap.md#phase-6-world-models-closed-loop-and-clinical-translation) (the PhD hypothesis: tissue world model, clinical translation).
 
-**Scope and honesty.** Most source notes are abstract-only. Claims below are tagged by what the notes say: *(paper)* = claimed by the authors in the note, *(my take)* = inference recorded in the notes or here. No numbers are quoted unless the note states them, and none are independently verified. Treat every "model X does Y" as a claim to test, not a fact.
+**Scope and honesty.** Most source notes are abstract-only (a few are full text, partial or README-only, as stated per note). Claims below are tagged by what the notes say: *(paper)* = claimed by the authors in the note, *(my take)* = inference recorded in the notes or here. No numbers are quoted unless the note states them, and none are independently verified. Notes with a full-text read (STORM, SToFM, VirTues, SpatialProp, STPath (full text via Europe PMC, supplement not read), HEIST at results level) are firmer; NicheCompass, Novae, scVIVA, Spatialformer, scGPT-spatial, tiny-recursive, CIFM, TERRA and parts of OmiCLIP/STP-BENCH/HEX/DeepSpot-M remain abstract-only (not verified). Treat every "model X does Y" as a claim to test, not a fact.
 
 **Do not duplicate; read together with:**
 - [multi-omics-integration.md](multi-omics-integration.md): vertical / horizontal / diagonal / mosaic integration, normalization, feature engineering (the generic toolbox; this note is about *foundation-model-era* practice).
@@ -39,7 +39,7 @@ Sources: [GET](../02-paper-notes/get-general-expression-transformer.md), [EpiFou
 
 **Why it matters for the virtual cell.** If perturbation targets are TFs, a regulator-level embedding is a natural *perturbation token*, and a cis x trans factorization is the structural prior a mechanistic model needs. This is what lets "knock out TF X" propagate to "regions bound by X" to "genes downstream".
 
-Sources: [ChromBERT](../02-paper-notes/chrombert.md), [RegFM](../02-paper-notes/regfm.md), [GET](../02-paper-notes/get-general-expression-transformer.md). Both ChromBERT and RegFM are abstract-level in the notes; their perturbation claims are unverified.
+Sources: [ChromBERT](../02-paper-notes/chrombert.md), [RegFM](../02-paper-notes/regfm.md), [GET](../02-paper-notes/get-general-expression-transformer.md). ChromBERT (abstract plus project docs, no numbers) and RegFM are abstract-level in the notes; their perturbation claims are unverified.
 
 ## A3. Tokenizing peaks and regions
 
@@ -118,7 +118,7 @@ These are the "scale" baselines a context-focused hypothesis must beat or explai
 
 ## B1. Why space: a cell's state depends on its neighbors
 
-**Intuition.** Dissociated single-cell data forgets where a cell lived. In tissue, the same cell type behaves differently next to a T-cell cluster than in a tumor core. A virtual cell that ignores neighbors cannot represent bystander effects, immune exclusion, or paracrine signaling. [Nicheformer](../02-paper-notes/nicheformer.md) asks the bridge question in one direction: does a single cell's expression encode *where it lives*? Joint pretraining on dissociated and spatial data predicts spatial labels (niche, region, neighborhood composition) better than dissociated-only models *(paper)*, and lets spatial labels be transferred to dissociated cells.
+**Intuition.** Dissociated single-cell data forgets where a cell lived. In tissue, the same cell type behaves differently next to a T-cell cluster than in a tumor core. A virtual cell that ignores neighbors cannot represent bystander effects, immune exclusion, or paracrine signaling. [Nicheformer](../02-paper-notes/nicheformer.md) asks the bridge question in one direction: does a single cell's expression encode *where it lives*? Joint pretraining on dissociated and spatial data predicts spatial labels (niche, region, neighborhood composition) better than dissociated-only models *(paper)*, and lets spatial labels be transferred to dissociated cells. The note records wins over scGPT, Geneformer, UCE and PCA on niche/region/composition probes, with no-spatial-pretraining ablations doing worse; figures were not re-checked. *Known:* spatial context is partly recoverable from one cell's expression. *Not known:* how much of that is cell type, since the held-out-slide and spillover controls below are not reported in the note.
 
 **Three traps the notes raise (my take).**
 1. *Cell-type shortcut*: neighborhood composition is largely determined by cell type; report gains over a cell-type-mean baseline.
@@ -135,14 +135,14 @@ These are the "scale" baselines a context-focused hypothesis must beat or explai
 |---|---|---|
 | [Nicheformer](../02-paper-notes/nicheformer.md) | Cell tokens; dissociated + spatial | Spatial pretraining as bridge |
 | [scGPT-spatial](../02-paper-notes/scgpt-spatial.md) | scGPT continually pretrained on spatial corpora | Protocol-aware MoE decoding, neighborhood objective; inherits the Phase 2 backbone *(paper, abstract)* |
-| [SToFM](../02-paper-notes/stofm.md) | Gene (cell encoder), micro (SE(2)-invariant transformer over sub-slices), macro (cluster-level "virtual cells") | Separates *what a cell is* from *where it is* |
+| [SToFM](../02-paper-notes/stofm.md) | Gene (cell encoder), micro (SE(2)-invariant transformer over sub-slices), macro (cluster-level "virtual cells") | Separates *what a cell is* from *where it is*; reported embryo cross-slice macro-F1 0.459 vs 0.399 for CellPLM *(paper)*, but no simple spatial-smoothing baseline, so the transformer's added value is unproven |
 | [OmniCell](../02-paper-notes/omnicell.md) | Focal cell + neighbors in one attention pass; 2D rotary position | One backbone for dissociated and spatial data |
-| [HEIST](../02-paper-notes/heist.md) | Two-level graph: spatial cell graph, each cell carrying a gene co-expression graph | Hierarchy gene regulation -> cell signaling; no fixed gene vocabulary, so it takes proteomics panels |
+| [HEIST](../02-paper-notes/heist.md) | Two-level graph: spatial cell graph, each cell carrying a gene co-expression graph | Hierarchy gene regulation -> cell signaling; no fixed gene vocabulary, so it takes proteomics panels; best AUC in 6/7 clinical-outcome settings, imputation Pearson 0.82 fine-tuned but weak zero-shot (0.35 in skin), with no random-graph or PCA control showing the gene-level graph is what helps *(paper)* |
 | [Spatialformer](../02-paper-notes/spatialformer.md) | Subcellular transcript locations, cell-pair proximity, gene co-occurrence | A scale below the cell |
 | [Novae](../02-paper-notes/novae.md) | Self-supervised graph attention over neighborhoods | Niche representations across panels and technologies |
 | [CellWorld](../02-paper-notes/cellworld.md) | Predict the *latent* of masked cells from spatial context | JEPA/world-model idea: ignore assay noise |
 | [scVIVA](../02-paper-notes/scviva.md) | Probabilistic, count-aware VAE with neighbor-informed embedding | The principled baseline large FMs must beat |
-| [Tiny recursive models](../02-paper-notes/tiny-recursive-spatial-omics.md) | Small network iterated on its own latent | Iterative propagation across tissue; partial cross-tissue generalization for domain ID *(paper)* |
+| [Tiny recursive models](../02-paper-notes/tiny-recursive-spatial-omics.md) | Small network iterated on its own latent | Iterative propagation across tissue; partial cross-tissue generalization for domain ID *(paper, abstract-only)*; an equal-FLOPs non-recursive control is missing |
 
 **Design axes to keep in mind.** (i) Count likelihood vs latent target vs masked-token objective; (ii) whether coordinates enter as relative graph edges or absolute rotary/positional encodings (SE(2) invariance means a rotated slide gives the same answer); (iii) whether the gene vocabulary is fixed (limits panels) or open (HEIST); (iv) one-pass local context vs recursive/iterative reasoning.
 
@@ -154,8 +154,8 @@ These are the "scale" baselines a context-focused hypothesis must beat or explai
 
 - *Compositional*: cell-type mixtures in a radius or k-hop (simple, but circular with annotation).
 - *Learned domain/embedding*: unsupervised graph embeddings clustered into domains ([Novae](../02-paper-notes/novae.md), [Nicheformer](../02-paper-notes/nicheformer.md)).
-- *Mechanistic*: latent dimensions tied to prior gene programs such as ligand-receptor and signaling pathways ([NicheCompass](../02-paper-notes/nichecompass.md)): the niche is explained by *which signals are active*. It scales to very large atlases and extends to spatial ATAC+RNA *(paper)*.
-- *Probabilistic*: neighbor-informed generative embedding ([scVIVA](../02-paper-notes/scviva.md)).
+- *Mechanistic*: latent dimensions tied to prior gene programs such as ligand-receptor and signaling pathways ([NicheCompass](../02-paper-notes/nichecompass.md)): the niche is explained by *which signals are active*. It scales to very large atlases (an 8.4M-cell, 239-section mouse brain atlas) and extends to spatial ATAC+RNA *(paper, abstract-only; no benchmark numbers read)*. Limits *(my take)*: discovery is bounded by known programs, and ligand-receptor co-expression is not proof of signalling.
+- *Probabilistic*: neighbor-informed generative embedding ([scVIVA](../02-paper-notes/scviva.md)); reports a spatially restricted tumor-promoting endothelial population in breast cancer, but quantitative benchmarks and ablations were not read.
 - *Cross-organ archetypes*: recurring niches found across organs ([TERRA](../02-paper-notes/terra.md), *abstract-level*).
 - *Multi-scale protein tissue*: patch -> cell -> niche -> tissue representations ([VirTues](../02-paper-notes/virtual-tissues-virtues.md)).
 
@@ -173,7 +173,7 @@ These are the "scale" baselines a context-focused hypothesis must beat or explai
 
 ## B5. Spatial perturbation and causal direction
 
-**Intuition.** Observational spatial data show that a cell's state *correlates* with its neighbors'. A perturbation model needs *intervention*: edit cell A, predict neighbor B. These are different. [SpatialProp](../02-paper-notes/spatialprop.md) trains a 2-hop graph network on observational data and simulates a perturbation by editing a cell and re-predicting its neighbors. It beats a global-mean baseline but is only similar to a k-hop microenvironment mean, an informative tie, and its "forward > reverse" causal-direction asymmetry is weak evidence of causality *(my take)*. TERRA's in-silico knockout may reduce to removing a co-expression program *(my take)*.
+**Intuition.** Observational spatial data show that a cell's state *correlates* with its neighbors'. A perturbation model needs *intervention*: edit cell A, predict neighbor B. These are different. [SpatialProp](../02-paper-notes/spatialprop.md) trains a 2-hop graph network on observational data and simulates a perturbation by editing a cell and re-predicting its neighbors. It beats a global-mean baseline but only ties a k-hop microenvironment mean (nine datasets, new CausalInteractionBench), and its "forward > reverse" causal-direction enrichment is modest (mean Spearman gap 0.094 *(paper)*), weak evidence of causality *(my take)*. *Known:* neighbor-conditioned predictors reach the k-hop mean. *Not known:* any gain from intervention-aware training. TERRA's in-silico knockout may reduce to removing a co-expression program *(my take)*.
 
 **Ground truth exists.** [Perturb-map](../02-paper-notes/perturb-map.md) reads CRISPR-knockout clones in situ via protein barcodes alongside multiplex imaging and spatial transcriptomics, so perturbations have known locations and neighbor responses can be measured (e.g., a Tgfbr2-loss clone gave a fibro-mucinous microenvironment with T-cell exclusion, abstract-level).
 
@@ -181,7 +181,7 @@ These are the "scale" baselines a context-focused hypothesis must beat or explai
 
 ## B6. Marker panels, protein tissue and variable channels
 
-**Intuition.** Spatial proteomics studies each measure different antibody panels, so models with fixed channels do not transfer across cohorts. [VirTues](../02-paper-notes/virtual-tissues-virtues.md) tokenizes each marker by a protein language-model embedding of its sequence, alternates marker attention and spatial attention, and pools summary tokens into cell/niche/tissue/patient representations; the note reports zero-shot transfer to held-out cohorts and clinical biomarkers from derived features. [HEIST](../02-paper-notes/heist.md) reaches proteomics from a different direction (no fixed gene vocabulary).
+**Intuition.** Spatial proteomics studies each measure different antibody panels, so models with fixed channels do not transfer across cohorts. [VirTues](../02-paper-notes/virtual-tissues-virtues.md) tokenizes each marker by a protein language-model embedding of its sequence, alternates marker attention and spatial attention, and pools summary tokens into cell/niche/tissue/patient representations; the note reports (MAE on 15 IMC cohorts, 3,102 patients, extended to 32 cohorts over 4 technologies) reconstruction r 0.800, wins over KRONOS and CA-MAE on cell typing, zero-shot segmentation wins 8/9, and TNBC anti-PD-L1 AUROC 0.823 *(paper)*. [HEIST](../02-paper-notes/heist.md) reaches proteomics from a different direction (no fixed gene vocabulary).
 
 **Why it matters for the virtual cell.** A tissue model cannot demand one fixed panel. Grounding channels in biology (sequence-derived marker embeddings) is the same idea as grounding perturbations in biology.
 
@@ -194,15 +194,15 @@ These are the "scale" baselines a context-focused hypothesis must beat or explai
 **Intuition.** H&E slides are cheap and exist for millions of patients; spatial omics is expensive. If expression (even coarsely) can be read from morphology, tissue-level virtual cells can run on slide archives. Three flavors:
 
 - *Contrastive image-transcriptome*: [OmiCLIP / Loki](../02-paper-notes/omiclip-loki.md) pairs H&E patches with a "gene sentence" of each Visium spot's top genes through a CLIP objective; one shared embedding supports retrieval, alignment, decomposition and prediction.
-- *Generative slide-level*: [STPath](../02-paper-notes/stpath.md) predicts expression for any spot across organs and platforms without per-dataset fine-tuning.
-- *Gene-as-query and hierarchical*: [DeepSpot-M / STORM](../02-paper-notes/deepspot-m-and-storm.md): genes are queried through embeddings from DNA/RNA/protein/text models (so unseen genes are possible), STORM integrates morphology, expression and spatial context; both report clinical-scale downstream uses (abstract-level).
-- *Histology -> protein*: [HEX](../02-paper-notes/hex-virtual-spatial-proteomics.md) predicts 40 protein markers from H&E and uses virtual protein maps for prognosis and immunotherapy response *(paper)*. This is the nearest to a clinical-grade bridge.
+- *Generative slide-level*: [STPath](../02-paper-notes/stpath.md) predicts expression for any spot across organs and platforms without per-dataset fine-tuning; trained on 983 slides (HEST-1K + STimage-1K4M) and tested on 5 tasks over 23 datasets; pretraining-validation PCC (top 200 HVGs) 0.266 vs 0.198 for TRIPLEX (+34.4%); on zero-shot HEST-Bench (top 50 HVGs) it ranks first in PCC on 8 of 10 datasets, beating the next best by 6.9% PCC *(paper, full text)*. The absolute level is low and the gain may be encoder-driven (see C2).
+- *Gene-as-query and hierarchical*: [DeepSpot-M / STORM](../02-paper-notes/deepspot-m-and-storm.md): genes are queried through embeddings from DNA/RNA/protein/text models (so unseen genes are possible), STORM integrates morphology, expression and spatial context; STORM (full text read) reports kidney-cancer domain NMI/ARI 0.53/0.40 vs OmiCLIP 0.41/0.32, median PCC 0.633 in colorectal vs 0.304 for DeepPT (500 HVGs, 8 datasets) and prognosis C-index 0.701-0.741 on two cohorts; its cohort counts are internally inconsistent (11 cohorts/>2,500 patients vs 23/7,245), so check before citing. DeepSpot-M's unseen-gene and beats-specialists claims are abstract-only, no numbers.
+- *Histology -> protein*: [HEX](../02-paper-notes/hex-virtual-spatial-proteomics.md) predicts 40 protein markers from H&E and uses virtual protein maps for prognosis and immunotherapy response *(paper)*; trained on 819,000 tiles from 382 samples, applied to 6 NSCLC cohorts (2,298 patients) and 12 other cancers; the abstract reports +22% prognostic and +24-39% response accuracy over conventional approaches (relative, abstract-only; no absolute metrics or end-to-end H&E baseline). This is the nearest to a clinical-grade bridge.
 
 **Why it matters for the virtual cell.** The bet of E6.2: patient-level *rankings* of clinically used biomarkers survive even if gene-level accuracy is moderate. The bridge turns a measured-data requirement into a cheap-input one.
 
 ## C2. Benchmarking virtual spatial transcriptomics
 
-**Intuition.** [STP-BENCH and the ST-prediction review](../02-paper-notes/stp-bench-and-st-prediction-review.md) is the cautionary tale: with a *shared* pathology-FM encoder, model rankings reshuffle, so earlier papers conflated architecture with encoder; reported spot-level Pearson is typically low to moderate; context models (GNN/ViT) have not clearly beaten CNNs; and leakage arrives through shared donors, serial sections, and batch correction applied before the split. The open question the review poses is whether models capture **cell state** or only **composition**. If composition, then H&E can say "there are T cells here" but not "these T cells are exhausted", and cannot substitute for measured spatial data in perturbation work.
+**Intuition.** [STP-BENCH and the ST-prediction review](../02-paper-notes/stp-bench-and-st-prediction-review.md) is the cautionary tale (21 methods re-implemented over 6 cancer types; review of >40 models; STP-BENCH numbers abstract-only): with a *shared* pathology-FM encoder, model rankings reshuffle, so earlier papers conflated architecture with encoder; reported spot-level Pearson is typically 0.0-0.6; context models (GNN/ViT) have not clearly beaten CNNs; and leakage arrives through shared donors, serial sections, and batch correction applied before the split. The open question the review poses is whether models capture **cell state** or only **composition**. If composition, then H&E can say "there are T cells here" but not "these T cells are exhausted", and cannot substitute for measured spatial data in perturbation work.
 
 **Rules for any histology -> expression claim.**
 1. Use a shared image encoder when comparing architectures.
@@ -260,6 +260,8 @@ IDs refer to [`../00-plan/roadmap.md`](../00-plan/roadmap.md) and the [research 
 | **E6.2** | H&E-predicted maps preserve patient-level biomarker ranking (Spearman) | Ranking uncorrelated with measured biomarkers | C1, C2 |
 | **E6.2** (STP-BENCH H-SB1) | After regressing out predicted composition per spot, residual predicted vs measured expression retains signal | Residual correlation near zero (models capture composition, not state) | C2 |
 | **E6.2** (H-SB2, H-SB3) | Method ranking at patient level differs from spot-level ranking; donor-level splits lower reported correlation vs slide-level splits | Rankings agree and splits do not matter (leakage worry unwarranted) | C2, C3 |
+| **E6.2** (STPath/STORM encoder control) | Reported STPath/STORM gains over TRIPLEX/DeepPT/OmiCLIP persist when all use the same pathology encoder, donor-held-out | Gains vanish under a shared encoder (gain was encoder-driven) | C1, C2 |
+| **E5.1c** (smoothing control) | SToFM-/HEIST-style multi-scale models beat a spatial-smoothing / k-hop-mean baseline and a random-graph or PCA ablation on held-out slides | Tie with the simple baseline (added value of the transformer or gene graph unproven) | B2 |
 | **E2.3 / E2.3a** | A sparse-autoencoder concept in a spatial or multimodal embedding replicates across cohorts and survives confounder adjustment | Concepts fail external replication | C4 |
 
 ## Open questions to carry forward

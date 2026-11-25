@@ -3,39 +3,48 @@
 > (1) *The virtual cell*. Nature Methods (2025). DOI: [10.1038/s41592-025-02951-5](https://www.nature.com/articles/s41592-025-02951-5)
 > (2) *Grow AI virtual cells: three data pillars and closed-loop learning*. Cell Research (2025). DOI: [10.1038/s41422-025-01101-y](https://www.nature.com/articles/s41422-025-01101-y)
 >
-> Both pages redirect to a Nature login wall and web search returned neither abstract. **Authors and content were not retrieved.** Only the titles are known; everything else is marked (my take).
+> Nature pages sit behind a login wall. Piece (2) was read via PMC (PMC12012092; a summarised fetch). Authors of (2): Qian L, Dong Z, Guo T (Westlake University). Piece (1) was not retrieved; Europe PMC returned no record for its DOI.
 
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 6](../00-plan/roadmap.md#phase-6-world-models-closed-loop-and-clinical-translation)
-- **Status**: skimmed
+- **Status**: read (partial: piece 2 only, via PMC; piece 1 not retrieved)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
 
-- **What**: two short perspective pieces (journal format suggests Editorial/Feature and Perspective). Content not retrieved. **(my take)**
+- **What**: two short pieces. (2) is a Cell Research editorial (35(5):319-321) with no new data. (1) not retrieved. **(paper)**
 - **Why it matters for the virtual cell**: (2)'s title names the two levers of Phase 6 that are about *data*, not models: what data to collect ("three pillars") and how to collect it adaptively ("closed-loop learning"). **(my take)**
-- **Main claim**: not retrieved.
+- **Main claim** (piece 2): an AI virtual cell needs three data pillars, namely a priori knowledge (literature, expression, multi-scale imaging), static architecture (cryo-ET, super-resolution, spatial omics) and dynamic states (aging, development, disease, perturbations, esp. perturbation proteomics), and should be built by closed-loop learning where the model picks perturbations, robots run them and results refine the model. **(paper)**
+
+## Research summary
+
+- **Context (already known)**: Virtual cell efforts focus on models, and data generation is usually separate from training. **(my take)**
+- **Gap (not known)**: What data a virtual cell needs and whether closing the experiment loop reduces cost. **(paper, piece 2)**
+- **Hypothesis / what they try to determine**: Three data pillars plus closed-loop learning are the levers; yeast is proposed as the first AI virtual cell, then human lines such as HeLa and HEK293. **(paper, piece 2)**
+- **Approach (how they investigated)**: Perspective, no method. **(paper)**
+- **Results (what they found)**: None (no new experimental data); the closed-loop speed-up is cited from autonomous-chemistry work, not demonstrated. They also argue single-cell omics has limited value for AIVCs because cell states are similar and that mass-spec and spatial proteomics are key. **(paper, piece 2)**
+- **Implications (what it means)**: Unknown until read; the proposal's closed-loop claim needs a measurable test such as E6.3. **(my take)**
 
 ## 2. Problem it solves
 
-Not retrieved. Presumably: what data a virtual cell needs and how to make data generation part of training. **(my take)**
+What data a virtual cell needs and how to make data generation part of training (piece 2). **(paper)**
 
 ## 3. Method
 
-Perspectives; no method. Not retrieved.
+Perspectives; no method.
 
 ## 4. Data
 
-Not retrieved. Guess to verify: the pillars may be observational atlases, perturbation screens and multimodal/spatial/temporal data. **(my take, unverified)**
+None new; see the pillars above. **(paper)**
 
 ## 5. Evaluation and results
 
-Not applicable / not retrieved.
+Not applicable (perspective).
 
 ## 6. Critical analysis
 
-- Limitations (paper): not retrieved.
+- Limitations (paper): speculative; they do not establish required data volume, the ideal culture 'medium' or a benchmarking framework; the cited AIVC pilot is a preprint; one author holds shares in Westlake Omics. **(paper)**
 - Weaknesses I see (my take): closed-loop claims in perspectives usually lack a measured benefit. The test is a retrospective simulation where acquisition beats random.
 - What would change my mind: n/a until read.
 

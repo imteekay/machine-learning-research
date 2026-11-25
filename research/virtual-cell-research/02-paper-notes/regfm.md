@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: most foundation models see either sequence or cell state. RegFM couples the two, which is the cis × trans factorization a mechanistic virtual cell needs. It also claims perturbation-response prediction. **(paper / my take)**
 - **Main claim**: it beats existing methods on expression prediction, CRE annotation, bivalent promoter and dosage-sensitivity classification, and perturbation response, and it generalizes to unseen contexts. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Sequence models ignore cell state, and single-cell FMs ignore sequence. **(paper)**
+- **Gap (not known)**: Whether coupling long-range CRE representations with TF/CR activity explains expression and generalizes to new contexts is not known. **(paper)**
+- **Hypothesis / what they try to determine**: A cis x trans factorization provides an interpretable, context-aware model of transcriptional regulation. **(paper)**
+- **Approach (how they investigated)**: Long-range CRE representations coupled with a trans-regulator context vector, trained on ENCODE and CELLxGENE; evaluated on expression, CRE annotation, promoter classification and perturbation response. Abstract-only. **(paper)**
+- **Results (what they found)**: Claims gains over existing methods on all tasks and generalization to unseen contexts; no numbers seen. **(paper)**
+- **Implications (what it means)**: A step toward mechanistic virtual cells, but circularity of the trans context and perturbation benchmark type are open risks. **(my take)**
+
 ## 2. Problem it solves
 
 Sequence models (Enformer) ignore cell state, and single-cell FMs ignore sequence. Neither explains *why* a gene is expressed in a given context. **(paper)**

@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 3](../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context), [Phase 4](../00-plan/roadmap.md#phase-4-perturbation-modeling-and-causal-prediction)
-- **Status**: skimmed (abstract-only)
+- **Status**: skimmed (abstract-only; full-text fetch re-attempted 2026-11-25, bioRxiv returned HTTP 429)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -15,6 +15,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: a multiway transformer, similar to VLMo/BEiT-3 with shared attention and modality-specific experts. It accepts RNA-only, ATAC-only, or paired cells, uses harmonized tokenization and stage-wise masked-reconstruction pretraining, and is the successor to CLM-Access. **(paper)**
 - **Why it matters for the virtual cell**: the roadmap flags it as a candidate Master's architecture. It handles missing modalities natively, which is the situation with Perturb-seq (RNA only) plus atlases (paired). It also reports gains in genetic-perturbation-response prediction. **(paper / my take)**
 - **Main claim**: it outperforms multimodal methods and unimodal FMs on 10 datasets, with the largest gains in RNA to ATAC translation and perturbation response. **(paper)**
+
+## Research summary
+
+- **Context (already known)**: Unimodal scRNA-seq and scATAC-seq foundation models exist, and multimodal integration methods usually need paired data. **(paper)**
+- **Gap (not known)**: Whether one pretrained model can take RNA-only, ATAC-only or paired cells and also translate between them, and whether that helps perturbation-response prediction. **(paper)**
+- **Hypothesis / what they try to determine**: A multiway transformer (shared attention, modality-specific experts) with harmonized tokenization handles all three input types and beats unimodal and multimodal baselines. **(paper)**
+- **Approach (how they investigated)**: Stage-wise masked-reconstruction pretraining (unimodal, then paired), evaluated on 10 datasets covering batch correction, integration, cross-modal translation, annotation and perturbation response. **(paper)** Only the abstract was available.
+- **Results (what they found)**: Reported to beat multimodal methods and unimodal FMs, with the largest gains in RNA-to-ATAC translation and perturbation response. No numbers, baselines or dataset names were available (abstract-only). **(paper)**
+- **Implications (what it means)**: If the perturbation gain holds against mean and linear baselines, a model that handles missing ATAC natively fits Perturb-seq plus paired-atlas training. Until the full text is read, treat it as an unverified claim. **(my take)**
 
 ## 2. Problem it solves
 

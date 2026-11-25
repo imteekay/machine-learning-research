@@ -17,6 +17,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: they set the bar E6.2 must use and list the leakage traps. **(my take)**
 - **Main claim**: (1) a shared image encoder substantially reorders model rankings: earlier papers conflated architecture with encoder. (2) Typical Pearson is 0.0–0.6; models are limited by data quantity/diversity; context models (GNN/ViT) have not clearly beaten CNNs. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Many H&E-to-spatial-transcriptomics models exist, each with different datasets, gene sets and splits. **(paper)**
+- **Gap (not known)**: How these methods really compare, and whether they capture cell state or only composition. **(paper)**
+- **Hypothesis / what they try to determine**: That a standardized benchmark with a shared encoder, plus a review, reveals true progress. **(paper)**
+- **Approach (how they investigated)**: STP-BENCH re-implements 21 methods with one pathology FM across 6 cancer types; the review compares >40 models and corpora. **(paper)**
+- **Results (what they found)**: A shared encoder reorders model rankings; review reports typical PCC 0.0-0.6, context models not clearly beating CNNs, and leakage risks. STP-BENCH numbers: abstract-only. **(paper)**
+- **Implications (what it means)**: Reported progress is partly encoder choice and leakage; composition is the likely shortcut. **(my take)**
+
 ## 2. Problem it solves
 
 Inconsistent datasets, gene sets, normalization and splits make H&E→ST results incomparable. **(paper)**

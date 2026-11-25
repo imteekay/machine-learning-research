@@ -17,6 +17,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: if expression can be read (even roughly) off routine H&E slides, a tissue-level virtual cell can run on archives of patient slides that have no omics. That is E6.2's bet.
 - **Main claim**: one image–transcriptome embedding supports tissue alignment, histology-based cell-type decomposition, image–transcriptome retrieval and expression prediction from H&E, beating task-specific methods on several benchmarks. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Image-to-expression models are task-specific regressors, and H&E is abundant while spatial transcriptomics is scarce. **(paper)**
+- **Gap (not known)**: Whether one aligned image-transcriptome embedding can serve many tasks, and whether it works at patient level for biomarkers, is not shown in what I read. **(my take)**
+- **Hypothesis / what they try to determine**: A CLIP-style embedding of H&E patches and gene-sentence text can support alignment, decomposition, retrieval and expression prediction. **(paper)**
+- **Approach (how they investigated)**: Train OmiCLIP contrastively on ~2.2M paired tiles (numbers unverified), then build Loki tasks on the shared space and compare with task-specific tools; full text not read. **(paper)**
+- **Results (what they found)**: Reports better or comparable results than task-specific methods on most benchmarks; metrics are gene-level correlations on held-out slides. **(paper)**
+- **Implications (what it means)**: Histology may carry composition-driven programs to patients without omics, but state programs invisible to H&E and retrieval shrinkage remain limits. **(my take)**
+
 ## 2. Problem it solves
 
 Spatial transcriptomics is expensive and rare; H&E is cheap and everywhere. Previous image→expression models are task-specific regressors. OmiCLIP asks for a single *aligned* representation so many tasks become retrieval or similarity in one space. **(paper)**

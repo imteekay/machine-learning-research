@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: the current reference architecture: it treats a perturbation as a map between populations and explicitly targets generalization across contexts. Every thesis model must be compared to it. **(my take)**
 - **Main claim**: on Tahoe-100M, ~50% better discrimination of perturbation effects and ~2x accuracy at recovering true DE genes vs existing models; described as the first to consistently beat linear baselines. **(Arc announcement; not checked against the Cell text)**
 
+## Research summary
+
+- **Context (already known)**: Perturbation models mostly act per cell and often fail to beat linear baselines on new contexts. **(paper)**
+- **Gap (not known)**: Whether modeling perturbations as population-level transitions generalizes across cell contexts. **(paper)**
+- **Hypothesis / what they try to determine**: That a set-based transformer over control cells, with pretrained cell embeddings, predicts perturbed distributions across contexts. **(paper)**
+- **Approach (how they investigated)**: State Embedding plus State Transition trained with distributional losses on Tahoe-100M, Parse PBMC and Replogle-Nadig, evaluated with Cell-Eval. Cell text not retrieved. **(paper / Arc materials)**
+- **Results (what they found)**: Arc reports ~50% better perturbation discrimination and ~2x DE-gene recovery on Tahoe-100M; not checked against the Cell paper. **(Arc announcement)**
+- **Implications (what it means)**: Reference architecture to beat, but gains need checking after removing average perturbation effects. **(my take)**
+
 ## 2. Problem it solves
 
 Perturbation responses are heterogeneous and context-dependent; per-cell models ignore population structure and fail on new cell lines. **(paper)**

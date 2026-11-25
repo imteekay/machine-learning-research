@@ -5,14 +5,23 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 2](../00-plan/roadmap.md#phase-2-single-cell-foundation-models)
-- **Status**: skimmed
+- **Status**: read (partial: VCBench via its GitHub README; BioLLM abstract-only)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
 
 - **What**: (1) VCBench merges four virtual-cell frameworks into 7 capability dimensions: perturbation response, cross-species, GRN inference, modality integration, temporal dynamics, multi-scale integration, in-silico experimentation. It treats 5 as testable today and evaluates Geneformer, scGPT, UCE, TranscriptFormer and Arc State against linear and kNN baselines. (2) BioLLM is a unified loader/executor/evaluator (scBERT, Geneformer, scFoundation, scGPT) with a standard API. **(paper)**
 - **Why it matters for the virtual cell**: these are the tools that make E2.1/E2.2 cheap to run and comparable. VCBench also maps the "virtual cell" capability list onto tests that can be run now. **(my take)**
-- **Main claim**: (1) multi-scale integration and in-silico experimentation are not testable end-to-end under current architectures and data. No FM publishes a full cell-level training manifest, so contamination is hard to detect. It proposes a Contamination Reporting Schema. (2) Standardization enables fair comparison. Benchmark numbers not retrieved. **(paper)**
+- **Main claim**: (1) multi-scale integration and in-silico experimentation are not testable end-to-end under current architectures and data. No FM publishes a full cell-level training manifest, so contamination is hard to detect. It proposes a Contamination Reporting Schema. (2) Standardization enables fair comparison. VCBench numbers are from the GitHub README. **(paper / code)**
+
+## Research summary
+
+- **Context (already known)**: scFM comparisons use heterogeneous code and preprocessing, and linear baselines often match scFMs. **(my take)**
+- **Gap (not known)**: Which virtual-cell capabilities are actually testable today, and whether pretraining data leaks into evaluation. **(paper)**
+- **Hypothesis / what they try to determine**: A unified capability taxonomy plus standardized loading and evaluation allows fair scFM comparison and exposes contamination. **(paper)**
+- **Approach (how they investigated)**: VCBench: 7 capability dimensions, 5 testable, evaluating Geneformer, scGPT, UCE, TranscriptFormer and Arc State against linear/kNN baselines. BioLLM: unified loader/executor/evaluator API. **(paper)**
+- **Results (what they found)**: Multi-scale integration and in-silico experimentation are not testable end to end; no FM publishes a cell-level training manifest, so a Contamination Reporting Schema is proposed. Selected README numbers: perturbation PRR Geneformer 0.627, scGPT 0.503, Arc State 0.402 vs additive baseline 0.890 and mean 0.579; GRN AUROC Geneformer 0.626 vs co-expression 0.558; cross-modal Pearson TranscriptFormer 0.232 vs mean-celltype 0.152; temporal Kendall tau UCE 0.136 vs PCA+DPT 0.190. No model reaches virtual-cell level 3; TranscriptFormer is level 2. **(code)**
+- **Implications (what it means)**: OOD claims in my experiments must check pretraining overlap, and the released embeddings make E2.1 cheap to rerun. **(my take)**
 
 ## 2. Problem it solves
 
@@ -28,7 +37,7 @@ Heterogeneous code, preprocessing and evaluation make scFM comparisons non-repro
 
 ## 5. Evaluation and results
 
-Abstract-only. Full VCBench results beyond the testability and contamination findings were not retrieved. BioLLM numbers not retrieved.
+VCBench has five scored dimensions: A perturbation (PRR, DES, MAE), B cross-species (macro F1), C GRN (AUROC, AUPRC, EPR), D cross-modal (Pearson, RMSE), E temporal (Kendall tau, kNN accuracy); authors Weidener, Brkic, Jovanovic, Ulgac, Meduri (Applied Scientific Intelligence). Baselines beat most models: additive on A, PCA+kNN on B (0.166 vs Geneformer 0.181), PCA+DPT on E. README only; the preprint text was not read. BioLLM numbers not retrieved. **(code)**
 
 ## 6. Critical analysis
 

@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it answers the question "how do you tokenize hundreds of thousands of peaks across datasets with different peak calls?" The answer is coordinate embeddings rather than a vocabulary. Any Master's model that consumes ATAC from several datasets faces the same problem. **(my take)**
 - **Main claim**: it gives strong zero-shot representations and transfers to annotation, batch correction, ATAC to RNA prediction, and enhancer-gene links. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scATAC datasets use different peak sets, so fixed-vocabulary models must remap each dataset and lose novel regions. **(paper)**
+- **Gap (not known)**: Whether coordinate-based tokens with a hybrid attention-Mamba encoder give a universal, vocabulary-free scATAC model. **(paper)**
+- **Hypothesis / what they try to determine**: That embedding region coordinates and accessibility removes the need for a vocabulary and transfers across tissues. **(paper)**
+- **Approach (how they investigated)**: Pretrain a 4-layer, 128-dimensional model on 1.97M cells by masked reconstruction; benchmark on 0.67M held-out cells, including unseen tissues. **(paper)**
+- **Results (what they found)**: +17.02% ARI zero-shot, +46.07% AvgBIO batch correction on bone, best ATAC-to-RNA PCC on 5/5 datasets, and enhancer-gene AUC 0.77 and 0.61 on two genes. **(paper)**
+- **Implications (what it means)**: Coordinate tokenization looks promising, but there is no tokenization ablation or simple baselines (LSI, distance to TSS), and the enhancer-gene evidence is anecdotal. **(my take)**
+
 ## 2. Problem it solves
 
 Peak sets differ between datasets, so a fixed-vocabulary model must re-map every new dataset to its vocabulary, and novel or tissue-specific OCRs get lost. The sequence length (all OCRs in a cell) is too long for full attention. **(paper)**

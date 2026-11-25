@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: search links patient cell states to in vitro systems where they can be perturbed, a practical bridge between Phase 4 experiments and Phase 6 patients. **(my take)**
 - **Main claim**: querying a 23.4M-cell, 412-study atlas with ILD fibrosis-associated macrophages/fibroblasts finds similar states in other fibrotic diseases; the top in vitro hit (a 3D hydrogel) was experimentally confirmed to reproduce the macrophage state. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Hundreds of single-cell studies are public, but searching them for similar cell states across tissues and diseases is impractical. **(paper)**
+- **Gap (not known)**: Whether one metric-learned embedding can support scalable search for similar cells across a whole atlas. **(paper)**
+- **Hypothesis / what they try to determine**: A metric-learning cell embedding lets a query cell state retrieve biologically similar cells from other studies, including in vitro models. **(paper)**
+- **Approach (how they investigated)**: Train on a ~23M-cell, 412-study atlas, build a kNN index, and query with ILD fibrosis-associated macrophages and fibroblasts, then test a top in vitro hit experimentally (abstract-level). **(paper)**
+- **Results (what they found)**: Queries found similar states in other fibrotic diseases, and the top in vitro hit (a 3D hydrogel) was confirmed to reproduce the macrophage state. **(paper)**
+- **Implications (what it means)**: Cell search can link patient states to perturbable in vitro systems; benchmark numbers and held-out-state recall were not read. **(my take)**
+
 ## 2. Problem it solves
 
 Atlases are too large and heterogeneous to search for "cells like this one" across studies and tissues. **(paper)**

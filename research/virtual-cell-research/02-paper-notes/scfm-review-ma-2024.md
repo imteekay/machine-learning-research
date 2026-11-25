@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: an entry-level orientation before reading scBERT, Geneformer and scGPT themselves. **(my take)**
 - **Main claim**: FMs are promising for single-cell analysis, but several challenges still need work. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: FMs have transformed other fields and are being applied to single-cell omics. **(paper)**
+- **Gap (not known)**: What challenges remain and what best practices apply for FMs in single-cell data. **(paper)**
+- **Hypothesis / what they try to determine**: FMs are promising but need work on several challenges. **(paper)**
+- **Approach (how they investigated)**: A short Comment reviewing progress, limitations and best practice; no experiments. **(paper)**
+- **Results (what they found)**: No new results; specific challenges listed in the Comment were not retrieved (paywall). **(paper)**
+- **Implications (what it means)**: A 2024 orientation text that predates many negative benchmarks. **(my take)**
+
 ## 2. Problem it solves
 
 Biologists need a short guide to when and how to use scFMs. **(paper, from summary)**

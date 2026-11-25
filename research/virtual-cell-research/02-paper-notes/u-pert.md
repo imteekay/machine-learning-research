@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: drugs kill and proliferate cells; mass-preserving models cannot represent that, which matters for cancer therapy. **(my take)**
 - **Main claim**: Pearson delta 0.636/0.865/0.434 (Norman/Adamson/Replogle) vs CellFlow 0.618/0.661/0.399; sciPlex3 abundance error improved in 79/81 cases; inverse screening recovered venetoclax, vincristine, navitoclax (not experimentally validated). **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Flow-matching perturbation models (CellFlow, CondOT) assume mass-preserving shifts. **(paper)**
+- **Gap (not known)**: How to model perturbations that change cell abundance via proliferation and death. **(paper)**
+- **Hypothesis / what they try to determine**: That unbalanced flow matching (WFR geometry) with velocity and growth networks predicts both state and mass change. **(paper)**
+- **Approach (how they investigated)**: Condition-wise unbalanced flow matching in 100-dim PCA space, tested on Norman, Adamson, Replogle, sciPlex3, Parse PBMC and a ChEMBL screen. **(paper)**
+- **Results (what they found)**: Pearson delta 0.636/0.865/0.434 vs CellFlow 0.618/0.661/0.399; abundance error better in 79/81 sciPlex3 cases; inverse design recovered venetoclax, vincristine, navitoclax (unvalidated). **(paper)**
+- **Implications (what it means)**: Abundance matters for drug response, but growth is weakly identified from snapshots. **(my take)**
+
 ## 2. Problem it solves
 
 Perturbation data are unbalanced because of proliferation, apoptosis and selection, but most models assume mass-preserving shifts. **(paper)**

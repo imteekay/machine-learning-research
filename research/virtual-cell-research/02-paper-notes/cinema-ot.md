@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 4](../00-plan/roadmap.md#phase-4-perturbation-modeling-and-causal-prediction)
-- **Status**: skimmed (abstract-only; PMC blocked automated fetch)
+- **Status**: read (PMC full text, main text; last ~34k characters not read)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -16,25 +16,34 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it produces *per-cell* counterfactual pairs, i.e. pseudo-labels for "what would this cell look like untreated", which is the supervision a perturbation model needs and the cleanest way to study response heterogeneity (E4.3). **(my take)**
 - **Main claim**: outperforms other single-cell perturbation analysis methods on simulated and real benchmarks; reveals new biology in rhinovirus/cigarette-smoke airway organoids and combinatorial cytokine stimulation of immune cells. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Treated and control populations differ by confounders such as cell state and composition, so mean or cluster-level differences mix confounding with treatment effect. **(paper)**
+- **Gap (not known)**: How to estimate per-cell causal treatment effects from single-cell data while separating confounding variation. **(paper)**
+- **Hypothesis / what they try to determine**: That ICA can isolate treatment-independent confounder components, so optimal-transport matching on them gives valid counterfactuals. **(paper)**
+- **Approach (how they investigated)**: ICA components scored for treatment dependence (XICOR), entropic OT matching in confounder space, and per-cell effects as differences; tested on simulations, sci-Plex4, Alzheimer's cortex and two new datasets (airway organoids, cytokine PBMC). **(paper)**
+- **Results (what they found)**: It was best on batch mixing and attribution against Mixscape, scGen, CPA, ContrastiveVI and CellOT in simulations (exact values only in figures), ran about 1 minute for 50k cells, and found rhinovirus/smoke interferon attenuation and synergistic responses. **(paper)**
+- **Implications (what it means)**: It gives per-cell counterfactual pairs, but it assumes independence of confounders and fails under strong abundance imbalance. **(my take)**
+
 ## 2. Problem it solves
 
 Treated and control populations differ by confounders (cell cycle, state, composition); naive mean differences or cluster-level comparisons mix confounding and treatment effects. **(paper)**
 
 ## 3. Method
 
-ICA on preprocessed expression; a test identifies components independent of treatment (confounders); entropic OT on those components gives a coupling; the treatment-effect matrix supports response clustering and synergy analysis. A reweighted variant handles imbalanced cell compositions. **(paper; variant naming (uncertain))**
+PCA then FastICA; each component's dependence on treatment is scored with Chatterjee's coefficient (XICOR) and confounder components are those below a threshold (0.05-0.75 in the study); entropic OT (Sinkhorn-Knopp) in confounder space gives the coupling; the individual treatment effect is each cell minus its match. CINEMA-OT-W reweights cells (kNN alignment plus Leiden) for differential abundance. Synergy and attribution analyses extend it. **(paper)**
 
 ## 4. Data
 
-Simulations plus two new datasets: airway organoids (rhinovirus, cigarette smoke) and combinatorial cytokine stimulation of immune cells (on Dryad). **(paper)** Possibly new datasets for the registry.
+Scsim simulations (about 1,000 genes x 5,000 cells); Alzheimer's entorhinal cortex (GSE138852); sci-Plex4 (GSE139944; A549/MCF7, 17 drugs); a new airway organoid set (26,420 cells; mock, RV, CSE, RVCSE); a new PBMC cytokine set (IFN-a2, b, g, l, IL-6, TNF, alone and combined, 3 donors). Data on Dryad. **(paper)**
 
 ## 5. Evaluation and results
 
-Benchmarks vs. other perturbation-analysis/matching methods on simulated and real data; numbers abstract-only.
+**(paper)** Baselines: Mixscape, Harmony-Mixscape, full OT, scGen, CPA, ContrastiveVI, CellOT. Metrics: batch mixing (ASW, PCR), ARI for differential-response clusters, attribution accuracy. CINEMA-OT was best on batch mixing and attribution in balanced simulations, with the largest attribution advantage under differential abundance; exact values are in figures not visible in the text. CINEMA-OT is better at mild imbalance (ratio >= 0.75) and CINEMA-OT-W at strong imbalance (<= 0.5). About 1 minute and under 12 GB for 50,000 cells. Biology: rhinovirus broadly induced ISGs; RV plus smoke attenuated interferon response; pre-ciliated cells showed synergistic secretory-gene induction; monocytes showed the strongest synergistic chemokine response.
 
 ## 6. Critical analysis
 
-- Limitations (paper): abstract-only.
+- Limitations (paper): differential abundance violates the independence assumption; no extrapolation to unmeasured perturbation-cell pairs; not suited to abundance questions; OT oversmoothing gives false positives, undersmoothing hurts stability; no count modeling (batch effects can affect DE); dense matching matrix uses much memory; ott-jax solver is experimental.
 - Weaknesses I see (my take): identification relies on the assumption that confounders are captured by treatment-independent ICA components; a treatment that shifts cell cycle would be partially absorbed as "confounder". Linear ICA may miss non-linear confounding.
 - What would change my mind: recovering a known ground-truth per-cell effect in a spike-in or barcoded-lineage design where counterfactual pairs are partly observable.
 

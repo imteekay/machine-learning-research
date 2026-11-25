@@ -12,6 +12,14 @@
 - Mislocalization: when proteins are in the wrong localization, it's a key driver of disease
 - Protein is a sequence of amino acids, which has the "localization" embedded in its structure
 
+What is known / not known:
+
+- Known (general): localization is partly encoded in sequence signals (e.g., nuclear localization signals), but also depends on cell type, state and binding partners. No paper note covers an image-based localization model directly; the cytoself and ALS/TDP-43 statements below are from my own earlier reading, not verified against a note here.
+- Known (note, abstract plus README only): [scgenept](../02-paper-notes/scgenept.md) reports that subcellular-location text helps most for single-gene perturbation prediction; no numbers were read. [virtual-tissues-virtues](../02-paper-notes/virtual-tissues-virtues.md) argues imaging measures abundance plus localization, and sequence similarity is only a proxy for what looks similar in an image (its author's view).
+- Not known: whether localization embeddings improve perturbation or state prediction beyond expression; whether unsupervised localization clusters recover compartments better than a sequence-only baseline.
+
+Why it matters for the virtual cell: localization is part of cell state that scRNA-seq cannot see (see [biology-of-the-cell](./biology-of-the-cell.md) section 1.3), and a protein-layer virtual cell ([ptv-perturbation-proteomics-virtual-cell](../02-paper-notes/ptv-perturbation-proteomics-virtual-cell.md), abstract-only) needs it.
+
 Understanding protein localization at scale could:
 
 - Reveal new, previously unknown subcellular compartments: It may be surprising, but we’re still discovering fundamental structures inside cells. In recent years, researchers have identified the exclusome (a cytoplasmic DNA compartment in mammalian cells), paraspeckles and nuclear speckles (membraneless nuclear bodies involved in RNA processing), and even new entire organelles. The most recent example is the nitroplast, a nitrogen-fixing organelle discovered in marine algae as recently as 2024.4 These findings show how much more there is to uncover about the cell’s internal architecture.
@@ -55,3 +63,9 @@ Vector-Quantized Variational Autoencoders (VQ-VAEs):
   - Pixels outside the nucleus are assigned negative values, also based on shortest distance to the nuclear edge.
   - Protein annotations: gene names and unique IDs
   - Curated localization labels: Manually assigned organelle or compartment categories (not used on training — used afterward to evaluate whether the model has learned biologically meaningful representations on its own)
+
+## Falsifiable experiments (tied to the roadmap)
+
+1. **Localization text/embedding adds signal.** *Hypothesis:* adding subcellular-location embeddings to a gene prior improves unseen single-gene perturbation prediction over a gene-prior-only ridge baseline. *Refuted if* the gain is within confidence intervals on held-out-gene splits. Grounding: [scgenept](../02-paper-notes/scgenept.md) (abstract-level; no numbers).
+2. **Unsupervised clusters recover compartments.** *Hypothesis:* a VQ-VAE or similar latent space, evaluated only afterward on held-out curated labels, separates compartments better than a sequence-embedding baseline. *Refuted if* the baseline matches it. Expected failure: multi-localizing proteins.
+3. **Mislocalization shift is detectable.** *Hypothesis:* a perturbation that mislocalizes a known protein (e.g., TDP-43) moves its embedding farther than between-replicate variation. *Refuted if* the shift is within replicate noise.

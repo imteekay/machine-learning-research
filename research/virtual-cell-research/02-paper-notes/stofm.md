@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it separates *what a cell is* (encoder) from *where it is* (geometry-aware transformer). That split maps directly onto the PhD's generative vs spatial modules.
 - **Main claim**: multi-scale modeling beats single-cell FMs and Nicheformer on segmentation, annotation, deconvolution and imputation, with F1 gains of 11.6% (segmentation) and 14.3% (annotation) over the best baseline **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: Spatial FMs such as Nicheformer encode one cell at a time or ignore geometric invariance. **(paper)**
+- **Gap (not known)**: Whether jointly modeling gene, microenvironment and tissue scales improves spatial transcriptomics tasks. **(paper)**
+- **Hypothesis / what they try to determine**: That a multi-scale (gene, micro, macro) SE(2)-invariant model beats single-scale FMs. **(paper)**
+- **Approach (how they investigated)**: Geneformer cell encoder, SE(2) transformer over ~1,000-cell sub-slices with Leiden-cluster virtual cells, pretrained on SToCorpus-88M. **(paper)**
+- **Results (what they found)**: Wins on segmentation, annotation, deconvolution and imputation, e.g. embryo cross-slice macro-F1 0.459 vs 0.399 (CellPLM). **(paper)**
+- **Implications (what it means)**: Multi-scale modeling helps over FM baselines, but without simple spatial-smoothing baselines the transformer's added value is unproven. **(my take)**
+
 ## 2. Problem it solves
 
 ST needs gene-level, microenvironment and tissue-morphology information at once; existing FMs encode one cell at a time (Nicheformer) or ignore geometry invariance **(paper)**.

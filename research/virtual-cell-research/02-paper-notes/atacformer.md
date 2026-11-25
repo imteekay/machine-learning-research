@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the opposite design choice to ChromFound (a vocabulary rather than coordinates), and it ships CRAFT, a CLIP-style ATAC to RNA aligner (Atacformer + Geneformer). That is exactly the "impute ATAC context for RNA-only Perturb-seq cells" module that E3.2 needs. **(my take)**
 - **Main claim**: comparable or better clustering than ArchR/SnapATAC2/EpiAgent at much lower cost, plus region-level embeddings that are useful for interpretation (cryptic TSS discovery). **(paper)**
 
+## Research summary
+
+- **Context (already known)**: scATAC models embed cells, not regions, and the largest (EpiAgent, about 1B parameters) is slow. **(paper)**
+- **Gap (not known)**: Whether a small fixed-region-vocabulary transformer gives region-level embeddings that are fast, competitive on clustering and useful for interpretation and RNA alignment. **(paper)**
+- **Hypothesis / what they try to determine**: That a bag of 890,704 fixed regions, with no positional encoding and ELECTRA pretraining, matches larger models at much lower cost. **(paper)**
+- **Approach (how they investigated)**: Pretrain on about 1.2M cells; fine-tune for cell type; evaluate on bulk BED files and cryptic TSS discovery; train CRAFT, a CLIP aligner to Geneformer on about 106k multiome cells. **(paper)**
+- **Results (what they found)**: About +15% ARI on PBMC, 2.5x faster than EpiAgent, F1 0.85 on bulk cell-line classification, and 6x H3K4me3 enrichment at cryptic TSSs. **(paper)**
+- **Implications (what it means)**: A vocabulary design is viable and cheap, but CRAFT's ATAC-to-RNA claim is only qualitative, so it is not yet a proven E3.2 module. **(my take)**
+
 ## 2. Problem it solves
 
 Existing scATAC models embed cells but not *regions*, and they are slow (EpiAgent has about 1B parameters). Interpretation needs per-region embeddings, and atlas-scale use needs speed. **(paper)**

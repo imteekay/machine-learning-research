@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 3](../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context)
-- **Status**: skimmed (abstract-only)
+- **Status**: skimmed (abstract-only; bioRxiv returned 429, Europe PMC 403 on re-attempt)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -15,6 +15,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: a BERT-style model pretrained on large-scale human ChIP-seq for about 1,000 transcription regulators (TFs and chromatin regulators). It learns their co-association "syntax" across genomic regions. **(paper)**
 - **Why it matters for the virtual cell**: it represents *trans* regulators in context, while ATAC models represent only accessibility. If perturbation targets are TFs, a regulator-level embedding is a natural perturbation token for E4.1. **(my take)**
 - **Main claim**: after fine-tuning, it imputes unseen cistromes and models cell-type-specific regulatory effects and dynamics without cell-type-specific ChIP for each regulator. **(paper)**
+
+## Research summary
+
+- **Context (already known)**: Transcription regulatory networks are context-specific, but ChIP-seq covers few regulator by cell-type pairs. **(paper)**
+- **Gap (not known)**: Whether a foundation model of regulator co-binding can impute unseen cistromes and give context-specific regulatory networks. **(paper)**
+- **Hypothesis / what they try to determine**: That pretraining on large-scale human ChIP-seq for about 1,000 regulators learns co-association syntax that transfers after fine-tuning. **(paper)**
+- **Approach (how they investigated)**: BERT-style pretraining with regions as input and regulators as tokens, then fine-tuning for cistrome imputation and regulatory tasks. Details are abstract-only. **(paper)**
+- **Results (what they found)**: It imputes unseen cistromes and models cell-type-specific regulatory effects and dynamics; no numbers available in abstract. **(paper)**
+- **Implications (what it means)**: Regulator embeddings may serve as perturbation tokens, but co-binding is not regulation and ChIP data are cell-line biased. **(my take)**
 
 ## 2. Problem it solves
 
@@ -26,7 +35,7 @@ Abstract-only. Regions are input and regulators are tokens, with pretraining on 
 
 ## 4. Data
 
-Large-scale public human ChIP-seq (likely Cistrome/ENCODE). The exact numbers were not retrieved.
+Large-scale public human ChIP-seq (likely Cistrome/ENCODE). The exact numbers were not retrieved. Docs (chrombert.readthedocs.io): the model captures genome-wide co-association patterns of about one thousand transcription regulators, and is fine-tuned by transfer learning without extra data per regulator. **(code)**
 
 ## 5. Evaluation and results
 

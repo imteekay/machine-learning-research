@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it optimizes the thing biologists use (which genes change) instead of raw expression MSE. **(my take)**
 - **Main claim**: on five large genetic perturbation experiments, recovers truly affected genes 4-7x more than existing models and can infer which gene was perturbed from the expression change. **(paper, unverified)**
 
+## Research summary
+
+- **Context (already known)**: Perturbation models usually optimize expression-level losses, which unchanged genes dominate; DE signatures are what biologists use. **(my take)**
+- **Gap (not known)**: Whether learning DE signatures across a very large number of comparisons, with statistical denoising, recovers truly affected genes better. **(paper, poster summary)**
+- **Hypothesis / what they try to determine**: A DE-learning objective gives better recovery of affected genes and allows inferring the perturbed gene. **(paper)**
+- **Approach (how they investigated)**: Train on DE signatures from many cell comparisons after statistical cleaning; evaluate on five large genetic perturbation experiments. Architecture not available in abstract. **(paper, abstract-level)**
+- **Results (what they found)**: Recovers truly affected genes 4-7x more than existing models and infers the perturbed gene; unverified. **(paper)**
+- **Implications (what it means)**: If robust to mean/linear DE baselines it supports DE-based losses; circularity and target-gene shortcuts are open concerns. **(my take)**
+
 ## 2. Problem it solves
 
 Expression-level losses are dominated by unchanged genes, so models miss DE genes. **(my take, consistent with the AUPRC literature)**

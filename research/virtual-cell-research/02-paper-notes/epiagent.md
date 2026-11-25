@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 3](../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context), [Phase 4](../00-plan/roadmap.md#phase-4-perturbation-modeling-and-causal-prediction)
-- **Status**: skimmed (abstract-only)
+- **Status**: skimmed (abstract-only; bioRxiv and publisher full text not retrievable on 2026-11-25)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -15,6 +15,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: a transformer that is pretrained on about 5M scATAC-seq cells (Human-scATAC-Corpus, about 35B tokens). Each cell becomes a compact "cell sentence" of accessible cis-regulatory elements (cCREs), and the model uses bidirectional attention. **(paper)**
 - **Why it matters for the virtual cell**: it is one of the few chromatin foundation models that claims *perturbation* tasks: in-silico knockout of cCREs, and prediction of the cell state that follows. It is the most direct chromatin-side competitor to the Master's model. **(my take)**
 - **Main claim**: a single pretrained model supports zero-shot annotation, integration, and in-silico cCRE knockout, as well as modeling of cell-state changes under perturbation. **(paper)**
+
+## Research summary
+
+- **Context (already known)**: scATAC-seq is high-dimensional and sparse, and analysis relied on per-dataset tools (ArchR, SnapATAC2, PeakVI) with no reusable pretrained representation. **(paper)**
+- **Gap (not known)**: Whether a foundation model pretrained on millions of scATAC cells can support zero-shot tasks and in silico cis-regulatory perturbation. **(paper)**
+- **Hypothesis / what they try to determine**: A transformer over per-cell sentences of accessible cCREs, pretrained at scale, supports annotation, integration, in silico cCRE knockout and cell-state prediction. **(paper)**
+- **Approach (how they investigated)**: Pretrain on the Human-scATAC-Corpus (~5M cells, ~35B tokens), then evaluate zero-shot annotation, cCRE in silico KO and perturbation/state-change modelling. **(paper)** Only the abstract and secondary summaries were available; the full text was not fetchable.
+- **Results (what they found)**: Reported to support all these tasks with one model; baselines and numbers were not retrieved. **(paper)**
+- **Implications (what it means)**: A candidate chromatin context encoder, but token deletion is not a causal intervention, so its KO claim needs checking against CRISPRi enhancer screens. **(my take)**
 
 ## 2. Problem it solves
 

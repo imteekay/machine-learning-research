@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it encodes the hierarchy the PhD model needs (gene regulation inside cells, signaling between cells) and has no fixed gene vocabulary, so it can take proteomics panels.
 - **Main claim**: SOTA on clinical outcome prediction, annotation and imputation; generalizes to spatial proteomics; ~8x faster than scGPT-spatial **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: spatial foundation models (e.g. scGPT-spatial, CellPLM, Novae) embed cells or niches, but use fixed gene vocabularies. **(paper)**
+- **Gap (not known)**: whether modelling the gene-level structure inside each cell together with the cell-level spatial graph helps, and whether one model can transfer to new gene or protein panels. **(paper)**
+- **Hypothesis / what they try to determine**: a hierarchical graph (genes in cells in tissue) with vocabulary-free gene embeddings gives better spatial representations than flat cell graphs. **(paper)**
+- **Approach (how they investigated)**: pretrain a two-level graph transformer on 22.3M cells from 124 slices (Xenium, MERFISH, SEA-AD) with contrastive, alignment and masked objectives; evaluate on clinical outcome, annotation, imputation and L-R prediction. **(paper)**
+- **Results (what they found)**: best AUC in 6/7 clinical-outcome settings, imputation Pearson 0.82 (placenta) fine-tuned but weak zero-shot (0.35 skin), and ~8x faster than scGPT-spatial. **(paper)**
+- **Implications (what it means)**: the hierarchy is a plausible slot for regulatory graphs, but without a random-graph or PCA baseline it is not shown that the gene-level graph is what helps. **(my take)**
+
 ## 2. Problem it solves
 
 Spatial FMs ignore intra-cell gene structure and depend on fixed vocabularies, so new panels/modalities need retraining **(paper)**.

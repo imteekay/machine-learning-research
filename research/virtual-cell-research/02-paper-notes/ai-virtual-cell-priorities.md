@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it fixes the vocabulary the field now uses (universal representations, virtual instruments, decoders, manipulators). Every model in this roadmap can be placed as a UR, a decoder or a manipulator. **(my take)**
 - **Main claim**: AI trained on large multi-modal data can now learn cell simulators directly from data, without hand-built mechanistic models, if the community invests in data, benchmarks and open infrastructure. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Mechanistic whole-cell models do not scale to human cells, while single-cell atlases and perturbation screens are now large enough to learn from. **(paper)**
+- **Gap (not known)**: There is no shared definition of what a virtual cell should do, nor agreed data, evaluation or community priorities for building one. **(paper)**
+- **Hypothesis / what they try to determine**: Whether AI can learn multi-scale cell simulators directly from data, and what must be built so it can. **(paper)**
+- **Approach (how they investigated)**: A perspective: it defines universal representations, virtual instruments (decoders and manipulators) and three scales, then lists data and evaluation priorities. No experiments. **(paper)**
+- **Results (what they found)**: No empirical results; the output is a framework and a priority list (multi-modal data, generalization tests, uncertainty, open benchmarks). **(paper)**
+- **Implications (what it means)**: It gives the field its vocabulary, but it sets no minimum baseline a virtual cell must beat, so it cannot be falsified on its own. **(my take)**
+
 ## 2. Problem it solves
 
 Mechanistic whole-cell models (e.g. Karr 2012) do not scale to human cells. Single-cell atlases and perturbation screens are now large enough to learn from, but the field lacks a shared definition of what a virtual cell should do and how to judge it. **(paper)**

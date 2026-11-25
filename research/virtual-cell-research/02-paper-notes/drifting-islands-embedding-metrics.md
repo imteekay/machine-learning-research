@@ -5,7 +5,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 2](../00-plan/roadmap.md#phase-2-single-cell-foundation-models)
-- **Status**: skimmed
+- **Status**: skimmed (full-text fetch re-attempted 2026-11-25; author PDF would not extract)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -14,13 +14,22 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: if integration and embedding metrics can be gamed by label supervision, then scFM leaderboards built on them say little about biology. That affects how E1.1 and E2.1 are scored. **(my take)**
 - **Main claim**: current metrics reward label-cluster coherence and within-cluster batch mixing, not preserved structure. scGraph flags the artifact: Islander was lowest on scGraph in 7 of 11 atlases. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Cell embeddings are judged with scIB-style metrics (label-based bio-conservation plus batch mixing), and integration and foundation-model benchmarks rank methods with them. **(paper)**
+- **Gap (not known)**: Whether high scores on these metrics reflect preserved biological structure, or can be reached by embeddings that discard it. **(paper)**
+- **Hypothesis / what they try to determine**: A label-supervised embedding can top the metrics while producing wrong geometry, and a metric based on cell-type relationships will expose it. **(paper)**
+- **Approach (how they investigated)**: Build Islander, a 3-layer MLP trained to align embeddings with labels, score it on standard metrics, and compare with scGraph on 11 atlases. **(paper)** Full text not read; the PDF would not parse here.
+- **Results (what they found)**: Islander scores best on standard metrics but is lowest on scGraph in 7 of 11 atlases, and its islands drift across runs. **(paper)**
+- **Implications (what it means)**: Leaderboards built on label-based embedding metrics can be gamed, so scFM embedding comparisons need a structure-preserving metric alongside. scGraph itself still depends on a reference geometry. **(my take)**
+
 ## 2. Problem it solves
 
 scIB bio-conservation metrics (ARI/NMI, silhouette by label) can be maximized by an embedding that discards between-type relationships. **(paper)**
 
 ## 3. Method
 
-- Islander: MLP with a label-alignment objective plus batch mixing, which makes it a deliberately adversarial "metric gamer". **(paper)**
+- Islander: MLP (trained in a 'mixup' mode with a leakage parameter, then benchmarked with scIB; **(code)**) with a label-alignment objective plus batch mixing, which makes it a deliberately adversarial "metric gamer". **(paper)**
 - scGraph: compares the graph of cell-type relationships (distances between type centroids, consensus across batches) with that in the embedding, at multiple granularities. **(paper)** Exact formula not checked (the PDF did not parse).
 
 ## 4. Data
@@ -29,7 +38,7 @@ scIB bio-conservation metrics (ARI/NMI, silhouette by label) can be maximized by
 
 ## 5. Evaluation and results
 
-Islander tops the standard metrics yet is worst on scGraph in 7/11 atlases. Islands drift between runs, especially for small cell subsets. **(paper)** Other numbers: abstract-only.
+Islander tops the standard metrics yet is worst on scGraph in 7/11 atlases. Islands drift between runs, especially for small cell subsets. **(paper)** Other numbers: abstract-only. Code README (genentech/islander) reports one benchmark table, Rank-PCA / Corr-PCA / Corr-Weights: Geneformer 0.610 / 0.799 / 0.498; Harmony 0.670 / 0.924 / 0.678; Harmony_hvg 0.709 / 0.941 / 0.724; Islander 0.292 / 0.847 / 0.160. Corr-Weights (headline scGraph score) is a weighted rank correlation with weights inversely proportional to inter-cluster centroid distance. **(code)**
 
 ## 6. Critical analysis
 

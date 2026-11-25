@@ -15,6 +15,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it produces two representations at once: a cell-level latent (integrated) and a **sample-level** latent (the condition embeddings). The sample embeddings are a natural input for patient-level (clinical) prediction. **(my take)**
 - **Main claim**: integration quality comparable to scVI/scANVI-type methods while additionally giving interpretable sample embeddings and prototype-based label transfer with uncertainty for query mapping. **(paper)**, exact benchmark numbers not reproduced here.
 
+## Research summary
+
+- **Context (already known)**: Integrating many samples with one-hot batch conditioning in cVAEs is known, but it yields no sample-level representation. **(paper)**
+- **Gap (not known)**: Whether learned low-dimensional condition embeddings with cell-type prototypes can integrate population-scale data and support label transfer. **(paper)**
+- **Hypothesis / what they try to determine**: Learned sample embeddings plus prototype loss give scVI-level integration while adding interpretable sample structure and uncertain-aware query mapping. **(paper)**
+- **Approach (how they investigated)**: Conditional VAE with learned condition embeddings and prototypes, benchmarked with scIB-style metrics against scVI, scANVI and scArches variants. **(paper)**
+- **Results (what they found)**: Integration is comparable to scVI/scANVI-type methods with added sample embeddings and prototype label transfer; numbers not reproduced in this note. **(paper)**
+- **Implications (what it means)**: Useful for population-level data, but whether sample-level disease programs survive integration is the open question for E1.1. **(my take)**
+
 ## 2. Problem it solves
 
 Atlases combine hundreds of samples. One-hot batch covariates scale linearly with the number of samples, cannot express "these two samples are similar", and give nothing to analyse at sample level. Reference mapping (scArches) also needs labels to transfer to new query data. **(paper)**

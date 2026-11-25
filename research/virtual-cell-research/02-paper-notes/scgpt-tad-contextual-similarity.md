@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is evidence that scFM gene embeddings encode 3D-genome structure that is never in their input. It also gives a probe-style test of "does the model know biology" (E2.3). **(my take)**
 - **Main claim**: TAD structure and transcriptional co-regulation share organization, and the scGPT-derived similarity detects it where sparse Pearson co-expression fails. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: TADs are thought to constrain co-regulation of genes, but sparse single-cell co-expression (Pearson) is too noisy to show it. **(paper)**
+- **Gap (not known)**: Whether scGPT-derived contextual gene similarity reveals shared organization of transcription and TADs. **(paper)**
+- **Hypothesis / what they try to determine**: Genes in the same TAD are more contextually similar in scGPT than expected, detecting what Pearson co-expression misses. **(paper)**
+- **Approach (how they investigated)**: Compute gene-pair contextual similarity from scGPT (33M cells) and compare within-TAD and across-TAD pairs using public Hi-C TADs (abstract-level). **(paper)**
+- **Results (what they found)**: TAD structure and transcriptional co-regulation share organization, and the scGPT similarity detects it where Pearson fails. No numbers were read. **(paper)**
+- **Implications (what it means)**: If scFM embeddings encode 3D genome structure, RNA models may already hold chromatin context, so ATAC may add less; genomic-distance confounding remains unchecked here. **(my take)**
+
 ## 2. Problem it solves
 
 Co-expression from sparse single-cell data is noisy, so the link between TADs and co-transcription was hard to see. **(paper)**

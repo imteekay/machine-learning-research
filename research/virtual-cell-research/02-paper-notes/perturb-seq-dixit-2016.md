@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the data-generating assay behind almost every perturbation-prediction benchmark (Norman, Replogle, Tahoe-style), and MIMOSCA is the original "linear baseline" every deep model should beat.
 - **Main claim** (paper): single-cell readout of pooled screens recovers the effects of individual TFs, their interactions (via cells with several guides), and their programs, in K562 and LPS-stimulated BMDCs.
 
+## Research summary
+
+- **Context (already known)**: Pooled CRISPR screens scale but read one phenotype, and arrayed screens with rich readouts do not scale. **(paper)**
+- **Gap (not known)**: Whether a transcriptome-wide per-cell phenotype can be read at pooled scale, including TF interactions, was not shown. **(paper)**
+- **Hypothesis / what they try to determine**: Guide barcodes read with the transcriptome let each cell's perturbation and full expression response be recovered in a pooled screen. **(paper)**
+- **Approach (how they investigated)**: Pooled TF knockouts in K562 and LPS-stimulated BMDCs with scRNA-seq, analysed with MIMOSCA, a regularized linear model with an effectiveness-weighting step and interaction terms. **(paper)**
+- **Results (what they found)**: Recovered known TF targets, programs and TF interactions (via multi-guide cells); numbers not re-checked. **(paper)**
+- **Implications (what it means)**: It created the assay behind modern perturbation benchmarks, and MIMOSCA is the original linear baseline that deep models must beat. **(my take)**
+
 ## 2. Problem it solves
 
 Arrayed screens with rich readouts don't scale; pooled screens scale but only read one phenotype (growth/FACS). Perturb-seq gets a transcriptome-wide phenotype per cell at pooled scale. (paper)

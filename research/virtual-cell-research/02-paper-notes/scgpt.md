@@ -15,6 +15,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the reference "cell language model" architecture. Its <cls> embedding, gene embeddings and fine-tuning recipes (annotation, batch integration, perturbation prediction, GRN inference) are what later work, and the critiques, measure against.
 - **Main claim**: generative pretraining at scale produces cell and gene representations that transfer across tasks, and fine-tuning gives state-of-the-art or competitive results on annotation, integration and perturbation prediction. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Transformers pretrained on large unlabeled corpora transfer well in NLP, and large single-cell atlases such as CELLxGENE are available. **(paper)**
+- **Gap (not known)**: How to tokenize a sparse, unordered, depth-dependent expression profile so generative pretraining yields transferable cell and gene representations. **(paper)**
+- **Hypothesis / what they try to determine**: A generative masked-value transformer over gene tokens and per-cell binned values learns representations that fine-tune well across single-cell tasks. **(paper)**
+- **Approach (how they investigated)**: Pretrain on ~33M human cells with gene-prompt/cell-prompt generation (GEP, GEPC), then fine-tune for annotation, integration, perturbation, multi-omics and GRN analysis. **(paper)**
+- **Results (what they found)**: Fine-tuned scGPT matches or beats scVI, Seurat, Harmony and GEARS on several tasks; exact numbers not copied into this note. **(paper)**
+- **Implications (what it means)**: It is the reference cell language model, but later zero-shot work shows frozen embeddings often fail to beat HVG+PCA, so foundation value needs testing (E2.1). **(my take)**
+
 ## 2. Problem it solves
 
 A single-cell expression profile has no natural order (genes are not a sentence), is very sparse, and its absolute scale depends on sequencing depth and technology. NLP-style pretraining needs (a) a tokenization of this object, (b) a self-supervised objective, and (c) a way to read out a whole-cell representation. scGPT proposes one answer for each.

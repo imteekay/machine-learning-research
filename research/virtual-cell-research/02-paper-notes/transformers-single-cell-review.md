@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: the bridge from generic transformer knowledge to scFM design choices (how a cell becomes a sequence of tokens), which decides what a model can and cannot learn. **(my take)**
 - **Main claim**: transformers became the default for FMs elsewhere because they generalize across large, heterogeneous data; whether the same shift happens in single-cell biology is open, and the review lays out the technical challenges. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Transformers became the default for foundation models in other fields. **(paper)**
+- **Gap (not known)**: Whether and how this shift will happen in single-cell biology given technical challenges. **(paper)**
+- **Hypothesis / what they try to determine**: To describe transformer adaptations for single-cell data and assess limits and directions. **(paper)**
+- **Approach (how they investigated)**: Review of architecture, applications, and limitations (abstract-only; paywalled). **(paper)**
+- **Results (what they found)**: Lays out technical challenges; no new data or numbers. **(paper)**
+- **Implications (what it means)**: Tokenization and set structure are likely the key design choices, more than size. **(my take)**
+
 ## 2. Problem it solves
 
 Single-cell atlases are large, but current models do not fully use them. Readers need a structured view of how transformers have been adapted and where they fall short. **(paper)**

@@ -5,7 +5,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 0](../00-plan/roadmap.md#phase-0-foundations), [Phase 4](../00-plan/roadmap.md#phase-4-perturbation-modeling-and-causal-prediction)
-- **Status**: skimmed
+- **Status**: skimmed (abstract-only; open-access full text not extractable on 2026-11-25)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -13,6 +13,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: a review of flow matching (FM): theory, then applications to small molecules, proteins, DNA/RNA, their interactions, and single- and multi-cell modelling, plus a list of open-source FM tools. **(paper)**
 - **Why it matters for the virtual cell**: many 2025–26 perturbation models (e.g. CellFlow) are flow-matching models that map a control population to a perturbed population. Understanding FM is needed to judge distributional claims in E4.3. **(my take)**
 - **Main claim**: FM is a simple, scalable training method for generative models that is spreading across computational biology. **(paper)**
+
+## Research summary
+
+- **Context (already known)**: Flow matching trains generative models by regressing a velocity field between a source and target distribution, and is cheaper than diffusion. Perturbation models such as CellFlow use it to map control to perturbed cells. **(my take, standard background)**
+- **Gap (not known)**: Where flow matching is used across computational biology and which challenges remain. The open challenges were not read. **(paper)**
+- **Hypothesis / what they try to determine**: As a review it states no hypothesis; it argues FM is a simple, scalable method spreading across molecules, proteins, DNA/RNA and cells. **(paper)**
+- **Approach (how they investigated)**: Theory and applications review with a list of open-source tools. Full text not extracted; the eScholarship open-access page returned no usable text. **(paper)**
+- **Results (what they found)**: No new results. Coverage: small molecules, proteins, DNA/RNA, interactions, single- and multi-cell modelling. **(paper)**
+- **Implications (what it means)**: Useful to judge distributional claims in perturbation models, but I could not check which cell models it covers. **(my take)**
 
 ## 2. Problem it solves
 

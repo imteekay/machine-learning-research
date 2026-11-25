@@ -2,12 +2,12 @@
 
 > *scLinguist: A pre-trained hyena-based foundation model for cross-modality translation in single-cell multi-omics*. bioRxiv (2025). DOI: [10.1101/2025.09.30.679123](https://doi.org/10.1101/2025.09.30.679123) · Docs: [sclinguist.readthedocs.io](https://sclinguist.readthedocs.io)
 >
-> bioRxiv returned 429. These notes come from search snippets of the preprint and the docs. Authors not retrieved.
+> bioRxiv full text still returned 429 on retry. These notes come from the abstract, the docs overview and the bioRxiv API metadata. Authors (API metadata): Fang Z, Miao Z, Lin J, Xie Y, Tang J, Ding J, Li M (corresponding: Min Li, Central South University).
 
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 3](../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context)
-- **Status**: skimmed (abstract-only)
+- **Status**: skimmed (abstract-only; full text blocked on retry)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -16,13 +16,22 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: Hyena scales subquadratically to all genes or peaks, which is relevant if the Master's model must take whole-genome ATAC. Pretraining on unpaired data before translating helps when paired data is scarce. **(my take)**
 - **Main claim**: better cross-modality translation, especially RNA to protein, than existing methods. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Paired multi-modal data (CITE-seq) is scarce while unimodal single-cell data is abundant, and RNA-to-protein translation tools exist (BABEL, totalVI). **(paper)**
+- **Gap (not known)**: Whether pretraining on large unimodal data, then fine-tuning on paired data, improves cross-modality translation. **(paper)**
+- **Hypothesis / what they try to determine**: A Hyena-based encoder-decoder with staged pretraining translates modalities better than current methods, especially RNA to protein. **(paper)**
+- **Approach (how they investigated)**: Three-stage training: unimodal self-supervised pretraining, then paired fine-tuning (abstract/snippet-level). **(paper)**
+- **Results (what they found)**: The abstract claims better cross-modality translation, mainly RNA to protein; no numbers were retrieved. **(paper)**
+- **Implications (what it means)**: If real, unimodal data can substitute for scarce paired data; this remains unverified without full text and baseline details. **(my take)**
+
 ## 2. Problem it solves
 
 Paired multi-omics data is scarce, and full-length feature sequences are too long for attention. **(paper)**
 
 ## 3. Method
 
-Abstract-only. The docs describe a "transformer-based, two-step" framework, which disagrees with the preprint's Hyena / 3-stage description. **(code vs paper)**
+Abstract-only. The docs overview describes a modality-specific pretraining then fine-tuning on paired RNA-protein data, and a "transformer-based, two-step" framework, which disagrees with the preprint's Hyena / 3-stage description. **(code vs paper)**
 
 ## 4. Data
 

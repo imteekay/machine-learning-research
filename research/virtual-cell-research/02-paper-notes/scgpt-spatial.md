@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the most direct path from the Master's backbone (scGPT, Phase 2) to space without retraining from scratch. If continual pretraining works, the PhD model can inherit the Master's model.
 - **Main claim**: protocol-aware MoE decoding plus a neighborhood-based objective yields embeddings that integrate multi-slide/multi-modal data and improve deconvolution and missing-gene imputation over many existing methods **(paper, abstract)**.
 
+## Research summary
+
+- **Context (already known)**: scRNA-trained scFMs never see tissue position, and spatial datasets differ in protocol, gene panel and resolution. **(paper)**
+- **Gap (not known)**: Whether continually pretraining scGPT on large spatial data yields a protocol-robust spatial foundation model without training from scratch. **(paper)**
+- **Hypothesis / what they try to determine**: Initializing from scGPT and adding protocol-aware decoding plus a neighborhood objective gives better spatial embeddings than existing methods. **(paper)**
+- **Approach (how they investigated)**: Continual pretraining on SpatialHuman30M with a mixture-of-experts decoder and spatially aware sampling; tasks are multi-slide integration, deconvolution and gene imputation (abstract-level). **(paper)**
+- **Results (what they found)**: The abstract reports improved integration, deconvolution and imputation over many methods; no numbers were read. Independent benchmarks show gains are selective, not uniform. **(paper)**
+- **Implications (what it means)**: It is a template for carrying the Master's scGPT backbone into space, but the benefit of scRNA initialization and of the MoE decoder is unablated here. **(my take)**
+
 ## 2. Problem it solves
 
 scFMs trained on dissociated cells never see position; spatial data spans very different protocols (spot-level Visium vs single-cell imaging) with different gene panels and noise. Training a spatial FM from scratch throws away what the scRNA model already learned **(paper)**.

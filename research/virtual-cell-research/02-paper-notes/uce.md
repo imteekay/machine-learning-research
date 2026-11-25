@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: genes are represented via protein language model embeddings, so the model is not tied to a fixed gene vocabulary. That is what enables zero-shot embedding of species never seen in training, relevant to mouse→human translation. **(my take; PLM tokens per earlier preprint)**
 - **Main claim**: the latent space captures biology despite noise, shows emergent structure (developmental lineages) and embeds unseen species. **(paper)**
 
+## Research summary
+
+- **Context (already known)**: Atlases are fragmented by species, tissue and gene set, and single-cell foundation models are usually tied to one gene vocabulary. **(paper)**
+- **Gap (not known)**: Whether one self-supervised model can embed any cell from any tissue or species zero-shot with useful biology. **(paper)**
+- **Hypothesis / what they try to determine**: A single universal embedding, with genes represented via protein language model embeddings, captures cell biology across tissues and unseen species without fine-tuning. **(paper)**
+- **Approach (how they investigated)**: Self-supervised transformer trained on the 36M-cell Integrated Mega-scale Atlas (8 species). Model size and objective: abstract-only. **(paper)**
+- **Results (what they found)**: The latent space shows emergent developmental lineages and embeds species not seen in training. Quantitative comparisons: not available in abstract. **(paper)**
+- **Implications (what it means)**: If it holds, a single space could carry mouse perturbation knowledge to human, but it needs testing against HVG+PCA baselines, which beat other FMs zero-shot. **(my take)**
+
 ## 2. Problem it solves
 
 Atlases are fragmented by species, tissue and gene set; each new dataset usually needs integration or retraining. UCE aims for a single universal representation. **(paper)**

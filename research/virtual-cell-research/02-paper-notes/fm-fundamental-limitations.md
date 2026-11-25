@@ -1,11 +1,11 @@
 # Fundamental limitations of scFMs: noise-robust cell typing vs a Seurat baseline
 
-> Authors not confirmed (abstract-only). *Fundamental Limitations of Foundation Models in Single-Cell Transcriptomics*. bioRxiv (2025). DOI: [10.1101/2025.06.26.661767](https://www.biorxiv.org/content/10.1101/2025.06.26.661767v1) · Code: not checked
+> Atti S, Subramaniam S (per Europe PMC preprint listing). *Fundamental Limitations of Foundation Models in Single-Cell Transcriptomics*. bioRxiv (2025). DOI: [10.1101/2025.06.26.661767](https://www.biorxiv.org/content/10.1101/2025.06.26.661767v1) · Code: not checked
 
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 2](../00-plan/roadmap.md#phase-2-single-cell-foundation-models)
-- **Status**: skimmed
+- **Status**: skimmed (abstract-only; bioRxiv full text returned HTTP 429, Europe PMC full text unavailable)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -13,6 +13,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **What**: compares scGPT, SCMAMBA-2 and Geneformer with a statistical baseline (Seurat v5) for cell-type classification under added Gaussian noise. **(paper, abstract-level)**
 - **Why it matters for the virtual cell**: it argues that the gap is *structural*, from missing biological context, not something more data will fix. That is the core claim of the research proposal. **(my take)**
 - **Main claim**: the FMs underperform the statistical baseline, and the authors attribute this to the lack of biological context in the models. **(paper)**
+
+## Research summary
+
+- **Context (already known)**: Single-cell foundation models are pretrained at scale and pitched as general tools, but zero-shot and fine-tuned evaluations have shown mixed gains over simple methods. **(my take)**
+- **Gap (not known)**: Whether their weakness is fixable by scale or comes from missing biological context. **(paper)**
+- **Hypothesis / what they try to determine**: scGPT, SCMAMBA-2 and Geneformer underperform a statistical baseline (Seurat v5) for cell typing under added noise because they lack biological context. **(paper)**
+- **Approach (how they investigated)**: Cell-type classification with increasing Gaussian noise, comparing the FMs with Seurat v5. **(paper)** Only the abstract was read.
+- **Results (what they found)**: The FMs score below Seurat v5; the authors attribute it to missing biological context. No numbers were retrieved. **(paper)**
+- **Implications (what it means)**: The context argument is plausible but untested: no positive control with added context was seen, and Gaussian noise is a weak proxy for count noise. **(my take)**
 
 ## 2. Problem it solves
 

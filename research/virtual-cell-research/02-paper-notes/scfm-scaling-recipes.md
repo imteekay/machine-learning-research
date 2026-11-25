@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the counterweight to the [plateau papers](scfm-pretraining-data-scaling.md). If scaling holds under specific recipes, "context, not scale" becomes "context *and* the right scale". **(my take)**
 - **Main claim**: abstract-only. The title implies that scaling laws hold under some conditions and not others.
 
+## Research summary
+
+- **Context (already known)**: Reports exist of weak or no scaling in scFMs, versus LLM-style expectations. **(my take)**
+- **Gap (not known)**: Under which conditions (data regime, objective, size) scaling laws hold for scRNA FMs. **(my take, from title)**
+- **Hypothesis / what they try to determine**: Scaling laws hold under specific recipes and fail under others. **(my take, from title)**
+- **Approach (how they investigated)**: Not available in abstract (bioRxiv HTTP 429). **(paper)**
+- **Results (what they found)**: Not available in abstract. **(paper)**
+- **Implications (what it means)**: If correct, it defines when more data is a valid alternative explanation for context gains. **(my take)**
+
 ## 2. Problem it solves
 
 It tries to reconcile reports of no scaling with LLM-style expectations by finding conditions (data regime, objective, model size) under which loss and downstream metrics follow power laws. **(my take, from title)**

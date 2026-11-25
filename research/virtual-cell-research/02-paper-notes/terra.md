@@ -16,6 +16,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: it is the closest published thing to the PhD goal: perturb a gene in tissue context and read out the consequences.
 - **Main claim**: finds an islet-associated capillary state in developing pancreas, predicts an immune-checkpoint-blockade nephrotoxicity program by in-silico checkpoint knockout in kidney, and finds cross-organ recurring niches ("archetypes") **(paper)**.
 
+## Research summary
+
+- **Context (already known)**: Spatial FMs annotate tissue but rarely support counterfactual perturbation. **(paper)**
+- **Gap (not known)**: Whether a cross-organ tissue model can run in-silico perturbations with meaningful tissue-level consequences. **(paper)**
+- **Hypothesis / what they try to determine**: That multi-scale embeddings from 112M human cells enable discovery and spatial in-silico perturbation. **(paper)**
+- **Approach (how they investigated)**: Pretraining on 112M cells with gene/cell/neighborhood embeddings and in-silico knockout; mechanism not extracted (abstract-only). **(paper)**
+- **Results (what they found)**: Finds an islet-associated capillary state, predicts a checkpoint-blockade nephrotoxicity program by in-silico knockout, and recurring niche archetypes; case studies only. **(paper)**
+- **Implications (what it means)**: Hypothesis-generating; without spatial perturbation ground truth the KO predictions are not validated. **(my take)**
+
 ## 2. Problem it solves
 
 Tissue-level models that work across organs and support counterfactual perturbation, not only annotation **(paper)**.

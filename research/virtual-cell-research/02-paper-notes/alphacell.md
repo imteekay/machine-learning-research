@@ -14,6 +14,15 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Why it matters for the virtual cell**: perturbation as a vector field in latent space is a natural substrate for rollouts.
 - **Main claim**: robust compositional generalization and zero-shot prediction in unseen cellular contexts **(paper, no metrics in abstract)**.
 
+## Research summary
+
+- **Context (already known)**: generative and latent models (scGen, CPA, CellOT, flow matching) predict perturbation responses, but latent spaces are often incomplete and genome-wide reconstruction is poor. **(paper)**
+- **Gap (not known)**: whether a full-transcriptome latent space plus a continuous vector field gives compositional and zero-shot prediction in unseen cellular contexts. **(paper)**
+- **Hypothesis / what they try to determine**: perturbations act as deterministic vector fields on a rectified latent manifold, so OT flow matching can simulate perturbation-induced dynamics and generalize compositionally. **(paper)**
+- **Approach (how they investigated)**: Latent Manifold Rectification to a "Virtual Cell Space", a large decoder to genome-wide expression, and OT conditional flow matching. Datasets and splits: not retrieved (abstract-only). **(paper)**
+- **Results (what they found)**: claims of robust compositional generalization and zero-shot prediction; no metrics visible. **(paper)**
+- **Implications (what it means)**: unverified until full text is read. If it holds it supports vector-field rollouts, but "dynamics" from endpoint Perturb-seq and deterministic fields that ignore heterogeneity are open concerns. **(my take)**
+
 ## 2. Problem it solves
 
 Prior models have incomplete latent representations, poor genome-wide reconstruction and limited cross-context generalization **(paper)**.
