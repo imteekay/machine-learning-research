@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-25: E5.1 niche context (nicheformer-mini)
+
+- **Did**: read Nicheformer ([note](./02-paper-notes/nicheformer.md)). Built [`nicheformer-mini/`](./nicheformer-mini/): a synthetic tumor section with known niches and spillover, ridge/neighbor-aggregation models and a rank-token mini transformer. Ran [E5.1](./04-experiments/E5.1-niche-context.md) with spatial block CV on 3 seeds. All 4 pre-registered criteria pass: IFN R² gain +0.12 at the border vs +0.05 far away; shuffled neighbors and housekeeping genes gain nothing.
+- **Learned**: cell type alone predicts neighborhood composition with R² 0.36, so it is the baseline to beat. The mini transformer (0.48) matched but did not beat ridge (0.49). Neighbor features that don't encode depth miss the hypoxic core.
+- **Open questions**: how large are spillover and spatial leakage on real MERFISH/Xenium? Does pretraining (not tested) make rank tokens worth it?
+- **Next**: run the harness on a public MERFISH/Xenium tumor section, then E5.2.
+
 ## 2026-11-22: Glyph paper deep dive + glyph-mini PoC
 
 - **Did**: read Glyph ([note](./02-paper-notes/glyph.md), [PDF](./papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf), [code](https://github.com/StanfordMIMI/Glyph)). Built [`glyph-mini/`](./glyph-mini/), a minimal PoC with 18 tests, and ran [E2.3a](./04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) on synthetic data with known truth. H1–H5 pass on seeds 0–4.
