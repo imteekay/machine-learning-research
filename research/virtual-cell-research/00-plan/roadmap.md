@@ -706,7 +706,7 @@ Pretrain or fine-tune a niche-aware model (Novae / Nicheformer / scGPT-spatial) 
 
 ### Experiments & Hypotheses
 
-**E5.1: Does niche context add information beyond cell type?**
+**E5.1: Does niche context add information beyond cell type?** ([write-up](../04-experiments/E5.1-niche-context.md))
 - **Hypothesis (H)**: predicting a cell's expression from its own cell type *plus* its neighbors beats cell type alone, and the gain is largest at tumor–immune and tumor–stroma borders. *Null*: neighbor information adds nothing beyond the CI
 - **Why it moves the research forward**: if space doesn't help even for *unperturbed* expression, a spatial perturbation model is unlikely to help. A positive result with a border effect directly motivates the PhD hypothesis
 - **Knowledge tested**: *domain*: TME biology (immune exclusion, hypoxic cores, cancer-associated fibroblasts), what a "border" is histologically. *Technical*: GNN receptive field, spatial cross-validation (held-out regions, not random spots), segmentation confounds

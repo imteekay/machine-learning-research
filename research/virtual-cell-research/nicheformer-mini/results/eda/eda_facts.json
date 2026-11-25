@@ -1,0 +1,92 @@
+{
+ "n_cells": 4000,
+ "n_genes": 40,
+ "type_fractions": {
+  "tumor": 0.21425,
+  "T_cell": 0.09975,
+  "fibroblast": 0.47325,
+  "macrophage": 0.21275
+ },
+ "median_counts_per_cell": 60.0,
+ "fraction_zero_entries": 0.45734375,
+ "enrichment_z": {
+  "tumor-tumor": 98.6,
+  "tumor-T_cell": -17.8,
+  "tumor-fibroblast": -71.5,
+  "tumor-macrophage": -27.8,
+  "T_cell-tumor": -20.1,
+  "T_cell-T_cell": 19.6,
+  "T_cell-fibroblast": 1.7,
+  "T_cell-macrophage": -1.6,
+  "fibroblast-tumor": -65.9,
+  "fibroblast-T_cell": 0.8,
+  "fibroblast-fibroblast": 36.9,
+  "fibroblast-macrophage": 15.4,
+  "macrophage-tumor": -26.9,
+  "macrophage-T_cell": -2.6,
+  "macrophage-fibroblast": 19.5,
+  "macrophage-macrophage": 4.9
+ },
+ "fraction_cells_within_0.05_of_border": 0.198,
+ "corr_ifn_vs_knn_tcell_fraction": 0.6201018673057265,
+ "CD3E_in_tumor_cells_near_vs_far_from_T": [
+  1.0199049711227417,
+  0.6907522678375244
+ ],
+ "panel_size_r2": {
+  "3": [
+   0.09466420338223883,
+   0.07123833297536439
+  ],
+  "5": [
+   0.06070688668356181,
+   0.06425656247339297
+  ],
+  "10": [
+   0.18304794447748324,
+   0.08604833999992552
+  ],
+  "20": [
+   0.2935580877421898,
+   0.049088730590569285
+  ],
+  "30": [
+   0.35704216983146225,
+   0.02431210867836717
+  ],
+  "40": [
+   0.4042998759565896,
+   8.95090418262362e-17
+  ]
+ },
+ "markers": {
+  "tumor": [
+   "EPCAM",
+   "KRT8",
+   "KRT18",
+   "MKI67",
+   "CDH1"
+  ],
+  "T_cell": [
+   "CD3E",
+   "CD8A",
+   "CD2",
+   "GZMB",
+   "TRAC"
+  ],
+  "fibroblast": [
+   "COL1A1",
+   "COL1A2",
+   "DCN",
+   "PDGFRA",
+   "FAP"
+  ],
+  "macrophage": [
+   "CD68",
+   "CD163",
+   "LYZ",
+   "C1QA",
+   "CSF1R"
+  ]
+ }
+}
