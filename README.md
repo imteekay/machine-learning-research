@@ -922,6 +922,7 @@
 - [Aidan Cooper](https://www.aidancooper.co.uk)
 - [Jayoung Ry](https://jykr.github.io)
 - [Ida Johnsson](https://www.idajohnsson.com)
+- [Yifei Li](https://liyifei.org)
 
 ### Research & Laboratories
 
