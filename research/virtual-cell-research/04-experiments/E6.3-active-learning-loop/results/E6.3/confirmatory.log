@@ -1,0 +1,62 @@
+pool 1661 candidates, 64 features, targets ['erythroid_up', 'proliferation_down'], batch 48, rounds 15 (720 experiments), seeds 30; {'has_protein': 0.9698976520168573, 'own_kd_median': -0.8168192081149647, 'reliability': {'erythroid_up': 0.8789539013099145, 'proliferation_down': 0.7029420763421342}}
+[13s] erythroid_up         random                 AUDC 0.229  final 0.44  E50 696  ECE 0.239  rho 0.13
+[35s] erythroid_up         diversity              AUDC 0.180  final 0.31  E50 None  ECE 0.282  rho 0.14
+[87s] erythroid_up         greedy                 AUDC 0.392  final 0.64  E50 517  ECE 0.250  rho 0.05
+[138s] erythroid_up         ucb                    AUDC 0.381  final 0.62  E50 523  ECE 0.255  rho 0.06
+[187s] erythroid_up         thompson               AUDC 0.361  final 0.61  E50 539  ECE 0.248  rho 0.07
+[238s] erythroid_up         uncertainty            AUDC 0.262  final 0.46  E50 702  ECE 0.264  rho 0.13
+[252s] erythroid_up         oracle                 AUDC 0.908  final 1.00  E50 96  ECE 0.382  rho 0.06
+[304s] erythroid_up         ucb_shuffled_features  AUDC 0.232  final 0.44  E50 684  ECE 0.282  rho -0.00
+[349s] erythroid_up         ucb_protein_only       AUDC 0.277  final 0.52  E50 664  ECE 0.227  rho 0.04
+[395s] erythroid_up         ucb_coexpression_only  AUDC 0.379  final 0.63  E50 541  ECE 0.245  rho 0.06
+   erythroid_up ucb-random: +0.152 [+0.139,+0.165]
+   erythroid_up ucb-diversity: +0.201 [+0.190,+0.212]
+   erythroid_up ucb-greedy: -0.012 [-0.018,-0.004]
+   erythroid_up greedy-random: +0.164 [+0.150,+0.177]
+   erythroid_up thompson-random: +0.132 [+0.118,+0.146]
+   erythroid_up thompson-ucb: -0.020 [-0.029,-0.011]
+   erythroid_up diversity-random: -0.049 [-0.061,-0.038]
+   erythroid_up uncertainty-random: +0.033 [+0.022,+0.044]
+   erythroid_up oracle-ucb: +0.528 [+0.517,+0.539]
+   erythroid_up ucb_shuffled_features-random: +0.003 [-0.010,+0.015]
+   erythroid_up ucb-ucb_shuffled_features: +0.149 [+0.137,+0.161]
+   erythroid_up ucb-ucb_protein_only: +0.103 [+0.092,+0.114]
+   erythroid_up ucb-ucb_coexpression_only: +0.002 [-0.009,+0.013]
+   erythroid_up ucb_protein_only-random: +0.049 [+0.032,+0.067]
+   erythroid_up ucb_coexpression_only-random: +0.150 [+0.135,+0.165]
+[408s] proliferation_down   random                 AUDC 0.236  final 0.44  E50 686  ECE 0.266  rho 0.22
+[431s] proliferation_down   diversity              AUDC 0.276  final 0.49  E50 710  ECE 0.306  rho 0.19
+[480s] proliferation_down   greedy                 AUDC 0.339  final 0.60  E50 576  ECE 0.254  rho 0.15
+[529s] proliferation_down   ucb                    AUDC 0.343  final 0.59  E50 562  ECE 0.260  rho 0.16
+[578s] proliferation_down   thompson               AUDC 0.329  final 0.60  E50 586  ECE 0.259  rho 0.18
+[627s] proliferation_down   uncertainty            AUDC 0.274  final 0.51  E50 690  ECE 0.292  rho 0.20
+[645s] proliferation_down   oracle                 AUDC 0.909  final 1.00  E50 96  ECE 0.413  rho 0.09
+[693s] proliferation_down   ucb_shuffled_features  AUDC 0.235  final 0.44  E50 704  ECE 0.279  rho 0.00
+[737s] proliferation_down   ucb_protein_only       AUDC 0.321  final 0.55  E50 622  ECE 0.234  rho 0.14
+[780s] proliferation_down   ucb_coexpression_only  AUDC 0.336  final 0.63  E50 576  ECE 0.246  rho 0.11
+   proliferation_down ucb-random: +0.107 [+0.090,+0.123]
+   proliferation_down ucb-diversity: +0.067 [+0.057,+0.076]
+   proliferation_down ucb-greedy: +0.004 [-0.003,+0.011]
+   proliferation_down greedy-random: +0.103 [+0.085,+0.119]
+   proliferation_down thompson-random: +0.093 [+0.073,+0.113]
+   proliferation_down thompson-ucb: -0.014 [-0.024,-0.004]
+   proliferation_down diversity-random: +0.040 [+0.026,+0.054]
+   proliferation_down uncertainty-random: +0.038 [+0.021,+0.056]
+   proliferation_down oracle-ucb: +0.566 [+0.558,+0.575]
+   proliferation_down ucb_shuffled_features-random: -0.001 [-0.019,+0.018]
+   proliferation_down ucb-ucb_shuffled_features: +0.108 [+0.093,+0.123]
+   proliferation_down ucb-ucb_protein_only: +0.022 [+0.014,+0.029]
+   proliferation_down ucb-ucb_coexpression_only: +0.006 [-0.004,+0.016]
+   proliferation_down ucb_protein_only-random: +0.085 [+0.069,+0.100]
+   proliferation_down ucb_coexpression_only-random: +0.100 [+0.082,+0.118]
+{
+ "primary_target": "erythroid_up",
+ "ucb_beats_random": true,
+ "ucb_beats_diversity": true,
+ "ucb_beats_greedy": false,
+ "H_supported": true,
+ "replication_proliferation_down": {
+  "ucb_beats_random": true,
+  "ucb_beats_diversity": true
+ }
+}

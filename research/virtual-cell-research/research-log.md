@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-26: E6.3 active-learning loop on the K562 essential screen (loop-mini)
+
+- **Did**: downloaded the Replogle K562 essential screen (1.55 GB; Zenodo throttles each connection, so I fetched it in 8 parallel ranges) and built a 1,661-knockdown pool with two pre-defined program scores and features from untreated cells (co-expression, ESM2 protein embedding). Built [`loop_mini`](./04-experiments/E6.3-active-learning-loop/CODE.md) (bootstrap ensemble, 7 acquisition arms, calibration) and ran [E6.3](./04-experiments/E6.3-active-learning-loop/): 2 programs, 30 seeds, 15 rounds of 48.
+- **Learned**: H supported. UCB finds half of the erythroid hits after 523 experiments vs 696 for random (25% fewer), and replicates on the proliferation program; the shuffled-feature control sits at random. UCB does not beat greedy, and the ensemble's uncertainty is badly overconfident (errors 3.5× its spread), so the gain is exploitation of the mean. Hits are functional families: replication genes for erythroid induction (29 of 45), translation and integrator for proliferation suppression.
+- **Open questions**: does a calibrated (conformal) uncertainty make UCB beat greedy? Does the saving hold with noisy rounds and a genome-wide pool?
+- **Next**: this completes the 7 planned experiments (E0.1 to E6.3).
+
 ## 2026-11-26: E5.3 cross-tissue niche transfer (novae-mini), on mouse brain MERFISH
 
 - **Did**: tried to get human multi-tissue Xenium data and could not (no valid 10x paths found; the Vizgen bucket returned access-denied and I did not go around it; CELLxGENE has only mouse brain MERFISH). Switched to the whole-mouse-brain MERFISH atlas: tissue = major brain region (10), niche = CCF region, 1.9M cells in 66 coronal sections plus a sagittal set from another animal. Built [`novae_mini`](./04-experiments/E5.3-cross-tissue-niches/CODE.md): a GraphSAGE niche encoder with a SwAV-style objective, leave-one-tissue-out, a transfer matrix and an unseen-animal test.

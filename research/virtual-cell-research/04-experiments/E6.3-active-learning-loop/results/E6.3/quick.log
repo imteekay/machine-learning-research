@@ -1,0 +1,46 @@
+pool 1661 candidates, 64 features, targets ['erythroid_up', 'proliferation_down'], batch 48, rounds 15 (720 experiments), seeds 3; {'has_protein': 0.9698976520168573, 'own_kd_median': -0.8168192081149647, 'reliability': {'erythroid_up': 0.8789539013099145, 'proliferation_down': 0.7029420763421342}}
+[2s] erythroid_up         random      AUDC 0.263  final 0.47  E50 672  ECE 0.231  rho 0.14
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E6.3-active-learning-loop/scripts/run_e63.py:52: RuntimeWarning: Mean of empty slice
+  R[tname]["summary"][m] = {k: float(np.nanmean([x[k] if x[k] is not None else np.nan for x in sm])) for k in ("audc", "final", "experiments_to_50pct")}
+[4s] erythroid_up         diversity   AUDC 0.200  final 0.32  E50 nan  ECE 0.280  rho 0.15
+[9s] erythroid_up         greedy      AUDC 0.419  final 0.62  E50 512  ECE 0.241  rho 0.06
+[14s] erythroid_up         ucb         AUDC 0.410  final 0.62  E50 496  ECE 0.246  rho 0.05
+[18s] erythroid_up         thompson    AUDC 0.390  final 0.60  E50 560  ECE 0.236  rho 0.07
+[23s] erythroid_up         uncertainty AUDC 0.272  final 0.46  E50 672  ECE 0.262  rho 0.13
+[24s] erythroid_up         oracle      AUDC 0.913  final 1.00  E50 96  ECE 0.388  rho 0.07
+   erythroid_up ucb-random: +0.148 [+0.090,+0.179]
+   erythroid_up ucb-diversity: +0.210 [+0.196,+0.228]
+   erythroid_up ucb-greedy: -0.008 [-0.047,+0.029]
+   erythroid_up greedy-random: +0.156 [+0.137,+0.182]
+   erythroid_up thompson-random: +0.127 [+0.077,+0.154]
+   erythroid_up thompson-ucb: -0.020 [-0.025,-0.013]
+   erythroid_up diversity-random: -0.062 [-0.117,-0.022]
+   erythroid_up uncertainty-random: +0.009 [-0.052,+0.049]
+   erythroid_up oracle-ucb: +0.502 [+0.477,+0.517]
+[26s] proliferation_down   random      AUDC 0.223  final 0.41  E50 nan  ECE 0.273  rho 0.21
+[28s] proliferation_down   diversity   AUDC 0.280  final 0.49  E50 720  ECE 0.307  rho 0.20
+[33s] proliferation_down   greedy      AUDC 0.353  final 0.63  E50 560  ECE 0.257  rho 0.16
+[38s] proliferation_down   ucb         AUDC 0.347  final 0.62  E50 544  ECE 0.264  rho 0.16
+[42s] proliferation_down   thompson    AUDC 0.357  final 0.62  E50 512  ECE 0.254  rho 0.18
+[47s] proliferation_down   uncertainty AUDC 0.265  final 0.52  E50 696  ECE 0.292  rho 0.21
+[49s] proliferation_down   oracle      AUDC 0.910  final 1.00  E50 96  ECE 0.415  rho 0.10
+   proliferation_down ucb-random: +0.124 [+0.095,+0.152]
+   proliferation_down ucb-diversity: +0.067 [+0.046,+0.088]
+   proliferation_down ucb-greedy: -0.006 [-0.023,+0.015]
+   proliferation_down greedy-random: +0.130 [+0.110,+0.161]
+   proliferation_down thompson-random: +0.134 [+0.104,+0.175]
+   proliferation_down thompson-ucb: +0.010 [-0.002,+0.023]
+   proliferation_down diversity-random: +0.057 [+0.049,+0.064]
+   proliferation_down uncertainty-random: +0.042 [-0.007,+0.095]
+   proliferation_down oracle-ucb: +0.562 [+0.537,+0.583]
+{
+ "primary_target": "erythroid_up",
+ "ucb_beats_random": true,
+ "ucb_beats_diversity": true,
+ "ucb_beats_greedy": false,
+ "H_supported": true,
+ "replication_proliferation_down": {
+  "ucb_beats_random": true,
+  "ucb_beats_diversity": true
+ }
+}

@@ -23,6 +23,9 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - Annotated TF → target edges (CollecTRI) are pooled across cell types and often do not hold in K562. ETS1 is not expressed in K562 at all. (E0.2, *new*)
 - Co-expression is symmetric, so it cannot tell a regulator from its target: P(Y|X) ≠ P(Y|do(X)). (E0.4, *new*)
 
+### Essential-gene biology and phenotype-directed screening
+- In K562, inducing the erythroid program follows DNA-replication perturbations (29 of 45 replication genes) and the BCR-ABL axis (BCR, GAB2), not general toxicity; suppressing the proliferation program follows translation, integrator, spliceosome and proteasome knockdowns and none of the replication genes. Essential complexes are not interchangeable: each phenotype has its own hit family. (E6.3, *new*)
+
 ### Pharmacology and dose-response
 - In sci-Plex 3 most drug responses shift the whole population: the true spread equals the vehicle's and a true mean shift reproduces the distribution in 89% of active conditions. (E4.3, *new*)
 - Subpopulation responses concentrate in epigenetic regulators (HDAC inhibitors: 62 of 86 heterogeneous conditions) and Aurora kinase inhibitors, and grow with dose (2.6% at 10 nM to 17% at 10 µM). (E4.3, *new*)
@@ -47,6 +50,8 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - A Visium spot is a mixture of cells, and most variance sits within patients. H&E recovers composition-type biomarkers, not hidden cell-state programs. (E6.2, *new*, synthetic)
 
 ## ML and evaluation
+
+- Closing the loop pays: ensemble-UCB finds half of the erythroid hits after 523 experiments vs 696 for random (25% fewer), on both programs, with a shuffled-feature control at random. The gain is from the predicted mean, not the uncertainty (UCB ≈ greedy; the ensemble's errors are 3.5× its spread and its 80% intervals cover 41%). Diversity-only selection can be worse than random. A weak overall ranking (Spearman 0.06 to 0.16) still finds hits fast because hits cluster in functional families. (E6.3, *new*)
 
 - A learned niche encoder beats expression alone, an untrained network and a shuffled graph in every tissue but never beats hand-crafted neighbour smoothing (0.274 vs 0.331 NMI). A multi-tissue model did not beat one trained on a single section of the target (1 of 10 tissues). The gene basis explains at most 0.008 of the gap and the objective (SwAV vs InfoNCE) does not matter. Always report the 1- and 2-hop neighbour-mean baseline. (E5.3, *confirms E2.1*)
 
@@ -82,4 +87,3 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 | Domain | Experiment |
 |---|---|
-| Experimental design and closed loop | E6.3 |

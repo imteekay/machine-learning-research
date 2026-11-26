@@ -1,0 +1,114 @@
+{
+ "erythroid_up": {
+  "DNA replication": {
+   "n": 45,
+   "hits": 29,
+   "hit_rate": 0.644,
+   "enrichment": 12.74
+  },
+  "ribosome / rRNA": {
+   "n": 96,
+   "hits": 5,
+   "hit_rate": 0.052,
+   "enrichment": 1.03
+  },
+  "proteasome": {
+   "n": 24,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "enrichment": 0.0
+  },
+  "spliceosome": {
+   "n": 36,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "enrichment": 0.0
+  },
+  "translation": {
+   "n": 30,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "enrichment": 0.0
+  },
+  "mito ribosome / import": {
+   "n": 66,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "enrichment": 0.0
+  },
+  "tRNA synthetase": {
+   "n": 26,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "enrichment": 0.0
+  },
+  "integrator / mediator": {
+   "n": 26,
+   "hits": 2,
+   "hit_rate": 0.077,
+   "enrichment": 1.52
+  },
+  "chromatin / TF": {
+   "n": 13,
+   "hits": 4,
+   "hit_rate": 0.308,
+   "enrichment": 6.08
+  }
+ },
+ "proliferation_down": {
+  "DNA replication": {
+   "n": 45,
+   "hits": 0,
+   "hit_rate": 0.0,
+   "enrichment": 0.0
+  },
+  "ribosome / rRNA": {
+   "n": 96,
+   "hits": 8,
+   "hit_rate": 0.083,
+   "enrichment": 1.65
+  },
+  "proteasome": {
+   "n": 24,
+   "hits": 4,
+   "hit_rate": 0.167,
+   "enrichment": 3.3
+  },
+  "spliceosome": {
+   "n": 36,
+   "hits": 7,
+   "hit_rate": 0.194,
+   "enrichment": 3.84
+  },
+  "translation": {
+   "n": 30,
+   "hits": 13,
+   "hit_rate": 0.433,
+   "enrichment": 8.57
+  },
+  "mito ribosome / import": {
+   "n": 66,
+   "hits": 4,
+   "hit_rate": 0.061,
+   "enrichment": 1.2
+  },
+  "tRNA synthetase": {
+   "n": 26,
+   "hits": 4,
+   "hit_rate": 0.154,
+   "enrichment": 3.04
+  },
+  "integrator / mediator": {
+   "n": 26,
+   "hits": 7,
+   "hit_rate": 0.269,
+   "enrichment": 5.32
+  },
+  "chromatin / TF": {
+   "n": 13,
+   "hits": 2,
+   "hit_rate": 0.154,
+   "enrichment": 3.04
+  }
+ }
+}
