@@ -1,6 +1,6 @@
 # E0.4: Can a minimal virtual cell predict knockouts it has never seen?
 
-- **Roadmap phase**: [Phase 0](../00-plan/roadmap.md#phase-0-foundations) · Hypothesis ladder rung: 0
+- **Roadmap phase**: [Phase 0](../../00-plan/roadmap.md#phase-0-foundations) · Hypothesis ladder rung: 0
 - **Status**: done
 - **Started / finished**: 2026-10-31 / 2026-10-31
 
@@ -22,7 +22,7 @@ Every later experiment needs the same harness:
 - metrics corrected for systematic variation;
 - positive and negative controls.
 
-E0.4 builds that harness and checks that it can detect real generalization *before* any real data is involved. This is the [E0.3](../00-plan/roadmap.md#experiments--hypotheses) logic applied to a whole pipeline: understand an evaluation on simulated data before trusting it on real models. **(my take)**
+E0.4 builds that harness and checks that it can detect real generalization *before* any real data is involved. This is the [E0.3](../../00-plan/roadmap.md#experiments--hypotheses) logic applied to a whole pipeline: understand an evaluation on simulated data before trusting it on real models. **(my take)**
 
 - **If H holds**, the minimal Δ-MLP with co-expression embeddings is a working baseline for unseen perturbations. The same harness then moves on in three directions:
   - real data (Replogle 2022 K562 essential pseudobulk);
@@ -53,7 +53,7 @@ E0.4 builds that harness and checks that it can detect real generalization *befo
 
 ## Design
 
-- **Data**: a synthetic toy cell from [`vcell.simulate`](../vcell/src/vcell/simulate.py). No real or patient data is used, so there is no entry in [datasets](../03-data/datasets.md).
+- **Data**: a synthetic toy cell from [`vcell.simulate`](./src/vcell/simulate.py). No real or patient data is used, so there is no entry in [datasets](../../03-data/datasets.md).
   - **World**: 500 genes. 80 of them are regulators (`TF00–TF79`), including 10 master regulators with no parents. The other 420 are targets (`G080–G499`).
     - The GRN is a DAG. Non-master regulators have 1–2 regulator parents, and targets have 1–3.
     - Edge strengths are |w| ~ U(0.3, 1.0), activating with p = 0.7.
@@ -91,8 +91,8 @@ E0.4 builds that harness and checks that it can detect real generalization *befo
   - **MLP (oracle embedding)**, pilot only: the leaky positive control. Its embedding is the PCA of the oracle Δ, so the answer is built in.
   - **Deviation from the tutorial, decided a priori**: no LayerNorm in the hidden layer. LayerNorm rescales each sample, which would erase the embedding norm, and here the norm encodes how strongly a gene is wired into the GRN. **(my take)**
 - **Code / notebook**:
-  - [`../vcell/`](../vcell/): [`scripts/run_e0_4.py`](../vcell/scripts/run_e0_4.py) (pilot and confirmatory run) and [`notebooks/E0.4-walkthrough.ipynb`](../vcell/notebooks/E0.4-walkthrough.ipynb).
-  - Results are in [`results/E0.4/`](../vcell/results/E0.4/).
+  - [`./`](./): [`scripts/run_e0_4.py`](./scripts/run_e0_4.py) (pilot and confirmatory run) and [`notebooks/E0.4-walkthrough.ipynb`](./notebooks/E0.4-walkthrough.ipynb).
+  - Results are in [`results/E0.4/`](./results/E0.4/).
   - Code state: on top of commit `9ffec8d` (uncommitted when run).
 
 ## Metric and success criterion
@@ -129,7 +129,7 @@ All metrics are computed per knockout and exclude the knocked-out gene itself.
 
 ## Results
 
-The source of every number below is [`results/E0.4/`](../vcell/results/E0.4/) (`summary.csv`, `decision.json`). Seeds: worlds 0–4, pilot world 1000. Compute: about 110 s on an M3 Pro CPU, 1 thread. Two runs produced byte-identical CSV and JSON files.
+The source of every number below is [`results/E0.4/`](./results/E0.4/) (`summary.csv`, `decision.json`). Seeds: worlds 0–4, pilot world 1000. Compute: about 110 s on an M3 Pro CPU, 1 thread. Two runs produced byte-identical CSV and JSON files.
 
 **Pilot (world 1000): passed.**
 - Oracle ceiling r = 0.795.
@@ -150,9 +150,9 @@ The source of every number below is [`results/E0.4/`](../vcell/results/E0.4/) (`
 - **(a) median Δr against the shuffled control**: 0.142, 0.085, 0.101, 0.126, 0.073. Every p ≤ 2×10⁻⁴, so (a) passes in worlds 0, 2 and 3.
 - **(b) gap closure**: 0.021–0.044 (p < 10⁻⁸). This fails in all 5 worlds.
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="../vcell/results/E0.4/figures/fig1_specific_skill-dark.png"><img src="../vcell/results/E0.4/figures/fig1_specific_skill-light.png" alt="Raw versus Systema Pearson per model"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="../vcell/results/E0.4/figures/fig2_decision-dark.png"><img src="../vcell/results/E0.4/figures/fig2_decision-light.png" alt="Criteria a and b per world"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="../vcell/results/E0.4/figures/fig3_screen_world0-dark.png"><img src="../vcell/results/E0.4/figures/fig3_screen_world0-light.png" alt="In-silico screen, world 0"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./results/E0.4/figures/fig1_specific_skill-dark.png"><img src="./results/E0.4/figures/fig1_specific_skill-light.png" alt="Raw versus Systema Pearson per model"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./results/E0.4/figures/fig2_decision-dark.png"><img src="./results/E0.4/figures/fig2_decision-light.png" alt="Criteria a and b per world"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./results/E0.4/figures/fig3_screen_world0-dark.png"><img src="./results/E0.4/figures/fig3_screen_world0-light.png" alt="In-silico screen, world 0"></picture>
 
 **Deviations**, all decided before worlds 0–4 were run:
 1. `cells_per_pert` was raised from 100 to 200, the pre-registered remedy. The oracle ceiling was 0.696 on dev world 1001.

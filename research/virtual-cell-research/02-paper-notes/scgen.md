@@ -9,7 +9,7 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 - **Roadmap phase(s)**: [Phase 4](../00-plan/roadmap.md#phase-4-perturbation-modeling-and-causal-prediction)
 - **Status**: read
 - **Read on**: 2026-11-25
-- **Experiment**: [E4.5](../04-experiments/E4.5-scgen-unseen-cell-type.md) · code [`scgen-mini/`](../scgen-mini/)
+- **Experiment**: [E4.5](../04-experiments/E4.5-scgen-unseen-cell-type/README.md) · code [`scgen-mini/`](../04-experiments/E4.5-scgen-unseen-cell-type/)
 
 ## 1. TL;DR
 

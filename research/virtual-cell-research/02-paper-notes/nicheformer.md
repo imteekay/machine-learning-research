@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
 - **Roadmap phase(s)**: [Phase 5](../00-plan/roadmap.md#phase-5-spatial-and-tissue-level-modeling)
-- **Status**: read (PoC in [`nicheformer-mini/`](../nicheformer-mini/), experiment [E5.1](../04-experiments/E5.1-niche-context.md))
+- **Status**: read (PoC in [`nicheformer-mini/`](../04-experiments/E5.1-niche-context/), experiment [E5.1](../04-experiments/E5.1-niche-context/README.md))
 - **Read on**: 2026-11-25
 - **Why this paper**: picked by the citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`) as the top Phase 5 driving paper.
 

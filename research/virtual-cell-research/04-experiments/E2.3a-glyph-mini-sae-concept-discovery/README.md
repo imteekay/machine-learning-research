@@ -1,12 +1,12 @@
 # E2.3a: Does a Glyph-style pipeline (SAE → association → replication → DML) recover known truth?
 
-- **Roadmap phase**: [Phase 2](../00-plan/roadmap.md#phase-2-single-cell-foundation-models) · warm-up for E2.3 · Hypothesis ladder rung: 0 (method validation)
+- **Roadmap phase**: [Phase 2](../../00-plan/roadmap.md#phase-2-single-cell-foundation-models) · warm-up for E2.3 · Hypothesis ladder rung: 0 (method validation)
 - **Status**: done
 - **Started / finished**: 2026-11-22 / 2026-11-22
 
 ## Hypothesis
 
-Five sub-hypotheses, each with a null and a criterion fixed before running (full table in the [PoC README](../glyph-mini/README.md#hypotheses-the-poc-validates)):
+Five sub-hypotheses, each with a null and a criterion fixed before running (full table in the [PoC README](./README.md#hypotheses-the-poc-validates)):
 
 - **H1 Recovery**: a Top-K SAE on dense embeddings recovers the true concept directions. *Null*: no better than a random dictionary.
 - **H2 Sparsity/Matryoshka**: R² rises with K, and Matryoshka training makes small prefixes more informative. *Null*: flat R², no prefix advantage.
@@ -28,7 +28,7 @@ E2.3 will run SAEs on real scFM embeddings, where there is **no ground truth**. 
 - **Data**: synthetic. 32 unit-norm concepts in 64-d, p(active) = 0.1, magnitudes U(1, 2), noise 0.05. Concepts c0 and c1 are causal for Y; c2 depends on W, which also drives Y; Y_null is pure noise. Site A has n = 10k (70/30 split); site B has n = 6k with 1.2× concept frequency, 1.5× noise and an offset.
 - **Splits**: SAE and normaliser trained on site A train; discovery on site A held-out; replication and DML on site B.
 - **Models and baselines**: Matryoshka Top-K SAE (dictionary 64, K = 6, prefixes 8/16/32/64) vs a random dictionary (H1) and a plain Top-K SAE (H2).
-- **Code**: [`glyph-mini/`](../glyph-mini/), `uv run python scripts/run_demo.py`; tests with `uv run pytest`.
+- **Code**: [`glyph-mini/`](./), `uv run python scripts/run_demo.py`; tests with `uv run pytest`.
 
 ## Metric and success criterion
 
@@ -61,4 +61,4 @@ Deviations found during development:
   - Rare features plus univariate logistic regression produce false positives, so a minimum-count rule and a null outcome are essential sanity checks.
   - SAEs produce polysemantic features even when the truth is perfectly sparse.
 - **Progress signal met?**: yes. The full pipeline runs in about 35 s, has unit tests per building block, and recovers the planted truth across seeds.
-- **Next step**: E2.3b. Apply the same pipeline to scFM embeddings (Perturb-seq), adding PCA/ICA baselines (missing in the paper) and donor-level replication. Logged in the [research-log](../research-log.md).
+- **Next step**: E2.3b. Apply the same pipeline to scFM embeddings (Perturb-seq), adding PCA/ICA baselines (missing in the paper) and donor-level replication. Logged in the [research-log](../../research-log.md).

@@ -1,6 +1,6 @@
 # perturbseq-mini
 
-A minimal, educational Perturb-seq PoC for experiment [E0.2](../04-experiments/E0.2-tf-knockout-targets.md), built around Dixit et al. 2016 ([note](../02-paper-notes/perturb-seq-dixit-2016.md)).
+A minimal, educational Perturb-seq PoC for experiment [E0.2](./README.md), built around Dixit et al. 2016 ([note](../../02-paper-notes/perturb-seq-dixit-2016.md)).
 
 - **Data**: the paper's own K562 TF knockout screen (GEO GSM2396858, `k562_tfs_7`, 327 MB) + CollecTRI TF→target edges from OmniPath.
 - **Model**: MIMOSCA-style ridge regression, `z-scored expression ~ TF indicators + log depth covariates`, giving one effect vector β per TF.

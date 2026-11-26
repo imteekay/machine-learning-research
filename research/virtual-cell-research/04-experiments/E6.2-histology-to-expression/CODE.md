@@ -1,6 +1,6 @@
 # omiclip-mini
 
-A minimal, educational re-implementation of the idea behind **OmiCLIP / Loki** (Chen et al., Nature Methods 2025): align H&E image patches with spatial-transcriptomics spots in one CLIP space, where each spot's expression is written as a "gene sentence", then predict expression from histology by retrieval. Used for experiment [E6.2](../04-experiments/E6.2-histology-to-expression.md). Paper note: [omiclip-loki](../02-paper-notes/omiclip-loki.md).
+A minimal, educational re-implementation of the idea behind **OmiCLIP / Loki** (Chen et al., Nature Methods 2025): align H&E image patches with spatial-transcriptomics spots in one CLIP space, where each spot's expression is written as a "gene sentence", then predict expression from histology by retrieval. Used for experiment [E6.2](./README.md). Paper note: [omiclip-loki](../../02-paper-notes/omiclip-loki.md).
 
 Everything runs on **synthetic data with known truth** (no downloads): 24 synthetic patients, 150 spots each, 32×32 H&E-like tiles drawn from the same cells that generate the spot's counts.
 

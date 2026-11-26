@@ -70,7 +70,7 @@ Three prediction targets recur, from weakest to strongest: (i) the mean shift (a
 
 **Why it matters for the virtual cell.** It is the cheapest unseen-context baseline and the ancestor of CPA, CellOT and others. Any context-conditioned model (e.g. ATAC-conditioned) should beat it and, more importantly, should beat it on the residual after removing the shared response (section 10).
 
-Sources: [scgen](../02-paper-notes/scgen.md), [E4.5 write-up](../04-experiments/E4.5-scgen-unseen-cell-type.md), [interpretation-extrapolation-perturbation-review](../02-paper-notes/interpretation-extrapolation-perturbation-review.md).
+Sources: [scgen](../02-paper-notes/scgen.md), [E4.5 write-up](../04-experiments/E4.5-scgen-unseen-cell-type/README.md), [interpretation-extrapolation-perturbation-review](../02-paper-notes/interpretation-extrapolation-perturbation-review.md).
 
 ---
 
@@ -229,7 +229,7 @@ General pitfalls: (1) train/test leakage through shared control cells, batches, 
 
 ## 14. Falsifiable experiments tied to the roadmap
 
-Existing write-ups: [E0.2](../04-experiments/E0.2-tf-knockout-targets.md), [E0.4](../04-experiments/E0.4-minimal-virtual-cell.md), [E4.5](../04-experiments/E4.5-scgen-unseen-cell-type.md). Items below marked "extension" are proposals that refine a roadmap experiment, not new E-IDs; the roadmap entries hold the full design.
+Existing write-ups: [E0.2](../04-experiments/E0.2-tf-knockout-targets/README.md), [E0.4](../04-experiments/E0.4-minimal-virtual-cell/README.md), [E4.5](../04-experiments/E4.5-scgen-unseen-cell-type/README.md). Items below marked "extension" are proposals that refine a roadmap experiment, not new E-IDs; the roadmap entries hold the full design.
 
 | ID | Concept (section) | Falsifiable claim | What would refute it |
 |---|---|---|---|

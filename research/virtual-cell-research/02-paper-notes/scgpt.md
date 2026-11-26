@@ -5,7 +5,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim. Items marked *[unverified]* are from memory and should be checked against the PDF before citing.
 
 - **Roadmap phase(s)**: [Phase 2](../00-plan/roadmap.md#phase-2-single-cell-foundation-models)
-- **Status**: read (method-level); PoC in [`scgpt-mini/`](../scgpt-mini/), experiment [E2.1](../04-experiments/E2.1-mini-scgpt-vs-pca.md)
+- **Status**: read (method-level); PoC in [`scgpt-mini/`](../04-experiments/E2.1-mini-scgpt-vs-pca/), experiment [E2.1](../04-experiments/E2.1-mini-scgpt-vs-pca/README.md)
 - **Read on**: 2026-11-25
 - **Why this paper**: chosen as the Phase 2 driver by citation ranking in `04-experiments/_paper-selection/` (added in the Phase 0 PR).
 
@@ -70,4 +70,4 @@ Geneformer (rank-value encoding), scBERT, UCE, scFoundation (read-depth-aware), 
 
 - Paper: https://www.nature.com/articles/s41592-024-02201-0
 - Code: https://github.com/bowang-lab/scGPT
-- My PoC: [`scgpt-mini/`](../scgpt-mini/)
+- My PoC: [`scgpt-mini/`](../04-experiments/E2.1-mini-scgpt-vs-pca/)

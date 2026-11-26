@@ -62,5 +62,5 @@ Adamson 2016 (UPR Perturb-seq), Jaitin 2016 (CRISP-seq), Datlinger 2017 (CROP-se
 
 ## Resources
 
-- Experiment: [E0.2](../04-experiments/E0.2-tf-knockout-targets.md), code: [`perturbseq-mini/`](../perturbseq-mini/)
+- Experiment: [E0.2](../04-experiments/E0.2-tf-knockout-targets/README.md), code: [`perturbseq-mini/`](../04-experiments/E0.2-tf-knockout-targets/)
 - GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063

@@ -1,9 +1,9 @@
 # E4.5: Does latent arithmetic predict the response of an unseen cell type?
 
-- **Roadmap phase**: [Phase 4](../00-plan/roadmap.md#phase-4-perturbation-modeling-and-causal-prediction) · Hypothesis ladder rung: 4
+- **Roadmap phase**: [Phase 4](../../00-plan/roadmap.md#phase-4-perturbation-modeling-and-causal-prediction) · Hypothesis ladder rung: 4
 - **Status**: done
 - **Started / finished**: 2026-11-25 / 2026-11-25
-- **Driving paper**: scGen ([note](../02-paper-notes/scgen.md)), picked by the citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
+- **Driving paper**: scGen ([note](../../02-paper-notes/scgen.md)), picked by the citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
 
 > **Pre-registration.** Hypothesis, Why, Knowledge tested, Design and Metric were written on 2026-11-25 *after* a single `--quick` pilot (8k cells, 1 seed, 8 epochs; used to check the pipeline runs end to end) and *before* the confirmatory run. The pilot numbers are not used for any verdict. Results and Conclusion come from `scgen-mini/results/E4.5/confirmatory.json`.
 
@@ -11,12 +11,12 @@
 
 - **H1 (scGen's claim, minimal form)**: a mini scGen VAE that adds a latent δ (learned on the other cell types) to an unseen cell type's control cells beats the no-change baseline on R² of the top-100 DE genes for all 3 held-out types (CD4 T, B, CD14 Mono).
 - **H2 (does the nonlinear latent space matter?)**: the VAE beats the *gene-space mean shift* by ≥ 0.05 R² (top-100 DE) on ≥ 2 of 3 types.
-- **H3 (cell-type-specific skill, the [E4.4](../00-plan/roadmap.md#experiments--hypotheses-4) test)**: after removing the generic shared response (Systema-style residual), the VAE's residual Pearson on the top-100 DE genes is ≥ 0.2 **and** at least 0.2 above the shuffled-label negative control on ≥ 2 of 3 types.
+- **H3 (cell-type-specific skill, the [E4.4](../../00-plan/roadmap.md#experiments--hypotheses-4) test)**: after removing the generic shared response (Systema-style residual), the VAE's residual Pearson on the top-100 DE genes is ≥ 0.2 **and** at least 0.2 above the shuffled-label negative control on ≥ 2 of 3 types.
 - **Null**: the VAE is no better than adding the average response in gene space (H2 fails), and whatever residual correlation it has is matched by the shuffled-δ control (H3 fails): all skill is the generic IFN response.
 
 ## Why it moves the research forward
 
-[E4.1](../00-plan/roadmap.md#experiments--hypotheses-4) needs an "unseen cell context" split, and E4.4 asks whether skill survives removing the shared response. scGen is the original "unseen context" model, and Kang 2018 is its own benchmark. So this is the cheapest place to find out whether "transfer a response across cell types" is real or mostly the generic program. **(my take)**
+[E4.1](../../00-plan/roadmap.md#experiments--hypotheses-4) needs an "unseen cell context" split, and E4.4 asks whether skill survives removing the shared response. scGen is the original "unseen context" model, and Kang 2018 is its own benchmark. So this is the cheapest place to find out whether "transfer a response across cell types" is real or mostly the generic program. **(my take)**
 
 - **If H2/H3 hold**: a learned latent space carries cell-type-specific response information; the context-conditioned models in E4.1 are worth building, and latent arithmetic is the baseline they must beat.
 - **If they fail**: the gene-space mean shift is the baseline to beat for unseen contexts, and any E4.1 claim must be Systema-corrected, because uncorrected R² is dominated by the shared ISG program.
@@ -38,7 +38,7 @@
   5. `neg_shuffled` (negative control): same VAE, δ from condition labels shuffled within each type (δ ≈ 0, so it isolates the decoder's own bias).
   6. `neg_random` (negative control): same VAE, random latent direction with |δ| of the real one.
 - **Seeds / compute**: 3 seeds (VAE init, PCA subsample), 30 epochs, CPU.
-- **Code**: [`scgen-mini/`](../scgen-mini/) · `uv run python -I scripts/run_e45.py`.
+- **Code**: [`scgen-mini/`](./) · `uv run python -I scripts/run_e45.py`.
 
 ## Metric and success criterion
 
@@ -60,10 +60,10 @@ Kang pooled 8 donors in one well and demultiplexed cells by their SNPs, so donor
 
 Script: `scgen-mini/scripts/eda_kang.py` · figures in `scgen-mini/results/E4.5/`.
 
-![QC](../scgen-mini/results/E4.5/eda_qc.png)
-![composition](../scgen-mini/results/E4.5/eda_composition.png)
-![response magnitude](../scgen-mini/results/E4.5/eda_response_magnitude.png)
-![shared response](../scgen-mini/results/E4.5/eda_shared_response.png)
+![QC](./results/E4.5/eda_qc.png)
+![composition](./results/E4.5/eda_composition.png)
+![response magnitude](./results/E4.5/eda_response_magnitude.png)
+![shared response](./results/E4.5/eda_shared_response.png)
 
 1. **QC is balanced across conditions.** Median 1,205 (ctrl) vs 1,284 (stim) UMIs and 508 vs 529 genes per cell: shallow 10x v1 data, but stimulation does not change depth much, so Δ is not a library-size artifact. Monocytes and DCs have ~2× the UMIs of lymphocytes (bigger cells, more mRNA). *ML link*: per-cell normalisation is required before comparing types.
 2. **Composition is stable between conditions** (CD4 T 5,256/5,100, CD14 Mono 2,843/2,532, B 1,331/1,232, ..., megakaryocytes 124/132). 6 h of IFN-β does not create or destroy types, so a ctrl→stim mapping *within* a type is well defined. *ML link*: this is what makes the scGen split valid; it would not be for a differentiation perturbation.
@@ -84,9 +84,9 @@ Script: `scgen-mini/scripts/eda_kang.py` · figures in `scgen-mini/results/E4.5/
 
 ## Results
 
-Confirmatory run: 24,594 cells × 2,000 genes, 3 held-out types × 3 seeds, 30 epochs, 8.8 min on a laptop CPU. Mean ± sd over seeds ([JSON](../scgen-mini/results/E4.5/confirmatory.json), quick pilot in [quick.json](../scgen-mini/results/E4.5/quick.json)).
+Confirmatory run: 24,594 cells × 2,000 genes, 3 held-out types × 3 seeds, 30 epochs, 8.8 min on a laptop CPU. Mean ± sd over seeds ([JSON](./results/E4.5/confirmatory.json), quick pilot in [quick.json](./results/E4.5/quick.json)).
 
-![metrics](../scgen-mini/results/E4.5/confirmatory_metrics.png)
+![metrics](./results/E4.5/confirmatory_metrics.png)
 
 **R² top-100 DE genes** (scGen's metric; R² all genes in brackets)
 

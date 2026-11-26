@@ -7,7 +7,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim. **(unverified)** = a detail I recall but did not re-check.
 
 - **Roadmap phase(s)**: [Phase 6](../00-plan/roadmap.md#phase-6-world-models-closed-loop-and-clinical-translation), experiment E6.2
-- **Status**: skimmed (enough to build [omiclip-mini](../omiclip-mini/) and [E6.2](../04-experiments/E6.2-histology-to-expression.md))
+- **Status**: skimmed (enough to build [omiclip-mini](../04-experiments/E6.2-histology-to-expression/) and [E6.2](../04-experiments/E6.2-histology-to-expression/README.md))
 - **Read on**: 2026-11-25
 - **Why this paper**: top of the Phase 6 citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`); OmiCLIP was preferred over UNI by user decision because it actually links histology to expression, which is what E6.2 asks.
 
@@ -60,7 +60,7 @@ Compared with task-specific tools (e.g. PASTE-like alignment, Tangram/CellDART-l
 
 - Directly tests the translational arm (E6.2): can histology carry the virtual cell to patients?
 - Hypotheses worth testing:
-  - Biomarkers driven by cell *composition* (immune infiltration) are recoverable from H&E; *state* programs (IFN, PD-L1) are only as recoverable as their correlation with composition. Toy version: [E6.2](../04-experiments/E6.2-histology-to-expression.md).
+  - Biomarkers driven by cell *composition* (immune infiltration) are recoverable from H&E; *state* programs (IFN, PD-L1) are only as recoverable as their correlation with composition. Toy version: [E6.2](../04-experiments/E6.2-histology-to-expression/README.md).
   - Does the CLIP space beat a linear probe on the same image encoder? (Exploratory in E6.2.)
 
 ## 8. Related work
@@ -70,4 +70,4 @@ UNI / CONCH / Virchow (pathology FMs); ST-Net, HisToGene, Hist2ST, BLEEP (contra
 ## Resources
 
 - Code: https://github.com/GuangyuWangLab2021/Loki
-- Minimal re-implementation: [`../omiclip-mini/`](../omiclip-mini/)
+- Minimal re-implementation: [`../omiclip-mini/`](../04-experiments/E6.2-histology-to-expression/)

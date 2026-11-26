@@ -1,6 +1,6 @@
 # glyph-mini
 
-A minimal, educational re-implementation of **Glyph** ([paper note](../02-paper-notes/glyph.md), [arXiv 2611.08922](https://arxiv.org/abs/2611.08922), [StanfordMIMI/Glyph](https://github.com/StanfordMIMI/Glyph)). It runs end to end on a laptop CPU in about 35 seconds.
+A minimal, educational re-implementation of **Glyph** ([paper note](../../02-paper-notes/glyph.md), [arXiv 2611.08922](https://arxiv.org/abs/2611.08922), [StanfordMIMI/Glyph](https://github.com/StanfordMIMI/Glyph)). It runs end to end on a laptop CPU in about 35 seconds.
 
 Glyph takes **frozen foundation-model embeddings**, trains a **Matryoshka Top-K sparse autoencoder (SAE)** to turn each dense vector into a few active **concepts**, then runs a **concept-wide association study**. That means one logistic regression per (concept, outcome) pair, Bonferroni correction, replication on **external sites** with the frozen SAE, and **double/debiased ML (DML)** to adjust for confounders.
 

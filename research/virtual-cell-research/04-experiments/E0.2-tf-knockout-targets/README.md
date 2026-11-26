@@ -1,6 +1,6 @@
 # E0.2: Do knockouts move their known targets?
 
-- **Roadmap phase**: [Phase 0](../00-plan/roadmap.md#phase-0-foundations) · Hypothesis ladder rung: 0
+- **Roadmap phase**: [Phase 0](../../00-plan/roadmap.md#phase-0-foundations) · Hypothesis ladder rung: 0
 - **Status**: running
 - **Started / finished**: 2026-11-25 / -
 
@@ -30,7 +30,7 @@ It checks that (a) the perturbation signal in a pooled screen is real after mode
 - **Negative controls**: (1) shuffle perturbation labels across cells, refit, retest; (2) swapped prior: test TF k's β against the next TF's target set.
 - **Test**: score = mean |β| over targets (TF's own gene removed). Null = 1000 sets where each target is replaced by a random gene from the same expression decile. p = (1 + #null ≥ obs)/1001, then BH over TFs. Secondary: signed score `mean(−sign·β)` (KO of an activator should lower its targets).
 - **Knockdown readout (changed after EDA)**: the roadmap's plan was to restrict to TFs with good knockdown, measured as a drop in the TF's own mRNA. EDA shows Cas9 KO barely changes own mRNA (|Δlog| < 0.1 for all 10 TFs, figure below), so own mRNA is not a valid knockdown readout here. The denominator is therefore **all testable TFs**; own-mRNA change is reported, not used as a filter.
-- **Code**: [`perturbseq-mini/`](../perturbseq-mini/) (`scripts/eda_dixit.py`, `scripts/run_e0_2.py`); synthetic check with ground truth in `results/E0.2/synthetic/`.
+- **Code**: [`perturbseq-mini/`](./) (`scripts/eda_dixit.py`, `scripts/run_e0_2.py`); synthetic check with ground truth in `results/E0.2/synthetic/`.
 
 ## Metric and success criterion
 
@@ -47,8 +47,8 @@ It checks that (a) the perturbation signal in a pooled screen is real after mode
 
 ## EDA findings
 
-![QC](../perturbseq-mini/results/E0.2/eda_qc.png)
-![Knockdown](../perturbseq-mini/results/E0.2/eda_knockdown.png)
+![QC](./results/E0.2/eda_qc.png)
+![Knockdown](./results/E0.2/eda_knockdown.png)
 
 Numbers from `results/E0.2/eda.json`:
 
@@ -74,7 +74,7 @@ Numbers from `results/E0.2/eda.json`:
 
 Full run (`perturbseq-mini/results/E0.2/full/results.json`, seed 0, 28,034 cells x 9,685 genes, 1000 null sets, 17.5 s on CPU). Quick run (8,000 cells, 200 sets) in `results/E0.2/quick/`.
 
-![Enrichment](../perturbseq-mini/results/E0.2/full/enrichment.png)
+![Enrichment](./results/E0.2/full/enrichment.png)
 
 | TF | targets | z (ridge) | p | q | q pseudobulk | q shuffled | own β | RMS β real / shuffled |
 |---|---|---|---|---|---|---|---|---|

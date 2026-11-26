@@ -1,9 +1,9 @@
 # E3.1: Is the ATAC information regulatory?
 
-- **Roadmap phase**: [Phase 3](../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context) · Hypothesis ladder rung: 3
+- **Roadmap phase**: [Phase 3](../../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context) · Hypothesis ladder rung: 3
 - **Status**: done
 - **Started / finished**: 2026-11-25 / 2026-11-25
-- **Driving paper**: GET, Fu et al. 2025 Nature ([note](../02-paper-notes/get-general-expression-transformer.md)), chosen by citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
+- **Driving paper**: GET, Fu et al. 2025 Nature ([note](../../02-paper-notes/get-general-expression-transformer.md)), chosen by citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
 
 > **Pre-registration.** Hypothesis, Why, Knowledge tested, Design and Metric were written on 2026-11-25 after a 1-seed pilot (`--quick`, used only to check the code runs, see Results → deviations) and before the confirmatory 3-seed run. Results and Conclusion are filled in from `get-mini/results/E3.1/results.json`.
 
@@ -42,7 +42,7 @@ The Master's hypothesis assumes ATAC gives *regulatory* context for perturbation
   - `rna_gas`: + a single gene-activity score (GAS = log of distance-weighted sum of nearby accessibility, exp(−d/20 kb)).
   - `gas`: GAS alone, no fitting (classic ATAC→RNA baseline). `atac` / `atac_shuf`: own vs random peaks, no RNA.
 - **TinyGET (minimal GET)**: one shared model across genes. Region tokens = [accessibility z, log accessibility, signed log-distance, |log-distance|, in-gene-body] → 2-layer transformer (d=32, 2 heads) → learned-query attention pooling → z-scored expression. No gene identity, no RNA input. Trained on visible genes × train metacells, evaluated on masked (unseen) genes × test metacells. Control: the same model trained and tested on gene-shuffled regions.
-- **Code**: [`get-mini/`](../get-mini/) (`scripts/eda_multiome.py`, `scripts/run_e3_1.py`). Positive control: `--synthetic` runs the same pipeline on a generator where half the genes are enhancer-gated.
+- **Code**: [`get-mini/`](./) (`scripts/eda_multiome.py`, `scripts/run_e3_1.py`). Positive control: `--synthetic` runs the same pipeline on a generator where half the genes are enhancer-gated.
 
 ## Metric and success criterion
 
@@ -55,7 +55,7 @@ H is supported only if 1 and 2 hold. Also reported: ρ(gain, #linked peaks) and 
 
 ## EDA findings
 
-![EDA](../get-mini/results/eda/eda.png)
+![EDA](./results/eda/eda.png)
 
 Numbers from `get-mini/results/eda/eda.json`.
 
@@ -81,7 +81,7 @@ Numbers from `get-mini/results/eda/eda.json`.
 
 **Confirmatory run**: 3 seeds × 200 masked genes (600 gene-seed pairs), 1,000 genes, 150 metacells (105 train / 45 test), 467 s on CPU. Files: `get-mini/results/E3.1/results.json`, `per_gene.json`.
 
-![E3.1 results](../get-mini/results/E3.1/e3_1_results.png)
+![E3.1 results](./results/E3.1/e3_1_results.png)
 
 **Median per-gene Pearson r on test metacells** (masked genes, pooled):
 
@@ -139,4 +139,4 @@ So the PBMC null is not a pipeline that is blind by construction.
   - (b) Evaluate where RNA *cannot* see the state: stimulated vs resting PBMC, or held-out cell types (GET-style).
   - (c) Strand-aware TSS from a GTF, and GTEx-based tau.
 
-  Logged in the [research log](../research-log.md).
+  Logged in the [research log](../../research-log.md).

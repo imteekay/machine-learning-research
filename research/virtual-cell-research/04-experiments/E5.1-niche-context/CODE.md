@@ -1,6 +1,6 @@
 # nicheformer-mini
 
-A minimal, educational proof of concept for [E5.1](../04-experiments/E5.1-niche-context.md): *does niche context add information beyond cell type?* It is inspired by [Nicheformer](../02-paper-notes/nicheformer.md). It is not a reproduction.
+A minimal, educational proof of concept for [E5.1](./README.md): *does niche context add information beyond cell type?* It is inspired by [Nicheformer](../../02-paper-notes/nicheformer.md). It is not a reproduction.
 
 - `src/nicheformer_mini/tissue.py`: a synthetic tumor section with ground truth (tumor/stroma/T-cell regions, an IFN program driven by nearby T cells, a hypoxic core, housekeeping genes, segmentation spillover).
 - `src/nicheformer_mini/spatial.py`: k-NN graphs, neighborhood composition, neighborhood enrichment, spatial block folds.

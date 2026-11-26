@@ -1,6 +1,6 @@
 # scpoli-mini
 
-A minimal, educational re-implementation of the core ideas of **scPoli** (De Donno et al. 2023, Nature Methods): a conditional VAE with **learned condition (sample/study) embeddings** and a **cell-type prototype loss**. It drives experiment [E1.1: Integration without erasing disease](../04-experiments/E1.1-integration-without-erasing-disease.md). Paper note: [02-paper-notes/scpoli.md](../02-paper-notes/scpoli.md).
+A minimal, educational re-implementation of the core ideas of **scPoli** (De Donno et al. 2023, Nature Methods): a conditional VAE with **learned condition (sample/study) embeddings** and a **cell-type prototype loss**. It drives experiment [E1.1: Integration without erasing disease](./README.md). Paper note: [02-paper-notes/scpoli.md](../../02-paper-notes/scpoli.md).
 
 Not a reproduction: no query-time surgery, no unlabelled prototypes, no MMD, tiny networks.
 

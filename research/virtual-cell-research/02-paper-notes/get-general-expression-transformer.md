@@ -5,7 +5,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim. *[uncertain]* = recalled, not re-verified against the PDF.
 
 - **Roadmap phase(s)**: [Phase 3](../00-plan/roadmap.md#phase-3-multi-omics-and-epigenetic-context)
-- **Status**: read (method and main results); PoC in [E3.1](../04-experiments/E3.1-atac-regulatory-info.md)
+- **Status**: read (method and main results); PoC in [E3.1](../04-experiments/E3.1-atac-regulatory-info/README.md)
 - **Read on**: 2026-11-25
 
 ## 1. TL;DR
@@ -38,7 +38,7 @@ Sequence-only models (Enformer-style) are blind to cell type: one DNA sequence, 
 ## 4. Data
 
 - Pseudobulk chromatin accessibility from human fetal and adult scATAC atlases, with matched or analogous expression; held-out cell types for evaluation; lentiMPRA data for enhancer-activity prediction. **(paper)**
-- Its input needs the genome sequence (for motif scanning) plus peak accessibility. Our PoC uses 10x Multiome PBMC instead; see [E3.1 Data primer](../04-experiments/E3.1-atac-regulatory-info.md#data-primer).
+- Its input needs the genome sequence (for motif scanning) plus peak accessibility. Our PoC uses 10x Multiome PBMC instead; see [E3.1 Data primer](../04-experiments/E3.1-atac-regulatory-info/README.md#data-primer).
 
 ## 5. Evaluation and results
 
@@ -71,4 +71,4 @@ ChromBERT, EpiAgent, ChromFound, Atacformer (other region tokenizations); Enform
 
 - Paper: https://www.nature.com/articles/s41586-024-08391-z
 - Code: https://github.com/GET-Foundation/get_model
-- PoC: [`get-mini/`](../get-mini/)
+- PoC: [`get-mini/`](../04-experiments/E3.1-atac-regulatory-info/)

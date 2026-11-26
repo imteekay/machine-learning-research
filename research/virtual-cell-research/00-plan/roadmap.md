@@ -219,7 +219,7 @@ Run a full Scanpy + scvi-tools workflow on a public 10x Multiome PBMC dataset (Q
 - **Metric & success criterion**: held-out reconstruction log-likelihood, plus the mean–variance relationship of posterior-predictive samples vs observed. H holds if NB's mean–variance curve tracks the data and ZINB gives no gain beyond the confidence interval
 - **Progress signal**: you can explain *why* each likelihood behaves as it does from the biology of the assay
 
-**E0.2: Do knockouts move their known targets?** ([write-up](../04-experiments/E0.2-tf-knockout-targets.md))
+**E0.2: Do knockouts move their known targets?** ([write-up](../04-experiments/E0.2-tf-knockout-targets/README.md))
 - **Hypothesis (H)**: knocking out a transcription factor in a Perturb-seq screen shifts the expression of its annotated targets (e.g., from DoRothEA/CollecTRI) more than random gene sets of matched expression level. *Null*: target and random gene sets shift equally
 - **Why it moves the research forward**: it shows the perturbation signal exists and follows known regulatory structure. That justifies using GRN priors later (Phase 4). A null result points to weak knockdowns or poor priors, which tells you what data to trust
 - **Knowledge tested**: *domain*: TF biology, direct vs indirect targets, knockdown efficiency. *Technical*: pseudobulk DE, permutation testing, FDR
@@ -235,11 +235,11 @@ Run a full Scanpy + scvi-tools workflow on a public 10x Multiome PBMC dataset (Q
 - **Metric & success criterion**: rank agreement between metrics, and the minimum number of cells for E-distance to detect the difference
 - **Progress signal**: a short note that states which metric you will report for which claim, and why
 
-**E0.4: Can a minimal virtual cell predict knockouts it has never seen?** ([write-up](../04-experiments/E0.4-minimal-virtual-cell.md))
+**E0.4: Can a minimal virtual cell predict knockouts it has never seen?** ([write-up](../04-experiments/E0.4-minimal-virtual-cell/README.md))
 - **Hypothesis (H)**: on a synthetic toy cell with a known GRN, a minimal virtual cell (perturbation embedding → MLP → Δ added to the control state) predicts the *specific* response to unseen regulator knockouts. It represents each knockout by the knocked-out gene's co-expression in control cells. It beats the same model with shuffled embeddings, and it has lower error than the mean-shift baseline. *Null*: no gain over shuffled embeddings, or no error reduction compared with mean shift
 - **Why it moves the research forward**: it builds the harness every later model plugs into: a simulator with ground truth, splits by unseen perturbation, mean and linear baselines, Systema-corrected metrics, and positive and negative controls. It checks that harness on a world where the answer is known. If H holds, the same harness moves to real screens (Replogle) and richer embeddings. If it fails, you learn that generalizing to unseen perturbations needs priors, before you spend time on real data
 - **Knowledge tested**: *domain*: GRN propagation, knockdown efficiency and escapers, systematic (generic) responses, co-expression vs intervention (a target gene co-expressed with its regulator is not a regulator). *Technical*: Δ prediction, perturbation-level cross-validation, perturbation representations, Systema metrics, shuffled and leaky controls, paired tests, noise ceilings
-- **Design**: [`vcell`](../vcell/) toy cell: 500 genes, 80 regulators, 120 knockouts × 100 cells, NB counts, a shared stress program and 20% escapers. 5 worlds × 5-fold CV over knockouts. Models: mean shift, ridge, MLP with co-expression embeddings, MLP with shuffled embeddings, and an oracle ceiling
+- **Design**: [`vcell`](../04-experiments/E0.4-minimal-virtual-cell/) toy cell: 500 genes, 80 regulators, 120 knockouts × 100 cells, NB counts, a shared stress program and 20% escapers. 5 worlds × 5-fold CV over knockouts. Models: mean shift, ridge, MLP with co-expression embeddings, MLP with shuffled embeddings, and an oracle ceiling
 - **Metric & success criterion**: per regulator knockout, Systema Pearson (against the perturbed mean) and MSE on the 20 most affected genes. H holds if, in ≥ 4 of 5 worlds, the co-expression MLP beats the shuffled MLP (median ΔPearson ≥ 0.1, Wilcoxon p < 0.01) *and* beats mean shift on MSE (p < 0.01, closing ≥ 20% of the gap to the oracle)
 - **Progress signal**: you can explain from the simulator's mechanism why co-expression generalizes and where it fails (null knockouts inside regulator modules). Any new model runs through the harness as one function
 
@@ -300,7 +300,7 @@ Build a pipeline (config-driven, version-controlled) that pulls a CELLxGENE Cens
 
 ### Experiments & Hypotheses
 
-**E1.1: Integration without erasing disease** ([write-up](../04-experiments/E1.1-integration-without-erasing-disease.md))
+**E1.1: Integration without erasing disease** ([write-up](../04-experiments/E1.1-integration-without-erasing-disease/README.md))
 - **Hypothesis (H)**: in a naive merge of ≥ 3 studies of the same tissue (healthy + disease), batch explains more variance than cell type. scVI/scPoli integration reverses this *while keeping* a known disease signal (e.g., interferon response in lupus or COVID-19 PBMCs). *Null*: integration either fails to remove batch or removes the disease signal along with it
 - **Why it moves the research forward**: pretraining and clinical models need multi-study data. This experiment sets the integration recipe and shows its cost on the biology you care about. If disease signal is erased, you need batch-aware modeling (covariates, conditional models) instead of correction
 - **Knowledge tested**: *domain*: what the disease signature is biologically (e.g., interferon-stimulated genes) and which cell types carry it. *Technical*: variance decomposition, latent-variable integration, scIB metrics and their failures
@@ -403,7 +403,7 @@ Fine-tune scGPT (or Geneformer) and train an HVG + PCA + logistic regression bas
 
 ### Experiments & Hypotheses
 
-**E2.1: Do scFM embeddings beat PCA?** ([write-up](../04-experiments/E2.1-mini-scgpt-vs-pca.md))
+**E2.1: Do scFM embeddings beat PCA?** ([write-up](../04-experiments/E2.1-mini-scgpt-vs-pca/README.md))
 - **Hypothesis (H)**: zero-shot embeddings from scGPT, Geneformer and UCE beat HVG + PCA for cell-type annotation and batch integration on a tissue *not* well covered by pretraining. *Null*: no improvement (the expected result from the critical literature)
 - **Why it moves the research forward**: it replicates a known critique in your own hands. A null result means the Master's model should fine-tune, not use frozen embeddings, and must always report PCA/linear baselines. A positive result shows *where* pretraining helps (rare cell types, small data)
 - **Knowledge tested**: *domain*: cell-type identity vs state, tissue coverage in CELLxGENE. *Technical*: embedding evaluation, kNN/linear probes, scIB, metric pitfalls
@@ -424,7 +424,7 @@ Fine-tune scGPT (or Geneformer) and train an HVG + PCA + logistic regression bas
 - **Why it moves the research forward**: it tests the "Explain" capability early. If FMs hold pathway knowledge but not regulatory logic, the Master's model needs explicit regulatory input (ATAC, GRN priors). That *directly* motivates Phase 3
 - **Knowledge tested**: *domain*: pathways vs regulatory edges; what CollecTRI/ChIP-seq ground truth means. *Technical*: SAEs, enrichment analysis, GRN evaluation (precision–recall vs co-expression baseline)
 - **Design**: train an SAE on scGPT/Geneformer activations. Run enrichment of top-activating genes per feature. Compare GRN recovery against co-expression and GENIE3
-- **Warm-up (done)**: [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md) validates the SAE → association → replication → DML toolkit on synthetic data ([Glyph note](../02-paper-notes/glyph.md), [`glyph-mini/`](../glyph-mini/))
+- **Warm-up (done)**: [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/README.md) validates the SAE → association → replication → DML toolkit on synthetic data ([Glyph note](../02-paper-notes/glyph.md), [`glyph-mini/`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/))
 - **Metric & success criterion**: fraction of features enriched for a Hallmark (FDR < 0.05) vs PCA; AUPRC for TF → target edges
 - **Progress signal**: a clear statement of what the backbone *does not* know, which becomes the motivation section of your thesis
 
@@ -492,7 +492,7 @@ Train a joint RNA + ATAC model (start from scGPT or CLM-X, or a MultiVI baseline
 
 ### Experiments & Hypotheses
 
-**E3.1: Is the ATAC information regulatory?** ([write-up](../04-experiments/E3.1-atac-regulatory-info.md))
+**E3.1: Is the ATAC information regulatory?** ([write-up](../04-experiments/E3.1-atac-regulatory-info/README.md))
 - **Hypothesis (H)**: adding ATAC to a model that predicts held-out genes' RNA improves accuracy more for TF-driven, cell-type-specific genes than for housekeeping genes. *Null*: the gain is uniform (ATAC adds only generic depth or cell-type information)
 - **Why it moves the research forward**: the Master's hypothesis assumes ATAC provides *regulatory* context. If the gain is uniform, ATAC is just a second cell-type label and the thesis needs rethinking (e.g., use motif-level TF activity instead of raw peaks). If H holds, the mechanism is supported before any perturbation data is used
 - **Knowledge tested**: *domain*: housekeeping vs cell-type-specific genes, enhancer-driven regulation, which genes have strong distal regulation. *Technical*: masked-gene prediction, stratified evaluation, ablation design
@@ -635,7 +635,7 @@ Reproduce GEARS, a linear/additive baseline and a control-mean baseline on Norma
 - **Metric & success criterion**: Pearson on residual Δ; the gap vs the label-shuffled model
 - **Progress signal**: this test runs automatically in your evaluation harness for every model you train from now on
 
-**E4.5: Does latent arithmetic predict the response of an unseen cell type?** ([write-up](../04-experiments/E4.5-scgen-unseen-cell-type.md))
+**E4.5: Does latent arithmetic predict the response of an unseen cell type?** ([write-up](../04-experiments/E4.5-scgen-unseen-cell-type/README.md))
 - **Hypothesis (H)**: a mini scGen VAE (latent δ learned on other cell types) predicts an unseen cell type's IFN-β response better than no change and than the gene-space mean shift, and keeps skill after removing the shared response. *Null*: all skill is the generic ISG program (no gain over the gene shift; residual matched by a shuffled-δ control)
 - **Why it moves the research forward**: it is the cheapest real-data test of the "unseen cell context" split in E4.1 and of the E4.4 shortcut check, on scGen's own benchmark
 - **Knowledge tested**: *domain*: type I IFN signaling (JAK–STAT, ISGs), why monocytes respond hardest, shared vs type-specific programs. *Technical*: VAE latent arithmetic, leave-one-cell-type-out, R² on means vs Δ, Systema residuals, energy distance, negative controls
@@ -714,7 +714,7 @@ Pretrain or fine-tune a niche-aware model (Novae / Nicheformer / scGPT-spatial) 
 
 ### Experiments & Hypotheses
 
-**E5.1: Does niche context add information beyond cell type?** ([write-up](../04-experiments/E5.1-niche-context.md))
+**E5.1: Does niche context add information beyond cell type?** ([write-up](../04-experiments/E5.1-niche-context/README.md))
 - **Hypothesis (H)**: predicting a cell's expression from its own cell type *plus* its neighbors beats cell type alone, and the gain is largest at tumor–immune and tumor–stroma borders. *Null*: neighbor information adds nothing beyond the CI
 - **Why it moves the research forward**: if space doesn't help even for *unperturbed* expression, a spatial perturbation model is unlikely to help. A positive result with a border effect directly motivates the PhD hypothesis
 - **Knowledge tested**: *domain*: TME biology (immune exclusion, hypoxic cores, cancer-associated fibroblasts), what a "border" is histologically. *Technical*: GNN receptive field, spatial cross-validation (held-out regions, not random spots), segmentation confounds
@@ -833,7 +833,7 @@ Pick one clinical question (e.g., immunotherapy or CAR-T response, or drug resis
 - **Metric & success criterion**: AUROC / C-index with bootstrap CIs, calibration slope, decision-curve net benefit. H holds if gains are significant on the external cohort
 - **Progress signal**: a model card with intended use, limitations and failure subgroups
 
-**E6.2: Can routine histology carry the virtual cell to patients?** ([write-up](../04-experiments/E6.2-histology-to-expression.md))
+**E6.2: Can routine histology carry the virtual cell to patients?** ([write-up](../04-experiments/E6.2-histology-to-expression/README.md))
 - **Hypothesis (H)**: spatial expression predicted from H&E keeps the *ranking* of clinically used biomarkers (e.g., immune infiltration, PD-L1-related programs) across patients, even if gene-level accuracy is moderate. *Null*: patient-level biomarker rankings from predicted maps don't correlate with measured ones
 - **Why it moves the research forward**: if rankings hold, the PhD's tissue model can run on cheap, routine slides. That makes clinical deployment realistic. If not, measured spatial data stays a requirement
 - **Knowledge tested**: *domain*: histopathology, biomarker definitions, inter-patient vs intra-tumor heterogeneity. *Technical*: image–omics models, STP-BENCH evaluation, rank-based metrics

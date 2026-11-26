@@ -238,7 +238,7 @@ These are the "scale" baselines a context-focused hypothesis must beat or explai
 
 # Falsifiable experiments
 
-IDs refer to [`../00-plan/roadmap.md`](../00-plan/roadmap.md) and the [research proposal](../00-plan/research-proposal.md). Existing write-ups: [E3.1](../04-experiments/E3.1-atac-regulatory-info.md), [E5.1](../04-experiments/E5.1-niche-context.md), [E6.2](../04-experiments/E6.2-histology-to-expression.md), [E4.5](../04-experiments/E4.5-scgen-unseen-cell-type.md), [E1.1](../04-experiments/E1.1-integration-without-erasing-disease.md), [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md). Thresholds are placeholders to be fixed before running, not results.
+IDs refer to [`../00-plan/roadmap.md`](../00-plan/roadmap.md) and the [research proposal](../00-plan/research-proposal.md). Existing write-ups: [E3.1](../04-experiments/E3.1-atac-regulatory-info/README.md), [E5.1](../04-experiments/E5.1-niche-context/README.md), [E6.2](../04-experiments/E6.2-histology-to-expression/README.md), [E4.5](../04-experiments/E4.5-scgen-unseen-cell-type/README.md), [E1.1](../04-experiments/E1.1-integration-without-erasing-disease/README.md), [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/README.md). Thresholds are placeholders to be fixed before running, not results.
 
 | ID | Hypothesis | Falsified if | Concepts |
 |---|---|---|---|

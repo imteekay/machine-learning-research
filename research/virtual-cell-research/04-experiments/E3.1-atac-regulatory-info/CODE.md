@@ -1,6 +1,6 @@
 # get-mini
 
-A minimal, educational take on **GET** (Fu et al. 2025, *Nature*): predict a gene's expression from the accessibility of the regulatory regions around it. It is used for experiment [E3.1: Is the ATAC information regulatory?](../04-experiments/E3.1-atac-regulatory-info.md). Paper note: [GET](../02-paper-notes/get-general-expression-transformer.md).
+A minimal, educational take on **GET** (Fu et al. 2025, *Nature*): predict a gene's expression from the accessibility of the regulatory regions around it. It is used for experiment [E3.1: Is the ATAC information regulatory?](./README.md). Paper note: [GET](../../02-paper-notes/get-general-expression-transformer.md).
 
 It is a toy, not a reproduction: no DNA sequence and no motifs, a 2-layer transformer, and ~150 PBMC metacells.
 

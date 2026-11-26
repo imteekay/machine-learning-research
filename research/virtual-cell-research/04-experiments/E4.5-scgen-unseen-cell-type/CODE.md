@@ -2,7 +2,7 @@
 
 A minimal, educational scGen (Lotfollahi et al. 2019): a VAE whose latent δ (stim − ctrl), learned on some
 cell types, is added to an **unseen** cell type's control cells to predict its IFN-β response.
-Experiment write-up: [E4.5](../04-experiments/E4.5-scgen-unseen-cell-type.md) · paper note: [scGen](../02-paper-notes/scgen.md).
+Experiment write-up: [E4.5](./README.md) · paper note: [scGen](../../02-paper-notes/scgen.md).
 
 ## Layout
 

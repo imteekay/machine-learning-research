@@ -5,7 +5,7 @@
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim. Claims I could not check against the PDF while writing are marked **(unverified)**.
 
 - **Roadmap phase(s)**: [Phase 1](../00-plan/roadmap.md#phase-1-single-cell-data-and-tooling)
-- **Status**: read (method-level); PoC in [`scpoli-mini/`](../scpoli-mini/), experiment [E1.1](../04-experiments/E1.1-integration-without-erasing-disease.md)
+- **Status**: read (method-level); PoC in [`scpoli-mini/`](../04-experiments/E1.1-integration-without-erasing-disease/), experiment [E1.1](../04-experiments/E1.1-integration-without-erasing-disease/README.md)
 - **Read on**: 2026-11-25
 - **Why this paper**: chosen as the Phase 1 driving paper by the citation ranking in `04-experiments/_paper-selection/` (added in the Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
 
@@ -56,7 +56,7 @@ scIB-style batch-correction and bio-conservation metrics against scVI, scANVI, s
 
 - **Proposal link**: Master's H1 needs context-aware cell representations across donors and studies; scPoli is the cheapest model that gives both a cell latent and a donor latent.
 - **Hypotheses worth testing**:
-  - E1.1 (done, minimal): does conditional integration keep a known ISG program? [write-up](../04-experiments/E1.1-integration-without-erasing-disease.md)
+  - E1.1 (done, minimal): does conditional integration keep a known ISG program? [write-up](../04-experiments/E1.1-integration-without-erasing-disease/README.md)
   - Next: do sample embeddings predict donor disease state on a real multi-study cohort (e.g. lupus or COVID PBMC from CELLxGENE) better than pseudobulk PCA?
 
 ## 8. Related work
@@ -66,4 +66,4 @@ scVI (Lopez 2018), scANVI (Xu 2021), scArches (Lotfollahi 2022), trVAE (Lotfolla
 ## Resources
 
 - Code: <https://github.com/theislab/scarches> (scPoli tutorials in the docs)
-- Minimal re-implementation: [`scpoli-mini/`](../scpoli-mini/)
+- Minimal re-implementation: [`scpoli-mini/`](../04-experiments/E1.1-integration-without-erasing-disease/)

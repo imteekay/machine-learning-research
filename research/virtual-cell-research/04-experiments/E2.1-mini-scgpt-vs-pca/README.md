@@ -1,10 +1,10 @@
 # E2.1 (mini): Do embeddings from a tiny scGPT beat HVG + PCA for cell-type annotation?
 
-- **Roadmap phase**: [Phase 2](../00-plan/roadmap.md#phase-2-single-cell-foundation-models) · Hypothesis ladder rung: 2
+- **Roadmap phase**: [Phase 2](../../00-plan/roadmap.md#phase-2-single-cell-foundation-models) · Hypothesis ladder rung: 2
 - **Status**: done (miniature version; the full E2.1 with released checkpoints is still open)
 - **Started / finished**: 2026-11-25 / 2026-11-25
-- **Driving paper**: scGPT ([note](../02-paper-notes/scgpt.md)), chosen by citation ranking in `_paper-selection/`
-- **Code**: [`scgpt-mini/`](../scgpt-mini/) · results: `scgpt-mini/results/results.json`, `eda.json`
+- **Driving paper**: scGPT ([note](../../02-paper-notes/scgpt.md)), chosen by citation ranking in `_paper-selection/`
+- **Code**: [`scgpt-mini/`](./) · results: `scgpt-mini/results/results.json`, `eda.json`
 
 > **Pre-registration.** The Hypothesis, Why, Knowledge, Design and Metric sections were written before the confirmatory 3-seed run. One `--quick` smoke run (1 seed, 3 epochs) happened first. It exposed a binning bug with tied values, which I fixed before the confirmatory run (see Deviations). The model and metric were not tuned on the results.
 

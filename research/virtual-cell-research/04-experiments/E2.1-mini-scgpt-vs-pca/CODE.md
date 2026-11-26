@@ -1,8 +1,8 @@
 # scgpt-mini
 
 A minimal, educational scGPT ([Cui et al. 2024](https://www.nature.com/articles/s41592-024-02201-0)) for experiment
-[E2.1](../04-experiments/E2.1-mini-scgpt-vs-pca.md): do frozen foundation-model cell embeddings beat HVG + PCA for
-cell-type annotation? Paper note: [scgpt.md](../02-paper-notes/scgpt.md).
+[E2.1](./README.md): do frozen foundation-model cell embeddings beat HVG + PCA for
+cell-type annotation? Paper note: [scgpt.md](../../02-paper-notes/scgpt.md).
 
 Not a reproduction: a ~0.1M-parameter model, pretrained on 1.8k cells for a few minutes on CPU.
 

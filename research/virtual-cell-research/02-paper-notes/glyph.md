@@ -1,6 +1,6 @@
 # Glyph: turning frozen foundation-model embeddings into testable, named clinical concepts
 
-> Holland, Kumar, Esmeraldo, …, Langlotz, Syrgkanis, Banerjee, Chaudhari & Gatidis. *Glyph: An Interpretability Engine for AI-Driven Scientific Discovery from Clinical Data*. arXiv (2026). [PDF](../papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf) · arXiv: [2611.08922](https://arxiv.org/abs/2611.08922) (v2, 18 Nov 2026) · Code: [StanfordMIMI/Glyph](https://github.com/StanfordMIMI/Glyph) · PoC: [`glyph-mini/`](../glyph-mini/)
+> Holland, Kumar, Esmeraldo, …, Langlotz, Syrgkanis, Banerjee, Chaudhari & Gatidis. *Glyph: An Interpretability Engine for AI-Driven Scientific Discovery from Clinical Data*. arXiv (2026). [PDF](../papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf) · arXiv: [2611.08922](https://arxiv.org/abs/2611.08922) (v2, 18 Nov 2026) · Code: [StanfordMIMI/Glyph](https://github.com/StanfordMIMI/Glyph) · PoC: [`glyph-mini/`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/)
 
 Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo; **(my take)** = my own inference, not the authors' claim.
 
@@ -35,20 +35,20 @@ Conventions: **(paper)** = stated in the paper; **(code)** = read from the repo;
 
 ## 3. Foundation knowledge: the building blocks
 
-Read these roughly in order. Each block says *why Glyph needs it* and where the [PoC](../glyph-mini/) implements it.
+Read these roughly in order. Each block says *why Glyph needs it* and where the [PoC](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/) implements it.
 
 ### 3.1 Embeddings from frozen foundation models
 
 - **What**: a pretrained network maps an input (CT volume, text, lab history) to a fixed-length vector. "Frozen" means no fine-tuning: the vector is a fixed feature.
 - **Why Glyph needs it**: everything downstream runs on *static* vectors. That is cheap and reproducible, and any FM can be swapped in. The ceiling is what the FM captured. Glyph uses Merlin (3D ResNet-152, 2,048-d), Qwen3-Embedding-8B (4,096-d) and an in-house lab masked autoencoder (Feature Tokenizer Transformer, 768-d) **(paper)**.
 - **Learn**: CNN/ResNet basics, sentence embeddings, masked autoencoders, FT-Transformer for tabular data.
-- **PoC**: [`synthetic.py`](../glyph-mini/src/glyph_mini/synthetic.py) generates embeddings with a known structure in place of a real FM.
+- **PoC**: [`synthetic.py`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/src/glyph_mini/synthetic.py) generates embeddings with a known structure in place of a real FM.
 
 ### 3.2 Z-normalization with training statistics
 
 - **What**: `x̃ = (x − μ)/σ` per dimension, with μ and σ computed **once** on the discovery training split and reused unchanged everywhere else.
 - **Why**: without centring, the SAE spends capacity on "distance from the origin" rather than the relative structure between patients **(paper, §4.3)**. Reusing train statistics on external sites is what makes the features comparable across sites, and it is also how site shift leaks in.
-- **PoC**: `Normalizer` in [`train.py`](../glyph-mini/src/glyph_mini/train.py). A test checks that a shifted site is *not* re-centred.
+- **PoC**: `Normalizer` in [`train.py`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/src/glyph_mini/train.py). A test checks that a shifted site is *not* re-centred.
 
 ### 3.3 Superposition and the linear representation hypothesis
 
@@ -68,7 +68,7 @@ Read these roughly in order. Each block says *why Glyph needs it* and where the 
   - encoder **initialised as the decoder transpose**, plus a least-squares **gain calibration** **(code)**
   - **dead latents** and a "ghost"/aux loss that trains dead features to explain the residual **(code)**
 - **Learn**: Gao et al., *Scaling and evaluating sparse autoencoders* (2024, Top-K + aux loss); Olshausen & Field (1996) for dictionary learning.
-- **PoC**: [`sae.py`](../glyph-mini/src/glyph_mini/sae.py), [`train.py`](../glyph-mini/src/glyph_mini/train.py), with unit tests for each mechanism.
+- **PoC**: [`sae.py`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/src/glyph_mini/sae.py), [`train.py`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/src/glyph_mini/train.py), with unit tests for each mechanism.
 
 ### 3.5 Matryoshka representations
 
@@ -96,7 +96,7 @@ Read these roughly in order. Each block says *why Glyph needs it* and where the 
 - **Gotchas**:
   - **separation**: a rare feature can perfectly split cases from controls, the MLE diverges and p → 0. The code requires ≥ 25 activations **(code)**. The PoC hit this exact failure on a pure-noise outcome.
   - **non-collapsibility**: ORs change when you add *any* strong covariate, even a non-confounder. See §3.11.
-- **PoC**: [`association.py`](../glyph-mini/src/glyph_mini/association.py), tested against the closed-form 2×2-table OR and SE.
+- **PoC**: [`association.py`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/src/glyph_mini/association.py), tested against the closed-form 2×2-table OR and SE.
 
 ### 3.9 Multiple testing: Bonferroni vs Benjamini–Hochberg
 
@@ -118,7 +118,7 @@ Read these roughly in order. Each block says *why Glyph needs it* and where the 
   2. **Cross-fitting**: nuisances are fitted on other folds, which prevents overfitting bias.
 - **Confounder choice**: 6 clinical covariates plus up to 10 other significant concepts. Candidates with |r| ≥ 0.35 with the tested concept are excluded to avoid adjusting for **mediators** or near-duplicates. The paper admits this threshold is a heuristic **(paper)**.
 - **Learn**: Chernozhukov et al., *Double/debiased ML* (2018); Hernán & Robins, *Causal Inference: What If* (confounders vs mediators vs colliders); Liu et al. on DML for the logistic partially linear model.
-- **PoC**: [`dml.py`](../glyph-mini/src/glyph_mini/dml.py) uses quadratic nuisances in place of XGBoost. The confounded concept goes from OR 1.62 to 0.94 [0.88, 1.01], while the causal ones stay above 1.
+- **PoC**: [`dml.py`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/src/glyph_mini/dml.py) uses quadratic nuisances in place of XGBoost. The confounded concept goes from OR 1.62 to 0.94 [0.88, 1.01], while the causal ones stay above 1.
 
 ### 3.12 PheWAS, Phecodes and outcome definition
 
@@ -228,13 +228,13 @@ Read these roughly in order. Each block says *why Glyph needs it* and where the 
 - **Confounding in single cell is the same problem**: batch, donor, cell cycle and knockdown efficiency play the role of age, sex and BMI. DML with cross-fitting is a candidate method for E4.4-style residualisation.
 - **Multi-site replication = multi-donor / multi-lab replication**: freeze the normaliser and SAE on one dataset and test on another lab's data. That is a clean OOD protocol for the Master's hypothesis.
 - **Hypotheses worth testing**:
-  - **E2.3a** (done, synthetic): does the toolkit recover known concepts, discoveries and confounding? See [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md).
+  - **E2.3a** (done, synthetic): does the toolkit recover known concepts, discoveries and confounding? See [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/README.md).
   - **E2.3b** (next): on scFM embeddings of a Perturb-seq dataset, do SAE concepts associated with a knockout replicate across donors better than PCA components do?
   - **E2.3c**: does adding scATAC-derived context increase the number of *replicated* concepts (links to the Master's hypothesis)?
 
-## 9. Minimal PoC: [`glyph-mini/`](../glyph-mini/)
+## 9. Minimal PoC: [`glyph-mini/`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/)
 
-A synthetic world with 32 known concepts in a 64-d embedding, one confounder W, two causal concepts, one confounded concept and a shifted external site. It implements stages 0, 1, 3, 4 and 5. All five hypotheses pass on seeds 0–4. Headline numbers: concept recovery cosine 0.978 (random 0.266); 3/3 true concepts discovered, 0 false, 0 hits on a noise outcome; 3/3 replicate; confounded OR 1.62 → 0.94 after DML. See its [README](../glyph-mini/README.md) for how to run it and what each test checks.
+A synthetic world with 32 known concepts in a 64-d embedding, one confounder W, two causal concepts, one confounded concept and a shifted external site. It implements stages 0, 1, 3, 4 and 5. All five hypotheses pass on seeds 0–4. Headline numbers: concept recovery cosine 0.978 (random 0.266); 3/3 true concepts discovered, 0 false, 0 hits on a noise outcome; 3/3 replicate; confounded OR 1.62 → 0.94 after DML. See its [README](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/README.md) for how to run it and what each test checks.
 
 ## 10. Related work
 
@@ -249,4 +249,4 @@ A synthetic world with 32 known concepts in a 64-d embedding, one confounder W, 
 - Paper: [arXiv 2611.08922](https://arxiv.org/abs/2611.08922) · local [PDF](../papers/glyph-interpretability-engine-for-ai-driven-scientific-discovery.pdf)
 - Code: [github.com/StanfordMIMI/Glyph](https://github.com/StanfordMIMI/Glyph) (package `pip install glyph-discovery`) · analysis code: [github.com/StanfordMIMI/Glyph-research](https://github.com/StanfordMIMI/Glyph-research)
 - Pretrained dictionaries: [huggingface.co/RobbieHolland/Glyph-research](https://huggingface.co/RobbieHolland/Glyph-research)
-- My PoC: [`glyph-mini/`](../glyph-mini/) · experiment: [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery.md)
+- My PoC: [`glyph-mini/`](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/) · experiment: [E2.3a](../04-experiments/E2.3a-glyph-mini-sae-concept-discovery/README.md)

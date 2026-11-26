@@ -1,10 +1,10 @@
 # E1.1: Can integration remove batch without erasing a disease (interferon) signal?
 
-- **Roadmap phase**: [Phase 1](../00-plan/roadmap.md#phase-1-single-cell-data-and-tooling) · Hypothesis ladder rung: 1
+- **Roadmap phase**: [Phase 1](../../00-plan/roadmap.md#phase-1-single-cell-data-and-tooling) · Hypothesis ladder rung: 1
 - **Status**: done (minimal version)
 - **Started / finished**: 2026-11-25 / 2026-11-25
-- **Driving paper**: scPoli (De Donno et al. 2023), [note](../02-paper-notes/scpoli.md). Chosen by the citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
-- **Code**: [`scpoli-mini/`](../scpoli-mini/) · results in [`scpoli-mini/results/E1.1/`](../scpoli-mini/results/E1.1/)
+- **Driving paper**: scPoli (De Donno et al. 2023), [note](../../02-paper-notes/scpoli.md). Chosen by the citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
+- **Code**: [`scpoli-mini/`](./) · results in [`scpoli-mini/results/E1.1/`](./results/E1.1/)
 
 > **Pre-registration.** Hypothesis, Why, Knowledge tested, Design and Metric were written before the confirmatory run. A `--quick` smoke run (15 epochs) was used only for debugging; see Deviations.
 
@@ -27,7 +27,7 @@ Pretraining and clinical models need multi-study data. This fixes an integration
 ## Design
 
 - **Data**
-  1. **Synthetic** ([`simulate.py`](../scpoli-mini/src/scpoli_mini/simulate.py)): 3 studies × 4 donors × 300 cells, 500 genes, 5 PBMC-like types. Study effect: gene-wise log-shift N(0, 0.6²) + study depth factor U(0.6, 1.6) + study-specific cell-type composition. Donor effect N(0, 0.1²). Disease: 2/4 donors per study, 30 ISG genes up-regulated with cell-type-specific strength (monocytes 1.6, NK 0.6) × per-cell U(0.5, 1). NB counts (θ = 10). Ground truth ISG activation stored per cell. Seeds 0, 1, 2.
+  1. **Synthetic** ([`simulate.py`](./src/scpoli_mini/simulate.py)): 3 studies × 4 donors × 300 cells, 500 genes, 5 PBMC-like types. Study effect: gene-wise log-shift N(0, 0.6²) + study depth factor U(0.6, 1.6) + study-specific cell-type composition. Donor effect N(0, 0.1²). Disease: 2/4 donors per study, 30 ISG genes up-regulated with cell-type-specific strength (monocytes 1.6, NK 0.6) × per-cell U(0.5, 1). NB counts (θ = 10). Ground truth ISG activation stored per cell. Seeds 0, 1, 2.
   2. **Kang 2018** ([pertpy `kang_2018`](https://exampledata.scverse.org/pertpy/kang_2018.h5ad), 38 MB): 24,673 PBMCs from 8 lupus patients, each split into ctrl and IFN-β-stimulated (6 h) aliquots. Condition = donor; "disease" = stim. Subsample 10,000 cells, 2,000 HVGs + 20 forced ISGs.
 - **Splits**: latents are fit transductively on all cells (no query mapping in this minimal version). The disease classifier and the ISG ridge are evaluated **leave-group-out**: leave-one-study-out (synthetic), 4 folds of 2 held-out donors (Kang).
 - **Models and baselines**
@@ -53,7 +53,7 @@ H supported (per seed / dataset) if all hold: (a) scPoli batch R² < cell-type R
 
 ## EDA findings
 
-Figures in [`results/E1.1/`](../scpoli-mini/results/E1.1/): `eda_syn_pca.png`, `eda_kang_qc.png`, `eda_kang_isg_by_celltype.png`, `eda_kang_pca.png`. Numbers in `eda.json`.
+Figures in [`results/E1.1/`](./results/E1.1/): `eda_syn_pca.png`, `eda_kang_qc.png`, `eda_kang_isg_by_celltype.png`, `eda_kang_pca.png`. Numbers in `eda.json`.
 
 1. **Synthetic PCA is batch-dominated**: study R² 0.51 vs cell type 0.42, disease 0.04. Precondition met; this is the "naive merge" regime. *ML concept*: PCA finds max-variance directions, and a gene-wide technical shift is max-variance.
 2. **Kang PCA is not batch-dominated**: donor R² 0.025, cell type 0.51, stim 0.13. *Biology/design concept*: multiplexing removes lane effects; donor genotype differences are small in PBMCs. So Kang tests "do we keep the ISG signal", not "do we remove batch".
@@ -75,7 +75,7 @@ Figures in [`results/E1.1/`](../scpoli-mini/results/E1.1/): `eda_syn_pca.png`, `
 
 ## Results
 
-Full run: 60 epochs, synthetic seeds 0–2, Kang 10,000 cells, 392 s on CPU. File: [`results.json`](../scpoli-mini/results/E1.1/results.json).
+Full run: 60 epochs, synthetic seeds 0–2, Kang 10,000 cells, 392 s on CPU. File: [`results.json`](./results/E1.1/results.json).
 
 **Synthetic (mean of 3 seeds)**
 
@@ -115,4 +115,4 @@ Criteria (a)–(e) pass, but the precondition fails (donor R² is already 0.024)
   2. **With 12 donors, the learned sample embeddings did *not* recover disease** (chance AUROC). The paper's sample-level claim needs many samples and probably a dedicated analysis; I can't support it at this scale.
   3. **scIB-style metrics alone would hide failures.** The prototype loss mainly sharpens cell-type structure (Kang kNN acc 0.955 → 0.996) without changing mixing or disease metrics; under-training killed the disease signal while kNN type accuracy stayed 1.0. The disease-specific metrics and the shuffled-batch control were what made results interpretable.
 - **Progress signal met?**: partly. I can predict when an integration over-corrects here (condition nested with the label) and why. Not yet shown on a real multi-study cohort with a real batch effect.
-- **Next step**: E1.1b on a CELLxGENE lupus or COVID PBMC multi-study set (true study batch, donor-level disease), with a held-out study mapped as a query (embedding-only fine-tuning) and Harmony/scVI references. Logged in the [research log](../research-log.md).
+- **Next step**: E1.1b on a CELLxGENE lupus or COVID PBMC multi-study set (true study batch, donor-level disease), with a held-out study mapped as a query (embedding-only fine-tuning) and Harmony/scVI references. Logged in the [research log](../../research-log.md).

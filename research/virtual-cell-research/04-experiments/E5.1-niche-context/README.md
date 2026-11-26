@@ -1,10 +1,10 @@
 # E5.1: Does niche context add information beyond cell type?
 
-- **Roadmap phase**: [Phase 5](../00-plan/roadmap.md#phase-5-spatial-and-tissue-level-modeling) · Hypothesis ladder rung: 5
+- **Roadmap phase**: [Phase 5](../../00-plan/roadmap.md#phase-5-spatial-and-tissue-level-modeling) · Hypothesis ladder rung: 5
 - **Status**: done (synthetic toy only; real-data run pending)
 - **Started / finished**: 2026-11-25 / 2026-11-25
-- **Driving paper**: [Nicheformer](../02-paper-notes/nicheformer.md), chosen by the citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
-- **Code**: [`nicheformer-mini/`](../nicheformer-mini/) · results in `nicheformer-mini/results/`
+- **Driving paper**: [Nicheformer](../../02-paper-notes/nicheformer.md), chosen by the citation ranking in `04-experiments/_paper-selection/` (Phase 0 PR, branch `vcell/E0.2-tf-knockout-targets`).
+- **Code**: [`nicheformer-mini/`](./) · results in `nicheformer-mini/results/`
 
 > **Pre-registration.** Hypothesis, Why, Knowledge tested, Design and Metric were fixed on 2026-11-25 before the confirmatory run. A `--quick` pilot (1 seed, 1,500 cells) was run only to check runtime. One change came from the unit tests, before any confirmatory number: ridge α raised from 1 to 30 because the niche model overfit pure-noise genes (housekeeping R² loss 0.03). Results and Conclusion come from `results/E5.1/results.json`.
 
@@ -28,7 +28,7 @@ If spatial context doesn't help even for *unperturbed* expression, a spatial per
 ## Data primer
 
 - **What real data looks like (paper/real tech)**: imaging spatial transcriptomics (MERFISH, Xenium, CosMx) gives, per segmented cell, counts for a fixed panel of ~100–500 genes plus x/y coordinates. Counts per cell are low (tens to hundreds), many entries are zero. Segmentation assigns transcripts to cells from images, and errors leak neighbors' transcripts into a cell.
-- **What I simulated** ([`tissue.py`](../nicheformer-mini/src/nicheformer_mini/tissue.py)): 4,000 cells uniform on a unit square, 40 genes (a tiny "panel").
+- **What I simulated** ([`tissue.py`](./src/nicheformer_mini/tissue.py)): 4,000 cells uniform on a unit square, 40 genes (a tiny "panel").
   - Tumor region = 2 disks. Inside: 88% tumor, 4% T (immune exclusion), 8% macrophage. Outside: fibroblasts/macrophages, plus 7 T-cell clusters placed 0.02–0.06 outside the border.
   - Genes: 20 markers (5 per type), 6 IFN genes driven by the true T-cell fraction within radius 0.06, 4 hypoxia genes in tumor cells deep (>~0.09) inside the tumor, 10 housekeeping genes with no spatial signal.
   - Poisson counts, ~60 per cell (45.7% zeros). Spillover: 15% of each cell's transcript mix comes from its 6 nearest neighbors (also run with 0%).
@@ -38,21 +38,21 @@ If spatial context doesn't help even for *unperturbed* expression, a spatial per
 
 Figures in `nicheformer-mini/results/eda/`, numbers in `eda_facts.json` (seed 0).
 
-![maps](../nicheformer-mini/results/eda/tissue_maps.png)
+![maps](./results/eda/tissue_maps.png)
 
 1. **Cell-type map**: tumor 21%, T 10%, fibroblast 47%, macrophage 21%. T cells hug the tumor border but rarely enter. *Biology*: "immune-excluded" tumor phenotype, a known predictor of poor immunotherapy response. *ML*: cell type and location are strongly coupled, so cell type alone already predicts a lot of the niche (the shortcut every niche model must beat).
 2. **IFN map**: IFN genes light up around T-cell clusters; correlation of IFN score with 10-NN T-cell fraction r = 0.62. *Biology*: paracrine signaling has a short range (tens of µm). *ML*: the signal is in the neighbors, not in the cell's own type, which is exactly what a cell-intrinsic model can't see.
 3. **Spillover map**: tumor cells near T cells show more CD3E (mean log 1.02 vs 0.69). *Biology/measurement*: a tumor cell does not express CD3E; this is segmentation error. *ML*: a "cell-intrinsic" model can secretly read its neighbors through spillover. That is why the shuffled-neighbor control and the spillover=0 vs 0.15 comparison exist.
 
-![enrichment](../nicheformer-mini/results/eda/neighborhood_enrichment.png)
+![enrichment](./results/eda/neighborhood_enrichment.png)
 
 4. **Neighborhood enrichment** (z vs label permutation): tumor–tumor z = 99, tumor–fibroblast z = −72, T–T z = 20, T–tumor z = −18. *ML*: strong self-affinity means random train/test splits of cells leak neighbors across the split; spatial block CV is needed.
 
-![border](../nicheformer-mini/results/eda/border_distance_and_ifn.png)
+![border](./results/eda/border_distance_and_ifn.png)
 
 5. **Distance to border**: 19.8% of cells lie within 0.05 of the border; T cells peak just outside it. *ML*: the "border" stratum is small, so per-bin R² is noisier there.
 
-![panel](../nicheformer-mini/results/eda/panel_size.png)
+![panel](./results/eda/panel_size.png)
 
 6. **Panel size**: ridge R² for the T-cell niche fraction grows with random panel size: 0.06–0.09 (3–5 genes), 0.18 (10), 0.29 (20), 0.40 (40). *Biology/tech*: imaging panels are small and chosen by humans; niche readout depends on whether the panel contains the right genes. This is why Nicheformer jointly pretrains on whole-transcriptome dissociated data. **(my take)**
 
@@ -87,7 +87,7 @@ Pooled out-of-fold R² per gene, averaged within program; gain = R²(niche) − 
 
 3 seeds, 4,000 cells, 271 s total on a laptop CPU. Mean ± SD over seeds.
 
-![gain](../nicheformer-mini/results/E5.1/r2_gain_by_border_distance.png)
+![gain](./results/E5.1/r2_gain_by_border_distance.png)
 
 **Task A, R² gain over the cell-intrinsic model (spatial block CV, spillover = 0.15)**
 
@@ -99,7 +99,7 @@ Pooled out-of-fold R² per gene, averaged within program; gain = R²(niche) − 
 
 **Overall IFN R² (block CV)**: celltype mean 0.022, intrinsic 0.102, niche 0.188, niche-shuffled 0.095. Random CV inflates every model by ~0.004–0.015 (e.g., intrinsic 0.115). Without spillover: intrinsic IFN 0.095 (vs 0.102 with spillover); border gain 0.135.
 
-![task B](../nicheformer-mini/results/E5.1/niche_composition_r2.png)
+![task B](./results/E5.1/niche_composition_r2.png)
 
 **Task B, 10-NN composition R² (block CV, spillover 0.15)**
 
