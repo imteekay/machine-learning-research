@@ -1,0 +1,10 @@
+[45s] Isocortex: pca_on_target loto nmi 0.319
+[89s] Olfactory: pca_on_target loto nmi 0.240
+[136s] Striatum: pca_on_target loto nmi 0.280
+[182s] Midbrain: pca_on_target loto nmi 0.278
+[226s] Hippocampus: pca_on_target loto nmi 0.398
+[271s] Fiber_tracts: pca_on_target loto nmi 0.284
+[316s] Cerebellum: pca_on_target loto nmi 0.056
+[360s] Thalamus: pca_on_target loto nmi 0.386
+[404s] Hypothalamus: pca_on_target loto nmi 0.257
+[449s] Pons: pca_on_target loto nmi 0.321

@@ -38,11 +38,17 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - ATAC LSI has a large site offset: a global-mean imputation has R² of −0.18 on an unseen site. (E3.2, *new*)
 - Housekeeping promoters stay open regardless of expression level, while lineage genes open and close with cell identity. Most nearby peaks do not regulate the gene. (E3.1, *new*)
 
+### Spatial niches (mouse brain)
+- Smoothing each cell's expression over its 15 nearest neighbours doubles niche recovery over the cell alone (NMI 0.31 vs 0.16); coarse cell-class composition does not (0.15), so niche identity lives in fine cell states. (E5.3, *new*)
+- Niche recovery is limited by the test tissue, not the training tissue: the transfer matrix is flat by row and varies 5× by column (cerebellum below 0.1, thalamus and hippocampus 0.33). Niches generalise to another animal and cutting plane. (E5.3, *new*)
+
 ### Tissue and tumor microenvironment (TME)
 - IFN signalling is paracrine and short-range, and immune-excluded tumors produce border effects. Segmentation spillover is a real confound. (E5.1, *new*, synthetic)
 - A Visium spot is a mixture of cells, and most variance sits within patients. H&E recovers composition-type biomarkers, not hidden cell-state programs. (E6.2, *new*, synthetic)
 
 ## ML and evaluation
+
+- A learned niche encoder beats expression alone, an untrained network and a shuffled graph in every tissue but never beats hand-crafted neighbour smoothing (0.274 vs 0.331 NMI). A multi-tissue model did not beat one trained on a single section of the target (1 of 10 tissues). The gene basis explains at most 0.008 of the gap and the objective (SwAV vs InfoNCE) does not matter. Always report the 1- and 2-hop neighbour-mean baseline. (E5.3, *confirms E2.1*)
 
 - Flow matching did not beat a mean-shift MLP (worse for unseen doses, +0.15; narrowly better for unseen drugs, −0.04; no gain on the 86 heterogeneous conditions). The mean-shift error dominates, so improve the mean first. A mean-oracle row separates mean error from shape error. (E4.3, *new*)
 - Energy distance is dominated by the mean in high dimension: it detects a bimodal shape up to about 10 isotropic dimensions at n = 100, or about 50 with PCA-like variances, and MSE of the mean cannot see it at all (E0.3, answered in E4.3). A thresholded responder fraction cannot tell bimodal from shifted. (E4.3, *new*)
@@ -76,5 +82,4 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 | Domain | Experiment |
 |---|---|
-| Niches shared across organs | E5.3 |
 | Experimental design and closed loop | E6.3 |

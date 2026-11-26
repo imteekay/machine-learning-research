@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-26: E5.3 cross-tissue niche transfer (novae-mini), on mouse brain MERFISH
+
+- **Did**: tried to get human multi-tissue Xenium data and could not (no valid 10x paths found; the Vizgen bucket returned access-denied and I did not go around it; CELLxGENE has only mouse brain MERFISH). Switched to the whole-mouse-brain MERFISH atlas: tissue = major brain region (10), niche = CCF region, 1.9M cells in 66 coronal sections plus a sagittal set from another animal. Built [`novae_mini`](./04-experiments/E5.3-cross-tissue-niches/CODE.md): a GraphSAGE niche encoder with a SwAV-style objective, leave-one-tissue-out, a transfer matrix and an unseen-animal test.
+- **Learned**: H rejected: the multi-tissue model beats a one-section model in 1/10 tissues. It beats expression alone and controls everywhere and transfers to another animal and plane, but never beats hand-crafted neighbour smoothing (0.274 vs 0.331 NMI). The transfer matrix is flat by training tissue and varies 5× by test tissue (cerebellum is hard). The gene basis and the objective are not the cause; why one section beats the whole tissue is open.
+- **Open questions**: does a gene-embedding input or a deeper encoder beat smoothing? Does the result hold on human tumour tissue?
+- **Next**: E6.3 active-learning discovery loop.
+
 ## 2026-11-26: E4.3 distributional drug response (flowpert-mini) + E0.3 simulation
 
 - **Did**: built [`flowpert_mini`](./04-experiments/E4.3-distributional-drug-response/CODE.md): a two-pass stream of the 3 GB sci-Plex 3 matrix, a shared condition encoder, mean-shift predictors, a CPA-lite VAE with an adversary and conditional flow matching (OT or random coupling). Ran [E4.3](./04-experiments/E4.3-distributional-drug-response/) on 443,705 cells and 2,259 conditions: unseen-dose and unseen-drug splits, 3 seeds each. Ran the E0.3 energy-distance simulation.

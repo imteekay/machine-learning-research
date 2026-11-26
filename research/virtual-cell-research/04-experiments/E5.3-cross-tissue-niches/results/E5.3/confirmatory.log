@@ -1,0 +1,66 @@
+{'Isocortex': (40000, 25), 'Olfactory': (40000, 15), 'Striatum': (40000, 13), 'Midbrain': (40000, 20), 'Hippocampus': (40000, 24), 'Fiber_tracts': (40000, 25), 'Cerebellum': (40000, 9), 'Thalamus': (40000, 19), 'Hypothalamus': (40000, 18), 'Pons': (40000, 12)} steps=2000 seeds=3
+[105s] Isocortex seed=0 NMI: expr_pca=0.163 nbr_mean=0.319 nbr_2hop=0.333 | loto=0.319 small=0.373 in_tissue=0.386 shuffled=0.062 untrained=0.138
+[170s] Isocortex seed=1 NMI: expr_pca=0.163 nbr_mean=0.319 nbr_2hop=0.333 | loto=0.315 small=0.366 in_tissue=0.405 shuffled=0.048 untrained=0.151
+[251s] Isocortex seed=2 NMI: expr_pca=0.163 nbr_mean=0.319 nbr_2hop=0.333 | loto=0.310 small=0.377 in_tissue=0.399 shuffled=0.060 untrained=0.152
+[345s] Olfactory seed=0 NMI: expr_pca=0.204 nbr_mean=0.297 nbr_2hop=0.328 | loto=0.246 small=0.224 in_tissue=0.097 shuffled=0.109 untrained=0.211
+[412s] Olfactory seed=1 NMI: expr_pca=0.204 nbr_mean=0.297 nbr_2hop=0.328 | loto=0.265 small=0.241 in_tissue=0.118 shuffled=0.125 untrained=0.196
+[483s] Olfactory seed=2 NMI: expr_pca=0.204 nbr_mean=0.297 nbr_2hop=0.328 | loto=0.281 small=0.240 in_tissue=0.118 shuffled=0.064 untrained=0.213
+[573s] Striatum seed=0 NMI: expr_pca=0.168 nbr_mean=0.371 nbr_2hop=0.391 | loto=0.205 small=0.270 in_tissue=0.211 shuffled=0.032 untrained=0.150
+[639s] Striatum seed=1 NMI: expr_pca=0.168 nbr_mean=0.371 nbr_2hop=0.391 | loto=0.315 small=0.282 in_tissue=0.212 shuffled=0.043 untrained=0.142
+[706s] Striatum seed=2 NMI: expr_pca=0.168 nbr_mean=0.371 nbr_2hop=0.391 | loto=0.228 small=0.262 in_tissue=0.239 shuffled=0.022 untrained=0.160
+[796s] Midbrain seed=0 NMI: expr_pca=0.094 nbr_mean=0.253 nbr_2hop=0.311 | loto=0.224 small=0.335 in_tissue=0.294 shuffled=0.022 untrained=0.093
+[862s] Midbrain seed=1 NMI: expr_pca=0.094 nbr_mean=0.253 nbr_2hop=0.311 | loto=0.219 small=0.348 in_tissue=0.289 shuffled=0.016 untrained=0.068
+[926s] Midbrain seed=2 NMI: expr_pca=0.094 nbr_mean=0.253 nbr_2hop=0.311 | loto=0.221 small=0.338 in_tissue=0.296 shuffled=0.023 untrained=0.108
+[1016s] Hippocampus seed=0 NMI: expr_pca=0.263 nbr_mean=0.434 nbr_2hop=0.436 | loto=0.409 small=0.419 in_tissue=0.339 shuffled=0.054 untrained=0.227
+[1081s] Hippocampus seed=1 NMI: expr_pca=0.263 nbr_mean=0.434 nbr_2hop=0.436 | loto=0.401 small=0.405 in_tissue=0.364 shuffled=0.041 untrained=0.226
+[1150s] Hippocampus seed=2 NMI: expr_pca=0.263 nbr_mean=0.434 nbr_2hop=0.436 | loto=0.392 small=0.430 in_tissue=0.331 shuffled=0.041 untrained=0.236
+[1240s] Fiber_tracts seed=0 NMI: expr_pca=0.218 nbr_mean=0.363 nbr_2hop=0.379 | loto=0.298 small=0.380 in_tissue=0.213 shuffled=0.053 untrained=0.254
+[1308s] Fiber_tracts seed=1 NMI: expr_pca=0.218 nbr_mean=0.363 nbr_2hop=0.379 | loto=0.296 small=0.357 in_tissue=0.216 shuffled=0.056 untrained=0.260
+[1376s] Fiber_tracts seed=2 NMI: expr_pca=0.218 nbr_mean=0.363 nbr_2hop=0.379 | loto=0.314 small=0.368 in_tissue=0.211 shuffled=0.043 untrained=0.253
+[1467s] Cerebellum seed=0 NMI: expr_pca=0.041 nbr_mean=0.083 nbr_2hop=0.088 | loto=0.068 small=0.095 in_tissue=0.108 shuffled=0.031 untrained=0.059
+[1533s] Cerebellum seed=1 NMI: expr_pca=0.041 nbr_mean=0.083 nbr_2hop=0.088 | loto=0.083 small=0.097 in_tissue=0.123 shuffled=0.046 untrained=0.046
+[1597s] Cerebellum seed=2 NMI: expr_pca=0.041 nbr_mean=0.083 nbr_2hop=0.088 | loto=0.071 small=0.107 in_tissue=0.102 shuffled=0.044 untrained=0.041
+[1684s] Thalamus seed=0 NMI: expr_pca=0.187 nbr_mean=0.399 nbr_2hop=0.431 | loto=0.402 small=0.459 in_tissue=0.400 shuffled=0.036 untrained=0.176
+[1749s] Thalamus seed=1 NMI: expr_pca=0.187 nbr_mean=0.399 nbr_2hop=0.431 | loto=0.382 small=0.444 in_tissue=0.428 shuffled=0.028 untrained=0.185
+[1812s] Thalamus seed=2 NMI: expr_pca=0.187 nbr_mean=0.399 nbr_2hop=0.431 | loto=0.384 small=0.438 in_tissue=0.423 shuffled=0.033 untrained=0.206
+[1904s] Hypothalamus seed=0 NMI: expr_pca=0.129 nbr_mean=0.331 nbr_2hop=0.332 | loto=0.245 small=0.304 in_tissue=0.238 shuffled=0.026 untrained=0.119
+[1969s] Hypothalamus seed=1 NMI: expr_pca=0.129 nbr_mean=0.331 nbr_2hop=0.332 | loto=0.240 small=0.308 in_tissue=0.220 shuffled=0.024 untrained=0.115
+[2037s] Hypothalamus seed=2 NMI: expr_pca=0.129 nbr_mean=0.331 nbr_2hop=0.332 | loto=0.274 small=0.291 in_tissue=0.251 shuffled=0.025 untrained=0.130
+[2124s] Pons seed=0 NMI: expr_pca=0.088 nbr_mean=0.271 nbr_2hop=0.281 | loto=0.269 small=0.300 in_tissue=0.264 shuffled=0.032 untrained=0.103
+[2188s] Pons seed=1 NMI: expr_pca=0.088 nbr_mean=0.271 nbr_2hop=0.281 | loto=0.244 small=0.292 in_tissue=0.280 shuffled=0.043 untrained=0.100
+[2251s] Pons seed=2 NMI: expr_pca=0.088 nbr_mean=0.271 nbr_2hop=0.281 | loto=0.284 small=0.282 in_tissue=0.270 shuffled=0.021 untrained=0.136
+[2276s] sagittal seed=0: Isocortex=0.451/0.491  Olfactory=0.118/0.211  Striatum=0.227/0.244  Hippocampus=0.473/0.502  Fiber_tracts=0.351/0.449  Cerebellum=0.158/0.143
+[2294s] sagittal seed=1: Isocortex=0.452/0.491  Olfactory=0.124/0.211  Striatum=0.188/0.244  Hippocampus=0.486/0.502  Fiber_tracts=0.369/0.449  Cerebellum=0.120/0.143
+[2314s] sagittal seed=2: Isocortex=0.456/0.491  Olfactory=0.118/0.211  Striatum=0.229/0.244  Hippocampus=0.481/0.502  Fiber_tracts=0.393/0.449  Cerebellum=0.158/0.143
+{
+ "tissues_where_loto_beats_target_small": [
+  "Olfactory"
+ ],
+ "n_win": 1,
+ "n_tissues": 10,
+ "H_supported": false,
+ "loto_beats_expr_pca": [
+  "Isocortex",
+  "Olfactory",
+  "Striatum",
+  "Midbrain",
+  "Hippocampus",
+  "Fiber_tracts",
+  "Cerebellum",
+  "Thalamus",
+  "Hypothalamus",
+  "Pons"
+ ],
+ "loto_beats_nbr_mean": [],
+ "loto_beats_nbr_mean_2hop": [],
+ "loto_within_0.05_of_in_tissue": [
+  "Olfactory",
+  "Striatum",
+  "Hippocampus",
+  "Fiber_tracts",
+  "Cerebellum",
+  "Thalamus",
+  "Hypothalamus",
+  "Pons"
+ ]
+}

@@ -1,0 +1,29 @@
+{'Hippocampus': (40000, 24), 'Cerebellum': (40000, 9), 'Striatum': (40000, 13)} steps=500 seeds=1
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E5.3-cross-tissue-niches/src/novae_mini/models.py:82: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:821.)
+  opt.zero_grad(); loss.backward(); opt.step(); sched.step(); hist.append(float(loss))
+[44s] Hippocampus seed=0 NMI: expr_pca=0.263 nbr_mean=0.434 nbr_2hop=0.436 | loto=0.330 small=0.250 in_tissue=0.128 shuffled=0.179 untrained=0.189
+[83s] Cerebellum seed=0 NMI: expr_pca=0.041 nbr_mean=0.083 nbr_2hop=0.088 | loto=0.070 small=0.084 in_tissue=0.034 shuffled=0.076 untrained=0.032
+[116s] Striatum seed=0 NMI: expr_pca=0.168 nbr_mean=0.371 nbr_2hop=0.391 | loto=0.324 small=0.148 in_tissue=0.068 shuffled=0.097 untrained=0.134
+[127s] sagittal seed=0: Hippocampus=0.343/0.502  Cerebellum=0.165/0.143  Striatum=0.061/0.244
+{
+ "tissues_where_loto_beats_target_small": [
+  "Hippocampus",
+  "Striatum"
+ ],
+ "n_win": 2,
+ "n_tissues": 3,
+ "H_supported": false,
+ "loto_beats_expr_pca": [
+  "Hippocampus",
+  "Cerebellum",
+  "Striatum"
+ ],
+ "loto_beats_nbr_mean": [],
+ "loto_beats_nbr_mean_2hop": [],
+ "loto_within_0.05_of_in_tissue": [
+  "Hippocampus",
+  "Cerebellum",
+  "Striatum"
+ ]
+}
