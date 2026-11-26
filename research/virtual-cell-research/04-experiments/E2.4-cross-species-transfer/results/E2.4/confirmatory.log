@@ -1,0 +1,51 @@
+mouse (75000, 16368)  human (75000, 19831)  steps=2500 seeds=3
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+seed=0 844s human F1: ortholog_pca=0.268  ortholog_pca_centered=0.262  protein_uce=0.090  protein_untrained=0.058  token_ortholog_random=0.013  token_independent_random=0.003  protein_nonortholog=0.051  token_independent_nonortholog=0.012  shuffled_labels=0.003  majority_class=0.003
+   mouse held-out F1: ortholog_pca=0.855  ortholog_pca_centered=0.855  protein_uce=0.430  protein_untrained=0.320  token_ortholog_random=0.268  token_independent_random=0.268  protein_nonortholog=0.583  token_independent_nonortholog=0.471
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+seed=1 1631s human F1: ortholog_pca=0.269  ortholog_pca_centered=0.271  protein_uce=0.109  protein_untrained=0.063  token_ortholog_random=0.022  token_independent_random=0.004  protein_nonortholog=0.049  token_independent_nonortholog=0.003  shuffled_labels=0.003  majority_class=0.003
+   mouse held-out F1: ortholog_pca=0.856  ortholog_pca_centered=0.856  protein_uce=0.417  protein_untrained=0.322  token_ortholog_random=0.261  token_independent_random=0.261  protein_nonortholog=0.546  token_independent_nonortholog=0.474
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E2.4-cross-species-transfer/src/uce_mini/models.py:31: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc = nn.TransformerEncoder(layer, n_layers)
+seed=2 2410s human F1: ortholog_pca=0.294  ortholog_pca_centered=0.277  protein_uce=0.092  protein_untrained=0.058  token_ortholog_random=0.018  token_independent_random=0.001  protein_nonortholog=0.068  token_independent_nonortholog=0.004  shuffled_labels=0.003  majority_class=0.003
+   mouse held-out F1: ortholog_pca=0.851  ortholog_pca_centered=0.851  protein_uce=0.404  protein_untrained=0.328  token_ortholog_random=0.257  token_independent_random=0.257  protein_nonortholog=0.552  token_independent_nonortholog=0.510
+protein_uce-ortholog_pca: -0.180 [-0.185,-0.176]
+protein_uce-ortholog_pca_centered: -0.173 [-0.178,-0.169]
+protein_uce-protein_untrained: +0.037 [+0.036,+0.039]
+protein_uce-token_ortholog_random: +0.079 [+0.077,+0.080]
+protein_uce-shuffled_labels: +0.094 [+0.092,+0.095]
+protein_nonortholog-token_independent_nonortholog: +0.050 [+0.049,+0.051]
+protein_nonortholog-majority_class: +0.053 [+0.052,+0.054]
+{'H_protein_uce_beats_ortholog_pca': False}

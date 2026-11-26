@@ -13,6 +13,11 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - Donor identity is spread across hundreds of genes (sex, HLA, ribosomal, mitochondrial, known eQTLs). The 67 pre-registered sensitive genes alone link 28% of donors, and removing them cuts linkage only 6%. (E1.3, *new*)
 - Some linkage is technical (handling and stress genes), so the figure is an upper bound on genetic identifiability. (E1.3, *new*)
 
+### Cross-species biology
+- Parenchymal and epithelial cell types (hepatocyte, acinar, goblet, endothelium) transfer from mouse to human, while immune cells barely transfer under any method. (E2.4, *new*)
+- Species, atlas and assay shift cost about two thirds of the within-species F1 (0.85 → 0.28). (E2.4, *new*)
+- Genes with no 1:1 ortholog still carry cell identity (18× chance with no ortholog genes at all), so protein sequence carries some conserved function. (E2.4, *new*)
+
 ### Gene regulation and perturbation
 - A Cas9 knockout destroys the protein, not the mRNA, so the knocked-out gene's own mRNA barely changes. Knockdown QC needs CRISPRi data or a protein or indel readout. (E0.2, *new*)
 - Annotated TF → target edges (CollecTRI) are pooled across cell types and often do not hold in K562. ETS1 is not expressed in K562 at all. (E0.2, *new*)
@@ -30,6 +35,9 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - A Visium spot is a mixture of cells, and most variance sits within patients. H&E recovers composition-type biomarkers, not hidden cell-state programs. (E6.2, *new*, synthetic)
 
 ## ML and evaluation
+
+- A mini UCE loses to ortholog PCA by 0.18 macro-F1 on mouse → human. Protein tokens add signal (+0.037 vs untrained, +0.079 vs random tokens) and make non-ortholog transfer possible. (E2.4, *confirms E2.1*)
+- A within-species held-out set overstates cross-species skill 3× (0.85 vs 0.28). (E2.4, *new*)
 
 - Gene removal is a weak privacy tool: dropping 1000 donor-specific genes cuts linkage 27% but costs 0.13 cell-type macro-F1. Matched-random removal is the control. (E1.3, *new*)
 
@@ -51,7 +59,6 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 | Domain | Experiment |
 |---|---|
-| Orthology and cross-species transfer | E2.4 |
 | Haematopoiesis and cross-modal alignment | E3.2 |
 | Pharmacology and dose–response | E4.3 |
 | Niches shared across organs | E5.3 |

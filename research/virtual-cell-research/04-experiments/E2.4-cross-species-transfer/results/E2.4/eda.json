@@ -1,0 +1,198 @@
+{
+  "mouse_cells": 75000,
+  "human_cells": 75000,
+  "mouse_genes": 16368,
+  "human_genes": 19831,
+  "one2one_pairs_in_both": 14763,
+  "mouse_umi_fraction_on_nonortholog_genes": 0.14810016751289368,
+  "mouse_gene_fraction_nonortholog": 0.09805718475073313,
+  "human_umi_fraction_on_nonortholog_genes": 0.3055581748485565,
+  "human_gene_fraction_nonortholog": 0.2555594775855983,
+  "shared_labels": 35,
+  "mouse_cells_in_shared_labels": 0.5586,
+  "human_cells_in_shared_labels": 0.7598266666666667,
+  "label_counts": {
+    "B cell": [
+      7004,
+      3094
+    ],
+    "CD4-positive, alpha-beta T cell": [
+      303,
+      3873
+    ],
+    "CD8-positive, alpha-beta T cell": [
+      364,
+      5767
+    ],
+    "T cell": [
+      1952,
+      1213
+    ],
+    "adventitial cell": [
+      222,
+      69
+    ],
+    "basophil": [
+      55,
+      176
+    ],
+    "classical monocyte": [
+      2017,
+      1033
+    ],
+    "endothelial cell": [
+      1842,
+      3489
+    ],
+    "enterocyte of epithelium of large intestine": [
+      2680,
+      629
+    ],
+    "erythrocyte": [
+      143,
+      532
+    ],
+    "fibroblast": [
+      67,
+      3297
+    ],
+    "fibroblast of cardiac tissue": [
+      2511,
+      337
+    ],
+    "granulocyte": [
+      2152,
+      200
+    ],
+    "hematopoietic precursor cell": [
+      296,
+      503
+    ],
+    "hematopoietic stem cell": [
+      491,
+      211
+    ],
+    "hepatocyte": [
+      3016,
+      2552
+    ],
+    "intermediate monocyte": [
+      442,
+      683
+    ],
+    "large intestine goblet cell": [
+      1305,
+      433
+    ],
+    "macrophage": [
+      1622,
+      6846
+    ],
+    "mature NK T cell": [
+      742,
+      476
+    ],
+    "mesenchymal stem cell": [
+      3193,
+      3793
+    ],
+    "monocyte": [
+      869,
+      1666
+    ],
+    "myeloid dendritic cell": [
+      151,
+      98
+    ],
+    "natural killer cell": [
+      997,
+      1305
+    ],
+    "neutrophil": [
+      195,
+      4579
+    ],
+    "non-classical monocyte": [
+      295,
+      129
+    ],
+    "pancreatic acinar cell": [
+      2118,
+      2948
+    ],
+    "pancreatic ductal cell": [
+      531,
+      1444
+    ],
+    "pancreatic stellate cell": [
+      58,
+      237
+    ],
+    "plasma cell": [
+      318,
+      1533
+    ],
+    "pulmonary alveolar type 2 cell": [
+      77,
+      1303
+    ],
+    "regular atrial cardiac myocyte": [
+      168,
+      1078
+    ],
+    "smooth muscle cell": [
+      484,
+      1123
+    ],
+    "type B pancreatic cell": [
+      3105,
+      59
+    ],
+    "vein endothelial cell": [
+      110,
+      279
+    ]
+  },
+  "tissues": {
+    "bone marrow": [
+      7500,
+      7500
+    ],
+    "heart": [
+      7500,
+      7500
+    ],
+    "kidney": [
+      7500,
+      7500
+    ],
+    "large intestine": [
+      7500,
+      7500
+    ],
+    "liver": [
+      7500,
+      7500
+    ],
+    "lung": [
+      7500,
+      7500
+    ],
+    "musculature": [
+      7500,
+      7500
+    ],
+    "pancreas": [
+      7500,
+      7500
+    ],
+    "skin of body": [
+      7500,
+      7500
+    ],
+    "spleen": [
+      7500,
+      7500
+    ]
+  }
+}

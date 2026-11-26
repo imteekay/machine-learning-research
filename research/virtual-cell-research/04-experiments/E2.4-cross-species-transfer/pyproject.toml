@@ -1,0 +1,27 @@
+[project]
+name = "uce-mini"
+version = "0.1.0"
+description = "A minimal, educational UCE: protein-language-model gene tokens for mouse to human cell-type transfer (E2.4)."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "cellxgene-census>=1.15",
+    "matplotlib>=3.9",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "torch>=2.4",
+    "transformers>=4.44",
+    "scipy>=1.13",
+]
+
+[build-system]
+requires = ["uv_build>=0.8,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]

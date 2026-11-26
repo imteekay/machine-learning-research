@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-26: E2.4 cross-species transfer (uce-mini)
+
+- **Did**: built [`uce_mini`](./04-experiments/E2.4-cross-species-transfer/CODE.md): ESM2-8M protein tokens for 16k mouse and 20k human genes, a mini UCE set transformer, and a mouse-train / human-test protocol with 9 arms. Ran [E2.4](./04-experiments/E2.4-cross-species-transfer/) on 75k mouse + 75k human cells (35 shared labels, 10 tissues, 3 seeds, 40 min on the Apple GPU).
+- **Learned**: H rejected. Human macro-F1: ortholog PCA 0.277, mini UCE 0.097, untrained 0.060, random tokens 0.02, chance 0.003. Protein tokens do add signal and transfer cell identity with no ortholog genes (0.056 vs 0.006). Parenchymal cells transfer, immune cells do not. Within-species F1 (0.85) overstates cross-species skill 3×.
+- **Open questions**: does ESM2-650M close the gap? How much of the immune failure is label granularity?
+- **Next**: E3.2 RNA↔ATAC alignment.
+
 ## 2026-11-26: E1.3 donor re-identification audit (privacy-mini)
 
 - **Did**: built [`privacy_mini`](./04-experiments/E1.3-donor-reidentification/CODE.md) and ran [E1.3](./04-experiments/E1.3-donor-reidentification/) on OneK1K (981 donors, 117,720 cells, from Census). Aggregate metrics only.
