@@ -13,6 +13,15 @@ One folder per experiment. Each holds the pre-registered write-up (`README.md`),
 | [E4.5](./E4.5-scgen-unseen-cell-type/) | Does latent arithmetic predict an unseen cell type's response? | done | `scgen_mini` |
 | [E5.1](./E5.1-niche-context/) | Does niche context add information beyond cell type? | done (synthetic) | `nicheformer_mini` |
 | [E6.2](./E6.2-histology-to-expression/) | Can histology carry the virtual cell to patients? | done (synthetic) | `omiclip_mini` |
+| [E0.1](./E0.1-count-likelihoods/) | Which likelihood fits single-cell counts? | planned | `scvi_mini` |
+| [E1.3](./E1.3-donor-reidentification/) | How identifiable are donors in your training data? | planned | `privacy_mini` |
+| [E2.4](./E2.4-cross-species-transfer/) | Do protein-language gene tokens transfer cell identity from mouse to human? | planned | `uce_mini` |
+| [E3.2](./E3.2-rna-atac-alignment/) | Can paired cells be matched across modalities? | planned | `scclip_mini` |
+| [E4.3](./E4.3-distributional-drug-response/) | Do distributional models capture responders vs non-responders to drugs? | planned | `flowpert_mini` |
+| [E5.3](./E5.3-cross-tissue-niches/) | Does a niche model generalize to unseen tissues? | planned | `novae_mini` |
+| [E6.3](./E6.3-active-learning-loop/) | Does closing the loop make discovery cheaper? | planned | `loop_mini` |
+
+Cross-experiment learnings: [`LEARNINGS.md`](./LEARNINGS.md).
 
 Other: [`_template.md`](./_template.md) (copy into a new `E<id>-<slug>/README.md`), [`_paper-selection/`](./_paper-selection/).
 

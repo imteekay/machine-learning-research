@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-26: Second experiment wave planned (one untested domain per phase)
+
+- **Did**: reviewed all 9 experiments against the roadmap. Pre-registered 7 new experiments, one per phase, each in a domain not tested before and on real data 10–100× larger: [E0.1](./04-experiments/E0.1-count-likelihoods/), [E1.3](./04-experiments/E1.3-donor-reidentification/), [E2.4](./04-experiments/E2.4-cross-species-transfer/), [E3.2](./04-experiments/E3.2-rna-atac-alignment/), [E4.3](./04-experiments/E4.3-distributional-drug-response/), [E5.3](./04-experiments/E5.3-cross-tissue-niches/), [E6.3](./04-experiments/E6.3-active-learning-loop/). Started the [learnings ledger](./04-experiments/LEARNINGS.md).
+- **Learned**: no experiment so far has used more than ~30k real cells. Phases 5 and 6 have only synthetic results.
+- **Open questions**: what compute (GPU) is available for sci-Plex3 (E4.3) and Replogle (E6.3)?
+- **Next**: build E0.1 (`scvi_mini`), then run the rest in phase order.
+
 ## 2026-11-25: OmiCLIP paper + omiclip-mini PoC (E6.2)
 
 - **Did**: wrote the [OmiCLIP / Loki note](./02-paper-notes/omiclip-loki.md) (chosen by the Phase 6 citation ranking and preferred over UNI). Built [`omiclip-mini/`](./04-experiments/E6.2-histology-to-expression/): synthetic H&E tiles and spot counts from shared cells, a CNN + gene-sentence CLIP, and kNN PredEx. Ran [E6.2](./04-experiments/E6.2-histology-to-expression/README.md) with patient-grouped CV over 3 worlds.

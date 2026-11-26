@@ -211,7 +211,7 @@ Run a full Scanpy + scvi-tools workflow on a public 10x Multiome PBMC dataset (Q
 
 ### Experiments & Hypotheses
 
-**E0.1: Which likelihood fits single-cell counts?**
+**E0.1: Which likelihood fits single-cell counts?** ([write-up](../04-experiments/E0.1-count-likelihoods/README.md))
 - **Hypothesis (H)**: a negative binomial likelihood fits raw UMI counts better than a Gaussian on log-normalized data, and zero-inflation adds little for UMI data. *Null*: no difference in held-out log-likelihood / calibration
 - **Why it moves the research forward**: every generative perturbation model you build later picks a likelihood. If NB wins, use count-based decoders. If not, simpler Gaussian/latent models are justified. Either way the decision is now based on evidence
 - **Knowledge tested**: *domain*: sequencing depth, capture efficiency, why zeros appear in droplets. *Technical*: likelihood choice, overdispersion, held-out log-likelihood, posterior predictive checks
@@ -316,7 +316,7 @@ Build a pipeline (config-driven, version-controlled) that pulls a CELLxGENE Cens
 - **Metric & success criterion**: macro-F1 on unseen donors, with a learning curve over data size
 - **Progress signal**: a written data policy for your Master's pipeline (what to include, how to process it)
 
-**E1.3: How identifiable are donors in your training data?**
+**E1.3: How identifiable are donors in your training data?** ([write-up](../04-experiments/E1.3-donor-reidentification/README.md))
 - **Hypothesis (H)**: donor identity can be predicted from expression profiles (e.g., via sex/HLA/eQTL-linked genes) well above chance, and removing those genes lowers re-identification risk with little loss in cell-type accuracy. *Null*: donors are not identifiable from count matrices
 - **Why it moves the research forward**: it shows in practice the privacy constraint that every clinical deployment must handle. It tells you what to report in a data-governance section and when federated training is needed
 - **Knowledge tested**: *domain*: genetic variation visible in RNA (sex genes, HLA, eQTLs). *Technical*: membership/linkage risk, privacy–utility trade-off
@@ -428,6 +428,14 @@ Fine-tune scGPT (or Geneformer) and train an HVG + PCA + logistic regression bas
 - **Metric & success criterion**: fraction of features enriched for a Hallmark (FDR < 0.05) vs PCA; AUPRC for TF → target edges
 - **Progress signal**: a clear statement of what the backbone *does not* know, which becomes the motivation section of your thesis
 
+**E2.4: Do protein-language gene tokens transfer cell identity from mouse to human?** ([write-up](../04-experiments/E2.4-cross-species-transfer/README.md))
+- **Hypothesis (H)**: a mouse-trained model whose gene tokens are ESM2 protein embeddings annotates human cells from shared tissues better than a 1:1-ortholog HVG + PCA baseline. *Null*: no gain beyond the bootstrap CI
+- **Why it moves the research forward**: mouse → human translation is where many therapies fail. This tests whether protein sequence alone carries cell identity across species
+- **Knowledge tested**: *domain*: orthology, conserved vs species-specific cell types. *Technical*: protein-LM gene embeddings, domain shift
+- **Design**: Tabula Muris Senis → Tabula Sapiens (shared tissues, ~150k cells). Mini UCE vs ortholog PCA vs random gene tokens
+- **Metric & success criterion**: human macro-F1 with paired bootstrap CI
+- **Progress signal**: you can name which cell types transfer and why (conservation of their marker programs)
+
 ### Exit Check
 
 - Explain the tokenization and objective of scGPT, Geneformer and UCE, and predict one failure of each
@@ -500,7 +508,7 @@ Train a joint RNA + ATAC model (start from scGPT or CLM-X, or a MultiVI baseline
 - **Metric & success criterion**: per-gene Pearson/MAE gain from ATAC, then gain vs specificity (Spearman). H holds if the correlation is positive and significant
 - **Progress signal**: you can name genes where ATAC helps and explain the biology for each
 
-**E3.2: Can paired cells be matched across modalities?**
+**E3.2: Can paired cells be matched across modalities?** ([write-up](../04-experiments/E3.2-rna-atac-alignment/README.md))
 - **Hypothesis (H)**: a contrastive or Gromov–Wasserstein alignment trained on part of the paired data recovers the true RNA↔ATAC pairing on held-out cells well above chance, and better than gene-activity-score matching. *Null*: no better than the gene-activity baseline
 - **Why it moves the research forward**: most perturbation screens have RNA only. Good alignment lets you *transfer* ATAC context to RNA-only Perturb-seq cells, which is what makes the Master's model possible with existing data
 - **Knowledge tested**: *domain*: what makes a peak informative about a gene. *Technical*: contrastive learning, OT/GW, FOSCTTM
@@ -619,7 +627,7 @@ Reproduce GEARS, a linear/additive baseline and a control-mean baseline on Norma
 - **Metric & success criterion**: interaction term (ATAC × class) in a mixed model of per-perturbation error
 - **Progress signal**: you can predict, for a new knockout, whether context will help, and be right
 
-**E4.3: Do distributional models capture responders vs non-responders?**
+**E4.3: Do distributional models capture responders vs non-responders?** ([write-up](../04-experiments/E4.3-distributional-drug-response/README.md))
 - **Hypothesis (H)**: flow-matching / OT models reproduce the bimodal or heterogeneous responses in a perturbation (e.g., incomplete knockdown, responder subpopulations) better than mean predictors with the same Δ accuracy. *Null*: equal E-distance once the mean is matched
 - **Why it moves the research forward**: in medicine, the non-responding subpopulation (resistant clone, escaping T cell) is often what decides outcome. This shows whether your virtual cell can represent it, which is a requirement for Phase 6 drug-response work
 - **Knowledge tested**: *domain*: sources of response heterogeneity (knockdown efficiency, cell cycle, cell state). *Technical*: flow matching / OT, mode collapse, E-distance vs MSE (builds on E0.3)
@@ -730,7 +738,7 @@ Pretrain or fine-tune a niche-aware model (Novae / Nicheformer / scGPT-spatial) 
 - **Metric & success criterion**: E-distance and Δ-Pearson per ring. The proposal's "patch & border" tasks. H holds if the neighbor ring improves significantly
 - **Progress signal**: predicted effect range (in µm) matches known biology for the perturbed pathway (e.g., cytokine signaling reach)
 
-**E5.3: Does the model generalize to unseen niches and tissues?**
+**E5.3: Does the model generalize to unseen niches and tissues?** ([write-up](../04-experiments/E5.3-cross-tissue-niches/README.md))
 - **Hypothesis (H)**: a model pretrained on many tissues predicts expression and perturbation responses in a *held-out niche type or organ* better than a model trained only on the target tissue. *Null*: no transfer
 - **Why it moves the research forward**: it tests the proposal's "niche-specific generalization" metric and decides whether a single tissue world model is feasible, or whether models must be disease-specific
 - **Knowledge tested**: *domain*: shared vs tissue-specific niche biology (e.g., lymphoid aggregates across organs). *Technical*: domain shift across technologies, leave-one-tissue-out evaluation
@@ -841,7 +849,7 @@ Pick one clinical question (e.g., immunotherapy or CAR-T response, or drug resis
 - **Metric & success criterion**: Spearman of patient-level biomarker scores (predicted vs measured); gene-level Pearson as a secondary metric
 - **Progress signal**: a list of biomarkers that can and can't be inferred from H&E
 
-**E6.3: Does closing the loop make discovery cheaper?**
+**E6.3: Does closing the loop make discovery cheaper?** ([write-up](../04-experiments/E6.3-active-learning-loop/README.md))
 - **Hypothesis (H)**: an active-learning loop using the virtual cell's uncertainty finds a target set of "hit" perturbations (e.g., those that revert a disease signature) with fewer experiments than random or diversity-only selection. *Null*: no reduction in experiments needed
 - **Why it moves the research forward**: it shows the "accelerate discovery" promise of the proposal in a measurable way. It also tests whether the model's uncertainty is calibrated enough to guide experiments
 - **Knowledge tested**: *domain*: what a disease-reversal signature is and why it's a sensible target. *Technical*: Bayesian experimental design, uncertainty calibration, retrospective simulation
