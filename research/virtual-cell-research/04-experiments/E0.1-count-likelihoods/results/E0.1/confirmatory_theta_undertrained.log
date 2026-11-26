@@ -1,0 +1,20 @@
+pbmc_v3 {'cells_in': 11769, 'cells_kept': 11022, 'genes_selected': 2000, 'median_umi': 6734.0, 'median_genes': 1952.0}
+pbmc_v2 {'cells_in': 8381, 'cells_kept': 8380, 'genes_selected': 2000, 'median_umi': 4083.5, 'median_genes': 1297.0}
+pbmc_v3 seed=0 poisson=-0.2393  nb=-0.2320  zinb=-0.2314  gaussian_log1p=-0.2965  nb_floor=-0.3593  nb_shuffled=-0.3141
+   paired: nb-poisson=+0.0073 [+0.0060,+0.0091]  nb-gaussian_log1p=+0.0645 [+0.0599,+0.0695]  zinb-nb=+0.0006 [+0.0003,+0.0008]  nb-nb_floor=+0.1273 [+0.1244,+0.1302]  nb-nb_shuffled=+0.0821 [+0.0801,+0.0844]
+pbmc_v3 seed=1 poisson=-0.2396  nb=-0.2310  zinb=-0.2302  gaussian_log1p=-0.2988  nb_floor=-0.3571  nb_shuffled=-0.3120
+   paired: nb-poisson=+0.0086 [+0.0069,+0.0108]  nb-gaussian_log1p=+0.0677 [+0.0631,+0.0727]  zinb-nb=+0.0008 [+0.0007,+0.0010]  nb-nb_floor=+0.1261 [+0.1232,+0.1291]  nb-nb_shuffled=+0.0809 [+0.0790,+0.0830]
+pbmc_v3 seed=2 poisson=-0.2395  nb=-0.2319  zinb=-0.2312  gaussian_log1p=-0.2949  nb_floor=-0.3594  nb_shuffled=-0.3141
+   paired: nb-poisson=+0.0075 [+0.0059,+0.0097]  nb-gaussian_log1p=+0.0630 [+0.0590,+0.0671]  zinb-nb=+0.0008 [+0.0006,+0.0010]  nb-nb_floor=+0.1275 [+0.1248,+0.1303]  nb-nb_shuffled=+0.0821 [+0.0801,+0.0842]
+pbmc_v2 seed=0 poisson=-0.1328  nb=-0.1311  zinb=-0.1313  gaussian_log1p=-0.1729  nb_floor=-0.2018  nb_shuffled=-0.1662
+   paired: nb-poisson=+0.0017 [+0.0010,+0.0028]  nb-gaussian_log1p=+0.0418 [+0.0401,+0.0436]  zinb-nb=-0.0002 [-0.0003,-0.0001]  nb-nb_floor=+0.0707 [+0.0681,+0.0735]  nb-nb_shuffled=+0.0351 [+0.0338,+0.0366]
+pbmc_v2 seed=1 poisson=-0.1313  nb=-0.1299  zinb=-0.1297  gaussian_log1p=-0.1701  nb_floor=-0.1990  nb_shuffled=-0.1647
+   paired: nb-poisson=+0.0014 [+0.0008,+0.0024]  nb-gaussian_log1p=+0.0402 [+0.0387,+0.0419]  zinb-nb=+0.0002 [+0.0001,+0.0003]  nb-nb_floor=+0.0691 [+0.0665,+0.0716]  nb-nb_shuffled=+0.0348 [+0.0335,+0.0361]
+pbmc_v2 seed=2 poisson=-0.1342  nb=-0.1319  zinb=-0.1319  gaussian_log1p=-0.1722  nb_floor=-0.2015  nb_shuffled=-0.1665
+   paired: nb-poisson=+0.0023 [+0.0016,+0.0031]  nb-gaussian_log1p=+0.0403 [+0.0386,+0.0422]  zinb-nb=+0.0000 [-0.0001,+0.0001]  nb-nb_floor=+0.0696 [+0.0670,+0.0724]  nb-nb_shuffled=+0.0346 [+0.0331,+0.0360]
+pbmc_v3/seed0 {'nb_beats_poisson': True, 'nb_beats_gaussian': True, 'zinb_gain_ci_includes_0': False, 'zinb_gain_within_equiv_margin': True, 'latent_beats_floor': True, 'latent_beats_shuffled': True}
+pbmc_v3/seed1 {'nb_beats_poisson': True, 'nb_beats_gaussian': True, 'zinb_gain_ci_includes_0': False, 'zinb_gain_within_equiv_margin': True, 'latent_beats_floor': True, 'latent_beats_shuffled': True}
+pbmc_v3/seed2 {'nb_beats_poisson': True, 'nb_beats_gaussian': True, 'zinb_gain_ci_includes_0': False, 'zinb_gain_within_equiv_margin': True, 'latent_beats_floor': True, 'latent_beats_shuffled': True}
+pbmc_v2/seed0 {'nb_beats_poisson': True, 'nb_beats_gaussian': True, 'zinb_gain_ci_includes_0': False, 'zinb_gain_within_equiv_margin': True, 'latent_beats_floor': True, 'latent_beats_shuffled': True}
+pbmc_v2/seed1 {'nb_beats_poisson': True, 'nb_beats_gaussian': True, 'zinb_gain_ci_includes_0': False, 'zinb_gain_within_equiv_margin': True, 'latent_beats_floor': True, 'latent_beats_shuffled': True}
+pbmc_v2/seed2 {'nb_beats_poisson': True, 'nb_beats_gaussian': True, 'zinb_gain_ci_includes_0': True, 'zinb_gain_within_equiv_margin': True, 'latent_beats_floor': True, 'latent_beats_shuffled': True}

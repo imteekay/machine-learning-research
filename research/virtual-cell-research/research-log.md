@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-26: E0.1 count likelihoods (scvi-mini)
+
+- **Did**: built [`scvi_mini`](./04-experiments/E0.1-count-likelihoods/CODE.md): a VAE with Poisson, NB, ZINB and discretised-Gaussian decoders, scored in count space. Ran [E0.1](./04-experiments/E0.1-count-likelihoods/) on 10x PBMC v3 (11k cells) and v2 (8.4k cells): 3 seeds, 6 models.
+- **Learned**: NB wins in 6/6 runs (by +0.010 on v3 and +0.003 on v2 over Poisson). ZINB adds less than 0.13% of the LL, and its gain changes sign between chemistries. As a count PMF, the Gaussian on log data is the worst model. Overdispersion is mostly cell state: θ is 0.09 marginally and ≈ 1 given the latent. Caught θ stuck at its init in the first run and fixed it with a 10× learning rate on dispersion.
+- **Open questions**: does θ differ between cell types? Does zero-inflation matter for non-UMI (Smart-seq2) data?
+- **Next**: E1.3 donor re-identification.
+
 ## 2026-11-26: Second experiment wave planned (one untested domain per phase)
 
 - **Did**: reviewed all 9 experiments against the roadmap. Pre-registered 7 new experiments, one per phase, each in a domain not tested before and on real data 10–100× larger: [E0.1](./04-experiments/E0.1-count-likelihoods/), [E1.3](./04-experiments/E1.3-donor-reidentification/), [E2.4](./04-experiments/E2.4-cross-species-transfer/), [E3.2](./04-experiments/E3.2-rna-atac-alignment/), [E4.3](./04-experiments/E4.3-distributional-drug-response/), [E5.3](./04-experiments/E5.3-cross-tissue-niches/), [E6.3](./04-experiments/E6.3-active-learning-loop/). Started the [learnings ledger](./04-experiments/LEARNINGS.md).

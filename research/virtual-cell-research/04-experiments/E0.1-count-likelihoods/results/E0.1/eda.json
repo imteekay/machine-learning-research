@@ -1,0 +1,28 @@
+{
+  "pbmc_v3": {
+    "cells_in": 11769,
+    "cells_kept": 11022,
+    "genes_selected": 2000,
+    "median_umi": 6734.0,
+    "median_genes": 1952.0,
+    "frac_entries_zero": 0.9204983215387407,
+    "frac_nonzero_equal_1": 0.5243564322538494,
+    "median_excess_zero_vs_poisson": 0.0018909463073873423,
+    "median_excess_zero_vs_nb": -0.0004342036516777892,
+    "p95_abs_excess_zero_vs_nb": 0.0862421455156823,
+    "median_theta_mom": 0.09358525276184082
+  },
+  "pbmc_v2": {
+    "cells_in": 8381,
+    "cells_kept": 8380,
+    "genes_selected": 2000,
+    "median_umi": 4083.5,
+    "median_genes": 1297.0,
+    "frac_entries_zero": 0.9593412291169451,
+    "frac_nonzero_equal_1": 0.6553714848387461,
+    "median_excess_zero_vs_poisson": 0.00022510039777912105,
+    "median_excess_zero_vs_nb": -0.0001879109260859435,
+    "p95_abs_excess_zero_vs_nb": 0.03257166849115866,
+    "median_theta_mom": 0.17458152770996094
+  }
+}

@@ -4,6 +4,11 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 ## Biology
 
+### Assay physics and count statistics
+- Droplet (UMI) zeros are explained by depth plus NB overdispersion, with no excess dropout. ZINB gains < 0.13% of the LL. (E0.1, *new*)
+- Most overdispersion of HVGs is cell-state heterogeneity: marginal θ ≈ 0.1, but θ ≈ 1 given the latent. (E0.1, *new*)
+- Deeper chemistry (v3) makes overdispersion visible. At v2 depth most genes have 0/1 counts and every count model looks alike. (E0.1, *new*)
+
 ### Gene regulation and perturbation
 - A Cas9 knockout destroys the protein, not the mRNA, so the knocked-out gene's own mRNA barely changes. Knockdown QC needs CRISPRi data or a protein or indel readout. (E0.2, *new*)
 - Annotated TF → target edges (CollecTRI) are pooled across cell types and often do not hold in K562. ETS1 is not expressed in K562 at all. (E0.2, *new*)
@@ -22,6 +27,10 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 ## ML and evaluation
 
+- Compare likelihoods in the same space. A Gaussian on log1p data turned into a count PMF is the worst and least stable model. (E0.1, *new*)
+- Check that nuisance parameters converge: θ stuck at its init would have understated NB. (E0.1, *new*)
+- At ~10⁷ test entries, pre-register an equivalence margin; "CI includes 0" alone is too strict. (E0.1, *new*)
+- Modelling cell state (latent vs floor) matters 8–10× more than NB vs Poisson. (E0.1, *new*)
 - Raw Δ Pearson rewards the mean shift. Use Systema or projected residuals and shuffled controls. (E0.4, E4.5, *confirmed*)
 - Simple baselines (ridge, PCA, cell-type mean) are hard to beat: ridge beat the MLP in E0.4, and PCA beat scGPT-mini in E2.1. (E0.4, E2.1, E5.1, *confirmed*)
 - A random-init transformer is an essential negative control, and a good pretraining loss does not mean a good embedding. (E2.1, *new*)
@@ -36,7 +45,6 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 | Domain | Experiment |
 |---|---|
-| Assay physics and count likelihoods | E0.1 |
 | Human genetics in RNA and privacy | E1.3 |
 | Orthology and cross-species transfer | E2.4 |
 | Haematopoiesis and cross-modal alignment | E3.2 |
