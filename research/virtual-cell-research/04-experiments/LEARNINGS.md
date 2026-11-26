@@ -23,6 +23,11 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - Annotated TF → target edges (CollecTRI) are pooled across cell types and often do not hold in K562. ETS1 is not expressed in K562 at all. (E0.2, *new*)
 - Co-expression is symmetric, so it cannot tell a regulator from its target: P(Y|X) ≠ P(Y|do(X)). (E0.4, *new*)
 
+### Pharmacology and dose-response
+- In sci-Plex 3 most drug responses shift the whole population: the true spread equals the vehicle's and a true mean shift reproduces the distribution in 89% of active conditions. (E4.3, *new*)
+- Subpopulation responses concentrate in epigenetic regulators (HDAC inhibitors: 62 of 86 heterogeneous conditions) and Aurora kinase inhibitors, and grow with dose (2.6% at 10 nM to 17% at 10 µM). (E4.3, *new*)
+- A new dose of a known drug is easy to predict; a new drug from its MoA label alone is hard (mean-shift Pearson 0.53 vs 0.97 for the oracle). (E4.3, *new*)
+
 ### Immunology and interferon signalling
 - The type-I IFN (ISG) response happens in every cell type but with different strength: monocytes respond hardest. The shared ISG program explains 70–84% of every type's response. (E1.1, E4.5, *new* → *confirmed*)
 - In Kang 2018, donors were multiplexed in the same lanes, so differences between donors are biology, not batch. (E1.1, *new*)
@@ -38,6 +43,10 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - A Visium spot is a mixture of cells, and most variance sits within patients. H&E recovers composition-type biomarkers, not hidden cell-state programs. (E6.2, *new*, synthetic)
 
 ## ML and evaluation
+
+- Flow matching did not beat a mean-shift MLP (worse for unseen doses, +0.15; narrowly better for unseen drugs, −0.04; no gain on the 86 heterogeneous conditions). The mean-shift error dominates, so improve the mean first. A mean-oracle row separates mean error from shape error. (E4.3, *new*)
+- Energy distance is dominated by the mean in high dimension: it detects a bimodal shape up to about 10 isotropic dimensions at n = 100, or about 50 with PCA-like variances, and MSE of the mean cannot see it at all (E0.3, answered in E4.3). A thresholded responder fraction cannot tell bimodal from shifted. (E4.3, *new*)
+- CPA-style VAEs leak the condition into the latent unless an adversary and a tight bottleneck are used, and then collapse the spread. (E4.3, *new*)
 
 - Contrastive RNA↔ATAC alignment beats gene-activity matching in 4 of 4 held-out sites (FOSCTTM 0.036 vs 0.118), with shuffled-pair and untrained controls at chance. Gromov–Wasserstein fails. (E3.2, *new*)
 - A strict ">" top-k gives hard transport plans a free perfect score. Use tie-aware ranks. Pooled FOSCTTM is confounded by pool composition. (E3.2, *new*)
@@ -67,6 +76,5 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 | Domain | Experiment |
 |---|---|
-| Pharmacology and dose–response | E4.3 |
 | Niches shared across organs | E5.3 |
 | Experimental design and closed loop | E6.3 |

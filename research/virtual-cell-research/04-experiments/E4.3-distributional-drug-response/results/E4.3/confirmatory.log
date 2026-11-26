@@ -1,0 +1,20 @@
+cells 443705  conditions 2259  steps 6000 seeds 3
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E4.3-distributional-drug-response/src/flowpert_mini/models.py:171: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:821.)
+  opt.zero_grad(); loss.backward(); opt.step(); self.hist.append(float(loss))
+[198s] unseen_dose seed=0 held=111 active=53  median rel E-dist (active): no_change=1.000  mean_ridge=0.796  mean_mlp=0.192  cvae=0.854  flow_indep=0.517  flow_ot=0.469  flow_shuffled=0.908  mean_oracle=-0.114
+[389s] unseen_dose seed=1 held=111 active=59  median rel E-dist (active): no_change=1.000  mean_ridge=0.739  mean_mlp=0.222  cvae=0.756  flow_indep=0.390  flow_ot=0.337  flow_shuffled=0.885  mean_oracle=-0.053
+[578s] unseen_dose seed=2 held=111 active=57  median rel E-dist (active): no_change=1.000  mean_ridge=0.765  mean_mlp=0.253  cvae=0.977  flow_indep=0.473  flow_ot=0.430  flow_shuffled=0.921  mean_oracle=-0.102
+[814s] unseen_drug seed=0 held=384 active=213  median rel E-dist (active): no_change=1.000  mean_ridge=0.846  mean_mlp=0.799  cvae=0.992  flow_indep=0.798  flow_ot=0.801  flow_shuffled=0.866  mean_oracle=-0.050
+[1051s] unseen_drug seed=1 held=384 active=218  median rel E-dist (active): no_change=1.000  mean_ridge=0.762  mean_mlp=0.734  cvae=0.895  flow_indep=0.701  flow_ot=0.687  flow_shuffled=0.906  mean_oracle=-0.014
+[1292s] unseen_drug seed=2 held=384 active=211  median rel E-dist (active): no_change=1.000  mean_ridge=0.757  mean_mlp=0.680  cvae=1.015  flow_indep=0.680  flow_ot=0.636  flow_shuffled=0.859  mean_oracle=-0.077
+heterogeneity: {'n_active_conditions': 811, 'n_hetero_conditions': 86, 'median_veh_over_true_sd_active': 0.9680681824684143, 'median_veh_over_true_sd_hetero': 0.8632536828517914}
+flow_ot-mean_mlp: median diff -0.015 [-0.030,-0.000] p=0.021 flow better in 54% (n=811)
+flow_ot-mean_ridge: median diff -0.121 [-0.154,-0.103] p=2.7e-33 flow better in 71% (n=811)
+flow_ot-cvae: median diff -0.262 [-0.298,-0.222] p=3.3e-80 flow better in 82% (n=811)
+flow_ot-flow_indep: median diff -0.007 [-0.012,-0.002] p=0.0043 flow better in 55% (n=811)
+flow_ot-flow_shuffled: median diff -0.252 [-0.286,-0.216] p=6e-39 flow better in 73% (n=811)
+flow_ot-mean_oracle: median diff +0.771 [+0.725,+0.807] p=3.1e-134 flow better in 0% (n=811)
+flow_ot-no_change: median diff -0.327 [-0.369,-0.296] p=1e-43 flow better in 79% (n=811)
+mean_mlp-no_change: median diff -0.340 [-0.393,-0.303] p=5.2e-26 flow better in 74% (n=811)
+{'flow_lower_edist_than_mean_mlp (p<0.01, CI<0, both splits)': False, 'mean_delta_pearson_not_worse_by_0.05': True, 'responder_fraction_error_lower': False, 'H_supported': False}

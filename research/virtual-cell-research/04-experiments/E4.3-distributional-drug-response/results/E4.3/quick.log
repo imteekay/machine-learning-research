@@ -1,0 +1,12 @@
+cells 443705  conditions 2259  steps 1000 seeds 1
+[71s] unseen_dose seed=0 held=111 active=53  median rel E-dist (active): no_change=1.000  mean_ridge=0.796  mean_mlp=0.192  cvae=1.641  flow_indep=0.792  flow_ot=0.797  flow_shuffled=0.891  mean_oracle=-0.114
+[192s] unseen_drug seed=0 held=384 active=213  median rel E-dist (active): no_change=1.000  mean_ridge=0.846  mean_mlp=0.799  cvae=1.221  flow_indep=0.871  flow_ot=0.853  flow_shuffled=0.876  mean_oracle=-0.050
+flow_ot-mean_mlp: median diff +0.068 [+0.022,+0.107] p=0.013 flow better in 41% (n=266)
+flow_ot-mean_ridge: median diff -0.034 [-0.059,-0.006] p=0.02 flow better in 58% (n=266)
+flow_ot-cvae: median diff -0.387 [-0.528,-0.252] p=3.4e-31 flow better in 82% (n=266)
+flow_ot-flow_indep: median diff +0.013 [-0.004,+0.031] p=0.01 flow better in 45% (n=266)
+flow_ot-flow_shuffled: median diff -0.074 [-0.137,-0.031] p=0.0026 flow better in 59% (n=266)
+flow_ot-mean_oracle: median diff +0.905 [+0.852,+0.962] p=2.2e-45 flow better in 0% (n=266)
+flow_ot-no_change: median diff -0.159 [-0.208,-0.110] p=9.6e-06 flow better in 67% (n=266)
+mean_mlp-no_change: median diff -0.276 [-0.331,-0.190] p=0.00061 flow better in 67% (n=266)
+{'flow_lower_edist_than_mean_mlp (p<0.01, CI<0, both splits)': False, 'mean_delta_pearson_not_worse_by_0.05': False, 'responder_fraction_error_lower': False, 'H_supported': False}

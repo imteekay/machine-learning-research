@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-26: E4.3 distributional drug response (flowpert-mini) + E0.3 simulation
+
+- **Did**: built [`flowpert_mini`](./04-experiments/E4.3-distributional-drug-response/CODE.md): a two-pass stream of the 3 GB sci-Plex 3 matrix, a shared condition encoder, mean-shift predictors, a CPA-lite VAE with an adversary and conditional flow matching (OT or random coupling). Ran [E4.3](./04-experiments/E4.3-distributional-drug-response/) on 443,705 cells and 2,259 conditions: unseen-dose and unseen-drug splits, 3 seeds each. Ran the E0.3 energy-distance simulation.
+- **Learned**: H rejected. Flow does not beat a mean-shift MLP on E-distance (worse for unseen doses, narrowly better for unseen drugs, no gain on heterogeneous conditions). Only 10.6% of active conditions are heterogeneous beyond a mean shift, mostly HDAC and Aurora kinase inhibitors at high dose. The remaining error is mean-shift error for unseen drugs. Energy distance sees bimodality only in low dimension. A responder fraction cannot tell bimodal from shifted.
+- **Open questions**: do chemistry-based drug embeddings fix the unseen-drug mean? Does a gene-space flow with a count decoder see more heterogeneity?
+- **Next**: E5.3 cross-tissue niches.
+
 ## 2026-11-26: E3.2 RNA↔ATAC alignment (scclip-mini)
 
 - **Did**: built [`scclip_mini`](./04-experiments/E3.2-rna-atac-alignment/CODE.md): TF-IDF/LSI and PCA features, a contrastive dual encoder, gene-activity matching and (fused) Gromov–Wasserstein. Ran [E3.2](./04-experiments/E3.2-rna-atac-alignment/) on the NeurIPS 2021 BMMC multiome (69k cells): leave one site out, unseen-donor pools of 2,000 cells, 4 sites × 3 seeds.
