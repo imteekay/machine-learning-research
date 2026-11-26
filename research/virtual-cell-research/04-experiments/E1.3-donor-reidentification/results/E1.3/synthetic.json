@@ -1,0 +1,886 @@
+{
+  "run": "synthetic",
+  "dataset": "synthetic",
+  "shape": [
+    16000,
+    400
+  ],
+  "runs": [
+    {
+      "seed": 0,
+      "n_disc": 100,
+      "n_eval": 100,
+      "top_cell_type": "T0",
+      "set_sizes": {
+        "sex": 0,
+        "hla": 0,
+        "known_eqtl_cnv": 0,
+        "prereg": 0
+      },
+      "views": {
+        "all_cells": {
+          "all_genes": {
+            "top1": 0.2,
+            "ci95": [
+              0.12,
+              0.2802499999999998
+            ],
+            "median_rank": 5.5,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_sex": {
+            "top1": 0.2,
+            "ci95": [
+              0.13,
+              0.27
+            ],
+            "median_rank": 5.5,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_sex_hla": {
+            "top1": 0.2,
+            "ci95": [
+              0.12,
+              0.28
+            ],
+            "median_rank": 5.5,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_prereg": {
+            "top1": 0.2,
+            "ci95": [
+              0.13,
+              0.28
+            ],
+            "median_rank": 5.5,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_top10_specific": {
+            "top1": 0.15,
+            "ci95": [
+              0.08,
+              0.22
+            ],
+            "median_rank": 6.5,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 390
+          },
+          "minus_top20_specific": {
+            "top1": 0.14,
+            "ci95": [
+              0.08,
+              0.21
+            ],
+            "median_rank": 8.5,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 380
+          },
+          "minus_top50_specific": {
+            "top1": 0.14,
+            "ci95": [
+              0.07,
+              0.21
+            ],
+            "median_rank": 9.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 350
+          },
+          "minus_random_matched_prereg": {
+            "top1": 0.2,
+            "sd": 0.0,
+            "n_removed": 0
+          },
+          "minus_random_matched_top10_specific": {
+            "top1": 0.194,
+            "sd": 0.004898979485566361,
+            "n_removed": 10
+          },
+          "minus_random_matched_top20_specific": {
+            "top1": 0.196,
+            "sd": 0.011999999999999999,
+            "n_removed": 20
+          },
+          "minus_random_matched_top50_specific": {
+            "top1": 0.21800000000000003,
+            "sd": 0.007483314773547889,
+            "n_removed": 50
+          },
+          "sex_inference_accuracy": null
+        },
+        "within_type": {
+          "all_genes": {
+            "top1": 0.13725490196078433,
+            "ci95": [
+              0.058823529411764705,
+              0.23529411764705882
+            ],
+            "median_rank": 11.0,
+            "chance": 0.0196078431372549,
+            "n_donors": 51,
+            "n_genes": 397
+          },
+          "minus_sex": {
+            "top1": 0.13725490196078433,
+            "ci95": [
+              0.058823529411764705,
+              0.23529411764705882
+            ],
+            "median_rank": 11.0,
+            "chance": 0.0196078431372549,
+            "n_donors": 51,
+            "n_genes": 397
+          },
+          "minus_sex_hla": {
+            "top1": 0.13725490196078433,
+            "ci95": [
+              0.058823529411764705,
+              0.23529411764705882
+            ],
+            "median_rank": 11.0,
+            "chance": 0.0196078431372549,
+            "n_donors": 51,
+            "n_genes": 397
+          },
+          "minus_prereg": {
+            "top1": 0.13725490196078433,
+            "ci95": [
+              0.058823529411764705,
+              0.23529411764705882
+            ],
+            "median_rank": 11.0,
+            "chance": 0.0196078431372549,
+            "n_donors": 51,
+            "n_genes": 397
+          },
+          "minus_top10_specific": {
+            "top1": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median_rank": 16.0,
+            "chance": 0.0196078431372549,
+            "n_donors": 51,
+            "n_genes": 387
+          },
+          "minus_top20_specific": {
+            "top1": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median_rank": 23.0,
+            "chance": 0.0196078431372549,
+            "n_donors": 51,
+            "n_genes": 377
+          },
+          "minus_top50_specific": {
+            "top1": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median_rank": 22.0,
+            "chance": 0.0196078431372549,
+            "n_donors": 51,
+            "n_genes": 347
+          },
+          "minus_random_matched_prereg": {
+            "top1": 0.13725490196078433,
+            "sd": 0.0,
+            "n_removed": 0
+          },
+          "minus_random_matched_top10_specific": {
+            "top1": 0.09411764705882353,
+            "sd": 0.038021018489539836,
+            "n_removed": 10
+          },
+          "minus_random_matched_top20_specific": {
+            "top1": 0.1215686274509804,
+            "sd": 0.04539543883447147,
+            "n_removed": 20
+          },
+          "minus_random_matched_top50_specific": {
+            "top1": 0.12549019607843137,
+            "sd": 0.02659737248284419,
+            "n_removed": 50
+          },
+          "sex_inference_accuracy": null
+        }
+      },
+      "top_specific_genes_discovery": {
+        "all_cells": [
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "G12",
+          "G133",
+          "G219",
+          "G251",
+          "G294",
+          "G291",
+          "G295",
+          "G10",
+          "G259",
+          "G48"
+        ],
+        "within_type": [
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "G80",
+          "G81",
+          "G338",
+          "G23",
+          "G112",
+          "G83",
+          "G41",
+          "G59",
+          "G127",
+          "G172"
+        ]
+      },
+      "utility_macro_f1": {
+        "all_genes": 1.0,
+        "minus_prereg": 1.0,
+        "minus_prereg_top1000": null
+      }
+    },
+    {
+      "seed": 1,
+      "n_disc": 100,
+      "n_eval": 100,
+      "top_cell_type": "T0",
+      "set_sizes": {
+        "sex": 0,
+        "hla": 0,
+        "known_eqtl_cnv": 0,
+        "prereg": 0
+      },
+      "views": {
+        "all_cells": {
+          "all_genes": {
+            "top1": 0.17,
+            "ci95": [
+              0.1,
+              0.24
+            ],
+            "median_rank": 5.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_sex": {
+            "top1": 0.17,
+            "ci95": [
+              0.10975000000000001,
+              0.25
+            ],
+            "median_rank": 5.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_sex_hla": {
+            "top1": 0.17,
+            "ci95": [
+              0.1,
+              0.25
+            ],
+            "median_rank": 5.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_prereg": {
+            "top1": 0.17,
+            "ci95": [
+              0.1,
+              0.24
+            ],
+            "median_rank": 5.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_top10_specific": {
+            "top1": 0.14,
+            "ci95": [
+              0.08,
+              0.21
+            ],
+            "median_rank": 7.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 390
+          },
+          "minus_top20_specific": {
+            "top1": 0.12,
+            "ci95": [
+              0.06,
+              0.18
+            ],
+            "median_rank": 10.5,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 380
+          },
+          "minus_top50_specific": {
+            "top1": 0.12,
+            "ci95": [
+              0.06,
+              0.18
+            ],
+            "median_rank": 11.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 350
+          },
+          "minus_random_matched_prereg": {
+            "top1": 0.17,
+            "sd": 0.0,
+            "n_removed": 0
+          },
+          "minus_random_matched_top10_specific": {
+            "top1": 0.168,
+            "sd": 0.0040000000000000036,
+            "n_removed": 10
+          },
+          "minus_random_matched_top20_specific": {
+            "top1": 0.166,
+            "sd": 0.00489897948556636,
+            "n_removed": 20
+          },
+          "minus_random_matched_top50_specific": {
+            "top1": 0.178,
+            "sd": 0.007483314773547877,
+            "n_removed": 50
+          },
+          "sex_inference_accuracy": null
+        },
+        "within_type": {
+          "all_genes": {
+            "top1": 0.21428571428571427,
+            "ci95": [
+              0.09523809523809523,
+              0.3333333333333333
+            ],
+            "median_rank": 8.5,
+            "chance": 0.023809523809523808,
+            "n_donors": 42,
+            "n_genes": 397
+          },
+          "minus_sex": {
+            "top1": 0.21428571428571427,
+            "ci95": [
+              0.09523809523809523,
+              0.33392857142857085
+            ],
+            "median_rank": 8.5,
+            "chance": 0.023809523809523808,
+            "n_donors": 42,
+            "n_genes": 397
+          },
+          "minus_sex_hla": {
+            "top1": 0.21428571428571427,
+            "ci95": [
+              0.09523809523809523,
+              0.35714285714285715
+            ],
+            "median_rank": 8.5,
+            "chance": 0.023809523809523808,
+            "n_donors": 42,
+            "n_genes": 397
+          },
+          "minus_prereg": {
+            "top1": 0.21428571428571427,
+            "ci95": [
+              0.09523809523809523,
+              0.35714285714285715
+            ],
+            "median_rank": 8.5,
+            "chance": 0.023809523809523808,
+            "n_donors": 42,
+            "n_genes": 397
+          },
+          "minus_top10_specific": {
+            "top1": 0.09523809523809523,
+            "ci95": [
+              0.023809523809523808,
+              0.19047619047619047
+            ],
+            "median_rank": 12.5,
+            "chance": 0.023809523809523808,
+            "n_donors": 42,
+            "n_genes": 387
+          },
+          "minus_top20_specific": {
+            "top1": 0.047619047619047616,
+            "ci95": [
+              0.0,
+              0.11904761904761904
+            ],
+            "median_rank": 20.0,
+            "chance": 0.023809523809523808,
+            "n_donors": 42,
+            "n_genes": 377
+          },
+          "minus_top50_specific": {
+            "top1": 0.07142857142857142,
+            "ci95": [
+              0.0,
+              0.14345238095238041
+            ],
+            "median_rank": 18.0,
+            "chance": 0.023809523809523808,
+            "n_donors": 42,
+            "n_genes": 347
+          },
+          "minus_random_matched_prereg": {
+            "top1": 0.21428571428571427,
+            "sd": 0.0,
+            "n_removed": 0
+          },
+          "minus_random_matched_top10_specific": {
+            "top1": 0.24285714285714283,
+            "sd": 0.03809523809523809,
+            "n_removed": 10
+          },
+          "minus_random_matched_top20_specific": {
+            "top1": 0.21904761904761902,
+            "sd": 0.03499271061118826,
+            "n_removed": 20
+          },
+          "minus_random_matched_top50_specific": {
+            "top1": 0.20952380952380953,
+            "sd": 0.059093684028527896,
+            "n_removed": 50
+          },
+          "sex_inference_accuracy": null
+        }
+      },
+      "top_specific_genes_discovery": {
+        "all_cells": [
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "G294",
+          "G264",
+          "G12",
+          "G305",
+          "G278",
+          "G219",
+          "G248",
+          "G59",
+          "G239",
+          "G18"
+        ],
+        "within_type": [
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "G309",
+          "G199",
+          "G374",
+          "G129",
+          "G355",
+          "G354",
+          "G297",
+          "G326",
+          "G30",
+          "G130"
+        ]
+      },
+      "utility_macro_f1": {
+        "all_genes": 1.0,
+        "minus_prereg": 1.0,
+        "minus_prereg_top1000": null
+      }
+    },
+    {
+      "seed": 2,
+      "n_disc": 100,
+      "n_eval": 100,
+      "top_cell_type": "T0",
+      "set_sizes": {
+        "sex": 0,
+        "hla": 0,
+        "known_eqtl_cnv": 0,
+        "prereg": 0
+      },
+      "views": {
+        "all_cells": {
+          "all_genes": {
+            "top1": 0.19,
+            "ci95": [
+              0.11,
+              0.27
+            ],
+            "median_rank": 5.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_sex": {
+            "top1": 0.19,
+            "ci95": [
+              0.11,
+              0.27
+            ],
+            "median_rank": 5.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_sex_hla": {
+            "top1": 0.19,
+            "ci95": [
+              0.12,
+              0.27
+            ],
+            "median_rank": 5.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_prereg": {
+            "top1": 0.19,
+            "ci95": [
+              0.12,
+              0.27
+            ],
+            "median_rank": 5.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 400
+          },
+          "minus_top10_specific": {
+            "top1": 0.13,
+            "ci95": [
+              0.07,
+              0.2
+            ],
+            "median_rank": 6.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 390
+          },
+          "minus_top20_specific": {
+            "top1": 0.08,
+            "ci95": [
+              0.03,
+              0.14
+            ],
+            "median_rank": 8.0,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 380
+          },
+          "minus_top50_specific": {
+            "top1": 0.08,
+            "ci95": [
+              0.03,
+              0.14
+            ],
+            "median_rank": 8.5,
+            "chance": 0.01,
+            "n_donors": 100,
+            "n_genes": 350
+          },
+          "minus_random_matched_prereg": {
+            "top1": 0.19,
+            "sd": 0.0,
+            "n_removed": 0
+          },
+          "minus_random_matched_top10_specific": {
+            "top1": 0.192,
+            "sd": 0.0040000000000000036,
+            "n_removed": 10
+          },
+          "minus_random_matched_top20_specific": {
+            "top1": 0.196,
+            "sd": 0.00489897948556636,
+            "n_removed": 20
+          },
+          "minus_random_matched_top50_specific": {
+            "top1": 0.188,
+            "sd": 0.009797958971132722,
+            "n_removed": 50
+          },
+          "sex_inference_accuracy": null
+        },
+        "within_type": {
+          "all_genes": {
+            "top1": 0.09615384615384616,
+            "ci95": [
+              0.019230769230769232,
+              0.17307692307692307
+            ],
+            "median_rank": 9.5,
+            "chance": 0.019230769230769232,
+            "n_donors": 52,
+            "n_genes": 397
+          },
+          "minus_sex": {
+            "top1": 0.09615384615384616,
+            "ci95": [
+              0.019230769230769232,
+              0.17307692307692307
+            ],
+            "median_rank": 9.5,
+            "chance": 0.019230769230769232,
+            "n_donors": 52,
+            "n_genes": 397
+          },
+          "minus_sex_hla": {
+            "top1": 0.09615384615384616,
+            "ci95": [
+              0.019230769230769232,
+              0.17307692307692307
+            ],
+            "median_rank": 9.5,
+            "chance": 0.019230769230769232,
+            "n_donors": 52,
+            "n_genes": 397
+          },
+          "minus_prereg": {
+            "top1": 0.09615384615384616,
+            "ci95": [
+              0.019230769230769232,
+              0.19230769230769232
+            ],
+            "median_rank": 9.5,
+            "chance": 0.019230769230769232,
+            "n_donors": 52,
+            "n_genes": 397
+          },
+          "minus_top10_specific": {
+            "top1": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median_rank": 15.0,
+            "chance": 0.019230769230769232,
+            "n_donors": 52,
+            "n_genes": 387
+          },
+          "minus_top20_specific": {
+            "top1": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median_rank": 25.0,
+            "chance": 0.019230769230769232,
+            "n_donors": 52,
+            "n_genes": 377
+          },
+          "minus_top50_specific": {
+            "top1": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median_rank": 23.5,
+            "chance": 0.019230769230769232,
+            "n_donors": 52,
+            "n_genes": 347
+          },
+          "minus_random_matched_prereg": {
+            "top1": 0.09615384615384616,
+            "sd": 0.0,
+            "n_removed": 0
+          },
+          "minus_random_matched_top10_specific": {
+            "top1": 0.11153846153846154,
+            "sd": 0.03308586641170241,
+            "n_removed": 10
+          },
+          "minus_random_matched_top20_specific": {
+            "top1": 0.11538461538461539,
+            "sd": 0.02106625221173716,
+            "n_removed": 20
+          },
+          "minus_random_matched_top50_specific": {
+            "top1": 0.11538461538461539,
+            "sd": 0.02106625221173716,
+            "n_removed": 50
+          },
+          "sex_inference_accuracy": null
+        }
+      },
+      "top_specific_genes_discovery": {
+        "all_cells": [
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "G262",
+          "G73",
+          "G364",
+          "G220",
+          "G126",
+          "G34",
+          "G46",
+          "G43",
+          "G133",
+          "G357"
+        ],
+        "within_type": [
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "GENO",
+          "G301",
+          "G208",
+          "G191",
+          "G312",
+          "G0",
+          "G80",
+          "G88",
+          "G246",
+          "G71",
+          "G64"
+        ]
+      },
+      "utility_macro_f1": {
+        "all_genes": 1.0,
+        "minus_prereg": 1.0,
+        "minus_prereg_top1000": null
+      }
+    }
+  ],
+  "verdict": {
+    "seed0": {
+      "linkage_well_above_chance (>=10x)": true,
+      "prereg_removal_cuts_linkage_by_50pct": false,
+      "prereg_removal_beats_random_matched": false,
+      "utility_loss_below_0.02": true
+    },
+    "seed1": {
+      "linkage_well_above_chance (>=10x)": true,
+      "prereg_removal_cuts_linkage_by_50pct": false,
+      "prereg_removal_beats_random_matched": false,
+      "utility_loss_below_0.02": true
+    },
+    "seed2": {
+      "linkage_well_above_chance (>=10x)": true,
+      "prereg_removal_cuts_linkage_by_50pct": false,
+      "prereg_removal_beats_random_matched": false,
+      "utility_loss_below_0.02": true
+    }
+  },
+  "seconds": 1.1
+}

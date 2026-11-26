@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-26: E1.3 donor re-identification audit (privacy-mini)
+
+- **Did**: built [`privacy_mini`](./04-experiments/E1.3-donor-reidentification/CODE.md) and ran [E1.3](./04-experiments/E1.3-donor-reidentification/) on OneK1K (981 donors, 117,720 cells, from Census). Aggregate metrics only.
+- **Learned**: donors are linkable far above chance (0.50 vs 0.002). Removing the pre-registered sensitive genes cuts that by only 6%. Removing 1000 donor-specific genes cuts it 27% and costs 0.13 macro-F1. Part of the signal is technical.
+- **Open questions**: how much remains when the two halves come from different samples?
+- **Next**: E2.4 cross-species transfer.
+
 ## 2026-11-26: E0.1 count likelihoods (scvi-mini)
 
 - **Did**: built [`scvi_mini`](./04-experiments/E0.1-count-likelihoods/CODE.md): a VAE with Poisson, NB, ZINB and discretised-Gaussian decoders, scored in count space. Ran [E0.1](./04-experiments/E0.1-count-likelihoods/) on 10x PBMC v3 (11k cells) and v2 (8.4k cells): 3 seeds, 6 models.

@@ -9,6 +9,10 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - Most overdispersion of HVGs is cell-state heterogeneity: marginal θ ≈ 0.1, but θ ≈ 1 given the latent. (E0.1, *new*)
 - Deeper chemistry (v3) makes overdispersion visible. At v2 depth most genes have 0/1 counts and every count model looks alike. (E0.1, *new*)
 
+### Human genetics in RNA and privacy
+- Donor identity is spread across hundreds of genes (sex, HLA, ribosomal, mitochondrial, known eQTLs). The 67 pre-registered sensitive genes alone link 28% of donors, and removing them cuts linkage only 6%. (E1.3, *new*)
+- Some linkage is technical (handling and stress genes), so the figure is an upper bound on genetic identifiability. (E1.3, *new*)
+
 ### Gene regulation and perturbation
 - A Cas9 knockout destroys the protein, not the mRNA, so the knocked-out gene's own mRNA barely changes. Knockdown QC needs CRISPRi data or a protein or indel readout. (E0.2, *new*)
 - Annotated TF → target edges (CollecTRI) are pooled across cell types and often do not hold in K562. ETS1 is not expressed in K562 at all. (E0.2, *new*)
@@ -26,6 +30,8 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - A Visium spot is a mixture of cells, and most variance sits within patients. H&E recovers composition-type biomarkers, not hidden cell-state programs. (E6.2, *new*, synthetic)
 
 ## ML and evaluation
+
+- Gene removal is a weak privacy tool: dropping 1000 donor-specific genes cuts linkage 27% but costs 0.13 cell-type macro-F1. Matched-random removal is the control. (E1.3, *new*)
 
 - Compare likelihoods in the same space. A Gaussian on log1p data turned into a count PMF is the worst and least stable model. (E0.1, *new*)
 - Check that nuisance parameters converge: θ stuck at its init would have understated NB. (E0.1, *new*)
@@ -45,7 +51,6 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 | Domain | Experiment |
 |---|---|
-| Human genetics in RNA and privacy | E1.3 |
 | Orthology and cross-species transfer | E2.4 |
 | Haematopoiesis and cross-modal alignment | E3.2 |
 | Pharmacology and dose–response | E4.3 |
