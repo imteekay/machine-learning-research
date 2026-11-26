@@ -16,7 +16,7 @@ One folder per experiment. Each holds the pre-registered write-up (`README.md`),
 | [E0.1](./E0.1-count-likelihoods/) | Which likelihood fits single-cell counts? | done | `scvi_mini` |
 | [E1.3](./E1.3-donor-reidentification/) | How identifiable are donors in your training data? | done | `privacy_mini` |
 | [E2.4](./E2.4-cross-species-transfer/) | Do protein-language gene tokens transfer cell identity from mouse to human? | done | `uce_mini` |
-| [E3.2](./E3.2-rna-atac-alignment/) | Can paired cells be matched across modalities? | planned | `scclip_mini` |
+| [E3.2](./E3.2-rna-atac-alignment/) | Can paired cells be matched across modalities? | done | `scclip_mini` |
 | [E4.3](./E4.3-distributional-drug-response/) | Do distributional models capture responders vs non-responders to drugs? | planned | `flowpert_mini` |
 | [E5.3](./E5.3-cross-tissue-niches/) | Does a niche model generalize to unseen tissues? | planned | `novae_mini` |
 | [E6.3](./E6.3-active-learning-loop/) | Does closing the loop make discovery cheaper? | planned | `loop_mini` |

@@ -1,0 +1,9 @@
+cells 69249  folds ['site1']  seeds 1  pool 500  epochs 8
+[255s] fitted features for site1
+[269s] site1 seed=0 FOSCTTM: gene_activity=0.117  clip=0.037  clip_shuffled_pairs=0.501  clip_untrained=0.478  random=0.511  celltype_oracle=0.068  gw=0.498  gw_labeled=0.460
+   top1: gene_activity=0.114  clip=0.176  clip_shuffled_pairs=0.002  clip_untrained=0.008  random=0.000  celltype_oracle=0.038  gw=0.006  gw_labeled=0.082   imputation R2: clip_retrieval_knn=0.552  rna_pca_knn=0.508  celltype_mean_oracle_label=0.281  global_mean=-0.436
+site1/clip-gene_activity: -0.081 [-0.095,-0.068]
+site1/clip-gw_labeled: -0.423 [-0.435,-0.410]
+site1/clip-clip_untrained: -0.441 [-0.465,-0.417]
+site1/clip-clip_shuffled_pairs: -0.465 [-0.490,-0.439]
+{'folds_where_clip_beats_gene_activity_by_0.02': 1, 'n_folds': 1, 'H_supported': True}

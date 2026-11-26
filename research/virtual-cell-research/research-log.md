@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-26: E3.2 RNA↔ATAC alignment (scclip-mini)
+
+- **Did**: built [`scclip_mini`](./04-experiments/E3.2-rna-atac-alignment/CODE.md): TF-IDF/LSI and PCA features, a contrastive dual encoder, gene-activity matching and (fused) Gromov–Wasserstein. Ran [E3.2](./04-experiments/E3.2-rna-atac-alignment/) on the NeurIPS 2021 BMMC multiome (69k cells): leave one site out, unseen-donor pools of 2,000 cells, 4 sites × 3 seeds.
+- **Learned**: H supported in 4/4 sites. FOSCTTM 0.036 (contrastive) vs 0.118 (gene activity); controls at 0.50; GW fails. The matcher resolves state within a cell type but exact top-1 is only 6.6%. Easiest for progenitors and activated T, hardest for CD16+ monocytes and naive B. Plain RNA-kNN imputes ATAC better than the contrastive embedding (R² 0.587 vs 0.554). Caught a top-k tie bug that gave hard GW plans a free perfect top-10, and donors overlapping across sites.
+- **Open questions**: do stronger baselines (GLUE, MultiVI) close the gap? Does imputed ATAC help perturbation prediction (E4.1)?
+- **Next**: E4.3 distributional drug response.
+
 ## 2026-11-26: E2.4 cross-species transfer (uce-mini)
 
 - **Did**: built [`uce_mini`](./04-experiments/E2.4-cross-species-transfer/CODE.md): ESM2-8M protein tokens for 16k mouse and 20k human genes, a mini UCE set transformer, and a mouse-train / human-test protocol with 9 arms. Ran [E2.4](./04-experiments/E2.4-cross-species-transfer/) on 75k mouse + 75k human cells (35 shared labels, 10 tissues, 3 seeds, 40 min on the Apple GPU).

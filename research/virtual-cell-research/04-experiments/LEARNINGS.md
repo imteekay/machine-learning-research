@@ -28,6 +28,9 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - In Kang 2018, donors were multiplexed in the same lanes, so differences between donors are biology, not batch. (E1.1, *new*)
 
 ### Chromatin
+- RNA and ATAC of the same cell can be matched across unseen donors and sites (top-10 for 30% of cells among 2,000). Matching resolves state within a cell type, and is easiest for dynamic states (progenitors, activated T cells) and hardest for quiescent or terminal ones (CD16+ monocytes, naive B). (E3.2, *new*)
+- Lineage priming did not make progenitors harder to match. (E3.2, *new*)
+- ATAC LSI has a large site offset: a global-mean imputation has R² of −0.18 on an unseen site. (E3.2, *new*)
 - Housekeeping promoters stay open regardless of expression level, while lineage genes open and close with cell identity. Most nearby peaks do not regulate the gene. (E3.1, *new*)
 
 ### Tissue and tumor microenvironment (TME)
@@ -35,6 +38,11 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 - A Visium spot is a mixture of cells, and most variance sits within patients. H&E recovers composition-type biomarkers, not hidden cell-state programs. (E6.2, *new*, synthetic)
 
 ## ML and evaluation
+
+- Contrastive RNA↔ATAC alignment beats gene-activity matching in 4 of 4 held-out sites (FOSCTTM 0.036 vs 0.118), with shuffled-pair and untrained controls at chance. Gromov–Wasserstein fails. (E3.2, *new*)
+- A strict ">" top-k gives hard transport plans a free perfect score. Use tie-aware ranks. Pooled FOSCTTM is confounded by pool composition. (E3.2, *new*)
+- Donors overlap across sites in the NeurIPS multiome data, so leave-one-site-out leaks donors unless the pool is restricted. (E3.2, *new*)
+- The embedding that matches best does not impute best: RNA-kNN beats it in 3 of 4 sites (R² 0.587 vs 0.554). (E3.2, *new*)
 
 - A mini UCE loses to ortholog PCA by 0.18 macro-F1 on mouse → human. Protein tokens add signal (+0.037 vs untrained, +0.079 vs random tokens) and make non-ortholog transfer possible. (E2.4, *confirms E2.1*)
 - A within-species held-out set overstates cross-species skill 3× (0.85 vs 0.28). (E2.4, *new*)
@@ -59,7 +67,6 @@ Biology and ML lessons from every experiment, grouped by domain. Each experiment
 
 | Domain | Experiment |
 |---|---|
-| Haematopoiesis and cross-modal alignment | E3.2 |
 | Pharmacology and dose–response | E4.3 |
 | Niches shared across organs | E5.3 |
 | Experimental design and closed loop | E6.3 |

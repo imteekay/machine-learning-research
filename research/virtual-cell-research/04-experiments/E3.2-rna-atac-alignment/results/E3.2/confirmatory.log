@@ -1,0 +1,48 @@
+cells 69249  folds ['site1', 'site2', 'site3', 'site4']  seeds 3  pool 2000  epochs 30
+[169s] fitted features for site1
+[225s] site1 seed=0 FOSCTTM: gene_activity=0.116  clip=0.031  clip_shuffled_pairs=0.499  clip_untrained=0.500  random=0.488  celltype_oracle=0.070  gw=0.497  gw_labeled=0.490
+   top1: gene_activity=0.044  clip=0.095  clip_shuffled_pairs=0.001  clip_untrained=0.001  random=0.000  celltype_oracle=0.009  gw=0.006  gw_labeled=0.021   imputation R2: clip_retrieval_knn=0.468  rna_pca_knn=0.507  celltype_mean_oracle_label=0.270  global_mean=-0.437
+[274s] site1 seed=1 FOSCTTM: gene_activity=0.116  clip=0.031  clip_shuffled_pairs=0.497  clip_untrained=0.499  random=0.503  celltype_oracle=0.070  gw=0.497  gw_labeled=0.490
+   top1: gene_activity=0.044  clip=0.100  clip_shuffled_pairs=0.001  clip_untrained=0.001  random=0.001  celltype_oracle=0.013  gw=0.006  gw_labeled=0.021   imputation R2: clip_retrieval_knn=0.469  rna_pca_knn=0.507  celltype_mean_oracle_label=0.270  global_mean=-0.437
+[324s] site1 seed=2 FOSCTTM: gene_activity=0.116  clip=0.031  clip_shuffled_pairs=0.495  clip_untrained=0.521  random=0.498  celltype_oracle=0.072  gw=0.497  gw_labeled=0.490
+   top1: gene_activity=0.044  clip=0.096  clip_shuffled_pairs=0.000  clip_untrained=0.000  random=0.001  celltype_oracle=0.009  gw=0.006  gw_labeled=0.021   imputation R2: clip_retrieval_knn=0.447  rna_pca_knn=0.507  celltype_mean_oracle_label=0.270  global_mean=-0.437
+[480s] fitted features for site2
+/Users/leandro.kinoshita/projects/machine-learning-research/research/virtual-cell-research/04-experiments/E3.2-rna-atac-alignment/.venv/lib/python3.12/site-packages/ot/lp/_network_simplex.py:485: UserWarning: numItermax reached before optimality. Try to increase numItermax.
+  result_code_string = check_result(result_code)
+[543s] site2 seed=0 FOSCTTM: gene_activity=0.144  clip=0.029  clip_shuffled_pairs=0.504  clip_untrained=0.488  random=0.488  celltype_oracle=0.064  gw=0.500  gw_labeled=0.489
+   top1: gene_activity=0.019  clip=0.059  clip_shuffled_pairs=0.000  clip_untrained=0.000  random=0.000  celltype_oracle=0.004  gw=0.001  gw_labeled=0.022   imputation R2: clip_retrieval_knn=0.541  rna_pca_knn=0.567  celltype_mean_oracle_label=0.442  global_mean=-0.084
+[603s] site2 seed=1 FOSCTTM: gene_activity=0.149  clip=0.031  clip_shuffled_pairs=0.521  clip_untrained=0.504  random=0.503  celltype_oracle=0.066  gw=0.499  gw_labeled=0.489
+   top1: gene_activity=0.019  clip=0.064  clip_shuffled_pairs=0.001  clip_untrained=0.001  random=0.001  celltype_oracle=0.009  gw=0.003  gw_labeled=0.022   imputation R2: clip_retrieval_knn=0.544  rna_pca_knn=0.565  celltype_mean_oracle_label=0.438  global_mean=-0.084
+[663s] site2 seed=2 FOSCTTM: gene_activity=0.145  clip=0.030  clip_shuffled_pairs=0.480  clip_untrained=0.485  random=0.498  celltype_oracle=0.067  gw=0.500  gw_labeled=0.490
+   top1: gene_activity=0.015  clip=0.068  clip_shuffled_pairs=0.001  clip_untrained=0.001  random=0.001  celltype_oracle=0.007  gw=0.001  gw_labeled=0.019   imputation R2: clip_retrieval_knn=0.526  rna_pca_knn=0.565  celltype_mean_oracle_label=0.437  global_mean=-0.083
+[826s] fitted features for site3
+[888s] site3 seed=0 FOSCTTM: gene_activity=0.099  clip=0.030  clip_shuffled_pairs=0.495  clip_untrained=0.501  random=0.488  celltype_oracle=0.065  gw=0.495  gw_labeled=0.491
+   top1: gene_activity=0.043  clip=0.064  clip_shuffled_pairs=0.001  clip_untrained=0.001  random=0.000  celltype_oracle=0.006  gw=0.009  gw_labeled=0.019   imputation R2: clip_retrieval_knn=0.650  rna_pca_knn=0.634  celltype_mean_oracle_label=0.473  global_mean=-0.114
+[949s] site3 seed=1 FOSCTTM: gene_activity=0.099  clip=0.029  clip_shuffled_pairs=0.498  clip_untrained=0.510  random=0.503  celltype_oracle=0.064  gw=0.495  gw_labeled=0.491
+   top1: gene_activity=0.042  clip=0.065  clip_shuffled_pairs=0.000  clip_untrained=0.001  random=0.001  celltype_oracle=0.008  gw=0.010  gw_labeled=0.018   imputation R2: clip_retrieval_knn=0.647  rna_pca_knn=0.634  celltype_mean_oracle_label=0.477  global_mean=-0.116
+[1012s] site3 seed=2 FOSCTTM: gene_activity=0.101  clip=0.030  clip_shuffled_pairs=0.517  clip_untrained=0.507  random=0.498  celltype_oracle=0.067  gw=0.496  gw_labeled=0.492
+   top1: gene_activity=0.041  clip=0.063  clip_shuffled_pairs=0.001  clip_untrained=0.000  random=0.001  celltype_oracle=0.009  gw=0.008  gw_labeled=0.016   imputation R2: clip_retrieval_knn=0.654  rna_pca_knn=0.641  celltype_mean_oracle_label=0.480  global_mean=-0.117
+[1146s] fitted features for site4
+[1197s] site4 seed=0 FOSCTTM: gene_activity=0.113  clip=0.055  clip_shuffled_pairs=0.518  clip_untrained=0.505  random=0.488  celltype_oracle=0.109  gw=0.496  gw_labeled=0.490
+   top1: gene_activity=0.034  clip=0.037  clip_shuffled_pairs=0.000  clip_untrained=0.000  random=0.000  celltype_oracle=0.010  gw=0.008  gw_labeled=0.019   imputation R2: clip_retrieval_knn=0.574  rna_pca_knn=0.638  celltype_mean_oracle_label=0.576  global_mean=-0.090
+[1251s] site4 seed=1 FOSCTTM: gene_activity=0.107  clip=0.051  clip_shuffled_pairs=0.502  clip_untrained=0.506  random=0.503  celltype_oracle=0.103  gw=0.495  gw_labeled=0.494
+   top1: gene_activity=0.036  clip=0.046  clip_shuffled_pairs=0.001  clip_untrained=0.002  random=0.001  celltype_oracle=0.007  gw=0.010  gw_labeled=0.013   imputation R2: clip_retrieval_knn=0.568  rna_pca_knn=0.638  celltype_mean_oracle_label=0.576  global_mean=-0.090
+[1303s] site4 seed=2 FOSCTTM: gene_activity=0.111  clip=0.055  clip_shuffled_pairs=0.491  clip_untrained=0.490  random=0.498  celltype_oracle=0.110  gw=0.497  gw_labeled=0.491
+   top1: gene_activity=0.033  clip=0.040  clip_shuffled_pairs=0.002  clip_untrained=0.001  random=0.001  celltype_oracle=0.010  gw=0.006  gw_labeled=0.019   imputation R2: clip_retrieval_knn=0.564  rna_pca_knn=0.637  celltype_mean_oracle_label=0.574  global_mean=-0.093
+site1/clip-gene_activity: -0.085 [-0.089,-0.081]
+site1/clip-gw_labeled: -0.459 [-0.461,-0.457]
+site1/clip-clip_untrained: -0.476 [-0.483,-0.469]
+site1/clip-clip_shuffled_pairs: -0.466 [-0.474,-0.459]
+site2/clip-gene_activity: -0.116 [-0.120,-0.112]
+site2/clip-gw_labeled: -0.460 [-0.462,-0.457]
+site2/clip-clip_untrained: -0.462 [-0.469,-0.455]
+site2/clip-clip_shuffled_pairs: -0.472 [-0.479,-0.464]
+site3/clip-gene_activity: -0.070 [-0.074,-0.067]
+site3/clip-gw_labeled: -0.462 [-0.464,-0.460]
+site3/clip-clip_untrained: -0.477 [-0.483,-0.470]
+site3/clip-clip_shuffled_pairs: -0.474 [-0.481,-0.467]
+site4/clip-gene_activity: -0.056 [-0.060,-0.052]
+site4/clip-gw_labeled: -0.438 [-0.440,-0.436]
+site4/clip-clip_untrained: -0.446 [-0.453,-0.440]
+site4/clip-clip_shuffled_pairs: -0.450 [-0.457,-0.443]
+{'folds_where_clip_beats_gene_activity_by_0.02': 4, 'n_folds': 4, 'H_supported': True}
