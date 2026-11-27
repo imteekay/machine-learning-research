@@ -1087,20 +1087,6 @@ $O(n + k)$ tempo e memória, $k$ = intervalo dos valores. Use quando $k = O(n)$ 
 
 </details>
 
-**F98.** Quickselect: o que faz e complexidade?
-<details><summary>Resposta</summary>
-
-Acha o $k$-ésimo menor: particiona e recursa **só** no lado que contém $k$. $O(n)$ médio, $O(n^2)$ pior.
-
-</details>
-
-**F99.** Algoritmo de seleção $O(n)$ no pior caso?
-<details><summary>Resposta</summary>
-
-Mediana das medianas (BFPRT): grupos de 5, mediana das medianas como pivô.
-
-</details>
-
 **F100.** Após a passada $i$ do Bubble Sort, o que se garante?
 <details><summary>Resposta</summary>
 
@@ -1167,20 +1153,6 @@ Os $i$ maiores elementos estão nas posições finais corretas.
 <details><summary>Resposta</summary>
 
 **(C)**. Counting Sort não compara; usa os valores como índices.
-
-</details>
-
-**Q30.** Quickselect com pivô aleatório tem complexidade esperada:
-
-- (A) $O(\log n)$
-- (B) $O(n)$
-- (C) $O(n \log n)$
-- (D) $O(n^2)$
-- (E) $O(k \log n)$
-
-<details><summary>Resposta</summary>
-
-**(B)**. $T(n) = T(n/2) + O(n)$ em média → $O(n)$.
 
 </details>
 
