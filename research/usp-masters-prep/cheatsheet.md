@@ -184,7 +184,7 @@ Decore:
 5. **Hash é $O(1)$ médio**, $O(n)$ pior caso.
 6. **BST não balanceada** com inserção ordenada → $O(n)$.
 7. **Quick Sort pior caso $O(n^2)$**; não é estável. **Merge Sort** é estável mas usa $O(n)$ extra. **Heap Sort** é in-place e $O(n \log n)$ garantido, mas **não estável**.
-8. Comparação: nada abaixo de $\Omega(n \log n)$. Counting/Radix/Bucket "furam" porque **não comparam**.
+8. Comparação: nada abaixo de $\Omega(n \log n)$. Counting "fura" porque **não comparam**.
 9. **Dijkstra + peso negativo = errado** (mesmo sem ciclo negativo). Use Bellman-Ford.
 10. **BFS** dá caminho mínimo só em grafo **sem peso** (ou pesos iguais).
 11. Ordenação topológica só existe em **DAG**.

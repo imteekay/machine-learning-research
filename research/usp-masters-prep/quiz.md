@@ -1006,14 +1006,14 @@ Elementos com chaves iguais mantêm a ordem relativa original.
 **F84.** Quais dos clássicos são estáveis?
 <details><summary>Resposta</summary>
 
-Bubble, Insertion, Merge, Counting, Radix. **Não estáveis**: Selection, Quick, Heap.
+Bubble, Insertion, Merge, Counting. **Não estáveis**: Selection, Quick, Heap.
 
 </details>
 
 **F85.** Quais são in-place?
 <details><summary>Resposta</summary>
 
-Bubble, Selection, Insertion, Quick (pilha $O(\log n)$), Heap. **Não**: Merge (arrays), Counting, Radix, Bucket.
+Bubble, Selection, Insertion, Quick (pilha $O(\log n)$), Heap. **Não**: Merge (arrays), Counting.
 
 </details>
 
@@ -1087,20 +1087,6 @@ $O(n + k)$ tempo e memória, $k$ = intervalo dos valores. Use quando $k = O(n)$ 
 
 </details>
 
-**F96.** Radix Sort LSD: requisito da sub-rotina?
-<details><summary>Resposta</summary>
-
-Precisa ser **estável** (geralmente Counting Sort por dígito). Tempo $O(d(n + k))$.
-
-</details>
-
-**F97.** Bucket Sort: hipótese para $O(n)$ médio?
-<details><summary>Resposta</summary>
-
-Entrada **uniformemente distribuída** (ex.: em $[0, 1)$). Pior caso $O(n^2)$ (tudo num bucket).
-
-</details>
-
 **F98.** Quickselect: o que faz e complexidade?
 <details><summary>Resposta</summary>
 
@@ -1167,20 +1153,6 @@ Os $i$ maiores elementos estão nas posições finais corretas.
 <details><summary>Resposta</summary>
 
 **(B)**. $O(n + \text{inversões})$ ≈ $O(n)$. (D) é o pior caso do Quick Sort.
-
-</details>
-
-**Q28.** Deseja-se ordenar $n$ inteiros no intervalo $[0, n^2 - 1]$. Qual complexidade é possível?
-
-- (A) $O(n)$ com Radix Sort na base $n$
-- (B) $O(n^2)$ no mínimo, por causa do intervalo
-- (C) $O(n \log n)$ no mínimo, por ser ordenação
-- (D) $O(n^2)$ com Counting Sort
-- (E) $O(\log n)$
-
-<details><summary>Resposta</summary>
-
-**(A)**. Na base $n$ cada número tem 2 dígitos → $d = 2$, $k = n$ → $O(2(n + n)) = O(n)$. Counting Sort direto seria $O(n + n^2)$.
 
 </details>
 

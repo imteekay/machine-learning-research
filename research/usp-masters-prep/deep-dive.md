@@ -547,7 +547,7 @@ Memória **extra** (auxiliar) além da entrada, inclusive pilha de recursão. Ex
 
 #### Propriedades
 
-- **Estável:** chaves iguais mantêm a ordem relativa. Importa quando se ordena por várias chaves (ex.: Radix).
+- **Estável:** chaves iguais mantêm a ordem relativa. Importa quando se ordena por várias chaves.
 - **In-place:** memória extra $O(1)$ (às vezes aceita-se $O(\log n)$ de pilha).
 - **Adaptativo:** mais rápido em entrada quase ordenada (Insertion, Bubble com flag).
 - **Inversão:** par $(i, j)$ com $i < j$ e $A[i] > A[j]$. Máximo $n(n-1)/2$.
@@ -677,12 +677,6 @@ for x in a (de trás para frente):               // de trás → estável
 
 $\Theta(n + k)$ tempo e memória. Bom se $k = O(n)$. Estável.
 
-**Radix Sort (LSD):** ordena por dígito, do **menos** significativo ao mais, com ordenação **estável** (Counting). $d$ dígitos, base $k$: $\Theta(d(n + k))$.
-- Ex.: `170, 45, 75, 90, 802, 24, 2, 66` → unidades → dezenas → centenas → ordenado.
-- $n$ inteiros em $[0, n^c)$: base $n$ → $d = c$ → $\Theta(n)$.
-
-**Bucket Sort:** valores uniformes em $[0, 1)$: distribui em $n$ baldes, ordena cada um (Insertion), concatena. Médio $\Theta(n)$; pior $\Theta(n^2)$ (todos no mesmo balde).
-
 #### Seleção
 
 - Mínimo/máximo: $n - 1$ comparações. Ambos juntos: $\lceil 3n/2 \rceil$ (comparar em pares).
@@ -712,8 +706,6 @@ Médio $T(n) = T(n/2) + n = \Theta(n)$; pior $\Theta(n^2)$.
 | Quick | $n\log n$ | $n\log n$ | $n^2$ | $\log n$ | ❌ | ✅ |
 | Heap | $n\log n$ | $n\log n$ | $n\log n$ | 1 | ❌ | ✅ |
 | Counting | $n+k$ | $n+k$ | $n+k$ | $n+k$ | ✅ | ❌ |
-| Radix | $d(n+k)$ | $d(n+k)$ | $d(n+k)$ | $n+k$ | ✅ | ❌ |
-| Bucket | $n+k$ | $n+k$ | $n^2$ | $n+k$ | ✅ | ❌ |
 | Quickselect | $n$ | $n$ | $n^2$ | $\log n$ | — | ✅ |
 
 ---
