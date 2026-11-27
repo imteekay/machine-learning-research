@@ -1211,13 +1211,6 @@ Encontrando uma **aresta de retorno** (back edge) para um vértice ainda na pilh
 
 </details>
 
-**F108.** Ordenação topológica pelo algoritmo de Kahn?
-<details><summary>Resposta</summary>
-
-Enfileira vértices com grau de entrada 0; ao remover um, decrementa o grau dos vizinhos e enfileira os que zerarem. Se sobrarem vértices → há ciclo.
-
-</details>
-
 **F109.** Ordenação topológica via DFS?
 <details><summary>Resposta</summary>
 
@@ -1229,20 +1222,6 @@ Ordem **decrescente de tempo de término** (pós-ordem invertida).
 <details><summary>Resposta</summary>
 
 Conjunto maximal de vértices em grafo **dirigido** em que todo par $u, v$ tem caminho $u \to v$ e $v \to u$.
-
-</details>
-
-**F111.** Passos de Kosaraju?
-<details><summary>Resposta</summary>
-
-(1) DFS em $G$ registrando ordem de término. (2) Transpor $G$. (3) DFS em $G^T$ em ordem decrescente de término; cada árvore = um SCC. $O(V + E)$.
-
-</details>
-
-**F112.** O que Tarjan usa para achar SCCs em uma DFS?
-<details><summary>Resposta</summary>
-
-Índice de descoberta, valor *low-link* e uma pilha. Quando `low[v] == idx[v]`, desempilha até `v` → um SCC.
 
 </details>
 
@@ -1264,20 +1243,6 @@ Heap: $O((V + E)\log V)$. Array: $O(V^2)$ (melhor para grafos densos). Heap de F
 <details><summary>Resposta</summary>
 
 $V - 1$: um caminho mínimo simples tem no máximo $V - 1$ arestas. Uma $V$-ésima rodada que ainda relaxa indica **ciclo negativo**.
-
-</details>
-
-**F116.** Recorrência de Floyd-Warshall?
-<details><summary>Resposta</summary>
-
-$d[i][j] \leftarrow \min(d[i][j],\ d[i][k] + d[k][j])$, com $k$ no laço **externo**. $\Theta(V^3)$.
-
-</details>
-
-**F117.** Como Floyd-Warshall indica ciclo negativo?
-<details><summary>Resposta</summary>
-
-Algum $d[i][i] < 0$ no final.
 
 </details>
 
@@ -1392,20 +1357,6 @@ BFS/DFS colorindo com 2 cores; se uma aresta liga vértices da mesma cor → nã
 <details><summary>Resposta</summary>
 
 **(B)**. Matriz exigiria $10^{12}$ posições.
-
-</details>
-
-**Q36.** Qual algoritmo calcula caminhos mínimos entre **todos** os pares em $\Theta(V^3)$ usando programação dinâmica?
-
-- (A) Dijkstra
-- (B) Bellman-Ford
-- (C) Floyd-Warshall
-- (D) Kosaraju
-- (E) Kahn
-
-<details><summary>Resposta</summary>
-
-**(C)**.
 
 </details>
 
@@ -1912,7 +1863,7 @@ Quantos estados **alcançáveis** tem o AFD obtido pela construção de subconju
 (B) BFS acha caminhos com menos arestas.
 (C) DFS pode detectar ciclos.
 (D) BFS usa pilha.
-(E) DFS é usada em Kosaraju.
+(E) DFS pode ser implementada recursivamente.
 
 <details><summary>Gabarito comentado</summary>
 

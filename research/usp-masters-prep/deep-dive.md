@@ -714,7 +714,7 @@ $\Theta(n + k)$ tempo e memória. Bom se $k = O(n)$. Estável.
 | Existe $(u,v)$? | $O(1)$ | $O(\deg u)$ |
 | Listar vizinhos de $u$ | $\Theta(V)$ | $\Theta(\deg u)$ |
 | BFS/DFS | $\Theta(V^2)$ | $\Theta(V + E)$ |
-| Bom para | densos, Floyd-Warshall | esparsos (maioria dos casos) |
+| Bom para | densos | esparsos (maioria dos casos) |
 
 #### BFS (Busca em Largura)
 
@@ -769,20 +769,7 @@ function dfs(u) {
 
 Ordem linear em que toda aresta $u \to v$ tem $u$ antes de $v$. Existe ⇔ o grafo é DAG. Pode haver várias.
 
-**Kahn (BFS por grau de entrada):**
-
-```
-for v in V: if indeg[v] == 0: queue.push(v)
-while queue:
-  u = queue.shift(); order.push(u)
-  for v in adj[u]:
-    if (--indeg[v] == 0) queue.push(v)
-if order.length < V: "há ciclo"
-```
-
-**DFS:** ao terminar cada vértice, coloque-o no **início** da lista (ordem decrescente de $f$).
-
-Ambos $O(V + E)$. Exemplo: A→B, A→C, B→D, C→D → `A B C D` ou `A C B D`.
+**DFS:** ao terminar cada vértice, coloque-o no **início** da lista (ordem decrescente de $f$). $O(V + E)$. Exemplo: A→B, A→C, B→D, C→D → `A B C D` ou `A C B D`.
 
 Aplicações: dependências de build/pacotes, pré-requisitos de disciplinas, escalonamento de tarefas, avaliação de planilhas.
 
@@ -791,16 +778,7 @@ Aplicações: dependências de build/pacotes, pré-requisitos de disciplinas, es
 - **Não dirigido:** cada BFS/DFS a partir de um vértice não visitado descobre um componente. $O(V + E)$. (Ou Union-Find.)
 - **SCC (dirigido):** classes de equivalência de "mutuamente alcançáveis". Contrair cada SCC num vértice gera um **DAG** (grafo de componentes).
 
-**Kosaraju-Sharir:**
-1. DFS em $G$ e registrar vértices em ordem de término.
-2. Construir $G^T$ (arestas invertidas).
-3. DFS em $G^T$ processando vértices em ordem **decrescente** de término; cada árvore = um SCC.
-
-Por que funciona: o vértice com maior $f$ está num SCC "fonte" do DAG de componentes; em $G^T$ ele vira "sumidouro", então a DFS não escapa do componente.
-
-**Tarjan:** uma DFS; cada vértice recebe `idx` (ordem de descoberta) e `low` (menor `idx` alcançável pela subárvore usando no máximo uma aresta de retorno para um vértice na pilha). Vértices são empilhados ao descobrir; quando `low[v] == idx[v]`, desempilha até $v$: isso é um SCC.
-
-Ambos $O(V + E)$. Aplicação: 2-SAT (SCC no grafo de implicação), análise de dependências circulares.
+Aplicação: 2-SAT (SCC no grafo de implicação), análise de dependências circulares.
 
 #### Caminhos Mínimos
 
@@ -820,7 +798,6 @@ function relax(u, v, w) {
 | DAG (qualquer peso) | topológica + relaxar | $O(V + E)$ |
 | Pesos $\ge 0$ | Dijkstra | $O((V + E)\log V)$ |
 | Pesos negativos | Bellman-Ford | $O(VE)$ |
-| Todos os pares | Floyd-Warshall | $\Theta(V^3)$ |
 | Todos os pares, esparso, pesos $\ge 0$ | $V \times$ Dijkstra | $O(V(V+E)\log V)$ |
 
 **Dijkstra (guloso):**
@@ -854,20 +831,6 @@ for each (u, v, w) in E:
 
 - $O(VE)$. Após $i$ rodadas, `dist` está correta para caminhos com até $i$ arestas; caminho simples tem $\le V-1$ arestas.
 - Funciona com pesos negativos; **detecta** ciclo negativo. Base do roteamento por vetor de distância (RIP). Pode parar cedo se uma rodada não alterar nada.
-
-**Floyd-Warshall (DP, todos os pares):**
-
-```
-dist = matriz de pesos (∞ sem aresta, 0 na diagonal)
-for k in V:
-  for i in V:
-    for j in V:
-      dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
-```
-
-- $d^{(k)}[i][j]$ = menor caminho de $i$ a $j$ usando só intermediários $\{1..k\}$. **$k$ precisa ser o laço externo.**
-- $\Theta(V^3)$ tempo, $\Theta(V^2)$ memória. Aceita pesos negativos; ciclo negativo ⇔ algum $dist[i][i] < 0$.
-- Variante: fecho transitivo (Warshall) com `or`/`and`.
 
 #### Árvore Geradora Mínima (MST)
 

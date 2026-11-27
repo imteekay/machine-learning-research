@@ -353,11 +353,7 @@ Grafos mapeiam redes (estradas, roteadores, conexões sociais).
 #### Aplicações de BFS e DFS
 
 * Componentes Conexos (Grafos Não-Direcionados): Identificados diretamente usando tanto BFS quanto DFS
-* Componentes Fortemente Conexos (Grafos Direcionados):
-  * Algoritmo de Kosaraju-Sharir: Usa duas passagens de DFS (uma no grafo original e outra no grafo transposto).
-  * Algoritmo de Tarjan: Encontra os componentes em uma única passagem de DFS usando uma pilha.
 * Ordenação Topológica:
-  * Algoritmo de Kahn: Baseado no grau de entrada dos vértices (usa uma fila/BFS).
   * DFS com Pós-Ordem Inversa: Utiliza a propriedade de tempo de término da DFS.
 
 #### Caminhos Mínimos (Shortest Paths)

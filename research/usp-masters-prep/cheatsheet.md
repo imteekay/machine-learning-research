@@ -169,17 +169,12 @@ Decore:
 | Algoritmo | Problema | Estrutura | Tempo | Restrição |
 | :---- | :---- | :---- | :---- | :---- |
 | BFS | caminho mínimo **sem pesos**, níveis | **fila** | $O(V+E)$ | |
-| DFS | ciclos, topológica, SCC, labirinto | **pilha**/recursão | $O(V+E)$ | |
+| DFS | ciclos, topológica, labirinto | **pilha**/recursão | $O(V+E)$ | |
 | DFS pós-ordem invertida | ordenação topológica | pilha | $O(V+E)$ | só DAG |
 | Dijkstra | caminho mínimo, fonte única | fila de prioridade | $O((V+E)\log V)$ heap; $O(V^2)$ array | **pesos $\ge 0$** |
 | Bellman-Ford | caminho mínimo, fonte única | relaxa todas as arestas $V-1$ vezes | $O(V \cdot E)$ | aceita negativos; **detecta ciclo negativo** |
 | Prim | MST | fila de prioridade | $O(E\log V)$; $O(V^2)$ array | conexo, não dir. |
 | Kruskal | MST | ordena arestas + Union-Find | $O(E\log E) = O(E\log V)$ | não dir. |
-| Floyd-Warshall | caminhos mínimos **todos os pares** | DP, $k$ no laço **externo** | $\Theta(V^3)$ | ciclo negativo ⇔ algum $d[i][i] < 0$ |
-| Kahn | ordenação topológica | fila de vértices com grau de entrada 0 | $O(V+E)$ | se sobrarem vértices → ciclo |
-| Kosaraju | SCC | 2 DFS | $O(V+E)$ | DFS em $G$ (tempo de término) → transpor → DFS em $G^T$ em ordem decrescente |
-| Tarjan | SCC | 1 DFS + pilha + low-link | $O(V+E)$ | `low[v] == idx[v]` → desempilha um SCC |
-
 - **Relaxamento**: se $d[u] + w(u,v) < d[v]$ então $d[v] \leftarrow d[u] + w(u,v)$.
 - Bellman-Ford: se na **$V$-ésima** rodada ainda relaxar → **ciclo negativo**.
 - Dijkstra falha com pesos negativos porque **finaliza** o vértice quando ele sai da fila.

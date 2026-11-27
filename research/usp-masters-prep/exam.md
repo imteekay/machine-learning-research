@@ -70,9 +70,9 @@ Aqui está um roteiro detalhado de estudos em tópicos, estruturado para cobrir 
 ### 2.3 Algoritmos para Problemas em Grafos
 
 * **Representação e Busca:** Escolha entre Matriz de Adjacência (grafos densos) e Lista de Adjacência (grafos esparsos). Domínio da Busca em Largura (BFS, usa fila, acha caminhos curtos em grafos sem peso) e Busca em Profundidade (DFS, usa recursão/pilha, acha ciclos e labirintos).
-* **Aplicações Avançadas de Busca:** Identificação de Componentes Conexos, Componentes Fortemente Conexos em grafos direcionados (Algoritmos de Tarjan ou Kosaraju) e Ordenação Topológica em DAGs (via DFS ou Algoritmo de Kahn).
+* **Aplicações Avançadas de Busca:** Identificação de Componentes Conexos, Ordenação Topológica em DAGs (via DFS).
 * **Árvore Geradora Mínima (MST):** Algoritmo de Prim (cresce a partir de um vértice usando Fila de Prioridade) e Algoritmo de Kruskal (ordena arestas globais usando Union-Find para evitar ciclos).
-* **Caminhos Mínimos:** Algoritmo de Dijkstra (para grafos com pesos não-negativos, $O((V+E)\log V)$), Bellman-Ford (lida com pesos negativos e detecta ciclos negativos) e Floyd-Warshall (encontra caminhos entre todos os pares usando Programação Dinâmica, $O(V^3)$).
+* **Caminhos Mínimos:** Algoritmo de Dijkstra (para grafos com pesos não-negativos, $O((V+E)\log V)$), Bellman-Ford (lida com pesos negativos e detecta ciclos negativos).
 
 ### 2.4 NP-Completude
 
