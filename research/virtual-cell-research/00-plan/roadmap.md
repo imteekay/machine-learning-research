@@ -603,7 +603,7 @@ Evaluation (first-class topic; read *before* claiming any result):
 - [ ] [Foundation Models Improve Perturbation Response Prediction](https://www.biorxiv.org/content/10.64898/2026.02.18.706454v1) (2026 bioRxiv): the positive case. Compare its setup with the negative papers
 - [ ] [scArchon: a scalable benchmarking framework for single-cell perturbation models](https://link.springer.com/article/10.1186/s13059-026-04104-z) (2026 Genome Biology): tooling to run many models
 - [ ] [Benchmarking virtual cell models for in-the-wild perturbation response](https://arxiv.org/abs/2604.27646) (2026 arXiv): evaluation outside curated screens
-- [ ] [Virtual Cell Challenge: Toward a Turing test for the virtual cell](https://www.cell.com/cell/fulltext/S0092-8674(25)00675-0) (2025 Cell): a community benchmark. Consider submitting during the Master's
+- [ ] [Virtual Cell Challenge: Toward a Turing test for the virtual cell](https://www.cell.com/cell/fulltext/S0092-8674(25)00675-0) (2025 Cell): a community benchmark. Consider submitting during the Master's. The 2026 edition is zero-shot across cell lines; read the [top-3 winners report](../01-foundations/virtual-cell-challenge-2026.md) first (modular transfer, adapt, generate pipelines; baselines to beat)
 
 ### Hands-on Milestone
 

@@ -196,6 +196,36 @@ Roadmap: [`../00-plan/roadmap.md`](../00-plan/roadmap.md) · Proposal: [`../00-p
 
 **Confidence: Medium** (toy on Dixit 2016 with a documented cut step; real-scale CRISPRi not yet rerun).
 
+### I16. Zero-shot cross-line prediction is won by calibrated transfer of measured effects, not by one end-to-end model
+
+**Intuition.** All three Virtual Cell Challenge 2026 winners are pipelines: transfer pseudobulk effects from other cell types, adapt them with the target line's control cells, then generate cells from the controls. The winner is a meta-analysis plus SVD and ridge (no deep generative model); the third place used a large diffusion model only as a confidence gate over pooled reference effects.
+
+**Why it matters.** The baseline for any context-aware model (ATAC, regulator state) is a calibrated transfer from public screens, not a single-dataset linear fit. Without it "context helps" is untested against the strongest cheap competitor.
+
+**Evidence.** [virtual-cell-challenge-2026](./virtual-cell-challenge-2026.md) sections 3-7 (team self-reports relayed by Arc, no code, no ablations); [x-cell](../02-paper-notes/x-cell.md) for the base model; consistent with I1.
+
+**Confidence: Low.** Descriptions are self-reported and unablated; Arc itself says ablations are still needed.
+
+### I17. Models recover the cross-line average and over-call DE genes; the line-specific response is the missing piece
+
+**Intuition.** On validation lines predicted responses to the same knockdown had cosine 0.77-0.89 across lines versus 0.55 measured, and models called many more significant genes than the measured median of 22-44 per target (X-team 122-136, winner about 500, others up to 4,200).
+
+**Why it matters.** It is the measured version of the "interaction is the small remainder" picture (I2) and gives a concrete target for the context thesis: reduce the cross-line cosine gap and the DE over-calling, not only raise an average score.
+
+**Evidence.** [virtual-cell-challenge-2026](./virtual-cell-challenge-2026.md) section 8 (Arc's analysis of the challenge validation data); [perturbation-response-decomposition](../02-paper-notes/perturbation-response-decomposition.md) (full-text decomposition, same direction).
+
+**Confidence: Medium.** Two independent lines of evidence agree on direction, but the challenge figures come from a wrap-up page, not a paper.
+
+### I18. The space a model is trained in must match the space it is scored in, and cell generation is a variance source
+
+**Intuition.** X-Cell matched the mean of per-cell log-normalized expression while the challenge scored the log of the pseudobulk mean; the raw output was biased and was not submitted. Separately, redrawing cells under the same pseudobulk prediction moved a score by up to 0.004, more than the gap between 3rd and 4th place. Validation-to-test rank correlation among the top 20 was only 0.49.
+
+**Why it matters.** Small leaderboard gaps and published model comparisons can be inside the noise of the generation step or the scoring space. Every comparison needs several generation seeds and a stated scoring space.
+
+**Evidence.** [virtual-cell-challenge-2026](./virtual-cell-challenge-2026.md) sections 6.2 and 7; [perturbation-and-causality](./perturbation-and-causality.md#12-evaluation-metrics-and-pitfalls).
+
+**Confidence: Low.** Self-reported by a team and by Arc, no independent reproduction.
+
 ---
 
 ## 2. Contradictions and tensions
@@ -347,6 +377,7 @@ Documents written for this synthesis (conceptual background by topic; some are w
 | [single-cell-ml-foundations.md](single-cell-ml-foundations.md) | Single-cell data and ML basics: counts, normalisation, integration, foundation models, evaluation. |
 | [perturbation-and-causality.md](perturbation-and-causality.md) | Perturbation screens, causal inference, baselines and evaluation pitfalls. |
 | [multimodal-and-spatial.md](multimodal-and-spatial.md) | Multi-omics, chromatin context, spatial transcriptomics and tissue-level modelling. |
+| [virtual-cell-challenge-2026.md](virtual-cell-challenge-2026.md) | Top-3 winners of the Virtual Cell Challenge 2026: architecture, data learnings, biological insights (feeds I16-I18). |
 
 Pre-existing files:
 

@@ -15,6 +15,13 @@ Entry format:
 
 ---
 
+## 2026-11-27: Virtual Cell Challenge 2026 top-3 report
+
+- **Did**: read Arc's wrap-up and data-design posts and the X-Cell project pages; wrote [virtual-cell-challenge-2026.md](./01-foundations/virtual-cell-challenge-2026.md) (architecture, data learnings, biology for the three winners), added insights I16-I18, and updated the foundations index, README and the Phase 4 reading.
+- **Learned**: all three winners are modular pipelines (transfer pseudobulk effects, adapt with the target's controls, generate cells); the winner is a meta-analysis plus SVD and ridge with no deep generative model, and public data alone gave second place. Models recover the cross-line average (cosine 0.77-0.89 vs 0.55 measured) and over-call DE genes. None of the three has public code or a paper, so everything is self-reported.
+- **Open questions**: how much of the win is data vs method (no ablations)? Does a context-aware model close the cross-line cosine gap? Is the 300-target test set a subset of the 10k+ screen?
+- **Next**: re-read the X-Cell preprint and the 2026 metrics preprint; run the proposed E4.4 extensions (transfer baseline, cosine gap) on public screens.
+
 ## 2026-11-26: E6.3 active-learning loop on the K562 essential screen (loop-mini)
 
 - **Did**: downloaded the Replogle K562 essential screen (1.55 GB; Zenodo throttles each connection, so I fetched it in 8 parallel ranges) and built a 1,661-knockdown pool with two pre-defined program scores and features from untreated cells (co-expression, ESM2 protein embedding). Built [`loop_mini`](./04-experiments/E6.3-active-learning-loop/CODE.md) (bootstrap ensemble, 7 acquisition arms, calibration) and ran [E6.3](./04-experiments/E6.3-active-learning-loop/): 2 programs, 30 seeds, 15 rounds of 48.

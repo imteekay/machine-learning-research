@@ -40,6 +40,12 @@ The numbered folders follow the research loop: **plan → learn → read papers 
 | [computational-oncology.md](./01-foundations/computational-oncology.md) | Cancer biology essentials and oncology data types | 0, 5, 6 |
 | [multi-omics-integration.md](./01-foundations/multi-omics-integration.md) | Integration strategies (vertical, horizontal, diagonal, mosaic), feature selection and tools | 3 |
 | [protein-localization-latent-representation.md](./01-foundations/protein-localization-latent-representation.md) | Protein localization and representation learning | 2, 5 |
+| [biology-of-the-cell.md](./01-foundations/biology-of-the-cell.md) | Cell biology, regulation, assays and measurement for ML researchers | 0, 1 |
+| [single-cell-ml-foundations.md](./01-foundations/single-cell-ml-foundations.md) | What the single-cell foundation-model literature teaches (recipe, baselines, pitfalls) | 2 |
+| [perturbation-and-causality.md](./01-foundations/perturbation-and-causality.md) | Perturbation data, priors, OT/flow/diffusion/sets, causal framing, metrics | 4, 6 |
+| [virtual-cell-challenge-2026.md](./01-foundations/virtual-cell-challenge-2026.md) | Top-3 winners of the Virtual Cell Challenge 2026: architecture, data learnings, biological insights | 4 |
+| [multimodal-and-spatial.md](./01-foundations/multimodal-and-spatial.md) | Multimodal, spatial and histology modelling | 3, 5, 6 |
+| [insights-and-open-questions.md](./01-foundations/insights-and-open-questions.md) | Cross-paper synthesis: insights I1-I18, tensions, ranked experiments | all |
 
 ### 02-paper-notes: Paper deep dives
 
