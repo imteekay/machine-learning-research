@@ -66,8 +66,7 @@ Aqui está um roteiro detalhado de estudos em tópicos, estruturado para cobrir 
 
 * **Ordenação Básica / Quadrática ($O(n^2)$):** Bubble Sort, Selection Sort e Insertion Sort (este último notável por ser muito eficiente para listas pequenas ou quase já ordenadas).
 * **Ordenação Eficiente ($O(n \log n)$):** Merge Sort (estável, mas exige memória extra), Quick Sort (*in-place*, rápido na média, mas de pior caso $O(n^2)$ dependendo da escolha do pivô) e Heap Sort (*in-place* e tempo garantido).
-* **Ordenação em Tempo Linear e Seleção:** Algoritmos não-comparativos baseados na natureza dos dados, como Counting Sort (complexidade $O(n + k)$). Inclui também o Quickselect para encontrar o $k$-ésimo menor elemento de um array não ordenado em tempo médio linear.
-
+* **Ordenação em Tempo Linear e Seleção:** Algoritmos não-comparativos baseados na natureza dos dados, como Counting Sort (complexidade $O(n + k)$).
 ### 2.3 Algoritmos para Problemas em Grafos
 
 * **Representação e Busca:** Escolha entre Matriz de Adjacência (grafos densos) e Lista de Adjacência (grafos esparsos). Domínio da Busca em Largura (BFS, usa fila, acha caminhos curtos em grafos sem peso) e Busca em Profundidade (DFS, usa recursão/pilha, acha ciclos e labirintos).

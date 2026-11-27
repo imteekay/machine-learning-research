@@ -680,20 +680,7 @@ $\Theta(n + k)$ tempo e memória. Bom se $k = O(n)$. Estável.
 #### Seleção
 
 - Mínimo/máximo: $n - 1$ comparações. Ambos juntos: $\lceil 3n/2 \rceil$ (comparar em pares).
-- **Quickselect** ($k$-ésimo menor):
-
-```
-function quickSelect(a, lo, hi, k) {
-  const p = partition(a, lo, hi);
-  if (p === k) return a[p];
-  return k < p ? quickSelect(a, lo, p - 1, k) : quickSelect(a, p + 1, hi, k);
-}
-```
-
-Médio $T(n) = T(n/2) + n = \Theta(n)$; pior $\Theta(n^2)$.
-
-- **Mediana das medianas (BFPRT):** grupos de 5, mediana de cada, mediana delas recursivamente como pivô → garante partição ≥ 30/70 → $T(n) \le T(n/5) + T(7n/10) + O(n) = \Theta(n)$ **pior caso**.
-- Alternativas: ordenar e pegar ($O(n \log n)$); heap de tamanho $k$ ($O(n \log k)$).
+- $k$-ésimo menor: ordenar e pegar ($O(n \log n)$); heap de tamanho $k$ ($O(n \log k)$).
 
 #### Resumo
 
@@ -706,8 +693,6 @@ Médio $T(n) = T(n/2) + n = \Theta(n)$; pior $\Theta(n^2)$.
 | Quick | $n\log n$ | $n\log n$ | $n^2$ | $\log n$ | ❌ | ✅ |
 | Heap | $n\log n$ | $n\log n$ | $n\log n$ | 1 | ❌ | ✅ |
 | Counting | $n+k$ | $n+k$ | $n+k$ | $n+k$ | ✅ | ❌ |
-| Quickselect | $n$ | $n$ | $n^2$ | $\log n$ | — | ✅ |
-
 ---
 
 ### 2.3 Algoritmos em Grafos

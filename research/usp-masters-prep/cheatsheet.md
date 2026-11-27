@@ -102,7 +102,7 @@ Decore:
 | $T(n) = T(n/2) + 1$ | $\Theta(\log n)$ | busca binária |
 | $T(n) = 2T(n/2) + n$ | $\Theta(n \log n)$ | merge sort |
 | $T(n) = 2T(n/2) + 1$ | $\Theta(n)$ | travessia de árvore |
-| $T(n) = T(n/2) + n$ | $\Theta(n)$ | quickselect (médio) |
+| $T(n) = T(n/2) + n$ | $\Theta(n)$ | — |
 | $T(n) = 4T(n/2) + n$ | $\Theta(n^2)$ | |
 | $T(n) = 2T(n/2) + n^2$ | $\Theta(n^2)$ | |
 | $T(n) = 7T(n/2) + n^2$ | $\Theta(n^{\log_2 7}) \approx n^{2,81}$ | Strassen |
@@ -127,8 +127,6 @@ Decore:
 - Selection: mínimo de trocas ($O(n)$ swaps), mas sempre $\Theta(n^2)$ comparações.
 - Quick pior caso: pivô sempre extremo (array já ordenado com pivô no início/fim). Solução: pivô aleatório / mediana de três.
 - Merge: estável, bom para listas ligadas e ordenação externa.
-- **Quickselect** (k-ésimo menor): $O(n)$ médio, $O(n^2)$ pior. **Mediana das medianas**: $O(n)$ pior caso.
-
 ### 2.4 Grafos
 
 **Representação**: Matriz $O(V^2)$ memória, aresta $(u,v)$ em $O(1)$ → densos. Lista $O(V+E)$ → esparsos. Soma dos graus $= 2E$. Máx. arestas (não dir.) $= V(V-1)/2$.
